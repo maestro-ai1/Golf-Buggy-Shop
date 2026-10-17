@@ -1,0 +1,114 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/server-card/v1.json",
+  "serverInfo": {
+    "name": "Buggies For Sale",
+    "version": "1.0.0",
+    "description": "Australia's Premier Buggy Superstore — Off-Road, UTV, Golf & Youth Buggies",
+    "homepage": "https://buggiesforsale.com.au",
+    "contact": {
+      "email": "sales@buggiesforsale.com.au",
+      "phone": "+61420128746",
+      "whatsapp": "+61420128746"
+    }
+  },
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://buggiesforsale.com.au/api/mcp"
+  },
+  "capabilities": {
+    "tools": [
+      {
+        "name": "search_products",
+        "description": "Search buggies, golf carts, UTVs, or parts by keyword, category, or max_price",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "query": { "type": "string" },
+            "category": { "type": "string" },
+            "max_price": { "type": "number" }
+          }
+        }
+      },
+      {
+        "name": "get_product",
+        "description": "Get full product details and technical specifications by slug",
+        "inputSchema": {
+          "type": "object",
+          "required": ["slug"],
+          "properties": {
+            "slug": { "type": "string" }
+          }
+        }
+      },
+      {
+        "name": "list_categories",
+        "description": "List all buggy and accessory categories with subcategories",
+        "inputSchema": {
+          "type": "object",
+          "properties": {}
+        }
+      },
+      {
+        "name": "get_policies",
+        "description": "Get delivery freight thresholds, minimum order, payment rails, and warranty policies",
+        "inputSchema": {
+          "type": "object",
+          "properties": {}
+        }
+      },
+      {
+        "name": "create_order_draft",
+        "description": "Create a prefilled WhatsApp and online order draft URL. Human completes the order.",
+        "inputSchema": {
+          "type": "object",
+          "required": ["items"],
+          "properties": {
+            "items": { "type": "array" },
+            "notes": { "type": "string" }
+          }
+        }
+      }
+    ],
+    "resources": [
+      {
+        "name": "product-catalog",
+        "description": "Full Australian buggy catalog",
+        "uri": "https://buggiesforsale.com.au/shop/"
+      },
+      {
+        "name": "brand-hub",
+        "description": "Leading buggy brands and manufacturer overview",
+        "uri": "https://buggiesforsale.com.au/brands/"
+      },
+      {
+        "name": "wholesale",
+        "description": "Commercial fleet pricing and bulk orders",
+        "uri": "https://buggiesforsale.com.au/wholesale/"
+      },
+      {
+        "name": "blog",
+        "description": "Educational buying guides and maintenance articles",
+        "uri": "https://buggiesforsale.com.au/blog/"
+      }
+    ],
+    "commerce": {
+      "ordering": "human-assisted-checkout-or-whatsapp",
+      "payment": [
+        "Direct Bank Transfer (EFT)",
+        "PayID Instant Settlement",
+        "Visa / Mastercard / Amex",
+        "Cryptocurrency (BTC / USDT - 5% Discount)",
+        "Commercial Fleet Invoice / PO"
+      ],
+      "currency": "AUD",
+      "minimumOrder": "500",
+      "freeShipping": "1000"
+    }
+  },
+  "legal": {
+    "jurisdiction": "Australia",
+    "abn": "53 635 284 267",
+    "productType": "Recreational and Commercial Utility Buggies & Golf Carts",
+    "compliance": "Australian Consumer Law (ACL)"
+  }
+}

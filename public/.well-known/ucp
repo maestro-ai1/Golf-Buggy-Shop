@@ -1,0 +1,60 @@
+{
+  "ucp": "1.0",
+  "protocol_version": "1.0",
+  "spec": "https://ucp.dev/specification/overview/",
+  "schema": "https://ucp.dev/schema/v1.json",
+  "site": "https://buggiesforsale.com.au",
+  "name": "Buggies For Sale",
+  "description": "Australia's Premier Buggy Superstore — Off-Road, UTV, Golf & Youth Buggies",
+  "services": [
+    {
+      "id": "product-catalog",
+      "type": "catalog",
+      "url": "https://buggiesforsale.com.au/shop/",
+      "description": "Full product catalog of buggies, UTVs, golf carts, and parts"
+    },
+    {
+      "id": "mcp-server",
+      "type": "mcp",
+      "url": "https://buggiesforsale.com.au/api/mcp",
+      "description": "MCP Streamable HTTP server"
+    },
+    {
+      "id": "order",
+      "type": "commerce",
+      "url": "https://wa.me/61420128746",
+      "description": "Human-assisted orders via WhatsApp or online checkout"
+    },
+    {
+      "id": "wholesale",
+      "type": "b2b",
+      "url": "https://buggiesforsale.com.au/wholesale/",
+      "description": "Wholesale pricing and fleet tenders"
+    }
+  ],
+  "capabilities": ["browse", "search", "inquiry", "wholesale", "content", "mcp"],
+  "endpoints": {
+    "mcp": "https://buggiesforsale.com.au/api/mcp",
+    "catalog": "https://buggiesforsale.com.au/shop/",
+    "contact": "https://buggiesforsale.com.au/contact/",
+    "agent_skills": "https://buggiesforsale.com.au/.well-known/agent-skills/index.json",
+    "mcp_server_card": "https://buggiesforsale.com.au/.well-known/mcp/server-card.json",
+    "api_catalog": "https://buggiesforsale.com.au/.well-known/api-catalog",
+    "llms_txt": "https://buggiesforsale.com.au/llms.txt"
+  },
+  "currency": "AUD",
+  "minimum_order_usd": "500",
+  "payment_methods": [
+    "Direct Bank Transfer (EFT)",
+    "PayID Instant Settlement",
+    "Visa / Mastercard / Amex",
+    "Cryptocurrency (BTC / USDT - 5% Discount)",
+    "Commercial Fleet Invoice / PO"
+  ],
+  "legal": {
+    "abn": "53 635 284 267",
+    "age_restriction": "none",
+    "product_type": "Commercial & Recreational Buggies, UTVs & Golf Carts",
+    "compliance": "Australian Consumer Law (ACL)"
+  }
+}

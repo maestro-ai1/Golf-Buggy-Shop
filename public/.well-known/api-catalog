@@ -1,0 +1,44 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://buggiesforsale.com.au/",
+      "https://www.iana.org/assignments/link-relations/service-doc": [
+        { "href": "https://buggiesforsale.com.au/faq/" }
+      ],
+      "title": "Buggies For Sale — Australia's Premier Buggy Superstore"
+    },
+    {
+      "anchor": "https://buggiesforsale.com.au/shop/",
+      "type": "text/html",
+      "title": "Buggies For Sale Product Catalog"
+    },
+    {
+      "anchor": "https://buggiesforsale.com.au/wholesale/",
+      "type": "text/html",
+      "title": "Buggies For Sale Commercial Wholesale"
+    },
+    {
+      "anchor": "https://buggiesforsale.com.au/api/products",
+      "type": "application/json",
+      "title": "Buggies For Sale Products API"
+    },
+    {
+      "anchor": "https://buggiesforsale.com.au/api/categories",
+      "type": "application/json",
+      "title": "Buggies For Sale Categories API"
+    },
+    {
+      "anchor": "https://buggiesforsale.com.au/api/search",
+      "type": "application/json",
+      "title": "Buggies For Sale Search API"
+    },
+    {
+      "anchor": "https://buggiesforsale.com.au/api/mcp",
+      "type": "application/json",
+      "https://www.iana.org/assignments/link-relations/service-desc": [
+        { "href": "https://buggiesforsale.com.au/.well-known/mcp/server-card.json" }
+      ],
+      "title": "Buggies For Sale MCP Server"
+    }
+  ]
+}

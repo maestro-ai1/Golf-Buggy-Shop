@@ -1,0 +1,35 @@
+{
+  "protocol": { "name": "acp", "version": "0.1.0" },
+  "name": "Buggies For Sale",
+  "description": "Australia's Premier Buggy Superstore — Off-Road, UTV, Golf & Youth Buggies",
+  "api_base_url": "https://buggiesforsale.com.au",
+  "homepage": "https://buggiesforsale.com.au",
+  "transports": ["https"],
+  "capabilities": {
+    "services": ["product-catalog", "wholesale", "blog", "faq", "mcp-server"],
+    "ordering": "human-assisted",
+    "payment_methods": [
+      "Direct Bank Transfer (EFT)",
+      "PayID Instant Settlement",
+      "Visa / Mastercard / Amex",
+      "Cryptocurrency (BTC / USDT - 5% Discount)",
+      "Commercial Fleet Invoice / PO"
+    ],
+    "currency": "AUD",
+    "minimum_order_usd": "500",
+    "free_shipping_threshold_usd": "1000"
+  },
+  "contact": {
+    "whatsapp": "https://wa.me/61420128746",
+    "email": "sales@buggiesforsale.com.au",
+    "phone": "+61420128746"
+  },
+  "legal": {
+    "abn": "53 635 284 267",
+    "age_restriction": "none",
+    "region": "Australia",
+    "ships_to": "Australia-Wide",
+    "product_type": "Commercial & Recreational Buggies, UTVs & Golf Carts",
+    "compliance": "Australian Consumer Law (ACL)"
+  }
+}

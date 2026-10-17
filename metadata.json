@@ -1,0 +1,6 @@
+{
+  "name": "Buggies For Sale Australia",
+  "description": "Australia's premier online store for off-road buggies, electric and remote golf carts, UTVs, youth buggies, parts, and accessories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

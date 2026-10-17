@@ -1,0 +1,27 @@
+{
+  "issuer": "https://buggiesforsale.com.au",
+  "authorization_endpoint": null,
+  "token_endpoint": null,
+  "jwks_uri": null,
+  "grant_types_supported": [],
+  "response_types_supported": [],
+  "scopes_supported": [],
+  "note": "Buggies For Sale has no protected private APIs. All catalog resources are publicly accessible.",
+  "public_resources": [
+    "https://buggiesforsale.com.au/shop/",
+    "https://buggiesforsale.com.au/brands/",
+    "https://buggiesforsale.com.au/blog/",
+    "https://buggiesforsale.com.au/faq/",
+    "https://buggiesforsale.com.au/wholesale/",
+    "https://buggiesforsale.com.au/llms.txt",
+    "https://buggiesforsale.com.au/.well-known/api-catalog",
+    "https://buggiesforsale.com.au/.well-known/agent-skills/index.json",
+    "https://buggiesforsale.com.au/.well-known/mcp/server-card.json"
+  ],
+  "agent_auth": {
+    "register_uri": null,
+    "identity_types_supported": ["none"],
+    "credential_types_supported": ["none"],
+    "notes": "No registration required. All content is publicly accessible to autonomous agents."
+  }
+}

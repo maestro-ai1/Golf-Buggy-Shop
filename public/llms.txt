@@ -1,0 +1,36 @@
+# Buggies For Sale Australia
+
+> Australia's premier online store for off-road buggies, 4x4 UTVs, remote-control and motorized golf carts, youth go-karts, and genuine performance parts with nationwide depot dispatch.
+
+Buggies For Sale (ABN: 53 635 284 267) is an Australian-owned and operated commercial and recreational vehicle supplier based in Sydney, New South Wales, with freight operations reaching Brisbane, Melbourne, Adelaide, Perth, and regional station hubs.
+
+Every machine undergoes a 42-point Pre-Delivery Inspection (PDI) by certified Australian mechanics before being crated for hydraulic tailgate freight delivery.
+
+- Contact Phone: [0420 128 746](tel:+61420128746)
+- WhatsApp Support: [Direct WhatsApp Desk](https://wa.me/61420128746)
+- Sales Email: [sales@buggiesforsale.com.au](mailto:sales@buggiesforsale.com.au)
+- Minimum Order: $500 AUD
+- Free Delivery Threshold: $1,000 AUD (Major Australian Metro Zones)
+- Payment Rails: Direct Australian Bank Transfer (EFT), PayID Instant Settlement, Cryptocurrency (5% Discount), Commercial Tax Invoice
+
+## Product Categories
+
+- [Off-Road & Recreational Buggies](https://buggiesforsale.com.au/shop/off-road/): Side-by-Sides (SSV), 4x4 UTVs, 200cc Dune Buggies, and 72V Silent Lithium Electric Off-Road Buggies.
+- [Golf Buggies & Carts](https://buggiesforsale.com.au/shop/golf-buggies/): Remote control golf buggies with gyroscope tracking, motorized lithium caddies, manual push buggies, and ride-on estate carts.
+- [Buggy Brand Hub](https://buggiesforsale.com.au/brands/): Authorized models and factory parts from Polaris, MGI Golf, Can-Am, Motocaddy, Club Car, Segway Powersports, and CFMOTO.
+- [Parts & Accessories](https://buggiesforsale.com.au/shop/parts-accessories/): Drop-in lithium batteries (24V/48V), synthetic rope winches, all-terrain beadlock tyres, and maintenance tooling.
+- [Clearance & Ex-Demo Deals](https://buggiesforsale.com.au/shop/clearance/): Showroom ex-display buggies and factory runouts with full Australian warranty.
+
+## Commercial Services & Guides
+
+- [Wholesale & Commercial Fleets](https://buggiesforsale.com.au/wholesale/): Volume pricing, leasing, and fleet supply for golf clubs, resorts, and mining operations.
+- [Delivery & Freight Information](https://buggiesforsale.com.au/delivery/): Hydraulic tailgate unload procedures, transit insurance, and depot networks.
+- [Returns & ACL Warranty Policy](https://buggiesforsale.com.au/returns/): Australian Consumer Law statutory warranties and 30-day technical support.
+- [Buying Guides & Tech Blog](https://buggiesforsale.com.au/blog/): Expert guides on UTV towing limits, remote golf buggies, and lithium battery conversions.
+
+## Optional
+
+- [API Catalog](https://buggiesforsale.com.au/.well-known/api-catalog): RFC 9727 linkset of real machine-readable APIs.
+- [Agent Skills](https://buggiesforsale.com.au/.well-known/agent-skills/index.json): High-level discovery schema of available agent skills.
+- [MCP Server Card](https://buggiesforsale.com.au/.well-known/mcp/server-card.json): Streamable HTTP Model Context Protocol endpoint description.
+- [Auth Documentation](https://buggiesforsale.com.au/auth.md): Machine-readable authentication and public resource index.

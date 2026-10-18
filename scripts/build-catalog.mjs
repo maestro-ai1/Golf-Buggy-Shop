@@ -41,6 +41,7 @@ const GROUP_LABEL = {
   seat: 'golf buggy seat', seatcover: 'golf cart seat cover', mat: 'golf cart floor mat', seatbelt: 'golf cart seat belt kit', led: 'golf cart LED light kit', speaker: 'golf cart speaker',
   rack: 'golf cart bag rack', rail: 'golf cart grab rail', mirror: 'golf cart mirror', steering: 'golf cart steering wheel', dune: 'dune buggy', ssv: 'side by side buggy',
   kids: 'kids buggy', gokart: 'go kart', quad: 'quad bike',
+  'petrol-cart': 'petrol golf cart', 'used-cart': 'used golf cart', 'ssv-accessory': 'side by side accessory', part: 'off-road replacement part', ramp: 'loading ramp', tyre: 'off-road tyre',
 };
 
 // ---------- original copy per group (own words, built from name + verified facts)
@@ -78,6 +79,36 @@ function copy(g, name, brand, f, opts) {
       short: `${name}: a new electric golf cart, delivered Australia-wide with the support to match.`,
       p: [`The ${name} is a modern electric golf cart for courses, estates, resorts and private properties. Quiet running, low running cost and simple charging make it easy to live with.`, `${f.Seats ? `Seating for ${f.Seats}. ` : ''}Pricing includes GST, and our team can arrange freight, accessories and a lithium upgrade path. Ask about road, estate and club rules for your area before you buy.`],
       hl: ['New electric golf cart', 'Quiet, low-maintenance drive', 'Accessories and parts available from us', 'Freight to metro and regional Australia'],
+    },
+    'petrol-cart': {
+      short: `${name}: a petrol golf cart for courses, estates, farms and large properties.`,
+      p: [`The ${name} is a petrol-powered golf cart built for range and easy refuelling. It suits courses, estates, resorts and properties where charging is not practical.`, `Pricing includes GST. Final price depends on the configuration you choose, so contact us for the exact specification, freight and delivery lead time.`],
+      hl: ['Petrol engine for long range', 'Quick refuelling, no charging', 'Suits estates, farms and resorts', 'Accessories available'],
+    },
+    'used-cart': {
+      short: `${name}: a pre-owned or refurbished golf cart priced below new.`,
+      p: [`The ${name} is a pre-owned golf cart that suits buyers who want a lower entry price. Condition, battery health and included accessories vary by unit, so ask us for the full details before you order.`, `Pricing includes GST. We confirm availability, condition and freight to your postcode before you pay.`],
+      hl: ['Lower price than new', 'Confirm condition and battery health before buying', 'Parts and accessories available from us', 'Freight Australia-wide'],
+    },
+    'ssv-accessory': {
+      short: `${name}: genuine accessory for your youth side by side${fits ? ' (' + fits + ')' : ''}.`,
+      p: [`The ${name} is a genuine accessory made for ${fits || 'the models listed'}. It adds protection or comfort and is made to fit the factory mounting points.`, `Check the model and year against the fitment note before ordering, or message us and we will confirm.`],
+      hl: [fits ? `Fits ${fits}` : 'Check fitment before ordering', 'Genuine manufacturer part', 'Australia-wide freight'],
+    },
+    part: {
+      short: `${name}: replacement part${fits ? ' for ' + fits : ''}.`,
+      p: [`The ${name} is a replacement part${fits ? ' for ' + fits : ''}. Check the size, mounting and specification against your machine before ordering.`, `Not sure it fits? Send us the make, model and year and we will confirm before you pay.`],
+      hl: [fits ? `For ${fits}` : 'Check fitment before ordering', 'Ships Australia-wide', 'Fitment advice from our team'],
+    },
+    ramp: {
+      short: `${name}: load quads, buggies and bikes safely.`,
+      p: [`The ${name} gives you a safe way to load a quad, buggy or bike onto a trailer or ute. Check the load rating and length against your vehicle before ordering.`, `Freight is quoted by size and weight. Contact us if you need a delivery estimate to your postcode.`],
+      hl: ['Safe loading for off-road vehicles', 'Check load rating and length', 'Freight quoted by size'],
+    },
+    tyre: {
+      short: `${name}: replacement tyre${fits ? ' for ' + fits : ''}.`,
+      p: [`The ${name} gives you fresh grip for trails and tracks. Check the size and fitment before ordering.`, `Send us your model and we will confirm the correct size.`],
+      hl: [fits ? `For ${fits}` : 'Check size before ordering', 'Off-road tread', 'Ships Australia-wide'],
     },
     'utility-cart': {
       short: `${name}: a work-ready electric cart for estates, resorts, farms and grounds crews.`,
@@ -144,7 +175,7 @@ const prev = new Map(fs.existsSync(path.join(ROOT, 'data/catalog.json')) ? JSON.
 const out = [];
 const used = new Set();
 const missing = [];
-for (const [group, brand, brandPage, name, cats, srcs, opts = {}] of SPEC) {
+for (let [group, brand, brandPage, name, cats, srcs, opts = {}] of SPEC) {
   const found = [];
   for (const [file, rx] of srcs) {
     for (const hit of sources[file].filter((p) => rx.test(decode(p.name).trim()))) found.push({ file: hit.site || file, hit });
@@ -161,6 +192,7 @@ for (const [group, brand, brandPage, name, cats, srcs, opts = {}] of SPEC) {
   if (used.has(slug)) continue; used.add(slug);
   const c = copy(group, name, brand, fcts, opts);
   const category = cats[0];
+  if (['electric-buggy', 'remote-buggy'].includes(group)) cats = [...cats, '/golf-buggies/caddies-electric-trolleys/'];
   out.push({
     slug, sku: 'BFS-' + (hash(slug) % 90000 + 10000), name, brand, brandPage, group, groupLabel: GROUP_LABEL[group],
     categories: [...new Set(cats)], price, rrp: low.hit.price, savingPct: 2,

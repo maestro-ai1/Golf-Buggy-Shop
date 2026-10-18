@@ -26,17 +26,26 @@ async function fetchBuf(url, tries = 3) {
   return null;
 }
 
+// Studio shots on off-white / light-grey backdrops are pushed to pure white (#fff), as the Golden Image Rule requires.
+async function whitenStudio(buf) {
+  const { data, info } = await sharp(buf).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+  const w = info.width, h = info.height, band = Math.max(2, Math.round(Math.min(w, h) * 0.01)); let n = 0, light = 0;
+  for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { if (Math.min(x, y, w - 1 - x, h - 1 - y) >= band) continue; const i = (y * w + x) * 3; n++; if (Math.min(data[i], data[i + 1], data[i + 2]) >= 212) light++; }
+  return light / n >= 0.9 ? sharp(buf).linear(255 / 226, 0).toBuffer() : buf;
+}
+
 async function toSquare(buf, size) {
   let img = sharp(buf, { failOn: 'none' }).rotate().flatten({ background: '#ffffff' });
   const meta = await img.metadata();
-  if (!meta.width || meta.width < 380 || meta.height < 380) return null;
+  if (!meta.width || meta.width < 300 || meta.height < 300) return null;
   let work = img;
   try {
     const trimmed = await img.clone().trim({ background: '#ffffff', threshold: 14 }).toBuffer({ resolveWithObject: true });
     if (trimmed.info.width > meta.width * 0.12 && trimmed.info.height > meta.height * 0.12) work = sharp(trimmed.data);
   } catch { /* keep untrimmed */ }
   const inner = Math.round(size * 0.9);
-  const resized = await work.resize({ width: inner, height: inner, fit: 'inside', withoutEnlargement: false, kernel: 'lanczos3' }).toBuffer();
+  let resized = await work.resize({ width: inner, height: inner, fit: 'inside', withoutEnlargement: false, kernel: 'lanczos3' }).toBuffer();
+  resized = await whitenStudio(resized);
   return sharp({ create: { width: size, height: size, channels: 3, background: '#ffffff' } }).composite([{ input: resized, gravity: 'centre' }]);
 }
 
@@ -52,6 +61,7 @@ async function encode(canvas, dest, kb = 150) {
 
 async function processProduct(p) {
   const dir = path.join(OUT, p.slug);
+  if (process.env.FORCE) fs.rmSync(dir, { recursive: true, force: true });
   fs.mkdirSync(dir, { recursive: true });
   const seen = new Set();
   const kept = [];
@@ -62,7 +72,8 @@ async function processProduct(p) {
     const h = crypto.createHash('md5').update(buf).digest('hex');
     if (seen.has(h)) continue; seen.add(h);
     const n = kept.length + 1;
-    const big = await toSquare(buf, 1200);
+    let big = null;
+    try { big = await toSquare(buf, 1200); } catch { failures.push(url + ' (not an image)'); }
     if (!big) continue;
     await encode(big, path.join(dir, String(n)));
     const small = await toSquare(buf, 600);

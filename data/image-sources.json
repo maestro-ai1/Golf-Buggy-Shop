@@ -2468,5 +2468,55 @@
   "file": "products/kubota-rtv-xg850-sidekick-side-by-side/1",
   "source": "https://media.kubota.io/uploads/RTV-XG850-Thumbnail1-768x432.jpg",
   "product": "Kubota RTV-XG850 Sidekick Side by Side"
+ },
+ {
+  "file": "products/polaris-ranger-500-side-by-side/1",
+  "source": "https://www.polarisaustralia.com/fileadmin/templates/model26/trim/apla/rgr/500-green.jpg",
+  "product": "Polaris Ranger 500 Side by Side"
+ },
+ {
+  "file": "products/polaris-rzr-pro-r-side-by-side/1",
+  "source": "https://www.polarisaustralia.com/fileadmin/templates/model26/trim/apla/rzr/pro-r-ulti-red.jpg",
+  "product": "Polaris RZR Pro R Side by Side"
+ },
+ {
+  "file": "products/polaris-rzr-trail-s-1000-side-by-side/1",
+  "source": "https://www.polarisaustralia.com/fileadmin/templates/model26/trim/apla/rzr/1000s-ulti.jpg",
+  "product": "Polaris RZR Trail S 1000 Side by Side"
+ },
+ {
+  "file": "products/polaris-rzr-200-efi-youth-buggy/1",
+  "source": "https://www.polarisaustralia.com/fileadmin/templates/model26/trim/apla/youth/rzr-200-gray.jpg",
+  "product": "Polaris RZR 200 EFI Youth Buggy"
+ },
+ {
+  "file": "products/polaris-ranger-xp-1000-hd-side-by-side/1",
+  "source": "https://www.polarisaustralia.com/fileadmin/templates/model26/nav/rgr/cgi-apla-xp-1000-hd-grey.png",
+  "product": "Polaris Ranger XP 1000 HD Side by Side"
+ },
+ {
+  "file": "products/polaris-ranger-500-side-by-side/2",
+  "source": "https://www.polarisaustralia.com/fileadmin/templates/model26/trim/apla/rgr/500-gray.jpg",
+  "product": "Polaris Ranger 500 Side by Side"
+ },
+ {
+  "file": "products/polaris-ranger-crew-xp-1000-side-by-side/1",
+  "source": "https://www.polarisaustralia.com/fileadmin/templates/model26/trim/apla/rgr/crewxp1000-prem-orange.jpg",
+  "product": "Polaris Ranger Crew XP 1000 Side by Side"
+ },
+ {
+  "file": "products/polaris-ranger-xp-1000-hd-side-by-side/2",
+  "source": "https://www.polarisaustralia.com/fileadmin/templates/model26/trim/apla/rgr/xp1000-hd-gray.jpg",
+  "product": "Polaris Ranger XP 1000 HD Side by Side"
+ },
+ {
+  "file": "products/polaris-rzr-200-efi-youth-buggy/2",
+  "source": "https://www.polarisaustralia.com/fileadmin/templates/model24/nav/youth/rzr-200.png",
+  "product": "Polaris RZR 200 EFI Youth Buggy"
+ },
+ {
+  "file": "products/polaris-rzr-pro-r-side-by-side/2",
+  "source": "https://www.polarisaustralia.com/fileadmin/templates/model26/nav/rzr/cgi-apla-rzr-pro-r-red.png",
+  "product": "Polaris RZR Pro R Side by Side"
  }
 ]

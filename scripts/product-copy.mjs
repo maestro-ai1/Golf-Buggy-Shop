@@ -164,7 +164,9 @@ const WHY = [
 
 export function tagsFor(p, ctx) {
   const label = p.groupLabel;
-  const t = [label, `${p.brand} ${label}`.toLowerCase(), ctx.primary, ctx.secondary, `buy ${label} australia`];
+  // an "electric" category keyword is not a fair tag for a petrol product (one that lists an engine size)
+  const secondary = /electric/i.test(ctx.secondary || '') && p.specs?.Engine ? '' : ctx.secondary;
+  const t = [label, `${p.brand} ${label}`.toLowerCase(), ctx.primary, secondary, `buy ${label} australia`];
   const out = []; for (const x of t) { const v = (x || '').toLowerCase().replace(/\s+/g, ' ').trim(); if (v && !out.includes(v)) out.push(v); }
   const extras = [`${label} for sale`, `${label} online`, `${p.brand} australia`, `${label} price`];
   for (const x of extras) { if (out.length >= 5) break; const v = x.toLowerCase(); if (!out.includes(v)) out.push(v); }

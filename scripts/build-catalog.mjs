@@ -32,7 +32,7 @@ function facts(text, name) {
   m(/\b(\d{2}\s?V)\b/i, 'Voltage');
   m(/\b(\d{2,3}\s?Ah)\b/i, 'Battery capacity');
   m(/\b(\d{3,4}\s?Wh)\b/i, 'Battery energy');
-  m(/\b(\d{2,3}\s?cc)\b/i, 'Engine');
+  m(/\b(\d{2,4}\s?cc)\b/i, 'Engine');
   m(/(\d)\s?seat/i, 'Seats');
   m(/(\d{1,2})\s?inch/i, 'Wheel size', (x) => x + ' inch');
   return f;

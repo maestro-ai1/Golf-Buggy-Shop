@@ -104,28 +104,28 @@
   "alt": "Orange Kubota RTV520 utility vehicle working on a dairy farm"
  },
  "/brands/powakaddy/": {
-  "base": "/images/hero/golf-buggies-push-pull",
-  "alt": "Electric golf trolley carrying a golf bag on the green"
+  "base": "/images/hero/brand-powakaddy",
+  "alt": "Row of PowaKaddy electric golf trolleys on a fairway"
  },
  "/brands/rovic/": {
-  "base": "/images/hero/golf-buggies-push-pull",
-  "alt": "Electric golf trolley carrying a golf bag on the green"
+  "base": "/images/hero/brand-rovic",
+  "alt": "Golfer setting up a Rovic push buggy on the course"
  },
  "/brands/caddytek/": {
-  "base": "/images/hero/golf-buggies-push-pull",
-  "alt": "Electric golf trolley carrying a golf bag on the green"
+  "base": "/images/hero/brand-caddytek",
+  "alt": "Caddytek push buggies on a golf course green"
  },
  "/brands/big-max/": {
-  "base": "/images/hero/golf-buggies-push-pull",
-  "alt": "Electric golf trolley carrying a golf bag on the green"
+  "base": "/images/hero/brand-big-max",
+  "alt": "Big Max push buggy with golf bag beside a lake on the course"
  },
  "/brands/triumph/": {
   "base": "/images/hero/golf-buggies-push-pull",
   "alt": "Electric golf trolley carrying a golf bag on the green"
  },
  "/brands/tri-lite/": {
-  "base": "/images/hero/golf-buggies-push-pull",
-  "alt": "Electric golf trolley carrying a golf bag on the green"
+  "base": "/images/hero/brand-tri-lite",
+  "alt": "Golf trolley with a blue bag on the putting green"
  },
  "/brands/smoothy/": {
   "base": "/images/hero/golf-buggies-push-pull",
@@ -148,20 +148,20 @@
   "alt": "Red CFMOTO UFORCE side-by-side towing a boat on a beach"
  },
  "/brands/john-deere/": {
-  "base": "/images/hero/off-road-side-by-sides",
-  "alt": "Orange side by side UTV"
+  "base": "/images/hero/brand-john-deere",
+  "alt": "John Deere Gator utility vehicle on a farm"
  },
  "/brands/honda/": {
-  "base": "/images/hero/off-road-side-by-sides",
-  "alt": "Orange side by side UTV"
+  "base": "/images/hero/brand-honda",
+  "alt": "Red Honda Pioneer 1000 side-by-side parked on a mountain trail"
  },
  "/brands/hammerhead/": {
   "base": "/images/hero/brand-hammerhead",
   "alt": "Three Hammerhead go karts parked on a dirt trail"
  },
  "/brands/segway/": {
-  "base": "/images/hero/off-road-electric-utvs",
-  "alt": "Electric off-road UTV side by side"
+  "base": "/images/hero/brand-segway",
+  "alt": "Segway Villain side-by-side on a mountain river bed"
  },
  "/parts-accessories/": {
   "base": "/images/hero/off-road-mini-quads",

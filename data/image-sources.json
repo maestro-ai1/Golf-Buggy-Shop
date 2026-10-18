@@ -2461,12 +2461,12 @@
  },
  {
   "file": "products/kubota-rtv520-side-by-side/1",
-  "source": "https://media.kubota.io/uploads/RTV520-thumbnail2-768x432.jpg",
+  "source": "https://morefarmstores.com/wp-content/uploads/2023/03/RTV520-2-1024x679.png",
   "product": "Kubota RTV520 Side by Side"
  },
  {
   "file": "products/kubota-rtv-xg850-sidekick-side-by-side/1",
-  "source": "https://media.kubota.io/uploads/RTV-XG850-Thumbnail1-768x432.jpg",
+  "source": "https://www.kubotausa.com/_next/image?url=https:%2F%2Fassets.kubotacore.com%2Fimages%2FRTVX850.jpg&w=1200&q=90",
   "product": "Kubota RTV-XG850 Sidekick Side by Side"
  },
  {
@@ -2518,5 +2518,20 @@
   "file": "products/polaris-rzr-pro-r-side-by-side/2",
   "source": "https://www.polarisaustralia.com/fileadmin/templates/model26/nav/rzr/cgi-apla-rzr-pro-r-red.png",
   "product": "Polaris RZR Pro R Side by Side"
+ },
+ {
+  "file": "products/kubota-rtv520-side-by-side/2",
+  "source": "https://media.kubota.io/uploads/RTV520-thumbnail2-768x432.jpg",
+  "product": "Kubota RTV520 Side by Side"
+ },
+ {
+  "file": "products/kubota-rtv-xg850-sidekick-side-by-side/2",
+  "source": "https://www.rosher.com.au/wp-content/uploads/2020/01/RTV-XG850-Sidekick-product-model-image.png",
+  "product": "Kubota RTV-XG850 Sidekick Side by Side"
+ },
+ {
+  "file": "products/kubota-rtv-xg850-sidekick-side-by-side/3",
+  "source": "https://media.kubota.io/uploads/RTV-XG850-Thumbnail1-768x432.jpg",
+  "product": "Kubota RTV-XG850 Sidekick Side by Side"
  }
 ]

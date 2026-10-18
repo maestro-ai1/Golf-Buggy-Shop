@@ -7,7 +7,8 @@ const jobs = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
 const mapFile = path.join(ROOT, 'data/category-heroes.json');
 const map = JSON.parse(fs.readFileSync(mapFile, 'utf8')); const csv = [];
 for (const j of jobs) {
-  const name = 'brand-' + j.brand; const buf = fs.readFileSync(j.src);
+  const name = 'brand-' + j.brand; let buf = fs.readFileSync(j.src);
+  if (j.extract) buf = await sharp(buf).extract(j.extract).toBuffer(); // crop inward, e.g. to remove a corner watermark
   for (const [w, sfx] of [[2400, ''], [1200, '-1200']]) {
     const H = w / 2, fgW = Math.round(w * 0.64);
     const bg = await sharp(buf).rotate().flatten({ background: '#10261d' }).resize(w, H, { fit: 'cover' }).blur(28).modulate({ brightness: 0.45, saturation: 1.1 }).toBuffer();

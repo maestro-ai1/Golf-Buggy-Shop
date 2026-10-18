@@ -135,43 +135,81 @@ export default function Home() {
         <div className="container-x">
           <div className="prose-copy max-w-3xl">
             <h2 id="buyers-h">Buggies for sale in Australia: golf, electric and off-road</h2>
-            <p>When people search for buggies for sale they usually mean one of three things: a golf buggy that carries clubs around the course, a golf cart or utility buggy for a property, or an off-road buggy for work and recreation. Buggies For Sale lists all three in one place, with Australian prices that include GST, clear delivery costs and a team you can call before you order.</p>
+            <p>Looking for buggies for sale? Buggies For Sale lists golf buggies, golf carts and off-road buggies in one place, with Australian prices that include GST, clear delivery costs and a team you can call before you order.</p>
           </div>
+
           <div className="mt-6 grid gap-5 md:grid-cols-3">
-            <div className="card prose-copy p-6 [&_h3]:mt-0">
-              <h3>Golf buggies and golf carts</h3>
-              <p>A golf buggy takes the weight off your back and keeps your bag steady. You can start with a simple <Link href="/golf-buggies/push-pull-trolleys/">push buggy</Link>, move up to a <Link href="/golf-buggies/motorised-electric/">motorised electric buggy</Link> or choose a <Link href="/golf-buggies/remote-control/">remote control golf buggy</Link> that follows your lead. If you need to carry people, our <Link href="/golf-carts/">golf carts</Link> include lithium electric and petrol models in two to eight seats. Not sure which type suits you? Read our guide to <Link href="/blog/electric-vs-push-golf-buggy-which-should-you-buy/">electric vs push golf buggies</Link>.</p>
-            </div>
-            <div className="card prose-copy p-6 [&_h3]:mt-0">
-              <h3>Beach buggy for sale and other off-road buggies</h3>
-              <p>If you want sand, farm tracks or bush trails, look at a <Link href="/off-road-buggies/dune-buggies/">dune or beach buggy</Link>, a <Link href="/off-road-buggies/side-by-sides-utvs/">side-by-side</Link> or a <Link href="/off-road-buggies/go-karts/">go kart</Link>. Choose the engine size and seating for your ground and your riders, and plan helmets and training from day one. Our <Link href="/blog/offroad-buggy/">off-road buggy buyer guide</Link> explains the options in plain language, and our <Link href="/brands/trailmaster/">Trailmaster range</Link> is a popular place to start.</p>
-            </div>
-            <div className="card prose-copy p-6 [&_h3]:mt-0">
-              <h3>Kids buggies, parts and accessories</h3>
-              <p>Younger drivers can start with a licensed <Link href="/off-road-buggies/kids-buggies/">kids ride-on buggy</Link> or a youth quad, always with supervision. Owners can keep a buggy or cart working with <Link href="/parts-accessories/golf-buggy-parts/lithium-batteries/">lithium batteries</Link>, chargers, wheels and <Link href="/parts-accessories/golf-cart-accessories/">accessories</Link>.</p>
-            </div>
+            <article className="card flex flex-col overflow-hidden">
+              <Link href="/golf-buggies/" aria-hidden="true" tabIndex={-1} className="block">
+                <picture>
+                  <source type="image/avif" srcSet="/images/home/guide-golf.avif" />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/home/guide-golf.webp" alt="Electric golf buggy carrying a golf bag on the fairway" width={800} height={600} loading="lazy" decoding="async" className="aspect-[4/3] w-full object-cover" />
+                </picture>
+              </Link>
+              <div className="flex flex-1 flex-col p-6">
+                <div className="prose-copy flex-1 [&_h3]:mt-0">
+                  <h3>Golf buggies and golf carts</h3>
+                  <p>Start with a simple <Link href="/golf-buggies/push-pull-trolleys/">push buggy</Link>, move up to a <Link href="/golf-buggies/motorised-electric/">motorised electric buggy</Link> or choose a <Link href="/golf-buggies/remote-control/">remote control golf buggy</Link>. Need to carry people? Our <Link href="/golf-carts/">golf carts</Link> come in lithium electric and petrol, from two to eight seats. Not sure which suits you? Read <Link href="/blog/electric-vs-push-golf-buggy-which-should-you-buy/">electric vs push golf buggies</Link>.</p>
+                </div>
+                <Link href="/golf-buggies/" className="mt-1 inline-flex items-center gap-1 text-sm font-extrabold text-accent-600 hover:underline">Shop golf buggies <ArrowRight size={16} aria-hidden="true" /></Link>
+              </div>
+            </article>
+
+            <article className="card flex flex-col overflow-hidden">
+              <Link href="/off-road-buggies/dune-buggies/" aria-hidden="true" tabIndex={-1} className="block">
+                <picture>
+                  <source type="image/avif" srcSet="/images/home/guide-offroad.avif" />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/home/guide-offroad.webp" alt="Dune buggies driving across sand" width={800} height={600} loading="lazy" decoding="async" className="aspect-[4/3] w-full object-cover" />
+                </picture>
+              </Link>
+              <div className="flex flex-1 flex-col p-6">
+                <div className="prose-copy flex-1 [&_h3]:mt-0">
+                  <h3>Beach buggy for sale and other off-road buggies</h3>
+                  <p>For sand, farm tracks or bush trails, look at a <Link href="/off-road-buggies/dune-buggies/">dune or beach buggy</Link>, a <Link href="/off-road-buggies/side-by-sides-utvs/">side-by-side</Link> or a <Link href="/off-road-buggies/go-karts/">go kart</Link>. Choose the engine size and seating for your ground, and plan helmets and training from day one. Our <Link href="/blog/offroad-buggy/">off-road buggy buyer guide</Link> explains the options, and the <Link href="/brands/trailmaster/">Trailmaster range</Link> is a popular place to start.</p>
+                </div>
+                <Link href="/off-road-buggies/" className="mt-1 inline-flex items-center gap-1 text-sm font-extrabold text-accent-600 hover:underline">Shop off-road buggies <ArrowRight size={16} aria-hidden="true" /></Link>
+              </div>
+            </article>
+
+            <article className="card flex flex-col overflow-hidden">
+              <Link href="/off-road-buggies/kids-buggies/" aria-hidden="true" tabIndex={-1} className="block">
+                <picture>
+                  <source type="image/avif" srcSet="/images/home/guide-kids.avif" />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/home/guide-kids.webp" alt="Youth off-road buggy with roll cage and seat belts" width={800} height={600} loading="lazy" decoding="async" className="aspect-[4/3] w-full object-cover" />
+                </picture>
+              </Link>
+              <div className="flex flex-1 flex-col p-6">
+                <div className="prose-copy flex-1 [&_h3]:mt-0">
+                  <h3>Kids buggies, parts and accessories</h3>
+                  <p>Younger drivers can start with a licensed <Link href="/off-road-buggies/kids-buggies/">kids ride-on buggy</Link> or a youth quad, always supervised. Keep any buggy or cart running with <Link href="/parts-accessories/golf-buggy-parts/lithium-batteries/">lithium batteries</Link>, chargers, wheels and <Link href="/parts-accessories/golf-cart-accessories/">accessories</Link>.</p>
+                </div>
+                <Link href="/off-road-buggies/kids-buggies/" className="mt-1 inline-flex items-center gap-1 text-sm font-extrabold text-accent-600 hover:underline">Shop kids buggies <ArrowRight size={16} aria-hidden="true" /></Link>
+              </div>
+            </article>
           </div>
-          <div className="mt-10 grid items-start gap-10 lg:grid-cols-[1.3fr_1fr]">
+
+          <div className="mt-10 grid items-start gap-8 lg:grid-cols-[1.3fr_1fr]">
             <div className="prose-copy">
-              <h3>How to buy a buggy online</h3>
-            <ol>
-              <li>Pick the type that matches the job, using the categories above.</li>
-              <li>Compare the specifications, the warranty and the delivered price.</li>
-              <li>Add your buggy and any accessories to the cart. The minimum order is $250 and delivery is free over $1,000.</li>
-              <li>Choose bank transfer (Osko or EFT), PayID, or Bitcoin or USDT for an extra 10% off at checkout.</li>
-              <li>We confirm stock and freight, then email your payment details and keep you updated until it arrives.</li>
-            </ol>
-              <h3>Why Australians choose Buggies For Sale</h3>
-            <p>Every product page shows the specifications, the delivered cost and the warranty position, so you can compare models without chasing a quote. We are a Sydney-based team that has supplied golfers, farms, estates and families since 2023, and we are happy to talk through seating, batteries, fitment and freight before you pay. If you are buying for a club, resort or fleet, ask about wholesale and purchase-order arrangements on our <Link href="/wholesale/">wholesale page</Link>.</p>
-              <p className="text-sm text-muted">Popular searches: buggy, buggies, beach buggy for sale, for sale buggy and buggy buggies. Whatever you type, the shop above has the range.</p>
+              <h3 className="!mt-0">How to buy a buggy online</h3>
+              <ol>
+                <li>Pick the type that matches the job and compare specifications, warranty and delivered price.</li>
+                <li>Add your buggy and any accessories to the cart. The minimum order is $250 and delivery is free over $1,000.</li>
+                <li>Choose bank transfer (Osko or EFT), PayID, or Bitcoin or USDT for an extra 10% off at checkout.</li>
+                <li>We confirm stock and freight, then email your payment details and keep you updated until it arrives.</li>
+              </ol>
+              <p>We are a Sydney-based team supplying golfers, farms, estates and families since 2023. Buying for a club, resort or fleet? See our <Link href="/wholesale/">wholesale page</Link>.</p>
+              <p className="text-sm text-muted">Popular searches: buggy, buggies, beach buggy for sale, for sale buggy and buggy buggies.</p>
             </div>
             <aside className="card p-6 lg:sticky lg:top-28">
-            <h2 className="font-display text-xl font-extrabold">Need help choosing?</h2>
-            <p className="mt-2 text-sm text-muted">Tell us where and how you will use your buggy and we will suggest models, options and freight.</p>
-            <a href="tel:+61420128746" className="btn btn-green mt-4 w-full">Call 0420 128 746</a>
-            <a href="https://wa.me/61420128746?text=Hi%20Buggies%20For%20Sale%2C%20" target="_blank" rel="noopener noreferrer" className="btn btn-ghost mt-3 w-full">WhatsApp us</a>
-            <Link href="/contact/" className="mt-3 block text-center text-sm font-extrabold text-accent-600">Send an enquiry →</Link>
-          </aside>
+              <h2 className="font-display text-xl font-extrabold">Need help choosing?</h2>
+              <p className="mt-2 text-sm text-muted">Tell us where and how you will use your buggy and we will suggest models, options and freight.</p>
+              <a href="tel:+61420128746" className="btn btn-green mt-4 w-full">Call 0420 128 746</a>
+              <a href="https://wa.me/61420128746?text=Hi%20Buggies%20For%20Sale%2C%20" target="_blank" rel="noopener noreferrer" className="btn btn-ghost mt-3 w-full">WhatsApp us</a>
+              <Link href="/contact/" className="mt-3 block text-center text-sm font-extrabold text-accent-600">Send an enquiry →</Link>
+            </aside>
           </div>
         </div>
       </section>

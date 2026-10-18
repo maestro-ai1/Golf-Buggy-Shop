@@ -13,7 +13,7 @@ Australia's premier online store for off-road buggies, 4x4 UTVs, electric and re
 - **High-Converting E-Commerce Engine**:
   - Live filterable catalog with price slider, keyword search, in-stock toggle, and sort
   - Cart drawer with live free shipping progress bar towards $1,000 threshold
-  - Minimum order ($500) validation
+  - Minimum order ($250) validation
   - 5% instant checkout discount for BTC / USDT cryptocurrency
   - Australia Postcode delivery freight estimator
   - Interactive multi-channel chat (WhatsApp, SMS Text, Phone, Email)

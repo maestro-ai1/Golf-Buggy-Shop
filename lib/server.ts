@@ -51,7 +51,7 @@ export const storeReady = () => getRedis() !== null;
 export interface StoredOrder {
   orderNumber: string; customerName: string; customerEmail: string; customerPhone: string; address: string;
   items: { slug: string; name: string; price: number; quantity: number }[]; subtotal: number; shipping: number; cryptoDiscount: number; amountDue: number;
-  paymentMethod: string; notes?: string; status: 'pending' | 'payment-sent' | 'payment-confirmed'; channel: 'whatsapp' | 'email'; createdAt: number;
+  paymentMethod: string; notes?: string; status: 'pending' | 'payment-sent' | 'screenshot-received' | 'payment-confirmed'; channel: 'whatsapp' | 'email'; createdAt: number;
   paymentDetails?: string; paymentMethodId?: string;
 }
 export interface StoredEnquiry { id: string; type: 'contact' | 'wholesale'; name: string; email: string; phone?: string; message: string; topic?: string; status: 'new' | 'replied'; createdAt: number; reply?: string }

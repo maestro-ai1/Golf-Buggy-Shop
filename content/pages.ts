@@ -327,7 +327,7 @@ export const COPY: Record<string, PageCopy> = {
       ['How do I know a part will fit?', 'Send us your cart make, model and year.'],
       ['Do you sell quad bike spare parts?', 'Ask us about parts for off-road buggies and quads.'],
       ['Do you install parts?', 'Contact us for installation advice. Some items need a qualified installer.'],
-      ['Is there a minimum order?', 'Our minimum order is $500.'],
+      ['Is there a minimum order?', 'Our minimum order is $250.'],
     ],
   },
   '/parts-accessories/golf-cart-accessories/': {

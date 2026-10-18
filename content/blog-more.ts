@@ -52,7 +52,7 @@ export const MORE: Record<string, { tags: string[]; add: string[] }> = {
       `## How to compare two quotes`,
       `Put both quotes side by side and tick off the same items: seats, battery type and capacity, charger, roof and windscreen, lights, tyres, freight and warranty. If one quote is missing an item, ask for it to be added so the comparison is fair. Ask about delivery time and what happens if the cart arrives damaged. A clear, itemised quote is a good sign of a seller who stands behind the product.`,
       `## Finance, payment and GST`,
-      `All of our prices include 10% GST, and delivery is free over $1,000, with a flat $95 below that. The minimum order is $500. You can pay by bank transfer (Osko or EFT) or PayID, or use Bitcoin or USDT for an extra 10% off, applied automatically at checkout. If you are buying for a business, ask your accountant about how GST and depreciation apply to your situation.`,
+      `All of our prices include 10% GST, and delivery is free over $1,000, with a flat $95 below that. The minimum order is $250. You can pay by bank transfer (Osko or EFT) or PayID, or use Bitcoin or USDT for an extra 10% off, applied automatically at checkout. If you are buying for a business, ask your accountant about how GST and depreciation apply to your situation.`,
     ],
   },
   'electric-vs-push-golf-buggy-which-should-you-buy': {

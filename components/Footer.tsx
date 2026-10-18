@@ -35,7 +35,7 @@ export default function Footer() {
             <Pay label="Bitcoin"><span className="grid h-6 w-6 place-items-center rounded-full bg-[#f7931a] text-[14px] font-black text-white">₿</span></Pay>
             <Pay label="USDT"><span className="grid h-6 w-6 place-items-center rounded-full bg-[#26a17b] text-[13px] font-black text-white">₮</span></Pay>
           </ul>
-          <p className="mt-4 text-xs leading-relaxed text-fw-200">Pay with Bitcoin or USDT for an extra 10% off, applied automatically at checkout. Minimum order $500.</p>
+          <p className="mt-4 text-xs leading-relaxed text-fw-200">Pay with Bitcoin or USDT for an extra 10% off, applied automatically at checkout. Minimum order $250.</p>
         </div>
       </div>
       <div className="border-t border-white/10">

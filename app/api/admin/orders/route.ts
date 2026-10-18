@@ -11,7 +11,7 @@ export async function PATCH(req: NextRequest) {
   const bad = checkAdmin(req); if (bad) return bad;
   const { id, status } = await req.json();
   const o = await getOrder(id); if (!o) return NextResponse.json({ error: 'Not found' }, { status: 404 });
-  if (['pending', 'payment-sent', 'payment-confirmed'].includes(status)) { o.status = status; await saveOrder(o); }
+  if (['pending', 'payment-sent', 'screenshot-received', 'payment-confirmed'].includes(status)) { o.status = status; await saveOrder(o); }
   return NextResponse.json({ ok: true, order: o });
 }
 export async function DELETE(req: NextRequest) {

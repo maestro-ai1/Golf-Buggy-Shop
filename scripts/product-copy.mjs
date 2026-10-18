@@ -151,9 +151,9 @@ const CARE = {
 };
 
 const SERVICE = [
-  `We deliver Australia-wide. Delivery is free over $1,000 to major metro and depot corridors, and a flat $95 applies below that. The minimum order is $500, and all prices include 10% GST. Pay by bank transfer (Osko or EFT) or PayID, or choose Bitcoin or USDT and receive an extra 10% off, applied automatically at checkout. After you place your order, our team confirms stock and freight and emails your payment details.`,
-  `Your order ships from our depots and partners Australia-wide, with free delivery over $1,000 and a flat $95 below that. The minimum order is $500, and prices include 10% GST. Payment options are bank transfer (Osko or EFT), PayID, or Bitcoin and USDT with an extra 10% discount that applies automatically at checkout. Our team confirms stock and freight before payment details are sent.`,
-  `Delivery is Australia-wide, free over $1,000 and a flat $95 under that, with a $500 minimum order and GST included in every price. You can pay by Osko or EFT bank transfer or PayID, or use Bitcoin or USDT to take 10% off automatically at checkout. We confirm stock and freight first, then email payment details. Questions? Call 0420 128 746 or message us on WhatsApp.`,
+  `We deliver Australia-wide. Delivery is free over $1,000 to major metro and depot corridors, and a flat $95 applies below that. The minimum order is $250, and all prices include 10% GST. Pay by bank transfer (Osko or EFT) or PayID, or choose Bitcoin or USDT and receive an extra 10% off, applied automatically at checkout. After you place your order, our team confirms stock and freight and emails your payment details.`,
+  `Your order ships from our depots and partners Australia-wide, with free delivery over $1,000 and a flat $95 below that. The minimum order is $250, and prices include 10% GST. Payment options are bank transfer (Osko or EFT), PayID, or Bitcoin and USDT with an extra 10% discount that applies automatically at checkout. Our team confirms stock and freight before payment details are sent.`,
+  `Delivery is Australia-wide, free over $1,000 and a flat $95 under that, with a $250 minimum order and GST included in every price. You can pay by Osko or EFT bank transfer or PayID, or use Bitcoin or USDT to take 10% off automatically at checkout. We confirm stock and freight first, then email payment details. Questions? Call 0420 128 746 or message us on WhatsApp.`,
 ];
 
 const WHY = [

@@ -61,7 +61,7 @@ const ADVICE: Record<string, { h2: string; p: string }[]> = {
     { h2: 'Check fitment first', p: 'Confirm the make, model and year, compare dimensions or part numbers and send us your details if you are unsure. Many items are universal, but voltage, mounting points and connectors vary between models.' },
     { h2: 'Fitting and safety', p: 'Use the right tools and follow the manual. High-current electrical work and brake or steering parts are best left to a qualified installer, and photos of the finished job help with warranty claims.' },
     { h2: 'Genuine and compatible options', p: 'Genuine parts match the original specification, and good compatible parts can offer value. Compare warranty, materials and reviews, and keep your old part until the new one is working.' },
-    { h2: 'Delivery and returns', p: 'Orders over $1,000 ship free and a flat $95 applies below that, with a $500 minimum order. Bundle several items into one order to reach free delivery, and ask us about freight for large or heavy parts.' },
+    { h2: 'Delivery and returns', p: 'Orders over $1,000 ship free and a flat $95 applies below that, with a $250 minimum order. Bundle several items into one order to reach free delivery, and ask us about freight for large or heavy parts.' },
   ],
   brands: [
     { h2: 'Choosing the right model', p: 'Start with how you will use it, then compare specifications, warranty and the delivered price including GST. If a model you want is not listed, tell us the details and we will check availability and freight.' },

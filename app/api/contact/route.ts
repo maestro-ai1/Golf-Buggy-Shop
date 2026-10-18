@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
   const mail = await sendMail({
     to: process.env[type === 'wholesale' ? 'WHOLESALE_EMAIL' : 'CONTACT_EMAIL'] || to, replyTo: email,
     subject: `${type === 'wholesale' ? 'Wholesale enquiry' : 'Website enquiry'}${enq.topic ? ': ' + enq.topic : ''} (${enq.id})`,
-    html: emailShell('New enquiry', table(fieldRow('Reference', enq.id) + fieldRow('Name', name) + fieldRow('Email', email) + fieldRow('Phone', enq.phone || '-') + fieldRow('Topic', enq.topic || '-')) + `<p style="margin:16px 0 0;white-space:pre-wrap;font-size:14px;line-height:1.6">${esc(message)}</p>`, stored ? { href: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://buggiesforsale.com.au'}/admin/enquiries/`, label: 'Reply in Dashboard' } : undefined),
+    html: emailShell('New enquiry', table(fieldRow('Reference', enq.id) + fieldRow('Name', name) + fieldRow('Email', email) + fieldRow('Phone', enq.phone || '-') + fieldRow('Topic', enq.topic || '-')) + `<p style="margin:16px 0 0;white-space:pre-wrap;font-size:14px;line-height:1.6">${esc(message)}</p>`),
   });
   if (!mail.sent && !stored) return NextResponse.json({ success: false, error: 'Our enquiry form is temporarily unavailable. Please call 0420 128 746 or WhatsApp us.' }, { status: 503 });
   return NextResponse.json({ success: true, id: enq.id });

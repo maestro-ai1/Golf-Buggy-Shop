@@ -20,7 +20,7 @@ function CopyField({ f }: { f: Field }) {
 
 function Inner() {
   const id = useSearchParams().get('id') || '';
-  const [data, setData] = useState<{ orderNumber: string; amountDue: number; fields: Field[] } | null>(null);
+  const [data, setData] = useState<{ orderNumber: string; amountDue: number; fields: Field[]; status?: string } | null>(null);
   const [err, setErr] = useState('');
   useEffect(() => { if (!id) return; fetch(`/api/order/payment-details?id=${encodeURIComponent(id)}`).then(async (r) => { const j = await r.json(); if (r.ok) setData(j); else setErr(j.error || 'Not available'); }).catch(() => setErr('Could not load details.')); }, [id]);
   return (
@@ -29,8 +29,12 @@ function Inner() {
       {err && <p className="card mt-5 p-5 text-muted">{err}</p>}
       {data && (<>
         <p className="mt-3 text-muted">Order <strong className="text-fw-900">{data.orderNumber}</strong> · Amount due <strong className="text-fw-900">${data.amountDue.toLocaleString('en-AU', { minimumFractionDigits: 2 })} AUD</strong></p>
-        <div className="mt-6 space-y-3">{data.fields.map((f, i) => <CopyField key={i} f={f} />)}</div>
-        <Link href={`/order/confirm-payment/?id=${encodeURIComponent(data.orderNumber)}`} className="btn btn-primary mt-8 w-full">I have paid: upload a screenshot</Link>
+        {data.status === 'payment-confirmed' && <p className="card mt-5 p-5 font-semibold text-fw-800">Payment received. Thank you! We are arranging your delivery and will be in touch.</p>}
+        {data.status === 'screenshot-received' && <p className="card mt-5 p-5 font-semibold text-fw-800">We have your payment screenshot and are confirming it now.</p>}
+        {data.status !== 'payment-confirmed' && (<>
+          <div className="mt-6 space-y-3">{data.fields.map((f, i) => <CopyField key={i} f={f} />)}</div>
+          <Link href={`/order/confirm-payment/?id=${encodeURIComponent(data.orderNumber)}`} className="btn btn-primary mt-8 w-full">{data.status === 'screenshot-received' ? 'Upload another screenshot' : 'I have paid: upload a screenshot'}</Link>
+        </>)}
       </>)}
     </div></section>
   );

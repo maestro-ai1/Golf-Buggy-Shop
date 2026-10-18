@@ -123,7 +123,7 @@ export default function Home() {
             <div className="mt-8 flex flex-wrap gap-3"><Link href="/about/" className="btn btn-primary">About us</Link><Link href="/wholesale/" className="btn !bg-white/10 text-white ring-1 ring-white/30 hover:!bg-white/20">Wholesale & fleet</Link></div>
           </div>
           <dl className="grid grid-cols-2 gap-4">
-            {[['2023', 'Established in Sydney'], [`${PRODUCTS.length}+`, 'Models and parts online'], ['AU-wide', 'Freight and depots'], ['$500', 'Minimum order, free delivery over $1,000']].map(([a, b]) => (
+            {[['2023', 'Established in Sydney'], [`${PRODUCTS.length}+`, 'Models and parts online'], ['AU-wide', 'Freight and depots'], ['$250', 'Minimum order, free delivery over $1,000']].map(([a, b]) => (
               <div key={b} className="rounded-2xl bg-white/[.07] p-6 ring-1 ring-white/10"><dt className="font-display text-4xl font-black text-accent">{a}</dt><dd className="mt-1 text-sm text-fw-100">{b}</dd></div>
             ))}
           </dl>
@@ -146,7 +146,7 @@ export default function Home() {
             <ol>
               <li>Pick the type that matches the job, using the categories above.</li>
               <li>Compare the specifications, the warranty and the delivered price.</li>
-              <li>Add your buggy and any accessories to the cart. The minimum order is $500 and delivery is free over $1,000.</li>
+              <li>Add your buggy and any accessories to the cart. The minimum order is $250 and delivery is free over $1,000.</li>
               <li>Choose bank transfer (Osko or EFT), PayID, or Bitcoin or USDT for an extra 10% off at checkout.</li>
               <li>We confirm stock and freight, then email your payment details and keep you updated until it arrives.</li>
             </ol>

@@ -169,7 +169,7 @@ const FAQ_BY_GROUP = (name, group, price, fits) => [
   [`Do you deliver the ${name} Australia-wide?`, 'Yes. Orders over $1,000 ship free to major capital city metro and depot corridors, and a flat $95 freight fee applies below that. We will confirm regional freight before dispatch.'],
   [`What warranty does it have?`, 'The manufacturer warranty applies. Warranty details and conditions are provided with your order confirmation, and our team can answer questions before you buy.'],
   [fits ? `Will it fit my cart or buggy?` : `Can I check suitability before I buy?`, fits ? `It is intended for ${fits}. Send us your exact model and year before ordering and we will confirm fit.` : 'Yes. Call 0420 128 746 or message us on WhatsApp with your use case and we will confirm that this is the right model.'],
-  [`What payment options do you accept?`, 'We accept bank transfer (Osko or EFT), PayID, and Bitcoin or USDT with an extra 10% crypto discount applied at checkout. The minimum order is $500.'],
+  [`What payment options do you accept?`, 'We accept bank transfer (Osko or EFT), PayID, and Bitcoin or USDT with an extra 10% crypto discount applied at checkout. The minimum order is $250.'],
 ];
 
 // keep already-processed images when a product's raw image list is unchanged (avoids re-downloading)

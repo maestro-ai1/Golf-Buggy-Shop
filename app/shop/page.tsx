@@ -23,7 +23,7 @@ export default function Shop() {
       <section className="border-b border-line bg-white"><div className="container-x py-8">
         <Breadcrumbs trail={trail} />
         <h1 className="mt-4 text-4xl font-black md:text-5xl">Shop all buggies, carts &amp; parts</h1>
-        <p className="mt-3 max-w-2xl text-lg text-muted">{PRODUCTS.length} products from trusted brands, delivered Australia-wide. Minimum order $500, free delivery over $1,000.</p>
+        <p className="mt-3 max-w-2xl text-lg text-muted">{PRODUCTS.length} products from trusted brands, delivered Australia-wide. Minimum order $250, free delivery over $1,000.</p>
         <ul className="mt-6 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
           {tiles.map((t) => (
             <li key={t.url}><Link href={t.url} className="card card-hover group flex h-full flex-col overflow-hidden">

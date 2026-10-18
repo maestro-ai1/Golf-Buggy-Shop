@@ -39,7 +39,7 @@
       },
       {
         name: "order_via_whatsapp",
-        description: "Initiate a WhatsApp order inquiry with Australian desk. Minimum order $500 AUD.",
+        description: "Initiate a WhatsApp order inquiry with Australian desk. Minimum order $250 AUD.",
         inputSchema: {
           type: "object",
           properties: {

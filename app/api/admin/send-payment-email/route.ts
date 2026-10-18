@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { REPLY } from '@/config/site';
-import { aud, checkAdmin, emailShell, esc, fieldRow, getOrder, parsePaymentDetail, saveOrder, sendMail, table } from '@/lib/server';
+import { aud, checkAdmin, emailShell, esc, fieldRow, getOrder, orderSummary, parsePaymentDetail, saveOrder, sendMail, table } from '@/lib/server';
 
 export const runtime = 'nodejs';
 
@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
   const link = `${site}/order/payment-details/?id=${encodeURIComponent(o.orderNumber)}`;
   const fields = parsePaymentDetail(o.paymentDetails);
   const terms = [method.opening.replace('{amount}', aud(o.amountDue)).replace('{ref}', o.orderNumber), method.closing, `Please pay within ${REPLY.deadlineHours} hours to hold your order.`];
-  const html = emailShell(`Payment details for order ${o.orderNumber}`, `<p style="font-size:15px;line-height:1.6">Hi ${esc(o.customerName.split(' ')[0])}, here are your payment details. Tap the button below to copy each field easily.</p>${table(fields.map((f) => fieldRow(f.label, f.value)).join(''))}<p style="margin-top:14px;font-size:14px;line-height:1.7">${terms.map(esc).join('<br>')}</p>`, { href: link, label: 'Open payment page and copy details' });
+  const html = emailShell(`Payment details for order ${o.orderNumber}`, `<p style="font-size:15px;line-height:1.6">Hi ${esc(o.customerName.split(' ')[0])}, here are your payment details. Tap the button below to copy each field easily.</p>${table(fields.map((f) => fieldRow(f.label, f.value)).join(''))}<p style="margin:14px 0 20px;font-size:14px;line-height:1.7">${terms.map(esc).join('<br>')}</p>${orderSummary(o)}`, { href: link, label: 'Open payment page and copy details' });
   const mail = await sendMail({ to: o.customerEmail, subject: `Payment details for order ${o.orderNumber}`, html });
   return NextResponse.json({ ok: true, emailed: mail.sent, link, fields, whatsapp: `https://wa.me/${REPLY.channels.whatsappCountryCode}${o.customerPhone.replace(/^0/, '').replace(/\D/g, '')}?text=${encodeURIComponent(`*${'Buggies For Sale'}*\nOrder ${o.orderNumber}: payment details\n` + fields.map((f) => `${f.label}: ${f.value}`).join('\n') + `\n\nCopy here: ${link}`)}` });
 }

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { CONTACT, FORMS, PRODUCTS, SHOP } from '@/config/site';
-import { REF_RE, aud, emailShell, esc, fieldRow, limited, saveOrder, sendMail, table, type StoredOrder } from '@/lib/server';
+import { REF_RE, aud, emailShell, esc, limited, orderSummary, saveOrder, sendMail, type StoredOrder } from '@/lib/server';
 
 export const runtime = 'nodejs';
 
@@ -28,13 +28,11 @@ export async function POST(req: NextRequest) {
   const order: StoredOrder = { orderNumber: ref, customerName: name, customerEmail: email, customerPhone: phone, address, items, subtotal, shipping, cryptoDiscount, amountDue: subtotal + shipping - cryptoDiscount, paymentMethod: String(b.paymentMethod || 'Bank transfer').slice(0, 80), notes: String(b.notes || '').slice(0, 800), status: 'pending', channel: b.channel === 'whatsapp' ? 'whatsapp' : 'email', createdAt: Date.now() };
   const stored = await saveOrder(order);
 
-  const lines = order.items.map((i) => `<tr><td style="padding:6px 0;font-size:14px">${esc(i.name)} × ${i.quantity}</td><td align="right" style="padding:6px 0;font-weight:700;font-size:14px">${aud(i.price * i.quantity)}</td></tr>`).join('');
-  const totals = table(fieldRow('Subtotal', aud(subtotal)) + fieldRow('Freight', shipping ? aud(shipping) : 'Free') + (cryptoDiscount ? fieldRow('Crypto discount', '-' + aud(cryptoDiscount)) : '') + fieldRow('Total due', aud(order.amountDue)));
   const site = process.env.NEXT_PUBLIC_SITE_URL || 'https://buggiesforsale.com.au';
   // shop notification
-  const shopMail = await sendMail({ to: process.env.ORDER_EMAIL || FORMS.destinations.order || CONTACT.email, replyTo: email, subject: `New order ${ref} (${order.channel}) ${aud(order.amountDue)}`, html: emailShell(`New order ${ref}`, table(fieldRow('Customer', name) + fieldRow('Email', email) + fieldRow('Phone', phone) + fieldRow('Address', address) + fieldRow('Payment', order.paymentMethod) + fieldRow('Channel', order.channel)) + `<table role="presentation" width="100%" style="margin-top:14px;border-top:1px solid #e3ddd0">${lines}</table>` + totals, stored ? { href: `${site}/admin/orders/`, label: 'Reply in Dashboard' } : undefined) });
+  const shopMail = await sendMail({ to: process.env.ORDER_EMAIL || FORMS.destinations.order || CONTACT.email, replyTo: email, subject: `New order ${ref} (${order.channel}) ${aud(order.amountDue)}`, html: emailShell(`New order ${ref}`, orderSummary(order) + (order.notes ? `<p style="font-size:13px;margin:14px 0 0"><strong>Customer notes:</strong> ${esc(order.notes)}</p>` : '') + `<p style="font-size:13px;margin:10px 0 0;color:#5b6b63">Channel: ${order.channel}</p>`, stored ? { href: `${site}/admin/orders/`, label: 'Reply in Dashboard' } : undefined) });
   // customer confirmation: fires for EVERY channel (WhatsApp included). Says "watch for payment details" only, no payment instructions yet.
-  const custMail = await sendMail({ to: email, subject: `We received your order ${ref}`, html: emailShell('Thanks, we have your order', `<p style="font-size:15px;line-height:1.6">Hi ${esc(name.split(' ')[0])}, thank you for your order <strong>${ref}</strong>. Our team will check stock and freight, then send your payment details by email shortly. Please watch for that email.</p><table role="presentation" width="100%" style="margin-top:10px;border-top:1px solid #e3ddd0">${lines}</table>${totals}<p style="font-size:13px;color:#5b6b63">Questions? Reply to this email or call ${esc(CONTACT.phone)}.</p>`) });
+  const custMail = await sendMail({ to: email, subject: `We received your order ${ref}`, html: emailShell('Thanks, we have your order', `<p style="font-size:15px;line-height:1.6">Hi ${esc(name.split(' ')[0])}, thank you for your order <strong>${ref}</strong>. Our team will check stock and freight, then send your payment details by email shortly. Please watch for that email.</p>${orderSummary(order)}<p style="font-size:13px;color:#5b6b63;margin-top:16px">Questions? Reply to this email or call ${esc(CONTACT.phone)}.</p>`) });
   if (!stored && !shopMail.sent && !custMail.sent) return NextResponse.json({ success: false, error: 'Checkout is temporarily unavailable. Please call 0420 128 746 or WhatsApp us to place your order.' }, { status: 503 });
   return NextResponse.json({ success: true, ref, total: order.amountDue });
 }

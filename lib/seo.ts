@@ -11,7 +11,7 @@ export const clampDesc = (s: string, min = 110, max = 158) => {
 export function meta({ title, description, path, image, noindex = false, type = 'website' }: { title: string; description: string; path: string; image?: string; noindex?: boolean; type?: 'website' | 'article' }): Metadata {
   const img = image ? abs(image) : abs('/og-default.png');
   const BR = ' | Buggies For Sale';
-  let t = title; if (!t.includes('Buggies For Sale') && t.length + BR.length <= 60) t += BR; if (t.length > 60) t = t.replace(/ | Buggies For Sale$/, '');
+  let t = title; if (!t.includes('Buggies For Sale') && t.length + BR.length <= 60) t += BR; if (t.length > 60) t = t.replace(/ \| Buggies For Sale$/, '');
   title = t;
   return {
     title: { absolute: t }, description: clampDesc(description),

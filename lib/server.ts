@@ -4,25 +4,37 @@ import { Redis } from '@upstash/redis';
 import { NextRequest, NextResponse } from 'next/server';
 import { CONTACT, FORMS, REPLY, SITE } from '@/config/site';
 
-// ---------- SMTP (the only email transport). Returns {sent:false} when unconfigured, never throws.
+// ---------- SMTP (the only email transport). Works with Zoho Mail (smtppro.zoho.com / smtp.zoho.com and the .com.au / .eu data centres) and any other SMTP host.
+// Returns {sent:false} when unconfigured, never throws. Zoho only accepts mail sent from the authenticated mailbox (or a send-as alias), so for Zoho the From defaults to SMTP_USER.
 let transporter: nodemailer.Transporter | null | undefined;
 function getTransport() {
   if (transporter !== undefined) return transporter;
   const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
   if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) return (transporter = null);
   const port = Number(SMTP_PORT || 465);
-  return (transporter = nodemailer.createTransport({ host: SMTP_HOST, port, secure: port === 465, auth: { user: SMTP_USER, pass: SMTP_PASS } }));
+  return (transporter = nodemailer.createTransport({ host: SMTP_HOST, port, secure: port === 465, requireTLS: port !== 465, auth: { user: SMTP_USER, pass: SMTP_PASS }, connectionTimeout: 12000, greetingTimeout: 12000, socketTimeout: 20000 }));
+}
+const fromAddress = () => {
+  const { SMTP_FROM, SMTP_HOST, SMTP_USER } = process.env;
+  if (SMTP_FROM) return SMTP_FROM;
+  return /zoho/i.test(SMTP_HOST || '') && SMTP_USER ? `${SITE.name} <${SMTP_USER}>` : FORMS.smtpFrom;
+};
+const htmlToText = (h: string) => h.replace(/<style[\s\S]*?<\/style>/g, ' ').replace(/<br\s*\/?>|<\/(p|tr|div|h\d|li)>/g, '\n').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/[ \t]+/g, ' ').replace(/\n\s+/g, '\n').trim();
+export const mailConfigured = () => getTransport() !== null;
+export async function verifyMail() {
+  const t = getTransport();
+  if (!t) return { ok: false as const, error: 'SMTP is not configured. Set SMTP_HOST, SMTP_PORT, SMTP_USER and SMTP_PASS.' };
+  try { await t.verify(); return { ok: true as const }; } catch (e) { return { ok: false as const, error: (e as Error).message }; }
 }
 export async function sendMail(m: { to: string; subject: string; html: string; text?: string; replyTo?: string; attachments?: { filename: string; content: Buffer }[] }) {
   const t = getTransport();
   if (!t) return { sent: false as const, reason: 'not-configured' };
-  try {
-    await t.sendMail({ from: process.env.SMTP_FROM || FORMS.smtpFrom, ...m });
-    return { sent: true as const };
-  } catch (e) {
-    console.error('[mail] send failed', (e as Error).message);
-    return { sent: false as const, reason: 'send-failed' };
+  const msg = { from: fromAddress(), text: m.text || htmlToText(m.html), ...m };
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try { await t.sendMail(msg); return { sent: true as const }; }
+    catch (e) { console.error('[mail] send failed', attempt + 1, (e as Error).message); if (attempt === 1) return { sent: false as const, reason: 'send-failed', error: (e as Error).message }; }
   }
+  return { sent: false as const, reason: 'send-failed' };
 }
 
 // ---------- Storage (Upstash Redis). Optional: when unconfigured, orders still email through.

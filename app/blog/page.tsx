@@ -14,7 +14,7 @@ export default function Blog() {
           <article key={b.slug} className="card card-hover group flex flex-col overflow-hidden">
             <Link href={`/blog/${b.slug}/`} className="block">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={b.image} alt={`${b.title} illustration`} width={1600} height={900} loading="lazy" className="aspect-[16/9] w-full object-cover" />
+              <img src={b.image} alt={`${b.targetKeyword} guide`} width={1600} height={900} loading="lazy" className="aspect-[16/9] w-full object-cover" />
             </Link>
             <div className="flex flex-1 flex-col p-6">
               <p className="eyebrow">{b.category} · {b.readTime}</p>

@@ -11,6 +11,16 @@ const POSTS = {
   'lithium-batteries': [/PRO-Li Plus 48V 150Ah Lithium Battery Package for Club Car/, /MGI Zip 24V 299Wh/],
   'utv-guide': [/Kayo S150/, /Cheetah 175/],
   'remote-buggy': [/Ai Navigator GPS/, /QOD Q2/],
+  'go-kart-electric-go-karts': [/Drifta/, /GMX Drift/],
+  'electric-buggy': [/MGI ZIP X3/, /Segway Villain/],
+  'offroad-buggy': [/Cheetah 175/, /Kayo S150/],
+  'golf-e-scooter': [/Golf Skate Caddy/, /IM4/],
+  'beach-buggy-for-sale-au': [/Cheetah 300/],
+  'trailering-a-golf-cart': [/Loading Ramps 2.4m/, /ATV Folding Ramp/],
+  'atv-buggy': [/Kayo Bull 125/, /Apollo Commander 110/],
+  'trailmaster-dune-buggies': [/Cheetah 175/, /Challenger 200/],
+  'kids-ride-on-buggy': [/Can-Am Maverick 24V/, /John Deere 12V/],
+  'used-golf-carts-on-sale': [/Tempo Refurbished/, /2015 Club Car Precedent/],
 };
 const W = 1600, H = 900;
 const bg = Buffer.from(`<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b2e22"/><stop offset="1" stop-color="#1c7a55"/></linearGradient><pattern id="d" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#ffffff" fill-opacity=".10"/></pattern></defs><rect width="100%" height="100%" fill="url(#g)"/><rect width="100%" height="100%" fill="url(#d)"/><circle cx="1420" cy="120" r="260" fill="#f07a1f" fill-opacity=".16"/><path d="M0 760 C 400 700 900 820 1600 700 V900 H0Z" fill="#082418" fill-opacity=".55"/><path d="M110 120v150" stroke="#fff" stroke-width="7" stroke-linecap="round"/><path d="M110 120l86 42-86 42z" fill="#f07a1f"/></svg>`);

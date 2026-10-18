@@ -62,11 +62,11 @@ export default async function StructurePage({ params }: { params: Promise<Params
       {/* HEADER BAND */}
       <section className="relative overflow-hidden bg-fw-900 text-white">
         {hero && (
-          <picture className="absolute inset-0 hidden md:block" aria-hidden="true">
+          <picture className="absolute inset-0 hidden md:block">
             <source type="image/avif" srcSet={`${hero.base}-1200.avif 1200w, ${hero.base}.avif 2400w`} sizes="100vw" />
             <source type="image/webp" srcSet={`${hero.base}-1200.webp 1200w, ${hero.base}.webp 2400w`} sizes="100vw" />
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={`${hero.base}-1200.webp`} alt="" className="h-full w-full object-cover object-right" width={1200} height={600} fetchPriority="high" />
+            <img src={`${hero.base}-1200.webp`} alt={`${page.primary?.keyword || page.name}: ${hero.alt}`} className="h-full w-full object-cover object-right" width={1200} height={600} fetchPriority="high" />
           </picture>
         )}
         {!hero && <div className="absolute inset-0 grain opacity-50" aria-hidden="true" />}
@@ -108,7 +108,7 @@ export default async function StructurePage({ params }: { params: Promise<Params
           <ul className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
             {kids.map((k) => { const kp = productsForPage(k); return (
               <li key={k.url}><Link href={k.url} className="card card-hover group flex h-full flex-col overflow-hidden">
-                <span className="product-frame m-3 mb-0 border border-line/70">{kp[0] ? <Pic base={kp[0].images[0]} alt={k.name} sizes="(max-width: 640px) 45vw, 260px" /> : <span className="text-sm font-bold text-muted">Ask us</span>}</span>
+                <span className="product-frame m-3 mb-0 border border-line/70">{kp[0] ? <Pic base={kp[0].images[0]} alt={k.primary?.keyword || k.name} sizes="(max-width: 640px) 45vw, 260px" /> : <span className="text-sm font-bold text-muted">Ask us</span>}</span>
                 <span className="flex flex-1 flex-col p-4"><span className="font-display text-[17px] font-extrabold leading-tight text-fw-900">{k.name.replace(/ \(Hub\)$/, '')}</span><span className="mt-1 text-xs font-semibold text-muted">{kp.length ? `${kp.length} product${kp.length === 1 ? '' : 's'}` : 'Enquire for availability'}</span><span className="mt-auto pt-3 text-sm font-extrabold text-accent-600">Shop <ArrowRight size={14} className="inline transition group-hover:translate-x-1" /></span></span>
               </Link></li>
             ); })}

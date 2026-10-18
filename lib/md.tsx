@@ -1,5 +1,7 @@
 import Link from 'next/link';
-import { slugify } from '@/lib/utils';
+import { slugify, money } from '@/lib/utils';
+import Pic from '@/components/Pic';
+import { PRODUCTS } from '@/config/site';
 
 // Minimal renderer for blog content: "## " H2, "- " lists, [text](url) links, **bold**.
 function inline(text: string, key: string) {
@@ -28,6 +30,12 @@ export function Markdown({ lines }: { lines: string[] }) {
   lines.forEach((l, k) => {
     if (l.startsWith('- ')) { list.push(l.slice(2)); return; }
     flush(k);
+    const pm = l.match(/^\{\{product:([a-z0-9-]+)\}\}$/);
+    if (pm) {
+      const p = PRODUCTS.find((x) => x.slug === pm[1]);
+      if (p) blocks.push(<figure key={k} className="not-prose my-8"><Link href={`/products/${p.slug}/`} className="card card-hover flex items-center gap-5 p-4 sm:p-5"><span className="product-frame h-28 w-28 shrink-0 border border-line sm:h-36 sm:w-36"><Pic base={p.images[0]} alt={`${p.name} - ${p.groupLabel}`} width={144} height={144} sizes="144px" /></span><span><span className="block text-xs font-bold uppercase tracking-wide text-fw-600">{p.brand}</span><span className="mt-1 block font-display text-lg font-extrabold text-fw-900">{p.name}</span><span className="mt-1 block text-sm text-muted">{money(p.price)} inc. GST</span><span className="mt-2 block text-sm font-extrabold text-accent-600">View product →</span></span></Link></figure>);
+      return;
+    }
     if (l.startsWith('## ')) blocks.push(<h2 id={slugify(l.slice(3))} key={k}>{l.slice(3)}</h2>);
     else blocks.push(<p key={k}>{inline(l, `p-${k}`)}</p>);
   });

@@ -13,7 +13,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const b = BLOG_POSTS.find((x) => x.slug === slug);
   if (!b) return {};
-  return meta({ title: b.seoTitle, description: b.excerpt, path: `/blog/${b.slug}/`, image: b.image, type: 'article' });
+  const kwOk = b.excerpt.toLowerCase().replace(/[^a-z0-9 ]/g, ' ').includes(b.targetKeyword.toLowerCase());
+  return meta({ title: b.seoTitle, description: kwOk ? b.excerpt : `${b.targetKeyword.charAt(0).toUpperCase()}${b.targetKeyword.slice(1)}: ${b.excerpt}`, path: `/blog/${b.slug}/`, image: b.image, type: 'article' });
 }
 
 const PICKS: Record<string, RegExp> = {
@@ -30,7 +31,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const b = BLOG_POSTS.find((x) => x.slug === slug);
   if (!b) notFound();
   const heads = toc(b.content);
-  const picks = PRODUCTS.filter((p) => (PICKS[b.slug] || /MGI ZIP/).test(p.name)).slice(0, 4);
+  const picks = b.products?.length ? b.products.map((s) => PRODUCTS.find((p) => p.slug === s)).filter(Boolean).slice(0, 4) as typeof PRODUCTS : PRODUCTS.filter((p) => (PICKS[b.slug] || /MGI ZIP/).test(p.name)).slice(0, 4);
   const words = b.content.join(' ').split(/\s+/).length;
   const article = { '@context': 'https://schema.org', '@type': 'Article', headline: b.title, description: b.excerpt, image: abs(b.image), datePublished: b.date, dateModified: b.date, wordCount: words, inLanguage: 'en-AU', author: { '@type': 'Organization', name: SITE.name, url: SITE.url }, publisher: { '@id': abs('/#org') }, mainEntityOfPage: abs(`/blog/${b.slug}/`) };
   const trail = [{ name: 'Blog', url: '/blog/' }, { name: b.title, url: `/blog/${b.slug}/` }];
@@ -47,9 +48,10 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
             <p className="mt-4 text-lg leading-relaxed text-muted">{b.excerpt}</p>
             <p className="mt-4 text-sm font-semibold text-muted">By the {SITE.name} team · Updated <time dateTime={b.date}>{new Date(b.date).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })}</time></p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={b.image} alt={`${b.title}: illustrated guide cover`} width={1600} height={900} className="mt-7 aspect-[16/9] w-full rounded-2xl object-cover shadow-[var(--shadow-card)]" fetchPriority="high" />
+            <img src={b.image} alt={`${b.targetKeyword}: ${b.category.toLowerCase()} from ${SITE.name}`} width={1600} height={900} className="mt-7 aspect-[16/9] w-full rounded-2xl object-cover shadow-[var(--shadow-card)]" fetchPriority="high" />
             <nav aria-label="Table of contents" className="card mt-8 p-6"><p className="font-display text-lg font-extrabold">In this guide</p><ol className="mt-3 list-decimal space-y-1.5 pl-5 text-[15px]">{heads.map((h) => <li key={h.id}><a href={`#${h.id}`} className="font-semibold text-fw-700 hover:underline">{h.text}</a></li>)}</ol></nav>
             <div className="prose-copy mt-8"><Markdown lines={b.content} /></div>
+            {b.tags && <ul aria-label="Tags" className="mt-8 flex flex-wrap gap-2">{b.tags.map((t) => <li key={t}><Link href={`/search/?q=${encodeURIComponent(t)}`} className="chip hover:bg-fw-100">{t}</Link></li>)}</ul>}
           </div>
           <aside className="space-y-5 self-start lg:sticky lg:top-28">
             <div className="card p-6"><h2 className="font-display text-xl font-extrabold">Talk to an expert</h2><p className="mt-2 text-sm text-muted">Not sure which model suits you? We will help you choose.</p><a href="tel:+61420128746" className="btn btn-green mt-4 w-full">Call 0420 128 746</a><a href="https://wa.me/61420128746?text=Hi%20Buggies%20For%20Sale%2C%20" target="_blank" rel="noopener noreferrer" className="btn btn-ghost mt-3 w-full">WhatsApp us</a></div>

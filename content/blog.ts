@@ -1,5 +1,11 @@
 // Blog posts. Markup: lines starting "## " are H2, "- " are list items, [text](url) are links. Written for buyers; no invented statistics.
 import type { BlogPost } from '@/config/site';
+import { EXTRA_POSTS } from '@/content/blog-extra';
+import { MORE } from '@/content/blog-more';
+import { MORE2 } from '@/content/blog-more2';
+import { MORE3 } from '@/content/blog-more3';
+import { MORE4 } from '@/content/blog-more4';
+import { MORE5 } from '@/content/blog-more5';
 
 const L = {
   carts: '/golf-carts/', cartsSale: '/golf-carts/for-sale/', electricCarts: '/golf-carts/electric/', used: '/golf-carts/used/', utility: '/golf-carts/utility-4-seater/',
@@ -8,7 +14,7 @@ const L = {
   offroad: '/off-road-buggies/', ssv: '/off-road-buggies/side-by-sides-utvs/', dune: '/off-road-buggies/dune-buggies/', kids: '/off-road-buggies/kids-buggies/', gokarts: '/off-road-buggies/go-karts/',
 };
 
-export const BLOG_POSTS: BlogPost[] = [
+const CORE_POSTS: BlogPost[] = [
   {
     slug: 'can-you-drive-a-golf-cart-on-the-road-in-australia',
     title: 'Can You Drive a Golf Cart on the Road in Australia?',
@@ -58,8 +64,8 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'how-much-does-a-golf-cart-cost-in-australia',
-    title: 'How Much Does a Golf Cart Cost in Australia?',
-    seoTitle: 'How Much Does a Golf Cart Cost in Australia? Price Guide | Buggies For Sale',
+    title: 'How Much Is a Golf Cart in Australia? Price Guide',
+    seoTitle: 'How Much Is a Golf Cart in Australia? | Buggies For Sale',
     excerpt: 'New electric golf carts typically start around $10,000 and climb with seats, battery and specification. Here is what drives the price and what to budget for.',
     category: 'Price guides', date: '2026-10-17', readTime: '8 min read', targetKeyword: 'how much is a golf cart',
     image: '/blog/cart-price.webp',
@@ -101,8 +107,8 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'electric-vs-push-golf-buggy-which-should-you-buy',
-    title: 'Electric vs Push Golf Buggy: Which Should You Buy?',
-    seoTitle: 'Electric vs Push Golf Buggy: Which Should You Buy? | Buggies For Sale',
+    title: 'Electric Golf Buggy vs Push Buggy: Which Should You Buy?',
+    seoTitle: 'Electric Golf Buggy vs Push Buggy | Buggies For Sale',
     excerpt: 'A push buggy costs a few hundred dollars and needs no charging. An electric buggy adds a motor and a bigger price. Here is how to choose.',
     category: 'Buying guides', date: '2026-10-16', readTime: '7 min read', targetKeyword: 'electric golf buggy',
     image: '/blog/electric-vs-push.webp',
@@ -143,8 +149,8 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'lithium-vs-lead-acid-golf-cart-batteries',
-    title: 'Lithium vs Lead-Acid Golf Cart Batteries: Costs, Lifespan and Fit',
-    seoTitle: 'Lithium vs Lead-Acid Golf Cart Batteries Guide | Buggies For Sale',
+    title: 'Lithium Golf Cart Batteries vs Lead-Acid: Costs, Lifespan and Fit',
+    seoTitle: 'Lithium Golf Cart Batteries vs Lead-Acid | Buggies For Sale',
     excerpt: 'Lithium golf cart batteries cost more up front but weigh less, need no watering and typically last longer. Here is how to decide and what to check before upgrading.',
     category: 'Maintenance', date: '2026-10-15', readTime: '8 min read', targetKeyword: 'lithium golf cart batteries',
     image: '/blog/lithium-batteries.webp',
@@ -262,3 +268,124 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
 ];
+
+// Expansions for the first six guides: more depth, an inline product card, internal links and a high-authority outbound link each.
+const ADD: Record<string, { products: string[]; add: string[] }> = {
+  'can-you-drive-a-golf-cart-on-the-road-in-australia': {
+    products: ['ecar-lithium-magnum-2s-2-seat-golf-cart', 'ecar-compass-2s-2-seat-golf-cart', 'club-car-tempo-petrol-golf-cart'],
+    add: [
+      '## A quick checklist before you buy a cart for private use',
+      '- Write down where the cart will be used: a farm, an estate, a resort, a club or a workshop.',
+      '- Ask the landowner or body corporate for their written rules on carts, speed and licences.',
+      '- Choose seating, battery type and options to match the job. See our guide to [what a golf cart costs](/blog/how-much-does-a-golf-cart-cost-in-australia/).',
+      '- Check that your insurer covers the use you have in mind.',
+      '{{product:ecar-lithium-magnum-2s-2-seat-golf-cart}}',
+      '## Buying new or used',
+      'A new cart comes with a warranty and modern lithium batteries. A used cart can be good value if the battery and frame are sound. Read our [used golf carts buyer guide](/blog/used-golf-carts-on-sale/) and browse [used golf carts](' + L.used + ') and [petrol golf carts](/golf-carts/petrol/).',
+      'For general background on what a golf cart is and how the category developed, the [golf cart overview on Wikipedia](https://en.wikipedia.org/wiki/Golf_cart) is a useful reference.',
+    ],
+  },
+  'how-much-does-a-golf-cart-cost-in-australia': {
+    products: ['ecar-lithium-a2-2-seat-golf-cart', 'club-car-tempo-petrol-golf-cart', 'ecar-lithium-magnum-4s-4-seat-golf-cart'],
+    add: [
+      '## What drives the price of a golf cart',
+      '- **Seating:** a four-seater costs more than a two-seater, and a six or eight-seater costs more again.',
+      '- **Battery type:** lithium adds to the purchase price but saves weight, maintenance and replacement costs over time.',
+      '- **Brand and support:** well-known brands have better parts supply and resale value.',
+      '- **Roof, windscreen, lights and accessories:** each option adds cost.',
+      '- **Freight:** delivery to your postcode is a real cost, so ask for a delivered price.',
+      '{{product:ecar-lithium-a2-2-seat-golf-cart}}',
+      '## Running costs after you buy',
+      'Electric carts cost little to run, as the main costs are charging, tyres and eventually the battery. Petrol carts need fuel, oil and servicing. If you plan to use a cart every day, running cost may matter more than the price difference at purchase. Our guide to [lithium vs lead-acid batteries](/blog/lithium-vs-lead-acid-golf-cart-batteries/) explains the biggest long-term cost.',
+      '{{product:club-car-tempo-petrol-golf-cart}}',
+      '## New, used or refurbished',
+      'If your budget is tight, compare a refurbished or used cart. Our [used golf cart checklist](/blog/used-golf-carts-on-sale/) lists what to inspect, and our [used golf carts](/golf-carts/used/) page shows what we have listed. All prices include 10% GST, as explained on the [Australian Taxation Office website](https://www.ato.gov.au/).',
+      '## How to compare quotes',
+      '- Ask for the delivered price including GST and freight.',
+      '- Check what is included: charger, roof, windscreen, seat belts and lights.',
+      '- Confirm the warranty terms and who services the cart.',
+      '- Ask about the battery type and capacity, not only the headline price.',
+    ],
+  },
+  'electric-vs-push-golf-buggy-which-should-you-buy': {
+    products: ['powakaddy-ct6-electric-golf-buggy', 'stinger-sg-5-v2-golf-push-buggy', 'mgi-zip-x3-electric-golf-buggy'],
+    add: [
+      '## Cost of ownership',
+      'A push buggy has no battery, charger or motor to replace, so ownership cost is mostly tyres and the odd repair. An electric buggy costs more up front and has a battery that will eventually need replacing, but it saves effort every round. Think about how often you play and how hilly your course is.',
+      '{{product:stinger-sg-5-v2-golf-push-buggy}}',
+      '## Hills, fitness and age',
+      'On a flat course a push buggy is easy and keeps the cost low. On a hilly course, or if you want to save energy for your swing, an electric buggy takes the strain. Many golfers move from push to electric as courses or fitness change.',
+      '{{product:powakaddy-ct6-electric-golf-buggy}}',
+      '## Course rules and etiquette',
+      'Most courses allow both push and electric buggies, but some have restrictions on certain models or on wet days. Check with your club, and use [Golf Australia](https://www.golf.org.au/) as a starting point for the sport and its clubs. Read our guide to [golf e-scooters](/blog/golf-e-scooter/) if you are considering a ride-on instead.',
+      '## Quick decision guide',
+      '- **Walk flat courses, tight budget:** push buggy.',
+      '- **Hilly course or limited energy:** electric buggy.',
+      '- **Want the least effort:** a [remote control golf buggy](' + L.remote + ').',
+      'Browse [electric golf buggies](' + L.electric + ') and [push and pull buggies](' + L.push + ') to compare models and prices.',
+    ],
+  },
+  'lithium-vs-lead-acid-golf-cart-batteries': {
+    products: ['pro-li-core-48v-105ah-lithium-battery-package-for-club-car-precedent', 'pro-li-plus-48v-150ah-lithium-battery-package-for-ezgo-rxv', 'mgi-zip-24v-299wh-lithium-battery'],
+    add: [
+      '## Weight, charging and performance',
+      'A lithium pack is much lighter than a set of lead-acid batteries, which reduces the load on the motor, tyres and suspension. Lithium also holds a steady voltage through the discharge, so the cart does not feel sluggish as the battery runs down. Charging is quicker and you do not need to top up water. For the chemistry behind most modern golf cart packs, read the [lithium iron phosphate battery article](https://en.wikipedia.org/wiki/Lithium_iron_phosphate_battery).',
+      '{{product:pro-li-core-48v-105ah-lithium-battery-package-for-club-car-precedent}}',
+      '## Safety, storage and installation',
+      '- Choose a pack with a built-in battery management system.',
+      '- Use the charger supplied or specified for the pack.',
+      '- Have the conversion fitted by a qualified person and keep installation photos for warranty records.',
+      '- Store carts with a partial charge if they will sit for long periods.',
+      '## Total cost over time',
+      'Lead-acid costs less to buy but needs watering, cleaning and replacement sooner. Lithium costs more up front but can work out cheaper over the life of the cart. If you drive daily, lithium is usually the better long-term choice. If you drive rarely, a good lead-acid set may be enough.',
+      'Check our [chargers and conversion kits](' + L.chargers + ') and our [lithium batteries](' + L.batteries + ') for matched packages. If you are buying a cart rather than a battery, read our [used golf cart guide](/blog/used-golf-carts-on-sale/) for what to check.',
+    ],
+  },
+  'what-is-a-utv-side-by-side-vs-atv-vs-dune-buggy': {
+    products: ['kayo-s150-side-by-side-buggy', 'trailmaster-cheetah-175cc-dune-buggy', 'kayo-bull-125-farm-quad-atv'],
+    add: [
+      '## Safety differences you should know about',
+      'A quad bike is ridden like a motorbike, while a side-by-side has seats, seat belts and usually a roll cage. These differences change how each vehicle behaves and how riders are protected. Safe Work Australia publishes practical guidance on [quad bike safety](https://www.safeworkaustralia.gov.au/safety-topic/hazards/quad-bikes), including training, helmets and choosing the right vehicle for the job.',
+      '{{product:kayo-bull-125-farm-quad-atv}}',
+      '## Which one suits a farm?',
+      'For small jobs, a quad can be quick and economical. For carrying people, tools or feed, a side-by-side is more stable and practical. Compare cargo capacity, seating and towing capacity before you choose.',
+      '{{product:kayo-s150-side-by-side-buggy}}',
+      '## Which one suits recreation?',
+      'Dune buggies are light and fun on sand and tracks. Side-by-sides suit families who want seat belts and a cage. Youth quads and kids buggies suit younger riders under supervision.',
+      '{{product:trailmaster-cheetah-175cc-dune-buggy}}',
+      'Read more in our [off-road buggy guide](/blog/offroad-buggy/) and [ATV buggy comparison](/blog/atv-buggy/), or see the [dune buggy overview](https://en.wikipedia.org/wiki/Dune_buggy) for background.',
+    ],
+  },
+  'remote-control-golf-buggy-buyers-guide': {
+    products: ['mgi-ai-navigator-gps-remote-control-golf-buggy', 'motocaddy-m7-gps-remote-electric-golf-buggy', 'qod-q2-remote-control-all-terrain-electric-golf-buggy'],
+    add: [
+      '## How a remote control golf buggy works',
+      'A remote buggy uses a handheld remote or a follow-me system to move forward, stop and turn. Some models include GPS, a screen and distance readouts. You walk the course and send the buggy ahead or call it back, so you carry nothing and stay close to your ball.',
+      '{{product:motocaddy-m7-gps-remote-electric-golf-buggy}}',
+      '## Battery, charging and range',
+      'Check battery capacity against your course length, and whether the battery is lithium. A full charge should cover 18 holes with some to spare. Keep the charger in your bag for long days, and see our [lithium batteries](' + L.batteries + ') for compatible packs.',
+      '## Course rules and etiquette',
+      'Most clubs allow remote buggies, but some set rules on where they can go. Check with your club first, and use [Golf Australia](https://www.golf.org.au/) for general information on clubs and the game. Keep the buggy off greens and tee boxes and follow signage.',
+      '{{product:mgi-ai-navigator-gps-remote-control-golf-buggy}}',
+      '## Remote buggy or motorised trolley?',
+      'A motorised trolley is simpler and cheaper, while a remote buggy gives hands-free control. Compare both in our guide to [electric vs push golf buggies](/blog/electric-vs-push-golf-buggy-which-should-you-buy/) and our [electric golf buggy](' + L.electric + ') range.',
+    ],
+  },
+};
+
+function extend(p: BlogPost): BlogPost {
+  const a = ADD[p.slug];
+  const m = MORE[p.slug];
+  const content = [...p.content];
+  const bottom = () => content.findIndex((l) => /^## (Bottom line|Final|Summary|Conclusion)/i.test(l));
+  const put = (lines: string[]) => { const i = bottom(); if (i > -1) content.splice(i, 0, ...lines); else content.push(...lines); };
+  if (a) put(a.add);
+  if (m) put(m.add);
+  if (MORE2[p.slug]) put(MORE2[p.slug]);
+  if (MORE3[p.slug]) put(MORE3[p.slug]);
+  if (MORE4[p.slug]) put(MORE4[p.slug]);
+  if (MORE5[p.slug]) put(MORE5[p.slug]);
+  return { ...p, content, products: a?.products || p.products, tags: m?.tags || p.tags };
+}
+
+export const BLOG_POSTS: BlogPost[] = [...CORE_POSTS, ...EXTRA_POSTS].map(extend);

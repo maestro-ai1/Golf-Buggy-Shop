@@ -4,6 +4,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { SPEC, PRICE_FACTOR } from './catalog-spec.mjs';
+import { longCopy, tagsFor } from './product-copy.mjs';
+
+const STRUCT = JSON.parse(fs.readFileSync(path.join(path.resolve(import.meta.dirname, '..'), 'data/structure.json'), 'utf8'));
+const shortWords = [];
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const RAW = path.join(ROOT, 'data/raw');
@@ -197,11 +201,20 @@ for (let [group, brand, brandPage, name, cats, srcs, opts = {}] of SPEC) {
     slug, sku: 'BFS-' + (hash(slug) % 90000 + 10000), name, brand, brandPage, group, groupLabel: GROUP_LABEL[group],
     categories: [...new Set(cats)], price, rrp: low.hit.price, savingPct: 2,
     priceSource: { site: low.file, url: low.hit.url || '', price: low.hit.price, checked: TODAY },
-    shortDescription: c.short, description: c.paragraphs, highlights: c.highlights,
+    shortDescription: c.short, description: c.paragraphs, highlights: c.highlights, tags: [],
     specs: { Brand: brand, ...(opts.fits ? { 'Fits': opts.fits } : {}), ...fcts }, faqs: FAQ_BY_GROUP(name, group, price, opts.fits),
     imagesRaw: imgsRaw.slice(0, 5), images: (prev.get(slug) && JSON.stringify(prev.get(slug).imagesRaw) === JSON.stringify(imgsRaw.slice(0, 5))) ? prev.get(slug).images : [], inStock: true,
   });
 }
+// 400-word product copy, inbound and outbound links, five tags
+for (const p of out) {
+  const page = STRUCT.find((x) => x.url === p.categories[0]);
+  const ctx = { categoryUrl: page ? page.url : '', categoryName: page ? page.name.replace(/ (Hub)$/, '') : '', brandUrl: p.brandPage ? '/brands/' + p.brandPage + '/' : '', primary: page?.primary?.keyword || '', secondary: page?.secondary?.[0]?.keyword || '' };
+  const long = longCopy(p, ctx);
+  p.description = long.lines; p.tags = tagsFor(p, ctx);
+  if (long.words < 400) shortWords.push(p.slug + ' ' + long.words);
+}
+if (shortWords.length) console.log('UNDER 400 WORDS:', shortWords.join(', '));
 fs.writeFileSync(path.join(ROOT, 'data/catalog.json'), JSON.stringify(out, null, 1));
 const byGroup = {}; out.forEach((p) => (byGroup[p.group] = (byGroup[p.group] || 0) + 1));
 console.log('products:', out.length, 'missing:', missing.length);

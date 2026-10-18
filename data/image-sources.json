@@ -1201,7 +1201,7 @@
  },
  {
   "file": "products/ecar-lithium-magnum-6s-6-seat-golf-cart/1",
-  "source": "https://cartsnparts.com.au/wp-content/uploads/2025/06/ECAR-Lithium-Magnum-6S-Golf-Cart.jpg",
+  "source": "https://ecargolf.com.au/wp-content/uploads/2024/05/Magnum6-32.webp",
   "product": "ECAR Lithium Magnum 6S 6 Seat Golf Cart"
  },
  {
@@ -1250,13 +1250,13 @@
   "product": "ECAR Compass 2S 2 Seat Golf Cart"
  },
  {
-  "file": "products/ecar-s-series-2-seat-resort-golf-cart/1",
-  "source": "https://cartsnparts.com.au/wp-content/uploads/2024/12/S-Series-2.jpg",
+  "file": "products/ecar-s-series-2-seat-resort-golf-cart/2",
+  "source": "https://ecargolf.com.au/wp-content/uploads/2024/05/LT-S2.DC_Main.webp",
   "product": "ECAR S-Series 2 Seat Resort Golf Cart"
  },
  {
   "file": "products/ecar-s-series-2-seat-utility-golf-cart/1",
-  "source": "https://cartsnparts.com.au/wp-content/uploads/2023/02/2025_New_Cart_NoborderTemplate2_50.jpg",
+  "source": "https://ecargolf.com.au/wp-content/uploads/2024/05/LT-S2.DBH_Main-800x800.jpg",
   "product": "ECAR S-Series 2 Seat Utility Golf Cart"
  },
  {
@@ -2423,5 +2423,40 @@
   "file": "products/kawasaki-teryx4-h2-side-by-side/2",
   "source": "https://cdpcdn.dx1app.com/products/USA/KA/2026/UTILVEH/UTILSPRT/TERYX4_H2/50/LIME_GREEN/2000000021.jpg",
   "product": "Kawasaki Teryx4 H2 Side by Side"
+ },
+ {
+  "file": "products/ecar-s-series-2-seat-utility-golf-cart/2",
+  "source": "https://ecargolf.com.au/wp-content/uploads/2024/05/LTS2.B.HP_Main-800x800.webp",
+  "product": "ECAR S-Series 2 Seat Utility Golf Cart"
+ },
+ {
+  "file": "products/ecar-lithium-magnum-6s-6-seat-golf-cart/3",
+  "source": "https://ecargolf.com.au/wp-content/uploads/2024/05/Magnum6-36.webp",
+  "product": "ECAR Lithium Magnum 6S 6 Seat Golf Cart"
+ },
+ {
+  "file": "products/ecar-s-series-2-seat-resort-golf-cart/1",
+  "source": "https://ecargolf.com.au/wp-content/uploads/2024/05/LT-S2.DCH_Main_1-800x800.webp",
+  "product": "ECAR S-Series 2 Seat Resort Golf Cart"
+ },
+ {
+  "file": "products/ecar-lithium-magnum-6s-6-seat-golf-cart/4",
+  "source": "https://ecargolf.com.au/wp-content/uploads/2024/05/Magnum6-35.webp",
+  "product": "ECAR Lithium Magnum 6S 6 Seat Golf Cart"
+ },
+ {
+  "file": "products/ecar-lithium-magnum-6s-6-seat-golf-cart/2",
+  "source": "https://ecargolf.com.au/wp-content/uploads/2024/05/Magnum6-33.webp",
+  "product": "ECAR Lithium Magnum 6S 6 Seat Golf Cart"
+ },
+ {
+  "file": "products/ecar-s-series-2-seat-utility-golf-cart/3",
+  "source": "https://cartsnparts.com.au/wp-content/uploads/2023/02/2025_New_Cart_NoborderTemplate2_50.jpg",
+  "product": "ECAR S-Series 2 Seat Utility Golf Cart"
+ },
+ {
+  "file": "products/ecar-s-series-2-seat-resort-golf-cart/3",
+  "source": "https://cartsnparts.com.au/wp-content/uploads/2024/12/S-Series-2.jpg",
+  "product": "ECAR S-Series 2 Seat Resort Golf Cart"
  }
 ]

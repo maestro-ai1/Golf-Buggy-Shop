@@ -7,6 +7,7 @@ import AddToCart from '@/components/AddToCart';
 import ProductCard, { toCard } from '@/components/ProductCard';
 import { Breadcrumbs, Faq, JsonLd, SectionHead } from '@/components/Bits';
 import { PRODUCTS, SHOP, breadcrumbsFor, money, pageByUrl, productBySlug } from '@/config/site';
+import { Markdown } from '@/lib/md';
 import { faqSchema, meta, productSchema } from '@/lib/seo';
 
 export function generateStaticParams() { return PRODUCTS.map((p) => ({ slug: p.slug })); }
@@ -73,10 +74,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       <section className="section bg-white">
         <div className="container-x grid gap-10 lg:grid-cols-[1.4fr_1fr]">
           <div className="prose-copy">
-            <h2>About the {p.name}</h2>
-            {p.paragraphs.map((t, i) => <p key={i}>{t}</p>)}
-            <h3>Highlights</h3>
-            <ul>{p.highlights.map((h) => <li key={h}>{h}</li>)}</ul>
+            <Markdown lines={p.paragraphs} />
+            <ul aria-label="Tags" className="mt-8 flex flex-wrap gap-2">{p.tags.map((t) => <li key={t}><Link href={`/search/?q=${encodeURIComponent(t)}`} className="chip hover:bg-fw-100">{t}</Link></li>)}</ul>
             {p.specs.Fits && <p>Fitment: <strong>{p.specs.Fits}</strong>. Not sure it suits your cart? Send us the model and year before you order.</p>}
           </div>
           <div className="space-y-5 self-start">

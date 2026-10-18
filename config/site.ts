@@ -38,7 +38,7 @@ export interface SitePage {
   h1: string; titleTag: string; faqSeed: { q: string; angle: string; volume: number }[]; lowDemand: boolean;
 }
 export interface Category { slug: string; name: string; h1: string; shortDescription: string; introCopy: string; subcategories: { slug: string; name: string; description: string }[]; image: string; featured?: boolean }
-export interface BlogPost { slug: string; title: string; seoTitle: string; excerpt: string; category: string; date: string; readTime: string; targetKeyword: string; image: string; content: string[]; faqs?: [string, string][] }
+export interface BlogPost { slug: string; title: string; seoTitle: string; excerpt: string; category: string; date: string; readTime: string; targetKeyword: string; image: string; content: string[]; faqs?: [string, string][]; products?: string[]; tags?: string[] }
 
 export const SITE = {
   name: 'Buggies For Sale',
@@ -157,7 +157,7 @@ export const PRODUCTS: Product[] = rawCatalog
   .filter((p) => p.images && p.images.length > 0)
   .map((p) => {
     const primaryPage = pageByUrl(p.categories[0]);
-    const tags = [...new Set([p.groupLabel, p.brand, ...(primaryPage ? [primaryPage.primary?.keyword || '', ...primaryPage.secondary.map((s) => s.keyword)] : [])])].filter(Boolean).slice(0, 10);
+    const tags = (p as { tags?: string[] }).tags?.length ? (p as { tags?: string[] }).tags! : [...new Set([p.groupLabel, p.brand, ...(primaryPage ? [primaryPage.primary?.keyword || '', ...primaryPage.secondary.map((s) => s.keyword)] : [])])].filter(Boolean).slice(0, 5);
     return {
       ...p,
       paragraphs: p.description,

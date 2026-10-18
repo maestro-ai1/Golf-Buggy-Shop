@@ -10,7 +10,7 @@ export const COPY: Record<string, PageCopy> = {
   '/golf-buggies/': {
     intro: [
       'Looking for a golf buggy that suits the way you play? Our golf buggy range covers every budget and style: simple push buggies, motorised electric buggies, hands-free remote models and seated ride-on buggies, all from brands Australian golfers already trust.',
-      'Every buggy on this page is priced against the Australian market and delivered Australia-wide. Browse the collections below, compare specifications side by side, or message us and we will help you match a buggy to your course, your bag and your budget.',
+      'Every buggy on this page includes GST and is delivered Australia-wide. Browse the collections below, compare specifications side by side, or message us and we will help you match a buggy to your course, your bag and your budget.',
     ],
     guides: [
       { h2: 'Push, electric, remote or ride-on: which buggy fits you?', p: ['Push buggies are the lightest and cheapest option, and they need no charging. Electric buggies add a motor so you simply steer. Remote models follow your commands and let you walk completely unburdened, while ride-on buggies seat you for those long rounds or mobility needs.', 'Think about the hills on your usual course, how far you carry the buggy to the car, and whether you want GPS. Those three questions narrow the choice quickly.'] },
@@ -148,7 +148,7 @@ export const COPY: Record<string, PageCopy> = {
   '/golf-carts/': {
     intro: [
       'Shop golf carts for new, electric and lithium models. Our golf cart range includes ECAR and Tomberlin carts in two, four, six and eight seat layouts for golf clubs, resorts, estates, farms and private properties.',
-      'We price every cart against the Australian market and deliver across the country. Compare models, accessories and lithium upgrades in one place.',
+      'Every cart includes GST and is delivered across the country. Compare models, accessories and lithium upgrades in one place.',
     ],
     guides: [
       { h2: 'Choosing the right golf cart', p: ['Start with the number of seats, then the job: golf, resort transport, estate use or utility work. Then look at battery type. Lithium carts are lighter, need less maintenance and typically hold their performance better than lead-acid.', 'Ask about warranty, servicing and how parts are supported in your area.'] },
@@ -243,7 +243,7 @@ export const COPY: Record<string, PageCopy> = {
     ],
   },
   '/off-road-buggies/': {
-    intro: ['Explore off road buggies for farms, trails and weekend adventures. Our range includes Trailmaster Cheetah dune buggies, Kayo and Hammerhead side by side buggies, kids buggies, go karts and quads from respected Australian suppliers.', 'Every model is priced against the Australian market and delivered Australia-wide. Compare engines, seating and age guidance before you buy.'],
+    intro: ['Explore off road buggies for farms, trails and weekend adventures. Our range includes Trailmaster Cheetah dune buggies, Kayo and Hammerhead side by side buggies, kids buggies, go karts and quads from respected Australian suppliers.', 'Every model includes GST and is delivered Australia-wide. Compare engines, seating and age guidance before you buy.'],
     guides: [{ h2: 'Choose by use', p: ['For farm and property work choose a side by side or quad with load capacity. For recreation choose a dune buggy or go kart. For younger riders choose a youth buggy with age-appropriate power.', 'Check state rules for registration and use on public land.'] }],
     faqs: [
       ['What is a buggy?', 'An off-road buggy is a small open vehicle for recreation and property work. Types include dune buggies, side by sides, go karts and quads.'],

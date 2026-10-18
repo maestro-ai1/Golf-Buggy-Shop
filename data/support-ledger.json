@@ -1,0 +1,4554 @@
+{
+ "generated": "2026-10-18",
+ "totals": {
+  "keywords": 557,
+  "volume": 85660,
+  "placed": 471,
+  "excluded": 86,
+  "missing": 0
+ },
+ "rows": [
+  {
+   "keyword": "buggies golf",
+   "intent": "Informational, Commercial",
+   "volume": 2900,
+   "kd": 12,
+   "url": "/golf-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "go kart electric go karts",
+   "intent": "Commercial",
+   "volume": 1900,
+   "kd": 13,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "dune dune buggy",
+   "intent": "Informational, Transactional",
+   "volume": 1600,
+   "kd": 12,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "excluded",
+   "reason": "Duplicate or mis-typed variant of a placed keyword"
+  },
+  {
+   "keyword": "du buggy",
+   "intent": "Commercial",
+   "volume": 1600,
+   "kd": 23,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "go kart perth",
+   "intent": "Commercial",
+   "volume": 1300,
+   "kd": 26,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "side by side buggy",
+   "intent": "Informational, Commercial",
+   "volume": 1000,
+   "kd": 15,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy car",
+   "intent": "Informational, Commercial",
+   "volume": 1000,
+   "kd": 25,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "club tempo",
+   "intent": "Transactional",
+   "volume": 880,
+   "kd": 18,
+   "url": "/brands/club-car/",
+   "status": "placed"
+  },
+  {
+   "keyword": "go karts for sale",
+   "intent": "Transactional",
+   "volume": 880,
+   "kd": 24,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "go karts for sell",
+   "intent": "Commercial",
+   "volume": 720,
+   "kd": 15,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric go karts",
+   "intent": "Commercial",
+   "volume": 720,
+   "kd": 23,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "can am buggies",
+   "intent": "Informational, Transactional",
+   "volume": 590,
+   "kd": 17,
+   "url": "/brands/can-am/",
+   "status": "placed"
+  },
+  {
+   "keyword": "ninebot go kart",
+   "intent": "Transactional",
+   "volume": 590,
+   "kd": 21,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf walking carts",
+   "intent": "Commercial",
+   "volume": 590,
+   "kd": 22,
+   "url": "/golf-carts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf push cart",
+   "intent": "Commercial",
+   "volume": 590,
+   "kd": 23,
+   "url": "/golf-buggies/push-pull-trolleys/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf and carts",
+   "intent": "Commercial",
+   "volume": 590,
+   "kd": 28,
+   "url": "/golf-carts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "drift go kart",
+   "intent": "Commercial",
+   "volume": 480,
+   "kd": 4,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "remote control buggy",
+   "intent": "Commercial",
+   "volume": 480,
+   "kd": 10,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "farm buggy",
+   "intent": "Informational, Commercial",
+   "volume": 480,
+   "kd": 11,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "gold buggy",
+   "intent": "Commercial",
+   "volume": 480,
+   "kd": 12,
+   "url": "/golf-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy for sale",
+   "intent": "Transactional",
+   "volume": 480,
+   "kd": 12,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "atv buggy",
+   "intent": "Commercial",
+   "volume": 480,
+   "kd": 17,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggies for sale",
+   "intent": "Transactional",
+   "volume": 480,
+   "kd": 17,
+   "url": "/golf-buggies/for-sale/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggie",
+   "intent": "Commercial",
+   "volume": 480,
+   "kd": 18,
+   "url": "/golf-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "offroad buggy",
+   "intent": "Commercial",
+   "volume": 390,
+   "kd": 6,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "petrol go karts",
+   "intent": "Commercial",
+   "volume": 390,
+   "kd": 8,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric drift go kart",
+   "intent": "Commercial",
+   "volume": 390,
+   "kd": 9,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "mgi golf buggies",
+   "intent": "Informational, Transactional",
+   "volume": 390,
+   "kd": 18,
+   "url": "/brands/mgi/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggys",
+   "intent": "Commercial",
+   "volume": 390,
+   "kd": 19,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart with remote",
+   "intent": "Commercial",
+   "volume": 390,
+   "kd": 20,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cars for sale",
+   "intent": "Transactional",
+   "volume": 390,
+   "kd": 21,
+   "url": "/golf-carts/for-sale/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy dune buggy",
+   "intent": "Commercial",
+   "volume": 390,
+   "kd": 21,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf chariot",
+   "intent": "Commercial",
+   "volume": 390,
+   "kd": 26,
+   "url": "/golf-buggies/push-pull-trolleys/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric go kart for kids",
+   "intent": "Commercial",
+   "volume": 320,
+   "kd": 7,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "used golf carts on sale",
+   "intent": "Transactional",
+   "volume": 320,
+   "kd": 13,
+   "url": "/golf-carts/used/",
+   "status": "placed"
+  },
+  {
+   "keyword": "childrens electric buggy",
+   "intent": "Informational, Commercial",
+   "volume": 320,
+   "kd": 15,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "childrens go kart",
+   "intent": "Commercial",
+   "volume": 320,
+   "kd": 17,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "go kart electric",
+   "intent": "Commercial",
+   "volume": 320,
+   "kd": 17,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "kiddies go kart",
+   "intent": "Commercial",
+   "volume": 320,
+   "kd": 21,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "go-kart",
+   "intent": "Commercial",
+   "volume": 320,
+   "kd": 24,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "motorised golf buggies",
+   "intent": "Commercial",
+   "volume": 320,
+   "kd": 28,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy battery lithium",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 3,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf e scooter",
+   "intent": "Transactional",
+   "volume": 260,
+   "kd": 3,
+   "url": "/golf-buggies/golf-scooters/",
+   "status": "placed"
+  },
+  {
+   "keyword": "off road buggies for sale",
+   "intent": "Transactional",
+   "volume": 260,
+   "kd": 4,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "kart wheels go kart",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 6,
+   "url": "/parts-accessories/off-road-parts/go-kart-parts-frames/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf golf carts for sale",
+   "intent": "Transactional",
+   "volume": 260,
+   "kd": 8,
+   "url": "/golf-carts/for-sale/",
+   "status": "excluded",
+   "reason": "Duplicate or mis-typed variant of a placed keyword"
+  },
+  {
+   "keyword": "buggy remote control car",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 8,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: RC, toy or hobby buggy"
+  },
+  {
+   "keyword": "golf cart golf",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 8,
+   "url": "/golf-carts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf push buggies",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 10,
+   "url": "/golf-buggies/push-pull-trolleys/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy cup holder",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 11,
+   "url": "/parts-accessories/golf-cart-accessories/phone-umbrella-drink-holders/",
+   "status": "placed"
+  },
+  {
+   "keyword": "dune buggies for sale",
+   "intent": "Transactional",
+   "volume": 260,
+   "kd": 12,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "kids go karts",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 12,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "kids electric buggy",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 13,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "cheap cheap go karts",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 13,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "excluded",
+   "reason": "Duplicate or mis-typed variant of a placed keyword"
+  },
+  {
+   "keyword": "electric go.karts",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 14,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric go kart for adults",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 14,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf carts for sale melbourne",
+   "intent": "Transactional",
+   "volume": 260,
+   "kd": 14,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy golf",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 14,
+   "url": "/golf-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "inexpensive go karts",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 14,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "cheap go karts",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 17,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buy a beach buggy",
+   "intent": "Transactional",
+   "volume": 260,
+   "kd": 17,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "beach buggy for sale australia",
+   "intent": "Transactional",
+   "volume": 260,
+   "kd": 18,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "costco golf buggy",
+   "intent": "Navigational, Transactional",
+   "volume": 260,
+   "kd": 19,
+   "url": "/golf-buggies/",
+   "status": "excluded",
+   "reason": "Other retailer or brand we do not list"
+  },
+  {
+   "keyword": "polaris ranger utv",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 19,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "go kart for kids",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 19,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "used golf carts",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 20,
+   "url": "/golf-carts/used/",
+   "status": "placed"
+  },
+  {
+   "keyword": "mgi golf carts",
+   "intent": "Navigational, Transactional",
+   "volume": 260,
+   "kd": 21,
+   "url": "/brands/mgi/",
+   "status": "placed"
+  },
+  {
+   "keyword": "side by side utv",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 23,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "adult go karts",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 24,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "go karts electric",
+   "intent": "Commercial",
+   "volume": 260,
+   "kd": 24,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "moonlight buggy",
+   "intent": "Informational, Transactional",
+   "volume": 260,
+   "kd": 27,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: event, tour, game or overseas"
+  },
+  {
+   "keyword": "beach buggy for sale au",
+   "intent": "Transactional",
+   "volume": 210,
+   "kd": 1,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "cart golf used",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 3,
+   "url": "/golf-carts/used/",
+   "status": "placed"
+  },
+  {
+   "keyword": "trailmaster dune buggies",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 4,
+   "url": "/brands/trailmaster/",
+   "status": "placed"
+  },
+  {
+   "keyword": "kids ride on buggy",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 4,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buy beach buggy australia",
+   "intent": "Transactional",
+   "volume": 210,
+   "kd": 4,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "trailmaster buggies",
+   "intent": "Informational, Commercial",
+   "volume": 210,
+   "kd": 4,
+   "url": "/brands/trailmaster/",
+   "status": "placed"
+  },
+  {
+   "keyword": "go kart steering wheel",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 5,
+   "url": "/parts-accessories/off-road-parts/go-kart-parts-frames/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric drifting go kart",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 6,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "beach buggys for sale",
+   "intent": "Transactional",
+   "volume": 210,
+   "kd": 6,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf carts gold coast",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 6,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "150cc buggy",
+   "intent": "Informational, Commercial",
+   "volume": 210,
+   "kd": 7,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "used golf buggies",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 7,
+   "url": "/golf-carts/used/",
+   "status": "placed"
+  },
+  {
+   "keyword": "greenworks buggy",
+   "intent": "Informational, Commercial",
+   "volume": 210,
+   "kd": 8,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: event, tour, game or overseas"
+  },
+  {
+   "keyword": "golf carts for sale nsw",
+   "intent": "Transactional",
+   "volume": 210,
+   "kd": 9,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "radio control buggy",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 9,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: RC, toy or hobby buggy"
+  },
+  {
+   "keyword": "motor for go kart",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 9,
+   "url": "/parts-accessories/off-road-parts/go-kart-parts-frames/",
+   "status": "placed"
+  },
+  {
+   "keyword": "dirt buggy",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 10,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart batteries brisbane",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 10,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf carts for sale qld",
+   "intent": "Transactional",
+   "volume": 210,
+   "kd": 10,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "beach buggy buy",
+   "intent": "Transactional",
+   "volume": 210,
+   "kd": 11,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "beach buggies for sale",
+   "intent": "Transactional",
+   "volume": 210,
+   "kd": 12,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "used buggy for sale",
+   "intent": "Transactional",
+   "volume": 210,
+   "kd": 13,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "second hand golf carts",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 13,
+   "url": "/golf-carts/used/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric carts",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 14,
+   "url": "/golf-carts/electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "4x4 buggy",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 14,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "2nd hand golf carts",
+   "intent": "Informational, Commercial",
+   "volume": 210,
+   "kd": 14,
+   "url": "/golf-carts/used/",
+   "status": "placed"
+  },
+  {
+   "keyword": "beach buggies",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 16,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "can am quad",
+   "intent": "Informational, Commercial",
+   "volume": 210,
+   "kd": 18,
+   "url": "/brands/can-am/",
+   "status": "placed"
+  },
+  {
+   "keyword": "can am quad bike",
+   "intent": "Informational, Transactional",
+   "volume": 210,
+   "kd": 18,
+   "url": "/brands/can-am/",
+   "status": "placed"
+  },
+  {
+   "keyword": "e go kart",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 19,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "atv sales melbourne",
+   "intent": "Transactional",
+   "volume": 210,
+   "kd": 20,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "mig golf carts",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 20,
+   "url": "/golf-carts/",
+   "status": "excluded",
+   "reason": "Other retailer or brand we do not list"
+  },
+  {
+   "keyword": "electric go kart motor",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 20,
+   "url": "/parts-accessories/off-road-parts/engines-carburetors/",
+   "status": "placed"
+  },
+  {
+   "keyword": "atv quad can am",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 21,
+   "url": "/brands/can-am/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy bo",
+   "intent": "Informational, Commercial",
+   "volume": 210,
+   "kd": 21,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "offroad go kart",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 21,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "utv australia",
+   "intent": "Commercial",
+   "volume": 210,
+   "kd": 22,
+   "url": "/off-road-buggies/electric-off-road-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "go kart buy",
+   "intent": "Transactional",
+   "volume": 210,
+   "kd": 23,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "volkswagen buggy pink",
+   "intent": "Informational, Commercial",
+   "volume": 210,
+   "kd": 25,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: event, tour, game or overseas"
+  },
+  {
+   "keyword": "polaris buggy for sale",
+   "intent": "Transactional",
+   "volume": 210,
+   "kd": 26,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric go kart for adults australia",
+   "intent": "Commercial",
+   "volume": 170,
+   "kd": 1,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "trailmaster offroad buggies",
+   "intent": "Informational, Commercial",
+   "volume": 170,
+   "kd": 2,
+   "url": "/brands/trailmaster/",
+   "status": "placed"
+  },
+  {
+   "keyword": "kids petrol buggy",
+   "intent": "Informational, Commercial",
+   "volume": 170,
+   "kd": 2,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "trailmaster buggies for sale",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 3,
+   "url": "/brands/trailmaster/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy for kids",
+   "intent": "Commercial",
+   "volume": 170,
+   "kd": 3,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "childs off road buggy",
+   "intent": "Informational, Commercial",
+   "volume": 170,
+   "kd": 4,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric farm buggy",
+   "intent": "Informational, Commercial",
+   "volume": 170,
+   "kd": 4,
+   "url": "/off-road-buggies/electric-off-road-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "2 seater buggy for sale",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 4,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric buggy for adults",
+   "intent": "Informational, Commercial",
+   "volume": 170,
+   "kd": 5,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "ride on buggy",
+   "intent": "Informational, Commercial",
+   "volume": 170,
+   "kd": 5,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "second hand golf carts for sale near me",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 5,
+   "url": "/golf-carts/used/",
+   "status": "placed"
+  },
+  {
+   "keyword": "trailmaster buggy for sale",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 5,
+   "url": "/brands/trailmaster/",
+   "status": "placed"
+  },
+  {
+   "keyword": "trailmaster cheetah offroad buggy",
+   "intent": "Informational, Transactional",
+   "volume": 170,
+   "kd": 6,
+   "url": "/brands/trailmaster/",
+   "status": "placed"
+  },
+  {
+   "keyword": "trailmaster cheetah for sale",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 6,
+   "url": "/brands/trailmaster/",
+   "status": "placed"
+  },
+  {
+   "keyword": "for sale beach buggy",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 6,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "used golf cart for sale",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 6,
+   "url": "/golf-carts/used/",
+   "status": "placed"
+  },
+  {
+   "keyword": "off road dune buggy",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 6,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "second hand golf buggies for sale",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 6,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "trailmaster cheetah off road buggy",
+   "intent": "Informational, Commercial",
+   "volume": 170,
+   "kd": 6,
+   "url": "/brands/trailmaster/",
+   "status": "placed"
+  },
+  {
+   "keyword": "beach buggies for sale australia",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 7,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "lithium ion golf cart batteries",
+   "intent": "Informational, Commercial",
+   "volume": 170,
+   "kd": 7,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golfbuggy",
+   "intent": "Commercial",
+   "volume": 170,
+   "kd": 8,
+   "url": "/golf-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "2nd hand buggy",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 8,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf bag accessories",
+   "intent": "Commercial",
+   "volume": 170,
+   "kd": 9,
+   "url": "/parts-accessories/golf-cart-accessories/bags-rain-covers-eskies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart near me for sale",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 9,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "beach buggies for sale in australia",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 9,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy farm",
+   "intent": "Informational, Commercial",
+   "volume": 170,
+   "kd": 9,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf carts for sale near me",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 9,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "used side by side utv for sale australia",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 11,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf trolley scooter",
+   "intent": "Informational, Commercial",
+   "volume": 170,
+   "kd": 11,
+   "url": "/golf-buggies/golf-scooters/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf trolley bags",
+   "intent": "Commercial",
+   "volume": 170,
+   "kd": 12,
+   "url": "/golf-buggies/push-pull-trolleys/",
+   "status": "placed"
+  },
+  {
+   "keyword": "volkswagen golf battery",
+   "intent": "Informational, Commercial",
+   "volume": 170,
+   "kd": 13,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "excluded",
+   "reason": "Duplicate or mis-typed variant of a placed keyword"
+  },
+  {
+   "keyword": "used buggies for sale",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 13,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "4x4 farm buggy",
+   "intent": "Informational, Commercial",
+   "volume": 170,
+   "kd": 13,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "go kart chassis",
+   "intent": "Commercial",
+   "volume": 170,
+   "kd": 13,
+   "url": "/parts-accessories/off-road-parts/go-kart-parts-frames/",
+   "status": "placed"
+  },
+  {
+   "keyword": "vw golf battery",
+   "intent": "Informational, Commercial",
+   "volume": 170,
+   "kd": 13,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "excluded",
+   "reason": "Duplicate or mis-typed variant of a placed keyword"
+  },
+  {
+   "keyword": "electric go kart australia",
+   "intent": "Commercial",
+   "volume": 170,
+   "kd": 13,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "go kart purchase",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 14,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "rzr",
+   "intent": "Commercial",
+   "volume": 170,
+   "kd": 14,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "drifting go kart",
+   "intent": "Commercial",
+   "volume": 170,
+   "kd": 15,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "dune buggies",
+   "intent": "Commercial",
+   "volume": 170,
+   "kd": 15,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "push cart golf",
+   "intent": "Commercial",
+   "volume": 170,
+   "kd": 15,
+   "url": "/golf-buggies/push-pull-trolleys/",
+   "status": "placed"
+  },
+  {
+   "keyword": "cart golf",
+   "intent": "Commercial",
+   "volume": 170,
+   "kd": 16,
+   "url": "/golf-carts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "bag for golf trolley",
+   "intent": "Commercial",
+   "volume": 170,
+   "kd": 17,
+   "url": "/golf-buggies/push-pull-trolleys/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf bag trolley",
+   "intent": "Commercial",
+   "volume": 170,
+   "kd": 17,
+   "url": "/golf-buggies/push-pull-trolleys/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy for running",
+   "intent": "Commercial",
+   "volume": 170,
+   "kd": 19,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "side by side buggies",
+   "intent": "Transactional",
+   "volume": 170,
+   "kd": 20,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "beach and buggy",
+   "intent": "Informational, Transactional",
+   "volume": 170,
+   "kd": 21,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "excluded",
+   "reason": "Duplicate or mis-typed variant of a placed keyword"
+  },
+  {
+   "keyword": "atv automotive",
+   "intent": "Transactional, Navigational",
+   "volume": 170,
+   "kd": 22,
+   "url": "/off-road-buggies/electric-off-road-utvs/",
+   "status": "excluded",
+   "reason": "Duplicate or mis-typed variant of a placed keyword"
+  },
+  {
+   "keyword": "side by side accessories",
+   "intent": "Informational, Commercial",
+   "volume": 170,
+   "kd": 26,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "atv side",
+   "intent": "Informational, Commercial",
+   "volume": 170,
+   "kd": 27,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "can am atv bike",
+   "intent": "Informational, Transactional",
+   "volume": 170,
+   "kd": 27,
+   "url": "/brands/can-am/",
+   "status": "placed"
+  },
+  {
+   "keyword": "off road buggies for sale australia",
+   "intent": "Transactional",
+   "volume": 140,
+   "kd": 3,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric golf cart remote control",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 3,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "trailmaster off road buggies",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 3,
+   "url": "/brands/trailmaster/",
+   "status": "placed"
+  },
+  {
+   "keyword": "trojan golf buggy batteries",
+   "intent": "Informational, Commercial",
+   "volume": 140,
+   "kd": 3,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy tires",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 4,
+   "url": "/parts-accessories/golf-buggy-parts/wheels-rims-tyres/",
+   "status": "placed"
+  },
+  {
+   "keyword": "2 seater buggy",
+   "intent": "Informational, Transactional",
+   "volume": 140,
+   "kd": 5,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "go kart buggy",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 6,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "excluded",
+   "reason": "Duplicate or mis-typed variant of a placed keyword"
+  },
+  {
+   "keyword": "farm buggy for sale",
+   "intent": "Transactional",
+   "volume": 140,
+   "kd": 6,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf carts for sale adelaide",
+   "intent": "Transactional",
+   "volume": 140,
+   "kd": 6,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "8 volt golf cart batteries",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 6,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric buggies",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 6,
+   "url": "/off-road-buggies/electric-off-road-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "yamaha golf cart parts",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 6,
+   "url": "/brands/yamaha/",
+   "status": "excluded",
+   "reason": "Parts we do not sell"
+  },
+  {
+   "keyword": "cheap buggy",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 6,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy second hand",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 7,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "trailmaster cheetah go karts for sale",
+   "intent": "Transactional",
+   "volume": 140,
+   "kd": 9,
+   "url": "/brands/trailmaster/",
+   "status": "placed"
+  },
+  {
+   "keyword": "off road dune buggies",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 9,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "mgi navigator quad gyro electric buggy",
+   "intent": "Informational, Commercial",
+   "volume": 140,
+   "kd": 9,
+   "url": "/brands/mgi/",
+   "status": "placed"
+  },
+  {
+   "keyword": "mgi electric golf buggy australia",
+   "intent": "Transactional",
+   "volume": 140,
+   "kd": 9,
+   "url": "/brands/mgi/",
+   "status": "placed"
+  },
+  {
+   "keyword": "4wd buggy",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 9,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggies off road for sale",
+   "intent": "Transactional",
+   "volume": 140,
+   "kd": 9,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "farm buggies",
+   "intent": "Informational, Commercial",
+   "volume": 140,
+   "kd": 10,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "sand buggy",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 11,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "remote control electric golf cart",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 11,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "mini rzr",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 11,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy trailer",
+   "intent": "Informational, Commercial",
+   "volume": 140,
+   "kd": 11,
+   "url": "/parts-accessories/golf-buggy-parts/trailers/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy sun shade",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 12,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "dune buggies australia",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 13,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "push buggy golf",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 13,
+   "url": "/golf-buggies/push-pull-trolleys/",
+   "status": "placed"
+  },
+  {
+   "keyword": "offroad buggy for sale",
+   "intent": "Transactional",
+   "volume": 140,
+   "kd": 13,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "best golf buggy",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 15,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "offroad buggies",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 15,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "polaris razor",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 15,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "qod golf buggy",
+   "intent": "Informational, Transactional",
+   "volume": 140,
+   "kd": 15,
+   "url": "/golf-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "second hand utv for sale",
+   "intent": "Transactional",
+   "volume": 140,
+   "kd": 16,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "vw beach buggy for sale",
+   "intent": "Transactional",
+   "volume": 140,
+   "kd": 17,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "polaris dune buggy for sale",
+   "intent": "Transactional",
+   "volume": 140,
+   "kd": 17,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "mgi ai navigator gps+ buggy",
+   "intent": "Informational, Commercial",
+   "volume": 140,
+   "kd": 17,
+   "url": "/brands/mgi/",
+   "status": "placed"
+  },
+  {
+   "keyword": "race buggy",
+   "intent": "Informational, Commercial",
+   "volume": 140,
+   "kd": 18,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "volkswagen beach buggy for sale",
+   "intent": "Transactional",
+   "volume": 140,
+   "kd": 19,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "utv sales",
+   "intent": "Transactional",
+   "volume": 140,
+   "kd": 21,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "atv sales",
+   "intent": "Transactional",
+   "volume": 140,
+   "kd": 21,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "motorised golf buggies for sale",
+   "intent": "Transactional",
+   "volume": 140,
+   "kd": 22,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "kids utv",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 22,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "volkswagen dune buggy for sale",
+   "intent": "Transactional",
+   "volume": 140,
+   "kd": 25,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "atv australia for sale",
+   "intent": "Commercial",
+   "volume": 140,
+   "kd": 26,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "doodle buggy",
+   "intent": "Informational, Commercial",
+   "volume": 140,
+   "kd": 28,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "atv farm attachments australia",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 0,
+   "url": "/off-road-buggies/electric-off-road-utvs/",
+   "status": "excluded",
+   "reason": "Parts we do not sell"
+  },
+  {
+   "keyword": "buggies and go karts",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 0,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "excluded",
+   "reason": "Duplicate or mis-typed variant of a placed keyword"
+  },
+  {
+   "keyword": "eletric buggy",
+   "intent": "Informational, Commercial",
+   "volume": 110,
+   "kd": 3,
+   "url": "/off-road-buggies/electric-off-road-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy dirt",
+   "intent": "Informational, Commercial",
+   "volume": 110,
+   "kd": 3,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy remote control",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 3,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "48v lithium golf cart battery",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 3,
+   "url": "/parts-accessories/golf-buggy-parts/chargers-conversion-kits/",
+   "status": "placed"
+  },
+  {
+   "keyword": "kids can am buggy",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 3,
+   "url": "/brands/can-am/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart lithium battery",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 4,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric buggies for adults",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 4,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf scooters for sale australia",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 4,
+   "url": "/golf-buggies/golf-scooters/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy gold coast",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 5,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggies gold coast",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 5,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "phone holders for golf buggies",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 5,
+   "url": "/parts-accessories/golf-cart-accessories/phone-umbrella-drink-holders/",
+   "status": "placed"
+  },
+  {
+   "keyword": "phone holder for golf cart",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 5,
+   "url": "/parts-accessories/golf-cart-accessories/phone-umbrella-drink-holders/",
+   "status": "placed"
+  },
+  {
+   "keyword": "4x4 farm buggy for sale",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 6,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "can am buggy for sale",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 6,
+   "url": "/brands/can-am/",
+   "status": "placed"
+  },
+  {
+   "keyword": "48 volt golf cart batteries",
+   "intent": "Informational, Commercial",
+   "volume": 110,
+   "kd": 6,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "childrens petrol go kart",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 6,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric golf scooters australia",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 7,
+   "url": "/golf-buggies/golf-scooters/",
+   "status": "placed"
+  },
+  {
+   "keyword": "4wd buggies",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 7,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "trojan batteries for golf cart",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 7,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "dune buggy go kart",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 7,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart batteries 48 volt",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 7,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggies for sale qld",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 8,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggys",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 9,
+   "url": "/golf-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf carts perth",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 9,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy cart",
+   "intent": "Informational, Commercial",
+   "volume": 110,
+   "kd": 9,
+   "url": "/golf-carts/used/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart batteries australia",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 9,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "wheeled buggy",
+   "intent": "Informational, Commercial",
+   "volume": 110,
+   "kd": 9,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "vw dune buggy for sale australia",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 9,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf batteries",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 10,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "atv store australia",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 11,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "mens buggies",
+   "intent": "Informational, Commercial",
+   "volume": 110,
+   "kd": 11,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "go kart dune buggy",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 11,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "excluded",
+   "reason": "Duplicate or mis-typed variant of a placed keyword"
+  },
+  {
+   "keyword": "used golf buggies for sale",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 11,
+   "url": "/golf-carts/used/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggies cars",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 11,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: RC, toy or hobby buggy"
+  },
+  {
+   "keyword": "batteries for golf cars",
+   "intent": "Informational, Commercial",
+   "volume": 110,
+   "kd": 11,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "crossfire buggy",
+   "intent": "Navigational, Transactional",
+   "volume": 110,
+   "kd": 13,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "4 seater buggy",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 13,
+   "url": "/parts-accessories/off-road-parts/wheels-tyres/",
+   "status": "placed"
+  },
+  {
+   "keyword": "off road go karts",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 13,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "off road race buggy",
+   "intent": "Informational, Commercial",
+   "volume": 110,
+   "kd": 13,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggies for sale australia",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 14,
+   "url": "/golf-buggies/for-sale/",
+   "status": "placed"
+  },
+  {
+   "keyword": "used buggies",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 14,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy travel set",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 15,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "buy dune buggies australia",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 15,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "vw beach buggy for sale australia",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 15,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric remote control golf carts",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 15,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy volkswagen for sale",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 16,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "4 wheel drive buggies",
+   "intent": "Informational, Commercial",
+   "volume": 110,
+   "kd": 16,
+   "url": "/parts-accessories/off-road-parts/wheels-tyres/",
+   "status": "placed"
+  },
+  {
+   "keyword": "children's side by side",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 16,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "m g i golf buggies",
+   "intent": "Informational, Transactional",
+   "volume": 110,
+   "kd": 16,
+   "url": "/golf-buggies/",
+   "status": "excluded",
+   "reason": "Other retailer or brand we do not list"
+  },
+  {
+   "keyword": "buggy on wheels",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 17,
+   "url": "/parts-accessories/off-road-parts/wheels-tyres/",
+   "status": "excluded",
+   "reason": "Duplicate or mis-typed variant of a placed keyword"
+  },
+  {
+   "keyword": "mgi buggies",
+   "intent": "Informational, Transactional",
+   "volume": 110,
+   "kd": 17,
+   "url": "/brands/mgi/",
+   "status": "placed"
+  },
+  {
+   "keyword": "best golf buggy australia",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 17,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "beach buggy cart",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 17,
+   "url": "/golf-carts/used/",
+   "status": "placed"
+  },
+  {
+   "keyword": "atv sale",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 17,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "polaris kids buggy",
+   "intent": "Informational, Transactional",
+   "volume": 110,
+   "kd": 17,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "bali buggy",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 18,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "buggy vw for sale",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 18,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "gator buggy",
+   "intent": "Informational, Transactional",
+   "volume": 110,
+   "kd": 18,
+   "url": "/brands/john-deere/",
+   "status": "placed"
+  },
+  {
+   "keyword": "vw dune buggy for sale",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 19,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "beach buggy vw for sale",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 20,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "polaris dirt buggy",
+   "intent": "Navigational, Commercial",
+   "volume": 110,
+   "kd": 21,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart parts and repairs",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 21,
+   "url": "/parts-accessories/golf-buggy-parts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "dune buggy for sale vw",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 21,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "dune buggy volkswagen for sale",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 21,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "4 seater dune buggy",
+   "intent": "Informational, Commercial",
+   "volume": 110,
+   "kd": 22,
+   "url": "/parts-accessories/off-road-parts/wheels-tyres/",
+   "status": "placed"
+  },
+  {
+   "keyword": "quad atv polaris",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 23,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy width",
+   "intent": "Informational, Commercial",
+   "volume": 110,
+   "kd": 24,
+   "url": "/golf-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "tesla beach buggy racing",
+   "intent": "Informational, Transactional",
+   "volume": 110,
+   "kd": 24,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: event, tour, game or overseas"
+  },
+  {
+   "keyword": "atv sales australia",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 26,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart purchase",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 27,
+   "url": "/golf-carts/petrol/",
+   "status": "placed"
+  },
+  {
+   "keyword": "best electric golf buggy",
+   "intent": "Commercial",
+   "volume": 110,
+   "kd": 27,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "shopping buggies",
+   "intent": "Informational, Commercial",
+   "volume": 110,
+   "kd": 27,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "atv near me",
+   "intent": "Transactional",
+   "volume": 110,
+   "kd": 28,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "2 seater petrol buggy",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 0,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy for sale perth",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 2,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "side by side go kart",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 2,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart wheels and tyres",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 2,
+   "url": "/parts-accessories/golf-buggy-parts/wheels-rims-tyres/",
+   "status": "placed"
+  },
+  {
+   "keyword": "two seater petrol buggy",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 3,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "lithium batteries for golf carts",
+   "intent": "Informational, Commercial",
+   "volume": 90,
+   "kd": 4,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "kids buggy electric",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 4,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "8v golf cart batteries",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 4,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "kids buggies",
+   "intent": "Informational, Commercial",
+   "volume": 90,
+   "kd": 4,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "48v golf cart batteries",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 5,
+   "url": "/parts-accessories/golf-buggy-parts/chargers-conversion-kits/",
+   "status": "placed"
+  },
+  {
+   "keyword": "2nd hand electric golf carts for sale",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 5,
+   "url": "/golf-carts/used/",
+   "status": "placed"
+  },
+  {
+   "keyword": "emc golf buggy",
+   "intent": "Informational, Commercial",
+   "volume": 90,
+   "kd": 5,
+   "url": "/golf-buggies/",
+   "status": "excluded",
+   "reason": "Other retailer or brand we do not list"
+  },
+  {
+   "keyword": "golf buggies for sale victoria",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 6,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggies for sale nsw",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 6,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "go kart off road",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 6,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "phone holder golf cart",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 6,
+   "url": "/parts-accessories/golf-cart-accessories/phone-umbrella-drink-holders/",
+   "status": "placed"
+  },
+  {
+   "keyword": "quad parts",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 6,
+   "url": "/parts-accessories/off-road-parts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "petrol buggy",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 6,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "24v buggy",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 6,
+   "url": "/off-road-buggies/electric-off-road-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "polaris side by side for sale",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 7,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "second hand polaris buggy for sale",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 7,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "quad bike accessories",
+   "intent": "Informational, Commercial",
+   "volume": 90,
+   "kd": 7,
+   "url": "/parts-accessories/off-road-parts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "push golf buggy for sale",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 8,
+   "url": "/golf-buggies/for-sale/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf trolley for sale",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 8,
+   "url": "/golf-buggies/push-pull-trolleys/",
+   "status": "placed"
+  },
+  {
+   "keyword": "umbrella holder for golf buggy",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 8,
+   "url": "/parts-accessories/golf-cart-accessories/phone-umbrella-drink-holders/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart for sale near me",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 8,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "off road buggy melbourne",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 8,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buy a buggy",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 9,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "shopping buggy",
+   "intent": "Informational, Commercial",
+   "volume": 90,
+   "kd": 9,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "atv buggies for sale australia",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 9,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "remote control golf buggies",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 9,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf.buggy",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 9,
+   "url": "/golf-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "children's play buggies",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 9,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "quad parts australia",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 9,
+   "url": "/parts-accessories/off-road-parts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "push buggy",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 9,
+   "url": "/golf-buggies/push-pull-trolleys/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy tyres",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 10,
+   "url": "/parts-accessories/golf-buggy-parts/wheels-rims-tyres/",
+   "status": "placed"
+  },
+  {
+   "keyword": "stonehaven glide golf buggy",
+   "intent": "Informational, Commercial",
+   "volume": 90,
+   "kd": 10,
+   "url": "/golf-buggies/",
+   "status": "excluded",
+   "reason": "Other retailer or brand we do not list"
+  },
+  {
+   "keyword": "pull buggy golf",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 10,
+   "url": "/golf-buggies/push-pull-trolleys/",
+   "status": "placed"
+  },
+  {
+   "keyword": "mini buggy",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 11,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "polaris razor rzr",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 11,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy for sale sydney",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 12,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart buggy",
+   "intent": "Informational, Commercial",
+   "volume": 90,
+   "kd": 12,
+   "url": "/golf-carts/used/",
+   "status": "placed"
+  },
+  {
+   "keyword": "miniature buggy",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 12,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: RC, toy or hobby buggy"
+  },
+  {
+   "keyword": "utv buggy",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 14,
+   "url": "/off-road-buggies/electric-off-road-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "motorized golf cart",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 14,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart electric",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 14,
+   "url": "/golf-carts/electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "remote control golf cart",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 14,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "racing buggy",
+   "intent": "Informational, Commercial",
+   "volume": 90,
+   "kd": 14,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "trident golf buggy",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 15,
+   "url": "/golf-buggies/",
+   "status": "excluded",
+   "reason": "Other retailer or brand we do not list"
+  },
+  {
+   "keyword": "mgi golf buggy accessories",
+   "intent": "Navigational, Transactional",
+   "volume": 90,
+   "kd": 15,
+   "url": "/brands/mgi/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf bag carts for sale",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 16,
+   "url": "/parts-accessories/golf-cart-accessories/bags-rain-covers-eskies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "dune buggy australia",
+   "intent": "Informational, Commercial",
+   "volume": 90,
+   "kd": 16,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "vw buggy for sale australia",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 16,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "atv buggy for sale",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 16,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "v w dune buggy for sale",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 17,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "excluded",
+   "reason": "Duplicate or mis-typed variant of a placed keyword"
+  },
+  {
+   "keyword": "electric golf cart with remote",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 17,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "sand buggies",
+   "intent": "Informational, Commercial",
+   "volume": 90,
+   "kd": 17,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "4 seat dune buggy",
+   "intent": "Informational, Commercial",
+   "volume": 90,
+   "kd": 18,
+   "url": "/parts-accessories/off-road-parts/wheels-tyres/",
+   "status": "placed"
+  },
+  {
+   "keyword": "mgi golf buggy for sale",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 18,
+   "url": "/brands/mgi/",
+   "status": "placed"
+  },
+  {
+   "keyword": "razor polaris rzr",
+   "intent": "Informational, Commercial",
+   "volume": 90,
+   "kd": 18,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy cars",
+   "intent": "Informational, Commercial",
+   "volume": 90,
+   "kd": 19,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: RC, toy or hobby buggy"
+  },
+  {
+   "keyword": "clip on buggy fan",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 20,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "second hand electric golf buggies for sale",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 20,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "quad bike parts australia",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 21,
+   "url": "/parts-accessories/off-road-parts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric motorized golf cart",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 21,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "atvs store",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 22,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "dune buggy dubai",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 22,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: event, tour, game or overseas"
+  },
+  {
+   "keyword": "razor buggy",
+   "intent": "Informational, Commercial",
+   "volume": 90,
+   "kd": 24,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "designer buggy",
+   "intent": "Informational, Commercial",
+   "volume": 90,
+   "kd": 25,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "vw buggy for sale",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 25,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "rzr dune buggy",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 27,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "polaris atv for sale",
+   "intent": "Transactional",
+   "volume": 90,
+   "kd": 27,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "beach buggy dubai",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 28,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: event, tour, game or overseas"
+  },
+  {
+   "keyword": "four wheel buggy",
+   "intent": "Commercial",
+   "volume": 90,
+   "kd": 28,
+   "url": "/parts-accessories/off-road-parts/wheels-tyres/",
+   "status": "placed"
+  },
+  {
+   "keyword": "bunnings golf buggy",
+   "intent": "Navigational, Transactional",
+   "volume": 90,
+   "kd": 28,
+   "url": "/golf-buggies/",
+   "status": "excluded",
+   "reason": "Other retailer or brand we do not list"
+  },
+  {
+   "keyword": "chinese quad bike parts",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 1,
+   "url": "/parts-accessories/off-road-parts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart lithium batteries",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 2,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "8v golf cart battery",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 2,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy wheels and tyres",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 2,
+   "url": "/parts-accessories/golf-buggy-parts/wheels-rims-tyres/",
+   "status": "placed"
+  },
+  {
+   "keyword": "48v golf cart battery",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 2,
+   "url": "/parts-accessories/golf-buggy-parts/chargers-conversion-kits/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric buggy for adults australia",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 3,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy trailer for sale",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 4,
+   "url": "/parts-accessories/golf-buggy-parts/trailers/",
+   "status": "placed"
+  },
+  {
+   "keyword": "150cc dune buggy",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 4,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy electric",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 4,
+   "url": "/off-road-buggies/electric-off-road-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric golf scooter australia",
+   "intent": "Informational, Transactional",
+   "volume": 70,
+   "kd": 4,
+   "url": "/golf-buggies/golf-scooters/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggies for kids",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 4,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "second hand golf buggies",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 5,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "off road racing buggy for sale australia",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 5,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "side by side buggy for sale qld",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 5,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "remote controlled golf buggy",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 6,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "kids polaris buggy",
+   "intent": "Informational, Transactional",
+   "volume": 70,
+   "kd": 6,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "off road beach buggy",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 6,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy 150cc",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 6,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "second hand golf buggy",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 6,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "quad bike spare parts goulburn",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 6,
+   "url": "/parts-accessories/off-road-parts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "axglo golf buggy",
+   "intent": "Informational, Transactional",
+   "volume": 70,
+   "kd": 6,
+   "url": "/brands/tri-lite/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggies adelaide",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 6,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "12v golf buggy battery",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 6,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy used for sale",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 6,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "off road buggy kits australia",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 6,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "DIY kits and plans: we sell complete vehicles"
+  },
+  {
+   "keyword": "atv accessories australia",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 6,
+   "url": "/parts-accessories/off-road-parts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "club golf buggy",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 6,
+   "url": "/golf-buggies/",
+   "status": "excluded",
+   "reason": "Other retailer or brand we do not list"
+  },
+  {
+   "keyword": "golf buggy drink holder",
+   "intent": "Informational, Transactional",
+   "volume": 70,
+   "kd": 6,
+   "url": "/parts-accessories/golf-cart-accessories/phone-umbrella-drink-holders/",
+   "status": "placed"
+  },
+  {
+   "keyword": "bike buggy",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 6,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "excluded",
+   "reason": "Off-niche: event, tour, game or overseas"
+  },
+  {
+   "keyword": "golf scooters for sale",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 6,
+   "url": "/golf-buggies/golf-scooters/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy tyres wheels",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 6,
+   "url": "/parts-accessories/golf-buggy-parts/wheels-rims-tyres/",
+   "status": "placed"
+  },
+  {
+   "keyword": "side by side sales",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 6,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy go kart",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 6,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf push buggy australia",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 7,
+   "url": "/golf-buggies/push-pull-trolleys/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy push",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 7,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf car battery",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 7,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "12 volt golf cart batteries",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 7,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "dune buggy kart",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 7,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "excluded",
+   "reason": "Duplicate or mis-typed variant of a placed keyword"
+  },
+  {
+   "keyword": "golf buggies for sale brisbane",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 7,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "off-road buggies",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 8,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "off road buggy frame plans",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 8,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "DIY kits and plans: we sell complete vehicles"
+  },
+  {
+   "keyword": "brosnan golf buggy",
+   "intent": "Informational, Transactional",
+   "volume": 70,
+   "kd": 8,
+   "url": "/golf-buggies/",
+   "status": "excluded",
+   "reason": "Other retailer or brand we do not list"
+  },
+  {
+   "keyword": "lithium battery for golf buggy",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 8,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf carts remote control",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 8,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy mountain duet",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 9,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "valco buggy",
+   "intent": "Informational, Transactional",
+   "volume": 70,
+   "kd": 9,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "electric remote golf buggy",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 9,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "dune buggies for sale in australia",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 9,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buy beach buggy",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 10,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buy off road go kart",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 10,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "off road go kart australia",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 10,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "beach buggy car",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 10,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "travel buggy sale",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 11,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "buggy for beach",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 11,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "custom carts",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 11,
+   "url": "/golf-carts/mini-junior/",
+   "status": "placed"
+  },
+  {
+   "keyword": "parent facing buggy",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 12,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "go karts and buggies",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 12,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "excluded",
+   "reason": "Duplicate or mis-typed variant of a placed keyword"
+  },
+  {
+   "keyword": "off road dune buggy plans",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 12,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "DIY kits and plans: we sell complete vehicles"
+  },
+  {
+   "keyword": "can-am quad outlander",
+   "intent": "Informational, Transactional",
+   "volume": 70,
+   "kd": 12,
+   "url": "/brands/can-am/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart sale",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 12,
+   "url": "/golf-carts/for-sale/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggies for sale sydney",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 13,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric buggy australia",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 13,
+   "url": "/off-road-buggies/electric-off-road-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy dune for sale",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 13,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "excluded",
+   "reason": "Duplicate or mis-typed variant of a placed keyword"
+  },
+  {
+   "keyword": "shopping buggies for sale",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 13,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "offroad gokart",
+   "intent": "Informational, Transactional",
+   "volume": 70,
+   "kd": 13,
+   "url": "/off-road-buggies/go-karts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy for sale used",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 14,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggies australia",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 15,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "mgi golf buggy battery",
+   "intent": "Informational, Transactional",
+   "volume": 70,
+   "kd": 15,
+   "url": "/brands/mgi/",
+   "status": "placed"
+  },
+  {
+   "keyword": "remote control car buggy",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 15,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: RC, toy or hobby buggy"
+  },
+  {
+   "keyword": "buggy chassis",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 15,
+   "url": "/parts-accessories/off-road-parts/go-kart-parts-frames/",
+   "status": "placed"
+  },
+  {
+   "keyword": "clicgear golf buggies",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 16,
+   "url": "/brands/clicgear/",
+   "status": "placed"
+  },
+  {
+   "keyword": "polaris electric buggy",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 16,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "tri lite buggy",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 16,
+   "url": "/brands/tri-lite/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy sun cover",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 17,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "golf buggies for sale perth",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 17,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "atv sales sydney",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 17,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "nitro remote control buggies",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 17,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: RC, toy or hobby buggy"
+  },
+  {
+   "keyword": "polaris buggies",
+   "intent": "Informational, Transactional",
+   "volume": 70,
+   "kd": 17,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "horse and buggy for wedding",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 18,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: event, tour, game or overseas"
+  },
+  {
+   "keyword": "electric golf carts australia",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 19,
+   "url": "/golf-carts/electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "sxs buggy",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 19,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy australia",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 19,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf carts buggy",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 20,
+   "url": "/golf-carts/used/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy car",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 21,
+   "url": "/golf-carts/used/",
+   "status": "placed"
+  },
+  {
+   "keyword": "rzr plastics",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 22,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Parts we do not sell"
+  },
+  {
+   "keyword": "electric golf buggy sale",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 22,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric golf push cart",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 23,
+   "url": "/golf-carts/electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "disability buggy",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 23,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "bed buggy",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 23,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "condor golf buggy",
+   "intent": "Navigational, Commercial",
+   "volume": 70,
+   "kd": 23,
+   "url": "/golf-buggies/",
+   "status": "excluded",
+   "reason": "Other retailer or brand we do not list"
+  },
+  {
+   "keyword": "dune buggy trike trailer big w",
+   "intent": "Informational, Transactional",
+   "volume": 70,
+   "kd": 23,
+   "url": "/parts-accessories/off-road-parts/trailers-tie-downs/",
+   "status": "excluded",
+   "reason": "Off-niche: event, tour, game or overseas"
+  },
+  {
+   "keyword": "polaris atvs",
+   "intent": "Informational, Transactional",
+   "volume": 70,
+   "kd": 25,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "atv vs utv",
+   "intent": "Commercial",
+   "volume": 70,
+   "kd": 26,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "beach car buggy",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 27,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "polaris buggy price",
+   "intent": "Transactional",
+   "volume": 70,
+   "kd": 27,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf motorised buggy",
+   "intent": "Informational, Commercial",
+   "volume": 70,
+   "kd": 28,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "farm buggies for sale",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 0,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "second hand golf buggy for sale",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 1,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "chinese quad bike parts australia",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 1,
+   "url": "/parts-accessories/off-road-parts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "6 volt golf cart batteries",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 2,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric remote control golf buggy",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 2,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "lithium golf cart battery",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 3,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric off-road buggy australia",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 3,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric farm buggy for sale australia",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 3,
+   "url": "/off-road-buggies/electric-off-road-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "dune buggy kits",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 3,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "children's petrol buggy",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 3,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "chinese quad bike spares",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 3,
+   "url": "/parts-accessories/off-road-parts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart batteries price",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 4,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "kids atv buggy",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 4,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy tyres",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 4,
+   "url": "/parts-accessories/off-road-parts/wheels-tyres/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf carts for sale wa",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 4,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart batteries near me",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 4,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "used electric golf buggy for sale",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 4,
+   "url": "/golf-carts/used/",
+   "status": "placed"
+  },
+  {
+   "keyword": "kids buggy for sale",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 5,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "do buggy",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 5,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "golf buggy and trailer for sale",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 6,
+   "url": "/parts-accessories/golf-buggy-parts/trailers/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart batteries 12 volt",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 6,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "farm boss utv australia cv joint",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 6,
+   "url": "/off-road-buggies/electric-off-road-utvs/",
+   "status": "excluded",
+   "reason": "Parts we do not sell"
+  },
+  {
+   "keyword": "can am electric buggy",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 6,
+   "url": "/brands/can-am/",
+   "status": "placed"
+  },
+  {
+   "keyword": "48v buggy",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 6,
+   "url": "/off-road-buggies/electric-off-road-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy zip",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 6,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "lithium battery golf cart",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 6,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "off the road buggy",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 6,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "48v golf cart lithium battery",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 7,
+   "url": "/parts-accessories/golf-buggy-parts/chargers-conversion-kits/",
+   "status": "placed"
+  },
+  {
+   "keyword": "off road buggy for sale perth",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 7,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "2 seater dune buggy for sale",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 7,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "remote golf buggies",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 7,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "eagles & birdies classic premium golf buggy",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 8,
+   "url": "/golf-buggies/",
+   "status": "excluded",
+   "reason": "Other retailer or brand we do not list"
+  },
+  {
+   "keyword": "gold buggies",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 8,
+   "url": "/golf-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy clearance",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 8,
+   "url": "/clearance/",
+   "status": "placed"
+  },
+  {
+   "keyword": "diesel utv",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 8,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf cart with remote control",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 8,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "farm utv for sale",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 8,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "rzr polaris",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 8,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "batteries for golf carts",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 9,
+   "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
+   "status": "placed"
+  },
+  {
+   "keyword": "best golf push buggy australia",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 9,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "atv store online",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 9,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "utv accessories",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 9,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy kart",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 9,
+   "url": "/off-road-buggies/kids-buggies/",
+   "status": "excluded",
+   "reason": "Duplicate or mis-typed variant of a placed keyword"
+  },
+  {
+   "keyword": "push golf buggies",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 10,
+   "url": "/golf-buggies/push-pull-trolleys/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggies for sale near me",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 10,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy 3 wheel",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 10,
+   "url": "/golf-buggies/3-wheel/",
+   "status": "placed"
+  },
+  {
+   "keyword": "4x4 buggy for sale",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 10,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy scooter",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 10,
+   "url": "/golf-buggies/golf-scooters/",
+   "status": "placed"
+  },
+  {
+   "keyword": "remote control golf trolley",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 10,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "can am buggy price",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 11,
+   "url": "/brands/can-am/",
+   "status": "placed"
+  },
+  {
+   "keyword": "polaris rzr for sale",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 11,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "push pull golf buggy",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 11,
+   "url": "/golf-buggies/push-pull-trolleys/",
+   "status": "placed"
+  },
+  {
+   "keyword": "utility buggy",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 12,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "concrete buggy",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 12,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: event, tour, game or overseas"
+  },
+  {
+   "keyword": "3 wheeled golf carts for sale",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 12,
+   "url": "/golf-buggies/3-wheel/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggies sale",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 12,
+   "url": "/golf-buggies/for-sale/",
+   "status": "placed"
+  },
+  {
+   "keyword": "nitro buggy",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 12,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: RC, toy or hobby buggy"
+  },
+  {
+   "keyword": "mgi golf buggy repairs near me",
+   "intent": "Informational, Transactional",
+   "volume": 50,
+   "kd": 12,
+   "url": "/brands/mgi/",
+   "status": "excluded",
+   "reason": "Parts we do not sell"
+  },
+  {
+   "keyword": "buggy australian",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 13,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "polaris quad for sale",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 13,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "quad atv accessories",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 14,
+   "url": "/parts-accessories/off-road-parts/",
+   "status": "placed"
+  },
+  {
+   "keyword": "kit buggy",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 15,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "excluded",
+   "reason": "DIY kits and plans: we sell complete vehicles"
+  },
+  {
+   "keyword": "moutain buggy",
+   "intent": "Navigational, Commercial",
+   "volume": 50,
+   "kd": 15,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "mgi electric golf buggies",
+   "intent": "Informational, Transactional",
+   "volume": 50,
+   "kd": 16,
+   "url": "/brands/mgi/",
+   "status": "placed"
+  },
+  {
+   "keyword": "follow me golf buggy",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 16,
+   "url": "/golf-buggies/",
+   "status": "excluded",
+   "reason": "Other retailer or brand we do not list"
+  },
+  {
+   "keyword": "mgi remote golf buggy",
+   "intent": "Informational, Transactional",
+   "volume": 50,
+   "kd": 16,
+   "url": "/brands/mgi/",
+   "status": "placed"
+  },
+  {
+   "keyword": "three wheeled golf buggy",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 16,
+   "url": "/golf-buggies/3-wheel/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric golf buggy for sale perth",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 16,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "remote control golf caddy",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 17,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "racing buggies",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 17,
+   "url": "/off-road-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "side by side farm buggy",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 17,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggies perth",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 17,
+   "url": "/golf-buggies/for-sale-locations/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggy starter deck",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 17,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: RC, toy or hobby buggy"
+  },
+  {
+   "keyword": "side by side buggy for sale australia",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 17,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "aldi golf buggy review",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 18,
+   "url": "/golf-buggies/",
+   "status": "excluded",
+   "reason": "Other retailer or brand we do not list"
+  },
+  {
+   "keyword": "estate electric golf buggy",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 18,
+   "url": "/golf-carts/electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf trolleys for sale",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 19,
+   "url": "/golf-buggies/push-pull-trolleys/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric remote golf carts",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 19,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "mgi halo buggy",
+   "intent": "Navigational, Commercial",
+   "volume": 50,
+   "kd": 19,
+   "url": "/brands/mgi/",
+   "status": "placed"
+  },
+  {
+   "keyword": "ezgo golf cart accessories",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 20,
+   "url": "/brands/ezgo/",
+   "status": "placed"
+  },
+  {
+   "keyword": "best push golf buggy australia",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 20,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy tour rome",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 20,
+   "url": "/golf-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: event, tour, game or overseas"
+  },
+  {
+   "keyword": "canam atv",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 21,
+   "url": "/brands/can-am/",
+   "status": "placed"
+  },
+  {
+   "keyword": "tamiya buggy",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 21,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: RC, toy or hobby buggy"
+  },
+  {
+   "keyword": "honda dune buggy odyssey for sale",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 21,
+   "url": "/brands/honda/",
+   "status": "placed"
+  },
+  {
+   "keyword": "electric golf carts with remote control",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 21,
+   "url": "/golf-buggies/remote-control/",
+   "status": "placed"
+  },
+  {
+   "keyword": "atv dealers",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 22,
+   "url": "/off-road-buggies/mini-quads-atvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "bali buggy tour",
+   "intent": "Informational, Transactional",
+   "volume": 50,
+   "kd": 22,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: event, tour, game or overseas"
+  },
+  {
+   "keyword": "automatic golf buggy",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 22,
+   "url": "/golf-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "volkswagen buggy for sale",
+   "intent": "Navigational, Transactional",
+   "volume": 50,
+   "kd": 23,
+   "url": "/off-road-buggies/dune-buggies/",
+   "status": "placed"
+  },
+  {
+   "keyword": "buggies bird",
+   "intent": "Informational, Transactional",
+   "volume": 50,
+   "kd": 23,
+   "url": "/off-road-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: pram, pushchair or baby buggy"
+  },
+  {
+   "keyword": "aldi electric golf buggy review",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 23,
+   "url": "/golf-carts/electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "off road side by side",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 24,
+   "url": "/off-road-buggies/side-by-sides-utvs/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy crash",
+   "intent": "Informational, Transactional",
+   "volume": 50,
+   "kd": 24,
+   "url": "/golf-buggies/",
+   "status": "excluded",
+   "reason": "Off-niche: event, tour, game or overseas"
+  },
+  {
+   "keyword": "polaris farm buggy",
+   "intent": "Informational, Transactional",
+   "volume": 50,
+   "kd": 24,
+   "url": "/brands/polaris/",
+   "status": "placed"
+  },
+  {
+   "keyword": "best golf push buggy",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 24,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "best electric golf buggies",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 25,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf electric buggies",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 25,
+   "url": "/golf-carts/electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "can am quad bikes",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 26,
+   "url": "/brands/can-am/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggy electric for sale",
+   "intent": "Transactional",
+   "volume": 50,
+   "kd": 26,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "golf buggies electric",
+   "intent": "Commercial",
+   "volume": 50,
+   "kd": 27,
+   "url": "/golf-carts/electric/",
+   "status": "placed"
+  },
+  {
+   "keyword": "motorised buggy golf",
+   "intent": "Informational, Commercial",
+   "volume": 50,
+   "kd": 28,
+   "url": "/golf-buggies/motorised-electric/",
+   "status": "placed"
+  }
+ ]
+}

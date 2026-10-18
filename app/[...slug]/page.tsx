@@ -12,6 +12,7 @@ import { PAGES, PRODUCTS, brandPages, breadcrumbsFor, childrenOf, pageBySlug, pr
 import { copyFor, descFor } from '@/lib/copy';
 import categoryHeroes from '@/data/category-heroes.json';
 import { faqSchema, listSchema, meta } from '@/lib/seo';
+import { supportFaqsFor } from '@/lib/support';
 
 type Params = { slug: string[] };
 const HERO: Record<string, { base: string; alt: string }> = {
@@ -48,6 +49,7 @@ export default async function StructurePage({ params }: { params: Promise<Params
   if (isClearance) products = [...PRODUCTS].sort((a, b) => a.price - b.price).slice(0, 27);
   if (page.url === '/parts-accessories/') products = PRODUCTS.filter((p) => p.categories.some((c) => c.startsWith('/parts-accessories/')));
   const copy = copyFor(page, products);
+  const faqs = [...copy.faqs, ...supportFaqsFor(page.url, products)];
   const kids = childrenOf(page.name).filter((k) => !k.lowDemand && k.level !== 'product' && k.url !== '/golf-buggies/for-sale-locations/');
   const siblings = PAGES.filter((p) => p.parent === page.parent && p.url !== page.url && p.level !== 'brand').slice(0, 8);
   const trail = breadcrumbsFor(page);
@@ -57,7 +59,7 @@ export default async function StructurePage({ params }: { params: Promise<Params
 
   return (
     <>
-      <JsonLd data={[faqSchema(copy.faqs), listSchema(page, products)]} />
+      <JsonLd data={[faqSchema(faqs), listSchema(page, products)]} />
 
       {/* HEADER BAND */}
       <section className="relative overflow-hidden bg-fw-900 text-white">
@@ -143,7 +145,7 @@ export default async function StructurePage({ params }: { params: Promise<Params
       {/* BRANDS */}
       {(page.level === 'category' && !isBrandsHub) && <section className="section"><div className="container-x"><SectionHead eyebrow="Brands" title="Shop by brand" action={{ href: '/brands/', label: 'All brands' }} /><BrandStrip limit={12} /></div></section>}
 
-      <Faq items={copy.faqs} title={`${page.h1}: your questions answered`} />
+      <Faq items={faqs} title={`${page.h1}: your questions answered`} />
     </>
   );
 }

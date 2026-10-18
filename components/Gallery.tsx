@@ -15,7 +15,7 @@ export default function Gallery({ images, alt }: { images: string[]; alt: string
           {images.map((b, k) => (
             <li key={b}>
               <button onClick={() => setI(k)} aria-label={`Show image ${k + 1}`} aria-current={k === i} className={`product-frame w-full border-2 transition ${k === i ? 'border-accent' : 'border-line hover:border-fw-500'}`}>
-                <Pic base={b} alt="" width={150} height={150} sizes="150px" />
+                <Pic base={b} alt={`${alt} - view ${k + 1}`} width={150} height={150} sizes="150px" />
               </button>
             </li>
           ))}

@@ -1,0 +1,279 @@
+{
+  "exclude": [
+    {
+      "reason": "Off-niche: pram, pushchair or baby buggy",
+      "keywords": [
+        "doodle buggy",
+        "valco buggy",
+        "bali buggy",
+        "buggy mountain duet",
+        "parent facing buggy",
+        "moutain buggy",
+        "designer buggy",
+        "buggy travel set",
+        "buggy sun shade",
+        "buggy sun cover",
+        "clip on buggy fan",
+        "buggy for running",
+        "disability buggy",
+        "bed buggy",
+        "travel buggy sale",
+        "shopping buggies",
+        "shopping buggy",
+        "shopping buggies for sale",
+        "wheeled buggy",
+        "mens buggies",
+        "buggy australian",
+        "buggies bird",
+        "buggy bo",
+        "do buggy",
+        "buggy zip"
+      ]
+    },
+    {
+      "reason": "Off-niche: RC, toy or hobby buggy",
+      "keywords": [
+        "buggy remote control car",
+        "radio control buggy",
+        "remote control car buggy",
+        "nitro remote control buggies",
+        "nitro buggy",
+        "tamiya buggy",
+        "miniature buggy",
+        "buggy cars",
+        "buggies cars",
+        "buggy starter deck"
+      ]
+    },
+    {
+      "reason": "DIY kits and plans: we sell complete vehicles",
+      "keywords": [
+        "off road buggy kits australia",
+        "off road buggy frame plans",
+        "off road dune buggy plans",
+        "kit buggy"
+      ]
+    },
+    {
+      "reason": "Off-niche: event, tour, game or overseas",
+      "keywords": [
+        "bali buggy tour",
+        "horse and buggy for wedding",
+        "moonlight buggy",
+        "concrete buggy",
+        "greenworks buggy",
+        "dune buggy dubai",
+        "beach buggy dubai",
+        "tesla beach buggy racing",
+        "golf buggy tour rome",
+        "golf buggy crash",
+        "volkswagen buggy pink",
+        "dune buggy trike trailer big w",
+        "bike buggy"
+      ]
+    },
+    {
+      "reason": "Other retailer or brand we do not list",
+      "keywords": [
+        "costco golf buggy",
+        "bunnings golf buggy",
+        "aldi golf buggy review",
+        "emc golf buggy",
+        "stonehaven glide golf buggy",
+        "trident golf buggy",
+        "brosnan golf buggy",
+        "condor golf buggy",
+        "eagles & birdies classic premium golf buggy",
+        "follow me golf buggy",
+        "club golf buggy",
+        "m g i golf buggies",
+        "mig golf carts"
+      ]
+    },
+    {
+      "reason": "Parts we do not sell",
+      "keywords": [
+        "rzr plastics",
+        "farm boss utv australia cv joint",
+        "mgi golf buggy repairs near me",
+        "yamaha golf cart parts",
+        "atv farm attachments australia"
+      ]
+    },
+    {
+      "reason": "Duplicate or mis-typed variant of a placed keyword",
+      "keywords": [
+        "dune dune buggy",
+        "golf golf carts for sale",
+        "cheap cheap go karts",
+        "buggy dune for sale",
+        "beach and buggy",
+        "buggy on wheels",
+        "atv automotive",
+        "volkswagen golf battery",
+        "vw golf battery",
+        "dune buggy kart",
+        "buggy kart",
+        "go kart buggy",
+        "buggies and go karts",
+        "go karts and buggies",
+        "go kart dune buggy",
+        "v w dune buggy for sale"
+      ]
+    }
+  ],
+  "move": [
+    {
+      "url": "/off-road-buggies/side-by-sides-utvs/",
+      "keywords": [
+        "farm buggy",
+        "buggy farm",
+        "4x4 farm buggy",
+        "farm buggies",
+        "sxs buggy",
+        "utility buggy",
+        "off road side by side",
+        "4x4 buggy",
+        "diesel utv",
+        "utv accessories"
+      ]
+    },
+    {
+      "url": "/off-road-buggies/dune-buggies/",
+      "keywords": [
+        "sand buggy",
+        "sand buggies",
+        "off road dune buggy",
+        "off road dune buggies",
+        "off road beach buggy",
+        "buggy volkswagen for sale",
+        "buggy vw for sale",
+        "vw buggy for sale australia",
+        "vw buggy for sale",
+        "volkswagen buggy for sale",
+        "rzr dune buggy",
+        "150cc dune buggy"
+      ]
+    },
+    {
+      "url": "/off-road-buggies/kids-buggies/",
+      "keywords": [
+        "ride on buggy",
+        "childs off road buggy",
+        "polaris kids buggy",
+        "kids polaris buggy",
+        "kids utv"
+      ]
+    },
+    {
+      "url": "/off-road-buggies/go-karts/",
+      "keywords": [
+        "offroad gokart"
+      ]
+    },
+    {
+      "url": "/brands/polaris/",
+      "keywords": [
+        "rzr",
+        "razor buggy"
+      ]
+    },
+    {
+      "url": "/brands/john-deere/",
+      "keywords": [
+        "gator buggy"
+      ]
+    },
+    {
+      "url": "/brands/club-car/",
+      "keywords": [
+        "club tempo"
+      ]
+    },
+    {
+      "url": "/brands/tri-lite/",
+      "keywords": [
+        "axglo golf buggy"
+      ]
+    },
+    {
+      "url": "/brands/ecar/",
+      "keywords": []
+    },
+    {
+      "url": "/golf-buggies/",
+      "keywords": [
+        "gold buggy",
+        "gold buggies"
+      ]
+    },
+    {
+      "url": "/golf-buggies/push-pull-trolleys/",
+      "keywords": [
+        "push buggy",
+        "golf chariot"
+      ]
+    },
+    {
+      "url": "/golf-buggies/golf-scooters/",
+      "keywords": []
+    },
+    {
+      "url": "/parts-accessories/golf-cart-accessories/phone-umbrella-drink-holders/",
+      "keywords": [
+        "buggy cup holder"
+      ]
+    },
+    {
+      "url": "/off-road-buggies/electric-off-road-utvs/",
+      "keywords": [
+        "24v buggy",
+        "48v buggy",
+        "eletric buggy"
+      ]
+    },
+    {
+      "url": "/parts-accessories/off-road-parts/go-kart-parts-frames/",
+      "keywords": [
+        "buggy chassis"
+      ]
+    },
+    {
+      "url": "/parts-accessories/off-road-parts/wheels-tyres/",
+      "keywords": [
+        "buggy tyres"
+      ]
+    },
+    {
+      "url": "/golf-buggies/for-sale-locations/",
+      "keywords": [
+        "golf buggies adelaide",
+        "golf buggies for sale victoria",
+        "golf buggy for sale sydney",
+        "golf buggies for sale sydney",
+        "golf buggies for sale near me"
+      ]
+    },
+    {
+      "url": "/off-road-buggies/mini-quads-atvs/",
+      "keywords": [
+        "atv buggy",
+        "atv sales melbourne",
+        "atv sales",
+        "atv australia for sale",
+        "atv store australia",
+        "atv sale",
+        "atv sales australia",
+        "atv near me",
+        "atv buggies for sale australia",
+        "atv buggy for sale",
+        "atvs store",
+        "atv sales sydney",
+        "atv vs utv",
+        "atv store online",
+        "atv dealers",
+        "kids atv buggy"
+      ]
+    }
+  ]
+}

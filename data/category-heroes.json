@@ -120,20 +120,20 @@
   "alt": "Big Max push buggy with golf bag beside a lake on the course"
  },
  "/brands/triumph/": {
-  "base": "/images/hero/golf-buggies-push-pull",
-  "alt": "Electric golf trolley carrying a golf bag on the green"
+  "base": "/images/hero/brand-golf-course",
+  "alt": "Golf course fairway under a blue sky"
  },
  "/brands/tri-lite/": {
   "base": "/images/hero/brand-tri-lite",
   "alt": "Golf trolley with a blue bag on the putting green"
  },
  "/brands/smoothy/": {
-  "base": "/images/hero/golf-buggies-push-pull",
-  "alt": "Electric golf trolley carrying a golf bag on the green"
+  "base": "/images/hero/brand-golf-course",
+  "alt": "Golf course fairway under a blue sky"
  },
  "/brands/thomson/": {
-  "base": "/images/hero/golf-buggies-push-pull",
-  "alt": "Electric golf trolley carrying a golf bag on the green"
+  "base": "/images/hero/brand-golf-course",
+  "alt": "Golf course fairway under a blue sky"
  },
  "/brands/ezgo/": {
   "base": "/images/hero/brand-ezgo",

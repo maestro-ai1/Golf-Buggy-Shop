@@ -4,7 +4,7 @@ import { Redis } from '@upstash/redis';
 import { NextRequest, NextResponse } from 'next/server';
 import { CONTACT, FORMS, REPLY, SITE } from '@/config/site';
 
-// ---------- SMTP (the only email transport). Works with Zoho Mail (smtppro.zoho.com / smtp.zoho.com and the .com.au / .eu data centres) and any other SMTP host.
+// ---------- SMTP (the only email transport). Works with Zoho Mail (smtp.zoho.com) and any other SMTP host.
 // Returns {sent:false} when unconfigured, never throws. Zoho only accepts mail sent from the authenticated mailbox (or a send-as alias), so for Zoho the From defaults to SMTP_USER.
 let transporter: nodemailer.Transporter | null | undefined;
 function getTransport() {

@@ -5,8 +5,8 @@ import React, { createContext, useContext, useEffect, useMemo, useState } from '
 export interface CartLine { slug: string; name: string; price: number; image: string; brand: string; quantity: number }
 export type CartInput = Omit<CartLine, 'quantity'>;
 
-// Order rules (owner): min order $500, free delivery over $1,000, flat $95 freight below, 5% crypto discount.
-export const RULES = { minOrder: 500, freeShippingThreshold: 1000, shippingFee: 95, cryptoDiscount: 5, key: 'bfs-cart-v2' };
+// Order rules (owner): min order $500, free delivery over $1,000, flat $95 freight below, 10% crypto discount.
+export const RULES = { minOrder: 500, freeShippingThreshold: 1000, shippingFee: 95, cryptoDiscount: 10, key: 'bfs-cart-v2' };
 
 interface CartCtx {
   items: CartLine[];

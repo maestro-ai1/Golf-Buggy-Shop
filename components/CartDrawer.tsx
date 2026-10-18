@@ -58,7 +58,7 @@ export default function CartDrawer() {
               </dl>
               {!minMet && <p className="mb-3 rounded-lg bg-accent-100 p-3 text-xs font-semibold text-accent-600">Minimum order is {money(RULES.minOrder)}. Add {money(minRemaining)} more to check out.</p>}
               <Link href="/checkout/" onClick={() => setOpen(false)} aria-disabled={!minMet} className={`btn btn-primary w-full ${!minMet ? 'pointer-events-none opacity-50' : ''}`}>Checkout</Link>
-              <p className="mt-2 text-center text-xs text-muted">Pay by EFT, PayID, card or crypto (extra 5% off)</p>
+              <p className="mt-2 text-center text-xs text-muted">Pay by Osko/EFT, PayID or crypto (extra 10% off)</p>
             </div>
           </>
         )}

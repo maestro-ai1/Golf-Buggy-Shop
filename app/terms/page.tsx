@@ -9,9 +9,9 @@ export default function Terms() {
   return (
     <InfoPage crumb={{ name: 'Terms & conditions', url: '/terms/' }} title="Terms & conditions" lead={`${SITE.legalName}, ABN ${CONTACT.abn}.`}>
       <h2>Prices and GST</h2>
-      <p>All prices are in Australian dollars and include 10% GST. We benchmark prices against Australian retailers and update them regularly. If a price is shown incorrectly we may cancel the order and refund any payment.</p>
+      <p>All prices are in Australian dollars and include 10% GST. We update prices regularly. If a price is shown incorrectly we may cancel the order and refund any payment.</p>
       <h2>Orders and payment</h2>
-      <p>The minimum order is ${SHOP.minOrder}. After you place an order we confirm stock and freight, then send payment details by email. We accept bank transfer (EFT), PayID, card, and BTC or USDT with a {SHOP.cryptoDiscount}% discount. Your order is confirmed when payment is received.</p>
+      <p>The minimum order is ${SHOP.minOrder}. After you place an order we confirm stock and freight, then send payment details by email. We accept bank transfer (Osko or EFT), PayID, and Bitcoin or USDT with a {SHOP.cryptoDiscount}% discount applied automatically at checkout. Your order is confirmed when payment is received.</p>
       <h2>Delivery</h2>
       <p>Delivery is free over ${SHOP.freeShippingThreshold.toLocaleString()} to major metro and depot corridors, otherwise ${SHOP.shippingFee} flat. See our <Link href="/delivery/">delivery page</Link>.</p>
       <h2>Warranty and returns</h2>

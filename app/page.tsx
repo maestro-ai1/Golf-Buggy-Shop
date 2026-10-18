@@ -9,8 +9,8 @@ import { FAQ_ITEMS } from '@/content/faq';
 import { faqSchema, meta } from '@/lib/seo';
 
 export const metadata = meta({
-  title: 'Buggies For Sale Australia | Golf Buggies & Golf Carts',
-  description: 'Buggies for sale in Australia: golf buggies, electric and remote models, golf carts, lithium batteries and off-road buggies. Prices set 2% below the market with free delivery over $1,000.',
+  title: 'Buggies For Sale Australia | Golf, Electric & Beach Buggies',
+  description: 'Buggies for sale in Australia: golf buggies, electric and remote buggies, golf carts, beach buggies, parts and accessories. Free delivery over $1,000.',
   path: '/',
 });
 
@@ -49,7 +49,7 @@ export default function Home() {
         </picture>
         <div className="container-x relative py-10 md:py-24">
           <div className="fade-up max-w-[620px]">
-            <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[13px] font-bold text-fw-100 ring-1 ring-white/15"><BadgePercent size={15} className="text-accent" /> Prices set 2% below Australian retailers</p>
+            <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[13px] font-bold text-fw-100 ring-1 ring-white/15"><BadgePercent size={15} className="text-accent" /> Extra 10% off when you pay with crypto</p>
             <h1 className="!text-white text-[40px] font-black leading-[1.04] sm:text-[56px] lg:text-[64px]">Buggies For Sale <span className="block text-accent">Across Australia</span></h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-fw-100">Golf buggies, electric and remote models, new lithium golf carts, parts and off-road buggies from brands Australians trust. Delivered Australia-wide, free over $1,000.</p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -68,7 +68,7 @@ export default function Home() {
       {/* TRUST STRIP */}
       <section aria-label="Why shop with us" className="border-b border-line bg-white">
         <ul className="container-x grid gap-4 py-6 sm:grid-cols-2 lg:grid-cols-4">
-          {[[BadgePercent, '2% price promise', 'Benchmarked against Australian retailers'], [Truck, 'Free delivery over $1,000', 'Flat $95 below, Australia-wide'], [ShieldCheck, 'Manufacturer warranty', 'On every new model we list'], [Headset, 'Local expert support', 'Call or WhatsApp 0420 128 746']].map(([Icon, t, s]) => {
+          {[[BadgePercent, 'Extra 10% off with crypto', 'Bitcoin or USDT at checkout'], [Truck, 'Free delivery over $1,000', 'Flat $95 below, Australia-wide'], [ShieldCheck, 'Manufacturer warranty', 'On every new model we list'], [Headset, 'Local expert support', 'Call or WhatsApp 0420 128 746']].map(([Icon, t, s]) => {
             const I = Icon as typeof Truck;
             return <li key={t as string} className="flex items-center gap-3"><span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-fw-50 text-fw-700"><I size={24} /></span><span><span className="block font-bold text-fw-900">{t as string}</span><span className="block text-sm text-muted">{s as string}</span></span></li>;
           })}
@@ -118,12 +118,12 @@ export default function Home() {
             <h2 id="about-h" className="!text-white text-3xl font-extrabold md:text-[40px]">Australia&apos;s buggy superstore, built on price and support</h2>
             <p className="mt-5 text-lg leading-relaxed text-fw-100">{BRAND.statement}</p>
             <ul className="mt-6 space-y-3 text-fw-100">
-              {['Every price benchmarked and set 2% below the lowest Australian retailer we find', 'Real specifications, clear delivery costs and no hidden fees', 'Pay by EFT, PayID, card or crypto with an extra 5% off', 'Fleet, club and resort buyers welcome: ask for a quote'].map((t) => <li key={t} className="flex gap-3"><span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-accent" />{t}</li>)}
+              {['Competitive prices on every model, all including GST', 'Real specifications, clear delivery costs and no hidden fees', 'Pay by Osko/EFT, PayID or crypto with an extra 10% off', 'Fleet, club and resort buyers welcome: ask for a quote'].map((t) => <li key={t} className="flex gap-3"><span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-accent" />{t}</li>)}
             </ul>
             <div className="mt-8 flex flex-wrap gap-3"><Link href="/about/" className="btn btn-primary">About us</Link><Link href="/wholesale/" className="btn !bg-white/10 text-white ring-1 ring-white/30 hover:!bg-white/20">Wholesale & fleet</Link></div>
           </div>
           <dl className="grid grid-cols-2 gap-4">
-            {[['2023', 'Established in Sydney'], [`${PRODUCTS.length}+`, 'Models and parts online'], ['AU-wide', 'Freight and depots'], ['2%', 'Below the lowest market price']].map(([a, b]) => (
+            {[['2023', 'Established in Sydney'], [`${PRODUCTS.length}+`, 'Models and parts online'], ['AU-wide', 'Freight and depots'], ['$500', 'Minimum order, free delivery over $1,000']].map(([a, b]) => (
               <div key={b} className="rounded-2xl bg-white/[.07] p-6 ring-1 ring-white/10"><dt className="font-display text-4xl font-black text-accent">{a}</dt><dd className="mt-1 text-sm text-fw-100">{b}</dd></div>
             ))}
           </dl>

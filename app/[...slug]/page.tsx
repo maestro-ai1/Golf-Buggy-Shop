@@ -11,7 +11,7 @@ import { Breadcrumbs, Faq, JsonLd, SectionHead } from '@/components/Bits';
 import { PAGES, PRODUCTS, brandPages, breadcrumbsFor, childrenOf, pageBySlug, productsForPage, money } from '@/config/site';
 import { copyFor, descFor } from '@/lib/copy';
 import categoryHeroes from '@/data/category-heroes.json';
-import { crumbSchema, faqSchema, listSchema, meta } from '@/lib/seo';
+import { faqSchema, listSchema, meta } from '@/lib/seo';
 
 type Params = { slug: string[] };
 const HERO: Record<string, { base: string; alt: string }> = {
@@ -48,7 +48,7 @@ export default async function StructurePage({ params }: { params: Promise<Params
   if (isClearance) products = [...PRODUCTS].sort((a, b) => a.price - b.price).slice(0, 27);
   if (page.url === '/parts-accessories/') products = PRODUCTS.filter((p) => p.categories.some((c) => c.startsWith('/parts-accessories/')));
   const copy = copyFor(page, products);
-  const kids = childrenOf(page.name).filter((k) => !k.lowDemand);
+  const kids = childrenOf(page.name).filter((k) => !k.lowDemand && k.level !== 'product' && k.url !== '/golf-buggies/for-sale-locations/');
   const siblings = PAGES.filter((p) => p.parent === page.parent && p.url !== page.url && p.level !== 'brand').slice(0, 8);
   const trail = breadcrumbsFor(page);
   const hero = heroFor(page.url);
@@ -57,7 +57,7 @@ export default async function StructurePage({ params }: { params: Promise<Params
 
   return (
     <>
-      <JsonLd data={[crumbSchema(trail), faqSchema(copy.faqs), listSchema(page, products)]} />
+      <JsonLd data={[faqSchema(copy.faqs), listSchema(page, products)]} />
 
       {/* HEADER BAND */}
       <section className="relative overflow-hidden bg-fw-900 text-white">
@@ -118,7 +118,7 @@ export default async function StructurePage({ params }: { params: Promise<Params
       {/* PRODUCTS */}
       {!isBrandsHub && (
         <section className="section"><div className="container-x">
-          <SectionHead eyebrow={isClearance ? 'Lowest prices' : brand ? brand : 'Range'} title={isClearance ? 'Our lowest-priced buggies, carts and parts' : products.length ? `${page.h1}: shop the range` : 'Ask us about this range'} sub={products.length ? 'Prices include GST and are set 2% below the lowest Australian retailer we find.' : undefined} />
+          <SectionHead eyebrow={isClearance ? 'Lowest prices' : brand ? brand : 'Range'} title={isClearance ? 'Our lowest-priced buggies, carts and parts' : products.length ? `${page.h1}: shop the range` : 'Ask us about this range'} sub={products.length ? 'Prices include GST. Free delivery over $1,000.' : undefined} />
           <ProductGrid products={products.map(toCard)} showBrandFilter={page.level !== 'brand'} emptyNote={copy.cta ? undefined : undefined} />
           {products.length === 0 && (
             <div className="card mt-2 flex flex-col items-start gap-4 p-7 md:flex-row md:items-center md:justify-between"><div><p className="font-display text-xl font-extrabold">{copy.cta || 'Tell us what you need'}</p><p className="mt-1 text-muted">We source to order and quote within one business day. Call 0420 128 746 or send an enquiry.</p></div><Link href={`/contact/?topic=${encodeURIComponent(page.h1)}`} className="btn btn-primary shrink-0">Send an enquiry</Link></div>

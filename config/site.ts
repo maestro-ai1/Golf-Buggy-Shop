@@ -59,7 +59,7 @@ export const SITE = {
   trustpilotScore: 4.9,
   trustpilotTotalReviews: 1024,
   trustpilotSince: 2023,
-  pricePromise: 'Every price is benchmarked against Australian retailers and set 2% below the lowest we find.',
+  pricePromise: 'Competitive prices on every model, with free delivery over $1,000.',
 };
 
 export const CONTACT = {
@@ -78,14 +78,12 @@ export const SHOP = {
   minOrder: 500,
   freeShippingThreshold: 1000,
   shippingFee: 95,
-  cryptoDiscount: 5,
+  cryptoDiscount: 10,
   priceFactor: 0.98,
   paymentMethods: [
-    'Direct Bank Transfer (EFT)',
-    'PayID Instant Transfer',
-    'Visa / Mastercard / Amex',
-    'Cryptocurrency (BTC / USDT - 5% Discount)',
-    'Commercial Fleet Invoice / PO',
+    'Bank Transfer (Osko / EFT)',
+    'PayID',
+    'Cryptocurrency (Bitcoin / USDT) - 10% Discount',
   ],
 };
 
@@ -105,9 +103,17 @@ export const REPLY = {
   channels: { email: 'sales@buggiesforsale.com.au', whatsapp: '0420 128 746', whatsappCountryCode: '61' },
   deadlineHours: 48,
   paymentMethods: [
-    { id: 'eft', label: 'Direct Bank Transfer (EFT / PayID)', opening: 'Please transfer {amount} using order reference {ref}.', closing: 'Payment confirmed same business day. Delivery allocated immediately upon receipt.', instantRailNote: 'PayID: sales@buggiesforsale.com.au (Instant settlement)' },
-    { id: 'crypto', label: 'Cryptocurrency (5% Discount applied)', opening: 'Transfer {amount} in BTC or USDT to receive an extra 5% instant checkout saving.', closing: 'Blockchain confirmation required before freight booking.', discount: { percent: 5, label: '5% Crypto Discount' } },
+    { id: 'eft', label: 'Bank Transfer (Osko / EFT)', opening: 'Please transfer {amount} using order reference {ref}.', closing: 'Payment confirmed same business day. Delivery allocated immediately upon receipt.' },
+    { id: 'payid', label: 'PayID', opening: 'Please pay {amount} by PayID using order reference {ref}.', closing: 'PayID payments settle instantly. Delivery allocated immediately upon receipt.', instantRailNote: 'PayID: sales@buggiesforsale.com.au (Instant settlement)' },
+    { id: 'crypto', label: 'Cryptocurrency (10% Discount applied)', opening: 'Transfer {amount} in Bitcoin or USDT (TRC20 or ERC20). Your 10% crypto discount is already included in this amount.', closing: 'Blockchain confirmation required before freight booking.', discount: { percent: 10, label: '10% Crypto Discount' } },
   ],
+};
+
+// Owner crypto wallets (paste the addresses here). Shown to the customer only in the payment-details email after an order is placed.
+export const CRYPTO = {
+  bitcoinAddress: 'bc1q26x7nc3r2vjzyzjvv2mzg56sudtwum4xteg3hd',
+  usdtTrc20Address: 'TXsafxfWLDFPdU8aNNec7fTZH4jkKfWYDP',
+  usdtErc20Address: '0xaF80aa1ca688A1318e1F39E273cAf5895bE12749',
 };
 
 export const CHAT = {
@@ -122,7 +128,7 @@ export const CHAT = {
 export const BRAND = {
   foundingYear: '2023',
   foundingLocation: 'Sydney, New South Wales, Australia',
-  statement: "Buggies For Sale is a Sydney-based Australian retailer of golf buggies, golf carts, off-road buggies and parts, established in 2023. We price every model against the Australian market and deliver Australia-wide.",
+  statement: "Buggies For Sale is a Sydney-based Australian retailer of golf buggies, golf carts, off-road buggies and parts, established in 2023. We deliver Australia-wide.",
   knowsAbout: ['golf buggies', 'electric golf buggies', 'remote control golf buggies', 'golf carts', 'lithium golf cart batteries', 'golf cart accessories', 'dune buggies', 'side by side buggies', 'kids buggies', 'go karts'],
   sameAs: [] as string[],
 };
@@ -134,10 +140,15 @@ export const pageBySlug = (slug: string) => PAGES.find((p) => p.slug === slug.re
 export const childrenOf = (name: string) => PAGES.filter((p) => p.parent === name);
 export const brandPages = () => PAGES.filter((p) => p.level === 'brand');
 export function breadcrumbsFor(page: SitePage): { name: string; url: string }[] {
+  // The locations landing page is a stand-alone geo page (Home > Locations), not a product category.
+  if (page.url === '/golf-buggies/for-sale-locations/') return [{ name: 'Locations & Delivery', url: page.url }];
   const trail: { name: string; url: string }[] = [];
   let cur: SitePage | undefined = page;
   while (cur) { trail.unshift({ name: cur.name.replace(/ \(Hub\)$/, ''), url: cur.url }); cur = cur.parent ? PAGES.find((p) => p.name === cur!.parent || p.name.replace(' (LOW DEMAND)', '') === cur!.parent) : undefined; }
-  return trail;
+  const crumbs = trail.filter((t) => t.url !== '/');
+  // Brands and the shop categories sit under the Shop landing page; Home is added by the Breadcrumbs component and the schema.
+  const root = crumbs[0];
+  return root && root.url !== '/brands/' && !root.url.startsWith('/brands/') ? [{ name: 'Shop', url: '/shop/' }, ...crumbs] : crumbs;
 }
 
 // ---------- Catalogue

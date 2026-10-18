@@ -41,9 +41,9 @@ export default function Header({ nav, onSearch }: { nav: NavItem[]; onSearch: ()
       </div>
 
       <nav aria-label="Main" className="hidden border-t border-line bg-fw-900 lg:block">
-        <ul className="container-x flex items-center gap-1">
+        <ul className="container-x relative flex items-center justify-center gap-1">
           {nav.map((n, i) => (
-            <li key={n.url} className="relative" onMouseEnter={() => n.children && setOpenIdx(i)} onMouseLeave={() => setOpenIdx(null)}>
+            <li key={n.url} className="static" onMouseEnter={() => n.children && setOpenIdx(i)} onMouseLeave={() => setOpenIdx(null)}>
               <div className="flex items-center">
                 <Link href={n.url} className="flex h-12 items-center px-4 text-[14px] font-bold text-white/95 hover:text-accent" onClick={() => setOpenIdx(null)}>{n.name}</Link>
                 {n.children && (
@@ -51,8 +51,8 @@ export default function Header({ nav, onSearch }: { nav: NavItem[]; onSearch: ()
                 )}
               </div>
               {n.children && openIdx === i && (
-                <div className={`absolute left-0 top-12 z-50 rounded-b-2xl border border-line bg-white p-5 shadow-[0_24px_60px_rgba(11,46,34,.22)] ${n.name === 'Brands' ? 'w-[620px]' : n.children.some((c) => c.children) ? 'w-[760px]' : 'w-[420px]'}`}>
-                  <div className={`grid gap-x-8 gap-y-1 ${n.name === 'Brands' ? 'grid-cols-3' : n.children.some((c) => c.children) ? 'grid-cols-3' : 'grid-cols-2'}`}>
+                <div className={`absolute left-1/2 top-12 z-50 -translate-x-1/2 rounded-b-2xl border border-line bg-white p-5 shadow-[0_24px_60px_rgba(11,46,34,.22)] ${n.name === 'Brands' ? 'w-[620px]' : n.name === 'Shop' ? 'w-[980px] max-w-[96vw]' : n.children.some((c) => c.children) ? 'w-[760px]' : 'w-[420px]'}`}>
+                  <div className={`grid gap-x-8 gap-y-1 ${n.name === 'Brands' ? 'grid-cols-3' : n.name === 'Shop' ? 'grid-cols-4' : n.children.some((c) => c.children) ? 'grid-cols-3' : 'grid-cols-2'}`}>
                     {n.children.map((c) => (
                       <div key={c.url} className="mb-3">
                         <Link href={c.url} onClick={() => setOpenIdx(null)} className={`block rounded-lg px-2 py-1.5 text-sm hover:bg-fw-50 hover:text-fw-700 ${c.children ? 'font-extrabold text-fw-900' : 'font-semibold text-ink'}`}>{c.name}</Link>
@@ -69,7 +69,6 @@ export default function Header({ nav, onSearch }: { nav: NavItem[]; onSearch: ()
               )}
             </li>
           ))}
-          <li className="ml-auto text-[13px] font-semibold text-fw-200">Free delivery over $1,000 Australia-wide</li>
         </ul>
       </nav>
 

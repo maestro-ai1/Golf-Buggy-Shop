@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ChevronRight, Star, ChevronDown } from 'lucide-react';
 import { TRUSTPILOT, REVIEWS } from '@/content/reviews';
+import { crumbSchema } from '@/lib/seo';
 
 export function JsonLd({ data }: { data: object | object[] }) {
   const arr = Array.isArray(data) ? data : [data];
@@ -10,6 +11,7 @@ export function JsonLd({ data }: { data: object | object[] }) {
 export function Breadcrumbs({ trail }: { trail: { name: string; url: string }[] }) {
   return (
     <nav aria-label="Breadcrumb" className="text-[13px] font-semibold text-muted">
+      <JsonLd data={crumbSchema(trail)} />
       <ol className="flex flex-wrap items-center gap-1.5">
         <li><Link href="/" className="hover:text-fw-700">Home</Link></li>
         {trail.map((t, i) => (

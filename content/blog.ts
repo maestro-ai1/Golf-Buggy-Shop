@@ -85,8 +85,8 @@ export const BLOG_POSTS: BlogPost[] = [
       '- **Charging.** Most carts charge from a standard outlet, and running costs are low compared with petrol.',
       '- **Servicing.** Electric carts have fewer moving parts, but tyres, brakes and suspension still need attention.',
       '## How to get the best price',
-      'Compare the delivered price, not just the sticker price. Check what is included, whether warranty applies and what parts support exists. We benchmark our carts against Australian retailers and set our prices 2% below the lowest comparable listing we find.',
-      'Pay by bank transfer, PayID or card, or use BTC or USDT for an extra 5% discount.',
+      'Compare the delivered price, not just the sticker price. Check what is included, whether warranty applies and what parts support exists.',
+      'Pay by bank transfer (Osko or EFT) or PayID, or use Bitcoin or USDT for an extra 10% discount.',
       '## Frequently asked budget questions',
       'Most first-time buyers want to know whether to go for lithium. In most cases, yes. A lithium cart costs more now but typically saves on battery replacement and weight later.',
       'If you are unsure what you need, call us on 0420 128 746. We can recommend a model by seat count, use and budget.',
@@ -96,7 +96,7 @@ export const BLOG_POSTS: BlogPost[] = [
       ['Is a lithium golf cart worth it?', 'For most buyers, yes. Lithium costs more up front but is lighter, needs less maintenance and typically lasts longer than lead-acid.'],
       ['Why are some carts much cheaper?', 'Lower prices can reflect used condition, older battery tech, fewer seats or unbranded models with limited support.'],
       ['Do golf cart prices include delivery?', 'Orders over $1,000 ship free to major metro and depot corridors. Otherwise a flat $95 freight fee applies.'],
-      ['Can I pay with crypto?', 'Yes. BTC and USDT payments receive an extra 5% discount.'],
+      ['Can I pay with crypto?', 'Yes. Bitcoin and USDT payments receive an extra 10% discount at checkout.'],
     ],
   },
   {
@@ -251,7 +251,7 @@ export const BLOG_POSTS: BlogPost[] = [
       '## Check club rules',
       'Some clubs have rules about powered buggies. Ask before you buy.',
       '## Ready to buy?',
-      'We price every remote buggy 2% below the lowest comparable Australian listing we find, with free delivery over $1,000. Call 0420 128 746 if you would like help choosing.',
+      'We offer free delivery on orders over $1,000. Call 0420 128 746 if you would like help choosing.',
     ],
     faqs: [
       ['How does a remote golf buggy work?', 'A handheld remote tells the motors to move ahead, stop or return to you.'],

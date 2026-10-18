@@ -7,7 +7,7 @@ import AddToCart from '@/components/AddToCart';
 import ProductCard, { toCard } from '@/components/ProductCard';
 import { Breadcrumbs, Faq, JsonLd, SectionHead } from '@/components/Bits';
 import { PRODUCTS, SHOP, breadcrumbsFor, money, pageByUrl, productBySlug } from '@/config/site';
-import { crumbSchema, faqSchema, meta, productSchema } from '@/lib/seo';
+import { faqSchema, meta, productSchema } from '@/lib/seo';
 
 export function generateStaticParams() { return PRODUCTS.map((p) => ({ slug: p.slug })); }
 
@@ -35,12 +35,11 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const trail = [...(page ? breadcrumbsFor(page) : []), { name: p.name, url: `/products/${p.slug}/` }];
   const related = PRODUCTS.filter((x) => x.slug !== p.slug && x.categories[0] === p.categories[0]).slice(0, 4);
   const more = related.length < 4 ? [...related, ...PRODUCTS.filter((x) => x.slug !== p.slug && x.group === p.group && !related.includes(x))].slice(0, 4) : related;
-  const saving = p.rrp ? p.rrp - p.price : 0;
   const specs = Object.entries(p.specs);
 
   return (
     <>
-      <JsonLd data={[productSchema(p), crumbSchema(trail), faqSchema(p.faqs)]} />
+      <JsonLd data={[productSchema(p), faqSchema(p.faqs)]} />
       <div className="border-b border-line bg-white"><div className="container-x py-4"><Breadcrumbs trail={trail} /></div></div>
 
       <section className="section !pt-8">
@@ -54,17 +53,15 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <div className="mt-6 rounded-2xl border border-fw-100 bg-fw-50 p-5">
               <div className="flex flex-wrap items-baseline gap-3">
                 <span className="font-display text-[44px] font-black leading-none text-fw-900">{money(p.price)}</span>
-                {p.rrp ? <span className="text-lg text-muted line-through" aria-label={`Market price ${money(p.rrp)}`}>{money(p.rrp)}</span> : null}
-                {saving > 0 && <span className="rounded-full bg-accent px-3 py-1 text-xs font-extrabold text-white">Save {money(saving)}</span>}
               </div>
-              <p className="mt-2 flex items-center gap-2 text-sm font-semibold text-fw-700"><BadgePercent size={16} /> 2% below the lowest Australian retail price we found. Inc. GST.</p>
+              <p className="mt-2 flex items-center gap-2 text-sm font-semibold text-fw-700"><BadgePercent size={16} /> Price includes GST.</p>
             </div>
 
             <div className="mt-5"><AddToCart item={{ slug: p.slug, name: p.name, price: p.price, image: p.images[0], brand: p.brand }} /></div>
-            <p className="mt-3 text-center text-xs text-muted">Pay by EFT, PayID, card or BTC/USDT (extra {SHOP.cryptoDiscount}% off). Minimum order {money(SHOP.minOrder)}.</p>
+            <p className="mt-3 text-center text-xs text-muted">Pay by Osko/EFT, PayID or Bitcoin/USDT (extra {SHOP.cryptoDiscount}% off at checkout). Minimum order {money(SHOP.minOrder)}.</p>
 
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-              {[[Truck, p.price >= 1000 ? 'Free delivery' : `Delivery ${money(SHOP.shippingFee)} flat`, p.leadTime || 'Dispatch within 24-48 business hours'], [ShieldCheck, 'Manufacturer warranty', 'Details with your order'], [CreditCard, 'Flexible payment', 'EFT, PayID, card, crypto'], [Check, 'Expert support', 'Call 0420 128 746']].map(([Icon, t, s]) => {
+              {[[Truck, p.price >= 1000 ? 'Free delivery' : `Delivery ${money(SHOP.shippingFee)} flat`, p.leadTime || 'Dispatch within 24-48 business hours'], [ShieldCheck, 'Manufacturer warranty', 'Details with your order'], [CreditCard, 'Flexible payment', 'Osko/EFT, PayID, crypto'], [Check, 'Expert support', 'Call 0420 128 746']].map(([Icon, t, s]) => {
                 const I = Icon as typeof Truck;
                 return <li key={t as string} className="flex items-start gap-3 rounded-xl border border-line bg-white p-3.5"><I size={20} className="mt-0.5 shrink-0 text-fw-600" /><span><span className="block text-sm font-bold text-fw-900">{t as string}</span><span className="block text-xs text-muted">{s as string}</span></span></li>;
               })}

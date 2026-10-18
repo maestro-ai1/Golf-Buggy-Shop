@@ -45,11 +45,9 @@
   "currency": "AUD",
   "minimum_order_usd": "500",
   "payment_methods": [
-    "Direct Bank Transfer (EFT)",
-    "PayID Instant Settlement",
-    "Visa / Mastercard / Amex",
-    "Cryptocurrency (BTC / USDT - 5% Discount)",
-    "Commercial Fleet Invoice / PO"
+    "Bank Transfer (Osko / EFT)",
+    "PayID",
+      "Cryptocurrency (Bitcoin / USDT - 10% Discount)"
   ],
   "legal": {
     "abn": "53 635 284 267",

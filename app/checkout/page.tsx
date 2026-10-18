@@ -8,10 +8,11 @@ import Pic from '@/components/Pic';
 import { RULES, useCart } from '@/lib/cart';
 import { money } from '@/lib/utils';
 import { REPLY } from '@/config/site';
+import { Breadcrumbs } from '@/components/Bits';
 
 const ALPHA = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; // no 0/O/1/I/L
 const makeRef = () => 'BFS-' + Array.from({ length: 7 }, () => ALPHA[Math.floor(Math.random() * ALPHA.length)]).join('');
-const METHODS = ['Direct bank transfer (EFT / PayID)', 'Visa / Mastercard / Amex', 'Cryptocurrency (BTC / USDT) - 5% discount', 'Commercial fleet invoice / PO'];
+const METHODS = ['Bank transfer (Osko / EFT)', 'PayID', 'Cryptocurrency (Bitcoin / USDT) - 10% discount'];
 
 export default function Checkout() {
   const cart = useCart();
@@ -41,11 +42,12 @@ export default function Checkout() {
   }
 
   const input = 'h-12 w-full rounded-xl border border-line bg-white px-4 text-[15px] outline-none focus:border-fw-500 focus:ring-2 focus:ring-fw-100 mt-1.5';
-  if (cart.items.length === 0) return <section className="section"><div className="container-x max-w-xl text-center"><h1 className="text-3xl font-black">Your cart is empty</h1><p className="mt-3 text-muted">Add a buggy, cart or accessory to continue.</p><Link href="/shop/" className="btn btn-primary mt-6">Shop all products</Link></div></section>;
+  if (cart.items.length === 0) return <section className="section"><div className="container-x max-w-xl text-center"><div className="mb-6 flex justify-center"><Breadcrumbs trail={[{ name: 'Cart', url: '/shop/' }, { name: 'Checkout', url: '/checkout/' }]} /></div><h1 className="text-3xl font-black">Your cart is empty</h1><p className="mt-3 text-muted">Add a buggy, cart or accessory to continue.</p><Link href="/shop/" className="btn btn-primary mt-6">Shop all products</Link></div></section>;
 
   return (
     <section className="section !pt-10"><div className="container-x">
-      <h1 className="text-4xl font-black">Checkout</h1>
+      <Breadcrumbs trail={[{ name: 'Cart', url: '/shop/' }, { name: 'Checkout', url: '/checkout/' }]} />
+      <h1 className="mt-4 text-4xl font-black">Checkout</h1>
       <p className="mt-2 text-muted">Order reference <strong className="text-fw-900">{ref}</strong>. We confirm stock and freight, then email your payment details.</p>
       <div className="mt-8 grid gap-8 lg:grid-cols-[1.4fr_1fr]">
         <form className="card space-y-5 p-6 sm:p-8" onSubmit={(e) => { e.preventDefault(); place('email', e.currentTarget); }}>
@@ -75,7 +77,7 @@ export default function Checkout() {
           <dl className="mt-4 space-y-1.5 border-t border-line pt-4 text-sm">
             <div className="flex justify-between"><dt className="text-muted">Subtotal (inc. GST)</dt><dd className="font-bold">{money(cart.subtotal)}</dd></div>
             <div className="flex justify-between"><dt className="text-muted">Freight</dt><dd className="font-bold">{cart.shipping ? money(cart.shipping) : 'Free'}</dd></div>
-            {cart.cryptoDiscount > 0 && <div className="flex justify-between text-fw-700"><dt>Crypto discount (5%)</dt><dd className="font-bold">-{money(cart.cryptoDiscount)}</dd></div>}
+            {cart.cryptoDiscount > 0 && <div className="flex justify-between text-fw-700"><dt>Crypto discount (10%)</dt><dd className="font-bold">-{money(cart.cryptoDiscount)}</dd></div>}
             <div className="flex justify-between border-t border-line pt-3 text-xl"><dt className="font-extrabold">Total</dt><dd className="font-black text-fw-900">{money(cart.total)}</dd></div>
           </dl>
         </aside>

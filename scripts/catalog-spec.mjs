@@ -129,4 +129,15 @@ export const SPEC = [
   ['quad', 'Kayo', '', 'Kayo Bull 125 Farm Quad ATV', [O + 'mini-quads-atvs/', O + ''], [['penrith', /^KAYO Bull 125 Farm Quad ATV$/]]],
   ['quad', 'Apollo', '', 'Apollo Commander 110cc Automatic Quad Bike', [O + 'mini-quads-atvs/', O + 'kids-buggies/'], [['penrith', /^APOLLO COMMANDER 110CC/]]],
   ['quad', 'Apollo', '', 'Apollo RFZ Commander 125 Quad Bike', [O + 'mini-quads-atvs/', O + ''], [['penrith', /^Apollo RFZ Commander 125 Quad Bike/]]],
+  // ---------- Golf buggy brands from the keyword bank (AU retailer + brand-site sources, data/raw/web.json)
+  ['remote-buggy', 'Motocaddy', 'motocaddy', 'Motocaddy M7 GPS Remote Electric Golf Buggy', [G + 'for-sale/', G + 'remote-control/', G + 'motorised-electric/'], [['web', /^Motocaddy M7 GPS Remote/]]],
+  ['electric-buggy', 'PowaKaddy', 'powakaddy', 'PowaKaddy CT6 Electric Golf Buggy', [G + 'for-sale/', G + 'motorised-electric/'], [['web', /^PowaKaddy CT6/]]],
+  ['push-buggy', 'PowaKaddy', 'powakaddy', 'PowaKaddy Micra Push Golf Buggy', [G + 'for-sale/', G + 'push-pull-trolleys/', G + '3-wheel/'], [['web', /^PowaKaddy Micra/]]],
+  ['push-buggy', 'Clicgear', 'clicgear', 'Clicgear Model 4.0 Golf Push Buggy', [G + 'for-sale/', G + 'push-pull-trolleys/', G + '3-wheel/'], [['web', /^Clicgear Model 4.0/]]],
+  ['push-buggy', 'Rovic', 'rovic', 'Rovic RV1S Swivel 2.0 Golf Push Buggy', [G + 'for-sale/', G + 'push-pull-trolleys/', G + '3-wheel/'], [['web', /^Rovic RV1S/]]],
+  ['push-buggy', 'Rovic', 'rovic', 'Rovic RV1C Compact 2.0 Golf Push Buggy', [G + 'for-sale/', G + 'push-pull-trolleys/', G + '3-wheel/'], [['web', /^Rovic RV1C/]]],
+  ['push-buggy', 'Big Max', 'big-max', 'Big Max IQ2 360 Golf Push Buggy', [G + 'for-sale/', G + 'push-pull-trolleys/', G + '3-wheel/'], [['web', /^Big Max IQ2 360/]]],
+  ['ride-on', 'Parmaker', 'parmaker', 'Parmaker Spirit Ride-On Golf Buggy', [G + 'for-sale/', G + 'ride-on-seated/'], [['web', /^Parmaker Spirit/]]],
+  ['ride-on', 'Parmaker', 'parmaker', 'Parmaker Explorer Ghia Ride-On Golf Buggy', [G + 'for-sale/', G + 'ride-on-seated/'], [['web', /^Parmaker Explorer Ghia/]]],
+  ['push-buggy', 'Triumph', 'triumph', 'Triumph GTX Plus 3 Wheel Golf Push Buggy', [G + 'for-sale/', G + 'push-pull-trolleys/', G + '3-wheel/'], [['web', /^Triumph GTX Plus/]]],
 ];

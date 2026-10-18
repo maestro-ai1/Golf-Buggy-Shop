@@ -9,7 +9,7 @@ const ROOT = path.resolve(import.meta.dirname, '..');
 const RAW = path.join(ROOT, 'data/raw');
 const load = (f) => JSON.parse(fs.readFileSync(path.join(RAW, f + '.json'), 'utf8'));
 const sources = {};
-for (const f of ['mgi', 'eride', 'stinger', 'cartsnparts', 'penrith']) sources[f] = load(f);
+for (const f of ['mgi', 'eride', 'stinger', 'cartsnparts', 'penrith', 'web']) sources[f] = load(f);
 const decode = (s) => (s || '').replace(/&#8211;|&#8212;/g, '-').replace(/&#038;|&amp;/g, '&').replace(/&#8217;/g, "'").replace(/&#8243;/g, '"').replace(/&[a-z#0-9]+;/gi, ' ');
 const slugify = (s) => s.toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const money = (n) => Math.round(n * 20) / 20;
@@ -76,7 +76,7 @@ function copy(g, name, brand, f, opts) {
     },
     cart: {
       short: `${name}: a new electric golf cart, delivered Australia-wide with the support to match.`,
-      p: [`The ${name} is a modern electric golf cart for courses, estates, resorts and private properties. Quiet running, low running cost and simple charging make it easy to live with.`, `${f.Seats ? `Seating for ${f.Seats}. ` : ''}Pricing includes GST and compares directly against the Australian market, and our team can arrange freight, accessories and a lithium upgrade path. Ask about road, estate and club rules for your area before you buy.`],
+      p: [`The ${name} is a modern electric golf cart for courses, estates, resorts and private properties. Quiet running, low running cost and simple charging make it easy to live with.`, `${f.Seats ? `Seating for ${f.Seats}. ` : ''}Pricing includes GST, and our team can arrange freight, accessories and a lithium upgrade path. Ask about road, estate and club rules for your area before you buy.`],
       hl: ['New electric golf cart', 'Quiet, low-maintenance drive', 'Accessories and parts available from us', 'Freight to metro and regional Australia'],
     },
     'utility-cart': {
@@ -130,12 +130,15 @@ function copy(g, name, brand, f, opts) {
 }
 
 const FAQ_BY_GROUP = (name, group, price, fits) => [
-  [`How much is the ${name}?`, `The ${name} is $${price.toLocaleString('en-AU')} AUD including GST. We price against the Australian market and update our prices regularly.`],
+  [`How much is the ${name}?`, `The ${name} is $${price.toLocaleString('en-AU')} AUD including GST. Prices include GST and are updated regularly.`],
   [`Do you deliver the ${name} Australia-wide?`, 'Yes. Orders over $1,000 ship free to major capital city metro and depot corridors, and a flat $95 freight fee applies below that. We will confirm regional freight before dispatch.'],
   [`What warranty does it have?`, 'The manufacturer warranty applies. Warranty details and conditions are provided with your order confirmation, and our team can answer questions before you buy.'],
   [fits ? `Will it fit my cart or buggy?` : `Can I check suitability before I buy?`, fits ? `It is intended for ${fits}. Send us your exact model and year before ordering and we will confirm fit.` : 'Yes. Call 0420 128 746 or message us on WhatsApp with your use case and we will confirm that this is the right model.'],
-  [`What payment options do you accept?`, 'We accept bank transfer (EFT), PayID, Visa, Mastercard, Amex, and BTC or USDT with an extra 5% crypto discount. Fleet and purchase-order buyers can ask for an invoice.'],
+  [`What payment options do you accept?`, 'We accept bank transfer (Osko or EFT), PayID, and Bitcoin or USDT with an extra 10% crypto discount applied at checkout. The minimum order is $500.'],
 ];
+
+// keep already-processed images when a product's raw image list is unchanged (avoids re-downloading)
+const prev = new Map(fs.existsSync(path.join(ROOT, 'data/catalog.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'data/catalog.json'), 'utf8')).map((p) => [p.slug, p]) : []);
 
 // ---------- build products
 const out = [];
@@ -144,8 +147,7 @@ const missing = [];
 for (const [group, brand, brandPage, name, cats, srcs, opts = {}] of SPEC) {
   const found = [];
   for (const [file, rx] of srcs) {
-    const hit = sources[file].find((p) => rx.test(decode(p.name).trim()));
-    if (hit) found.push({ file, hit });
+    for (const hit of sources[file].filter((p) => rx.test(decode(p.name).trim()))) found.push({ file: hit.site || file, hit });
   }
   if (!found.length) { missing.push(name); continue; }
   const priced = found.filter((f) => f.hit.price > 0);
@@ -165,7 +167,7 @@ for (const [group, brand, brandPage, name, cats, srcs, opts = {}] of SPEC) {
     priceSource: { site: low.file, url: low.hit.url || '', price: low.hit.price, checked: TODAY },
     shortDescription: c.short, description: c.paragraphs, highlights: c.highlights,
     specs: { Brand: brand, ...(opts.fits ? { 'Fits': opts.fits } : {}), ...fcts }, faqs: FAQ_BY_GROUP(name, group, price, opts.fits),
-    imagesRaw: imgsRaw.slice(0, 5), images: [], inStock: true,
+    imagesRaw: imgsRaw.slice(0, 5), images: (prev.get(slug) && JSON.stringify(prev.get(slug).imagesRaw) === JSON.stringify(imgsRaw.slice(0, 5))) ? prev.get(slug).images : [], inStock: true,
   });
 }
 fs.writeFileSync(path.join(ROOT, 'data/catalog.json'), JSON.stringify(out, null, 1));

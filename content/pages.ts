@@ -27,13 +27,13 @@ export const COPY: Record<string, PageCopy> = {
   '/golf-buggies/for-sale/': {
     intro: [
       'Shop golf buggies for sale from MGI, Stinger, PowerBug, QOD, Concourse and more, with push, electric, remote and ride-on options in one place. Each listing shows a clear price, key specifications and delivery details.',
-      'Our prices are set 2% below the lowest comparable Australian retailer we find, so you can buy a new golf buggy online with confidence. Sort by price or category to find your match.',
+      'Compare specifications, prices and delivery on every model, so you can buy a new golf buggy online with confidence. Sort by price or category to find your match.',
     ],
     guides: [
       { h2: 'Buy a new golf buggy online with confidence', p: ['New buggies come with manufacturer warranty, fresh batteries and the latest features. We list full specifications so you can compare weight, range, battery type and bag compatibility before you order.', 'If you are comparing us with another retailer, compare the final delivered price. Orders over $1,000 ship free to major metro and depot corridors.'] },
     ],
     faqs: [
-      ['Where can I buy a golf buggy?', 'You can buy a new golf buggy online from us and have it delivered Australia-wide. Browse the range above, add your favourite to the cart and check out with bank transfer, PayID, card or crypto.'],
+      ['Where can I buy a golf buggy?', 'You can buy a new golf buggy online from us and have it delivered Australia-wide. Browse the range above, add your favourite to the cart and check out with bank transfer (Osko or EFT), PayID or crypto.'],
       ['How much is a new golf buggy?', 'Prices depend on the type. Push buggies cost the least, and electric and remote buggies cost more. All prices on this page include GST.'],
       ['Do you sell cheap golf buggies?', 'Yes. Our push buggies are the lowest-cost way to stop carrying your bag, and our prices are set below comparable Australian retailers.'],
       ['Can I buy a golf buggy on sale?', 'We list our lowest current prices every day. Check the clearance page for current deals and ask us about bundles.'],
@@ -164,7 +164,7 @@ export const COPY: Record<string, PageCopy> = {
   },
   '/golf-carts/for-sale/': {
     intro: ['Browse golf carts for sale in Australia: new two seat, four seat and larger electric carts in a range of specifications. Prices include GST and are set below comparable Australian retailers.', 'Each listing gives you seat count, drivetrain details and delivery information. Ask us about extras, accessories and finance-style payment options.'],
-    guides: [{ h2: 'How to buy a golf cart online', p: ['Pick your seat layout, then check battery type and warranty. Contact us if you want a particular colour or accessory package. We will confirm lead time and freight before you pay.', 'We accept bank transfer, PayID, cards and crypto. Crypto payments get an extra 5% discount.'] }],
+    guides: [{ h2: 'How to buy a golf cart online', p: ['Pick your seat layout, then check battery type and warranty. Contact us if you want a particular colour or accessory package. We will confirm lead time and freight before you pay.', 'We accept bank transfer (Osko or EFT), PayID and crypto (Bitcoin or USDT). Crypto payments get an extra 10% discount at checkout.'] }],
     faqs: [
       ['What is the price of a golf cart in Australia?', 'New electric carts start from around $11,000 and rise with size and specification. All prices include GST.'],
       ['Can I buy a golf cart near me?', 'We deliver across Australia, so you can buy online wherever you are.'],
@@ -232,13 +232,13 @@ export const COPY: Record<string, PageCopy> = {
     cta: 'Ask about junior golf carts',
   },
   '/clearance/': {
-    intro: ['Looking for cheap golf buggies and cheap golf carts? Our clearance page highlights our lowest-priced buggies, push buggies and accessories so you can save without compromising on quality.', 'We price against the Australian market, so even our regular prices are set 2% below comparable retailers. Check this page for the best entry-level options.'],
-    guides: [{ h2: 'Getting the best price', p: ['Start with push buggies if you want the lowest cost. Add accessories like umbrella holders and phone holders to reach free delivery. Crypto payments receive an extra 5% discount.', 'Auction or marketplace listings can look cheap but may not include warranty or support.'] }],
+    intro: ['Looking for cheap golf buggies and cheap golf carts? Our clearance page highlights our lowest-priced buggies, push buggies and accessories so you can save without compromising on quality.', 'Our regular prices are already competitive, and this page collects the best entry-level options.'],
+    guides: [{ h2: 'Getting the best price', p: ['Start with push buggies if you want the lowest cost. Add accessories like umbrella holders and phone holders to reach free delivery. Crypto payments (Bitcoin or USDT) receive an extra 10% discount at checkout.', 'Auction or marketplace listings can look cheap but may not include warranty or support.'] }],
     faqs: [
       ['Where can I find cheap golf buggies?', 'Browse the lowest-priced buggies and push buggies on this page.'],
       ['Do you have cheap golf carts for sale?', 'Our new electric carts start from around $11,000. For lower budgets ask about used carts.'],
       ['Is cheaper always better?', 'No. Check warranty, support and battery type.'],
-      ['Can I get a discount for paying with crypto?', 'Yes. Crypto payments receive an extra 5% discount.'],
+      ['Can I get a discount for paying with crypto?', 'Yes. Crypto payments (Bitcoin or USDT) receive an extra 10% discount at checkout.'],
       ['Do you offer bundles?', 'Contact us to put together a bundle with accessories.'],
     ],
   },

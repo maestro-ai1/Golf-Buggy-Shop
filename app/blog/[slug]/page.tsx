@@ -5,7 +5,7 @@ import ProductCard, { toCard } from '@/components/ProductCard';
 import { Breadcrumbs, Faq, JsonLd, SectionHead } from '@/components/Bits';
 import { BLOG_POSTS, PRODUCTS, SITE } from '@/config/site';
 import { Markdown, toc } from '@/lib/md';
-import { abs, crumbSchema, faqSchema, meta } from '@/lib/seo';
+import { abs, faqSchema, meta } from '@/lib/seo';
 
 export function generateStaticParams() { return BLOG_POSTS.map((b) => ({ slug: b.slug })); }
 
@@ -37,7 +37,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
 
   return (
     <>
-      <JsonLd data={[article, crumbSchema(trail), ...(b.faqs ? [faqSchema(b.faqs)] : [])]} />
+      <JsonLd data={[article, ...(b.faqs ? [faqSchema(b.faqs)] : [])]} />
       <section className="border-b border-line bg-white"><div className="container-x py-8"><Breadcrumbs trail={trail} /></div></section>
       <article className="section !pt-10">
         <div className="container-x grid gap-12 lg:grid-cols-[1fr_320px]">

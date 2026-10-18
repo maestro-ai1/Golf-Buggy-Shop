@@ -6,22 +6,24 @@ import { Search, X } from 'lucide-react';
 import Pic from '@/components/Pic';
 import { money } from '@/lib/utils';
 
+interface PageHit { name: string; url: string }
 interface Hit { slug: string; name: string; price: number; brand: string; image: string; category?: string }
 const QUICK = [['Electric golf buggies', '/golf-buggies/motorised-electric/'], ['Remote control buggies', '/golf-buggies/remote-control/'], ['Golf carts for sale', '/golf-carts/for-sale/'], ['Lithium batteries', '/parts-accessories/golf-buggy-parts/lithium-batteries/'], ['Dune buggies', '/off-road-buggies/dune-buggies/'], ['Accessories', '/parts-accessories/golf-cart-accessories/']];
 
 export default function SearchModal({ open, onClose }: { open: boolean; onClose: () => void }) {
   const [q, setQ] = useState('');
   const [hits, setHits] = useState<Hit[]>([]);
+  const [pages, setPages] = useState<PageHit[]>([]);
   const [busy, setBusy] = useState(false);
   const input = useRef<HTMLInputElement>(null);
 
   useEffect(() => { if (open) { setTimeout(() => input.current?.focus(), 40); document.body.style.overflow = 'hidden'; } return () => { document.body.style.overflow = ''; }; }, [open]);
   useEffect(() => { const k = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); }; document.addEventListener('keydown', k); return () => document.removeEventListener('keydown', k); }, [onClose]);
   useEffect(() => {
-    if (q.trim().length < 2) { setHits([]); return; }
+    if (q.trim().length < 2) { setHits([]); setPages([]); return; }
     setBusy(true);
     const t = setTimeout(async () => {
-      try { const r = await fetch(`/api/search?q=${encodeURIComponent(q.trim())}&limit=8`); const j = await r.json(); setHits(j.results || []); } catch { setHits([]); }
+      try { const r = await fetch(`/api/search?q=${encodeURIComponent(q.trim())}&limit=8`); const j = await r.json(); setHits(j.results || []); setPages(j.pages || []); } catch { setHits([]); setPages([]); }
       setBusy(false);
     }, 220);
     return () => clearTimeout(t);
@@ -43,10 +45,11 @@ export default function SearchModal({ open, onClose }: { open: boolean; onClose:
               <p className="eyebrow mb-3">Popular searches</p>
               <div className="flex flex-wrap gap-2">{QUICK.map(([n, u]) => <Link key={u} href={u} onClick={onClose} className="chip hover:bg-fw-100">{n}</Link>)}</div>
             </div>
-          ) : hits.length === 0 ? (
+          ) : hits.length === 0 && pages.length === 0 ? (
             <p className="py-6 text-center text-muted">{busy ? 'Searching…' : `No matches for “${q}”. Try “golf buggy”, “battery” or “UTV”.`}</p>
           ) : (
             <ul className="divide-y divide-line">
+              {pages.length > 0 && <li className="flex flex-wrap items-center gap-2 pb-3"><span className="text-xs font-bold uppercase tracking-wide text-muted">Browse</span>{pages.map((pg) => <Link key={pg.url} href={pg.url} onClick={onClose} className="chip hover:bg-fw-100">{pg.name}</Link>)}</li>}
               {hits.map((h) => (
                 <li key={h.slug}>
                   <Link href={`/products/${h.slug}/`} onClick={onClose} className="flex items-center gap-4 py-3 hover:bg-sand-50">

@@ -5,8 +5,9 @@ React/Next.js (App Router, TypeScript) store for buggiesforsale.com.au, deployed
 ## Non-negotiable
 - Never fabricate awards, press, certifications, stock, specs or reviews. Do not claim inspections, warranties or services that are not real.
 - Trustpilot score (4.9, 1,024 reviews, since 2023) and the two review quotes in `content/reviews.ts` come from the owner's previous website: never edit, remove or question them.
-- All prices AUD incl. 10% GST. **Price rule: our price = lowest comparable Australian competitor price x 0.98** (2% below). Source and date are recorded per product in `data/catalog.json` (`priceSource`).
-- Order rules (owner): min order $500, free delivery over $1,000 (major metro and depot corridors), flat $95 freight below, 5% crypto discount.
+- All prices AUD incl. 10% GST. **Internal pricing strategy: our price = lowest comparable Australian competitor price x 0.98. NEVER show the 2% / benchmarking / "below market" wording anywhere on the website, in metadata, llms.txt or agent files.** Source and date are recorded per product in `data/catalog.json` (`priceSource`).
+- Order rules (owner): min order $500, free delivery over $1,000 (major metro and depot corridors), flat $95 freight below, **10% discount for crypto (Bitcoin / USDT TRC20), applied automatically at checkout only when the customer selects crypto**. Payment methods are ONLY: bank transfer (Osko/EFT), PayID, crypto. No cards, no invoices at checkout. Wallet addresses go in `CRYPTO` in `config/site.ts`.
+- Menu: Home, Shop (mega menu), Brands, Blog, About Us, Contact Us (centred). Clearance lives in the footer only.
 - One H1 per page. Meta description 110-158 chars. Product title `{Name} | Buy Online Australia` (60 or fewer).
 - Mobile-first, no horizontal scroll. WCAG 2.2 AA basics (skip link, labels, focus, contrast).
 - Strategy docs live in `docs/` only: never in `public/`.

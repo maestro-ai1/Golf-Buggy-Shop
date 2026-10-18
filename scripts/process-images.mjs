@@ -88,7 +88,10 @@ const workers = Array.from({ length: 5 }, async () => {
 });
 await Promise.all(workers);
 fs.writeFileSync(CAT, JSON.stringify(catalog, null, 1));
-fs.writeFileSync(path.join(ROOT, 'data/image-sources.json'), JSON.stringify(sources, null, 1));
+const srcFile = path.join(ROOT, 'data/image-sources.json');
+const prevSources = fs.existsSync(srcFile) ? JSON.parse(fs.readFileSync(srcFile, 'utf8')) : [];
+const merged = new Map(prevSources.map((e) => [e.file, e])); sources.forEach((e) => merged.set(e.file, e));
+fs.writeFileSync(srcFile, JSON.stringify([...merged.values()], null, 1));
 const noImg = catalog.filter((p) => !p.images.length);
 console.log('done. products with images:', catalog.length - noImg.length, 'without:', noImg.length, 'failed downloads:', failures.length);
 if (noImg.length) console.log(noImg.map((p) => p.slug).join('\n'));

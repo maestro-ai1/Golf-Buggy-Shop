@@ -203,7 +203,7 @@ for (let [group, brand, brandPage, name, cats, srcs, opts = {}] of SPEC) {
     priceSource: { site: low.file, url: low.hit.url || '', price: low.hit.price, checked: TODAY },
     shortDescription: c.short, description: c.paragraphs, highlights: c.highlights, tags: [],
     specs: { Brand: brand, ...(opts.fits ? { 'Fits': opts.fits } : {}), ...fcts }, faqs: FAQ_BY_GROUP(name, group, price, opts.fits),
-    imagesRaw: imgsRaw.slice(0, 5), images: (prev.get(slug) && JSON.stringify(prev.get(slug).imagesRaw) === JSON.stringify(imgsRaw.slice(0, 5))) ? prev.get(slug).images : [], inStock: true,
+    imagesRaw: imgsRaw.slice(0, 5), images: (prev.get(slug) && JSON.stringify(prev.get(slug).imagesRaw) === JSON.stringify(imgsRaw.slice(0, 5))) ? prev.get(slug).images : [], inStock: true, ...(opts.petrol ? { fuel: 'petrol' } : {}),
   });
 }
 // 400-word product copy, inbound and outbound links, five tags

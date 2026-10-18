@@ -1154,7 +1154,7 @@
    "url": "/off-road-buggies/",
    "name": "Off-Road & Recreational Buggies",
    "level": "category",
-   "words": 654,
+   "words": 656,
    "title": "Off Road Buggy Australia | Buggies For Sale",
    "h1": " Off Road Buggy ",
    "meta": "Off road buggy: Explore off road buggie for farm , trail and weekend adventure . Our range include Trailma ter Cheetah dune buggie , Kayo and Hammerhead ide.",
@@ -1274,7 +1274,7 @@
    "url": "/off-road-buggies/go-karts/",
    "name": "Go Karts",
    "level": "sub-category",
-   "words": 466,
+   "words": 492,
    "title": "Electric Go Kart Australia | Buggies For Sale",
    "h1": " Electric Go Kart ",
    "meta": "Electric go kart: Shop go kart for ale including petrol and electric model . Our go kart from Kayo, GMX and Crazy Kart uit backyard , farm and private track.",
@@ -1288,7 +1288,7 @@
     "inMeta": true,
     "inIntro": true,
     "uses": 2,
-    "density": 0.62
+    "density": 0.59
    },
    "secondary": [
     {
@@ -4295,7 +4295,7 @@
    "url": "/shop/",
    "name": "Shop",
    "level": "menu",
-   "words": 834,
+   "words": 836,
    "title": "Golf Buggies For Sale Australia | Shop Carts & Parts",
    "h1": " Golf Buggies For Sale Australia: Shop Buggies, Carts & Parts ",
    "meta": "Shop golf buggies for sale Australia-wide: push, electric and remote control buggies, golf carts, batteries and off-road buggies. Free delivery over $1,000.",

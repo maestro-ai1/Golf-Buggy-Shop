@@ -170,6 +170,8 @@ export const SPEC = [
   ['ssv', 'Polaris', 'polaris', 'Polaris Ranger 500 Side by Side', [O + 'side-by-sides-utvs/', O + ''], [['web', /^Polaris Ranger 500$/]]],
   ['ssv', 'Polaris', 'polaris', 'Polaris Ranger XP 1000 HD Side by Side', [O + 'side-by-sides-utvs/', O + ''], [['web', /^Polaris Ranger XP 1000 HD$/]]],
   ['ssv', 'Polaris', 'polaris', 'Polaris Ranger Crew XP 1000 Side by Side', [O + 'side-by-sides-utvs/', O + ''], [['web', /^Polaris Ranger Crew XP 1000$/]]],
+  ['gokart', 'HelmetKarts', '', 'HelmetKarts HA-270X 270cc Go Kart', [O + 'go-karts/', O + ''], [['web', /^HelmetKarts HA-270X/]], { petrol: true }],
+  ['kids', 'R1', '', 'R1 Kids Buggy 5 to 11 Years', [O + 'kids-buggies/', O + 'go-karts/', O + ''], [['web', /^R1 Kids Buggy/]], { petrol: true }],
   ['kids', 'Can-Am', 'can-am', 'Can-Am Maverick 24V Kids Ride-On Buggy', [O + 'kids-buggies/', O + 'electric-off-road-utvs/', O + ''], [['web', /^Can-Am Maverick 24V Kids/]]],
   ['kids', 'John Deere', 'john-deere', 'John Deere 12V Gator XUV Kids Ride-On', [O + 'kids-buggies/', O + ''], [['web', /^John Deere 12V Gator/]]],
   ['kids', 'Little Riders', '', 'Kids 24V Electric Golf Cart Ride-On with Canopy', [C + 'mini-junior/', O + 'kids-buggies/'], [['web', /^Kids 24V Electric Golf Cart/]]],

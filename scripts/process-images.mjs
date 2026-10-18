@@ -34,8 +34,20 @@ async function whitenStudio(buf) {
   return light / n >= 0.9 ? sharp(buf).linear(255 / 226, 0).toBuffer() : buf;
 }
 
+// Some sources frame the photo in a thin coloured line on a white page. When the outermost rows are dark but white sits just inside (within 14px), crop the frame off.
+async function stripBorder(buf) {
+  try {
+    const { data, info } = await sharp(buf, { failOn: 'none' }).rotate().flatten({ background: '#ffffff' }).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+    const w = info.width, h = info.height; if (w < 300 || h < 300) return buf;
+    const ring = (d) => { let s = 0, n = 0; for (let x = d; x < w - d; x++) for (const y of [d, h - 1 - d]) { const i = (y * w + x) * 3; s += (data[i] + data[i + 1] + data[i + 2]) / 3; n++; } for (let y = d; y < h - d; y++) for (const x of [d, w - 1 - d]) { const i = (y * w + x) * 3; s += (data[i] + data[i + 1] + data[i + 2]) / 3; n++; } return s / n; };
+    if (ring(0) >= 238) return buf;
+    for (let d = 1; d <= 14; d++) if (ring(d) >= 250 && ring(d + 1) >= 250 && ring(d + 2) >= 250) return await sharp(buf, { failOn: 'none' }).rotate().extract({ left: d + 1, top: d + 1, width: w - 2 * (d + 1), height: h - 2 * (d + 1) }).toBuffer();
+  } catch { /* fall through */ }
+  return buf;
+}
+
 async function toSquare(buf, size) {
-  let img = sharp(buf, { failOn: 'none' }).rotate().flatten({ background: '#ffffff' });
+  let img = sharp(await stripBorder(buf), { failOn: 'none' }).rotate().flatten({ background: '#ffffff' });
   const meta = await img.metadata();
   if (!meta.width || meta.width < 300 || meta.height < 300) return null;
   let work = img;

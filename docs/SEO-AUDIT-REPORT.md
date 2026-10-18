@@ -227,7 +227,7 @@ Volumes are monthly Australian searches from the keyword bank. A low KD means a 
 
 | Theme | Unmapped keywords | Total monthly volume | Products we list | Action |
 |---|---|---|---|---|
-| Go karts (adult, petrol, price) | 30 | about 8,030 | 3 | **Biggest gap.** Add adult and petrol go karts with verified Australian prices |
+| Go karts (adult, petrol, price) | 30 | about 8,030 | 4 | **Biggest gap.** HelmetKarts HA-270X added; more are ready once white-background photos exist (see below) |
 | Off-road buggies, UTV, side-by-side, ATV | 49 | about 6,190 | 15 side-by-sides, 4 quads | Add models as verified prices appear (Polaris and Kubota added this month) |
 | Golf carts used, near me, by city | 43 | about 5,880 | 6 used carts | Add more used and refurbished carts, expand the locations page |
 | Golf buggies and trolleys | 59 | about 5,840 | 55+ | Well covered, keep tuning titles and FAQs |
@@ -238,9 +238,17 @@ Volumes are monthly Australian searches from the keyword bank. A low KD means a 
 
 Models added in October: Polaris RZR 200 EFI, RZR Trail S 1000, RZR Pro R, Ranger 500, Ranger XP 1000 HD, Ranger Crew XP 1000, Kubota RTV520 and RTV-XG850 Sidekick. Not added because no verified new Australian price was found: Can-Am Maverick X3, Polaris RZR 170 and 570.
 
+### Go kart update (18 October 2026)
+
+Added with verified Australian prices and white-background first photos: **HelmetKarts HA-270X 270cc Go Kart** ($1,449 listed, $1,420 on our site) and **R1 Kids Buggy for ages 5 to 11** ($2,850 listed, $2,793 on our site).
+
+Verified in stock at HelmetKarts Australia but **not added** because every photo is on a grey concrete floor, which breaks the white-background-first image rule: FA2K electric go kart buggy ($2,299), F63XE Sprinter 2500W electric ($1,599), F63SE Sprinter 2000W electric ($1,299), F63R Sprinter petrol ($1,099) and FB-200SE 200cc ($1,199). Not added for other reasons: Crossfire Blazer 200R (all 46 photos are lifestyle shots), E-Drift Kart (pre-order only), GK80SE (sold out), FA-270XHT (base model sold out).
+
+To unlock the five karts above, either supply studio photos on white or approve placing a lifestyle photo first for go karts only.
+
 ## 9. Recommended next steps
 
-1. Add 6 to 10 adult and petrol go karts (about 8,000 searches a month of demand with only 3 products).
+1. Unlock the five HelmetKarts go karts (white-background photos or a one-off rule exception) and add more adult and petrol models (about 8,000 searches a month of demand, 4 products so far).
 2. Add more dune and beach buggies and more used golf carts.
 3. Paste a Semrush export from your own session for live volumes and I will refresh the mapping.
 4. After each batch run the keyword audit (node scripts/keyword-audit.mjs) and open the owner report at /admin/keywords/, which now lists Shop, About and Contact beside the other 72 pages.

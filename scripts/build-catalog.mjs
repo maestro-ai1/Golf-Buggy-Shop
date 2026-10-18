@@ -203,7 +203,7 @@ for (let [group, brand, brandPage, name, cats, srcs, opts = {}] of SPEC) {
     priceSource: { site: low.file, url: low.hit.url || '', price: low.hit.price, checked: TODAY },
     shortDescription: c.short, description: c.paragraphs, highlights: c.highlights, tags: [],
     specs: { Brand: brand, ...(opts.fits ? { 'Fits': opts.fits } : {}), ...fcts }, faqs: FAQ_BY_GROUP(name, group, price, opts.fits),
-    imagesRaw: imgsRaw.slice(0, 5), images: (prev.get(slug) && JSON.stringify(prev.get(slug).imagesRaw) === JSON.stringify(imgsRaw.slice(0, 5))) ? prev.get(slug).images : [], inStock: true, ...(opts.petrol ? { fuel: 'petrol' } : {}),
+    imagesRaw: imgsRaw.slice(0, 5), images: (prev.get(slug) && JSON.stringify(prev.get(slug).imagesRaw) === JSON.stringify(imgsRaw.slice(0, 5))) ? prev.get(slug).images : [], inStock: true, ...(opts.petrol ? { fuel: 'petrol' } : {}), ...(opts.tags ? { tagsOverride: opts.tags } : {}),
   });
 }
 // 400-word product copy, inbound and outbound links, five tags
@@ -211,7 +211,7 @@ for (const p of out) {
   const page = STRUCT.find((x) => x.url === p.categories[0]);
   const ctx = { categoryUrl: page ? page.url : '', categoryName: page ? page.name.replace(/ (Hub)$/, '') : '', brandUrl: p.brandPage ? '/brands/' + p.brandPage + '/' : '', primary: page?.primary?.keyword || '', secondary: page?.secondary?.[0]?.keyword || '' };
   const long = longCopy(p, ctx);
-  p.description = long.lines; p.tags = tagsFor(p, ctx);
+  p.description = long.lines; p.tags = p.tagsOverride || tagsFor(p, ctx); delete p.tagsOverride;
   if (long.words < 400) shortWords.push(p.slug + ' ' + long.words);
 }
 if (shortWords.length) console.log('UNDER 400 WORDS:', shortWords.join(', '));

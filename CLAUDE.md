@@ -1,6 +1,6 @@
 # Buggies For Sale Australia: Project Rules
 
-React/Next.js (App Router, TypeScript) store for buggiesforsale.com.au, deployed on Vercel from GitHub. Built with the golden-skill (WebForge v11.1 + Golden Keyword Rule + Golden Image Rule).
+React/Next.js (App Router, TypeScript) store for buggiesforsale.com.au, deployed on Vercel from GitHub. Built with the separate skills keyword-engine, buggy-shop-seo and golden-image-rule (golden-skill and the WebForge VIP zip are disabled).
 
 ## Non-negotiable
 - Never fabricate awards, press, certifications, stock, specs or reviews. Do not claim inspections, warranties or services that are not real.
@@ -21,7 +21,7 @@ React/Next.js (App Router, TypeScript) store for buggiesforsale.com.au, deployed
 - Images: `scripts/process-images.mjs` (square 1:1 on white, WebP+AVIF, <=150KB), heroes `scripts/make-heroes.mjs`, blog covers `scripts/make-blog-images.mjs`.
 
 ## Keyword rule
-1 primary (transactional/commercial, KD<=25) + 5 secondary per page, unique, no stuffing. Mapped keywords are never blog targets. Blog: 1500 words, TOC, 5 FAQs, 3+ internal links, alt text.
+The one rule is the `golden-keyword-rule` skill (global, owner-confirmed). Summary: KD 28 or below, highest volume first; 1 primary (transactional, else commercial) + 5 secondary (T/C) + 5 FAQs per page and per product; N/I go to blogs; alt text = product focus keyword; FAQs on every product and blog post; numbered pagination; no keyword for products we do not stock. Mapped keywords are never blog targets. Blog: 1500 words minimum, TOC, 5 FAQs, outbound + internal + product links.
 
 ## Facts
 Buggies For Sale Australia Pty Ltd · ABN 53 635 284 267 · 0420 128 746 · sales@buggiesforsale.com.au · Sydney NSW · founded 2023.

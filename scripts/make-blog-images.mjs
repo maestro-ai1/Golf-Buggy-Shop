@@ -20,6 +20,8 @@ const POSTS = {
   'atv-buggy': [/Kayo Bull 125/, /Apollo Commander 110/],
   'trailmaster-dune-buggies': [/Cheetah 175/, /Challenger 200/],
   'kids-ride-on-buggy': [/Can-Am Maverick 24V/, /John Deere 12V/],
+  'ninebot-go-kart': [/Segway Ninebot GoKart Pro 2/, /Drifta/],
+  'golf-cars-vs-carts': [/IKON HD 4S/, /MGI ZIP X3/],
   'used-golf-carts-on-sale': [/Tempo Refurbished/, /2015 Club Car Precedent/],
 };
 const W = 1600, H = 900;

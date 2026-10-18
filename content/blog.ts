@@ -6,6 +6,7 @@ import { MORE2 } from '@/content/blog-more2';
 import { MORE3 } from '@/content/blog-more3';
 import { MORE4 } from '@/content/blog-more4';
 import { MORE5 } from '@/content/blog-more5';
+import { EXTRA_POSTS2 } from '@/content/blog-extra2';
 
 const L = {
   carts: '/golf-carts/', cartsSale: '/golf-carts/for-sale/', electricCarts: '/golf-carts/electric/', used: '/golf-carts/used/', utility: '/golf-carts/utility-4-seater/',
@@ -388,4 +389,4 @@ function extend(p: BlogPost): BlogPost {
   return { ...p, content, products: a?.products || p.products, tags: m?.tags || p.tags };
 }
 
-export const BLOG_POSTS: BlogPost[] = [...CORE_POSTS, ...EXTRA_POSTS].map(extend);
+export const BLOG_POSTS: BlogPost[] = [...CORE_POSTS, ...EXTRA_POSTS, ...EXTRA_POSTS2].map(extend);

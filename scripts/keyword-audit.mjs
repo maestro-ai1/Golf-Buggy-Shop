@@ -19,6 +19,10 @@ const targets = structure.filter((p) => p.level !== 'product').map((p) => ({ kin
 const blogSrc = fs.readFileSync(path.join(ROOT, 'content/blog.ts'), 'utf8') + fs.readFileSync(path.join(ROOT, 'content/blog-extra.ts'), 'utf8');
 for (const m of blogSrc.matchAll(/slug: '([^']+)',\n\s+title: '([^']+)'[\s\S]*?targetKeyword: '([^']+)'/g)) { const kw = m[3]; const b = bank.get(kw.toLowerCase()); targets.push({ kind: 'blog', url: `/blog/${m[1]}/`, name: m[2], level: 'blog', primary: { keyword: kw, volume: b?.volume ?? null, kd: b?.kd ?? null }, secondary: [] }); }
 
+// menu pages that live outside the locked structure map (Shop, About, Contact): keywords come from data/menu-keywords.json, volume and KD from the bank
+const kwObj = (k) => { const b = bank.get(k.toLowerCase()); return { keyword: k, volume: b?.volume ?? null, kd: b?.kd ?? null, intent: b?.intent || '' }; };
+for (const m of JSON.parse(fs.readFileSync(path.join(ROOT, 'data/menu-keywords.json'), 'utf8'))) targets.push({ kind: 'page', url: m.url, name: m.name, level: 'menu', primary: kwObj(m.primary), secondary: m.secondary.map(kwObj) });
+
 const rows = [];
 for (const t of targets) {
   const r = await fetch(base + t.url); if (!r.ok) { rows.push({ ...t, error: r.status }); continue; }

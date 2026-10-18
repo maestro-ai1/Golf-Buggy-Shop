@@ -36,11 +36,11 @@ export default function Home() {
       <JsonLd data={faqSchema(faqs)} />
       {/* HERO */}
       <section className="relative overflow-hidden bg-fw-900 text-white">
-        <picture className="absolute inset-0 hidden md:block" aria-hidden="true">
+        <picture className="absolute inset-0 hidden md:block">
           <source type="image/avif" srcSet="/images/hero/home-golf-cart-fairway-1200.avif 1200w, /images/hero/home-golf-cart-fairway.avif 2400w" sizes="100vw" />
           <source type="image/webp" srcSet="/images/hero/home-golf-cart-fairway-1200.webp 1200w, /images/hero/home-golf-cart-fairway.webp 2400w" sizes="100vw" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/hero/home-golf-cart-fairway-1200.webp" alt="" width={1200} height={600} className="h-full w-full object-cover object-right" fetchPriority="high" />
+          <img src="/images/hero/home-golf-cart-fairway-1200.webp" alt="Buggies for sale in Australia: black ECAR Compass 4 seat golf cart on a green fairway" width={1200} height={600} className="h-full w-full object-cover object-right" fetchPriority="high" />
         </picture>
         <picture className="block md:hidden">
           <source type="image/avif" srcSet="/images/hero/home-golf-cart-fairway-1200.avif" />
@@ -225,6 +225,21 @@ export default function Home() {
                 <span className="flex flex-1 flex-col p-5"><span className="eyebrow mb-2">{b.category}</span><span className="text-sm leading-relaxed text-muted">{b.excerpt}</span><span className="mt-auto pt-4 text-sm font-extrabold text-accent-600">Read guide →</span></span>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CLOSING CTA */}
+      <section className="section pt-0" aria-labelledby="home-cta-h">
+        <div className="container-x">
+          <div className="rounded-3xl bg-fw-900 p-8 text-white md:p-12">
+            <h2 id="home-cta-h" className="!text-white text-2xl font-black md:text-4xl">Ready to buy a buggy or golf cart?</h2>
+            <p className="mt-3 max-w-2xl text-fw-200">Browse the full range with GST-inclusive prices, or tell us what you need and we will confirm stock and freight before you pay.</p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link href="/shop/" className="btn btn-primary">Shop all {PRODUCTS.length}+ products <ArrowRight size={16} aria-hidden="true" /></Link>
+              <Link href="/contact/" className="btn btn-ghost !border-white/30 !bg-transparent !text-white">Get a quote</Link>
+              <a href="tel:+61420128746" className="btn btn-ghost !border-white/30 !bg-transparent !text-white">Call 0420 128 746</a>
+            </div>
           </div>
         </div>
       </section>

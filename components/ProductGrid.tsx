@@ -49,11 +49,15 @@ export default function ProductGrid({ products, showBrandFilter = true, emptyNot
       </div>
       {pages > 1 && (
         <nav aria-label="Pagination" className="mt-8 flex items-center justify-center gap-2">
-          <button disabled={cur === 1} onClick={() => go(cur - 1)} className="grid h-11 w-11 place-items-center rounded-full border border-line bg-white disabled:opacity-40" aria-label="Previous page"><ChevronLeft size={18} /></button>
+          {cur === 1
+            ? <span aria-disabled="true" className="grid h-11 w-11 place-items-center rounded-full border border-line bg-white opacity-40"><ChevronLeft size={18} /></span>
+            : <a href={cur - 1 === 1 ? '?' : `?page=${cur - 1}`} rel="prev" onClick={(e) => { e.preventDefault(); go(cur - 1); }} className="grid h-11 w-11 place-items-center rounded-full border border-line bg-white" aria-label="Previous page"><ChevronLeft size={18} /></a>}
           {Array.from({ length: pages }, (_, i) => i + 1).map((n) => (
             <a key={n} href={n === 1 ? '?' : `?page=${n}`} onClick={(e) => { e.preventDefault(); go(n); }} aria-current={n === cur ? 'page' : undefined} className={`grid h-11 min-w-11 place-items-center rounded-full border px-3 text-sm font-bold ${n === cur ? 'border-fw-800 bg-fw-800 text-white' : 'border-line bg-white hover:border-fw-500'}`}>{n}</a>
           ))}
-          <button disabled={cur === pages} onClick={() => go(cur + 1)} className="grid h-11 w-11 place-items-center rounded-full border border-line bg-white disabled:opacity-40" aria-label="Next page"><ChevronRight size={18} /></button>
+          {cur === pages
+            ? <span aria-disabled="true" className="grid h-11 w-11 place-items-center rounded-full border border-line bg-white opacity-40"><ChevronRight size={18} /></span>
+            : <a href={`?page=${cur + 1}`} rel="next" onClick={(e) => { e.preventDefault(); go(cur + 1); }} className="grid h-11 w-11 place-items-center rounded-full border border-line bg-white" aria-label="Next page"><ChevronRight size={18} /></a>}
         </nav>
       )}
     </div>

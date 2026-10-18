@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Shop",
+    "url": "/shop/",
+    "primary": "golf buggies for sale australia",
+    "secondary": ["off road buggies for sale australia", "golf push buggy australia", "golf scooters for sale australia", "buy a buggy", "golf cart batteries australia"]
+  },
+  {
+    "name": "About Us",
+    "url": "/about/",
+    "primary": "buggies australia",
+    "secondary": ["golf cars australia", "best golf buggy australia", "mgi electric golf buggy australia", "electric golf carts australia", "buggy australia"]
+  },
+  {
+    "name": "Contact Us",
+    "url": "/contact/",
+    "primary": "golf carts for sale near me",
+    "secondary": ["golf cart for sale near me", "second hand golf carts for sale near me", "golf buggy for sale sydney", "golf buggy for sale perth", "golf carts for sale adelaide"]
+  }
+]

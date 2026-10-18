@@ -34,11 +34,13 @@ export default function SearchModal({ open, onClose }: { open: boolean; onClose:
     <div className="fixed inset-0 z-[60]" role="dialog" aria-modal="true" aria-label="Search">
       <div className="absolute inset-0 bg-fw-950/60 backdrop-blur-sm" onClick={onClose} />
       <div className="relative mx-auto mt-[8vh] w-[min(720px,calc(100%-24px))] overflow-hidden rounded-2xl bg-white shadow-2xl">
-        <div className="flex items-center gap-3 border-b border-line px-4">
-          <Search size={20} className="text-fw-600" />
-          <input ref={input} value={q} onChange={(e) => setQ(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter' && q.trim()) { window.location.href = `/search/?q=${encodeURIComponent(q.trim())}`; } }} placeholder="Search buggies, carts, batteries, parts…" className="h-16 flex-1 bg-transparent text-lg outline-none" aria-label="Search products" />
-          <button onClick={onClose} className="grid h-10 w-10 place-items-center rounded-full hover:bg-sand-100" aria-label="Close search"><X size={20} /></button>
-        </div>
+        {/* a real GET form: Enter or the Search button goes to /search/?q=... with no script needed */}
+        <form action="/search/" method="get" role="search" className="flex items-center gap-3 border-b border-line px-4">
+          <Search size={20} className="text-fw-600" aria-hidden="true" />
+          <input ref={input} name="q" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search buggies, carts, batteries, parts…" className="h-16 flex-1 bg-transparent text-lg outline-none" aria-label="Search products" autoComplete="off" />
+          <button type="submit" className="btn btn-primary !min-h-10 !px-4 text-sm">Search</button>
+          <button type="button" onClick={onClose} className="grid h-10 w-10 place-items-center rounded-full hover:bg-sand-100" aria-label="Close search"><X size={20} /></button>
+        </form>
         <div className="max-h-[60vh] overflow-y-auto p-4">
           {q.trim().length < 2 ? (
             <div>

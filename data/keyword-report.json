@@ -1,11 +1,11 @@
 {
  "summary": {
-  "pages": 72,
+  "pages": 75,
   "posts": 16,
   "withFlags": 0,
-  "totalPrimaryVolume": 50600,
-  "totalSecondaryVolume": 76390,
-  "keywordsMapped": 386,
+  "totalPrimaryVolume": 50950,
+  "totalSecondaryVolume": 78270,
+  "keywordsMapped": 404,
   "generated": "2026-10-18"
  },
  "rows": [
@@ -14,7 +14,7 @@
    "url": "/",
    "name": "Home",
    "level": "home",
-   "words": 1310,
+   "words": 1227,
    "title": "Buggies For Sale Australia | Golf, Electric & Beach Buggies",
    "h1": " Buggies For Sale Across Australia ",
    "meta": "Buggies for sale in Australia: golf buggies, electric and remote buggies, golf carts, beach buggies, parts and accessories. Free delivery over $1,000.",
@@ -28,7 +28,7 @@
     "inMeta": true,
     "inIntro": true,
     "uses": 7,
-    "density": 1.02
+    "density": 1.2
    },
    "secondary": [
     {
@@ -36,7 +36,7 @@
      "volume": 4400,
      "kd": 17,
      "intent": "Informational, Commercial",
-     "uses": 61
+     "uses": 62
     },
     {
      "keyword": "buggy buggies",
@@ -57,14 +57,14 @@
      "volume": 1300,
      "kd": 16,
      "intent": "Commercial",
-     "uses": 61
+     "uses": 62
     },
     {
      "keyword": "for sale buggy",
      "volume": 590,
      "kd": 7,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 2
     }
    ],
    "flags": []
@@ -1154,7 +1154,7 @@
    "url": "/off-road-buggies/",
    "name": "Off-Road & Recreational Buggies",
    "level": "category",
-   "words": 652,
+   "words": 654,
    "title": "Off Road Buggy Australia | Buggies For Sale",
    "h1": " Off Road Buggy ",
    "meta": "Off road buggy: Explore off road buggie for farm , trail and weekend adventure . Our range include Trailma ter Cheetah dune buggie , Kayo and Hammerhead ide.",
@@ -1334,7 +1334,7 @@
    "url": "/off-road-buggies/kids-buggies/",
    "name": "Youth & Kids Buggies",
    "level": "sub-category",
-   "words": 513,
+   "words": 526,
    "title": "Kids Go Kart Australia | Buggies For Sale",
    "h1": " Kids Go Kart ",
    "meta": "Kids go kart: Our kid buggie include youth buggie and electric quad ized for younger rider . Choo e from Hammerhead Torpedo, Kayo S70 and GO SKITZ model ..",
@@ -1454,7 +1454,7 @@
    "url": "/off-road-buggies/side-by-sides-utvs/",
    "name": "Side-by-Sides (SSV) & UTVs",
    "level": "sub-category",
-   "words": 542,
+   "words": 556,
    "title": "Utv For Sale Australia | Buggies For Sale",
    "h1": " Utv For Sale ",
    "meta": "Utv for sale: Shop ide by ide buggie and UTV from Kayo and Hammerhead. A ide by ide buggy i a two- eat off-road vehicle for property work, trail and.",
@@ -2545,7 +2545,7 @@
    "url": "/brands/",
    "name": "Brands",
    "level": "category",
-   "words": 340,
+   "words": 336,
    "title": "Australian Owned Golf Buggy Brand | Buggies For Sale",
    "h1": " Australian Owned Golf Buggy Brand ",
    "meta": "Australian owned golf buggy brand: Shop au tralian owned golf buggy brand at Buggie For Sale. Free delivery over $1,000. Delivery i Au tralia-wide, free.",
@@ -2569,10 +2569,10 @@
    "url": "/brands/polaris/",
    "name": "Polaris Buggies",
    "level": "brand",
-   "words": 518,
+   "words": 554,
    "title": "Polaris Side By Side Australia | Buggies For Sale",
    "h1": " Polaris Side By Side ",
-   "meta": "Polaris side by side: Shop Polari online in Au tralia. We li t 6 Polari product from $131.15 to $366.50. Every order hip Au tralia-wide with free delivery.",
+   "meta": "Polaris side by side: Shop Polari online in Au tralia. We li t 12 Polari product from $131.15 to $56,835.10. Every order hip Au tralia-wide with free.",
    "primary": {
     "keyword": "polaris side by side",
     "volume": 390,
@@ -3141,10 +3141,10 @@
    "url": "/brands/kubota/",
    "name": "Kubota Buggies",
    "level": "brand",
-   "words": 472,
+   "words": 467,
    "title": "Kubota Buggy Australia | Buggies For Sale",
    "h1": " Kubota Buggy ",
-   "meta": "Kubota buggy: Looking for kubota buggy? Kubota i one of the brand Au tralian buyer a k u about. We do not li t a Kubota model online yet, but we can check.",
+   "meta": "Kubota buggy: Shop Kubota online in Au tralia. We li t 2 Kubota product from $19,105.10 to $28,410.20. Every order hip Au tralia-wide with free delivery.",
    "primary": {
     "keyword": "kubota buggy",
     "volume": 260,
@@ -3154,8 +3154,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 2,
-    "density": 0.53
+    "uses": 1,
+    "density": 0.27
    },
    "secondary": [
     {
@@ -4288,6 +4288,186 @@
     "density": 0
    },
    "secondary": [],
+   "flags": []
+  },
+  {
+   "kind": "page",
+   "url": "/shop/",
+   "name": "Shop",
+   "level": "menu",
+   "words": 834,
+   "title": "Golf Buggies For Sale Australia | Shop Carts & Parts",
+   "h1": " Golf Buggies For Sale Australia: Shop Buggies, Carts & Parts ",
+   "meta": "Shop golf buggies for sale Australia-wide: push, electric and remote control buggies, golf carts, batteries and off-road buggies. Free delivery over $1,000.",
+   "primary": {
+    "keyword": "golf buggies for sale australia",
+    "volume": 110,
+    "kd": 14,
+    "intent": "Transactional",
+    "inTitle": true,
+    "inH1": true,
+    "inMeta": true,
+    "inIntro": true,
+    "uses": 2,
+    "density": 0.39
+   },
+   "secondary": [
+    {
+     "keyword": "off road buggies for sale australia",
+     "volume": 140,
+     "kd": 3,
+     "intent": "Transactional",
+     "uses": 1
+    },
+    {
+     "keyword": "golf push buggy australia",
+     "volume": 70,
+     "kd": 7,
+     "intent": "Commercial",
+     "uses": 1
+    },
+    {
+     "keyword": "golf scooters for sale australia",
+     "volume": 110,
+     "kd": 4,
+     "intent": "Transactional",
+     "uses": 1
+    },
+    {
+     "keyword": "buy a buggy",
+     "volume": 90,
+     "kd": 9,
+     "intent": "Transactional",
+     "uses": 2
+    },
+    {
+     "keyword": "golf cart batteries australia",
+     "volume": 110,
+     "kd": 9,
+     "intent": "Commercial",
+     "uses": 1
+    }
+   ],
+   "flags": []
+  },
+  {
+   "kind": "page",
+   "url": "/about/",
+   "name": "About Us",
+   "level": "menu",
+   "words": 571,
+   "title": "About Buggies For Sale | Buggies Australia-Wide",
+   "h1": " About Buggies For Sale: Buggies Australia-Wide ",
+   "meta": "Buggies For Sale is a Sydney-based supplier of buggies Australia-wide: golf buggies, golf carts, parts and off-road buggies. See who we are and how we work.",
+   "primary": {
+    "keyword": "buggies australia",
+    "volume": 70,
+    "kd": 15,
+    "intent": "Commercial",
+    "inTitle": true,
+    "inH1": true,
+    "inMeta": true,
+    "inIntro": true,
+    "uses": 3,
+    "density": 0.85
+   },
+   "secondary": [
+    {
+     "keyword": "golf cars australia",
+     "volume": 390,
+     "kd": 18,
+     "intent": "Navigational",
+     "uses": 1
+    },
+    {
+     "keyword": "best golf buggy australia",
+     "volume": 110,
+     "kd": 17,
+     "intent": "Commercial",
+     "uses": 1
+    },
+    {
+     "keyword": "mgi electric golf buggy australia",
+     "volume": 140,
+     "kd": 9,
+     "intent": "Transactional",
+     "uses": 1
+    },
+    {
+     "keyword": "electric golf carts australia",
+     "volume": 70,
+     "kd": 19,
+     "intent": "Commercial",
+     "uses": 1
+    },
+    {
+     "keyword": "buggy australia",
+     "volume": 70,
+     "kd": 19,
+     "intent": "Commercial",
+     "uses": 4
+    }
+   ],
+   "flags": []
+  },
+  {
+   "kind": "page",
+   "url": "/contact/",
+   "name": "Contact Us",
+   "level": "menu",
+   "words": 453,
+   "title": "Contact Us | Golf Carts For Sale Near Me, Australia",
+   "h1": " Contact Us: Golf Carts For Sale Near Me, Australia-Wide ",
+   "meta": "Looking for golf carts for sale near me? Call, WhatsApp or email our Sydney team for quotes, freight and fitment help. We deliver Australia-wide.",
+   "primary": {
+    "keyword": "golf carts for sale near me",
+    "volume": 170,
+    "kd": 9,
+    "intent": "Transactional",
+    "inTitle": true,
+    "inH1": true,
+    "inMeta": true,
+    "inIntro": true,
+    "uses": 2,
+    "density": 0.62
+   },
+   "secondary": [
+    {
+     "keyword": "golf cart for sale near me",
+     "volume": 90,
+     "kd": 8,
+     "intent": "Transactional",
+     "uses": 5
+    },
+    {
+     "keyword": "second hand golf carts for sale near me",
+     "volume": 170,
+     "kd": 5,
+     "intent": "Transactional",
+     "uses": 1
+    },
+    {
+     "keyword": "golf buggy for sale sydney",
+     "volume": 90,
+     "kd": 12,
+     "intent": "Transactional",
+     "uses": 1
+    },
+    {
+     "keyword": "golf buggy for sale perth",
+     "volume": 90,
+     "kd": 2,
+     "intent": "Transactional",
+     "uses": 1
+    },
+    {
+     "keyword": "golf carts for sale adelaide",
+     "volume": 140,
+     "kd": 6,
+     "intent": "Transactional",
+     "uses": 1
+    }
+   ],
    "flags": []
   }
  ]

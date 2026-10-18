@@ -82,6 +82,8 @@
   .prose-copy h2 { font-size: 1.5rem; font-weight: 800; margin: 1.8em 0 .6em; }
   .prose-copy h3 { font-size: 1.2rem; font-weight: 700; margin: 1.4em 0 .5em; }
   .prose-copy ul { margin: 0 0 1.2em 1.2em; list-style: disc; line-height: 1.75; }
+  .prose-copy ol { margin: 0 0 1.2em 1.4em; list-style: decimal; line-height: 1.75; }
+  .prose-copy li { margin: 0 0 .35em; padding-left: .2em; }
   .prose-copy a { color: var(--color-fw-700); font-weight: 600; text-decoration: underline; }
 }
 

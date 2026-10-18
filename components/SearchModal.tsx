@@ -1,205 +1,63 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Search, X, ArrowRight, Tag } from 'lucide-react';
-import { PRODUCTS, CATEGORIES, SITE } from '@/config/site';
+import { useEffect, useRef, useState } from 'react';
+import { Search, X } from 'lucide-react';
+import Pic from '@/components/Pic';
+import { money } from '@/lib/utils';
 
-interface SearchModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-}
+interface Hit { slug: string; name: string; price: number; brand: string; image: string; category?: string }
+const QUICK = [['Electric golf buggies', '/golf-buggies/motorised-electric/'], ['Remote control buggies', '/golf-buggies/remote-control/'], ['Golf carts for sale', '/golf-carts/for-sale/'], ['Lithium batteries', '/parts-accessories/golf-buggy-parts/lithium-batteries/'], ['Dune buggies', '/off-road-buggies/dune-buggies/'], ['Accessories', '/parts-accessories/golf-cart-accessories/']];
 
-export function SearchModal({ isOpen, onClose }: SearchModalProps) {
-  const [query, setQuery] = useState('');
+export default function SearchModal({ open, onClose }: { open: boolean; onClose: () => void }) {
+  const [q, setQ] = useState('');
+  const [hits, setHits] = useState<Hit[]>([]);
+  const [busy, setBusy] = useState(false);
+  const input = useRef<HTMLInputElement>(null);
 
+  useEffect(() => { if (open) { setTimeout(() => input.current?.focus(), 40); document.body.style.overflow = 'hidden'; } return () => { document.body.style.overflow = ''; }; }, [open]);
+  useEffect(() => { const k = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); }; document.addEventListener('keydown', k); return () => document.removeEventListener('keydown', k); }, [onClose]);
   useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
-    };
-    if (isOpen) {
-      window.addEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = 'hidden';
-    }
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = 'unset';
-    };
-  }, [isOpen, onClose]);
+    if (q.trim().length < 2) { setHits([]); return; }
+    setBusy(true);
+    const t = setTimeout(async () => {
+      try { const r = await fetch(`/api/search?q=${encodeURIComponent(q.trim())}&limit=8`); const j = await r.json(); setHits(j.results || []); } catch { setHits([]); }
+      setBusy(false);
+    }, 220);
+    return () => clearTimeout(t);
+  }, [q]);
 
-  if (!isOpen) return null;
-
-  const filteredProducts = query.trim()
-    ? PRODUCTS.filter(
-        (p) =>
-          p.name.toLowerCase().includes(query.toLowerCase()) ||
-          p.category.toLowerCase().includes(query.toLowerCase()) ||
-          p.brand.toLowerCase().includes(query.toLowerCase()) ||
-          p.shortDescription.toLowerCase().includes(query.toLowerCase()) ||
-          p.tags.some((t) => t.toLowerCase().includes(query.toLowerCase()))
-      )
-    : [];
-
-  const matchedCategories = query.trim()
-    ? CATEGORIES.filter(
-        (c) =>
-          c.name.toLowerCase().includes(query.toLowerCase()) ||
-          c.shortDescription.toLowerCase().includes(query.toLowerCase())
-      )
-    : [];
-
+  if (!open) return null;
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-black/60 backdrop-blur-sm animate-fadeIn">
-      <div
-        className="bg-[#FFFFFF] border-2 border-[#1A1A1A] shadow-2xl rounded-xl w-full max-w-2xl overflow-hidden text-[#1A1A1A]"
-        role="dialog"
-        aria-modal="true"
-        aria-label="Search Buggies"
-      >
-        {/* Search Input Bar */}
-        <div className="flex items-center gap-3 px-4 py-3.5 border-b border-[#E2DCD5] bg-[#F4F1EA]">
-          <Search className="w-5 h-5 text-[#E65F2B] shrink-0" />
-          <input
-            type="search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search buggies for sale, golf carts, UTVs, parts..."
-            className="w-full bg-transparent border-none text-[#1A1A1A] placeholder-stone-400 text-sm sm:text-base focus:outline-none"
-            autoFocus
-          />
-          {query && (
-            <button
-              type="button"
-              onClick={() => setQuery('')}
-              className="text-stone-400 hover:text-stone-700 p-1"
-              aria-label="Clear search"
-            >
-              <X className="w-4 h-4" />
-            </button>
-          )}
-          <button
-            type="button"
-            onClick={onClose}
-            className="text-xs bg-[#1A1A1A] text-white px-2.5 py-1 rounded font-mono hover:bg-[#E65F2B] transition-colors"
-          >
-            ESC
-          </button>
+    <div className="fixed inset-0 z-[60]" role="dialog" aria-modal="true" aria-label="Search">
+      <div className="absolute inset-0 bg-fw-950/60 backdrop-blur-sm" onClick={onClose} />
+      <div className="relative mx-auto mt-[8vh] w-[min(720px,calc(100%-24px))] overflow-hidden rounded-2xl bg-white shadow-2xl">
+        <div className="flex items-center gap-3 border-b border-line px-4">
+          <Search size={20} className="text-fw-600" />
+          <input ref={input} value={q} onChange={(e) => setQ(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter' && q.trim()) { window.location.href = `/search/?q=${encodeURIComponent(q.trim())}`; } }} placeholder="Search buggies, carts, batteries, parts…" className="h-16 flex-1 bg-transparent text-lg outline-none" aria-label="Search products" />
+          <button onClick={onClose} className="grid h-10 w-10 place-items-center rounded-full hover:bg-sand-100" aria-label="Close search"><X size={20} /></button>
         </div>
-
-        {/* Results Body */}
-        <div className="max-h-[65vh] overflow-y-auto p-4 space-y-4">
-          {query.trim() === '' ? (
-            <div className="space-y-4 text-xs text-stone-500 py-4">
-              <p className="font-semibold text-stone-700 uppercase tracking-wider text-[11px]">
-                Popular Searches
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  'Buggies for sale',
-                  '4x4 UTV',
-                  'Remote golf buggy',
-                  'Kids buggy with remote kill',
-                  'Lithium golf battery',
-                  'Dune buggy go-kart',
-                  'MGI Zip Navigator',
-                  'Silent electric hunting buggy',
-                ].map((term) => (
-                  <button
-                    key={term}
-                    type="button"
-                    onClick={() => setQuery(term)}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#F4F1EA] hover:bg-[#E2DCD5] text-stone-800 transition-colors text-xs border border-[#E2DCD5]"
-                  >
-                    <Tag className="w-3 h-3 text-[#E65F2B]" />
-                    {term}
-                  </button>
-                ))}
-              </div>
+        <div className="max-h-[60vh] overflow-y-auto p-4">
+          {q.trim().length < 2 ? (
+            <div>
+              <p className="eyebrow mb-3">Popular searches</p>
+              <div className="flex flex-wrap gap-2">{QUICK.map(([n, u]) => <Link key={u} href={u} onClick={onClose} className="chip hover:bg-fw-100">{n}</Link>)}</div>
             </div>
+          ) : hits.length === 0 ? (
+            <p className="py-6 text-center text-muted">{busy ? 'Searching…' : `No matches for “${q}”. Try “golf buggy”, “battery” or “UTV”.`}</p>
           ) : (
-            <>
-              {matchedCategories.length > 0 && (
-                <div>
-                  <h3 className="text-xs font-bold text-stone-400 uppercase tracking-wider mb-2">
-                    Categories ({matchedCategories.length})
-                  </h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    {matchedCategories.map((c) => (
-                      <Link
-                        key={c.slug}
-                        href={`/shop/${c.slug}`}
-                        onClick={onClose}
-                        className="p-3 bg-[#F4F1EA] hover:bg-[#EDE8DE] rounded-lg border border-[#E2DCD5] flex items-center justify-between group transition-colors"
-                      >
-                        <div>
-                          <div className="font-semibold text-sm text-[#1A1A1A] group-hover:text-[#E65F2B]">
-                            {c.name}
-                          </div>
-                          <div className="text-[11px] text-stone-500 line-clamp-1">
-                            {c.shortDescription}
-                          </div>
-                        </div>
-                        <ArrowRight className="w-4 h-4 text-stone-400 group-hover:text-[#E65F2B] transition-transform group-hover:translate-x-1" />
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {filteredProducts.length > 0 ? (
-                <div>
-                  <h3 className="text-xs font-bold text-stone-400 uppercase tracking-wider mb-2">
-                    Products ({filteredProducts.length})
-                  </h3>
-                  <div className="space-y-2">
-                    {filteredProducts.map((p) => (
-                      <Link
-                        key={p.slug}
-                        href={`/shop/${p.category}/${p.slug}`}
-                        onClick={onClose}
-                        className="flex items-center gap-3 p-2.5 rounded-lg border border-[#E2DCD5] hover:border-[#1A1A1A] bg-white transition-all group"
-                      >
-                        <div className="w-14 h-12 bg-[#F4F1EA] rounded overflow-hidden shrink-0 border border-stone-200 flex items-center justify-center">
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img
-                            src={p.images[0]}
-                            alt={p.name}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                          />
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <div className="font-semibold text-sm text-[#1A1A1A] group-hover:text-[#E65F2B] truncate">
-                            {p.name}
-                          </div>
-                          <div className="text-xs text-stone-500 truncate">
-                            {p.brand} • {p.shortDescription}
-                          </div>
-                        </div>
-                        <div className="text-right shrink-0">
-                          <div className="font-bold text-sm text-[#E65F2B]">
-                            {SITE.currencySymbol}
-                            {p.price.toLocaleString()}
-                          </div>
-                          {p.rrp && (
-                            <div className="text-[11px] text-stone-400 line-through">
-                              {SITE.currencySymbol}
-                              {p.rrp.toLocaleString()}
-                            </div>
-                          )}
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              ) : (
-                <div className="text-center py-8 text-stone-500 text-sm">
-                  No buggies or parts matched &ldquo;{query}&rdquo;.
-                  <div className="mt-2 text-xs">
-                    Try searching for &quot;UTV&quot;, &quot;Golf&quot;, &quot;Electric&quot;, or &quot;Remote&quot;.
-                  </div>
-                </div>
-              )}
-            </>
+            <ul className="divide-y divide-line">
+              {hits.map((h) => (
+                <li key={h.slug}>
+                  <Link href={`/products/${h.slug}/`} onClick={onClose} className="flex items-center gap-4 py-3 hover:bg-sand-50">
+                    <span className="product-frame h-16 w-16 shrink-0 border border-line">{h.image && <Pic base={h.image} alt={h.name} width={64} height={64} />}</span>
+                    <span className="flex-1"><span className="block text-xs font-bold uppercase tracking-wide text-fw-600">{h.brand}</span><span className="block text-sm font-semibold text-ink">{h.name}</span></span>
+                    <span className="font-extrabold text-fw-900">{money(h.price)}</span>
+                  </Link>
+                </li>
+              ))}
+              <li className="pt-3"><Link href={`/search/?q=${encodeURIComponent(q.trim())}`} onClick={onClose} className="text-sm font-extrabold text-accent-600">See all results →</Link></li>
+            </ul>
           )}
         </div>
       </div>

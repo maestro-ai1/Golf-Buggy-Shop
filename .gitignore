@@ -5,3 +5,19 @@ coverage/
 *.log
 .env*
 !.env.example
+.claude/
+legacy-scaffold/
+data/raw/
+
+# Local working material (not part of the deployed site; images/_private-real-photos must never be published)
+images/*
+!images/_sources.csv
+!images/_manifest.csv
+/00-RULES/
+/01-keyword-research/
+/02-keyword-mapping/
+/03-blog-topics/
+/04-report/
+/05-ai-studio-prompt/
+/06-AI-STUDIO-UPLOAD/
+/buggy shop keyword/

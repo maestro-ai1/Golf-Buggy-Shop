@@ -1,11 +1,11 @@
 import { NextResponse } from 'next/server';
-import { CATEGORIES, PRODUCTS, SITE } from '@/config/site';
+import { CATEGORIES, PRODUCTS, SITE, inCategory } from '@/config/site';
 
 export async function GET() {
   const categoriesWithCounts = CATEGORIES.map((c) => ({
     ...c,
-    url: `https://${SITE.domain}/shop/${c.slug}/`,
-    productCount: PRODUCTS.filter((p) => p.category === c.slug).length,
+    url: `https://${SITE.domain}/${c.slug}/`,
+    productCount: PRODUCTS.filter((p) => inCategory(p, c.slug)).length,
   }));
 
   return NextResponse.json(

@@ -1,0 +1,117 @@
+{
+ "can-am": {
+  "file": "/brands/can-am/logo.webp",
+  "w": 260,
+  "h": 160
+ },
+ "motocaddy": {
+  "file": "/brands/motocaddy/logo.webp",
+  "w": 400,
+  "h": 84
+ },
+ "yamaha": {
+  "file": "/brands/yamaha/logo.webp",
+  "w": 400,
+  "h": 94
+ },
+ "kubota": {
+  "file": "/brands/kubota/logo.webp",
+  "w": 400,
+  "h": 87
+ },
+ "hammerhead": {
+  "file": "/brands/hammerhead/logo.webp",
+  "w": 400,
+  "h": 140
+ },
+ "john-deere": {
+  "file": "/brands/john-deere/logo.webp",
+  "w": 400,
+  "h": 49
+ },
+ "cfmoto": {
+  "file": "/brands/cfmoto/logo.webp",
+  "w": 400,
+  "h": 79
+ },
+ "honda": {
+  "file": "/brands/honda/logo.webp",
+  "w": 246,
+  "h": 160
+ },
+ "powakaddy": {
+  "file": "/brands/powakaddy/logo.webp",
+  "w": 400,
+  "h": 111
+ },
+ "kawasaki": {
+  "file": "/brands/kawasaki/logo.webp",
+  "w": 317,
+  "h": 160
+ },
+ "ezgo": {
+  "file": "/brands/ezgo/logo.webp",
+  "w": 165,
+  "h": 160
+ },
+ "club-car": {
+  "file": "/brands/club-car/logo.webp",
+  "w": 400,
+  "h": 135
+ },
+ "segway": {
+  "file": "/brands/segway/logo.webp",
+  "w": 400,
+  "h": 47
+ },
+ "mgi": {
+  "file": "/brands/mgi/logo.webp",
+  "w": 400,
+  "h": 138
+ },
+ "clicgear": {
+  "file": "/brands/clicgear/logo.webp",
+  "w": 400,
+  "h": 114
+ },
+ "caddytek": {
+  "file": "/brands/caddytek/logo.webp",
+  "w": 400,
+  "h": 133
+ },
+ "bag-boy": {
+  "file": "/brands/bag-boy/logo.webp",
+  "w": 400,
+  "h": 86
+ },
+ "stinger": {
+  "file": "/brands/stinger/logo.webp",
+  "w": 400,
+  "h": 74
+ },
+ "polaris": {
+  "file": "/brands/polaris/logo.webp",
+  "w": 239,
+  "h": 160
+ },
+ "rovic": {
+  "file": "/brands/rovic/logo.webp",
+  "w": 397,
+  "h": 160
+ },
+ "trailmaster": {
+  "file": "/brands/trailmaster/logo.webp",
+  "w": 319,
+  "h": 160
+ },
+ "big-max": {
+  "file": "/brands/big-max/logo.webp",
+  "w": 400,
+  "h": 82
+ },
+ "ecar": {
+  "file": "/brands/ecar/logo.webp",
+  "w": 394,
+  "h": 160
+ }
+}

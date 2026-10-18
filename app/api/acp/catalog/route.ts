@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { PRODUCTS, CATEGORIES, SHOP, SITE } from '@/config/site';
+import { PRODUCTS, CATEGORIES, SHOP, SITE, inCategory } from '@/config/site';
 
 export async function GET() {
   return NextResponse.json(
@@ -8,13 +8,13 @@ export async function GET() {
       version: '0.1.0',
       catalog: CATEGORIES.map((c) => ({
         ...c,
-        url: `https://${SITE.domain}/shop/${c.slug}/`,
-        products: PRODUCTS.filter((p) => p.category === c.slug).map((p) => ({
+        url: `https://${SITE.domain}/${c.slug}/`,
+        products: PRODUCTS.filter((p) => inCategory(p, c.slug)).map((p) => ({
           slug: p.slug,
           name: p.name,
           price: p.price,
           currency: SITE.currency,
-          url: `https://${SITE.domain}/shop/${p.category}/${p.slug}/`,
+          url: `https://${SITE.domain}/products/${p.slug}/`,
         })),
       })),
       currency: SITE.currency,

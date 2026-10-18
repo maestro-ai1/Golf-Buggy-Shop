@@ -1,597 +1,152 @@
-'use client';
-
-import React, { useState } from 'react';
 import Link from 'next/link';
-import {
-  ShieldCheck,
-  Truck,
-  PhoneCall,
-  Award,
-  ArrowRight,
-  Star,
-  Check,
-  Zap,
-  ShoppingBag,
-  HelpCircle,
-  Wrench,
-  BatteryCharging,
-  SlidersHorizontal,
-  Flame,
-  ChevronRight,
-} from 'lucide-react';
-import {
-  SITE,
-  CONTACT,
-  SHOP,
-  CATEGORIES,
-  PRODUCTS,
-  BLOG_POSTS,
-  FAQ_ITEMS,
-  POPULAR_MAKES,
-} from '@/config/site';
-import { useCart } from '@/lib/cart';
-import { JsonLd } from '@/components/JsonLd';
-import { VehicleSelector } from '@/components/VehicleSelector';
+import { ArrowRight, BadgePercent, Headset, ShieldCheck, Truck } from 'lucide-react';
+import Pic from '@/components/Pic';
+import ProductCard, { toCard } from '@/components/ProductCard';
+import { Faq, JsonLd, SectionHead, TrustpilotBlock } from '@/components/Bits';
+import BrandStrip from '@/components/BrandStrip';
+import { BLOG_POSTS, BRAND, PRODUCTS, money, pageByUrl } from '@/config/site';
+import { FAQ_ITEMS } from '@/content/faq';
+import { faqSchema, meta } from '@/lib/seo';
 
-export default function HomePage() {
-  const { addItem } = useCart();
-  const [openFaq, setOpenFaq] = useState<number | null>(0);
-  const [addedSlug, setAddedSlug] = useState<string | null>(null);
-  const [reviewModalOpen, setReviewModalOpen] = useState(false);
+export const metadata = meta({
+  title: 'Buggies For Sale Australia | Golf Buggies & Golf Carts',
+  description: 'Buggies for sale in Australia: golf buggies, electric and remote models, golf carts, lithium batteries and off-road buggies. Prices set 2% below the market with free delivery over $1,000.',
+  path: '/',
+});
 
-  const handleAddToCart = (product: (typeof PRODUCTS)[0]) => {
-    addItem(product, 1);
-    setAddedSlug(product.slug);
-    setTimeout(() => setAddedSlug(null), 2000);
-  };
+const find = (re: RegExp) => PRODUCTS.find((p) => re.test(p.name));
+const tile = (name: string, url: string, blurb: string, re: RegExp) => ({ name, url, blurb, p: find(re) });
 
-  // Structured Data Schemas
-  const homeSchema = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': ['Store', 'Organization'],
-        '@id': `https://${SITE.domain}/#organization`,
-        name: SITE.name,
-        legalName: SITE.legalName,
-        url: `https://${SITE.domain}/`,
-        description: SITE.tagline,
-        foundingDate: '2023',
-        foundingLocation: {
-          '@type': 'Place',
-          name: 'Sydney, New South Wales, Australia',
-        },
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: 'Warehouse Logistics Hub',
-          addressLocality: 'Sydney',
-          addressRegion: 'NSW',
-          postalCode: '2148',
-          addressCountry: 'AU',
-        },
-        telephone: CONTACT.phone,
-        email: CONTACT.email,
-        priceRange: '$$$',
-        areaServed: {
-          '@type': 'Country',
-          name: 'Australia',
-        },
-        numberOfItems: PRODUCTS.length,
-        knowsAbout: [
-          'Golf Buggies',
-          'Off-Road Buggies',
-          'Golf Cart Parts',
-          'Tires and Wheels',
-          'Lift Kits',
-          'Lithium Batteries',
-        ],
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: '4.9',
-          reviewCount: '1024',
-          bestRating: '5',
-          worstRating: '1',
-        },
-      },
-      {
-        '@type': 'WebSite',
-        '@id': `https://${SITE.domain}/#website`,
-        url: `https://${SITE.domain}/`,
-        name: SITE.name,
-        potentialAction: {
-          '@type': 'SearchAction',
-          target: `https://${SITE.domain}/shop?q={search_term_string}`,
-          'query-input': 'required name=search_term_string',
-        },
-      },
-      {
-        '@type': 'FAQPage',
-        mainEntity: FAQ_ITEMS.map((item) => ({
-          '@type': 'Question',
-          name: item.q,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: item.a,
-          },
-        })),
-      },
-    ],
-  };
-
-  const HIGHLIGHT_COLLECTIONS = [
-    {
-      title: 'Golf Carts & Fairway Caddies',
-      desc: 'Lithium electric ride-on carts and remote tracking caddies.',
-      image: 'https://images.unsplash.com/photo-1593111774642-a164b711d95a?auto=format&fit=crop&w=800&q=80',
-      link: '/shop/golf-buggies',
-      badge: 'Fairway Luxury',
-    },
-    {
-      title: '4x4 Off-Road UTV Workhorses',
-      desc: 'Heavy-duty 1000cc V-Twin side-by-sides for farm and trail.',
-      image: 'https://images.unsplash.com/photo-1579882392193-455a3a29f8c6?auto=format&fit=crop&w=800&q=80',
-      link: '/shop/off-road',
-      badge: 'Extreme Ag',
-    },
-    {
-      title: 'Parts, Rims & Lithium Batteries',
-      desc: 'Exact-fit upgrade components with guaranteed Australian warranty.',
-      image: 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80',
-      link: '/shop/parts-accessories',
-      badge: 'Guaranteed Fit',
-    },
+export default function Home() {
+  const home = pageByUrl('/');
+  const featured = PRODUCTS.filter((p) => p.featured).slice(0, 8);
+  const tiles = [
+    tile('Golf Buggies', '/golf-buggies/', 'Push, electric and remote buggies', /MGI ZIP X3/),
+    tile('Golf Carts', '/golf-carts/', 'New lithium electric carts, 2 to 8 seats', /Magnum 4S 4 Seat/),
+    tile('Off-Road Buggies', '/off-road-buggies/', 'Dune buggies, side by sides, go karts', /Kayo S150/),
+    tile('Lithium Batteries', '/parts-accessories/golf-buggy-parts/lithium-batteries/', 'Upgrade your cart or buggy', /Core 48V 105Ah Lithium Battery Package for Club Car/),
+    tile('Accessories', '/parts-accessories/golf-cart-accessories/', 'Holders, seat belts, lights, mats', /LED Deluxe Light Kit/),
+    tile('Wheels & Tyres', '/parts-accessories/golf-buggy-parts/wheels-rims-tyres/', 'Mag wheels and tyres', /HEXAGON 12 inch/),
   ];
+  const faqs = FAQ_ITEMS.slice(0, 6).map((f) => [f.q, f.a] as [string, string]);
+  const lowest = Math.min(...PRODUCTS.filter((p) => p.group.endsWith('buggy')).map((p) => p.price));
 
   return (
     <>
-      <JsonLd data={homeSchema} />
-
-      {/* 1. ULTRA-MODERN HERO SECTION (GolfCarts.com Inspiration) */}
-      <section className="relative bg-gradient-to-br from-[#07172C] via-[#0B2545] to-[#133E68] text-white overflow-hidden">
-        {/* Background ambient lighting */}
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#D32F2F_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:py-24 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            {/* Left Column Copy */}
-            <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#D32F2F] text-white text-[11px] font-bold uppercase tracking-wider shadow-md">
-                <Flame className="w-3.5 h-3.5" />
-                <span>Australia’s Premier Buggy & Golf Cart Superstore</span>
-              </div>
-
-              {/* Exact Single <h1> Targeting Primary Keyword */}
-              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight uppercase leading-[1.08]">
-                Buggies for sale
-              </h1>
-
-              <p className="text-sm sm:text-base text-slate-300 max-w-xl leading-relaxed">
-                Explore Australia’s largest online inventory of luxury golf carts, 4x4 UTV side-by-sides, silent lithium utility buggies, and factory-backed parts. Delivered directly to your gate with insured hydraulic tailgate freight.
-              </p>
-
-              {/* CTAs */}
-              <div className="flex flex-wrap items-center gap-3 pt-2">
-                <Link
-                  href="/shop"
-                  className="px-7 py-4 bg-[#D32F2F] hover:bg-[#B71C1C] text-white font-black text-xs uppercase tracking-wider rounded shadow-xl transition-all flex items-center gap-2 hover:translate-y-[-1px]"
-                >
-                  <ShoppingBag className="w-4 h-4" />
-                  <span>Shop Full Catalogue</span>
-                </Link>
-
-                <Link
-                  href="/wholesale"
-                  className="px-6 py-4 bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-wider rounded border border-white/20 transition-all flex items-center gap-2"
-                >
-                  <span>Fleet & Wholesale Enquiries</span>
-                  <ArrowRight className="w-4 h-4 text-[#D32F2F]" />
-                </Link>
-              </div>
-
-              {/* Quick Trust Badges */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-slate-700/80 text-xs text-slate-300">
-                <div className="flex items-center gap-2">
-                  <ShieldCheck className="w-4 h-4 text-[#D32F2F]" />
-                  <span>42-Point PDI Check</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Truck className="w-4 h-4 text-[#D32F2F]" />
-                  <span>Tailgate Delivery</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <PhoneCall className="w-4 h-4 text-[#D32F2F]" />
-                  <span>Sydney & Brisbane Hub</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Star className="w-4 h-4 text-amber-400 fill-current" />
-                  <span>4.9/5 Rating (1,024+)</span>
-                </div>
-              </div>
+      <JsonLd data={faqSchema(faqs)} />
+      {/* HERO */}
+      <section className="relative overflow-hidden bg-fw-900 text-white">
+        <picture className="absolute inset-0 hidden md:block" aria-hidden="true">
+          <source type="image/avif" srcSet="/images/hero/home-golf-cart-fairway-1200.avif 1200w, /images/hero/home-golf-cart-fairway.avif 2400w" sizes="100vw" />
+          <source type="image/webp" srcSet="/images/hero/home-golf-cart-fairway-1200.webp 1200w, /images/hero/home-golf-cart-fairway.webp 2400w" sizes="100vw" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/hero/home-golf-cart-fairway-1200.webp" alt="" width={1200} height={600} className="h-full w-full object-cover object-right" fetchPriority="high" />
+        </picture>
+        <picture className="block md:hidden">
+          <source type="image/avif" srcSet="/images/hero/home-golf-cart-fairway-1200.avif" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/hero/home-golf-cart-fairway-1200.webp" alt="Black ECAR Compass 4 seat golf cart parked on a green fairway" width={1200} height={600} className="aspect-[2/1] w-full object-cover object-right" fetchPriority="high" />
+        </picture>
+        <div className="container-x relative py-10 md:py-24">
+          <div className="fade-up max-w-[620px]">
+            <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[13px] font-bold text-fw-100 ring-1 ring-white/15"><BadgePercent size={15} className="text-accent" /> Prices set 2% below Australian retailers</p>
+            <h1 className="!text-white text-[40px] font-black leading-[1.04] sm:text-[56px] lg:text-[64px]">Buggies For Sale <span className="block text-accent">Across Australia</span></h1>
+            <p className="mt-5 max-w-xl text-lg leading-relaxed text-fw-100">Golf buggies, electric and remote models, new lithium golf carts, parts and off-road buggies from brands Australians trust. Delivered Australia-wide, free over $1,000.</p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link href="/golf-buggies/" className="btn btn-primary !min-h-[52px] !px-7 !text-base">Shop golf buggies <ArrowRight size={18} /></Link>
+              <Link href="/golf-carts/" className="btn !min-h-[52px] !px-7 !text-base bg-white/10 text-white ring-1 ring-white/30 hover:bg-white/20">Shop golf carts</Link>
             </div>
-
-            {/* Right Column Showcase Visual */}
-            <div className="lg:col-span-5">
-              <div className="relative rounded-2xl overflow-hidden border border-slate-700 shadow-2xl bg-slate-900 group">
-                <div className="aspect-[4/3] w-full">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="https://images.unsplash.com/photo-1593111774642-a164b711d95a?auto=format&fit=crop&w=1000&q=80"
-                    alt="Buggies For Sale Australia — Premium Club Car on Fairway"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                </div>
-                <div className="absolute top-4 left-4 bg-[#0B2545]/90 backdrop-blur-md text-white text-[11px] font-bold uppercase px-3 py-1 rounded border border-slate-700 shadow">
-                  In Stock Ready to Ship
-                </div>
-                <div className="absolute bottom-4 left-4 right-4 bg-white/95 text-slate-900 p-3.5 rounded-lg shadow-lg flex items-center justify-between">
-                  <div>
-                    <div className="font-bold text-xs">Club Car, MGI, Polaris & UTVs</div>
-                    <div className="text-[11px] text-slate-500">Guaranteed Exact Fitment & Warranty</div>
-                  </div>
-                  <div className="text-right font-mono">
-                    <span className="text-[10px] text-slate-400 block uppercase">From</span>
-                    <span className="text-sm font-black text-[#D32F2F]">$1,999 AUD</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <dl className="mt-10 grid max-w-md grid-cols-3 gap-4 border-t border-white/15 pt-6">
+              <div><dt className="text-xs font-semibold text-fw-200">Products</dt><dd className="font-display text-3xl font-extrabold">{PRODUCTS.length}+</dd></div>
+              <div><dt className="text-xs font-semibold text-fw-200">Buggies from</dt><dd className="font-display text-3xl font-extrabold">{money(Math.ceil(lowest))}</dd></div>
+              <div><dt className="text-xs font-semibold text-fw-200">Customer score</dt><dd className="font-display text-3xl font-extrabold">4.9★</dd></div>
+            </dl>
           </div>
         </div>
       </section>
 
-      {/* 2. SIGNATURE VEHICLE FITMENT WIDGET (GolfCarts.com Style) */}
-      <VehicleSelector />
-
-      {/* 3. HIGHLIGHT BANNER CARDS */}
-      <section className="py-14 bg-white border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-10 space-y-2">
-            <span className="text-xs font-mono font-bold text-[#D32F2F] uppercase tracking-wider">
-              Specialized Divisions
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-[#0B2545] uppercase tracking-tight">
-              Explore Our Core Categories
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-600">
-              Whether you need silent fairway transport or high-torque agricultural 4x4s, explore our specialized vehicle departments.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {HIGHLIGHT_COLLECTIONS.map((col) => (
-              <Link
-                key={col.title}
-                href={col.link}
-                className="group relative rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all bg-slate-900 flex flex-col justify-end aspect-[16/10]"
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={col.image}
-                  alt={col.title}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
-                <div className="absolute top-3 left-3 bg-[#D32F2F] text-white text-[10px] font-bold uppercase px-2.5 py-1 rounded shadow">
-                  {col.badge}
-                </div>
-                <div className="relative p-6 space-y-1.5 text-white">
-                  <h3 className="text-lg font-black uppercase tracking-tight group-hover:text-[#D32F2F] transition-colors">
-                    {col.title}
-                  </h3>
-                  <p className="text-xs text-slate-300 line-clamp-2">
-                    {col.desc}
-                  </p>
-                  <div className="pt-2 flex items-center gap-1 text-xs font-bold text-[#D32F2F]">
-                    <span>Browse Collection</span>
-                    <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
+      {/* TRUST STRIP */}
+      <section aria-label="Why shop with us" className="border-b border-line bg-white">
+        <ul className="container-x grid gap-4 py-6 sm:grid-cols-2 lg:grid-cols-4">
+          {[[BadgePercent, '2% price promise', 'Benchmarked against Australian retailers'], [Truck, 'Free delivery over $1,000', 'Flat $95 below, Australia-wide'], [ShieldCheck, 'Manufacturer warranty', 'On every new model we list'], [Headset, 'Local expert support', 'Call or WhatsApp 0420 128 746']].map(([Icon, t, s]) => {
+            const I = Icon as typeof Truck;
+            return <li key={t as string} className="flex items-center gap-3"><span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-fw-50 text-fw-700"><I size={24} /></span><span><span className="block font-bold text-fw-900">{t as string}</span><span className="block text-sm text-muted">{s as string}</span></span></li>;
+          })}
+        </ul>
       </section>
 
-      {/* 4. FEATURED PRODUCTS CATALOG GRID */}
-      <section className="py-16 bg-[#F8FAFC] border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10">
-            <div>
-              <span className="text-xs font-mono font-bold text-[#D32F2F] uppercase tracking-wider">
-                Top Rated Stock
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-black text-[#0B2545] uppercase tracking-tight mt-1">
-                Featured Buggies & Accessories
-              </h2>
-            </div>
-            <Link
-              href="/shop"
-              className="text-xs font-bold text-[#0B2545] hover:text-[#D32F2F] flex items-center gap-1 mt-2 sm:mt-0"
-            >
-              <span>Browse Full Catalogue ({PRODUCTS.length})</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {PRODUCTS.slice(0, 8).map((product) => {
-              const isAdded = addedSlug === product.slug;
-              return (
-                <div
-                  key={product.slug}
-                  className="bg-white rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between hover:shadow-lg hover:border-slate-300 transition-all group"
-                >
-                  <div>
-                    {/* Image Box */}
-                    <div className="relative aspect-[4/3] bg-white p-3 overflow-hidden border-b border-slate-100 flex items-center justify-center">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={product.images[0]}
-                        alt={`${product.name} — Buggies For Sale Australia`}
-                        className="w-full h-full object-cover rounded group-hover:scale-105 transition-transform duration-300"
-                      />
-                      {product.badge && (
-                        <div className="absolute top-3 left-3 bg-[#D32F2F] text-white text-[10px] font-bold uppercase px-2.5 py-0.5 rounded shadow-sm">
-                          {product.badge}
-                        </div>
-                      )}
-                      <div className="absolute top-3 right-3 bg-[#0B2545]/90 text-white text-[10px] font-bold uppercase px-2.5 py-0.5 rounded">
-                        {product.brand}
-                      </div>
-                    </div>
-
-                    {/* Info */}
-                    <div className="p-4 space-y-2">
-                      <div className="flex items-center justify-between text-xs">
-                        <span className="text-[10px] font-mono font-bold uppercase text-[#D32F2F]">
-                          {product.subcategory}
-                        </span>
-                        <div className="flex items-center gap-1 text-amber-500 text-[11px] font-bold">
-                          <Star className="w-3.5 h-3.5 fill-current" />
-                          <span className="text-slate-700">{product.rating}</span>
-                          <span className="text-slate-400 text-[10px]">({product.reviewsCount})</span>
-                        </div>
-                      </div>
-
-                      <Link href={`/shop/${product.category}/${product.slug}`}>
-                        <h3 className="font-bold text-sm text-[#0B2545] group-hover:text-[#D32F2F] transition-colors line-clamp-2 leading-snug">
-                          {product.name}
-                        </h3>
-                      </Link>
-
-                      <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed">
-                        {product.shortDescription}
-                      </p>
-
-                      {/* Specs pill */}
-                      <div className="pt-1 flex flex-wrap gap-1">
-                        {Object.entries(product.specs)
-                          .slice(0, 2)
-                          .map(([key, val]) => (
-                            <span
-                              key={key}
-                              className="text-[10px] font-mono bg-slate-50 text-slate-700 px-2 py-0.5 rounded border border-slate-200 truncate max-w-full"
-                            >
-                              {val}
-                            </span>
-                          ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Card Bottom: Price, Freight & CTA */}
-                  <div className="p-4 pt-0">
-                    <div className="pt-3 border-t border-slate-100 mb-3 space-y-1">
-                      <div className="flex items-baseline gap-2">
-                        <div className="text-lg font-black font-mono text-[#D32F2F]">
-                          {SITE.currencySymbol}{product.price.toLocaleString()} AUD
-                        </div>
-                        {product.rrp && (
-                          <div className="text-xs text-slate-400 line-through font-mono">
-                            RRP ${product.rrp.toLocaleString()}
-                          </div>
-                        )}
-                      </div>
-                      <div className="text-[10px] text-emerald-700 font-bold flex items-center gap-1">
-                        <Truck className="w-3 h-3" />
-                        <span>{product.price >= SHOP.freeShippingThreshold ? 'FREE Australia-Wide Delivery' : 'Fast Freight Shipping'}</span>
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-2">
-                      <Link
-                        href={`/shop/${product.category}/${product.slug}`}
-                        className="py-2 text-center text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded transition-colors"
-                      >
-                        Details
-                      </Link>
-                      <button
-                        type="button"
-                        onClick={() => handleAddToCart(product)}
-                        className={`py-2 text-center text-xs font-bold uppercase tracking-wider rounded transition-all flex items-center justify-center gap-1 ${
-                          isAdded
-                            ? 'bg-emerald-600 text-white'
-                            : 'bg-[#D32F2F] hover:bg-[#B71C1C] text-white shadow'
-                        }`}
-                      >
-                        {isAdded ? (
-                          <>
-                            <Check className="w-3.5 h-3.5" />
-                            <span>Added</span>
-                          </>
-                        ) : (
-                          <>
-                            <ShoppingBag className="w-3.5 h-3.5" />
-                            <span>Add To Cart</span>
-                          </>
-                        )}
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-          <div className="text-center pt-10">
-            <Link
-              href="/shop"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded bg-[#0B2545] hover:bg-[#D32F2F] text-white font-black text-xs uppercase tracking-wider shadow transition-colors"
-            >
-              <span>Explore All Buggies & Carts</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* 5. SHOP BY MAKE & LEADING BRANDS */}
-      <section className="py-14 bg-white border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-xl mx-auto mb-8">
-            <span className="text-xs font-mono font-bold text-[#D32F2F] uppercase tracking-wider">
-              Guaranteed Fitment
-            </span>
-            <h2 className="text-2xl font-black text-[#0B2545] uppercase tracking-tight mt-1">
-              Popular Golf Cart & UTV Makes
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-            {POPULAR_MAKES.map((make) => (
-              <Link
-                key={make.id}
-                href={`/shop?q=${encodeURIComponent(make.name)}`}
-                className="p-4 rounded-lg border border-slate-200 hover:border-[#D32F2F] hover:shadow-md transition-all text-center group bg-[#F8FAFC]"
-              >
-                <div className="font-black text-sm text-[#0B2545] group-hover:text-[#D32F2F] transition-colors">
-                  {make.name}
-                </div>
-                <div className="text-[11px] text-slate-500 font-mono mt-1">
-                  {make.models.slice(0, 2).join(', ')}
-                </div>
-                <div className="text-[10px] text-[#D32F2F] font-bold mt-2 flex items-center justify-center gap-1">
-                  <span>Shop Parts</span>
-                  <ArrowRight className="w-3 h-3" />
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 6. VERIFIED REVIEWS PLATFORM */}
-      <section className="py-14 bg-[#F8FAFC] border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-xl border border-slate-200 p-6 sm:p-8 shadow-sm">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-5 space-y-3">
-                <span className="text-xs font-mono font-bold text-forest uppercase tracking-wider">
-                  Verified Customer Feedback
+      {/* CATEGORIES */}
+      <section className="section">
+        <div className="container-x">
+          <SectionHead eyebrow="Shop by category" title="Find the right buggy, cart or part" sub="From a lightweight push buggy to a lithium golf cart, start with what you need." />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {tiles.map((t) => (
+              <Link key={t.url} href={t.url} className="card card-hover group flex items-center gap-5 overflow-hidden p-4">
+                <span className="product-frame h-28 w-28 shrink-0 border border-line sm:h-32 sm:w-32">{t.p && <Pic base={t.p.images[0]} alt={t.name} width={128} height={128} sizes="128px" />}</span>
+                <span className="flex-1">
+                  <span className="block font-display text-xl font-extrabold text-fw-900">{t.name}</span>
+                  <span className="mt-1 block text-sm text-muted">{t.blurb}</span>
+                  <span className="mt-3 inline-flex items-center gap-1 text-sm font-extrabold text-accent-600">Shop now <ArrowRight size={15} className="transition group-hover:translate-x-1" /></span>
                 </span>
-                <h2 className="text-2xl font-black text-[#0B2545] uppercase tracking-tight">
-                  Trusted by Over 1,000+ Aussie Owners
-                </h2>
-                <div className="flex items-center gap-3">
-                  <div className="text-4xl font-black font-mono text-forest">4.9</div>
-                  <div>
-                    <div className="flex text-trustpilot">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-current" />
-                      ))}
-                    </div>
-                    <div className="text-xs text-trustpilot font-bold mt-0.5">
-                      1,024 Verified Australian Customer Reviews (Since 2023)
-                    </div>
-                  </div>
-                </div>
-                <div className="text-xs text-slate-600 font-bold text-trustpilot">
-                  Trust Pilot Reviews
-                </div>
-              </div>
-
-              <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="p-4 bg-slate-50 rounded-lg border border-slate-200 space-y-2">
-                  <div className="flex text-amber-500">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-xs text-slate-700 italic">
-                    &quot;Ordered the Club Car Tempo lithium cart for our property in Dubbo. Arrived via tailgate truck in pristine condition. Zero hassle.&quot;
-                  </p>
-                  <div className="text-[11px] font-bold text-[#0B2545]">
-                    — Marcus V., Dubbo NSW
-                  </div>
-                </div>
-
-                <div className="p-4 bg-slate-50 rounded-lg border border-slate-200 space-y-2">
-                  <div className="flex text-amber-500">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-xs text-slate-700 italic">
-                    &quot;MGI Zip Navigator tracks dead straight over our golf club hills. Best investment we’ve made this season. Highly recommend.&quot;
-                  </p>
-                  <div className="text-[11px] font-bold text-[#0B2545]">
-                    — Sarah L., Gold Coast QLD
-                  </div>
-                </div>
-              </div>
-            </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* 7. SEO AUTHORITY COPY & FAQ ACCORDION */}
-      <section className="py-16 bg-white border-b border-slate-200">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-          <div className="space-y-4">
-            <h2 className="text-2xl font-black text-[#0B2545] uppercase tracking-tight">
-              Australia&apos;s Ultimate Destination For Buggies For Sale
-            </h2>
-            <div className="prose prose-slate max-w-none text-xs sm:text-sm text-slate-600 leading-relaxed space-y-4">
-              <p>
-                When searching for <strong>buggies for sale in Australia</strong>, vehicle reliability, battery endurance, and local parts availability are paramount. At Buggies For Sale, we bridge the gap between heavy-duty commercial transport and recreational thrill-craft. From 1000cc V-Twin 4x4 UTV workhorses designed for grueling regional cattle stations to ultra-quiet 72V lithium resort vehicles and precision remote-control golf caddies, every machine in our catalogue is backed by our Sydney and Brisbane technical depots.
-              </p>
-              <p>
-                Our logistics network provides insured tailgate freight delivery directly to private residences, golf clubs, and industrial work sites across New South Wales, Queensland, Victoria, South Australia, Western Australia, Tasmania, and the ACT. Explore our transparent pricing, crypto discounts, and guaranteed fitment parts today.
-              </p>
-            </div>
+      {/* FEATURED */}
+      <section className="section bg-white">
+        <div className="container-x">
+          <SectionHead eyebrow="Best sellers" title="Popular golf buggies, carts and buggies" sub="Hand-picked models our customers ask about most. Every price includes GST." action={{ href: '/shop/', label: 'View all products' }} />
+          <div className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">{featured.map((p, i) => <ProductCard key={p.slug} p={toCard(p)} priority={i < 4} />)}</div>
+        </div>
+      </section>
+
+      {/* BRANDS */}
+      <section className="section" aria-labelledby="brands-h">
+        <div className="container-x">
+          <SectionHead eyebrow="Brands" title="Shop by brand" sub="Trusted names in golf buggies, golf carts and off-road buggies." action={{ href: '/brands/', label: 'All brands' }} />
+          <BrandStrip />
+        </div>
+      </section>
+
+      {/* AUTHORITY */}
+      <section className="section bg-fw-900 text-white" aria-labelledby="about-h">
+        <div className="container-x grid items-center gap-10 lg:grid-cols-2">
+          <div>
+            <p className="eyebrow !text-accent mb-3">About Buggies For Sale</p>
+            <h2 id="about-h" className="!text-white text-3xl font-extrabold md:text-[40px]">Australia&apos;s buggy superstore, built on price and support</h2>
+            <p className="mt-5 text-lg leading-relaxed text-fw-100">{BRAND.statement}</p>
+            <ul className="mt-6 space-y-3 text-fw-100">
+              {['Every price benchmarked and set 2% below the lowest Australian retailer we find', 'Real specifications, clear delivery costs and no hidden fees', 'Pay by EFT, PayID, card or crypto with an extra 5% off', 'Fleet, club and resort buyers welcome: ask for a quote'].map((t) => <li key={t} className="flex gap-3"><span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-accent" />{t}</li>)}
+            </ul>
+            <div className="mt-8 flex flex-wrap gap-3"><Link href="/about/" className="btn btn-primary">About us</Link><Link href="/wholesale/" className="btn !bg-white/10 text-white ring-1 ring-white/30 hover:!bg-white/20">Wholesale & fleet</Link></div>
           </div>
+          <dl className="grid grid-cols-2 gap-4">
+            {[['2023', 'Established in Sydney'], [`${PRODUCTS.length}+`, 'Models and parts online'], ['AU-wide', 'Freight and depots'], ['2%', 'Below the lowest market price']].map(([a, b]) => (
+              <div key={b} className="rounded-2xl bg-white/[.07] p-6 ring-1 ring-white/10"><dt className="font-display text-4xl font-black text-accent">{a}</dt><dd className="mt-1 text-sm text-fw-100">{b}</dd></div>
+            ))}
+          </dl>
+        </div>
+      </section>
 
-          {/* FAQ Accordion */}
-          <div className="space-y-4 pt-6 border-t border-slate-200">
-            <h3 className="text-xl font-bold text-[#0B2545] uppercase tracking-tight">
-              Frequently Asked Questions
-            </h3>
-
-            <div className="space-y-3">
-              {FAQ_ITEMS.slice(0, 5).map((faq, idx) => (
-                <details
-                  key={idx}
-                  className="bg-slate-50 rounded-lg border border-slate-200 p-4 group"
-                  open={idx === 0}
-                >
-                  <summary className="font-bold text-xs sm:text-sm text-[#0B2545] cursor-pointer list-none flex items-center justify-between gap-4">
-                    <span className="flex items-center gap-2">
-                      <HelpCircle className="w-4 h-4 text-[#D32F2F] shrink-0" />
-                      <span>{faq.q}</span>
-                    </span>
-                    <span className="text-slate-400 group-open:rotate-180 transition-transform text-xs">
-                      ▼
-                    </span>
-                  </summary>
-                  <div className="mt-3 pt-3 border-t border-slate-200 text-xs text-slate-700 leading-relaxed">
-                    {faq.a}
-                  </div>
-                </details>
-              ))}
-            </div>
+      {/* GUIDES */}
+      <section className="section">
+        <div className="container-x">
+          <SectionHead eyebrow="Buying guides" title="Make the right choice before you buy" action={{ href: '/blog/', label: 'All guides' }} />
+          <div className="grid gap-5 md:grid-cols-3">
+            {BLOG_POSTS.slice(0, 3).map((b) => (
+              <Link key={b.slug} href={`/blog/${b.slug}/`} className="card card-hover flex flex-col overflow-hidden">
+                <span className="grid aspect-[16/9] place-items-center bg-gradient-to-br from-fw-800 to-fw-600 p-4 text-center"><span className="font-display text-xl font-extrabold leading-tight text-white">{b.title}</span></span>
+                <span className="flex flex-1 flex-col p-5"><span className="eyebrow mb-2">{b.category}</span><span className="text-sm leading-relaxed text-muted">{b.excerpt}</span><span className="mt-auto pt-4 text-sm font-extrabold text-accent-600">Read guide →</span></span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
+
+      <TrustpilotBlock />
+      <Faq items={faqs} title={`Buggies for sale: ${home ? 'your questions answered' : 'frequently asked questions'}`} />
     </>
   );
 }

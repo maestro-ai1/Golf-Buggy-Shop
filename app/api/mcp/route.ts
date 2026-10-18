@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { PRODUCTS, CATEGORIES, SHOP, SITE, CONTACT } from '@/config/site';
+import { PRODUCTS, CATEGORIES, SHOP, SITE, CONTACT, inCategory } from '@/config/site';
 
 const MCP_TOOLS = [
   {
@@ -8,8 +8,8 @@ const MCP_TOOLS = [
     inputSchema: {
       type: 'object',
       properties: {
-        query: { type: 'string', description: 'Search keywords e.g. UTV, golf, remote, 4x4' },
-        category: { type: 'string', description: 'Category slug e.g. off-road, golf-buggies' },
+        query: { type: 'string', description: 'Search keywords e.g. remote golf buggy, lithium battery, dune buggy' },
+        category: { type: 'string', description: 'Category path e.g. golf-buggies, golf-carts, off-road-buggies, parts-accessories' },
         max_price: { type: 'number', description: 'Maximum price in AUD' },
       },
     },
@@ -141,7 +141,7 @@ export async function POST(request: NextRequest) {
       if (toolName === 'search_products') {
         let matches = [...PRODUCTS];
         if (args.category) {
-          matches = matches.filter((p) => p.category === args.category);
+          matches = matches.filter((p) => inCategory(p, String(args.category)));
         }
         if (args.max_price) {
           matches = matches.filter((p) => p.price <= args.max_price);
@@ -170,7 +170,7 @@ export async function POST(request: NextRequest) {
                       brand: p.brand,
                       price: p.price,
                       currency: SITE.currency,
-                      url: `https://${SITE.domain}/shop/${p.category}/${p.slug}/`,
+                      url: `https://${SITE.domain}/products/${p.slug}/`,
                     }))
                   ),
                 },
@@ -204,7 +204,7 @@ export async function POST(request: NextRequest) {
                   text: JSON.stringify({
                     ...product,
                     currency: SITE.currency,
-                    url: `https://${SITE.domain}/shop/${product.category}/${product.slug}/`,
+                    url: `https://${SITE.domain}/products/${product.slug}/`,
                   }),
                 },
               ],
@@ -227,7 +227,7 @@ export async function POST(request: NextRequest) {
                     CATEGORIES.map((c) => ({
                       slug: c.slug,
                       name: c.name,
-                      url: `https://${SITE.domain}/shop/${c.slug}/`,
+                      url: `https://${SITE.domain}/${c.slug}/`,
                       subcategories: c.subcategories,
                     }))
                   ),

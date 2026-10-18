@@ -23,7 +23,7 @@ export async function GET(request: NextRequest, { params }: Props) {
     {
       ...product,
       currency: SITE.currency,
-      url: `https://${SITE.domain}/shop/${product.category}/${product.slug}/`,
+      url: `https://${SITE.domain}/products/${product.slug}/`,
     },
     {
       headers: {

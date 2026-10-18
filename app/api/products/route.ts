@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { PRODUCTS, SITE } from '@/config/site';
+import { PRODUCTS, SITE, inCategory } from '@/config/site';
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
@@ -10,7 +10,7 @@ export async function GET(request: NextRequest) {
   let results = [...PRODUCTS];
 
   if (category) {
-    results = results.filter((p) => p.category === category);
+    results = results.filter((p) => inCategory(p, category));
   }
 
   if (q) {
@@ -31,7 +31,7 @@ export async function GET(request: NextRequest) {
   const items = results.map((p) => ({
     ...p,
     currency: SITE.currency,
-    url: `https://${SITE.domain}/shop/${p.category}/${p.slug}/`,
+    url: `https://${SITE.domain}/products/${p.slug}/`,
   }));
 
   return NextResponse.json(

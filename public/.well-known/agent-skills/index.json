@@ -28,14 +28,14 @@
     {
       "name": "wholesale-inquiry",
       "type": "commerce",
-      "description": "Request volume pricing for commercial golf clubs, holiday resorts, and mining fleets",
+      "description": "Request volume pricing for commercial golf clubs, holiday resorts, and resorts, farms and estates",
       "url": "https://buggiesforsale.com.au/wholesale/",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "name": "product-education",
       "type": "content",
-      "description": "Access buying guides regarding UTV towing capacities, remote golf buggies, and lithium battery care",
+      "description": "Access buying guides regarding golf cart road rules, remote golf buggies, pricing and lithium battery care",
       "url": "https://buggiesforsale.com.au/blog/",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },

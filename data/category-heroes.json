@@ -1,0 +1,54 @@
+{
+ "/clearance/": {
+  "base": "/images/hero/clearance",
+  "alt": "Golf carts on a fairway, clearance golf buggies for sale"
+ },
+ "/brands/": {
+  "base": "/images/hero/brands",
+  "alt": "Fleet of golf carts lined up at a golf course"
+ },
+ "/golf-carts/electric/": {
+  "base": "/images/hero/golf-carts-electric",
+  "alt": "White electric golf cart on a golf course fairway"
+ },
+ "/golf-carts/petrol/": {
+  "base": "/images/hero/golf-carts-petrol",
+  "alt": "Club Car golf cart on a golf course"
+ },
+ "/golf-carts/used/": {
+  "base": "/images/hero/golf-carts-used",
+  "alt": "Used golf carts parked in a row"
+ },
+ "/golf-carts/utility-4-seater/": {
+  "base": "/images/hero/golf-carts-utility-4-seater",
+  "alt": "Four seat utility golf cart"
+ },
+ "/golf-carts/mini-junior/": {
+  "base": "/images/hero/golf-carts-mini-junior",
+  "alt": "Compact golf cart parked on a path"
+ },
+ "/off-road-buggies/dune-buggies/": {
+  "base": "/images/hero/off-road-dune-buggies",
+  "alt": "Dune buggies driving across sand"
+ },
+ "/off-road-buggies/side-by-sides-utvs/": {
+  "base": "/images/hero/off-road-side-by-sides",
+  "alt": "Orange side by side UTV"
+ },
+ "/golf-buggies/push-pull-trolleys/": {
+  "base": "/images/hero/golf-buggies-push-pull",
+  "alt": "Electric golf trolley carrying a golf bag on the green"
+ },
+ "/off-road-buggies/go-karts/": {
+  "base": "/images/hero/off-road-go-karts",
+  "alt": "Off road go kart kicking up dirt on a trail"
+ },
+ "/off-road-buggies/electric-off-road-utvs/": {
+  "base": "/images/hero/off-road-electric-utvs",
+  "alt": "Electric off-road UTV side by side"
+ },
+ "/off-road-buggies/mini-quads-atvs/": {
+  "base": "/images/hero/off-road-mini-quads",
+  "alt": "Child riding a mini quad bike on a dirt trail"
+ }
+}

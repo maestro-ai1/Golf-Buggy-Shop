@@ -1,172 +1,50 @@
-import React from 'react';
 import Link from 'next/link';
-import {
-  Phone,
-  Mail,
-  MapPin,
-  ShieldCheck,
-  Star,
-  Lock,
-  Truck,
-  CreditCard,
-  Zap,
-} from 'lucide-react';
-import { SITE, CONTACT, CATEGORIES } from '@/config/site';
+import { Mail, MapPin, Phone } from 'lucide-react';
+import Logo from '@/components/Logo';
+import { CONTACT, SITE } from '@/config/site';
 
-export function Footer() {
+const SHOP = [['Golf buggies', '/golf-buggies/'], ['Electric buggies', '/golf-buggies/motorised-electric/'], ['Remote control buggies', '/golf-buggies/remote-control/'], ['Push & pull buggies', '/golf-buggies/push-pull-trolleys/'], ['Golf carts', '/golf-carts/'], ['Off-road buggies', '/off-road-buggies/'], ['Parts & accessories', '/parts-accessories/'], ['Clearance', '/clearance/']];
+const HELP = [['Delivery', '/delivery/'], ['Returns', '/returns/'], ['FAQ', '/faq/'], ['Wholesale & fleet', '/wholesale/'], ['Contact us', '/contact/'], ['About us', '/about/'], ['Blog', '/blog/'], ['Brands', '/brands/']];
+const LEGAL = [['Privacy policy', '/privacy/'], ['Terms & conditions', '/terms/'], ['Cookies', '/cookies/']];
+
+function Pay({ children, label }: { children: React.ReactNode; label: string }) {
+  return <li className="grid h-9 min-w-[58px] place-items-center rounded-md border border-white/15 bg-white px-2" title={label} aria-label={label}>{children}</li>;
+}
+
+export default function Footer() {
   return (
-    <footer className="bg-[#1A1A1A] text-[#F4F1EA] pt-16 pb-12 border-t-4 border-[#E65F2B]">
-      {/* Top Value Banner */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 border-b border-[#2D2A26]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="flex items-start gap-3 p-4 rounded-xl bg-[#24211E] border border-[#332E29]">
-            <Truck className="w-6 h-6 text-[#E65F2B] shrink-0" />
-            <div>
-              <h4 className="text-sm font-bold text-white">Australia-Wide Delivery</h4>
-              <p className="text-xs text-stone-400 mt-1">
-                Insured freight with hydraulic tailgate delivery direct to your property.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start gap-3 p-4 rounded-xl bg-[#24211E] border border-[#332E29]">
-            <ShieldCheck className="w-6 h-6 text-[#E65F2B] shrink-0" />
-            <div>
-              <h4 className="text-sm font-bold text-white">42-Point PDI Inspection</h4>
-              <p className="text-xs text-stone-400 mt-1">
-                Tested by certified Australian mechanics before crating & dispatch.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start gap-3 p-4 rounded-xl bg-[#24211E] border border-[#332E29]">
-            <Lock className="w-6 h-6 text-[#E65F2B] shrink-0" />
-            <div>
-              <h4 className="text-sm font-bold text-white">Direct & Crypto Options</h4>
-              <p className="text-xs text-stone-400 mt-1">
-                Direct EFT, PayID instant settlement, or save 5% with BTC/USDT.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start gap-3 p-4 rounded-xl bg-[#24211E] border border-[#332E29]">
-            <Star className="w-6 h-6 text-[#E65F2B] shrink-0" />
-            <div>
-              <h4 className="text-sm font-bold text-white">4.9 / 5 Verified Rating</h4>
-              <p className="text-xs text-stone-400 mt-1">
-                Over 1,000+ verified Australian customer deliveries since 2023.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-
-          {/* Column 1: Brand */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-9 h-9 rounded bg-forest text-white flex items-center justify-center font-black text-base">
-                BFS
-              </div>
-              <span className="font-black text-xl text-white uppercase tracking-tight">
-                Buggies For Sale
-              </span>
-            </div>
-            <p className="text-xs text-stone-300 leading-relaxed">
-              Australia’s premier heavy-duty superstore for off-road UTVs, dune buggies, remote control golf buggies, youth go-karts, and genuine performance parts with nationwide depot dispatch.
-            </p>
-            <div className="pt-2 text-xs text-stone-400 space-y-1">
-              <div>
-                <strong>Warehouse Hub:</strong> Sydney & Regional Freight Depots
-              </div>
-            </div>
-          </div>
-
-          {/* Column 2: Shop Categories */}
-          <div>
-            <h4 className="text-xs font-black uppercase tracking-wider text-sand mb-4">
-              Shop Categories
-            </h4>
-            <ul className="space-y-2.5 text-xs text-stone-300 font-medium">
-              {CATEGORIES.map((cat) => (
-                <li key={cat.slug}>
-                  <Link
-                    href={`/shop/${cat.slug}`}
-                    className="hover:text-sand transition-colors"
-                  >
-                    {cat.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 3: Customer Care & Info */}
-          <div>
-            <h4 className="text-xs font-black uppercase tracking-wider text-sand mb-4">
-              Customer Care & Support
-            </h4>
-            <ul className="space-y-2.5 text-xs text-stone-300 font-medium">
-              <li>
-                <Link href="/delivery" className="hover:text-sand transition-colors">
-                  Australia-Wide Delivery & Freight
-                </Link>
-              </li>
-              <li>
-                <Link href="/returns" className="hover:text-sand transition-colors">
-                  Returns, Refunds & Warranty
-                </Link>
-              </li>
-              <li>
-                <Link href="/faq" className="hover:text-sand transition-colors">
-                  Frequently Asked Questions (FAQ)
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 4: Contact & Inquiries */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-black uppercase tracking-wider text-sand mb-4">
-              Get in Touch
-            </h4>
-            <div className="space-y-2 text-xs text-stone-300">
-              <a
-                href={`tel:${CONTACT.phoneInternational}`}
-                className="flex items-center gap-2 hover:text-sand transition-colors"
-              >
-                <Phone className="w-4 h-4 text-sand shrink-0" />
-                <span>{CONTACT.phone}</span>
-              </a>
-              <a
-                href={`mailto:${CONTACT.email}`}
-                className="flex items-center gap-2 hover:text-sand transition-colors"
-              >
-                <Mail className="w-4 h-4 text-sand shrink-0" />
-                <span>{CONTACT.email}</span>
-              </a>
-              <div className="flex items-start gap-2 text-stone-400">
-                <MapPin className="w-4 h-4 text-sand shrink-0 mt-0.5" />
-                <span>{CONTACT.address}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Bottom Bar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-[#2D2A26] flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-stone-400">
+    <footer className="mt-0 bg-fw-900 text-white">
+      <div className="container-x grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
         <div>
-          © {new Date().getFullYear()} {SITE.legalName}. All rights reserved.
+          <Logo light />
+          <p className="mt-5 max-w-sm text-sm leading-relaxed text-fw-200">Australia&apos;s golf buggy, golf cart and off-road buggy superstore. Every price benchmarked against the Australian market and set 2% below.</p>
+          <ul className="mt-5 space-y-2 text-sm text-fw-100">
+            <li className="flex items-center gap-3"><Phone size={16} className="text-accent" /><a href="tel:+61420128746" className="hover:text-white">{CONTACT.phone}</a></li>
+            <li className="flex items-center gap-3"><Mail size={16} className="text-accent" /><a href={`mailto:${CONTACT.email}`} className="hover:text-white">{CONTACT.email}</a></li>
+            <li className="flex items-start gap-3"><MapPin size={16} className="mt-0.5 shrink-0 text-accent" /><span>{CONTACT.hq}</span></li>
+          </ul>
+          <p className="mt-3 text-xs text-fw-200">{CONTACT.hours}</p>
         </div>
-
-        <div className="flex items-center gap-4 text-[11px]">
-          <Link href="/privacy" className="hover:text-white">
-            Privacy
-          </Link>
-          <Link href="/terms" className="hover:text-white">
-            Terms
-          </Link>
+        <nav aria-label="Shop"><h2 className="mb-4 text-sm font-extrabold uppercase tracking-widest text-accent">Shop</h2><ul className="space-y-2.5 text-sm">{SHOP.map(([n, u]) => <li key={u}><Link href={u} className="text-fw-100 hover:text-white">{n}</Link></li>)}</ul></nav>
+        <nav aria-label="Help"><h2 className="mb-4 text-sm font-extrabold uppercase tracking-widest text-accent">Help</h2><ul className="space-y-2.5 text-sm">{HELP.map(([n, u]) => <li key={u}><Link href={u} className="text-fw-100 hover:text-white">{n}</Link></li>)}</ul></nav>
+        <div>
+          <h2 className="mb-4 text-sm font-extrabold uppercase tracking-widest text-accent">We accept</h2>
+          <ul className="flex flex-wrap gap-2" aria-label="Payment methods">
+            <Pay label="Bank transfer (EFT)"><span className="text-[11px] font-extrabold text-fw-900">EFT</span></Pay>
+            <Pay label="PayID"><span className="text-[12px] font-extrabold italic text-[#0b7a75]">PayID</span></Pay>
+            <Pay label="Visa"><span className="text-[15px] font-black italic tracking-tight text-[#1a1f71]">VISA</span></Pay>
+            <Pay label="Mastercard"><svg width="34" height="22" viewBox="0 0 34 22" aria-hidden="true"><circle cx="12" cy="11" r="9" fill="#eb001b" /><circle cx="22" cy="11" r="9" fill="#f79e1b" fillOpacity=".92" /><path d="M17 4.2a9 9 0 0 1 0 13.6 9 9 0 0 1 0-13.6z" fill="#ff5f00" /></svg></Pay>
+            <Pay label="American Express"><span className="rounded bg-[#2e77bb] px-1.5 py-0.5 text-[9px] font-black text-white">AMEX</span></Pay>
+            <Pay label="Bitcoin"><span className="grid h-6 w-6 place-items-center rounded-full bg-[#f7931a] text-[14px] font-black text-white">₿</span></Pay>
+            <Pay label="USDT"><span className="grid h-6 w-6 place-items-center rounded-full bg-[#26a17b] text-[13px] font-black text-white">₮</span></Pay>
+          </ul>
+          <p className="mt-4 text-xs leading-relaxed text-fw-200">Pay with BTC or USDT for an extra 5% off. Fleet and purchase-order buyers can request an invoice.</p>
+        </div>
+      </div>
+      <div className="border-t border-white/10">
+        <div className="container-x flex flex-col items-center justify-between gap-3 py-5 text-xs text-fw-200 md:flex-row">
+          <p>© {new Date().getFullYear()} {SITE.legalName} · ABN {CONTACT.abn} · All prices in AUD including GST</p>
+          <ul className="flex gap-5">{LEGAL.map(([n, u]) => <li key={u}><Link href={u} className="hover:text-white">{n}</Link></li>)}</ul>
         </div>
       </div>
     </footer>

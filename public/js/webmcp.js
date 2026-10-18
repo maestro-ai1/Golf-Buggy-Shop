@@ -32,7 +32,7 @@
           }
         },
         execute: async ({ category }) => {
-          const url = category ? `https://buggiesforsale.com.au/shop/${category}/` : `https://buggiesforsale.com.au/shop/`;
+          const url = category ? `https://buggiesforsale.com.au/${String(category).replace(/^/|/$/g, "")}/` : `https://buggiesforsale.com.au/shop/`;
           window.location.href = url;
           return { url };
         }

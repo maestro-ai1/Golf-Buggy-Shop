@@ -1,26 +1,11 @@
-# Project Strategy: Buggies For Sale Australia
+# Project record: Buggies For Sale Australia
 
-## Brand & Domain Architecture
-- Website Domain: `buggiesforsale.com.au`
-- Primary Market: Australia
-- Currency: AUD ($)
-- Primary Keyword: `buggies for sale`
-- ABN: 53 635 284 267
-- Phone: 0420 128 746 (+61 420 128 746)
-- Email: sales@buggiesforsale.com.au
-- Head Office: Sydney, New South Wales, Australia
-
-## Color & Aesthetic Directive
-- Light Mode Desert Race Aesthetic:
-  - Base: Warm Desert Dune Bone (#F4F1EA) & Pristine Matte White (#FFFFFF)
-  - Typography: Deep Industrial Charcoal (#1A1A1A)
-  - Niche Accents: Desert Racing Dust Tan (#D4A373) & Raw Industrial Safety Orange (#E65F2B)
-  - Asymmetrical Bento-grid architecture with crisp industrial borders
-
-## E-Commerce Policies
-- Minimum Order Value: $500 AUD
-- Free Delivery Threshold: $1,000 AUD (Major capital city metro & depot corridors)
-- Flat Freight Fee: $95 AUD
-- Crypto Discount: 5% instant checkout discount for BTC / USDT
-- Pre-Delivery Inspection: 42-point mechanical and battery diagnostic check
-- Delivery: Hydraulic tailgate carrier direct to farm gate, golf shed, or residence
+- Domain: buggiesforsale.com.au (single source: `SITE.domain` in config/site.ts)
+- Market: Australia, AUD incl. GST. Target: Vercel via GitHub (Maestro repo `maestro-ai1/Golf-Buggy-Shop`).
+- Primary keyword: buggies for sale. Structure: 74 pages from the locked keyword map (docs/keyword-research/).
+- Brand: green fairway + sand + sunset-orange theme, golf buggy logo (components/Logo.tsx, app/icon.svg).
+- Pricing: 2% below the lowest Australian competitor (sources: eridesolutions.com.au, mgigolf.com, stingergolf.com.au, cartsnparts.com.au, penrithpitbike.com.au; checked 2026-10-18). Re-run `node scripts/build-catalog.mjs` after refreshing data/raw.
+- Order rules: min $500, free delivery over $1,000, $95 flat, 5% crypto discount.
+- Forms: SMTP only. Reply portal at /admin (ADMIN_PASSCODE), Upstash Redis storage.
+- Reviews: Trustpilot 4.9 / 1,024 from the previous website (do not change).
+- Open items: brand hero imagery for brands without products, policies review (returns/privacy/terms are conservative drafts), blog posts 7-50 (docs/blog), Google Search Console code, SMTP + Redis env vars in Vercel, Club Car Tempo and golf cart hire decisions.

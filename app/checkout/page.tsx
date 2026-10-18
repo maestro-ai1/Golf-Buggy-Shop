@@ -1,488 +1,85 @@
 'use client';
 
-import React, { useState } from 'react';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import {
-  ShieldCheck,
-  Truck,
-  Zap,
-  Lock,
-  ArrowRight,
-  AlertTriangle,
-  ShoppingBag,
-  CreditCard,
-  Building,
-} from 'lucide-react';
-import { useCart } from '@/lib/cart';
-import { SITE, SHOP, CONTACT } from '@/config/site';
+import { MessageCircle, ShieldCheck } from 'lucide-react';
+import Pic from '@/components/Pic';
+import { RULES, useCart } from '@/lib/cart';
+import { money } from '@/lib/utils';
+import { REPLY } from '@/config/site';
 
-export default function CheckoutPage() {
+const ALPHA = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; // no 0/O/1/I/L
+const makeRef = () => 'BFS-' + Array.from({ length: 7 }, () => ALPHA[Math.floor(Math.random() * ALPHA.length)]).join('');
+const METHODS = ['Direct bank transfer (EFT / PayID)', 'Visa / Mastercard / Amex', 'Cryptocurrency (BTC / USDT) - 5% discount', 'Commercial fleet invoice / PO'];
+
+export default function Checkout() {
+  const cart = useCart();
   const router = useRouter();
-  const {
-    items,
-    subtotal,
-    shipping,
-    cryptoDiscount,
-    isCryptoSelected,
-    setIsCryptoSelected,
-    total,
-    isMinOrderMet,
-    clearCart,
-  } = useCart();
+  const [method, setMethod] = useState(METHODS[0]);
+  const [busy, setBusy] = useState<'' | 'email' | 'whatsapp'>('');
+  const [err, setErr] = useState('');
+  const [ref] = useState(makeRef);
+  const crypto = /crypto/i.test(method);
+  useEffect(() => { cart.setCrypto(crypto); }, [crypto]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    address: '',
-    suburb: '',
-    state: 'NSW',
-    postcode: '',
-    tailgateAccess: 'Standard residential driveway access is clear',
-    paymentMethod: isCryptoSelected ? 'crypto' : 'eft',
-    orderNotes: '',
-  });
+  async function place(channel: 'email' | 'whatsapp', form: HTMLFormElement) {
+    if (!form.reportValidity()) return;
+    setBusy(channel); setErr('');
+    const f = Object.fromEntries(new FormData(form).entries());
+    const items = cart.items.map((i) => ({ slug: i.slug, quantity: i.quantity }));
+    try {
+      const r = await fetch('/api/order', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...f, items, ref, channel, paymentMethod: method }) });
+      const j = await r.json();
+      if (!j.success) { setErr(j.error || 'Could not place the order.'); setBusy(''); return; }
+      if (channel === 'whatsapp') {
+        const msg = `Hi Buggies For Sale, I just placed order ${ref} (${money(cart.total)}).\nName: ${f.name}\n` + cart.items.map((i) => `${i.quantity} x ${i.name}`).join('\n') + `\nPayment: ${method}\nPlease send my payment details.`;
+        window.open(`https://wa.me/${REPLY.channels.whatsappCountryCode}${REPLY.channels.whatsapp.replace(/^0/, '').replace(/\s/g, '')}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+      }
+      cart.clear(); router.push(`/thank-you-order/?ref=${ref}`);
+    } catch { setErr('Network error. Please call 0420 128 746.'); setBusy(''); }
+  }
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [errorMsg, setErrorMsg] = useState('');
-
-  const handlePaymentMethodChange = (val: string) => {
-    setFormData((prev) => ({ ...prev, paymentMethod: val }));
-    if (val === 'crypto') {
-      setIsCryptoSelected(true);
-    } else {
-      setIsCryptoSelected(false);
-    }
-  };
-
-  const handlePlaceOrder = (e: React.FormEvent) => {
-    e.preventDefault();
-    setErrorMsg('');
-
-    if (items.length === 0) {
-      setErrorMsg('Your cart is empty. Please add items before placing an order.');
-      return;
-    }
-
-    if (!isMinOrderMet) {
-      setErrorMsg(`Minimum order value is $${SHOP.minOrder} AUD. Please add more items.`);
-      return;
-    }
-
-    if (!formData.firstName || !formData.email || !formData.phone || !formData.address || !formData.postcode) {
-      setErrorMsg('Please complete all mandatory delivery address fields.');
-      return;
-    }
-
-    setIsSubmitting(true);
-
-    // Generate short Australian order reference (e.g. BFS-4921)
-    const randomNum = Math.floor(1000 + Math.random() * 9000);
-    const orderRef = `BFS-${randomNum}`;
-
-    setTimeout(() => {
-      clearCart();
-      router.push(
-        `/thank-you-order?ref=${orderRef}&total=${total}&method=${encodeURIComponent(
-          formData.paymentMethod
-        )}&name=${encodeURIComponent(formData.firstName)}`
-      );
-    }, 1000);
-  };
+  const input = 'h-12 w-full rounded-xl border border-line bg-white px-4 text-[15px] outline-none focus:border-fw-500 focus:ring-2 focus:ring-fw-100 mt-1.5';
+  if (cart.items.length === 0) return <section className="section"><div className="container-x max-w-xl text-center"><h1 className="text-3xl font-black">Your cart is empty</h1><p className="mt-3 text-muted">Add a buggy, cart or accessory to continue.</p><Link href="/shop/" className="btn btn-primary mt-6">Shop all products</Link></div></section>;
 
   return (
-    <div className="bg-[#F8FAFC] min-h-screen py-8 border-b border-slate-200">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-        {/* Breadcrumb */}
-        <nav className="text-xs text-slate-500 font-mono" aria-label="Breadcrumb">
-          <Link href="/" className="hover:text-slate-900">
-            Home
-          </Link>
-          <span className="mx-2">/</span>
-          <Link href="/shop" className="hover:text-slate-900">
-            Shop
-          </Link>
-          <span className="mx-2">/</span>
-          <span className="text-[#0B2545] font-bold">Secure Checkout</span>
-        </nav>
-
-        <div>
-          <span className="text-xs font-mono font-bold text-[#D32F2F] uppercase tracking-wider">
-            Encrypted Order Portal
-          </span>
-          <h1 className="text-2xl sm:text-3xl font-black text-[#0B2545] uppercase tracking-tight mt-1">
-            Australian Buggy Checkout
-          </h1>
-          <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Direct depot dispatch with insured heavy vehicle freight across all Australian states.
-          </p>
-        </div>
-
-        {/* Min Order Warning if below $500 */}
-        {!isMinOrderMet && (
-          <div className="p-4 bg-amber-50 border border-amber-300 rounded-lg flex items-start gap-3 text-amber-900 text-xs">
-            <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
-            <div>
-              <strong className="block text-sm font-bold">
-                Minimum Order Requirement: ${SHOP.minOrder} AUD
-              </strong>
-              Your current cart subtotal is <strong>${subtotal.toLocaleString()} AUD</strong>. Please return to the shop and add items to reach the minimum order value before placing your order.
-              <div className="pt-2">
-                <Link
-                  href="/shop"
-                  className="inline-block px-3 py-1 bg-[#0B2545] hover:bg-[#D32F2F] text-white rounded font-bold uppercase text-[10px] transition-colors"
-                >
-                  Return to Shop
-                </Link>
-              </div>
-            </div>
+    <section className="section !pt-10"><div className="container-x">
+      <h1 className="text-4xl font-black">Checkout</h1>
+      <p className="mt-2 text-muted">Order reference <strong className="text-fw-900">{ref}</strong>. We confirm stock and freight, then email your payment details.</p>
+      <div className="mt-8 grid gap-8 lg:grid-cols-[1.4fr_1fr]">
+        <form className="card space-y-5 p-6 sm:p-8" onSubmit={(e) => { e.preventDefault(); place('email', e.currentTarget); }}>
+          <h2 className="text-xl font-extrabold">Your details</h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <label className="block text-sm font-bold">Full name<input name="name" required autoComplete="name" className={input} /></label>
+            <label className="block text-sm font-bold">Email<input name="email" type="email" required autoComplete="email" className={input} /></label>
+            <label className="block text-sm font-bold sm:col-span-2">Mobile phone<input name="phone" type="tel" required minLength={8} autoComplete="tel" className={input} /></label>
+            <label className="block text-sm font-bold sm:col-span-2">Delivery address (street, suburb, state, postcode)<input name="address" required minLength={8} autoComplete="street-address" className={input} /></label>
           </div>
-        )}
-
-        {errorMsg && (
-          <div className="p-4 bg-red-50 border border-red-300 rounded-lg text-red-900 text-xs font-bold">
-            {errorMsg}
+          <fieldset><legend className="text-sm font-bold">Payment method</legend>
+            <div className="mt-2 grid gap-2">{METHODS.map((m) => <label key={m} className={`flex cursor-pointer items-center gap-3 rounded-xl border-2 p-3.5 text-sm font-semibold ${method === m ? 'border-fw-600 bg-fw-50' : 'border-line'}`}><input type="radio" name="pm" checked={method === m} onChange={() => setMethod(m)} className="accent-[#1c7a55]" />{m}</label>)}</div>
+          </fieldset>
+          <label className="block text-sm font-bold">Order notes (optional)<textarea name="notes" rows={3} className="mt-1.5 w-full rounded-xl border border-line bg-white p-4 text-[15px]" /></label>
+          <input name="botcheck" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
+          {err && <p role="alert" className="rounded-xl bg-accent-100 p-3 text-sm font-semibold text-accent-600">{err}</p>}
+          {!cart.minMet && <p className="rounded-xl bg-accent-100 p-3 text-sm font-semibold text-accent-600">Minimum order is {money(RULES.minOrder)}. Add {money(cart.minRemaining)} more to continue.</p>}
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <button type="submit" disabled={!cart.minMet || !!busy} className="btn btn-primary flex-1 !min-h-[52px] disabled:opacity-50">{busy === 'email' ? 'Placing order…' : 'Place order'}</button>
+            <button type="button" disabled={!cart.minMet || !!busy} onClick={(e) => place('whatsapp', (e.currentTarget.closest('form') as HTMLFormElement))} className="btn flex-1 !min-h-[52px] bg-[#25D366] text-white hover:bg-[#1fb957] disabled:opacity-50"><MessageCircle size={18} /> {busy === 'whatsapp' ? 'Placing…' : 'Order via WhatsApp'}</button>
           </div>
-        )}
-
-        <form onSubmit={handlePlaceOrder} className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Left Form: Delivery Address & Details */}
-          <div className="lg:col-span-7 space-y-6">
-            {/* Delivery Address Card */}
-            <div className="bg-white rounded-xl border border-slate-200 p-6 sm:p-8 space-y-4 shadow-sm">
-              <h2 className="text-sm font-bold text-[#0B2545] uppercase tracking-tight border-b border-slate-100 pb-2 flex items-center justify-between">
-                <span>1. Customer & Delivery Address</span>
-                <span className="text-xs font-mono text-slate-400">Australia-Wide</span>
-              </h2>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="text-xs font-bold text-slate-700 block mb-1">
-                    First Name *
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    value={formData.firstName}
-                    onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                    placeholder="e.g. Jack"
-                    className="w-full px-3 py-2 text-xs border border-slate-200 rounded focus:outline-none focus:ring-1 focus:ring-[#D32F2F]"
-                  />
-                </div>
-                <div>
-                  <label className="text-xs font-bold text-slate-700 block mb-1">
-                    Last Name *
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    value={formData.lastName}
-                    onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                    placeholder="e.g. Thompson"
-                    className="w-full px-3 py-2 text-xs border border-slate-200 rounded focus:outline-none focus:ring-1 focus:ring-[#D32F2F]"
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="text-xs font-bold text-slate-700 block mb-1">
-                    Email Address (For Invoicing & Dispatch Alerts) *
-                  </label>
-                  <input
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    placeholder="jack@property.com.au"
-                    className="w-full px-3 py-2 text-xs border border-slate-200 rounded focus:outline-none focus:ring-1 focus:ring-[#D32F2F]"
-                  />
-                </div>
-                <div>
-                  <label className="text-xs font-bold text-slate-700 block mb-1">
-                    Australian Mobile Phone (Carrier SMS Tracking) *
-                  </label>
-                  <input
-                    type="tel"
-                    required
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="e.g. 0412 345 678"
-                    className="w-full px-3 py-2 text-xs border border-slate-200 rounded focus:outline-none focus:ring-1 focus:ring-[#D32F2F]"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="text-xs font-bold text-slate-700 block mb-1">
-                  Street Delivery Address (Driveway, Property or Business Gate) *
-                </label>
-                <input
-                  type="text"
-                  required
-                  value={formData.address}
-                  onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                  placeholder="e.g. 142 River Road or Lot 4 Outback Highway"
-                  className="w-full px-3 py-2 text-xs border border-slate-200 rounded focus:outline-none focus:ring-1 focus:ring-[#D32F2F]"
-                />
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div>
-                  <label className="text-xs font-bold text-slate-700 block mb-1">
-                    Suburb / Town *
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    value={formData.suburb}
-                    onChange={(e) => setFormData({ ...formData, suburb: e.target.value })}
-                    placeholder="e.g. Dubbo"
-                    className="w-full px-3 py-2 text-xs border border-slate-200 rounded focus:outline-none focus:ring-1 focus:ring-[#D32F2F]"
-                  />
-                </div>
-                <div>
-                  <label className="text-xs font-bold text-slate-700 block mb-1">
-                    State *
-                  </label>
-                  <select
-                    value={formData.state}
-                    onChange={(e) => setFormData({ ...formData, state: e.target.value })}
-                    className="w-full px-3 py-2 text-xs border border-slate-200 rounded bg-white font-mono"
-                  >
-                    <option value="NSW">NSW</option>
-                    <option value="VIC">VIC</option>
-                    <option value="QLD">QLD</option>
-                    <option value="WA">WA</option>
-                    <option value="SA">SA</option>
-                    <option value="TAS">TAS</option>
-                    <option value="ACT">ACT</option>
-                    <option value="NT">NT</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="text-xs font-bold text-slate-700 block mb-1">
-                    Postcode *
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    maxLength={4}
-                    value={formData.postcode}
-                    onChange={(e) =>
-                      setFormData({ ...formData, postcode: e.target.value.replace(/\D/g, '') })
-                    }
-                    placeholder="2830"
-                    className="w-full px-3 py-2 text-xs border border-slate-200 rounded focus:outline-none focus:ring-1 focus:ring-[#D32F2F] font-mono"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="text-xs font-bold text-slate-700 block mb-1">
-                  Tailgate Unloading Notes (Access restrictions, gates, dogs)
-                </label>
-                <input
-                  type="text"
-                  value={formData.tailgateAccess}
-                  onChange={(e) => setFormData({ ...formData, tailgateAccess: e.target.value })}
-                  className="w-full px-3 py-2 text-xs border border-slate-200 rounded focus:outline-none focus:ring-1 focus:ring-[#D32F2F]"
-                />
-              </div>
-            </div>
-
-            {/* Payment Method Card */}
-            <div className="bg-white rounded-xl border border-slate-200 p-6 sm:p-8 space-y-4 shadow-sm">
-              <h2 className="text-sm font-bold text-[#0B2545] uppercase tracking-tight border-b border-slate-100 pb-2 flex items-center justify-between">
-                <span>2. Select Payment Method</span>
-                <span className="text-xs font-mono text-emerald-700 font-bold">Secure Settlement</span>
-              </h2>
-
-              <div className="space-y-3">
-                {/* EFT / PayID Option */}
-                <label className="flex items-start gap-3 p-4 rounded-lg border cursor-pointer transition-all border-slate-200 hover:border-slate-400 bg-slate-50">
-                  <input
-                    type="radio"
-                    name="paymentMethod"
-                    value="eft"
-                    checked={formData.paymentMethod === 'eft'}
-                    onChange={() => handlePaymentMethodChange('eft')}
-                    className="w-4 h-4 accent-[#D32F2F] mt-0.5"
-                  />
-                  <div className="flex-1">
-                    <div className="flex items-center justify-between">
-                      <span className="font-bold text-xs text-slate-900">
-                        Direct Australian Bank Transfer (EFT) / PayID
-                      </span>
-                      <span className="text-[10px] font-mono bg-white border border-slate-200 px-2 py-0.5 rounded">
-                        Most Popular
-                      </span>
-                    </div>
-                    <p className="text-[11px] text-slate-500 mt-1">
-                      Direct deposit or instant settlement via PayID ({CONTACT.email}). Vehicle allocated immediately upon payment match.
-                    </p>
-                  </div>
-                </label>
-
-                {/* Crypto Option (5% Discount) */}
-                <label className="flex items-start gap-3 p-4 rounded-lg border cursor-pointer transition-all border-amber-300 bg-amber-50">
-                  <input
-                    type="radio"
-                    name="paymentMethod"
-                    value="crypto"
-                    checked={formData.paymentMethod === 'crypto'}
-                    onChange={() => handlePaymentMethodChange('crypto')}
-                    className="w-4 h-4 accent-[#D32F2F] mt-0.5"
-                  />
-                  <div className="flex-1">
-                    <div className="flex items-center justify-between">
-                      <span className="font-bold text-xs text-slate-900 flex items-center gap-1.5">
-                        <Zap className="w-3.5 h-3.5 text-[#D32F2F]" />
-                        Cryptocurrency (BTC / USDT) — Save 5% Instantly
-                      </span>
-                      <span className="text-[10px] font-mono bg-[#D32F2F] text-white px-2 py-0.5 rounded font-bold">
-                        5% Discount
-                      </span>
-                    </div>
-                    <p className="text-[11px] text-slate-600 mt-1">
-                      Save ${cryptoDiscount > 0 ? cryptoDiscount.toLocaleString() : Math.round(subtotal * 0.05).toLocaleString()} AUD automatically at checkout. QR code and wallet details provided on order confirmation.
-                    </p>
-                  </div>
-                </label>
-
-                {/* Credit Card / Commercial Invoice */}
-                <label className="flex items-start gap-3 p-4 rounded-lg border cursor-pointer transition-all border-slate-200 hover:border-slate-400 bg-slate-50">
-                  <input
-                    type="radio"
-                    name="paymentMethod"
-                    value="invoice"
-                    checked={formData.paymentMethod === 'invoice'}
-                    onChange={() => handlePaymentMethodChange('invoice')}
-                    className="w-4 h-4 accent-[#D32F2F] mt-0.5"
-                  />
-                  <div className="flex-1">
-                    <div className="flex items-center justify-between">
-                      <span className="font-bold text-xs text-slate-900">
-                        Commercial Tax Invoice / Purchase Order
-                      </span>
-                      <span className="text-[10px] font-mono bg-white border border-slate-200 px-2 py-0.5 rounded">
-                        Clubs & Resorts
-                      </span>
-                    </div>
-                    <p className="text-[11px] text-slate-500 mt-1">
-                      A formal PDF tax invoice with ABN {CONTACT.abn} will be sent to your accounts department for approval.
-                    </p>
-                  </div>
-                </label>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Order Summary & Confirmation Button */}
-          <div className="lg:col-span-5 space-y-6">
-            <div className="bg-white rounded-xl border border-slate-200 p-6 sm:p-8 space-y-4 shadow-sm">
-              <h2 className="text-sm font-bold text-[#0B2545] uppercase tracking-tight border-b border-slate-100 pb-2">
-                Order Summary ({items.length} items)
-              </h2>
-
-              <div className="divide-y divide-slate-100 max-h-64 overflow-y-auto pr-1">
-                {items.map((item) => (
-                  <div key={item.product.slug} className="py-2.5 flex items-center justify-between gap-3 text-xs">
-                    <div className="truncate">
-                      <div className="font-bold text-slate-900 truncate">
-                        {item.quantity}x {item.product.name}
-                      </div>
-                      {item.selectedOption && (
-                        <div className="text-[10px] text-slate-400">
-                          {item.selectedOption}
-                        </div>
-                      )}
-                    </div>
-                    <span className="font-mono font-bold text-slate-900 shrink-0">
-                      {SITE.currencySymbol}{(item.product.price * item.quantity).toLocaleString()} AUD
-                    </span>
-                  </div>
-                ))}
-              </div>
-
-              {/* Price Breakdown */}
-              <div className="pt-4 border-t border-slate-100 space-y-2 text-xs text-slate-600">
-                <div className="flex justify-between">
-                  <span>Subtotal</span>
-                  <span className="font-mono font-bold text-slate-900">
-                    {SITE.currencySymbol}{subtotal.toLocaleString()} AUD
-                  </span>
-                </div>
-
-                <div className="flex justify-between">
-                  <span>Insured Heavy Freight</span>
-                  <span className="font-mono font-bold">
-                    {shipping === 0 ? (
-                      <span className="text-emerald-700">FREE (Orders Over $1,000)</span>
-                    ) : (
-                      `${SITE.currencySymbol}${shipping} AUD`
-                    )}
-                  </span>
-                </div>
-
-                {isCryptoSelected && (
-                  <div className="flex justify-between text-emerald-700 font-bold">
-                    <span>Crypto 5% Discount</span>
-                    <span className="font-mono">
-                      -{SITE.currencySymbol}{cryptoDiscount.toLocaleString()} AUD
-                    </span>
-                  </div>
-                )}
-
-                <div className="flex justify-between text-base font-black text-[#0B2545] pt-3 border-t border-slate-100">
-                  <span>Total Amount Due</span>
-                  <span className="font-mono text-xl text-[#D32F2F]">
-                    {SITE.currencySymbol}{total.toLocaleString()} AUD
-                  </span>
-                </div>
-                <div className="text-[10px] text-slate-400 text-right">
-                  Includes 10% Australian GST
-                </div>
-              </div>
-
-              {/* Place Order Button */}
-              <div className="pt-4 space-y-3">
-                <button
-                  type="submit"
-                  disabled={!isMinOrderMet || isSubmitting || items.length === 0}
-                  className={`w-full py-4 rounded font-bold text-xs uppercase tracking-wider transition-all shadow-md flex items-center justify-center gap-2 ${
-                    isMinOrderMet && items.length > 0 && !isSubmitting
-                      ? 'bg-[#D32F2F] hover:bg-[#B71C1C] text-white'
-                      : 'bg-slate-200 text-slate-400 cursor-not-allowed'
-                  }`}
-                >
-                  <Lock className="w-4 h-4" />
-                  <span>
-                    {isSubmitting ? 'Placing Your Order...' : 'Confirm & Place Order'}
-                  </span>
-                </button>
-
-                <div className="text-[10px] text-slate-500 text-center leading-relaxed">
-                  By clicking Confirm, your order reference is generated and reserved in our Australian warehouse. No card details are charged automatically.
-                </div>
-              </div>
-            </div>
-
-            {/* Trust box */}
-            <div className="p-4 bg-slate-50 rounded-lg border border-slate-200 space-y-1.5 text-xs text-slate-700">
-              <div className="flex items-center gap-1.5 font-bold text-slate-900">
-                <ShieldCheck className="w-4 h-4 text-[#D32F2F]" />
-                <span>Australian Business Guarantee</span>
-              </div>
-              <p className="text-[11px] text-slate-600">
-                Operated by Buggies For Sale Australia Pty Ltd (ABN: {CONTACT.abn}). Backed by Australian Consumer Law statutory warranties.
-              </p>
-            </div>
-          </div>
+          <p className="flex items-center gap-2 text-xs text-muted"><ShieldCheck size={14} /> No payment is taken on this page. We email secure payment details after confirming your order.</p>
         </form>
+        <aside className="card self-start p-6">
+          <h2 className="text-xl font-extrabold">Order summary</h2>
+          <ul className="mt-4 divide-y divide-line">{cart.items.map((i) => <li key={i.slug} className="flex gap-3 py-3"><span className="product-frame h-16 w-16 shrink-0 border border-line"><Pic base={i.image} alt={i.name} width={64} height={64} /></span><span className="flex-1 text-sm font-semibold">{i.name}<span className="block text-xs text-muted">Qty {i.quantity}</span></span><span className="font-bold">{money(i.price * i.quantity)}</span></li>)}</ul>
+          <dl className="mt-4 space-y-1.5 border-t border-line pt-4 text-sm">
+            <div className="flex justify-between"><dt className="text-muted">Subtotal (inc. GST)</dt><dd className="font-bold">{money(cart.subtotal)}</dd></div>
+            <div className="flex justify-between"><dt className="text-muted">Freight</dt><dd className="font-bold">{cart.shipping ? money(cart.shipping) : 'Free'}</dd></div>
+            {cart.cryptoDiscount > 0 && <div className="flex justify-between text-fw-700"><dt>Crypto discount (5%)</dt><dd className="font-bold">-{money(cart.cryptoDiscount)}</dd></div>}
+            <div className="flex justify-between border-t border-line pt-3 text-xl"><dt className="font-extrabold">Total</dt><dd className="font-black text-fw-900">{money(cart.total)}</dd></div>
+          </dl>
+        </aside>
       </div>
-    </div>
+    </div></section>
   );
 }

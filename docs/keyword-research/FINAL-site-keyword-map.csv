@@ -1,0 +1,377 @@
+﻿Page,URL,Level,Parent,Role,Keyword,Intent,Volume,KD
+Home,/,home,,PRIMARY,buggies for sale,Transactional,590,9
+Home,/,home,,SECONDARY 1,buggy,"Informational, Commercial",4400,17
+Home,/,home,,SECONDARY 2,buggy buggies,Informational,3600,9
+Home,/,home,,SECONDARY 3,beach buggy for sale,Transactional,320,12
+Home,/,home,,SECONDARY 4,buggies,Commercial,1300,16
+Home,/,home,,SECONDARY 5,for sale buggy,Transactional,590,7
+Golf Buggies (Hub),/golf-buggies/,category,Home,PRIMARY,golf buggy,Commercial,6600,11
+Golf Buggies (Hub),/golf-buggies/,category,Home,SECONDARY 1,golf buggies,Commercial,880,11
+Golf Buggies (Hub),/golf-buggies/,category,Home,SECONDARY 2,buggy for golf,"Informational, Commercial",590,19
+Golf Buggies (Hub),/golf-buggies/,category,Home,SECONDARY 3,buggies for golf,Commercial,390,13
+Golf Buggies (Hub),/golf-buggies/,category,Home,SECONDARY 4,golf buggy australia,Commercial,140,6
+Golf Buggies (Hub),/golf-buggies/,category,Home,SECONDARY 5,golf buggies australia,Commercial,110,9
+Golf Buggies For Sale,/golf-buggies/for-sale/,sub-category,Golf Buggies (Hub),PRIMARY,golf buggy for sale,Transactional,1900,16
+Golf Buggies For Sale,/golf-buggies/for-sale/,sub-category,Golf Buggies (Hub),SECONDARY 1,golf buggy sales,Transactional,390,5
+Golf Buggies For Sale,/golf-buggies/for-sale/,sub-category,Golf Buggies (Hub),SECONDARY 2,golf buggy sale,Transactional,320,9
+Golf Buggies For Sale,/golf-buggies/for-sale/,sub-category,Golf Buggies (Hub),SECONDARY 3,for sale golf buggy,Transactional,260,16
+Golf Buggies For Sale,/golf-buggies/for-sale/,sub-category,Golf Buggies (Hub),SECONDARY 4,new golf buggies,Commercial,90,4
+Golf Buggies For Sale,/golf-buggies/for-sale/,sub-category,Golf Buggies (Hub),SECONDARY 5,buy golf buggy,Transactional,90,12
+Motorised / Electric Golf Buggies,/golf-buggies/motorised-electric/,sub-category,Golf Buggies (Hub),PRIMARY,electric golf buggies for sale,Transactional,210,20
+Motorised / Electric Golf Buggies,/golf-buggies/motorised-electric/,sub-category,Golf Buggies (Hub),SECONDARY 1,motorised golf buggy,Commercial,390,27
+Motorised / Electric Golf Buggies,/golf-buggies/motorised-electric/,sub-category,Golf Buggies (Hub),SECONDARY 2,electric golf buggy for sale,Transactional,390,27
+Motorised / Electric Golf Buggies,/golf-buggies/motorised-electric/,sub-category,Golf Buggies (Hub),SECONDARY 3,best electric golf buggy australia,Commercial,140,27
+Motorised / Electric Golf Buggies,/golf-buggies/motorised-electric/,sub-category,Golf Buggies (Hub),SECONDARY 4,motorised golf buggy for sale,Transactional,170,19
+Motorised / Electric Golf Buggies,/golf-buggies/motorised-electric/,sub-category,Golf Buggies (Hub),SECONDARY 5,second hand electric golf buggy for sale,Transactional,90,7
+Remote Control Golf Buggies,/golf-buggies/remote-control/,sub-category,Golf Buggies (Hub),PRIMARY,remote control golf buggy,Commercial,480,7
+Remote Control Golf Buggies,/golf-buggies/remote-control/,sub-category,Golf Buggies (Hub),SECONDARY 1,remote golf buggy,Commercial,480,17
+Remote Control Golf Buggies,/golf-buggies/remote-control/,sub-category,Golf Buggies (Hub),SECONDARY 2,golf buggy remote,Commercial,390,8
+Remote Control Golf Buggies,/golf-buggies/remote-control/,sub-category,Golf Buggies (Hub),SECONDARY 3,remote control electric golf buggy,Commercial,260,6
+Remote Control Golf Buggies,/golf-buggies/remote-control/,sub-category,Golf Buggies (Hub),SECONDARY 4,electric golf buggy with remote,Commercial,320,10
+Remote Control Golf Buggies,/golf-buggies/remote-control/,sub-category,Golf Buggies (Hub),SECONDARY 5,remote control golf buggy for sale,Transactional,50,6
+Push & Pull Golf Buggies / Trolleys,/golf-buggies/push-pull-trolleys/,sub-category,Golf Buggies (Hub),PRIMARY,golf trolley,Commercial,880,18
+Push & Pull Golf Buggies / Trolleys,/golf-buggies/push-pull-trolleys/,sub-category,Golf Buggies (Hub),SECONDARY 1,golf push buggy,Commercial,480,11
+Push & Pull Golf Buggies / Trolleys,/golf-buggies/push-pull-trolleys/,sub-category,Golf Buggies (Hub),SECONDARY 2,golf buggy push,"Informational, Commercial",480,12
+Push & Pull Golf Buggies / Trolleys,/golf-buggies/push-pull-trolleys/,sub-category,Golf Buggies (Hub),SECONDARY 3,push golf buggy,Commercial,260,16
+Push & Pull Golf Buggies / Trolleys,/golf-buggies/push-pull-trolleys/,sub-category,Golf Buggies (Hub),SECONDARY 4,golf pull buggy,Commercial,140,11
+Push & Pull Golf Buggies / Trolleys,/golf-buggies/push-pull-trolleys/,sub-category,Golf Buggies (Hub),SECONDARY 5,foldable golf buggy,Commercial,110,9
+Golf Caddies & Electric Trolleys,/golf-buggies/caddies-electric-trolleys/,sub-category,Golf Buggies (Hub),PRIMARY,golf caddy,"Informational, Commercial",1000,15
+Golf Caddies & Electric Trolleys,/golf-buggies/caddies-electric-trolleys/,sub-category,Golf Buggies (Hub),SECONDARY 1,electric trolleys,Commercial,320,20
+Golf Caddies & Electric Trolleys,/golf-buggies/caddies-electric-trolleys/,sub-category,Golf Buggies (Hub),SECONDARY 2,electric golf trolley,Commercial,260,19
+Golf Caddies & Electric Trolleys,/golf-buggies/caddies-electric-trolleys/,sub-category,Golf Buggies (Hub),SECONDARY 3,motorised golf caddy,"Informational, Commercial",210,17
+Golf Caddies & Electric Trolleys,/golf-buggies/caddies-electric-trolleys/,sub-category,Golf Buggies (Hub),SECONDARY 4,caddy golf caddy,"Informational, Commercial",210,14
+Golf Caddies & Electric Trolleys,/golf-buggies/caddies-electric-trolleys/,sub-category,Golf Buggies (Hub),SECONDARY 5,electric golf caddy,Commercial,210,23
+Ride-On / Seated Golf Buggies,/golf-buggies/ride-on-seated/,sub-category,Golf Buggies (Hub),PRIMARY,golf buggy with seat,Commercial,320,10
+Ride-On / Seated Golf Buggies,/golf-buggies/ride-on-seated/,sub-category,Golf Buggies (Hub),SECONDARY 1,ride on golf buggy,Informational,140,8
+Ride-On / Seated Golf Buggies,/golf-buggies/ride-on-seated/,sub-category,Golf Buggies (Hub),SECONDARY 2,single seat golf buggy,"Informational, Commercial",110,2
+Ride-On / Seated Golf Buggies,/golf-buggies/ride-on-seated/,sub-category,Golf Buggies (Hub),SECONDARY 3,single seater golf cart,Informational,110,1
+Ride-On / Seated Golf Buggies,/golf-buggies/ride-on-seated/,sub-category,Golf Buggies (Hub),SECONDARY 4,ride on golf buggies,Commercial,70,8
+Ride-On / Seated Golf Buggies,/golf-buggies/ride-on-seated/,sub-category,Golf Buggies (Hub),SECONDARY 5,stand up golf buggy,Commercial,50,16
+3-Wheel Golf Buggies,/golf-buggies/3-wheel/,sub-category,Golf Buggies (Hub),PRIMARY,3 wheel golf buggy,Commercial,210,11
+3-Wheel Golf Buggies,/golf-buggies/3-wheel/,sub-category,Golf Buggies (Hub),SECONDARY 1,three wheel golf buggy,"Informational, Transactional",210,8
+3-Wheel Golf Buggies,/golf-buggies/3-wheel/,sub-category,Golf Buggies (Hub),SECONDARY 2,3 wheel golf cart,"Informational, Commercial",170,12
+3-Wheel Golf Buggies,/golf-buggies/3-wheel/,sub-category,Golf Buggies (Hub),SECONDARY 3,compact golf buggy,Commercial,70,8
+3-Wheel Golf Buggies,/golf-buggies/3-wheel/,sub-category,Golf Buggies (Hub),SECONDARY 4,collapsible golf buggy,Commercial,90,9
+3-Wheel Golf Buggies,/golf-buggies/3-wheel/,sub-category,Golf Buggies (Hub),SECONDARY 5,folding golf buggy,Commercial,90,10
+Golf Scooters,/golf-buggies/golf-scooters/,sub-category,Golf Buggies (Hub),PRIMARY,golf scooter,"Informational, Commercial",1000,9
+Golf Scooters,/golf-buggies/golf-scooters/,sub-category,Golf Buggies (Hub),SECONDARY 1,electric golf scooter,Commercial,390,3
+Golf Scooters,/golf-buggies/golf-scooters/,sub-category,Golf Buggies (Hub),SECONDARY 2,golf cart scooter,Commercial,170,6
+Golf Scooters,/golf-buggies/golf-scooters/,sub-category,Golf Buggies (Hub),SECONDARY 3,scooter golf buggy,Commercial,170,2
+Golf Scooters,/golf-buggies/golf-scooters/,sub-category,Golf Buggies (Hub),SECONDARY 4,golf skate caddy australia,"Informational, Transactional",110,3
+Golf Scooters,/golf-buggies/golf-scooters/,sub-category,Golf Buggies (Hub),SECONDARY 5,golf scooter australia,Commercial,260,3
+Golf Buggies For Sale - Locations,/golf-buggies/for-sale-locations/,sub-category,Golf Buggies (Hub),PRIMARY,golf carts for sale brisbane,Transactional,210,10
+Golf Buggies For Sale - Locations,/golf-buggies/for-sale-locations/,sub-category,Golf Buggies (Hub),SECONDARY 1,golf buggy for sale brisbane,Transactional,170,3
+Golf Buggies For Sale - Locations,/golf-buggies/for-sale-locations/,sub-category,Golf Buggies (Hub),SECONDARY 2,golf buggy for sale qld,Transactional,110,15
+Golf Buggies For Sale - Locations,/golf-buggies/for-sale-locations/,sub-category,Golf Buggies (Hub),SECONDARY 3,golf buggy for sale gold coast,Transactional,90,6
+Golf Buggies For Sale - Locations,/golf-buggies/for-sale-locations/,sub-category,Golf Buggies (Hub),SECONDARY 4,golf carts for sale perth,Transactional,210,6
+Golf Buggies For Sale - Locations,/golf-buggies/for-sale-locations/,sub-category,Golf Buggies (Hub),SECONDARY 5,golf buggy for sale nsw,Transactional,90,6
+Golf Carts (Hub),/golf-carts/,category,Home,PRIMARY,golf cart,Transactional,5400,20
+Golf Carts (Hub),/golf-carts/,category,Home,SECONDARY 1,golf carts,Commercial,1300,28
+Golf Carts (Hub),/golf-carts/,category,Home,SECONDARY 2,golf cars & carts,Informational,1600,17
+Golf Carts (Hub),/golf-carts/,category,Home,SECONDARY 3,golf cars,Commercial,320,21
+Golf Carts (Hub),/golf-carts/,category,Home,SECONDARY 4,golf kart,"Informational, Transactional",320,10
+Golf Carts (Hub),/golf-carts/,category,Home,SECONDARY 5,golf cart australia,"Informational, Commercial",210,28
+Golf Carts For Sale,/golf-carts/for-sale/,sub-category,Golf Carts (Hub),PRIMARY,golf carts for sale,Transactional,2400,20
+Golf Carts For Sale,/golf-carts/for-sale/,sub-category,Golf Carts (Hub),SECONDARY 1,golf cart for sale,Transactional,1300,11
+Golf Carts For Sale,/golf-carts/for-sale/,sub-category,Golf Carts (Hub),SECONDARY 2,buy golf cart,Transactional,210,11
+Golf Carts For Sale,/golf-carts/for-sale/,sub-category,Golf Carts (Hub),SECONDARY 3,golf cart price,Transactional,170,2
+Golf Carts For Sale,/golf-carts/for-sale/,sub-category,Golf Carts (Hub),SECONDARY 4,golf carts for sale australia,Transactional,110,16
+Golf Carts For Sale,/golf-carts/for-sale/,sub-category,Golf Carts (Hub),SECONDARY 5,golf cart sales,Transactional,90,8
+Used & Second-Hand Golf Carts,/golf-carts/used/,sub-category,Golf Carts (Hub),PRIMARY,used golf carts for sale,Transactional,390,6
+Used & Second-Hand Golf Carts,/golf-carts/used/,sub-category,Golf Carts (Hub),SECONDARY 1,2nd hand golf carts for sale,Transactional,480,6
+Used & Second-Hand Golf Carts,/golf-carts/used/,sub-category,Golf Carts (Hub),SECONDARY 2,for sale used golf carts,Transactional,320,10
+Used & Second-Hand Golf Carts,/golf-carts/used/,sub-category,Golf Carts (Hub),SECONDARY 3,used golf buggy for sale,Transactional,320,8
+Used & Second-Hand Golf Carts,/golf-carts/used/,sub-category,Golf Carts (Hub),SECONDARY 4,golf buggy for sale used,Transactional,320,3
+Used & Second-Hand Golf Carts,/golf-carts/used/,sub-category,Golf Carts (Hub),SECONDARY 5,second hand golf carts for sale,Transactional,170,5
+Petrol Golf Carts,/golf-carts/petrol/,sub-category,Golf Carts (Hub),PRIMARY,petrol golf carts for sale,Transactional,320,6
+Petrol Golf Carts,/golf-carts/petrol/,sub-category,Golf Carts (Hub),SECONDARY 1,petrol golf cart,Commercial,170,3
+Petrol Golf Carts,/golf-carts/petrol/,sub-category,Golf Carts (Hub),SECONDARY 2,used gas golf cart prices,Commercial,390,3
+Petrol Golf Carts,/golf-carts/petrol/,sub-category,Golf Carts (Hub),SECONDARY 3,petrol golf cart for sale,Transactional,210,6
+Petrol Golf Carts,/golf-carts/petrol/,sub-category,Golf Carts (Hub),SECONDARY 4,used golf cart,Commercial,210,6
+Petrol Golf Carts,/golf-carts/petrol/,sub-category,Golf Carts (Hub),SECONDARY 5,second hand golf cart,Commercial,140,6
+Electric Golf Carts,/golf-carts/electric/,sub-category,Golf Carts (Hub),PRIMARY,electric golf cart,Commercial,880,12
+Electric Golf Carts,/golf-carts/electric/,sub-category,Golf Carts (Hub),SECONDARY 1,electric golf cart for sale,Transactional,210,6
+Electric Golf Carts,/golf-carts/electric/,sub-category,Golf Carts (Hub),SECONDARY 2,electric golf carts,Commercial,320,3
+Electric Golf Carts,/golf-carts/electric/,sub-category,Golf Carts (Hub),SECONDARY 3,electric golf carts for sale,Transactional,260,6
+Electric Golf Carts,/golf-carts/electric/,sub-category,Golf Carts (Hub),SECONDARY 4,electric carts for sale,Transactional,170,6
+Electric Golf Carts,/golf-carts/electric/,sub-category,Golf Carts (Hub),SECONDARY 5,electric golf cart australia,"Informational, Commercial",70,14
+Utility Carts & 4-Seater Golf Carts,/golf-carts/utility-4-seater/,sub-category,Golf Carts (Hub),PRIMARY,utility cart,Commercial,390,10
+Utility Carts & 4-Seater Golf Carts,/golf-carts/utility-4-seater/,sub-category,Golf Carts (Hub),SECONDARY 1,4 seater golf cart,Commercial,140,0
+Utility Carts & 4-Seater Golf Carts,/golf-carts/utility-4-seater/,sub-category,Golf Carts (Hub),SECONDARY 2,four seater golf cart,Informational,140,2
+Utility Carts & 4-Seater Golf Carts,/golf-carts/utility-4-seater/,sub-category,Golf Carts (Hub),SECONDARY 3,electric utility cart for sale,Transactional,70,11
+Utility Carts & 4-Seater Golf Carts,/golf-carts/utility-4-seater/,sub-category,Golf Carts (Hub),SECONDARY 4,utility golf cart,Commercial,70,10
+Utility Carts & 4-Seater Golf Carts,/golf-carts/utility-4-seater/,sub-category,Golf Carts (Hub),SECONDARY 5,electric utility cart,Informational,70,3
+Mini & Junior Golf Carts,/golf-carts/mini-junior/,sub-category,Golf Carts (Hub),PRIMARY,mini golf cart,Commercial,110,6
+Mini & Junior Golf Carts,/golf-carts/mini-junior/,sub-category,Golf Carts (Hub),SECONDARY 1,kids golf buggy,Commercial,110,11
+Mini & Junior Golf Carts,/golf-carts/mini-junior/,sub-category,Golf Carts (Hub),SECONDARY 2,junior golf buggy,Commercial,110,13
+Mini & Junior Golf Carts,/golf-carts/mini-junior/,sub-category,Golf Carts (Hub),SECONDARY 3,kids golf cart,Commercial,90,24
+Mini & Junior Golf Carts,/golf-carts/mini-junior/,sub-category,Golf Carts (Hub),SECONDARY 4,custom golf buggy,Informational,110,2
+Mini & Junior Golf Carts,/golf-carts/mini-junior/,sub-category,Golf Carts (Hub),SECONDARY 5,custom golf carts,Commercial,110,6
+Cheap & Clearance Golf Carts,/clearance/,category,Home,PRIMARY,cheap golf buggy,Commercial,90,8
+Cheap & Clearance Golf Carts,/clearance/,category,Home,SECONDARY 1,cheap golf carts for sale,Transactional,50,11
+Cheap & Clearance Golf Carts,/clearance/,category,Home,SECONDARY 2,inexpensive golf carts for sale,Transactional,70,5
+Cheap & Clearance Golf Carts,/clearance/,category,Home,SECONDARY 3,cheap golf buggy for sale,Transactional,50,10
+Cheap & Clearance Golf Carts,/clearance/,category,Home,SECONDARY 4,cheap golf cart,Transactional,50,6
+Cheap & Clearance Golf Carts,/clearance/,category,Home,SECONDARY 5,golf cart auction,Commercial,170,9
+Off-Road & Recreational Buggies,/off-road-buggies/,category,Home,PRIMARY,off road buggy,"Informational, Commercial",880,11
+Off-Road & Recreational Buggies,/off-road-buggies/,category,Home,SECONDARY 1,off road buggies,Commercial,590,17
+Off-Road & Recreational Buggies,/off-road-buggies/,category,Home,SECONDARY 2,off road buggy for sale,Transactional,390,28
+Off-Road & Recreational Buggies,/off-road-buggies/,category,Home,SECONDARY 3,off road buggy australia,Commercial,210,4
+Off-Road & Recreational Buggies,/off-road-buggies/,category,Home,SECONDARY 4,off road buggy for sale australia,Transactional,140,0
+Off-Road & Recreational Buggies,/off-road-buggies/,category,Home,SECONDARY 5,used off road buggy,Commercial,140,9
+Dune Buggies,/off-road-buggies/dune-buggies/,sub-category,Off-Road & Recreational Buggies,PRIMARY,dune buggy,"Informational, Commercial",1900,15
+Dune Buggies,/off-road-buggies/dune-buggies/,sub-category,Off-Road & Recreational Buggies,SECONDARY 1,dune buggy for sale,Transactional,320,14
+Dune Buggies,/off-road-buggies/dune-buggies/,sub-category,Off-Road & Recreational Buggies,SECONDARY 2,beach dune buggy for sale,Transactional,260,23
+Dune Buggies,/off-road-buggies/dune-buggies/,sub-category,Off-Road & Recreational Buggies,SECONDARY 3,buy dune buggy nsw,Transactional,210,10
+Dune Buggies,/off-road-buggies/dune-buggies/,sub-category,Off-Road & Recreational Buggies,SECONDARY 4,dune buggy kits australia,Commercial,170,0
+Dune Buggies,/off-road-buggies/dune-buggies/,sub-category,Off-Road & Recreational Buggies,SECONDARY 5,dune buggy for sale australia,Transactional,90,13
+Go Karts,/off-road-buggies/go-karts/,sub-category,Off-Road & Recreational Buggies,PRIMARY,electric go kart,Commercial,2900,17
+Go Karts,/off-road-buggies/go-karts/,sub-category,Off-Road & Recreational Buggies,SECONDARY 1,go kart for sale,Transactional,1000,17
+Go Karts,/off-road-buggies/go-karts/,sub-category,Off-Road & Recreational Buggies,SECONDARY 2,off road go kart,Commercial,880,9
+Go Karts,/off-road-buggies/go-karts/,sub-category,Off-Road & Recreational Buggies,SECONDARY 3,petrol go kart,Commercial,320,6
+Go Karts,/off-road-buggies/go-karts/,sub-category,Off-Road & Recreational Buggies,SECONDARY 4,adult go kart,Commercial,260,14
+Go Karts,/off-road-buggies/go-karts/,sub-category,Off-Road & Recreational Buggies,SECONDARY 5,go kart price,Transactional,320,15
+Youth & Kids Buggies,/off-road-buggies/kids-buggies/,sub-category,Off-Road & Recreational Buggies,PRIMARY,kids go kart,Commercial,1300,16
+Youth & Kids Buggies,/off-road-buggies/kids-buggies/,sub-category,Off-Road & Recreational Buggies,SECONDARY 1,childrens electric go kart,Commercial,1000,11
+Youth & Kids Buggies,/off-road-buggies/kids-buggies/,sub-category,Off-Road & Recreational Buggies,SECONDARY 2,kids buggy,Commercial,720,8
+Youth & Kids Buggies,/off-road-buggies/kids-buggies/,sub-category,Off-Road & Recreational Buggies,SECONDARY 3,kids electric go kart,Commercial,320,6
+Youth & Kids Buggies,/off-road-buggies/kids-buggies/,sub-category,Off-Road & Recreational Buggies,SECONDARY 4,kids off road buggy,Commercial,260,2
+Youth & Kids Buggies,/off-road-buggies/kids-buggies/,sub-category,Off-Road & Recreational Buggies,SECONDARY 5,kids buggy petrol,Commercial,140,3
+Electric Off-Road Buggies & UTVs,/off-road-buggies/electric-off-road-utvs/,sub-category,Off-Road & Recreational Buggies,PRIMARY,electric utv,Commercial,390,9
+Electric Off-Road Buggies & UTVs,/off-road-buggies/electric-off-road-utvs/,sub-category,Off-Road & Recreational Buggies,SECONDARY 1,electric utv australia,Commercial,260,6
+Electric Off-Road Buggies & UTVs,/off-road-buggies/electric-off-road-utvs/,sub-category,Off-Road & Recreational Buggies,SECONDARY 2,electric utv for sale,Transactional,140,9
+Electric Off-Road Buggies & UTVs,/off-road-buggies/electric-off-road-utvs/,sub-category,Off-Road & Recreational Buggies,SECONDARY 3,electric off road buggy,Commercial,140,12
+Electric Off-Road Buggies & UTVs,/off-road-buggies/electric-off-road-utvs/,sub-category,Off-Road & Recreational Buggies,SECONDARY 4,electric buggy off road,"Informational, Commercial",110,10
+Electric Off-Road Buggies & UTVs,/off-road-buggies/electric-off-road-utvs/,sub-category,Off-Road & Recreational Buggies,SECONDARY 5,electric atv,"Informational, Commercial",480,16
+Side-by-Sides (SSV) & UTVs,/off-road-buggies/side-by-sides-utvs/,sub-category,Off-Road & Recreational Buggies,PRIMARY,utv for sale,Transactional,590,14
+Side-by-Sides (SSV) & UTVs,/off-road-buggies/side-by-sides-utvs/,sub-category,Off-Road & Recreational Buggies,SECONDARY 1,side by side buggy for sale,Transactional,210,8
+Side-by-Sides (SSV) & UTVs,/off-road-buggies/side-by-sides-utvs/,sub-category,Off-Road & Recreational Buggies,SECONDARY 2,utv side by sides for sale,Transactional,260,15
+Side-by-Sides (SSV) & UTVs,/off-road-buggies/side-by-sides-utvs/,sub-category,Off-Road & Recreational Buggies,SECONDARY 3,utv for sale australia,Transactional,140,17
+Side-by-Sides (SSV) & UTVs,/off-road-buggies/side-by-sides-utvs/,sub-category,Off-Road & Recreational Buggies,SECONDARY 4,used utv for sale,Transactional,140,12
+Side-by-Sides (SSV) & UTVs,/off-road-buggies/side-by-sides-utvs/,sub-category,Off-Road & Recreational Buggies,SECONDARY 5,utv side by side for sale,Transactional,110,17
+Mini Quads & Small ATVs,/off-road-buggies/mini-quads-atvs/,sub-category,Off-Road & Recreational Buggies,PRIMARY,50cc quad bike,Commercial,480,17
+Mini Quads & Small ATVs,/off-road-buggies/mini-quads-atvs/,sub-category,Off-Road & Recreational Buggies,SECONDARY 1,atv bike 50cc,Commercial,390,24
+Mini Quads & Small ATVs,/off-road-buggies/mini-quads-atvs/,sub-category,Off-Road & Recreational Buggies,SECONDARY 2,childrens petrol buggy,Commercial,320,3
+Mini Quads & Small ATVs,/off-road-buggies/mini-quads-atvs/,sub-category,Off-Road & Recreational Buggies,SECONDARY 3,doom buggy go kart,Commercial,110,11
+Mini Quads & Small ATVs,/off-road-buggies/mini-quads-atvs/,sub-category,Off-Road & Recreational Buggies,SECONDARY 4,kids dune buggy,Commercial,70,2
+Mini Quads & Small ATVs,/off-road-buggies/mini-quads-atvs/,sub-category,Off-Road & Recreational Buggies,SECONDARY 5,2 seater dune buggy,Commercial,110,3
+Parts & Accessories,/parts-accessories/,category,Home,PRIMARY,quad bike spare parts nsw,Commercial,140,6
+Parts & Accessories,/parts-accessories/,category,Home,SECONDARY 1,atv parts,Commercial,110,6
+Parts & Accessories,/parts-accessories/,category,Home,SECONDARY 2,quad bike parts,Commercial,110,7
+Parts & Accessories,/parts-accessories/,category,Home,SECONDARY 3,atv accessories,Commercial,110,8
+Golf Cart Accessories,/parts-accessories/golf-cart-accessories/,accessory-category,Parts & Accessories,PRIMARY,golf cart accessories,Commercial,390,12
+Golf Cart Accessories,/parts-accessories/golf-cart-accessories/,accessory-category,Parts & Accessories,SECONDARY 1,golf buggy accessories,Transactional,390,9
+Golf Cart Accessories,/parts-accessories/golf-cart-accessories/,accessory-category,Parts & Accessories,SECONDARY 2,golf cart accessories australia,Commercial,110,6
+Golf Cart Accessories,/parts-accessories/golf-cart-accessories/,accessory-category,Parts & Accessories,SECONDARY 3,golf buggy accessories australia,Commercial,110,11
+Golf Cart Accessories,/parts-accessories/golf-cart-accessories/,accessory-category,Parts & Accessories,SECONDARY 4,golf cart equipment,Commercial,320,25
+Golf Cart Accessories,/parts-accessories/golf-cart-accessories/,accessory-category,Parts & Accessories,SECONDARY 5,golf cart golf accessories,Commercial,50,2
+"Phone, Umbrella & Drink Holders",/parts-accessories/golf-cart-accessories/phone-umbrella-drink-holders/,accessory,Golf Cart Accessories,PRIMARY,golf cart phone holder,Commercial,260,9
+"Phone, Umbrella & Drink Holders",/parts-accessories/golf-cart-accessories/phone-umbrella-drink-holders/,accessory,Golf Cart Accessories,SECONDARY 1,golf buggy umbrella holder,"Informational, Commercial",210,9
+"Phone, Umbrella & Drink Holders",/parts-accessories/golf-cart-accessories/phone-umbrella-drink-holders/,accessory,Golf Cart Accessories,SECONDARY 2,golf cart umbrella holder,Commercial,170,10
+"Phone, Umbrella & Drink Holders",/parts-accessories/golf-cart-accessories/phone-umbrella-drink-holders/,accessory,Golf Cart Accessories,SECONDARY 3,golf buggy phone holder,"Informational, Transactional",170,10
+"Phone, Umbrella & Drink Holders",/parts-accessories/golf-cart-accessories/phone-umbrella-drink-holders/,accessory,Golf Cart Accessories,SECONDARY 4,phone holder for golf buggy,Commercial,140,6
+"Phone, Umbrella & Drink Holders",/parts-accessories/golf-cart-accessories/phone-umbrella-drink-holders/,accessory,Golf Cart Accessories,SECONDARY 5,golf cart iphone holder,Commercial,140,9
+"Golf Buggy Bags, Rain Covers & Eskies",/parts-accessories/golf-cart-accessories/bags-rain-covers-eskies/,accessory,Golf Cart Accessories,PRIMARY,golf buggy bag,"Informational, Commercial",390,16
+"Golf Buggy Bags, Rain Covers & Eskies",/parts-accessories/golf-cart-accessories/bags-rain-covers-eskies/,accessory,Golf Cart Accessories,SECONDARY 1,golf bag and buggy,Commercial,140,10
+"Golf Buggy Bags, Rain Covers & Eskies",/parts-accessories/golf-cart-accessories/bags-rain-covers-eskies/,accessory,Golf Cart Accessories,SECONDARY 2,golf buggy rain cover,Informational,90,8
+"Golf Buggy Bags, Rain Covers & Eskies",/parts-accessories/golf-cart-accessories/bags-rain-covers-eskies/,accessory,Golf Cart Accessories,SECONDARY 3,golf cart rain cover,Transactional,90,8
+"Golf Buggy Bags, Rain Covers & Eskies",/parts-accessories/golf-cart-accessories/bags-rain-covers-eskies/,accessory,Golf Cart Accessories,SECONDARY 4,golf cart cover for rain,Commercial,90,8
+"Golf Buggy Bags, Rain Covers & Eskies",/parts-accessories/golf-cart-accessories/bags-rain-covers-eskies/,accessory,Golf Cart Accessories,SECONDARY 5,golf bag buggy,"Informational, Commercial",140,12
+Seat Covers & Cabin Comfort,/parts-accessories/golf-cart-accessories/seat-covers-comfort/,accessory,Golf Cart Accessories,PRIMARY,golf cart ac,Commercial,320,17
+Seat Covers & Cabin Comfort,/parts-accessories/golf-cart-accessories/seat-covers-comfort/,accessory,Golf Cart Accessories,SECONDARY 1,golf buggy seat covers,"Informational, Commercial",170,3
+Seat Covers & Cabin Comfort,/parts-accessories/golf-cart-accessories/seat-covers-comfort/,accessory,Golf Cart Accessories,SECONDARY 2,golf cart seat covers,Commercial,170,20
+Seat Covers & Cabin Comfort,/parts-accessories/golf-cart-accessories/seat-covers-comfort/,accessory,Golf Cart Accessories,SECONDARY 3,golf cart seat protectors,Commercial,170,12
+Seat Covers & Cabin Comfort,/parts-accessories/golf-cart-accessories/seat-covers-comfort/,accessory,Golf Cart Accessories,SECONDARY 4,fan golf cart,Commercial,90,12
+Seat Covers & Cabin Comfort,/parts-accessories/golf-cart-accessories/seat-covers-comfort/,accessory,Golf Cart Accessories,SECONDARY 5,golf cart esky,Commercial,90,1
+Golf Buggy Parts,/parts-accessories/golf-buggy-parts/,accessory-category,Parts & Accessories,PRIMARY,golf buggy parts,Commercial,210,7
+Golf Buggy Parts,/parts-accessories/golf-buggy-parts/,accessory-category,Parts & Accessories,SECONDARY 1,golf cart parts australia,Commercial,110,21
+Golf Buggy Parts,/parts-accessories/golf-buggy-parts/,accessory-category,Parts & Accessories,SECONDARY 2,golf buggy parts australia,Commercial,90,5
+Golf Buggy Parts,/parts-accessories/golf-buggy-parts/,accessory-category,Parts & Accessories,SECONDARY 3,golf carts and parts,Commercial,210,24
+Golf Buggy Parts,/parts-accessories/golf-buggy-parts/,accessory-category,Parts & Accessories,SECONDARY 4,golf cart repair parts,Transactional,90,23
+Golf Buggy Parts,/parts-accessories/golf-buggy-parts/,accessory-category,Parts & Accessories,SECONDARY 5,club car golf buggy parts,Commercial,90,2
+Lithium Golf Cart Batteries,/parts-accessories/golf-buggy-parts/lithium-batteries/,accessory,Golf Buggy Parts,PRIMARY,golf cart batteries,"Informational, Commercial",880,12
+Lithium Golf Cart Batteries,/parts-accessories/golf-buggy-parts/lithium-batteries/,accessory,Golf Buggy Parts,SECONDARY 1,golf buggy batteries,Commercial,260,9
+Lithium Golf Cart Batteries,/parts-accessories/golf-buggy-parts/lithium-batteries/,accessory,Golf Buggy Parts,SECONDARY 2,golf buggy battery,Commercial,260,6
+Lithium Golf Cart Batteries,/parts-accessories/golf-buggy-parts/lithium-batteries/,accessory,Golf Buggy Parts,SECONDARY 3,lithium golf cart batteries,Commercial,320,3
+Lithium Golf Cart Batteries,/parts-accessories/golf-buggy-parts/lithium-batteries/,accessory,Golf Buggy Parts,SECONDARY 4,li ion golf cart battery,"Informational, Commercial",320,9
+Lithium Golf Cart Batteries,/parts-accessories/golf-buggy-parts/lithium-batteries/,accessory,Golf Buggy Parts,SECONDARY 5,golf cart battery,"Informational, Commercial",260,6
+Battery Chargers & Conversion Kits,/parts-accessories/golf-buggy-parts/chargers-conversion-kits/,accessory,Golf Buggy Parts,PRIMARY,golf cart battery charger,Commercial,110,3
+Battery Chargers & Conversion Kits,/parts-accessories/golf-buggy-parts/chargers-conversion-kits/,accessory,Golf Buggy Parts,SECONDARY 1,golf cart charger,Commercial,90,3
+Battery Chargers & Conversion Kits,/parts-accessories/golf-buggy-parts/chargers-conversion-kits/,accessory,Golf Buggy Parts,SECONDARY 2,golf buggy charger,Commercial,70,4
+Battery Chargers & Conversion Kits,/parts-accessories/golf-buggy-parts/chargers-conversion-kits/,accessory,Golf Buggy Parts,SECONDARY 3,golf cart batteries and charger,Commercial,90,2
+Battery Chargers & Conversion Kits,/parts-accessories/golf-buggy-parts/chargers-conversion-kits/,accessory,Golf Buggy Parts,SECONDARY 4,48v golf cart lithium battery conversion kit australia,Commercial,110,2
+Battery Chargers & Conversion Kits,/parts-accessories/golf-buggy-parts/chargers-conversion-kits/,accessory,Golf Buggy Parts,SECONDARY 5,golf buggy battery replacement,Commercial,90,2
+"Wheels, Rims & Tyres",/parts-accessories/golf-buggy-parts/wheels-rims-tyres/,accessory,Golf Buggy Parts,PRIMARY,golf buggy wheels,Informational,320,8
+"Wheels, Rims & Tyres",/parts-accessories/golf-buggy-parts/wheels-rims-tyres/,accessory,Golf Buggy Parts,SECONDARY 1,golf cart wheels,Commercial,260,5
+"Wheels, Rims & Tyres",/parts-accessories/golf-buggy-parts/wheels-rims-tyres/,accessory,Golf Buggy Parts,SECONDARY 2,golf cart rims,Commercial,260,5
+"Wheels, Rims & Tyres",/parts-accessories/golf-buggy-parts/wheels-rims-tyres/,accessory,Golf Buggy Parts,SECONDARY 3,golf cart wheels and rims,Commercial,260,4
+"Wheels, Rims & Tyres",/parts-accessories/golf-buggy-parts/wheels-rims-tyres/,accessory,Golf Buggy Parts,SECONDARY 4,golf cart tyres,Commercial,210,4
+"Wheels, Rims & Tyres",/parts-accessories/golf-buggy-parts/wheels-rims-tyres/,accessory,Golf Buggy Parts,SECONDARY 5,golf cart tires,Commercial,140,10
+Golf Cart Trailers,/parts-accessories/golf-buggy-parts/trailers/,accessory,Golf Buggy Parts,PRIMARY,golf cart trailer,Commercial,390,6
+Golf Cart Trailers,/parts-accessories/golf-buggy-parts/trailers/,accessory,Golf Buggy Parts,SECONDARY 1,golf cart and trailer,Commercial,320,5
+Golf Cart Trailers,/parts-accessories/golf-buggy-parts/trailers/,accessory,Golf Buggy Parts,SECONDARY 2,golf cart trailer for sale,Transactional,170,8
+Golf Cart Trailers,/parts-accessories/golf-buggy-parts/trailers/,accessory,Golf Buggy Parts,SECONDARY 3,golf cart trailers,Commercial,170,8
+Golf Cart Trailers,/parts-accessories/golf-buggy-parts/trailers/,accessory,Golf Buggy Parts,SECONDARY 4,golf cart trailers for sale,Transactional,170,3
+Golf Cart Trailers,/parts-accessories/golf-buggy-parts/trailers/,accessory,Golf Buggy Parts,SECONDARY 5,golf cart and trailer for sale,Transactional,110,4
+Golf Buggy Repairs & Servicing,/parts-accessories/repairs-servicing/,accessory-category,Parts & Accessories,PRIMARY,golf buggy repairs near me,Transactional,70,4
+Golf Buggy Repairs & Servicing,/parts-accessories/repairs-servicing/,accessory-category,Parts & Accessories,SECONDARY 1,golf cart repair near me,Transactional,90,5
+Golf Buggy Repairs & Servicing,/parts-accessories/repairs-servicing/,accessory-category,Parts & Accessories,SECONDARY 2,golf cart repairs near me,Transactional,90,5
+Golf Buggy Repairs & Servicing,/parts-accessories/repairs-servicing/,accessory-category,Parts & Accessories,SECONDARY 3,golf buggy service,Commercial,50,4
+Golf Buggy Repairs & Servicing,/parts-accessories/repairs-servicing/,accessory-category,Parts & Accessories,SECONDARY 4,golf buggy repairs,,50,0
+Off-Road Parts & Upgrades,/parts-accessories/off-road-parts/,accessory-category,Parts & Accessories,PRIMARY,quad bike spare parts for sale,Transactional,110,5
+Off-Road Parts & Upgrades,/parts-accessories/off-road-parts/,accessory-category,Parts & Accessories,SECONDARY 1,go kart kit,Commercial,320,16
+Off-Road Parts & Upgrades,/parts-accessories/off-road-parts/,accessory-category,Parts & Accessories,SECONDARY 2,quad atv accessory,Commercial,260,5
+Off-Road Parts & Upgrades,/parts-accessories/off-road-parts/,accessory-category,Parts & Accessories,SECONDARY 3,go kart replacement parts,Commercial,210,25
+Off-Road Parts & Upgrades,/parts-accessories/off-road-parts/,accessory-category,Parts & Accessories,SECONDARY 4,buggy spare parts,Commercial,140,6
+Off-Road Parts & Upgrades,/parts-accessories/off-road-parts/,accessory-category,Parts & Accessories,SECONDARY 5,atv parts australia,Commercial,140,6
+Go Kart Parts & Frames,/parts-accessories/off-road-parts/go-kart-parts-frames/,accessory,Off-Road Parts & Upgrades,PRIMARY,go kart frame,Commercial,720,5
+Go Kart Parts & Frames,/parts-accessories/off-road-parts/go-kart-parts-frames/,accessory,Off-Road Parts & Upgrades,SECONDARY 1,chassis for go kart,Commercial,590,10
+Go Kart Parts & Frames,/parts-accessories/off-road-parts/go-kart-parts-frames/,accessory,Off-Road Parts & Upgrades,SECONDARY 2,go kart engine,Commercial,390,8
+Go Kart Parts & Frames,/parts-accessories/off-road-parts/go-kart-parts-frames/,accessory,Off-Road Parts & Upgrades,SECONDARY 3,go kart parts,Commercial,320,5
+Go Kart Parts & Frames,/parts-accessories/off-road-parts/go-kart-parts-frames/,accessory,Off-Road Parts & Upgrades,SECONDARY 4,go kart wheels,Commercial,320,3
+Go Kart Parts & Frames,/parts-accessories/off-road-parts/go-kart-parts-frames/,accessory,Off-Road Parts & Upgrades,SECONDARY 5,go kart motor,Commercial,210,8
+Replacement Engines & Carburetors,/parts-accessories/off-road-parts/engines-carburetors/,accessory,Off-Road Parts & Upgrades,PRIMARY,go kart engine sale,Transactional,260,2
+Replacement Engines & Carburetors,/parts-accessories/off-road-parts/engines-carburetors/,accessory,Off-Road Parts & Upgrades,SECONDARY 1,golf buggy electric motor,Commercial,90,6
+Replacement Engines & Carburetors,/parts-accessories/off-road-parts/engines-carburetors/,accessory,Off-Road Parts & Upgrades,SECONDARY 2,motorised buggy,"Informational, Commercial",90,21
+Replacement Engines & Carburetors,/parts-accessories/off-road-parts/engines-carburetors/,accessory,Off-Road Parts & Upgrades,SECONDARY 3,motor buggy,Commercial,50,3
+Replacement Engines & Carburetors,/parts-accessories/off-road-parts/engines-carburetors/,accessory,Off-Road Parts & Upgrades,SECONDARY 4,motor golf buggy,"Informational, Commercial",50,10
+Replacement Engines & Carburetors,/parts-accessories/off-road-parts/engines-carburetors/,accessory,Off-Road Parts & Upgrades,SECONDARY 5,electric go kart engine,Commercial,210,20
+Off-Road Wheels & Tyres,/parts-accessories/off-road-parts/wheels-tyres/,accessory,Off-Road Parts & Upgrades,PRIMARY,4 wheel buggy,Commercial,140,8
+Off-Road Wheels & Tyres,/parts-accessories/off-road-parts/wheels-tyres/,accessory,Off-Road Parts & Upgrades,SECONDARY 1,wheels for buggy,Informational,110,7
+Off-Road Wheels & Tyres,/parts-accessories/off-road-parts/wheels-tyres/,accessory,Off-Road Parts & Upgrades,SECONDARY 2,wheel buggy,Commercial,110,10
+Off-Road Wheels & Tyres,/parts-accessories/off-road-parts/wheels-tyres/,accessory,Off-Road Parts & Upgrades,SECONDARY 3,buggy wheels,Commercial,70,6
+Off-Road Wheels & Tyres,/parts-accessories/off-road-parts/wheels-tyres/,accessory,Off-Road Parts & Upgrades,SECONDARY 4,buggy wheel,Commercial,50,6
+Off-Road Wheels & Tyres,/parts-accessories/off-road-parts/wheels-tyres/,accessory,Off-Road Parts & Upgrades,SECONDARY 5,big wheel buggy,Informational,70,9
+Buggy Trailers & Tie-Downs,/parts-accessories/off-road-parts/trailers-tie-downs/,accessory,Off-Road Parts & Upgrades,PRIMARY,buggy trailer,Commercial,170,5
+Buggy Trailers & Tie-Downs,/parts-accessories/off-road-parts/trailers-tie-downs/,accessory,Off-Road Parts & Upgrades,SECONDARY 1,golf buggy trailers,Commercial,140,4
+Buggy Trailers & Tie-Downs,/parts-accessories/off-road-parts/trailers-tie-downs/,accessory,Off-Road Parts & Upgrades,SECONDARY 2,golf buggy trailers for sale,Transactional,110,1
+Buggy Trailers & Tie-Downs,/parts-accessories/off-road-parts/trailers-tie-downs/,accessory,Off-Road Parts & Upgrades,SECONDARY 3,dune buggy trailer,Informational,140,16
+Buggy Trailers & Tie-Downs,/parts-accessories/off-road-parts/trailers-tie-downs/,accessory,Off-Road Parts & Upgrades,SECONDARY 4,dune buggy and trailer,Commercial,110,18
+Buggy Trailers & Tie-Downs,/parts-accessories/off-road-parts/trailers-tie-downs/,accessory,Off-Road Parts & Upgrades,SECONDARY 5,dune buggy trike with trailer,Commercial,90,12
+"Winches, Tow Hitches & Bull Bars (LOW DEMAND)",/parts-accessories/off-road-parts/winches-tow-bars/,accessory,Off-Road Parts & Upgrades,PRIMARY,buggy winch,,20,0
+"Winches, Tow Hitches & Bull Bars (LOW DEMAND)",/parts-accessories/off-road-parts/winches-tow-bars/,accessory,Off-Road Parts & Upgrades,SECONDARY 1,dune buggy tow bar,,10,0
+Brands (Hub),/brands/,category,Home,PRIMARY,australian owned golf buggy brand,,30,0
+Polaris Buggies,/brands/polaris/,brand,Brands (Hub),PRIMARY,polaris side by side,"Informational, Transactional",390,20
+Polaris Buggies,/brands/polaris/,brand,Brands (Hub),SECONDARY 1,polaris buggy,Commercial,2400,21
+Polaris Buggies,/brands/polaris/,brand,Brands (Hub),SECONDARY 2,polaris rzr,Commercial,590,22
+Polaris Buggies,/brands/polaris/,brand,Brands (Hub),SECONDARY 3,atv polaris quad,Commercial,480,25
+Polaris Buggies,/brands/polaris/,brand,Brands (Hub),SECONDARY 4,polaris side by side utv,Commercial,320,24
+Polaris Buggies,/brands/polaris/,brand,Brands (Hub),SECONDARY 5,polaris utv,"Informational, Transactional",320,28
+Mgi Buggies,/brands/mgi/,brand,Brands (Hub),PRIMARY,mgi golf buggy,"Informational, Transactional",1900,19
+Mgi Buggies,/brands/mgi/,brand,Brands (Hub),SECONDARY 1,mgi golf buggies melbourne,"Navigational, Commercial",1000,21
+Mgi Buggies,/brands/mgi/,brand,Brands (Hub),SECONDARY 2,mgi golf cart,"Informational, Transactional",720,21
+Mgi Buggies,/brands/mgi/,brand,Brands (Hub),SECONDARY 3,mgi golf buggy australia,"Informational, Transactional",390,17
+Mgi Buggies,/brands/mgi/,brand,Brands (Hub),SECONDARY 4,mgi buggy,"Informational, Transactional",260,18
+Mgi Buggies,/brands/mgi/,brand,Brands (Hub),SECONDARY 5,mgi electric golf buggy,"Informational, Transactional",170,17
+Can-Am Buggies,/brands/can-am/,brand,Brands (Hub),PRIMARY,can am dune buggy,"Informational, Transactional",590,16
+Can-Am Buggies,/brands/can-am/,brand,Brands (Hub),SECONDARY 1,can am buggy,"Informational, Transactional",1900,28
+Can-Am Buggies,/brands/can-am/,brand,Brands (Hub),SECONDARY 2,can am side by side,"Informational, Transactional",320,16
+Can-Am Buggies,/brands/can-am/,brand,Brands (Hub),SECONDARY 3,can am atv,"Informational, Transactional",260,19
+Can-Am Buggies,/brands/can-am/,brand,Brands (Hub),SECONDARY 4,canam buggy,"Informational, Transactional",260,22
+Can-Am Buggies,/brands/can-am/,brand,Brands (Hub),SECONDARY 5,can am kids buggy,Commercial,210,1
+Clicgear Buggies,/brands/clicgear/,brand,Brands (Hub),PRIMARY,clicgear buggy,"Informational, Commercial",720,17
+Clicgear Buggies,/brands/clicgear/,brand,Brands (Hub),SECONDARY 1,clicgear golf buggy,Commercial,320,18
+Clicgear Buggies,/brands/clicgear/,brand,Brands (Hub),SECONDARY 2,clicgear model 4.0 buggy,Commercial,110,9
+Clicgear Buggies,/brands/clicgear/,brand,Brands (Hub),SECONDARY 3,clicgear 4.0 buggy,Commercial,90,9
+Clicgear Buggies,/brands/clicgear/,brand,Brands (Hub),SECONDARY 4,clicgear 3.5 golf buggy,"Informational, Commercial",50,15
+Clicgear Buggies,/brands/clicgear/,brand,Brands (Hub),SECONDARY 5,golf buggy clicgear,Commercial,140,10
+Motocaddy Buggies,/brands/motocaddy/,brand,Brands (Hub),PRIMARY,motocaddy australia,"Navigational, Transactional",390,6
+Motocaddy Buggies,/brands/motocaddy/,brand,Brands (Hub),SECONDARY 1,motocaddy m7,Transactional,210,10
+Motocaddy Buggies,/brands/motocaddy/,brand,Brands (Hub),SECONDARY 2,motocaddy golf buggy,"Informational, Transactional",90,6
+Motocaddy Buggies,/brands/motocaddy/,brand,Brands (Hub),SECONDARY 3,motocaddy,Navigational,590,26
+Motocaddy Buggies,/brands/motocaddy/,brand,Brands (Hub),SECONDARY 4,motocaddy electric golf buggy,,40,0
+Yamaha Buggies,/brands/yamaha/,brand,Brands (Hub),PRIMARY,yamaha buggy,"Informational, Transactional",390,14
+Yamaha Buggies,/brands/yamaha/,brand,Brands (Hub),SECONDARY 1,yamaha golf carts for sale,Transactional,170,19
+Yamaha Buggies,/brands/yamaha/,brand,Brands (Hub),SECONDARY 2,yamaha golf buggy parts,Commercial,140,11
+Yamaha Buggies,/brands/yamaha/,brand,Brands (Hub),SECONDARY 3,yamaha golf cart accessories,Commercial,110,10
+Yamaha Buggies,/brands/yamaha/,brand,Brands (Hub),SECONDARY 4,yamaha golf buggy,Commercial,90,12
+Yamaha Buggies,/brands/yamaha/,brand,Brands (Hub),SECONDARY 5,yamaha golf cart,Informational,390,25
+Rovic Buggies,/brands/rovic/,brand,Brands (Hub),PRIMARY,rovic golf buggy,Commercial,320,9
+Rovic Buggies,/brands/rovic/,brand,Brands (Hub),SECONDARY 1,rovic rv1s swivel golf buggy,,30,0
+Rovic Buggies,/brands/rovic/,brand,Brands (Hub),SECONDARY 2,rovic buggy,,30,0
+Trailmaster Buggies,/brands/trailmaster/,brand,Brands (Hub),PRIMARY,trailmaster dune buggy,Transactional,210,6
+Trailmaster Buggies,/brands/trailmaster/,brand,Brands (Hub),SECONDARY 1,trailmaster buggy,Commercial,260,4
+Trailmaster Buggies,/brands/trailmaster/,brand,Brands (Hub),SECONDARY 2,trailmaster off road buggy,"Informational, Commercial",210,4
+Trailmaster Buggies,/brands/trailmaster/,brand,Brands (Hub),SECONDARY 3,trailmaster cheetah offroad buggies,Commercial,170,5
+Trailmaster Buggies,/brands/trailmaster/,brand,Brands (Hub),SECONDARY 4,trailmaster offroad buggy,Commercial,170,5
+Trailmaster Buggies,/brands/trailmaster/,brand,Brands (Hub),SECONDARY 5,trailmaster cheetah off road buggies,Commercial,170,6
+Triumph Buggies,/brands/triumph/,brand,Brands (Hub),PRIMARY,triumph golf buggy,"Informational, Commercial",260,12
+Triumph Buggies,/brands/triumph/,brand,Brands (Hub),SECONDARY 1,triumph golf cart,Commercial,170,10
+Triumph Buggies,/brands/triumph/,brand,Brands (Hub),SECONDARY 2,triumph outset 2 buggy,"Informational, Commercial",90,7
+Triumph Buggies,/brands/triumph/,brand,Brands (Hub),SECONDARY 3,triumph golf buggy accessories,Commercial,70,8
+Triumph Buggies,/brands/triumph/,brand,Brands (Hub),SECONDARY 4,triumph gtx plus buggy,Informational,70,10
+Triumph Buggies,/brands/triumph/,brand,Brands (Hub),SECONDARY 5,triumph voyager deluxe buggy,,50,0
+Club Car Buggies,/brands/club-car/,brand,Brands (Hub),PRIMARY,club car golf buggy,"Informational, Transactional",260,18
+Club Car Buggies,/brands/club-car/,brand,Brands (Hub),SECONDARY 1,club car golf buggy for sale,Transactional,110,9
+Club Car Buggies,/brands/club-car/,brand,Brands (Hub),SECONDARY 2,club car electric cart,Navigational,390,17
+Club Car Buggies,/brands/club-car/,brand,Brands (Hub),SECONDARY 3,club car golf carts for sale,Transactional,140,21
+Club Car Buggies,/brands/club-car/,brand,Brands (Hub),SECONDARY 4,club car golf cart parts,Commercial,110,0
+Club Car Buggies,/brands/club-car/,brand,Brands (Hub),SECONDARY 5,club car tempo,Informational,70,2
+Kubota Buggies,/brands/kubota/,brand,Brands (Hub),PRIMARY,kubota buggy,Transactional,260,19
+Kubota Buggies,/brands/kubota/,brand,Brands (Hub),SECONDARY 1,kubota buggy for sale,Transactional,70,11
+Kubota Buggies,/brands/kubota/,brand,Brands (Hub),SECONDARY 2,kubota buggy price,,30,0
+Kubota Buggies,/brands/kubota/,brand,Brands (Hub),SECONDARY 3,kubota buggies,,30,0
+Hammerhead Buggies,/brands/hammerhead/,brand,Brands (Hub),PRIMARY,hammerhead buggies,Commercial,210,7
+Hammerhead Buggies,/brands/hammerhead/,brand,Brands (Hub),SECONDARY 1,hammerhead dune buggy,Informational,140,8
+Hammerhead Buggies,/brands/hammerhead/,brand,Brands (Hub),SECONDARY 2,hammerhead buggy,Informational,70,8
+Hammerhead Buggies,/brands/hammerhead/,brand,Brands (Hub),SECONDARY 3,buggy hammerhead,Informational,70,5
+Ezgo Buggies,/brands/ezgo/,brand,Brands (Hub),PRIMARY,ezgo golf buggies,Commercial,140,6
+Ezgo Buggies,/brands/ezgo/,brand,Brands (Hub),SECONDARY 1,ezgo golf buggy,Commercial,210,18
+Ezgo Buggies,/brands/ezgo/,brand,Brands (Hub),SECONDARY 2,ezgo golf buggy parts,"Informational, Commercial",140,4
+Ezgo Buggies,/brands/ezgo/,brand,Brands (Hub),SECONDARY 3,ezgo golf buggy for sale,Transactional,70,16
+Ezgo Buggies,/brands/ezgo/,brand,Brands (Hub),SECONDARY 4,ezgo golf cart,Commercial,390,22
+Ezgo Buggies,/brands/ezgo/,brand,Brands (Hub),SECONDARY 5,ezgo golf cart parts,Commercial,170,17
+Caddytek Buggies,/brands/caddytek/,brand,Brands (Hub),PRIMARY,caddytek golf buggy,"Informational, Transactional",170,1
+Caddytek Buggies,/brands/caddytek/,brand,Brands (Hub),SECONDARY 1,caddytek caddylite ez fold pro 3 wheel golf buggy,,40,0
+John Deere Buggies,/brands/john-deere/,brand,Brands (Hub),PRIMARY,john deere buggy,Transactional,140,10
+John Deere Buggies,/brands/john-deere/,brand,Brands (Hub),SECONDARY 1,buggy john deere,"Informational, Transactional",140,21
+John Deere Buggies,/brands/john-deere/,brand,Brands (Hub),SECONDARY 2,john deere kids buggy,,30,0
+Cfmoto Buggies,/brands/cfmoto/,brand,Brands (Hub),PRIMARY,cf moto buggy for sale,Transactional,90,15
+Cfmoto Buggies,/brands/cfmoto/,brand,Brands (Hub),SECONDARY 1,cfmoto buggy,Commercial,140,16
+Cfmoto Buggies,/brands/cfmoto/,brand,Brands (Hub),SECONDARY 2,cf moto 1000cc buggy,"Informational, Transactional",70,21
+Cfmoto Buggies,/brands/cfmoto/,brand,Brands (Hub),SECONDARY 3,cfmoto electric buggy,,40,0
+Cfmoto Buggies,/brands/cfmoto/,brand,Brands (Hub),SECONDARY 4,cf moto buggy for sale used,,30,0
+Segway Buggies,/brands/segway/,brand,Brands (Hub),PRIMARY,segway buggy,"Informational, Transactional",140,16
+Segway Buggies,/brands/segway/,brand,Brands (Hub),SECONDARY 1,segway go kart,Transactional,720,14
+Bag Boy Buggies,/brands/bag-boy/,brand,Brands (Hub),PRIMARY,bag boy golf buggy,"Informational, Transactional",110,20
+Bag Boy Buggies,/brands/bag-boy/,brand,Brands (Hub),SECONDARY 1,bagboy golf buggy,"Informational, Transactional",110,21
+Bag Boy Buggies,/brands/bag-boy/,brand,Brands (Hub),SECONDARY 2,bag boy nitron buggy,Commercial,50,8
+Bag Boy Buggies,/brands/bag-boy/,brand,Brands (Hub),SECONDARY 3,bagboy nitron golf buggy,,30,0
+Big Max Buggies,/brands/big-max/,brand,Brands (Hub),PRIMARY,big max golf buggy,Commercial,110,23
+Big Max Buggies,/brands/big-max/,brand,Brands (Hub),SECONDARY 1,big max golf cart,Informational,90,17
+Big Max Buggies,/brands/big-max/,brand,Brands (Hub),SECONDARY 2,big max iq 360 buggy,,30,0
+Honda Buggies,/brands/honda/,brand,Brands (Hub),PRIMARY,honda 1000 buggy,"Informational, Transactional",90,5
+Honda Buggies,/brands/honda/,brand,Brands (Hub),SECONDARY 1,honda buggy for sale,Transactional,90,8
+Honda Buggies,/brands/honda/,brand,Brands (Hub),SECONDARY 2,honda odyssey buggy for sale,"Informational, Transactional",70,16
+Honda Buggies,/brands/honda/,brand,Brands (Hub),SECONDARY 3,honda odyssey dune buggy for sale,Transactional,50,20
+Honda Buggies,/brands/honda/,brand,Brands (Hub),SECONDARY 4,honda buggy,Informational,320,21
+Honda Buggies,/brands/honda/,brand,Brands (Hub),SECONDARY 5,honda odyssey buggy,Informational,260,20
+Powakaddy Buggies,/brands/powakaddy/,brand,Brands (Hub),PRIMARY,powakaddy golf buggy,"Navigational, Commercial",70,12
+Polaris 1000,/products/polaris-1000/,product,Polaris Buggies,PRIMARY,polaris 1000 buggy,"Informational, Transactional",50,19
+Polaris 1000,/products/polaris-1000/,product,Polaris Buggies,SECONDARY 1,polaris rzr 1000 turbo,"Informational, Commercial",140,7
+Polaris 1000,/products/polaris-1000/,product,Polaris Buggies,SECONDARY 2,polaris razor rzr 1000,Commercial,110,15
+Can-Am 4wd,/products/can-am-4wd/,product,Can-Am Buggies,PRIMARY,can am maverick utv ride on 4wd 24v,"Informational, Commercial",50,4
+Ecar Buggies,/brands/ecar/,brand,Brands (Hub),PRIMARY,ecar golf cart,Commercial,110,14
+Ecar Buggies,/brands/ecar/,brand,Brands (Hub),SECONDARY 1,e car golf buggy,"Navigational, Commercial",170,20
+Ecar Buggies,/brands/ecar/,brand,Brands (Hub),SECONDARY 2,buggy the car,"Informational, Commercial",140,27
+Ecar Buggies,/brands/ecar/,brand,Brands (Hub),SECONDARY 3,ecar golf buggy,"Navigational, Commercial",50,27
+Kawasaki Buggies,/brands/kawasaki/,brand,Brands (Hub),PRIMARY,kawasaki buggy 2 seater,,30,0
+Stinger Buggies,/brands/stinger/,brand,Brands (Hub),PRIMARY,stinger golf buggy,"Informational, Transactional",590,9
+Stinger Buggies,/brands/stinger/,brand,Brands (Hub),SECONDARY 1,stinger golf buggy review,Commercial,90,8
+Stinger Buggies,/brands/stinger/,brand,Brands (Hub),SECONDARY 2,stinger golf buggies,"Informational, Transactional",70,7
+Stinger Buggies,/brands/stinger/,brand,Brands (Hub),SECONDARY 3,stinger electric golf buggy,"Informational, Commercial",50,7
+Stinger Buggies,/brands/stinger/,brand,Brands (Hub),SECONDARY 4,stinger buggy,Navigational,50,16
+Tri Lite Buggies,/brands/tri-lite/,brand,Brands (Hub),PRIMARY,trilite golf buggy,Commercial,590,16
+Tri Lite Buggies,/brands/tri-lite/,brand,Brands (Hub),SECONDARY 1,tri lite golf buggy,"Informational, Commercial",480,22
+Tri Lite Buggies,/brands/tri-lite/,brand,Brands (Hub),SECONDARY 2,trilite golf cart,Commercial,390,17
+Tri Lite Buggies,/brands/tri-lite/,brand,Brands (Hub),SECONDARY 3,tri lite deluxe buggy,Commercial,170,18
+Tri Lite Buggies,/brands/tri-lite/,brand,Brands (Hub),SECONDARY 4,tri lite deluxe buggy black,"Informational, Commercial",90,20
+Tri Lite Buggies,/brands/tri-lite/,brand,Brands (Hub),SECONDARY 5,trilite buggy,Commercial,70,13
+Smoothy Buggies,/brands/smoothy/,brand,Brands (Hub),PRIMARY,golf buggy smoothy,"Informational, Commercial",170,8
+Smoothy Buggies,/brands/smoothy/,brand,Brands (Hub),SECONDARY 1,smoothy golf buggy,Informational,210,10
+Thomson Buggies,/brands/thomson/,brand,Brands (Hub),PRIMARY,thomson electric golf buggy,Commercial,110,19
+Thomson Buggies,/brands/thomson/,brand,Brands (Hub),SECONDARY 1,thomson golf buggy spare parts online,"Informational, Commercial",70,6
+Thomson Buggies,/brands/thomson/,brand,Brands (Hub),SECONDARY 2,thomson golf buggy,"Informational, Commercial",50,18
+Thomson Buggies,/brands/thomson/,brand,Brands (Hub),SECONDARY 3,thomson e5000 electric golf buggy,,50,0
+Parmaker Buggies,/brands/parmaker/,brand,Brands (Hub),PRIMARY,parmaker golf buggy,"Navigational, Transactional",260,12
+Parmaker Buggies,/brands/parmaker/,brand,Brands (Hub),SECONDARY 1,parmaker golf buggies,"Navigational, Transactional",210,6

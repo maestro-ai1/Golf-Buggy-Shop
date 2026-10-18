@@ -118,5 +118,10 @@
   "file": "/brands/parmaker/logo.webp",
   "w": 373,
   "h": 160
+ },
+ "tri-lite": {
+  "file": "/brands/tri-lite/logo.webp",
+  "w": 260,
+  "h": 160
  }
 }

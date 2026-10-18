@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, Outfit } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 import Shell from '@/components/Shell';
 import AnnouncementBar from '@/components/AnnouncementBar';
@@ -9,8 +9,9 @@ import { buildNav } from '@/lib/nav';
 import { orgSchema, siteSchema } from '@/lib/seo';
 import { SITE } from '@/config/site';
 
-const outfit = Outfit({ subsets: ['latin'], weight: ['500', '600', '700', '800', '900'], variable: '--font-outfit', display: 'swap' });
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
+// Self-hosted variable fonts: no network call at build time (next/font/google failed on Vercel when Google Fonts was unreachable).
+const outfit = localFont({ src: './fonts/outfit-latin-wght-normal.woff2', weight: '100 900', variable: '--font-outfit', display: 'swap' });
+const inter = localFont({ src: './fonts/inter-latin-wght-normal.woff2', weight: '100 900', variable: '--font-inter', display: 'swap' });
 
 export const viewport: Viewport = { width: 'device-width', initialScale: 1, themeColor: '#0F3D2E' };
 export const metadata: Metadata = {

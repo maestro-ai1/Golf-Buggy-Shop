@@ -2458,5 +2458,15 @@
   "file": "products/ecar-s-series-2-seat-resort-golf-cart/3",
   "source": "https://cartsnparts.com.au/wp-content/uploads/2024/12/S-Series-2.jpg",
   "product": "ECAR S-Series 2 Seat Resort Golf Cart"
+ },
+ {
+  "file": "products/kubota-rtv520-side-by-side/1",
+  "source": "https://media.kubota.io/uploads/RTV520-thumbnail2-768x432.jpg",
+  "product": "Kubota RTV520 Side by Side"
+ },
+ {
+  "file": "products/kubota-rtv-xg850-sidekick-side-by-side/1",
+  "source": "https://media.kubota.io/uploads/RTV-XG850-Thumbnail1-768x432.jpg",
+  "product": "Kubota RTV-XG850 Sidekick Side by Side"
  }
 ]

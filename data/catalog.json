@@ -14025,6 +14025,196 @@
   "inStock": true
  },
  {
+  "slug": "kubota-rtv-xg850-sidekick-side-by-side",
+  "sku": "BFS-71891",
+  "name": "Kubota RTV-XG850 Sidekick Side by Side",
+  "brand": "Kubota",
+  "brandPage": "kubota",
+  "group": "ssv",
+  "groupLabel": "side by side buggy",
+  "categories": [
+   "/off-road-buggies/side-by-sides-utvs/",
+   "/off-road-buggies/"
+  ],
+  "price": 28410.2,
+  "rrp": 28990,
+  "savingPct": 2,
+  "priceSource": {
+   "site": "farmmachinerysales.com.au",
+   "url": "https://www.farmmachinerysales.com.au/items/details/kubota-rtv-xg850/OAG-AD-26229909/",
+   "price": 28990,
+   "checked": "2026-10-18"
+  },
+  "shortDescription": "Kubota RTV-XG850 Sidekick Side by Side: a side-by-side style buggy for work and play.",
+  "description": [
+   "## About the Kubota RTV-XG850 Sidekick Side by Side",
+   "Kubota RTV-XG850 Sidekick Side by Side: a side-by-side style buggy for work and play. The Kubota RTV-XG850 Sidekick Side by Side is a two-seat style off-road vehicle for property work, trail use and recreation. Engine: 851 cc. Review the specifications and assembly notes before you buy.",
+   "Use off-road vehicles where permitted and wear appropriate safety gear.",
+   "The Kubota RTV-XG850 Sidekick Side by Side is part of our side by side buggy range from Kubota. It is priced at $28,410.2 including GST, and our team can confirm stock, freight and fitment before you pay.",
+   "## Key features and specifications",
+   "- Off-road side-by-side layout",
+   "- Work and recreation",
+   "- Check assembly and delivery notes",
+   "- **Weight:** 799 kg",
+   "- **Top speed:** 64 km/h",
+   "- **Engine:** 851 cc",
+   "## Who the Kubota RTV-XG850 Sidekick Side by Side suits",
+   "The Kubota RTV-XG850 Sidekick Side by Side suits buyers who want a capable side by side buggy for farm tracks, trails, sand or recreation. Match the engine size, seating and drivetrain to your terrain and your riders, and plan the safety gear and training that go with it. It is built for private land and designated off-road areas rather than public roads.",
+   "## Buying advice",
+   "A side by side buggy is a big purchase, so compare models carefully. Look at the engine, transmission, seating and payload, and ask how the vehicle is delivered. For practical safety advice on off-road vehicles, see [Safe Work Australia](https://www.safeworkaustralia.gov.au/safety-topic/hazards/quad-bikes). Supervise young riders and keep to private land and permitted areas.",
+   "## Care and maintenance",
+   "Regular maintenance keeps the Kubota RTV-XG850 Sidekick Side by Side safe and reliable. Check bolts, brakes and the drive system, keep the air filter clean and lubricate cables and joints. Store it under cover and charge or refuel it as the manual advises.",
+   "## Delivery, payment and support",
+   "We deliver Australia-wide. Delivery is free over $1,000 to major metro and depot corridors, and a flat $95 applies below that. The minimum order is $250, and all prices include 10% GST. Pay by bank transfer (Osko or EFT) or PayID, or choose Bitcoin or USDT and receive an extra 10% off, applied automatically at checkout. After you place your order, our team confirms stock and freight and emails your payment details.",
+   "## Why buy from Buggies For Sale",
+   "We are an Australian retailer based in Sydney, serving golfers, property owners and families since 2023. If you are unsure about size, fitment, seating or delivery, tell us what you need and we will recommend the right option. You can reach us on 0420 128 746, on WhatsApp or at sales@buggiesforsale.com.au, and we reply as quickly as we can.",
+   "## Related ranges and guides",
+   "Keep exploring with [Side-by-Sides (SSV) & UTVs](/off-road-buggies/side-by-sides-utvs/), the [Kubota range](/brands/kubota/), our guide to [the off-road buggy buyer guide](/blog/offroad-buggy/), our guide to [ATV buggies compared](/blog/atv-buggy/). You can also browse all our [products](/shop/) or [contact us](/contact/) for help choosing."
+  ],
+  "highlights": [
+   "Off-road side-by-side layout",
+   "Work and recreation",
+   "Check assembly and delivery notes"
+  ],
+  "tags": [
+   "side by side buggy",
+   "kubota side by side buggy",
+   "utv for sale",
+   "side by side buggy for sale",
+   "buy side by side buggy australia"
+  ],
+  "specs": {
+   "Brand": "Kubota",
+   "Weight": "799 kg",
+   "Top speed": "64 km/h",
+   "Engine": "851 cc"
+  },
+  "faqs": [
+   [
+    "How much is the Kubota RTV-XG850 Sidekick Side by Side?",
+    "The Kubota RTV-XG850 Sidekick Side by Side is $28,410.2 AUD including GST. Prices include GST and are updated regularly."
+   ],
+   [
+    "Do you deliver the Kubota RTV-XG850 Sidekick Side by Side Australia-wide?",
+    "Yes. Orders over $1,000 ship free to major capital city metro and depot corridors, and a flat $95 freight fee applies below that. We will confirm regional freight before dispatch."
+   ],
+   [
+    "What warranty does it have?",
+    "The manufacturer warranty applies. Warranty details and conditions are provided with your order confirmation, and our team can answer questions before you buy."
+   ],
+   [
+    "Can I check suitability before I buy?",
+    "Yes. Call 0420 128 746 or message us on WhatsApp with your use case and we will confirm that this is the right model."
+   ],
+   [
+    "What payment options do you accept?",
+    "We accept bank transfer (Osko or EFT), PayID, and Bitcoin or USDT with an extra 10% crypto discount applied at checkout. The minimum order is $250."
+   ]
+  ],
+  "imagesRaw": [
+   "https://media.kubota.io/uploads/RTV-XG850-Thumbnail1-768x432.jpg"
+  ],
+  "images": [
+   "/products/kubota-rtv-xg850-sidekick-side-by-side/1"
+  ],
+  "inStock": true
+ },
+ {
+  "slug": "kubota-rtv520-side-by-side",
+  "sku": "BFS-46483",
+  "name": "Kubota RTV520 Side by Side",
+  "brand": "Kubota",
+  "brandPage": "kubota",
+  "group": "ssv",
+  "groupLabel": "side by side buggy",
+  "categories": [
+   "/off-road-buggies/side-by-sides-utvs/",
+   "/off-road-buggies/"
+  ],
+  "price": 19105.1,
+  "rrp": 19495,
+  "savingPct": 2,
+  "priceSource": {
+   "site": "farmmachinerysales.com.au",
+   "url": "https://www.farmmachinerysales.com.au/items/details/2025-kubota-rtv-520-h-au-side-by-side-atv-special-offer/OAG-AD-21287686/",
+   "price": 19495,
+   "checked": "2026-10-18"
+  },
+  "shortDescription": "Kubota RTV520 Side by Side: a side-by-side style buggy for work and play.",
+  "description": [
+   "## About the Kubota RTV520 Side by Side",
+   "Kubota RTV520 Side by Side: a side-by-side style buggy for work and play. The Kubota RTV520 Side by Side is a two-seat style off-road vehicle for property work, trail use and recreation. Engine: 514 cc. Review the specifications and assembly notes before you buy.",
+   "Use off-road vehicles where permitted and wear appropriate safety gear.",
+   "The Kubota RTV520 Side by Side is part of our side by side buggy range from Kubota. It is priced at $19,105.1 including GST, and our team can confirm stock, freight and fitment before you pay.",
+   "## Key features and specifications",
+   "- Off-road side-by-side layout",
+   "- Work and recreation",
+   "- Check assembly and delivery notes",
+   "- **Weight:** 625 kg",
+   "- **Top speed:** 40 km/h",
+   "- **Engine:** 514 cc",
+   "## Who the Kubota RTV520 Side by Side suits",
+   "If you are shopping for a side by side buggy, the Kubota RTV520 Side by Side deserves a place on your short list. Look at how many people it carries, how it handles your ground and how you will transport and store it. Ask about assembly and parts support before you order.",
+   "## Buying advice",
+   "Think about where you will drive and who will be driving when you choose a side by side buggy. Match the machine to the ground and to the rider's size and experience. Read safety information from [Safe Work Australia](https://www.safeworkaustralia.gov.au/safety-topic/hazards/quad-bikes) and make training and protective gear part of your plan.",
+   "## Care and maintenance",
+   "Check the tyres, brakes, steering and fluids before every ride, and wash off mud, sand and salt afterwards. Clean or replace the air filter often in dusty conditions, check belts and chains and follow the service schedule. Store the vehicle in a dry place and use fuel stabiliser if it will sit for months.",
+   "## Delivery, payment and support",
+   "Your order ships from our depots and partners Australia-wide, with free delivery over $1,000 and a flat $95 below that. The minimum order is $250, and prices include 10% GST. Payment options are bank transfer (Osko or EFT), PayID, or Bitcoin and USDT with an extra 10% discount that applies automatically at checkout. Our team confirms stock and freight before payment details are sent.",
+   "## Why buy from Buggies For Sale",
+   "Buying online should feel straightforward. Our Sydney team (ABN 53 635 284 267) can check fitment, explain specifications and quote freight to your postcode. Contact us on 0420 128 746 or sales@buggiesforsale.com.au, or send a WhatsApp message, and we will help you decide whether this is the right product for your needs.",
+   "## Related ranges and guides",
+   "Keep exploring with [Side-by-Sides (SSV) & UTVs](/off-road-buggies/side-by-sides-utvs/), the [Kubota range](/brands/kubota/), our guide to [the off-road buggy buyer guide](/blog/offroad-buggy/), our guide to [ATV buggies compared](/blog/atv-buggy/). You can also browse all our [products](/shop/) or [contact us](/contact/) for help choosing."
+  ],
+  "highlights": [
+   "Off-road side-by-side layout",
+   "Work and recreation",
+   "Check assembly and delivery notes"
+  ],
+  "tags": [
+   "side by side buggy",
+   "kubota side by side buggy",
+   "utv for sale",
+   "side by side buggy for sale",
+   "buy side by side buggy australia"
+  ],
+  "specs": {
+   "Brand": "Kubota",
+   "Weight": "625 kg",
+   "Top speed": "40 km/h",
+   "Engine": "514 cc"
+  },
+  "faqs": [
+   [
+    "How much is the Kubota RTV520 Side by Side?",
+    "The Kubota RTV520 Side by Side is $19,105.1 AUD including GST. Prices include GST and are updated regularly."
+   ],
+   [
+    "Do you deliver the Kubota RTV520 Side by Side Australia-wide?",
+    "Yes. Orders over $1,000 ship free to major capital city metro and depot corridors, and a flat $95 freight fee applies below that. We will confirm regional freight before dispatch."
+   ],
+   [
+    "What warranty does it have?",
+    "The manufacturer warranty applies. Warranty details and conditions are provided with your order confirmation, and our team can answer questions before you buy."
+   ],
+   [
+    "Can I check suitability before I buy?",
+    "Yes. Call 0420 128 746 or message us on WhatsApp with your use case and we will confirm that this is the right model."
+   ],
+   [
+    "What payment options do you accept?",
+    "We accept bank transfer (Osko or EFT), PayID, and Bitcoin or USDT with an extra 10% crypto discount applied at checkout. The minimum order is $250."
+   ]
+  ],
+  "imagesRaw": [
+   "https://media.kubota.io/uploads/RTV520-thumbnail2-768x432.jpg"
+  ],
+  "images": [
+   "/products/kubota-rtv520-side-by-side/1"
+  ],
+  "inStock": true
+ },
+ {
   "slug": "can-am-maverick-24v-kids-ride-on-buggy",
   "sku": "BFS-46996",
   "name": "Can-Am Maverick 24V Kids Ride-On Buggy",

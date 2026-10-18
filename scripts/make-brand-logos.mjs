@@ -27,6 +27,7 @@ const LOGOS = {
   'big-max': 'https://uk.bigmaxgolf.com/cdn/shop/files/BigMax_Logo_black_frame.png?v=1690888381&width=1000',
   ecar: 'https://ecargolfparts.com.au/cdn/shop/files/ECAR_Tagline_GreenBlack_155x@2x.png?v=1700453777',
   stinger:'https://www.stingergolf.com.au/cdn/shop/files/stinger-logo.png?v=1702015474&width=392',
+  parmaker: 'https://www.parmaker.com/wp-content/uploads/2026/05/parmaker-logo2.webp',
 };
 const only = process.argv.slice(2);
 const mapFile = path.join(ROOT, 'data/brand-logos.json');

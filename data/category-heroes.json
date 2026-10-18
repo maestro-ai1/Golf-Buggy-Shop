@@ -50,5 +50,185 @@
  "/off-road-buggies/mini-quads-atvs/": {
   "base": "/images/hero/off-road-mini-quads",
   "alt": "Child riding a mini quad bike on a dirt trail"
+ },
+ "/brands/bag-boy/": {
+  "base": "/images/hero/brand-bag-boy",
+  "alt": "Golfers walking a fairway with Bag Boy push buggies"
+ },
+ "/brands/clicgear/": {
+  "base": "/images/hero/brand-clicgear",
+  "alt": "Golfer walking the course with a Clicgear push buggy"
+ },
+ "/brands/club-car/": {
+  "base": "/images/hero/brand-club-car",
+  "alt": "Club Car golf cart parked in the sun outside a home"
+ },
+ "/brands/motocaddy/": {
+  "base": "/images/hero/brand-motocaddy",
+  "alt": "Motocaddy electric golf trolley carrying a bag on the course"
+ },
+ "/brands/parmaker/": {
+  "base": "/images/hero/brand-parmaker",
+  "alt": "Parmaker electric golf buggy on a green fairway"
+ },
+ "/brands/yamaha/": {
+  "base": "/images/hero/brand-yamaha",
+  "alt": "Yamaha golf car on the fairway with two golfers"
+ },
+ "/brands/stinger/": {
+  "base": "/images/hero/brand-stinger",
+  "alt": "Stinger push buggy standing on a golf course"
+ },
+ "/brands/can-am/": {
+  "base": "/images/hero/brand-can-am",
+  "alt": "Yellow Can-Am side-by-side in the desert"
+ },
+ "/brands/trailmaster/": {
+  "base": "/images/hero/brand-trailmaster",
+  "alt": "Trailmaster Challenger 200 buggy parked on grass"
+ },
+ "/brands/mgi/": {
+  "base": "/images/hero/golf-buggies-course",
+  "alt": "MGI electric golf buggy carrying a golf bag on the fairway"
+ },
+ "/brands/ecar/": {
+  "base": "/images/hero/golf-carts-fairway",
+  "alt": "ECAR lithium golf cart on a green fairway"
+ },
+ "/brands/polaris/": {
+  "base": "/images/hero/brand-polaris",
+  "alt": "Red Polaris RZR side-by-side driving up a sand dune"
+ },
+ "/brands/kubota/": {
+  "base": "/images/hero/brand-kubota",
+  "alt": "Orange Kubota RTV520 utility vehicle working on a dairy farm"
+ },
+ "/brands/powakaddy/": {
+  "base": "/images/hero/golf-buggies-push-pull",
+  "alt": "Electric golf trolley carrying a golf bag on the green"
+ },
+ "/brands/rovic/": {
+  "base": "/images/hero/golf-buggies-push-pull",
+  "alt": "Electric golf trolley carrying a golf bag on the green"
+ },
+ "/brands/caddytek/": {
+  "base": "/images/hero/golf-buggies-push-pull",
+  "alt": "Electric golf trolley carrying a golf bag on the green"
+ },
+ "/brands/big-max/": {
+  "base": "/images/hero/golf-buggies-push-pull",
+  "alt": "Electric golf trolley carrying a golf bag on the green"
+ },
+ "/brands/triumph/": {
+  "base": "/images/hero/golf-buggies-push-pull",
+  "alt": "Electric golf trolley carrying a golf bag on the green"
+ },
+ "/brands/tri-lite/": {
+  "base": "/images/hero/golf-buggies-push-pull",
+  "alt": "Electric golf trolley carrying a golf bag on the green"
+ },
+ "/brands/smoothy/": {
+  "base": "/images/hero/golf-buggies-push-pull",
+  "alt": "Electric golf trolley carrying a golf bag on the green"
+ },
+ "/brands/thomson/": {
+  "base": "/images/hero/golf-buggies-push-pull",
+  "alt": "Electric golf trolley carrying a golf bag on the green"
+ },
+ "/brands/ezgo/": {
+  "base": "/images/hero/golf-carts-electric",
+  "alt": "White electric golf cart on a golf course fairway"
+ },
+ "/brands/kawasaki/": {
+  "base": "/images/hero/off-road-side-by-sides",
+  "alt": "Orange side by side UTV"
+ },
+ "/brands/cfmoto/": {
+  "base": "/images/hero/off-road-side-by-sides",
+  "alt": "Orange side by side UTV"
+ },
+ "/brands/john-deere/": {
+  "base": "/images/hero/off-road-side-by-sides",
+  "alt": "Orange side by side UTV"
+ },
+ "/brands/honda/": {
+  "base": "/images/hero/off-road-side-by-sides",
+  "alt": "Orange side by side UTV"
+ },
+ "/brands/hammerhead/": {
+  "base": "/images/hero/off-road-dune-buggies",
+  "alt": "Dune buggies driving across sand"
+ },
+ "/brands/segway/": {
+  "base": "/images/hero/off-road-electric-utvs",
+  "alt": "Electric off-road UTV side by side"
+ },
+ "/parts-accessories/": {
+  "base": "/images/hero/off-road-mini-quads",
+  "alt": "Child riding a mini quad bike on a dirt trail"
+ },
+ "/parts-accessories/golf-cart-accessories/": {
+  "base": "/images/hero/golf-carts-electric",
+  "alt": "White electric golf cart on a golf course fairway"
+ },
+ "/parts-accessories/golf-cart-accessories/phone-umbrella-drink-holders/": {
+  "base": "/images/hero/golf-carts-electric",
+  "alt": "White electric golf cart on a golf course fairway"
+ },
+ "/parts-accessories/golf-cart-accessories/bags-rain-covers-eskies/": {
+  "base": "/images/hero/golf-carts-electric",
+  "alt": "White electric golf cart on a golf course fairway"
+ },
+ "/parts-accessories/golf-cart-accessories/seat-covers-comfort/": {
+  "base": "/images/hero/golf-carts-electric",
+  "alt": "White electric golf cart on a golf course fairway"
+ },
+ "/parts-accessories/golf-buggy-parts/": {
+  "base": "/images/hero/golf-buggies-push-pull",
+  "alt": "Electric golf trolley carrying a golf bag on the green"
+ },
+ "/parts-accessories/golf-buggy-parts/lithium-batteries/": {
+  "base": "/images/hero/golf-buggies-push-pull",
+  "alt": "Electric golf trolley carrying a golf bag on the green"
+ },
+ "/parts-accessories/golf-buggy-parts/chargers-conversion-kits/": {
+  "base": "/images/hero/golf-buggies-push-pull",
+  "alt": "Electric golf trolley carrying a golf bag on the green"
+ },
+ "/parts-accessories/golf-buggy-parts/wheels-rims-tyres/": {
+  "base": "/images/hero/golf-buggies-push-pull",
+  "alt": "Electric golf trolley carrying a golf bag on the green"
+ },
+ "/parts-accessories/golf-buggy-parts/trailers/": {
+  "base": "/images/hero/golf-buggies-push-pull",
+  "alt": "Electric golf trolley carrying a golf bag on the green"
+ },
+ "/parts-accessories/repairs-servicing/": {
+  "base": "/images/hero/golf-carts-used",
+  "alt": "Used golf carts parked in a row"
+ },
+ "/parts-accessories/off-road-parts/": {
+  "base": "/images/hero/off-road-go-karts",
+  "alt": "Off road go kart kicking up dirt on a trail"
+ },
+ "/parts-accessories/off-road-parts/go-kart-parts-frames/": {
+  "base": "/images/hero/off-road-go-karts",
+  "alt": "Off road go kart kicking up dirt on a trail"
+ },
+ "/parts-accessories/off-road-parts/engines-carburetors/": {
+  "base": "/images/hero/off-road-go-karts",
+  "alt": "Off road go kart kicking up dirt on a trail"
+ },
+ "/parts-accessories/off-road-parts/wheels-tyres/": {
+  "base": "/images/hero/off-road-go-karts",
+  "alt": "Off road go kart kicking up dirt on a trail"
+ },
+ "/parts-accessories/off-road-parts/trailers-tie-downs/": {
+  "base": "/images/hero/off-road-go-karts",
+  "alt": "Off road go kart kicking up dirt on a trail"
+ },
+ "/parts-accessories/off-road-parts/winches-tow-bars/": {
+  "base": "/images/hero/off-road-go-karts",
+  "alt": "Off road go kart kicking up dirt on a trail"
  }
 }

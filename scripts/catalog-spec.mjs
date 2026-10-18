@@ -162,6 +162,8 @@ export const SPEC = [
   ['ssv', 'Kawasaki', 'kawasaki', 'Kawasaki Teryx4 H2 Side by Side', [O + 'side-by-sides-utvs/', O + ''], [['web', /^Kawasaki Teryx4 H2/]]],
   ['ssv', 'Yamaha', 'yamaha', 'Yamaha Viking SE 3 Seat Side by Side', [O + 'side-by-sides-utvs/', O + ''], [['web', /^Yamaha Viking SE/]]],
   ['ssv', 'Honda', 'honda', 'Honda Pioneer 1000-6 Side by Side', [O + 'side-by-sides-utvs/', O + ''], [['web', /^Honda Pioneer 1000-6/]]],
+  ['ssv', 'Kubota', 'kubota', 'Kubota RTV-XG850 Sidekick Side by Side', [O + 'side-by-sides-utvs/', O + ''], [['web', /^Kubota RTV-XG850 Sidekick/]]],
+  ['ssv', 'Kubota', 'kubota', 'Kubota RTV520 Side by Side', [O + 'side-by-sides-utvs/', O + ''], [['web', /^Kubota RTV520/]]],
   ['kids', 'Can-Am', 'can-am', 'Can-Am Maverick 24V Kids Ride-On Buggy', [O + 'kids-buggies/', O + 'electric-off-road-utvs/', O + ''], [['web', /^Can-Am Maverick 24V Kids/]]],
   ['kids', 'John Deere', 'john-deere', 'John Deere 12V Gator XUV Kids Ride-On', [O + 'kids-buggies/', O + ''], [['web', /^John Deere 12V Gator/]]],
   ['kids', 'Little Riders', '', 'Kids 24V Electric Golf Cart Ride-On with Canopy', [C + 'mini-junior/', O + 'kids-buggies/'], [['web', /^Kids 24V Electric Golf Cart/]]],

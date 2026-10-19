@@ -1,0 +1,45 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Buggies For Sale Australia",
+    "documentationUrl": "https://buggiesforsale.com.au/llms.txt"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:buggiesforsale.com.au:mcp:store",
+      "displayName": "Buggies For Sale MCP server",
+      "description": "Search golf buggies, golf carts, off-road buggies and parts, and get product details and prices in AUD.",
+      "type": "application/mcp-server-card+json",
+      "url": "https://buggiesforsale.com.au/.well-known/mcp/server-card.json",
+      "representativeQueries": [
+        "electric golf buggy under $2000 Australia",
+        "lithium golf cart battery for Club Car",
+        "4 seater golf cart for sale",
+        "kids off-road buggy"
+      ]
+    },
+    {
+      "identifier": "urn:air:buggiesforsale.com.au:api:catalog",
+      "displayName": "Buggies For Sale API catalog",
+      "description": "Public JSON endpoints for products and categories.",
+      "type": "application/linkset+json",
+      "url": "https://buggiesforsale.com.au/.well-known/api-catalog",
+      "representativeQueries": [
+        "list golf carts with prices",
+        "product categories for buggies"
+      ]
+    },
+    {
+      "identifier": "urn:air:buggiesforsale.com.au:docs:llms-full",
+      "displayName": "Full Markdown documentation",
+      "description": "Every product, price, FAQ and buying guide in one Markdown file.",
+      "type": "text/markdown",
+      "url": "https://buggiesforsale.com.au/llms-full.txt",
+      "representativeQueries": [
+        "how much does a golf cart cost in Australia",
+        "MGI ZIP X3 price",
+        "delivery cost for golf buggies"
+      ]
+    }
+  ]
+}

@@ -19,6 +19,7 @@ const requiredFiles = [
   'public/.well-known/acp.json',
   'public/.well-known/ucp',
   'public/.well-known/ai-catalog.json',
+  'public/.well-known/ard.json',
   'public/.well-known/poppy.json',
   'public/js/webmcp.js',
 ];

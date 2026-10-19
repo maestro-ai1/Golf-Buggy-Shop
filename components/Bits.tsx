@@ -54,7 +54,7 @@ export function TrustpilotBlock() {
               <div className="flex items-center gap-3">
                 <div className="font-display text-5xl font-black text-fw-700">{TRUSTPILOT.score}</div>
                 <div>
-                  <div className="flex text-trustpilot" aria-label="5 out of 5 stars">{[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}</div>
+                  <div role="img" className="flex text-trustpilot" aria-label="5 out of 5 stars">{[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}</div>
                   <div className="mt-0.5 text-xs font-bold text-trustpilot">{TRUSTPILOT.countLabel}</div>
                 </div>
               </div>

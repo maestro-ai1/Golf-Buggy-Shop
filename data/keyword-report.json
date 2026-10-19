@@ -4571,7 +4571,7 @@
    "url": "/shop/",
    "name": "Shop",
    "level": "menu",
-   "words": 840,
+   "words": 844,
    "title": "Golf Buggies For Sale Australia | Shop Carts & Parts",
    "h1": " Golf Buggies For Sale Australia: Shop Buggies, Carts & Parts ",
    "meta": "Shop golf buggies for sale Australia-wide: push, electric and remote control buggies, golf carts, batteries and off-road buggies. Free delivery over $1,000.",
@@ -4631,7 +4631,7 @@
    "url": "/about/",
    "name": "About Us",
    "level": "menu",
-   "words": 571,
+   "words": 776,
    "title": "About Buggies For Sale | Buggies Australia-Wide",
    "h1": " About Buggies For Sale: Buggies Australia-Wide ",
    "meta": "Buggies For Sale is a Sydney-based supplier of buggies Australia-wide: golf buggies, golf carts, parts and off-road buggies. See who we are and how we work.",
@@ -4644,8 +4644,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 3,
-    "density": 0.85
+    "uses": 5,
+    "density": 0.98
    },
    "secondary": [
     {
@@ -4660,7 +4660,7 @@
      "volume": 110,
      "kd": 17,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "mgi electric golf buggy australia",
@@ -4681,7 +4681,7 @@
      "volume": 70,
      "kd": 19,
      "intent": "Commercial",
-     "uses": 4
+     "uses": 6
     }
    ],
    "flags": []

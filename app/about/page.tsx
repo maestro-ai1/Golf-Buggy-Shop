@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import InfoPage from '@/components/InfoPage';
-import { TrustpilotBlock, JsonLd } from '@/components/Bits';
+import { Faq, TrustpilotBlock, JsonLd } from '@/components/Bits';
 import { BRAND, CONTACT, PRODUCTS, SHOP, SITE } from '@/config/site';
-import { meta, orgSchema } from '@/lib/seo';
+import { faqSchema, meta, orgSchema } from '@/lib/seo';
 
 // Primary: buggies australia. Secondary: golf cars australia, best golf buggy australia, mgi electric golf buggy australia, electric golf carts australia, buggy australia.
 export const metadata = meta({
@@ -12,9 +12,18 @@ export const metadata = meta({
   path: '/about/',
 });
 
+const FAQS: [string, string][] = [
+  ['Who is Buggies For Sale and where are you based?', `${SITE.legalName} (ABN ${CONTACT.abn}) is a Sydney, NSW business founded in 2023. We supply golf buggies, golf carts and off-road buggies Australia-wide.`],
+  ['Do you sell the best golf buggy in Australia?', 'The best golf buggy Australia-wide is the one that fits your course, budget and car boot. Compare push, electric and remote models on our golf buggies page, or call us and we will suggest one.'],
+  ['Do you stock MGI electric golf buggies?', 'Yes. Our MGI electric golf buggy range includes the ZIP X1, ZIP X3, ZIP X5 and the Ai Navigator remote control models, with GST-inclusive prices on each product page.'],
+  ['Do you supply electric golf carts and golf cars?', 'Yes. Golf cars, golf carts and utility carts are the same family of vehicles, and we list lithium electric and petrol carts from two to eight seats, plus used and clearance stock.'],
+  ['How do I buy from you?', `Add products to your cart (minimum order ${SHOP.minOrder}), check out with your delivery address and we email payment details once stock and freight are confirmed. Pay by Osko, EFT, PayID or crypto.`],
+];
+
 export default function About() {
   return (
     <>
+      <JsonLd data={faqSchema(FAQS)} />
       <JsonLd data={{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'About Buggies For Sale', url: SITE.url + '/about/', mainEntity: orgSchema() }} />
       <InfoPage crumb={{ name: 'About us', url: '/about/' }} title="About Buggies For Sale: Buggies Australia-Wide" lead="Golf buggies, golf carts and off-road buggies, supplied from Sydney and delivered across Australia.">
         <p>{BRAND.statement} We supply buggies Australia-wide, and every order is checked by a person before you pay.</p>
@@ -58,6 +67,7 @@ export default function About() {
         </div>
       </div></section>
       <TrustpilotBlock />
+      <Faq items={FAQS} title="About Buggies For Sale: your questions answered" />
     </>
   );
 }

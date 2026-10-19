@@ -1,0 +1,568 @@
+{
+ "generated": "2026-10-19",
+ "dropped": [
+  {
+   "product": "qod-q1-all-terrain-electric-golf-buggy",
+   "img": "/products/qod-q1-all-terrain-electric-golf-buggy/4",
+   "reason": "feature-callout or dimension infographic with text"
+  },
+  {
+   "product": "stinger-sg-1-golf-push-buggy",
+   "img": "/products/stinger-sg-1-golf-push-buggy/3",
+   "reason": "feature-callout or dimension infographic with text"
+  },
+  {
+   "product": "stinger-sg-1-golf-push-buggy",
+   "img": "/products/stinger-sg-1-golf-push-buggy/4",
+   "reason": "lifestyle photo, not on a white background"
+  },
+  {
+   "product": "stinger-sg-4-compact-golf-push-buggy",
+   "img": "/products/stinger-sg-4-compact-golf-push-buggy/3",
+   "reason": "feature-callout or dimension infographic with text"
+  },
+  {
+   "product": "stinger-sg-6-golf-push-buggy",
+   "img": "/products/stinger-sg-6-golf-push-buggy/3",
+   "reason": "feature-callout or dimension infographic with text"
+  },
+  {
+   "product": "stinger-sg-6-golf-push-buggy",
+   "img": "/products/stinger-sg-6-golf-push-buggy/4",
+   "reason": "lifestyle photo, not on a white background"
+  },
+  {
+   "product": "powerbug-umbrella-holder",
+   "img": "/products/powerbug-umbrella-holder/2",
+   "reason": "feature-callout or dimension infographic with text"
+  },
+  {
+   "product": "mgi-buggy-accessories-bag",
+   "img": "/products/mgi-buggy-accessories-bag/3",
+   "reason": "feature-callout or dimension infographic with text"
+  },
+  {
+   "product": "gmx-drift-200cc-electric-start-go-kart",
+   "img": "/products/gmx-drift-200cc-electric-start-go-kart/4",
+   "reason": "lifestyle photo, not on a white background"
+  },
+  {
+   "product": "kayo-predator-125-quad-bike",
+   "img": "/products/kayo-predator-125-quad-bike/2",
+   "reason": "sticker or banner overlapping the product"
+  },
+  {
+   "product": "parmaker-spirit-ride-on-golf-buggy",
+   "img": "/products/parmaker-spirit-ride-on-golf-buggy/4",
+   "reason": "lifestyle photo, not on a white background"
+  },
+  {
+   "product": "polaris-rzr-youth-half-windshield",
+   "img": "/products/polaris-rzr-youth-half-windshield/2",
+   "reason": "faded or ghosted cut-out"
+  },
+  {
+   "product": "polaris-rzr-youth-full-windshield",
+   "img": "/products/polaris-rzr-youth-full-windshield/2",
+   "reason": "faded or ghosted cut-out"
+  },
+  {
+   "product": "polaris-ranger-150-front-and-rear-brushguard-set",
+   "img": "/products/polaris-ranger-150-front-and-rear-brushguard-set/1",
+   "reason": "faded or ghosted cut-out"
+  },
+  {
+   "product": "used-2015-club-car-precedent-4-seat-blue-golf-cart",
+   "img": "/products/used-2015-club-car-precedent-4-seat-blue-golf-cart/1",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2015-club-car-precedent-4-seat-blue-golf-cart",
+   "img": "/products/used-2015-club-car-precedent-4-seat-blue-golf-cart/2",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2015-club-car-precedent-4-seat-blue-golf-cart",
+   "img": "/products/used-2015-club-car-precedent-4-seat-blue-golf-cart/3",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2015-club-car-precedent-4-seat-blue-golf-cart",
+   "img": "/products/used-2015-club-car-precedent-4-seat-blue-golf-cart/4",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2017-ezgo-rxv-4-seat-black-golf-cart",
+   "img": "/products/used-2017-ezgo-rxv-4-seat-black-golf-cart/1",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2017-ezgo-rxv-4-seat-black-golf-cart",
+   "img": "/products/used-2017-ezgo-rxv-4-seat-black-golf-cart/2",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2017-ezgo-rxv-4-seat-black-golf-cart",
+   "img": "/products/used-2017-ezgo-rxv-4-seat-black-golf-cart/4",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2007-ezgo-txt-4-seat-black-golf-cart",
+   "img": "/products/used-2007-ezgo-txt-4-seat-black-golf-cart/1",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2007-ezgo-txt-4-seat-black-golf-cart",
+   "img": "/products/used-2007-ezgo-txt-4-seat-black-golf-cart/2",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2007-ezgo-txt-4-seat-black-golf-cart",
+   "img": "/products/used-2007-ezgo-txt-4-seat-black-golf-cart/3",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2007-ezgo-txt-4-seat-black-golf-cart",
+   "img": "/products/used-2007-ezgo-txt-4-seat-black-golf-cart/4",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2010-tomberlin-revenge-4-seat-blue-grey-golf-cart",
+   "img": "/products/used-2010-tomberlin-revenge-4-seat-blue-grey-golf-cart/1",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2010-tomberlin-revenge-4-seat-blue-grey-golf-cart",
+   "img": "/products/used-2010-tomberlin-revenge-4-seat-blue-grey-golf-cart/2",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2010-tomberlin-revenge-4-seat-blue-grey-golf-cart",
+   "img": "/products/used-2010-tomberlin-revenge-4-seat-blue-grey-golf-cart/3",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2010-tomberlin-revenge-4-seat-blue-grey-golf-cart",
+   "img": "/products/used-2010-tomberlin-revenge-4-seat-blue-grey-golf-cart/4",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2012-ecar-dominic-4-seat-black-golf-cart",
+   "img": "/products/used-2012-ecar-dominic-4-seat-black-golf-cart/1",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2012-ecar-dominic-4-seat-black-golf-cart",
+   "img": "/products/used-2012-ecar-dominic-4-seat-black-golf-cart/2",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2012-ecar-dominic-4-seat-black-golf-cart",
+   "img": "/products/used-2012-ecar-dominic-4-seat-black-golf-cart/3",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2012-ecar-dominic-4-seat-black-golf-cart",
+   "img": "/products/used-2012-ecar-dominic-4-seat-black-golf-cart/4",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "kubota-rtv-xg850-sidekick-side-by-side",
+   "img": "/products/kubota-rtv-xg850-sidekick-side-by-side/3",
+   "reason": "lifestyle photo, not on a white background"
+  },
+  {
+   "product": "kubota-rtv520-side-by-side",
+   "img": "/products/kubota-rtv520-side-by-side/2",
+   "reason": "lifestyle photo, not on a white background"
+  },
+  {
+   "product": "stinger-sg-4-crossover-remote-control-golf-buggy-classic-edition-v3",
+   "img": "/products/stinger-sg-4-crossover-remote-control-golf-buggy-classic-edition-v3/1",
+   "reason": "sticker or banner overlapping the product"
+  },
+  {
+   "product": "stinger-sg-2-v2-golf-push-buggy",
+   "img": "/products/stinger-sg-2-v2-golf-push-buggy/2",
+   "reason": "feature-callout or dimension infographic with text"
+  },
+  {
+   "product": "stinger-sg-3-viii-golf-push-buggy",
+   "img": "/products/stinger-sg-3-viii-golf-push-buggy/2",
+   "reason": "feature-callout or dimension infographic with text"
+  },
+  {
+   "product": "stinger-sg-3-viii-golf-push-buggy-with-seat-kit",
+   "img": "/products/stinger-sg-3-viii-golf-push-buggy-with-seat-kit/4",
+   "reason": "feature-callout or dimension infographic with text"
+  },
+  {
+   "product": "stinger-sg-2-v2-golf-push-buggy-with-seat-kit",
+   "img": "/products/stinger-sg-2-v2-golf-push-buggy-with-seat-kit/4",
+   "reason": "feature-callout or dimension infographic with text"
+  },
+  {
+   "product": "kayo-storm-70-kids-quad-bike",
+   "img": "/products/kayo-storm-70-kids-quad-bike/2",
+   "reason": "sticker or banner overlapping the product"
+  },
+  {
+   "product": "crossfire-rover-125-youth-atv",
+   "img": "/products/crossfire-rover-125-youth-atv/3",
+   "reason": "lifestyle photo, not on a white background"
+  },
+  {
+   "product": "tomberlin-e-merge-ss-4-seat-golf-cart",
+   "img": "/products/tomberlin-e-merge-ss-4-seat-golf-cart/2",
+   "reason": "close-up detail on a grey frame, not a white-background product shot"
+  },
+  {
+   "product": "tomberlin-e-merge-ss-4-seat-golf-cart",
+   "img": "/products/tomberlin-e-merge-ss-4-seat-golf-cart/3",
+   "reason": "close-up detail on a grey frame, not a white-background product shot"
+  },
+  {
+   "product": "tomberlin-e-merge-ss-4-seat-golf-cart",
+   "img": "/products/tomberlin-e-merge-ss-4-seat-golf-cart/4",
+   "reason": "close-up detail on a grey frame, not a white-background product shot"
+  },
+  {
+   "product": "used-2017-ecar-627-2-seat-electric-blue-golf-cart",
+   "img": "/products/used-2017-ecar-627-2-seat-electric-blue-golf-cart/1",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2017-ecar-627-2-seat-electric-blue-golf-cart",
+   "img": "/products/used-2017-ecar-627-2-seat-electric-blue-golf-cart/2",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2017-ecar-627-2-seat-electric-blue-golf-cart",
+   "img": "/products/used-2017-ecar-627-2-seat-electric-blue-golf-cart/3",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2017-ecar-627-2-seat-electric-blue-golf-cart",
+   "img": "/products/used-2017-ecar-627-2-seat-electric-blue-golf-cart/4",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2015-ecar-a4-4-seat-black-golf-cart",
+   "img": "/products/used-2015-ecar-a4-4-seat-black-golf-cart/1",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2015-ecar-a4-4-seat-black-golf-cart",
+   "img": "/products/used-2015-ecar-a4-4-seat-black-golf-cart/2",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2015-ecar-a4-4-seat-black-golf-cart",
+   "img": "/products/used-2015-ecar-a4-4-seat-black-golf-cart/3",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2015-ecar-a4-4-seat-black-golf-cart",
+   "img": "/products/used-2015-ecar-a4-4-seat-black-golf-cart/4",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2018-ezgo-rxv-4-seat-red-golf-cart",
+   "img": "/products/used-2018-ezgo-rxv-4-seat-red-golf-cart/1",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2018-ezgo-rxv-4-seat-red-golf-cart",
+   "img": "/products/used-2018-ezgo-rxv-4-seat-red-golf-cart/2",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2018-ezgo-rxv-4-seat-red-golf-cart",
+   "img": "/products/used-2018-ezgo-rxv-4-seat-red-golf-cart/3",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2018-ezgo-rxv-4-seat-red-golf-cart",
+   "img": "/products/used-2018-ezgo-rxv-4-seat-red-golf-cart/4",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2022-ecar-sdb-4-seat-black-golf-cart",
+   "img": "/products/used-2022-ecar-sdb-4-seat-black-golf-cart/1",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2022-ecar-sdb-4-seat-black-golf-cart",
+   "img": "/products/used-2022-ecar-sdb-4-seat-black-golf-cart/2",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2022-ecar-sdb-4-seat-black-golf-cart",
+   "img": "/products/used-2022-ecar-sdb-4-seat-black-golf-cart/3",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2022-ecar-sdb-4-seat-black-golf-cart",
+   "img": "/products/used-2022-ecar-sdb-4-seat-black-golf-cart/4",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2013-ecar-martinique-4-seat-red-golf-cart",
+   "img": "/products/used-2013-ecar-martinique-4-seat-red-golf-cart/1",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2013-ecar-martinique-4-seat-red-golf-cart",
+   "img": "/products/used-2013-ecar-martinique-4-seat-red-golf-cart/2",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2013-ecar-martinique-4-seat-red-golf-cart",
+   "img": "/products/used-2013-ecar-martinique-4-seat-red-golf-cart/3",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2013-ecar-martinique-4-seat-red-golf-cart",
+   "img": "/products/used-2013-ecar-martinique-4-seat-red-golf-cart/4",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2023-ecar-ikon-2-seat-emerald-green-golf-cart",
+   "img": "/products/used-2023-ecar-ikon-2-seat-emerald-green-golf-cart/1",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2023-ecar-ikon-2-seat-emerald-green-golf-cart",
+   "img": "/products/used-2023-ecar-ikon-2-seat-emerald-green-golf-cart/2",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2023-ecar-ikon-2-seat-emerald-green-golf-cart",
+   "img": "/products/used-2023-ecar-ikon-2-seat-emerald-green-golf-cart/3",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2023-ecar-ikon-2-seat-emerald-green-golf-cart",
+   "img": "/products/used-2023-ecar-ikon-2-seat-emerald-green-golf-cart/4",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2021-tomberlin-gts-4-seat-yellow-golf-cart",
+   "img": "/products/used-2021-tomberlin-gts-4-seat-yellow-golf-cart/1",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2021-tomberlin-gts-4-seat-yellow-golf-cart",
+   "img": "/products/used-2021-tomberlin-gts-4-seat-yellow-golf-cart/2",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2021-tomberlin-gts-4-seat-yellow-golf-cart",
+   "img": "/products/used-2021-tomberlin-gts-4-seat-yellow-golf-cart/3",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2021-tomberlin-gts-4-seat-yellow-golf-cart",
+   "img": "/products/used-2021-tomberlin-gts-4-seat-yellow-golf-cart/4",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2012-tomberlin-48ss-caddy-4-seat-blue-grey-golf-cart",
+   "img": "/products/used-2012-tomberlin-48ss-caddy-4-seat-blue-grey-golf-cart/1",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2012-tomberlin-48ss-caddy-4-seat-blue-grey-golf-cart",
+   "img": "/products/used-2012-tomberlin-48ss-caddy-4-seat-blue-grey-golf-cart/2",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2012-tomberlin-48ss-caddy-4-seat-blue-grey-golf-cart",
+   "img": "/products/used-2012-tomberlin-48ss-caddy-4-seat-blue-grey-golf-cart/3",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2012-tomberlin-48ss-caddy-4-seat-blue-grey-golf-cart",
+   "img": "/products/used-2012-tomberlin-48ss-caddy-4-seat-blue-grey-golf-cart/4",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2014-ecar-a4-dominic-4-seat-white-golf-cart",
+   "img": "/products/used-2014-ecar-a4-dominic-4-seat-white-golf-cart/1",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2014-ecar-a4-dominic-4-seat-white-golf-cart",
+   "img": "/products/used-2014-ecar-a4-dominic-4-seat-white-golf-cart/2",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2014-ecar-a4-dominic-4-seat-white-golf-cart",
+   "img": "/products/used-2014-ecar-a4-dominic-4-seat-white-golf-cart/3",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2014-ecar-a4-dominic-4-seat-white-golf-cart",
+   "img": "/products/used-2014-ecar-a4-dominic-4-seat-white-golf-cart/4",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2023-ecar-627-4-seat-black-golf-cart",
+   "img": "/products/used-2023-ecar-627-4-seat-black-golf-cart/1",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2023-ecar-627-4-seat-black-golf-cart",
+   "img": "/products/used-2023-ecar-627-4-seat-black-golf-cart/2",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2023-ecar-627-4-seat-black-golf-cart",
+   "img": "/products/used-2023-ecar-627-4-seat-black-golf-cart/3",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "used-2023-ecar-627-4-seat-black-golf-cart",
+   "img": "/products/used-2023-ecar-627-4-seat-black-golf-cart/4",
+   "reason": "retailer watermark across the photo (Carts n Parts)"
+  },
+  {
+   "product": "mgi-buggy-phone-holder",
+   "img": "/products/mgi-buggy-phone-holder/3",
+   "reason": "faded or ghosted cut-out"
+  },
+  {
+   "product": "golf-skate-caddy-tourer-umbrella",
+   "img": "/products/golf-skate-caddy-tourer-umbrella/1",
+   "reason": "lifestyle photo, not on a white background"
+  },
+  {
+   "product": "helmetkarts-ha-270x-270cc-go-kart",
+   "img": "/products/helmetkarts-ha-270x-270cc-go-kart/2",
+   "reason": "retailer watermark (HELMETKARTS)"
+  },
+  {
+   "product": "helmetkarts-ha-270x-270cc-go-kart",
+   "img": "/products/helmetkarts-ha-270x-270cc-go-kart/3",
+   "reason": "retailer watermark (HELMETKARTS)"
+  },
+  {
+   "product": "tri-lite-deluxe-3-wheel-golf-push-buggy",
+   "img": "/products/tri-lite-deluxe-3-wheel-golf-push-buggy/2",
+   "reason": "feature-callout or dimension infographic with text"
+  },
+  {
+   "product": "smoothy-micro-golf-push-buggy",
+   "img": "/products/smoothy-micro-golf-push-buggy/1",
+   "reason": "retailer watermark (golftraders)"
+  },
+  {
+   "product": "smoothy-micro-golf-push-buggy",
+   "img": "/products/smoothy-micro-golf-push-buggy/2",
+   "reason": "retailer watermark (golftraders)"
+  },
+  {
+   "product": "carburettor-250cc-atv-with-cable-choke",
+   "img": "/products/carburettor-250cc-atv-with-cable-choke/1",
+   "reason": "screenshot fragments and grey background"
+  },
+  {
+   "product": "carburettor-250cc-atv-with-cable-choke",
+   "img": "/products/carburettor-250cc-atv-with-cable-choke/2",
+   "reason": "screenshot fragments and grey background"
+  },
+  {
+   "product": "carburettor-250cc-atv-with-cable-choke",
+   "img": "/products/carburettor-250cc-atv-with-cable-choke/3",
+   "reason": "screenshot fragments and grey background"
+  },
+  {
+   "product": "carburettor-250cc-atv-with-cable-choke",
+   "img": "/products/carburettor-250cc-atv-with-cable-choke/4",
+   "reason": "screenshot fragments and grey background"
+  },
+  {
+   "product": "carburettor-22mm-for-110cc-and-125cc-engines",
+   "img": "/products/carburettor-22mm-for-110cc-and-125cc-engines/1",
+   "reason": "feature-callout or dimension infographic with text"
+  },
+  {
+   "product": "carburettor-49cc-for-2-stroke-mini-bikes-and-quads",
+   "img": "/products/carburettor-49cc-for-2-stroke-mini-bikes-and-quads/1",
+   "reason": "feature-callout or dimension infographic with text"
+  }
+ ],
+ "placeholders": [
+  {
+   "product": "used-2015-club-car-precedent-4-seat-blue-golf-cart",
+   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
+  },
+  {
+   "product": "used-2017-ezgo-rxv-4-seat-black-golf-cart",
+   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
+  },
+  {
+   "product": "used-2007-ezgo-txt-4-seat-black-golf-cart",
+   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
+  },
+  {
+   "product": "used-2010-tomberlin-revenge-4-seat-blue-grey-golf-cart",
+   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
+  },
+  {
+   "product": "used-2012-ecar-dominic-4-seat-black-golf-cart",
+   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
+  },
+  {
+   "product": "used-2017-ecar-627-2-seat-electric-blue-golf-cart",
+   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
+  },
+  {
+   "product": "used-2015-ecar-a4-4-seat-black-golf-cart",
+   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
+  },
+  {
+   "product": "used-2018-ezgo-rxv-4-seat-red-golf-cart",
+   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
+  },
+  {
+   "product": "used-2022-ecar-sdb-4-seat-black-golf-cart",
+   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
+  },
+  {
+   "product": "used-2013-ecar-martinique-4-seat-red-golf-cart",
+   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
+  },
+  {
+   "product": "used-2023-ecar-ikon-2-seat-emerald-green-golf-cart",
+   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
+  },
+  {
+   "product": "used-2021-tomberlin-gts-4-seat-yellow-golf-cart",
+   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
+  },
+  {
+   "product": "used-2012-tomberlin-48ss-caddy-4-seat-blue-grey-golf-cart",
+   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
+  },
+  {
+   "product": "used-2014-ecar-a4-dominic-4-seat-white-golf-cart",
+   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
+  },
+  {
+   "product": "used-2023-ecar-627-4-seat-black-golf-cart",
+   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
+  },
+  {
+   "product": "smoothy-micro-golf-push-buggy",
+   "reason": "every available photo carries a retailer watermark"
+  }
+ ],
+ "replaced": [
+  {
+   "product": "carburettor-250cc-atv-with-cable-choke",
+   "img": "/products/carburettor-250cc-atv-with-cable-choke/1",
+   "how": "background removed from the supplier photo (screenshot fragments discarded)"
+  }
+ ]
+}

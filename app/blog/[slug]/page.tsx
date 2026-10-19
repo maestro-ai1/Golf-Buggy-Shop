@@ -39,10 +39,10 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   return (
     <>
       <JsonLd data={[article, ...(b.faqs ? [faqSchema(b.faqs)] : [])]} />
-      <section className="border-b border-line bg-white"><div className="container-x py-8"><Breadcrumbs trail={trail} /></div></section>
+      <section className="border-b border-line bg-white"><div className="container-x py-8"><div className="mx-auto max-w-[69rem]"><Breadcrumbs trail={trail} /></div></div></section>
       <article className="section !pt-10">
-        <div className="container-x grid gap-12 lg:grid-cols-[1fr_320px]">
-          <div className="max-w-3xl">
+        <div className="container-x"><div className="mx-auto grid max-w-[69rem] gap-12 lg:grid-cols-[minmax(0,1fr)_20rem]">
+          <div className="min-w-0">
             <p className="eyebrow">{b.category} · {b.readTime}</p>
             <h1 className="mt-3 text-4xl font-black leading-tight md:text-[46px]">{b.title}</h1>
             <p className="mt-4 text-lg leading-relaxed text-muted">{b.excerpt}</p>
@@ -57,7 +57,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
             <div className="card p-6"><h2 className="font-display text-xl font-extrabold">Talk to an expert</h2><p className="mt-2 text-sm text-muted">Not sure which model suits you? We will help you choose.</p><a href="tel:+61420128746" className="btn btn-green mt-4 w-full">Call 0420 128 746</a><a href="https://wa.me/61420128746?text=Hi%20Buggies%20For%20Sale%2C%20" target="_blank" rel="noopener noreferrer" className="btn btn-ghost mt-3 w-full">WhatsApp us</a></div>
             <div className="card p-6"><h2 className="font-display text-lg font-extrabold">Shop the ranges</h2><ul className="mt-3 space-y-2 text-sm font-semibold"><li><Link className="text-fw-700 hover:underline" href="/golf-buggies/">Golf buggies</Link></li><li><Link className="text-fw-700 hover:underline" href="/golf-carts/">Golf carts</Link></li><li><Link className="text-fw-700 hover:underline" href="/parts-accessories/">Parts &amp; accessories</Link></li><li><Link className="text-fw-700 hover:underline" href="/off-road-buggies/">Off-road buggies</Link></li></ul></div>
           </aside>
-        </div>
+        </div></div>
       </article>
       {b.faqs && <Faq items={b.faqs} title="Frequently asked questions" />}
       {picks.length > 0 && <section className="section pt-0"><div className="container-x"><SectionHead eyebrow="Related products" title="Shop the models mentioned" /><div className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">{picks.map((p) => <ProductCard key={p.slug} p={toCard(p)} />)}</div></div></section>}

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { BLOG_POSTS, PAGES, PRODUCTS, SITE, pageCountFor } from '@/config/site';
 import lastmod from '@/data/lastmod.json';
+import { blogPageCount } from '@/components/BlogGrid';
 
 // Every <loc> is the exact canonical URL of a page that returns 200 (checked by scripts/sitemap-audit.mjs).
 // <lastmod> comes from data/lastmod.json (a date only changes when that URL's content changes), never "now".
@@ -17,5 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const products = PRODUCTS.map((p) => entry(`/products/${p.slug}/`, when(`/products/${p.slug}/`), 'weekly', 0.7, { images: p.images.map((i) => abs(i + '.webp')) }));
   const blog = BLOG_POSTS.map((b) => entry(`/blog/${b.slug}/`, new Date(b.date), 'monthly', 0.6));
   const statics = ['/shop/', '/blog/', '/about/', '/contact/', '/delivery/', '/returns/', '/faq/', '/wholesale/', '/privacy/', '/terms/', '/cookies/'].map((u) => entry(u, when(u), 'monthly', 0.5));
-  return [...pages, ...paged, ...statics, ...blog, ...products];
+  const blogPaged = Array.from({ length: blogPageCount(BLOG_POSTS.length) - 1 }, (_, i) => entry(`/blog/page/${i + 2}/`, when('/blog/'), 'weekly', 0.4));
+  return [...pages, ...paged, ...statics, ...blogPaged, ...blog, ...products];
 }

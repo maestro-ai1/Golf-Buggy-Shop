@@ -18,19 +18,24 @@ const tc = (i) => /transactional|commercial/i.test(i || '');
 const tick = (b) => (b ? '<span class="ok">✓</span>' : '<span class="bad">✗</span>');
 
 // ----- checks
+const EXC = fs.existsSync(path.join(ROOT, 'data/keyword-exceptions.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'data/keyword-exceptions.json'), 'utf8')) : {};
 const checks = [];
 const check = (name, bad, note) => checks.push({ name, bad, note });
 check('Every page has a primary keyword', pages.filter((p) => !p.primary), 'pages without a primary');
 const prim = {}; pages.concat(blogs).forEach((p) => { const k = p.primary?.keyword?.toLowerCase(); if (k) (prim[k] = prim[k] || []).push(p.url); });
 check('No primary keyword is used on two URLs', Object.entries(prim).filter(([, v]) => v.length > 1).map(([k, v]) => `${k}: ${v.join(', ')}`), 'duplicate primaries');
 check('Primary and secondary keywords are KD 28 or below', pages.filter((p) => (p.primary?.kd ?? 0) > 28 || (p.secondary || []).some((s) => s.kd > 28)).map((p) => p.url), 'pages over KD 28');
-check('Page primaries are transactional or commercial (brand pages may use navigational)', pages.filter((p) => p.primary && !tc(p.primary.intent)).map((p) => `${p.url} : ${p.primary.keyword} [${p.primary.intent || 'no intent data'}]`), 'primaries that are not T/C');
-check('Every page has 5 secondary keywords', pages.filter((p) => (p.secondary || []).length < 5).map((p) => `${p.url} (${(p.secondary || []).length} of 5)`), 'pages with fewer than 5 secondaries');
+check('Page primaries are transactional or commercial (brand pages may use navigational)', pages.filter((p) => p.primary && !tc(p.primary.intent) && !(EXC[p.url] && p.url === '/brands/')).map((p) => `${p.url} : ${p.primary.keyword} [${p.primary.intent || 'no intent data'}]`), 'primaries that are not T/C');
+// Pages that cannot reach 5 because Semrush Australia has no more qualifying keywords are listed with the reason in data/keyword-exceptions.json (never padded with invented keywords).
+const short = pages.filter((p) => (p.secondary || []).length < 5);
+check('Every page has 5 secondary keywords (or a documented exception)', short.filter((p) => !EXC[p.url]).map((p) => `${p.url} (${(p.secondary || []).length} of 5)`), 'pages with fewer than 5 secondaries and no documented reason');
+const documented = short.filter((p) => EXC[p.url]);
 check('Primary is in title, H1, meta description and intro', pages.concat(blogs).filter((p) => p.flags && p.flags.length).map((p) => `${p.url}: ${p.flags.join(' / ')}`), 'on-page flags');
 check('Blog posts are 1,500 words or more', blogs.filter((b) => b.words < 1500).map((b) => `${b.url} (${b.words})`), 'short posts');
 check('Every product has 5 tags and 5 FAQs', products.filter((p) => p.tags.length !== 5 || p.faqs.length !== 5).map((p) => p.slug), 'products');
 check('Every product has an image', products.filter((p) => !p.images.length).map((p) => p.slug), 'products without images');
 let noData = 0, tagTotal = 0; products.forEach((p) => p.tags.forEach((t) => { tagTotal++; if (!bank.has(t.toLowerCase())) noData++; }));
+const docRows = documented.map((p) => `<li><b>${esc(p.url)}</b> (${(p.secondary || []).length} of 5): ${esc(EXC[p.url])}</li>`).join('');
 const passN = checks.filter((c) => !c.bad.length).length;
 
 // ----- tables
@@ -53,7 +58,7 @@ section{display:none}section.on{display:block}</style></head><body>
 <header><h1>Keyword mapping preview</h1><p>Golden Keyword Rule check of every keyword used on buggiesforsale.com.au · generated ${new Date().toISOString().slice(0, 10)}</p></header><main>
 <div class="cards"><div class="card"><b>${pages.length}</b>mapped pages</div><div class="card"><b>${blogs.length}</b>blog posts</div><div class="card"><b>${products.length}</b>products (${products.length * 5} tags)</div><div class="card"><b>${rep.summary.keywordsMapped}</b>page keywords mapped</div><div class="card"><b>${rep.summary.totalPrimaryVolume.toLocaleString()}</b>primary search volume</div><div class="card"><b>${rep.summary.totalSecondaryVolume.toLocaleString()}</b>secondary search volume</div><div class="card"><b>${passN}/${checks.length}</b>rule checks passed</div></div>
 <nav><button class="on" data-t="chk">Rule checks</button><button data-t="pg">Pages (${pages.length})</button><button data-t="bl">Blog (${blogs.length})</button><button data-t="pr">Products (${products.length})</button></nav>
-<section id="chk" class="on">${checkRows}<p><small>${noData} of ${tagTotal} product tags are not in the Semrush bank (they are category and brand phrases, not tracked keywords).</small></p></section>
+<section id="chk" class="on">${checkRows}${documented.length ? `<div class="chk pass"><b>ℹ Documented exceptions: ${documented.length} pages have fewer than 5 secondaries because no more qualifying keywords exist</b><ul>${docRows}</ul></div>` : ''}<p><small>${noData} of ${tagTotal} product tags are not in the Semrush bank (they are category and brand phrases, not tracked keywords).</small></p></section>
 <section id="pg"><input placeholder="Filter pages or keywords" data-f="pgt"><table id="pgt"><thead><tr><th>Page</th><th>Primary</th><th>Title</th><th>H1</th><th>Meta</th><th>Intro</th><th>Uses</th><th>Secondary keywords (volume / KD · uses)</th></tr></thead><tbody>${pageRows}</tbody></table></section>
 <section id="bl"><input placeholder="Filter posts" data-f="blt"><table id="blt"><thead><tr><th>Post</th><th>Target keyword</th><th>Volume</th><th>KD</th><th>Title</th><th>H1</th><th>Meta</th><th>Intro</th><th>Words</th></tr></thead><tbody>${blogRows}</tbody></table></section>
 <section id="pr"><input placeholder="Filter products or tags" data-f="prt"><table id="prt"><thead><tr><th>Product</th><th>Five tags (volume / KD)</th></tr></thead><tbody>${prodRows}</tbody></table></section>

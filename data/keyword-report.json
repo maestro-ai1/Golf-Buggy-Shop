@@ -3,9 +3,9 @@
   "pages": 75,
   "posts": 26,
   "withFlags": 0,
-  "totalPrimaryVolume": 54340,
-  "totalSecondaryVolume": 78270,
-  "keywordsMapped": 414,
+  "totalPrimaryVolume": 54570,
+  "totalSecondaryVolume": 78580,
+  "keywordsMapped": 419,
   "generated": "2026-10-19"
  },
  "rows": [
@@ -2040,21 +2040,21 @@
    "url": "/parts-accessories/golf-buggy-parts/wheels-rims-tyres/",
    "name": "Wheels, Rims & Tyres",
    "level": "accessory",
-   "words": 481,
-   "title": "Golf Buggy Wheels Australia | Buggies For Sale",
-   "h1": " Golf Buggy Wheels ",
-   "meta": "Golf buggy wheels: Shop golf buggy wheel and golf cart wheel , rim and tyre . We tock mag wheel et in 10, 12 and 14 inch ize and ingle wheel and tyre . Mag.",
+   "words": 487,
+   "title": "Golf Buggy Tires Australia | Buggies For Sale",
+   "h1": " Golf Buggy Tires & Wheels ",
+   "meta": "Golf buggy tires: Shop golf buggy wheel and golf cart wheel , rim and tyre . We tock mag wheel et in 10, 12 and 14 inch ize and ingle wheel and tyre . Mag.",
    "primary": {
-    "keyword": "golf buggy wheels",
-    "volume": 320,
-    "kd": 8,
-    "intent": "Informational",
+    "keyword": "golf buggy tires",
+    "volume": 140,
+    "kd": 4,
+    "intent": "Commercial",
     "inTitle": true,
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 2,
-    "density": 0.6
+    "uses": 1,
+    "density": 0.3
    },
    "secondary": [
     {
@@ -2213,7 +2213,7 @@
    "url": "/parts-accessories/off-road-parts/",
    "name": "Off-Road Parts & Upgrades",
    "level": "accessory-category",
-   "words": 584,
+   "words": 593,
    "title": "Quad Bike Spare Parts For Sale Australia | Buggies For Sale",
    "h1": " Quad Bike Spare Parts For Sale ",
    "meta": "Quad bike spare parts for sale: Shop quad bike pare part for ale at Buggie For Sale, with 16 option from $29.40 to $889.35. Free delivery over $1,000..",
@@ -2513,15 +2513,15 @@
    "url": "/parts-accessories/off-road-parts/winches-tow-bars/",
    "name": "Winches, Tow Hitches & Bull Bars",
    "level": "accessory",
-   "words": 373,
-   "title": "Buggy Winch Australia | Buggies For Sale",
-   "h1": " Buggy Winch ",
-   "meta": "Buggy winch: Shop buggy winch at Buggie For Sale, with 1 option from $396.05 to $396.05. Free delivery over $1,000. Delivery i Au tralia-wide, free over.",
+   "words": 382,
+   "title": "ATV Winch Australia | Buggies For Sale",
+   "h1": " ATV Winch & Tow Bars ",
+   "meta": "Atv winch: Shop atv winch at Buggie For Sale, with 1 option from $396.05 to $396.05. Free delivery over $1,000. Delivery i Au tralia-wide, free over $1,000..",
    "primary": {
-    "keyword": "buggy winch",
-    "volume": 20,
-    "kd": 0,
-    "intent": "",
+    "keyword": "atv winch",
+    "volume": 390,
+    "kd": 7,
+    "intent": "Commercial",
     "inTitle": true,
     "inH1": true,
     "inMeta": true,
@@ -2853,6 +2853,13 @@
      "kd": 0,
      "intent": "",
      "uses": 1
+    },
+    {
+     "keyword": "motocaddy golf carts",
+     "volume": 50,
+     "kd": 5,
+     "intent": "Informational, Transactional",
+     "uses": 0
     }
    ],
    "flags": []
@@ -2922,7 +2929,7 @@
    "url": "/brands/rovic/",
    "name": "Rovic Buggies",
    "level": "brand",
-   "words": 468,
+   "words": 472,
    "title": "Rovic Golf Buggy Australia | Buggies For Sale",
    "h1": " Rovic Golf Buggy ",
    "meta": "Rovic golf buggy: Shop Rovic online in Au tralia. We li t 2 Rovic product from $332.20 to $347.90. Every order hip Au tralia-wide with free delivery over.",
@@ -2952,6 +2959,20 @@
      "kd": 0,
      "intent": "",
      "uses": 3
+    },
+    {
+     "keyword": "rovic",
+     "volume": 70,
+     "kd": 9,
+     "intent": "Commercial",
+     "uses": 27
+    },
+    {
+     "keyword": "rovic rv1s 2.0",
+     "volume": 70,
+     "kd": 12,
+     "intent": "Informational, Transactional",
+     "uses": 1
     }
    ],
    "flags": []
@@ -3293,7 +3314,7 @@
    "url": "/brands/caddytek/",
    "name": "Caddytek Buggies",
    "level": "brand",
-   "words": 435,
+   "words": 483,
    "title": "Caddytek Golf Buggy Australia | Buggies For Sale",
    "h1": " Caddytek Golf Buggy ",
    "meta": "Caddytek golf buggy: Shop Caddytek online in Au tralia. We li t 2 Caddytek product from $165.60 to $263.60. Every order hip Au tralia-wide with free.",
@@ -3315,6 +3336,13 @@
      "volume": 40,
      "kd": 0,
      "intent": "",
+     "uses": 3
+    },
+    {
+     "keyword": "caddytek push cart",
+     "volume": 50,
+     "kd": 8,
+     "intent": "Informational, Transactional",
      "uses": 3
     }
    ],
@@ -3594,7 +3622,7 @@
    "url": "/brands/powakaddy/",
    "name": "Powakaddy Buggies",
    "level": "brand",
-   "words": 311,
+   "words": 414,
    "title": "Powakaddy Golf Buggy Australia | Buggies For Sale",
    "h1": " Powakaddy Golf Buggy ",
    "meta": "Powakaddy golf buggy: Shop Powakaddy online in Au tralia. We li t 2 Powakaddy product from $391 to $1,469. Every order hip Au tralia-wide with free delivery.",
@@ -3610,7 +3638,15 @@
     "uses": 0,
     "density": 0
    },
-   "secondary": [],
+   "secondary": [
+    {
+     "keyword": "powakaddy ct6",
+     "volume": 70,
+     "kd": 11,
+     "intent": "Informational, Transactional",
+     "uses": 3
+    }
+   ],
    "flags": []
   },
   {
@@ -3664,15 +3700,15 @@
    "url": "/brands/kawasaki/",
    "name": "Kawasaki Buggies",
    "level": "brand",
-   "words": 301,
-   "title": "Kawasaki Buggy 2 Seater Australia | Buggies For Sale",
-   "h1": " Kawasaki Buggy 2 Seater ",
-   "meta": "Kawasaki buggy 2 seater: Shop Kawa aki online in Au tralia. We li t 1 Kawa aki product from $57,241.80 to $57,241.80. Every order hip Au tralia-wide with.",
+   "words": 298,
+   "title": "Kawasaki Teryx Australia | Buggies For Sale",
+   "h1": " Kawasaki Teryx Buggy ",
+   "meta": "Kawasaki teryx: Shop Kawa aki online in Au tralia. We li t 1 Kawa aki product from $57,241.80 to $57,241.80. Every order hip Au tralia-wide with free.",
    "primary": {
-    "keyword": "kawasaki buggy 2 seater",
-    "volume": 30,
-    "kd": 0,
-    "intent": "",
+    "keyword": "kawasaki teryx",
+    "volume": 70,
+    "kd": 21,
+    "intent": "Informational, Transactional",
     "inTitle": true,
     "inH1": true,
     "inMeta": true,

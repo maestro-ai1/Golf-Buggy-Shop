@@ -45,7 +45,7 @@ for (const t of targets) {
   const flags = [];
   if (prim) { if (!prim.inTitle) flags.push('primary missing from title'); if (!prim.inH1) flags.push('primary missing from H1'); if (!prim.inMeta) flags.push('primary missing from meta description'); if (!prim.inIntro) flags.push('primary missing from intro'); if (prim.density > 2) flags.push('keyword density above 2% (stuffing risk)'); }
   const missing = sec.filter((s) => s.uses === 0).length; if (sec.length && missing > 2) flags.push(`${missing} of ${sec.length} secondaries not used`);
-  rows.push({ kind: t.kind, url: t.url, name: t.name, level: t.level, words: words.length, title, h1, meta, primary: kw ? { keyword: kw, volume: t.primary.volume, kd: t.primary.kd, intent: b?.intent || '', ...prim } : null, secondary: sec, flags });
+  rows.push({ kind: t.kind, url: t.url, name: t.name, level: t.level, words: words.length, title, h1, meta, primary: kw ? { keyword: kw, volume: t.primary.volume, kd: t.primary.kd, intent: b?.intent || t.primary.intent || '', ...prim } : null, secondary: sec, flags });
 }
 const ok = rows.filter((r) => !r.error);
 const summary = { pages: ok.filter((r) => r.kind === 'page').length, posts: ok.filter((r) => r.kind === 'blog').length, withFlags: ok.filter((r) => r.flags.length).length, totalPrimaryVolume: ok.reduce((a, r) => a + (r.primary?.volume || 0), 0), totalSecondaryVolume: ok.reduce((a, r) => a + r.secondary.reduce((x, s) => x + (s.volume || 0), 0), 0), keywordsMapped: new Set(ok.flatMap((r) => [r.primary?.keyword, ...r.secondary.map((s) => s.keyword)]).filter(Boolean)).size, generated: new Date().toISOString().slice(0, 10) };

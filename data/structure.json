@@ -2374,9 +2374,10 @@
   "level": "accessory",
   "parent": "Golf Buggy Parts",
   "primary": {
-   "keyword": "golf buggy wheels",
-   "volume": 320,
-   "kd": 8
+   "keyword": "golf buggy tires",
+   "volume": 140,
+   "kd": 4,
+   "intent": "Commercial"
   },
   "secondary": [
    {
@@ -2411,14 +2412,14 @@
    }
   ],
   "support": [
-   "golf buggy tires",
    "golf buggy tyres",
    "golf cart wheels and tyres",
    "golf buggy tyres wheels",
-   "golf buggy wheels and tyres"
+   "golf buggy wheels and tyres",
+   "golf buggy wheels"
   ],
-  "h1": "Golf Buggy Wheels",
-  "titleTag": "Golf Buggy Wheels Australia",
+  "h1": "Golf Buggy Tires & Wheels",
+  "titleTag": "Golf Buggy Tires Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -2839,9 +2840,10 @@
   "level": "accessory",
   "parent": "Off-Road Parts & Upgrades",
   "primary": {
-   "keyword": "buggy winch",
-   "volume": 20,
-   "kd": 0
+   "keyword": "atv winch",
+   "volume": 390,
+   "kd": 7,
+   "intent": "Commercial"
   },
   "secondary": [
    {
@@ -2851,11 +2853,13 @@
     "intent": ""
    }
   ],
-  "support": [],
-  "h1": "Buggy Winch",
-  "titleTag": "Buggy Winch Australia",
+  "support": [
+   "buggy winch"
+  ],
+  "h1": "ATV Winch & Tow Bars",
+  "titleTag": "ATV Winch Australia",
   "faqSeed": [],
-  "lowDemand": true
+  "lowDemand": false
  },
  {
   "name": "Brands (Hub)",
@@ -3156,6 +3160,12 @@
     "volume": 40,
     "kd": 0,
     "intent": ""
+   },
+   {
+    "keyword": "motocaddy golf carts",
+    "volume": 50,
+    "kd": 5,
+    "intent": "Informational, Transactional"
    }
   ],
   "support": [],
@@ -3251,6 +3261,18 @@
     "volume": 30,
     "kd": 0,
     "intent": ""
+   },
+   {
+    "keyword": "rovic",
+    "volume": 70,
+    "kd": 9,
+    "intent": "Commercial"
+   },
+   {
+    "keyword": "rovic rv1s 2.0",
+    "volume": 70,
+    "kd": 12,
+    "intent": "Informational, Transactional"
    }
   ],
   "support": [],
@@ -3570,6 +3592,12 @@
     "volume": 40,
     "kd": 0,
     "intent": ""
+   },
+   {
+    "keyword": "caddytek push cart",
+    "volume": 50,
+    "kd": 8,
+    "intent": "Informational, Transactional"
    }
   ],
   "support": [],
@@ -3820,7 +3848,14 @@
    "volume": 70,
    "kd": 12
   },
-  "secondary": [],
+  "secondary": [
+   {
+    "keyword": "powakaddy ct6",
+    "volume": 70,
+    "kd": 11,
+    "intent": "Informational, Transactional"
+   }
+  ],
   "support": [],
   "h1": "Powakaddy Golf Buggy",
   "titleTag": "Powakaddy Golf Buggy Australia",
@@ -3920,16 +3955,18 @@
   "level": "brand",
   "parent": "Brands (Hub)",
   "primary": {
-   "keyword": "kawasaki buggy 2 seater",
-   "volume": 30,
-   "kd": 0
+   "keyword": "kawasaki teryx",
+   "volume": 70,
+   "kd": 21,
+   "intent": "Informational, Transactional"
   },
   "secondary": [],
   "support": [
-   "kawasaki buggies"
+   "kawasaki buggies",
+   "kawasaki buggy 2 seater"
   ],
-  "h1": "Kawasaki Buggy 2 Seater",
-  "titleTag": "Kawasaki Buggy 2 Seater Australia",
+  "h1": "Kawasaki Teryx Buggy",
+  "titleTag": "Kawasaki Teryx Australia",
   "faqSeed": [],
   "lowDemand": false
  },

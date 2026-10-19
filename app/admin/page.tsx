@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
 import { CRYPTO, REPLY } from '@/config/site';
 
@@ -70,7 +69,7 @@ export default function Admin() {
     <section className="section !pt-8"><div className="container-x">
       <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
         <div><h1 className="text-3xl font-black">Orders</h1><p className="text-sm text-muted">{orders.length} total · {open} to action</p></div>
-        <div className="flex flex-wrap gap-2"><button onClick={() => load()} className="btn btn-ghost">Refresh</button><button onClick={testEmail} className="btn btn-ghost">Test email</button><Link href="/admin/keywords/" className="btn btn-ghost">Keyword report</Link><button onClick={() => { sessionStorage.removeItem('bfs-admin'); setAuthed(false); setPass(''); }} className="btn btn-ghost">Sign out</button></div>
+        <div className="flex flex-wrap gap-2"><button onClick={() => load()} className="btn btn-ghost">Refresh</button><button onClick={testEmail} className="btn btn-ghost">Test email</button><button onClick={() => { sessionStorage.removeItem('bfs-admin'); setAuthed(false); setPass(''); }} className="btn btn-ghost">Sign out</button></div>
       </div>
       {note && !sel && <p className="mb-5 rounded-xl bg-fw-50 p-4 text-sm font-semibold text-fw-800">{note}</p>}
       {!configured && <p className="mb-5 rounded-xl bg-accent-100 p-4 text-sm font-semibold text-accent-600">Storage is not configured: connect an Upstash Redis database in Vercel (Storage tab) so orders appear here. Order emails still send.</p>}

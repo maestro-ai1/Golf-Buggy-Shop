@@ -251,4 +251,4 @@ To unlock the five karts above, either supply studio photos on white or approve 
 1. Unlock the five HelmetKarts go karts (white-background photos or a one-off rule exception) and add more adult and petrol models (about 8,000 searches a month of demand, 4 products so far).
 2. Add more dune and beach buggies and more used golf carts.
 3. Paste a Semrush export from your own session for live volumes and I will refresh the mapping.
-4. After each batch run the keyword audit (node scripts/keyword-audit.mjs) and open the owner report at /admin/keywords/, which now lists Shop, About and Contact beside the other 72 pages.
+4. After each batch run the keyword audit (node scripts/keyword-audit.mjs) and open docs/keyword-preview.html, which now lists Shop, About and Contact beside the other 72 pages.

@@ -51,7 +51,7 @@ for (const s of structure) {
   hashes[s.url] = h(JSON.stringify(s) + inCat + (s.url === '/' ? rd('app/page.tsx') : ''));
 }
 for (const u of ['shop', 'about', 'contact', 'delivery', 'returns', 'faq', 'wholesale', 'privacy', 'terms', 'cookies', 'blog']) {
-  const f = 'app/' + u + '/page.tsx'; if (fs.existsSync(path.join(R, f))) hashes['/' + u + '/'] = h(rd(f) + (u === 'faq' ? rd('content/faq.ts') : '') + (u === 'shop' ? products.length : ''));
+  const f = 'app/' + u + '/page.tsx'; if (fs.existsSync(path.join(R, f))) hashes['/' + u + '/'] = h(rd(f) + (u === 'faq' ? rd('content/faq.ts') : '') + (u === 'shop' ? products.length : '') + (u === 'blog' ? fs.readdirSync(path.join(R, 'content')).filter((x) => /^blog.*\.ts$/.test(x)).map((x) => rd('content/' + x)).join('') : ''));
 }
 const file = path.join(R, 'data/lastmod.json');
 const prev = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {};

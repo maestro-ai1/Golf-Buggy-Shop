@@ -34,6 +34,9 @@ export default function Home() {
   return (
     <>
       <JsonLd data={faqSchema(faqs)} />
+      {/* React hoists these to <head>: the hero starts downloading before the body is parsed. Mobile and desktop pick different files, so each link has a media query. */}
+      <link rel="preload" as="image" type="image/avif" href="/images/hero/home-golf-cart-fairway-1200.avif" media="(max-width: 767px)" fetchPriority="high" />
+      <link rel="preload" as="image" type="image/avif" imageSrcSet="/images/hero/home-golf-cart-fairway-1200.avif 1200w, /images/hero/home-golf-cart-fairway.avif 2400w" imageSizes="100vw" media="(min-width: 768px)" fetchPriority="high" />
       {/* HERO */}
       <section className="relative overflow-hidden bg-fw-900 text-white">
         <picture className="absolute inset-0 hidden md:block">
@@ -98,7 +101,7 @@ export default function Home() {
       <section className="section bg-white">
         <div className="container-x">
           <SectionHead eyebrow="Best sellers" title="Popular golf buggies, carts and buggies" sub="Hand-picked models our customers ask about most. Every price includes GST." action={{ href: '/shop/', label: 'View all products' }} />
-          <div className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">{featured.map((p, i) => <ProductCard key={p.slug} p={toCard(p)} priority={i < 4} />)}</div>
+          <div className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">{featured.map((p) => <ProductCard key={p.slug} p={toCard(p)} />)}</div>
         </div>
       </section>
 

@@ -15,7 +15,7 @@ export function meta({ title, description, path, image, noindex = false, type = 
   title = t;
   return {
     title: { absolute: t }, description: clampDesc(description),
-    alternates: { canonical: abs(path) },
+    alternates: { canonical: abs(path), languages: { 'en-AU': abs(path), 'x-default': abs(path) } },
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     openGraph: { type, siteName: SITE.name, title: t, description: clampDesc(description), url: abs(path), images: [{ url: img, width: 1200, height: 630 }], locale: 'en_AU' },
     twitter: { card: 'summary_large_image', title: t, description: clampDesc(description), images: [img] },

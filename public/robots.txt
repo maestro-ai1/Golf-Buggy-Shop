@@ -1,51 +1,74 @@
+# robots.txt for https://buggiesforsale.com.au
+# Three groups: (1) standard search crawlers, (2) AI answer/search agents that fetch pages to cite us, (3) AI training crawlers.
+# A named group replaces the * group for that bot, so the private-path rules are repeated in every group.
+
+Sitemap: https://buggiesforsale.com.au/sitemap.xml
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+# 1. Standard search crawlers (Googlebot, Bingbot, DuckDuckBot, Yandex and the rest)
 User-agent: *
+Disallow: /admin/
+Disallow: /api/
+Disallow: /checkout/
+Disallow: /order/
+Disallow: /search/
 Disallow: /thank-you-contact/
 Disallow: /thank-you-order/
 Disallow: /thank-you-wholesale/
-Disallow: /checkout/
-Sitemap: https://buggiesforsale.com.au/sitemap.xml
-
-Content-Signal: search=yes, ai-input=yes, ai-train=no
-
-# AI crawlers — welcome to index product and content pages
-User-agent: GPTBot
 Allow: /
 
+# 2. AI answer and search agents: these fetch pages live to answer questions and cite sources (Google AI Overviews use Googlebot, group 1)
+User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
 User-agent: PerplexityBot
-Allow: /
-
+User-agent: Perplexity-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: Claude-Web
+User-agent: DuckAssistBot
+User-agent: MistralAI-User
 User-agent: Applebot
-Allow: /
-
 User-agent: Amazonbot
+Disallow: /admin/
+Disallow: /checkout/
+Disallow: /order/
+Disallow: /search/
+Disallow: /thank-you-contact/
+Disallow: /thank-you-order/
+Disallow: /thank-you-wholesale/
+Disallow: /api/admin/
+Disallow: /api/order/
+Disallow: /api/contact/
 Allow: /
 
-User-agent: Bytespider
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
+# 3. AI indexing and training crawlers (GPTBot, ClaudeBot, Google-Extended, Cohere, CCBot, Meta, Applebot-Extended). Crawling is allowed; Content-Signal above says: do not train on the content.
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
 User-agent: Google-Extended
-Allow: /
-
-User-agent: Meta-ExternalAgent
-Allow: /
-
 User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
+User-agent: CCBot
+User-agent: Meta-ExternalAgent
+User-agent: Applebot-Extended
+Disallow: /admin/
+Disallow: /api/
+Disallow: /checkout/
+Disallow: /order/
+Disallow: /search/
+Disallow: /thank-you-contact/
+Disallow: /thank-you-order/
+Disallow: /thank-you-wholesale/
 Allow: /
+
+# Bytespider (ByteDance) is aggressive, has a history of ignoring robots.txt and sends no Australian buyers or citations.
+User-agent: Bytespider
+Disallow: /
 
 # Agent-readable resources
-# llms.txt: https://buggiesforsale.com.au/llms.txt
-# API Catalog: https://buggiesforsale.com.au/.well-known/api-catalog
-# Agent Skills: https://buggiesforsale.com.au/.well-known/agent-skills/index.json
+# llms.txt:      https://buggiesforsale.com.au/llms.txt
+# llms-full.txt: https://buggiesforsale.com.au/llms-full.txt
+# API Catalog:   https://buggiesforsale.com.au/.well-known/api-catalog
+# Agent Skills:  https://buggiesforsale.com.au/.well-known/agent-skills/index.json
+# ARD catalog:   https://buggiesforsale.com.au/.well-known/ai-catalog.json
 # MCP Server Card: https://buggiesforsale.com.au/.well-known/mcp/server-card.json

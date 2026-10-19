@@ -1,0 +1,1274 @@
+{
+ "/products/mgi-zip-x1-electric-golf-buggy/": {
+  "h": "78f211a4aae7",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-zip-x3-electric-golf-buggy/": {
+  "h": "9183019ad0c3",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-zip-x5-electric-golf-buggy/": {
+  "h": "393230eb9d75",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-zip-navigator-remote-control-golf-buggy/": {
+  "h": "dd8df176bc2e",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-zip-navigator-at-all-terrain-remote-golf-buggy/": {
+  "h": "68a06d9f2d2c",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-ai-500-remote-control-golf-buggy/": {
+  "h": "ad75538b3a66",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-ai-navigator-gps-remote-control-golf-buggy/": {
+  "h": "307b55b8dca5",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-ai-navigator-halo-remote-control-golf-buggy/": {
+  "h": "871c9719e624",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-e-boost-golf-pushcart/": {
+  "h": "7a402601de83",
+  "d": "2026-10-19"
+ },
+ "/products/powerbug-nx-lithium-electric-golf-buggy/": {
+  "h": "5640df00f673",
+  "d": "2026-10-19"
+ },
+ "/products/powerbug-nx-dhc-lithium-electric-golf-buggy/": {
+  "h": "f14f6fc561e7",
+  "d": "2026-10-19"
+ },
+ "/products/qod-q2-remote-control-all-terrain-electric-golf-buggy/": {
+  "h": "b4df88188a8c",
+  "d": "2026-10-19"
+ },
+ "/products/qod-q1-all-terrain-electric-golf-buggy/": {
+  "h": "b97a4f8310a8",
+  "d": "2026-10-19"
+ },
+ "/products/concourse-vogue-remote-control-power-golf-buggy/": {
+  "h": "e6f470dbb826",
+  "d": "2026-10-19"
+ },
+ "/products/i-motioncaddys-im4-ride-on-electric-golf-buggy/": {
+  "h": "52e373a1f6f9",
+  "d": "2026-10-19"
+ },
+ "/products/golf-skate-caddy-tourer-electric-golf-board/": {
+  "h": "13e8e110f385",
+  "d": "2026-10-19"
+ },
+ "/products/stinger-sg-1-golf-push-buggy/": {
+  "h": "bb9c5212bf7a",
+  "d": "2026-10-19"
+ },
+ "/products/stinger-sg-4-compact-golf-push-buggy/": {
+  "h": "06180a3a7ad7",
+  "d": "2026-10-19"
+ },
+ "/products/stinger-sg-5-v2-golf-push-buggy/": {
+  "h": "e4075109058d",
+  "d": "2026-10-19"
+ },
+ "/products/stinger-sg-6-golf-push-buggy/": {
+  "h": "d7fdb48a488f",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-a2-2-seat-golf-cart/": {
+  "h": "cafc2905b847",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-ikon-hd-2ul-2-seat-golf-cart/": {
+  "h": "835e19b9cd77",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-ikon-hd-4s-4-seat-golf-cart/": {
+  "h": "7d2031ac8d75",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-ikon-hd-h2-golf-cart/": {
+  "h": "ff1e3ea4a72d",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-ikon-hd-4ul-4-seat-golf-cart/": {
+  "h": "81dd8cdc5e59",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-magnum-2s-2-seat-golf-cart/": {
+  "h": "8bf199af0f66",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-magnum-2s-platinum-golf-cart/": {
+  "h": "44b731c9ed1b",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-magnum-4s-4-seat-golf-cart/": {
+  "h": "69cbe2defc6e",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-magnum-4f-golf-cart/": {
+  "h": "a7566b94bb6b",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-magnum-6s-6-seat-golf-cart/": {
+  "h": "2d3d825ab3fa",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-magnum-8s-8-seat-golf-cart/": {
+  "h": "a61b9a0af90e",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-compass-2s-2-seat-golf-cart/": {
+  "h": "f1de3556f26e",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-compass-4s-4-seat-golf-cart/": {
+  "h": "2c946c9c4207",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-s-series-2-seat-resort-golf-cart/": {
+  "h": "8f8db6a93cde",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-s-series-2-seat-utility-golf-cart/": {
+  "h": "649c7da0651e",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-magnum-h2-utility-golf-cart/": {
+  "h": "1210620274b6",
+  "d": "2026-10-19"
+ },
+ "/products/tomberlin-e-merge-revenge-2-seat-golf-cart/": {
+  "h": "16a522208c43",
+  "d": "2026-10-19"
+ },
+ "/products/tomberlin-e-merge-revenge-4-seat-golf-cart/": {
+  "h": "c51c4f922de7",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-core-48v-105ah-lithium-battery-package-for-club-car-precedent/": {
+  "h": "5795d7a3c181",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-plus-48v-150ah-lithium-battery-package-for-club-car-precedent/": {
+  "h": "190b90f160c5",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-core-48v-105ah-lithium-battery-package-for-ezgo-rxv/": {
+  "h": "42d4bf61409e",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-plus-48v-150ah-lithium-battery-package-for-ezgo-rxv/": {
+  "h": "e44f837ff14b",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-core-48v-105ah-lithium-battery-package-for-yamaha-g22-on-board/": {
+  "h": "68a58b5e1616",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-plus-48v-150ah-lithium-battery-package-for-yamaha-g22-on-board/": {
+  "h": "35666b322a08",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-core-48v-105ah-lithium-battery-package-for-ecar-627-and-yamaha-g29/": {
+  "h": "dd05f68e7609",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-plus-48v-150ah-lithium-battery-package-for-ecar-627/": {
+  "h": "e9c521f7835d",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-lithium-12v-299wh-battery/": {
+  "h": "513aa9ed17bb",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-zip-24v-299wh-lithium-battery/": {
+  "h": "b181b3ee5db4",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-zip-24v-250wh-lithium-battery/": {
+  "h": "013a430ca463",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-ai-gps-24v-380wh-lithium-battery/": {
+  "h": "5baa592ca19b",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-lithium-24v-smart-charger-for-ai-and-zip-series/": {
+  "h": "fe3ae5ab1dc5",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-fireproof-charging-box/": {
+  "h": "0429dda8b31e",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-orange-receptacle-charger/": {
+  "h": "20ccb0c5b3e0",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-orange-charger-plug-with-3m-cord/": {
+  "h": "983e42f802d4",
+  "d": "2026-10-19"
+ },
+ "/products/lester-summit2-48v-golf-cart-on-board-charger/": {
+  "h": "0e61c64be9f7",
+  "d": "2026-10-19"
+ },
+ "/products/golf-cart-mag-wheels-rex-10-inch-set-of-4-gloss-black/": {
+  "h": "17c288087f41",
+  "d": "2026-10-19"
+ },
+ "/products/golf-cart-mag-wheels-bulldog-10-inch-set-of-4-silver/": {
+  "h": "5eb1e6b17317",
+  "d": "2026-10-19"
+ },
+ "/products/golf-cart-mag-wheels-hexagon-12-inch-set-of-4-gloss-black/": {
+  "h": "21ef1424a3a7",
+  "d": "2026-10-19"
+ },
+ "/products/golf-cart-mag-wheels-hexagon-14-inch-set-of-4-gloss-black/": {
+  "h": "d8ce5eb518ba",
+  "d": "2026-10-19"
+ },
+ "/products/golf-cart-mag-wheels-torque-12-inch-set-of-4-silver/": {
+  "h": "f0b3a4e71f73",
+  "d": "2026-10-19"
+ },
+ "/products/golf-cart-venom-mag-wheel-12-inch-single/": {
+  "h": "ebf4ce41f44b",
+  "d": "2026-10-19"
+ },
+ "/products/golf-cart-tyre-and-new-rim-8-inch-single/": {
+  "h": "34c65dff22e1",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-rear-wheels-for-buggies/": {
+  "h": "d5a5172835da",
+  "d": "2026-10-19"
+ },
+ "/products/golf-cart-phone-holder-magnetic-style/": {
+  "h": "d2de0a3ad56e",
+  "d": "2026-10-19"
+ },
+ "/products/golf-cart-phone-holder-cup-holder-style/": {
+  "h": "607b5e9de966",
+  "d": "2026-10-19"
+ },
+ "/products/golf-cart-umbrella-holder-set/": {
+  "h": "d5a05ca8d0ec",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-sand-bottle-holder/": {
+  "h": "efabee6a5e03",
+  "d": "2026-10-19"
+ },
+ "/products/stinger-sand-bucket-holder-kit-complete/": {
+  "h": "5601c7d99dd2",
+  "d": "2026-10-19"
+ },
+ "/products/powerbug-smart-phone-and-gps-holder/": {
+  "h": "b911a8623b26",
+  "d": "2026-10-19"
+ },
+ "/products/powerbug-umbrella-holder/": {
+  "h": "d9b7284ffae0",
+  "d": "2026-10-19"
+ },
+ "/products/powerbug-drink-holder/": {
+  "h": "5e79d88f2258",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-xl-cooler-bag-for-golf-buggies/": {
+  "h": "58794111c534",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-quad-cooler-storage-bag/": {
+  "h": "a77021350ef7",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-buggy-accessories-bag/": {
+  "h": "db0c73d9ae35",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-buggy-travel-bag/": {
+  "h": "e8987bda7d7b",
+  "d": "2026-10-19"
+ },
+ "/products/buggy-bag-the-grocery-bag/": {
+  "h": "d0a68530fe0f",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-passenger-rail-metal-esky-bracket/": {
+  "h": "ba3b5601d99d",
+  "d": "2026-10-19"
+ },
+ "/products/club-car-precedent-metal-esky-bracket/": {
+  "h": "b539e5e598af",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-buggy-seat/": {
+  "h": "020f2177d7aa",
+  "d": "2026-10-19"
+ },
+ "/products/powerbug-seat-kit/": {
+  "h": "19912e72c2b5",
+  "d": "2026-10-19"
+ },
+ "/products/yamaha-g29-luxury-padded-seat-covers/": {
+  "h": "fa6bf1f2ab57",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-627-golf-cart-floor-mat/": {
+  "h": "12193fbb2e39",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-magnum-golf-cart-floor-mat/": {
+  "h": "aff3bce21e98",
+  "d": "2026-10-19"
+ },
+ "/products/seat-belt-full-kit-assembly-2-seat/": {
+  "h": "b16f3cb1077a",
+  "d": "2026-10-19"
+ },
+ "/products/seat-belt-full-kit-assembly-4-seat/": {
+  "h": "649c4a0879e8",
+  "d": "2026-10-19"
+ },
+ "/products/club-car-precedent-led-deluxe-light-kit/": {
+  "h": "2d0e73e4c6fa",
+  "d": "2026-10-19"
+ },
+ "/products/ezgo-rxv-led-deluxe-light-kit/": {
+  "h": "f47083870a56",
+  "d": "2026-10-19"
+ },
+ "/products/yamaha-g29-led-deluxe-light-kit/": {
+  "h": "34092ceaa60b",
+  "d": "2026-10-19"
+ },
+ "/products/12v-bluetooth-stereo-speaker-system-for-golf-carts/": {
+  "h": "64a760d710d1",
+  "d": "2026-10-19"
+ },
+ "/products/rear-golf-bag-carrier/": {
+  "h": "6e6b3fa3a8df",
+  "d": "2026-10-19"
+ },
+ "/products/universal-rear-bag-rack-for-4-seat-golf-carts/": {
+  "h": "8a37169f7785",
+  "d": "2026-10-19"
+ },
+ "/products/passenger-safety-grab-rail-for-4-seat-golf-carts/": {
+  "h": "3945dd61e61c",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-627-driver-side-mirror/": {
+  "h": "438f4a0cb3e7",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-627-passenger-side-mirror/": {
+  "h": "b998582b5b53",
+  "d": "2026-10-19"
+ },
+ "/products/sports-steering-wheel-black-rally-for-golf-carts/": {
+  "h": "33ca66e1bf6d",
+  "d": "2026-10-19"
+ },
+ "/products/sports-steering-wheel-black-apex-for-golf-carts/": {
+  "h": "20a5dbfb865a",
+  "d": "2026-10-19"
+ },
+ "/products/trailmaster-cheetah-175cc-dune-buggy/": {
+  "h": "76355a68df3b",
+  "d": "2026-10-19"
+ },
+ "/products/trailmaster-cheetah-300cc-dune-buggy/": {
+  "h": "fce955a6651e",
+  "d": "2026-10-19"
+ },
+ "/products/trailmaster-challenger-200-buggy/": {
+  "h": "561bebfd3739",
+  "d": "2026-10-19"
+ },
+ "/products/kayo-s150-side-by-side-buggy/": {
+  "h": "0e72c9ced00c",
+  "d": "2026-10-19"
+ },
+ "/products/kayo-s350-side-by-side/": {
+  "h": "fa580a0340d4",
+  "d": "2026-10-19"
+ },
+ "/products/hammerhead-mudhead-se-off-road-buggy/": {
+  "h": "90c260ab88ac",
+  "d": "2026-10-19"
+ },
+ "/products/hammerhead-torpedo-kids-buggy-6-5hp/": {
+  "h": "d4a355c5f5ec",
+  "d": "2026-10-19"
+ },
+ "/products/kayo-s70-kids-buggy-79cc-fully-automatic/": {
+  "h": "d8503005fd2f",
+  "d": "2026-10-19"
+ },
+ "/products/go-skitz-adventure-kids-electric-quad-bike/": {
+  "h": "20ec075acafa",
+  "d": "2026-10-19"
+ },
+ "/products/go-skitz-2-5-kids-electric-quad-bike/": {
+  "h": "2119358d5732",
+  "d": "2026-10-19"
+ },
+ "/products/kayo-s125-go-kart/": {
+  "h": "c5b7172cccca",
+  "d": "2026-10-19"
+ },
+ "/products/gmx-drift-200cc-electric-start-go-kart/": {
+  "h": "a3b8969d1681",
+  "d": "2026-10-19"
+ },
+ "/products/crazy-kart-electric-drift-kart-drifta/": {
+  "h": "073b641c8e9a",
+  "d": "2026-10-19"
+ },
+ "/products/kayo-predator-125-quad-bike/": {
+  "h": "2de8cf5e3767",
+  "d": "2026-10-19"
+ },
+ "/products/kayo-bull-125-farm-quad-atv/": {
+  "h": "8748cc29cc15",
+  "d": "2026-10-19"
+ },
+ "/products/apollo-commander-110cc-automatic-quad-bike/": {
+  "h": "59c4f59d9be7",
+  "d": "2026-10-19"
+ },
+ "/products/apollo-rfz-commander-125-quad-bike/": {
+  "h": "b377e1137f39",
+  "d": "2026-10-19"
+ },
+ "/products/motocaddy-m7-gps-remote-electric-golf-buggy/": {
+  "h": "370df25b7a9c",
+  "d": "2026-10-19"
+ },
+ "/products/powakaddy-ct6-electric-golf-buggy/": {
+  "h": "a63536569db2",
+  "d": "2026-10-19"
+ },
+ "/products/powakaddy-micra-push-golf-buggy/": {
+  "h": "9379bf70ea59",
+  "d": "2026-10-19"
+ },
+ "/products/clicgear-model-4-0-golf-push-buggy/": {
+  "h": "4e97ab78aca5",
+  "d": "2026-10-19"
+ },
+ "/products/rovic-rv1s-swivel-2-0-golf-push-buggy/": {
+  "h": "74f4d1469278",
+  "d": "2026-10-19"
+ },
+ "/products/rovic-rv1c-compact-2-0-golf-push-buggy/": {
+  "h": "7c2efe66ee26",
+  "d": "2026-10-19"
+ },
+ "/products/big-max-iq2-360-golf-push-buggy/": {
+  "h": "4789d79a98e3",
+  "d": "2026-10-19"
+ },
+ "/products/parmaker-spirit-ride-on-golf-buggy/": {
+  "h": "f7e6fcafcb50",
+  "d": "2026-10-19"
+ },
+ "/products/parmaker-explorer-ghia-ride-on-golf-buggy/": {
+  "h": "d5893ea21c78",
+  "d": "2026-10-19"
+ },
+ "/products/triumph-gtx-plus-3-wheel-golf-push-buggy/": {
+  "h": "8246366c2316",
+  "d": "2026-10-19"
+ },
+ "/products/polaris-rzr-youth-half-windshield/": {
+  "h": "9f12eda9ee82",
+  "d": "2026-10-19"
+ },
+ "/products/polaris-rzr-youth-full-windshield/": {
+  "h": "78f7c7214efc",
+  "d": "2026-10-19"
+ },
+ "/products/polaris-rzr-170-front-brushguard/": {
+  "h": "27451893d5cc",
+  "d": "2026-10-19"
+ },
+ "/products/polaris-ranger-150-front-and-rear-brushguard-set/": {
+  "h": "71ed31f80384",
+  "d": "2026-10-19"
+ },
+ "/products/polaris-rzr-200-efi-rear-bumper/": {
+  "h": "639075282b49",
+  "d": "2026-10-19"
+ },
+ "/products/polaris-pro-armor-crawler-youth-tyre/": {
+  "h": "6e796ad8dcd9",
+  "d": "2026-10-19"
+ },
+ "/products/club-car-tempo-petrol-golf-cart/": {
+  "h": "a62c3ebdcb64",
+  "d": "2026-10-19"
+ },
+ "/products/club-car-tempo-deluxe-petrol-golf-cart-metallic-green/": {
+  "h": "1cad8402c4aa",
+  "d": "2026-10-19"
+ },
+ "/products/club-car-onward-petrol-golf-cart/": {
+  "h": "ac3e39cf2ced",
+  "d": "2026-10-19"
+ },
+ "/products/club-car-tempo-2-2-lithium-4-seat-golf-cart/": {
+  "h": "a8f2a3a0704d",
+  "d": "2026-10-19"
+ },
+ "/products/club-car-tempo-refurbished-lithium-golf-cart/": {
+  "h": "132e08247262",
+  "d": "2026-10-19"
+ },
+ "/products/used-2015-club-car-precedent-4-seat-blue-golf-cart/": {
+  "h": "460a1548ad27",
+  "d": "2026-10-19"
+ },
+ "/products/used-2017-ezgo-rxv-4-seat-black-golf-cart/": {
+  "h": "9719b16c6f5f",
+  "d": "2026-10-19"
+ },
+ "/products/used-2007-ezgo-txt-4-seat-black-golf-cart/": {
+  "h": "3be491dd019b",
+  "d": "2026-10-19"
+ },
+ "/products/used-2010-tomberlin-revenge-4-seat-blue-grey-golf-cart/": {
+  "h": "dd9fba511b05",
+  "d": "2026-10-19"
+ },
+ "/products/used-2012-ecar-dominic-4-seat-black-golf-cart/": {
+  "h": "99bd00f6a0a8",
+  "d": "2026-10-19"
+ },
+ "/products/cfmoto-uforce-800-eps-xl-side-by-side/": {
+  "h": "14ff8e085865",
+  "d": "2026-10-19"
+ },
+ "/products/segway-villain-sx10-e-side-by-side/": {
+  "h": "da2f7beae3ee",
+  "d": "2026-10-19"
+ },
+ "/products/kawasaki-teryx4-h2-side-by-side/": {
+  "h": "f1730e8d945e",
+  "d": "2026-10-19"
+ },
+ "/products/yamaha-viking-se-3-seat-side-by-side/": {
+  "h": "5eb433f4ba31",
+  "d": "2026-10-19"
+ },
+ "/products/honda-pioneer-1000-6-side-by-side/": {
+  "h": "6464865655fc",
+  "d": "2026-10-19"
+ },
+ "/products/kubota-rtv-xg850-sidekick-side-by-side/": {
+  "h": "9007fa78443b",
+  "d": "2026-10-19"
+ },
+ "/products/kubota-rtv520-side-by-side/": {
+  "h": "3ba04a35e427",
+  "d": "2026-10-19"
+ },
+ "/products/polaris-rzr-200-efi-youth-buggy/": {
+  "h": "4c1165dc79f6",
+  "d": "2026-10-19"
+ },
+ "/products/polaris-rzr-trail-s-1000-side-by-side/": {
+  "h": "825496f1ede1",
+  "d": "2026-10-19"
+ },
+ "/products/polaris-rzr-pro-r-side-by-side/": {
+  "h": "5d6128d4f396",
+  "d": "2026-10-19"
+ },
+ "/products/polaris-ranger-500-side-by-side/": {
+  "h": "824688dc0395",
+  "d": "2026-10-19"
+ },
+ "/products/polaris-ranger-xp-1000-hd-side-by-side/": {
+  "h": "c4ff3711fcdb",
+  "d": "2026-10-19"
+ },
+ "/products/polaris-ranger-crew-xp-1000-side-by-side/": {
+  "h": "91885562991e",
+  "d": "2026-10-19"
+ },
+ "/products/stinger-sg-4-crossover-remote-control-golf-buggy-classic-edition-v3/": {
+  "h": "62260bb2952d",
+  "d": "2026-10-19"
+ },
+ "/products/stinger-sg-4-crossover-remote-control-golf-buggy-silver-edition-v3/": {
+  "h": "16a69f518636",
+  "d": "2026-10-19"
+ },
+ "/products/stinger-sg-4-crossover-remote-control-golf-buggy-gt-edition-v3/": {
+  "h": "84afa83f0be4",
+  "d": "2026-10-19"
+ },
+ "/products/stinger-sg-2-v2-golf-push-buggy/": {
+  "h": "2f5763877f36",
+  "d": "2026-10-19"
+ },
+ "/products/stinger-sg-3-viii-golf-push-buggy/": {
+  "h": "491a79c5b07c",
+  "d": "2026-10-19"
+ },
+ "/products/stinger-sg-5-v2-golf-push-buggy-with-seat-kit/": {
+  "h": "62ea62966f21",
+  "d": "2026-10-19"
+ },
+ "/products/stinger-sg-3-viii-golf-push-buggy-with-seat-kit/": {
+  "h": "ae3a8e8a5bac",
+  "d": "2026-10-19"
+ },
+ "/products/stinger-sg-4-compact-golf-push-buggy-with-seat-kit/": {
+  "h": "88a674bc741d",
+  "d": "2026-10-19"
+ },
+ "/products/stinger-sg-2-v2-golf-push-buggy-with-seat-kit/": {
+  "h": "b918cc753a40",
+  "d": "2026-10-19"
+ },
+ "/products/crossfire-x400-atv-quad-bike/": {
+  "h": "09b9127526b3",
+  "d": "2026-10-19"
+ },
+ "/products/crossfire-x600-4wd-utility-atv/": {
+  "h": "2f0167e6b406",
+  "d": "2026-10-19"
+ },
+ "/products/apollo-rfz-commander-200-quad-bike/": {
+  "h": "41b9a7dd0ba4",
+  "d": "2026-10-19"
+ },
+ "/products/apollo-rfz-falcon-140cc-automatic-quad-bike/": {
+  "h": "80bfed36c724",
+  "d": "2026-10-19"
+ },
+ "/products/apollo-blazer-125cc-quad-bike/": {
+  "h": "3a423205e59a",
+  "d": "2026-10-19"
+ },
+ "/products/apollo-commander-70-kids-quad-bike/": {
+  "h": "43d734b20ac9",
+  "d": "2026-10-19"
+ },
+ "/products/kayo-storm-70-kids-quad-bike/": {
+  "h": "1f5878b34ba4",
+  "d": "2026-10-19"
+ },
+ "/products/crossfire-rover-125-youth-atv/": {
+  "h": "d31d12cd0214",
+  "d": "2026-10-19"
+ },
+ "/products/50cc-2-stroke-mini-quad-bike/": {
+  "h": "a28c4a0eebe7",
+  "d": "2026-10-19"
+ },
+ "/products/crossfire-blazer-200r-200cc-kids-go-kart-buggy/": {
+  "h": "207e228db080",
+  "d": "2026-10-19"
+ },
+ "/products/crossfire-600gt-4wd-utility-side-by-side/": {
+  "h": "f91cef64f2dd",
+  "d": "2026-10-19"
+ },
+ "/products/crossfire-400gt-400cc-efi-farm-side-by-side/": {
+  "h": "928ed79144ed",
+  "d": "2026-10-19"
+ },
+ "/products/crossfire-e5-electric-utv-2-seater/": {
+  "h": "ea581cf7f2d3",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-a4-4-seat-golf-cart/": {
+  "h": "e6936bbcb139",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-a2-2-seat-utility-golf-cart/": {
+  "h": "1aa2055bb08a",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-627-4ul-4-seat-golf-cart/": {
+  "h": "ecbfc71095ea",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-627-6s-6-seat-golf-cart/": {
+  "h": "dd483b34ef88",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-magnum-4ul-4-seat-golf-cart/": {
+  "h": "8d58e72b343f",
+  "d": "2026-10-19"
+ },
+ "/products/ecar-lithium-magnum-6f-6-seat-golf-cart/": {
+  "h": "960747d74d1f",
+  "d": "2026-10-19"
+ },
+ "/products/tomberlin-e-merge-ss-4-seat-golf-cart/": {
+  "h": "8d8b28bc1928",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-core-48v-105ah-lithium-battery-package-for-yamaha-g19-off-board/": {
+  "h": "6426ab7e69e0",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-plus-48v-150ah-lithium-battery-package-for-yamaha-g19-off-board/": {
+  "h": "1e438e25fd36",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-core-48v-105ah-lithium-battery-package-for-yamaha-g19-on-board/": {
+  "h": "c9b9b0b3fc15",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-plus-48v-150ah-lithium-battery-package-for-yamaha-g19-on-board/": {
+  "h": "6689b73f619c",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-core-48v-105ah-lithium-battery-package-for-yamaha-g22-off-board/": {
+  "h": "65722d474f47",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-plus-48v-150ah-lithium-battery-package-for-yamaha-g22-off-board/": {
+  "h": "0f58be3c2f8a",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-core-48v-105ah-lithium-battery-package-for-ecar-ikon/": {
+  "h": "e6d3f4e6e59e",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-plus-48v-150ah-lithium-battery-package-for-ecar-ikon/": {
+  "h": "5e6bcb5944df",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-core-48v-105ah-lithium-battery-package-for-ecar-a-series/": {
+  "h": "95d09b20f9aa",
+  "d": "2026-10-19"
+ },
+ "/products/pro-li-plus-48v-150ah-lithium-battery-package-for-ecar-a-series/": {
+  "h": "fc2e0ff31986",
+  "d": "2026-10-19"
+ },
+ "/products/used-2017-ecar-627-2-seat-electric-blue-golf-cart/": {
+  "h": "75a04aff6575",
+  "d": "2026-10-19"
+ },
+ "/products/used-2015-ecar-a4-4-seat-black-golf-cart/": {
+  "h": "ed697fe3f9ea",
+  "d": "2026-10-19"
+ },
+ "/products/used-2018-ezgo-rxv-4-seat-red-golf-cart/": {
+  "h": "8f386adf4229",
+  "d": "2026-10-19"
+ },
+ "/products/used-2022-ecar-sdb-4-seat-black-golf-cart/": {
+  "h": "c2e9ecbcfb7a",
+  "d": "2026-10-19"
+ },
+ "/products/used-2013-ecar-martinique-4-seat-red-golf-cart/": {
+  "h": "dddea8268dae",
+  "d": "2026-10-19"
+ },
+ "/products/used-2023-ecar-ikon-2-seat-emerald-green-golf-cart/": {
+  "h": "7004ec15fc27",
+  "d": "2026-10-19"
+ },
+ "/products/used-2021-tomberlin-gts-4-seat-yellow-golf-cart/": {
+  "h": "81b619325df1",
+  "d": "2026-10-19"
+ },
+ "/products/used-2012-tomberlin-48ss-caddy-4-seat-blue-grey-golf-cart/": {
+  "h": "0d35578376bd",
+  "d": "2026-10-19"
+ },
+ "/products/used-2014-ecar-a4-dominic-4-seat-white-golf-cart/": {
+  "h": "7fbc7d2b386f",
+  "d": "2026-10-19"
+ },
+ "/products/used-2023-ecar-627-4-seat-black-golf-cart/": {
+  "h": "a80f4c489924",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-golf-bag-rain-cover/": {
+  "h": "08bed12d31b8",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-telescopic-umbrella/": {
+  "h": "02cb2f075225",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-buggy-phone-holder/": {
+  "h": "db155eac4575",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-lithium-12v-20ah-battery/": {
+  "h": "6446dc9d83ff",
+  "d": "2026-10-19"
+ },
+ "/products/mgi-lithium-24v-13ah-battery/": {
+  "h": "cfbcaba6f684",
+  "d": "2026-10-19"
+ },
+ "/products/golf-skate-caddy-tourer-seat/": {
+  "h": "08104f9d1b2d",
+  "d": "2026-10-19"
+ },
+ "/products/golf-skate-caddy-tourer-umbrella/": {
+  "h": "56a84f50388d",
+  "d": "2026-10-19"
+ },
+ "/products/trojan-t-875-8v-170ah-deep-cycle-golf-cart-battery/": {
+  "h": "f3f0df960246",
+  "d": "2026-10-19"
+ },
+ "/products/trojan-t-875-8v-golf-cart-battery-set-of-6-48v/": {
+  "h": "6717aacca6f3",
+  "d": "2026-10-19"
+ },
+ "/products/trojan-t-105-6v-225ah-deep-cycle-golf-cart-battery/": {
+  "h": "02d3433079bf",
+  "d": "2026-10-19"
+ },
+ "/products/polaris-rzr-xp-1000-sport-eps-side-by-side/": {
+  "h": "c6c5ca27b032",
+  "d": "2026-10-19"
+ },
+ "/products/segway-ninebot-gokart-pro-2-electric-go-kart/": {
+  "h": "06a7a0552c70",
+  "d": "2026-10-19"
+ },
+ "/products/helmetkarts-ha-270x-270cc-go-kart/": {
+  "h": "3cbfd232ddca",
+  "d": "2026-10-19"
+ },
+ "/products/r1-kids-buggy-5-to-11-years/": {
+  "h": "1dbe8e17a1ee",
+  "d": "2026-10-19"
+ },
+ "/products/can-am-maverick-24v-kids-ride-on-buggy/": {
+  "h": "1640494c4963",
+  "d": "2026-10-19"
+ },
+ "/products/john-deere-12v-gator-xuv-kids-ride-on/": {
+  "h": "b5d0f1496a73",
+  "d": "2026-10-19"
+ },
+ "/products/kids-24v-electric-golf-cart-ride-on-with-canopy/": {
+  "h": "322bd2a69cc6",
+  "d": "2026-10-19"
+ },
+ "/products/bag-boy-nitron-golf-push-buggy/": {
+  "h": "5eafaf49a891",
+  "d": "2026-10-19"
+ },
+ "/products/tri-lite-deluxe-3-wheel-golf-push-buggy/": {
+  "h": "78ee69fb9c3d",
+  "d": "2026-10-19"
+ },
+ "/products/smoothy-micro-golf-push-buggy/": {
+  "h": "f26a8809ab18",
+  "d": "2026-10-19"
+ },
+ "/products/caddytek-caddylite-ez-fold-pro-3-wheel-golf-push-buggy-with-seat/": {
+  "h": "0a8604af0e3b",
+  "d": "2026-10-19"
+ },
+ "/products/caddytek-11-5-v3-superlite-deluxe-3-wheel-golf-push-buggy/": {
+  "h": "bac031243ae9",
+  "d": "2026-10-19"
+ },
+ "/products/thomson-e5000-pro-lithium-electric-golf-buggy/": {
+  "h": "c32f59153077",
+  "d": "2026-10-19"
+ },
+ "/products/motocaddy-s1-dhc-electric-golf-buggy/": {
+  "h": "3decc950caf4",
+  "d": "2026-10-19"
+ },
+ "/products/carburettor-250cc-atv-with-cable-choke/": {
+  "h": "417b69368313",
+  "d": "2026-10-19"
+ },
+ "/products/carburettor-22mm-for-110cc-and-125cc-engines/": {
+  "h": "81102173f5c7",
+  "d": "2026-10-19"
+ },
+ "/products/carburettor-49cc-for-2-stroke-mini-bikes-and-quads/": {
+  "h": "7d4fda2ebf60",
+  "d": "2026-10-19"
+ },
+ "/products/air-filter-for-trailmaster-175-to-300-buggy/": {
+  "h": "a94c02b153d1",
+  "d": "2026-10-19"
+ },
+ "/products/quad-front-brake-master-cylinder/": {
+  "h": "4fd7dd38e69c",
+  "d": "2026-10-19"
+ },
+ "/products/centrifugal-clutch-25mm-for-go-karts/": {
+  "h": "e696e46dd5ac",
+  "d": "2026-10-19"
+ },
+ "/products/atv-folding-ramp-241cm-680kg/": {
+  "h": "a82f03879347",
+  "d": "2026-10-19"
+ },
+ "/products/folding-aluminium-loading-ramp-2-3m/": {
+  "h": "1f48bb94dd48",
+  "d": "2026-10-19"
+ },
+ "/products/folding-loading-ramps-2-4m-800kg-pair/": {
+  "h": "2a888bc2ecfb",
+  "d": "2026-10-19"
+ },
+ "/products/aluminium-motorcycle-carrier-with-tow-hitch-mount/": {
+  "h": "d96ce67e3600",
+  "d": "2026-10-19"
+ },
+ "/": {
+  "h": "65a0462536c4",
+  "d": "2026-10-19"
+ },
+ "/golf-buggies/": {
+  "h": "33b07c1ce66d",
+  "d": "2026-10-19"
+ },
+ "/golf-buggies/for-sale/": {
+  "h": "12bddd12213d",
+  "d": "2026-10-19"
+ },
+ "/golf-buggies/motorised-electric/": {
+  "h": "fd8e0909d004",
+  "d": "2026-10-19"
+ },
+ "/golf-buggies/remote-control/": {
+  "h": "05253f443643",
+  "d": "2026-10-19"
+ },
+ "/golf-buggies/push-pull-trolleys/": {
+  "h": "7ab064baaaf5",
+  "d": "2026-10-19"
+ },
+ "/golf-buggies/caddies-electric-trolleys/": {
+  "h": "57a45f17672e",
+  "d": "2026-10-19"
+ },
+ "/golf-buggies/ride-on-seated/": {
+  "h": "c0dc54b00b83",
+  "d": "2026-10-19"
+ },
+ "/golf-buggies/3-wheel/": {
+  "h": "6d7b9966015c",
+  "d": "2026-10-19"
+ },
+ "/golf-buggies/golf-scooters/": {
+  "h": "0ffd4e816508",
+  "d": "2026-10-19"
+ },
+ "/golf-buggies/for-sale-locations/": {
+  "h": "4129fffc35b7",
+  "d": "2026-10-19"
+ },
+ "/golf-carts/": {
+  "h": "68758c285ae1",
+  "d": "2026-10-19"
+ },
+ "/golf-carts/for-sale/": {
+  "h": "51aabd79666e",
+  "d": "2026-10-19"
+ },
+ "/golf-carts/used/": {
+  "h": "1fda207c38b5",
+  "d": "2026-10-19"
+ },
+ "/golf-carts/petrol/": {
+  "h": "00fed7fb505a",
+  "d": "2026-10-19"
+ },
+ "/golf-carts/electric/": {
+  "h": "4698f118da56",
+  "d": "2026-10-19"
+ },
+ "/golf-carts/utility-4-seater/": {
+  "h": "97d8f0123260",
+  "d": "2026-10-19"
+ },
+ "/golf-carts/mini-junior/": {
+  "h": "d3cdcea2432f",
+  "d": "2026-10-19"
+ },
+ "/clearance/": {
+  "h": "83daf6b8688f",
+  "d": "2026-10-19"
+ },
+ "/off-road-buggies/": {
+  "h": "6ccbca19b433",
+  "d": "2026-10-19"
+ },
+ "/off-road-buggies/dune-buggies/": {
+  "h": "29a4951198d2",
+  "d": "2026-10-19"
+ },
+ "/off-road-buggies/go-karts/": {
+  "h": "748e65661266",
+  "d": "2026-10-19"
+ },
+ "/off-road-buggies/kids-buggies/": {
+  "h": "81eac34a2929",
+  "d": "2026-10-19"
+ },
+ "/off-road-buggies/electric-off-road-utvs/": {
+  "h": "9d0f4805f414",
+  "d": "2026-10-19"
+ },
+ "/off-road-buggies/side-by-sides-utvs/": {
+  "h": "ebe8b3dfecb6",
+  "d": "2026-10-19"
+ },
+ "/off-road-buggies/mini-quads-atvs/": {
+  "h": "920c8f339e5e",
+  "d": "2026-10-19"
+ },
+ "/parts-accessories/": {
+  "h": "bd23c2791f97",
+  "d": "2026-10-19"
+ },
+ "/parts-accessories/golf-cart-accessories/": {
+  "h": "a8bc41a831e8",
+  "d": "2026-10-19"
+ },
+ "/parts-accessories/golf-cart-accessories/phone-umbrella-drink-holders/": {
+  "h": "cb1aa2fa5669",
+  "d": "2026-10-19"
+ },
+ "/parts-accessories/golf-cart-accessories/bags-rain-covers-eskies/": {
+  "h": "09a62a9d7768",
+  "d": "2026-10-19"
+ },
+ "/parts-accessories/golf-cart-accessories/seat-covers-comfort/": {
+  "h": "6626cf5c3a13",
+  "d": "2026-10-19"
+ },
+ "/parts-accessories/golf-buggy-parts/": {
+  "h": "a3d7c53e2591",
+  "d": "2026-10-19"
+ },
+ "/parts-accessories/golf-buggy-parts/lithium-batteries/": {
+  "h": "423be7f10d81",
+  "d": "2026-10-19"
+ },
+ "/parts-accessories/golf-buggy-parts/chargers-conversion-kits/": {
+  "h": "def483d1151a",
+  "d": "2026-10-19"
+ },
+ "/parts-accessories/golf-buggy-parts/wheels-rims-tyres/": {
+  "h": "f9ffeef919e1",
+  "d": "2026-10-19"
+ },
+ "/parts-accessories/golf-buggy-parts/trailers/": {
+  "h": "e927c5dc3984",
+  "d": "2026-10-19"
+ },
+ "/parts-accessories/repairs-servicing/": {
+  "h": "6ae1ef371893",
+  "d": "2026-10-19"
+ },
+ "/parts-accessories/off-road-parts/": {
+  "h": "1fc5b29cad63",
+  "d": "2026-10-19"
+ },
+ "/parts-accessories/off-road-parts/go-kart-parts-frames/": {
+  "h": "f7666c425ec8",
+  "d": "2026-10-19"
+ },
+ "/parts-accessories/off-road-parts/engines-carburetors/": {
+  "h": "6b6ac73ff5bf",
+  "d": "2026-10-19"
+ },
+ "/parts-accessories/off-road-parts/wheels-tyres/": {
+  "h": "ef5603b6c560",
+  "d": "2026-10-19"
+ },
+ "/parts-accessories/off-road-parts/trailers-tie-downs/": {
+  "h": "f50852a5ba79",
+  "d": "2026-10-19"
+ },
+ "/parts-accessories/off-road-parts/winches-tow-bars/": {
+  "h": "fb99388e603e",
+  "d": "2026-10-19"
+ },
+ "/brands/": {
+  "h": "6124af7ebb0f",
+  "d": "2026-10-19"
+ },
+ "/brands/polaris/": {
+  "h": "b4dd38dc25fa",
+  "d": "2026-10-19"
+ },
+ "/brands/mgi/": {
+  "h": "31ebe6e14a5a",
+  "d": "2026-10-19"
+ },
+ "/brands/can-am/": {
+  "h": "d36a571d3771",
+  "d": "2026-10-19"
+ },
+ "/brands/clicgear/": {
+  "h": "abeafd76ff17",
+  "d": "2026-10-19"
+ },
+ "/brands/motocaddy/": {
+  "h": "3a8d065eeedd",
+  "d": "2026-10-19"
+ },
+ "/brands/yamaha/": {
+  "h": "f6500ab8c92f",
+  "d": "2026-10-19"
+ },
+ "/brands/rovic/": {
+  "h": "c734e7038058",
+  "d": "2026-10-19"
+ },
+ "/brands/trailmaster/": {
+  "h": "8fe68af5cfea",
+  "d": "2026-10-19"
+ },
+ "/brands/triumph/": {
+  "h": "405ccc73fe24",
+  "d": "2026-10-19"
+ },
+ "/brands/club-car/": {
+  "h": "3349091f54b4",
+  "d": "2026-10-19"
+ },
+ "/brands/kubota/": {
+  "h": "4b95ac7e20d1",
+  "d": "2026-10-19"
+ },
+ "/brands/hammerhead/": {
+  "h": "5f06ae728e37",
+  "d": "2026-10-19"
+ },
+ "/brands/ezgo/": {
+  "h": "5f7e13c32b0b",
+  "d": "2026-10-19"
+ },
+ "/brands/caddytek/": {
+  "h": "8893d6795f2a",
+  "d": "2026-10-19"
+ },
+ "/brands/john-deere/": {
+  "h": "f09650d37f00",
+  "d": "2026-10-19"
+ },
+ "/brands/cfmoto/": {
+  "h": "17c3a4cc7bd9",
+  "d": "2026-10-19"
+ },
+ "/brands/segway/": {
+  "h": "2191965061be",
+  "d": "2026-10-19"
+ },
+ "/brands/bag-boy/": {
+  "h": "e279c04850b5",
+  "d": "2026-10-19"
+ },
+ "/brands/big-max/": {
+  "h": "f377aa897239",
+  "d": "2026-10-19"
+ },
+ "/brands/honda/": {
+  "h": "2281c0a12424",
+  "d": "2026-10-19"
+ },
+ "/brands/powakaddy/": {
+  "h": "13ff0baddccb",
+  "d": "2026-10-19"
+ },
+ "/brands/ecar/": {
+  "h": "c639e5e7766c",
+  "d": "2026-10-19"
+ },
+ "/brands/kawasaki/": {
+  "h": "b3302c5a4b91",
+  "d": "2026-10-19"
+ },
+ "/brands/stinger/": {
+  "h": "bfb922572661",
+  "d": "2026-10-19"
+ },
+ "/brands/tri-lite/": {
+  "h": "9109b145e1c4",
+  "d": "2026-10-19"
+ },
+ "/brands/smoothy/": {
+  "h": "0798ebc9169a",
+  "d": "2026-10-19"
+ },
+ "/brands/thomson/": {
+  "h": "be362bf93fb6",
+  "d": "2026-10-19"
+ },
+ "/brands/parmaker/": {
+  "h": "b55a8118412a",
+  "d": "2026-10-19"
+ },
+ "/shop/": {
+  "h": "588ed8a9ddad",
+  "d": "2026-10-19"
+ },
+ "/about/": {
+  "h": "a849a896794d",
+  "d": "2026-10-19"
+ },
+ "/contact/": {
+  "h": "5de02fe4d251",
+  "d": "2026-10-19"
+ },
+ "/delivery/": {
+  "h": "d3f9848894bf",
+  "d": "2026-10-19"
+ },
+ "/returns/": {
+  "h": "f8d593cc5111",
+  "d": "2026-10-19"
+ },
+ "/faq/": {
+  "h": "132f101fc306",
+  "d": "2026-10-19"
+ },
+ "/wholesale/": {
+  "h": "7d447517e7a1",
+  "d": "2026-10-19"
+ },
+ "/privacy/": {
+  "h": "f94d563f9820",
+  "d": "2026-10-19"
+ },
+ "/terms/": {
+  "h": "61b7578ac54c",
+  "d": "2026-10-19"
+ },
+ "/cookies/": {
+  "h": "887efd2af0d8",
+  "d": "2026-10-19"
+ },
+ "/blog/": {
+  "h": "1ee4dfd63946",
+  "d": "2026-10-19"
+ }
+}

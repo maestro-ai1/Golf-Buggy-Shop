@@ -31,3 +31,4 @@ Buggies For Sale Australia Pty Ltd · ABN 53 635 284 267 · 0420 128 746 · sale
 - Never reuse a filename for a changed image: `/products/*` is served `immutable` for a year, so browsers keep the old file. Give changed images a new name (e.g. `v2-1`) and update `data/catalog.json` + `data/image-sources.json`.
 - Placeholder cards ("Photos on request") are a failure, never a finish. Check for shared image hashes, not just file existence.
 - Test the real flow in the browser (click it) before reporting a UI change as working. Push only when the owner says so in that turn.
+- ABSOLUTE: no image on the site may carry a watermark, seller/retailer logo, URL or caption. Inspect every image visually (contact sheets) before saying done; crop edge marks, discard anything marked across the subject, source another.

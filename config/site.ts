@@ -175,6 +175,14 @@ export const productsForPage = (page: SitePage): Product[] => {
   if (page.level === 'home') return PRODUCTS;
   return PRODUCTS.filter((p) => p.categories.some((c) => c === page.url || c.startsWith(page.url)));
 };
+// Listing pages show 9 products per page (3 x 3). Page 2 onward live at <page url>page/<n>/ so every page of a range is a real, crawlable URL.
+export const PER_PAGE = 9;
+export const listProductsFor = (page: SitePage): Product[] => {
+  if (page.url === '/clearance/') return [...PRODUCTS].sort((a, b) => a.price - b.price).slice(0, 27);
+  if (page.url === '/parts-accessories/') return PRODUCTS.filter((p) => p.categories.some((x) => x.startsWith('/parts-accessories/')));
+  return productsForPage(page);
+};
+export const pageCountFor = (page: SitePage) => page.url === '/brands/' ? 1 : Math.max(1, Math.ceil(listProductsFor(page).length / PER_PAGE));
 export const money = (n: number) => '$' + n.toLocaleString('en-AU', { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 });
 
 // ---------- Compatibility exports for the live API layer (MCP / ACP / UCP / search)

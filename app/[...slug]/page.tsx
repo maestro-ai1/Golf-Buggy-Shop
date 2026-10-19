@@ -8,7 +8,7 @@ import { toCard } from '@/components/ProductCard';
 import BrandStrip from '@/components/BrandStrip';
 import BrandLogo from '@/components/BrandLogo';
 import { Breadcrumbs, Faq, JsonLd, SectionHead } from '@/components/Bits';
-import { PAGES, PRODUCTS, brandPages, breadcrumbsFor, childrenOf, pageBySlug, productsForPage, money } from '@/config/site';
+import { PAGES, PRODUCTS, brandPages, breadcrumbsFor, childrenOf, pageBySlug, productsForPage, money, listProductsFor, pageCountFor } from '@/config/site';
 import { copyFor, descFor } from '@/lib/copy';
 import categoryHeroes from '@/data/category-heroes.json';
 import { faqSchema, listSchema, meta } from '@/lib/seo';
@@ -23,14 +23,25 @@ const HERO: Record<string, { base: string; alt: string }> = {
 const CAT_HEROES = categoryHeroes as Record<string, { base: string; alt: string }>;
 const heroFor = (url: string) => CAT_HEROES[url] || HERO[url] || (url.startsWith('/golf-buggies/') ? HERO['/golf-buggies/'] : url.startsWith('/golf-carts/') || url === '/clearance/' ? HERO['/golf-carts/'] : url.startsWith('/off-road-buggies/') ? HERO['/off-road-buggies/'] : null);
 
+// Pages 2+ of a range live at <page url>page/<n>/ (real URLs, not just a browser-side filter).
+const parseSlug = (slug: string[]) => { const n = slug.length; return n >= 3 && slug[n - 2] === 'page' && /^[0-9]+$/.test(slug[n - 1]) ? { base: slug.slice(0, -2).join('/'), n: +slug[n - 1] } : { base: slug.join('/'), n: 1 }; };
+
 export function generateStaticParams() {
-  return PAGES.filter((p) => p.url !== '/' && p.level !== 'product').map((p) => ({ slug: p.slug.split('/') }));
+  const pages = PAGES.filter((p) => p.url !== '/' && p.level !== 'product');
+  const paged = pages.flatMap((p) => Array.from({ length: pageCountFor(p) - 1 }, (_, i) => ({ slug: [...p.slug.split('/'), 'page', String(i + 2)] })));
+  return [...pages.map((p) => ({ slug: p.slug.split('/') })), ...paged];
 }
 
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { slug } = await params;
-  const page = pageBySlug(slug.join('/'));
+  const { base, n } = parseSlug(slug);
+  const page = pageBySlug(base);
   if (!page) return {};
+  if (n > 1) {
+    const pc = pageCountFor(page); if (n > pc) return {};
+    const nm = page.name.replace(/ \(Hub\)$/, '');
+    return meta({ title: `${nm} - Page ${n}`, description: `Page ${n} of ${pc}: more ${nm.toLowerCase()} with prices in AUD including GST, Australia-wide delivery and free freight over $1,000.`, path: `${page.url}page/${n}/`, image: listProductsFor(page)[(n - 1) * 9]?.images[0] + '.webp' });
+  }
   const products = productsForPage(page);
   const copy = copyFor(page, products);
   const h = heroFor(page.url);
@@ -39,15 +50,29 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
 
 export default async function StructurePage({ params }: { params: Promise<Params> }) {
   const { slug } = await params;
-  const page = pageBySlug(slug.join('/'));
+  const { base, n: pageNo } = parseSlug(slug);
+  const page = pageBySlug(base);
   if (!page) notFound();
   if (page.level === 'product') permanentRedirect(PAGES.find((p) => p.name === page.parent)?.url || '/shop/');
+  if (pageNo > 1 && pageNo > pageCountFor(page)) notFound();
 
   const isClearance = page.url === '/clearance/';
   const isBrandsHub = page.url === '/brands/';
-  let products = productsForPage(page);
-  if (isClearance) products = [...PRODUCTS].sort((a, b) => a.price - b.price).slice(0, 27);
-  if (page.url === '/parts-accessories/') products = PRODUCTS.filter((p) => p.categories.some((c) => c.startsWith('/parts-accessories/')));
+  const products = listProductsFor(page);
+
+  // Pages 2+ of a range: a compact, unique page (own title, own canonical, only that page's products) so page 1's copy is not repeated.
+  if (pageNo > 1) {
+    const nm = page.name.replace(/ \(Hub\)$/, '');
+    const trail2 = [...breadcrumbsFor(page), { name: `Page ${pageNo}`, url: `${page.url}page/${pageNo}/` }];
+    return (
+      <section className="section"><div className="container-x">
+        <Breadcrumbs trail={trail2} />
+        <h1 className="mt-4 font-display text-3xl font-black text-fw-900 sm:text-4xl">{nm}: page {pageNo} of {pageCountFor(page)}</h1>
+        <p className="mt-2 max-w-2xl text-muted">More {nm.toLowerCase()} from our range. Prices include GST and free delivery applies over $1,000. <Link href={page.url} className="font-semibold text-fw-700 hover:underline">Back to page 1 of {nm}</Link>.</p>
+        <div className="mt-6"><ProductGrid products={products.map(toCard)} showBrandFilter={page.level !== 'brand'} basePath={page.url} initialPage={pageNo} /></div>
+      </div></section>
+    );
+  }
   const copy = copyFor(page, products);
   const faqs = [...copy.faqs, ...supportFaqsFor(page.url, products)];
   const kids = childrenOf(page.name).filter((k) => !k.lowDemand && k.level !== 'product' && k.url !== '/golf-buggies/for-sale-locations/');
@@ -121,7 +146,7 @@ export default async function StructurePage({ params }: { params: Promise<Params
       {!isBrandsHub && (
         <section className="section"><div className="container-x">
           <SectionHead eyebrow={isClearance ? 'Lowest prices' : brand ? brand : 'Range'} title={isClearance ? 'Our lowest-priced buggies, carts and parts' : products.length ? `${page.h1}: shop the range` : 'Ask us about this range'} sub={products.length ? 'Prices include GST. Free delivery over $1,000.' : undefined} />
-          <ProductGrid products={products.map(toCard)} showBrandFilter={page.level !== 'brand'} emptyNote={copy.cta ? undefined : undefined} />
+          <ProductGrid products={products.map(toCard)} showBrandFilter={page.level !== 'brand'} basePath={page.url} emptyNote={copy.cta ? undefined : undefined} />
           {products.length === 0 && (
             <div className="card mt-2 flex flex-col items-start gap-4 p-7 md:flex-row md:items-center md:justify-between"><div><p className="font-display text-xl font-extrabold">{copy.cta || 'Tell us what you need'}</p><p className="mt-1 text-muted">We source to order and quote within one business day. Call 0420 128 746 or send an enquiry.</p></div><Link href={`/contact/?topic=${encodeURIComponent(page.h1)}`} className="btn btn-primary shrink-0">Send an enquiry</Link></div>
           )}

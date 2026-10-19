@@ -6,12 +6,14 @@ Rule: a keyword gets a page or product slot only when we sell what it names (gol
 |---|---|---|---|
 | Golf scooters | 3,090 | golf scooter (1,000), electric golf scooter (390), golf scooter australia (260) | No Australian stand-up golf scooter listing found. Seated mobility "golf" scooters only. Needs owner supplier. |
 | Golf cart / buggy trailers | 3,410 | golf cart trailer (390), golf cart and trailer (320), trailers for sale (170) | No Australian listing found (search returned camper trailers). Needs supplier. |
-| Lead-acid batteries (Trojan, 6V/8V/12V) | 920 | trojan golf buggy batteries (140), 8 volt golf cart batteries (140) | Conflicting prices: one search snippet said $338.20 but the live Frankie's Auto Electrics page shows $699.20, store pick-up only. Not added. |
-| Polaris RZR XP 1000 / Turbo | 830 | polaris rzr 1000 turbo (140), polaris razor rzr 1000 (110) | No current official Australian new price found (dealer listings $27,995 to $29,995 demo or ride-away). Not added. |
+| Lead-acid batteries (Trojan, 6V/8V/12V) | 920 | trojan golf buggy batteries (140), 8 volt golf cart batteries (140) | Live check 19 Oct: Frankie's Auto Electrics lists the Trojan T-105 6V 225Ah at $699.20, store pick-up only (eBay listing at $329 could not be opened: bot check). Not added yet: flooded lead-acid needs its own product copy (our battery copy is written for lithium) and freight rules for wet-cell batteries. Owner decision. |
+| Polaris RZR XP 1000 / Turbo | 830 | polaris rzr 1000 turbo (140), polaris razor rzr 1000 (110) | Only dealer listings (7,995 demo, 9,995 ride-away); bikesales.com.au blocks automated reads (403), so no verifiable page or photos. Not added. |
 | Race / Crossfire buggies | n/a | race buggy (140), crossfire buggy (110) | No Australian supplier identified. |
 | Can-Am quads | 590 | can am quad (210), can am quad bike (210) | No verified Australian new price. |
 | Used buggies (off-road) | 3,240 (mixed with golf) | used buggy for sale (210) | Used golf carts are listed. Off-road used stock not held. |
 | 250cc quad bike | 1,250 (mixed) | 250cc quad bike (Semrush AU, competitors rank) | No verified Australian price yet. |
+
+Segway GoKart Pro 2 repriced 19 Oct to Costco AU $2,899.99 (delivery included, page checked) x 0.98 = $2,842.
 
 Added (19 Oct 2026, from Australian competitor listings scraped 18 Oct, price = lowest listed x 0.98, source and date in data/catalog.json priceSource):
 - Segway Ninebot GoKart Pro 2 (pedl.com.au $3,120, live and in stock). Costco AU lists $2,899.99 behind a membership, so it was not treated as a public comparable.

@@ -11,7 +11,7 @@ export const RULES = { minOrder: ORDER_RULES.minOrder, freeShippingThreshold: OR
 
 interface CartCtx {
   items: CartLine[];
-  add: (p: CartInput, qty?: number) => void;
+  add: (p: CartInput, qty?: number, opts?: { open?: boolean }) => void;
   remove: (slug: string) => void;
   setQty: (slug: string, qty: number) => void;
   clear: () => void;
@@ -38,7 +38,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     const { subtotal, shipping, cryptoDiscount, total, gst } = computeTotals(items, crypto);
     return {
       items,
-      add: (p, qty = 1) => { setItems((prev) => { const i = prev.findIndex((x) => x.slug === p.slug); if (i > -1) { const c = [...prev]; c[i] = { ...c[i], quantity: c[i].quantity + qty }; return c; } return [...prev, { ...p, quantity: qty }]; }); setOpen(true); },
+      add: (p, qty = 1, opts) => { setItems((prev) => { const i = prev.findIndex((x) => x.slug === p.slug); if (i > -1) { const c = [...prev]; c[i] = { ...c[i], quantity: c[i].quantity + qty }; return c; } return [...prev, { ...p, quantity: qty }]; }); if (opts?.open !== false) setOpen(true); },
       remove: (slug) => setItems((prev) => prev.filter((i) => i.slug !== slug)),
       setQty: (slug, qty) => setItems((prev) => (qty <= 0 ? prev.filter((i) => i.slug !== slug) : prev.map((i) => (i.slug === slug ? { ...i, quantity: qty } : i)))),
       clear: () => setItems([]),

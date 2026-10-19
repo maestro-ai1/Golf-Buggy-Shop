@@ -25,3 +25,9 @@ The one rule is the `golden-keyword-rule` skill (global, owner-confirmed). Summa
 
 ## Facts
 Buggies For Sale Australia Pty Ltd · ABN 53 635 284 267 · 0420 128 746 · sales@buggiesforsale.com.au · Sydney NSW · founded 2023.
+
+## Before saying "done" or pushing (lessons learned)
+- Images: run `node scripts/audit-images.mjs` (must print `problems: 0`; checks files, 1200/600 size, white edges, sizes, sources). With the site running (`npm run start`) also run `node scripts/audit-crawl.mjs` (every sitemap page, every image URL returns 200).
+- Never reuse a filename for a changed image: `/products/*` is served `immutable` for a year, so browsers keep the old file. Give changed images a new name (e.g. `v2-1`) and update `data/catalog.json` + `data/image-sources.json`.
+- Placeholder cards ("Photos on request") are a failure, never a finish. Check for shared image hashes, not just file existence.
+- Test the real flow in the browser (click it) before reporting a UI change as working. Push only when the owner says so in that turn.

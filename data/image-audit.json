@@ -492,77 +492,34 @@
    "reason": "feature-callout or dimension infographic with text"
   }
  ],
- "placeholders": [
-  {
-   "product": "used-2015-club-car-precedent-4-seat-blue-golf-cart",
-   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
-  },
-  {
-   "product": "used-2017-ezgo-rxv-4-seat-black-golf-cart",
-   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
-  },
-  {
-   "product": "used-2007-ezgo-txt-4-seat-black-golf-cart",
-   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
-  },
-  {
-   "product": "used-2010-tomberlin-revenge-4-seat-blue-grey-golf-cart",
-   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
-  },
-  {
-   "product": "used-2012-ecar-dominic-4-seat-black-golf-cart",
-   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
-  },
-  {
-   "product": "used-2017-ecar-627-2-seat-electric-blue-golf-cart",
-   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
-  },
-  {
-   "product": "used-2015-ecar-a4-4-seat-black-golf-cart",
-   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
-  },
-  {
-   "product": "used-2018-ezgo-rxv-4-seat-red-golf-cart",
-   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
-  },
-  {
-   "product": "used-2022-ecar-sdb-4-seat-black-golf-cart",
-   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
-  },
-  {
-   "product": "used-2013-ecar-martinique-4-seat-red-golf-cart",
-   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
-  },
-  {
-   "product": "used-2023-ecar-ikon-2-seat-emerald-green-golf-cart",
-   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
-  },
-  {
-   "product": "used-2021-tomberlin-gts-4-seat-yellow-golf-cart",
-   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
-  },
-  {
-   "product": "used-2012-tomberlin-48ss-caddy-4-seat-blue-grey-golf-cart",
-   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
-  },
-  {
-   "product": "used-2014-ecar-a4-dominic-4-seat-white-golf-cart",
-   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
-  },
-  {
-   "product": "used-2023-ecar-627-4-seat-black-golf-cart",
-   "reason": "every supplier photo of this unit carries the Carts n Parts watermark"
-  },
-  {
-   "product": "smoothy-micro-golf-push-buggy",
-   "reason": "every available photo carries a retailer watermark"
-  }
- ],
+ "placeholders": [],
  "replaced": [
   {
    "product": "carburettor-250cc-atv-with-cable-choke",
    "img": "/products/carburettor-250cc-atv-with-cable-choke/1",
    "how": "background removed from the supplier photo (screenshot fragments discarded)"
   }
- ]
+ ],
+ "resolved": {
+  "date": "2026-10-19",
+  "note": "All 16 placeholder cards replaced with clean white-background photos of the same model sourced from AU/US dealers and brand sites (backgrounds removed locally, edge marks cropped). No placeholder cards remain.",
+  "products": [
+   "used-2015-club-car-precedent-4-seat-blue-golf-cart",
+   "used-2017-ezgo-rxv-4-seat-black-golf-cart",
+   "used-2007-ezgo-txt-4-seat-black-golf-cart",
+   "used-2010-tomberlin-revenge-4-seat-blue-grey-golf-cart",
+   "used-2012-ecar-dominic-4-seat-black-golf-cart",
+   "used-2017-ecar-627-2-seat-electric-blue-golf-cart",
+   "used-2015-ecar-a4-4-seat-black-golf-cart",
+   "used-2018-ezgo-rxv-4-seat-red-golf-cart",
+   "used-2022-ecar-sdb-4-seat-black-golf-cart",
+   "used-2013-ecar-martinique-4-seat-red-golf-cart",
+   "used-2023-ecar-ikon-2-seat-emerald-green-golf-cart",
+   "used-2021-tomberlin-gts-4-seat-yellow-golf-cart",
+   "used-2012-tomberlin-48ss-caddy-4-seat-blue-grey-golf-cart",
+   "used-2014-ecar-a4-dominic-4-seat-white-golf-cart",
+   "used-2023-ecar-627-4-seat-black-golf-cart",
+   "smoothy-micro-golf-push-buggy"
+  ]
+ }
 }

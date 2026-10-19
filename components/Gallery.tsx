@@ -8,7 +8,7 @@ export default function Gallery({ images, alt }: { images: string[]; alt: string
   return (
     <div>
       <div className="product-frame border border-line shadow-[var(--shadow-card)]">
-        <Pic base={images[i]} alt={`${alt} - image ${i + 1}`} priority={i === 0} sizes="(max-width: 1024px) 100vw, 600px" width={1200} height={1200} card={false} />
+        <Pic base={images[i]} alt={i === 0 ? alt : `${alt} - view ${i + 1}`} priority={i === 0} sizes="(max-width: 1024px) 100vw, 600px" width={1200} height={1200} card={false} />
       </div>
       {images.length > 1 && (
         <ul className="mt-3 grid grid-cols-4 gap-3" aria-label="Product images">

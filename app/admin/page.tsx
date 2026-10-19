@@ -92,10 +92,17 @@ export default function Admin() {
             <ol className="grid grid-cols-3 gap-2 text-center text-xs font-bold" aria-label="Order progress">{STEPS.map((s, i) => <li key={s} className={`rounded-xl px-2 py-2 ${i < step ? 'bg-fw-600 text-white' : i === step ? 'bg-accent-100 text-accent-600' : 'bg-sand-50 text-muted'}`}>{i + 1}. {s}</li>)}</ol>
 
             <p className="text-sm"><strong>{sel.customerName}</strong><br />{sel.customerEmail} · {sel.customerPhone}<br />{sel.address}{sel.notes ? <><br /><em>Notes: {sel.notes}</em></> : null}</p>
-            <ul className="divide-y divide-line rounded-xl border border-line">{sel.items.map((i, k) => <li key={k} className="flex justify-between p-3 text-sm"><span>{i.name} × {i.quantity}</span><strong>{aud(i.price * i.quantity)}</strong></li>)}
-              {sel.shipping > 0 && <li className="flex justify-between p-3 text-sm"><span>Freight</span><strong>{aud(sel.shipping)}</strong></li>}
-              {sel.cryptoDiscount > 0 && <li className="flex justify-between p-3 text-sm"><span>Crypto discount</span><strong>-{aud(sel.cryptoDiscount)}</strong></li>}
-              <li className="flex justify-between bg-sand-50 p-3 font-extrabold"><span>Amount due</span><span>{aud(sel.amountDue)}</span></li></ul>
+            <div className="overflow-hidden rounded-xl border border-line text-sm">
+              <ul className="divide-y divide-line">{sel.items.map((i, k) => <li key={k} className="grid grid-cols-[1fr_auto] gap-3 p-3"><span>{i.name}<span className="block text-xs text-muted">{i.quantity} × {aud(i.price)}</span></span><strong className="tabular-nums">{aud(i.price * i.quantity)}</strong></li>)}</ul>
+              <dl className="space-y-1.5 border-t-2 border-fw-900 bg-white p-3">
+                <div className="grid grid-cols-[1fr_auto] gap-3"><dt className="text-muted">Subtotal (inc. GST)</dt><dd className="font-bold tabular-nums">{aud(sel.subtotal)}</dd></div>
+                <div className="grid grid-cols-[1fr_auto] gap-3"><dt className="text-muted">Freight</dt><dd className="font-bold tabular-nums">{sel.shipping > 0 ? aud(sel.shipping) : 'Free'}</dd></div>
+                {sel.cryptoDiscount > 0 && <div className="grid grid-cols-[1fr_auto] gap-3 text-fw-700"><dt>Crypto discount (10%)</dt><dd className="font-bold tabular-nums">-{aud(sel.cryptoDiscount)}</dd></div>}
+                <div className="grid grid-cols-[1fr_auto] gap-3 text-xs italic text-muted"><dt>GST included in total</dt><dd className="tabular-nums">{aud(sel.amountDue / 11)}</dd></div>
+              </dl>
+              <div className="flex items-center justify-between gap-3 bg-fw-900 p-3 text-white"><span className="font-extrabold">TOTAL TO PAY (AUD)</span><span className="flex items-center gap-3"><strong className="text-xl tabular-nums">{aud(sel.amountDue)}</strong><button type="button" onClick={() => { navigator.clipboard?.writeText(sel.amountDue.toFixed(2)); setNote('Amount ' + sel.amountDue.toFixed(2) + ' copied.'); }} className="rounded-full bg-white/15 px-3 py-1 text-xs font-bold hover:bg-white/25">Copy</button></span></div>
+            </div>
+            {(methodId === 'crypto') !== (sel.cryptoDiscount > 0) && <p className="rounded-xl bg-accent-100 p-3 text-sm font-semibold text-accent-600">{methodId === 'crypto' ? 'The customer did not choose crypto at checkout, so no 10% discount is applied. The amount above is what they pay.' : 'The customer chose crypto, so the 10% discount is already in the amount above.'}</p>}
 
             {sel.status !== 'payment-confirmed' && (<div>
               <h3 className="text-lg font-extrabold">1. {sel.paymentDetails ? 'Payment details (sent). Resend if needed' : 'Send payment details'}</h3>

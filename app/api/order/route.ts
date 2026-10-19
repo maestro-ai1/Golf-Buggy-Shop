@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { CONTACT, FORMS, PRODUCTS, SHOP } from '@/config/site';
+import { computeTotals } from '@/lib/totals';
 import { REF_RE, aud, emailShell, esc, limited, orderSummary, saveOrder, sendMail, type StoredOrder } from '@/lib/server';
 
 export const runtime = 'nodejs';
@@ -20,17 +21,16 @@ export async function POST(req: NextRequest) {
     return p ? { slug: p.slug, name: p.name, price: p.price, quantity: q } : null;
   }).filter(Boolean) as StoredOrder['items'];
   if (!items.length) return NextResponse.json({ success: false, error: 'Your cart is empty.' }, { status: 400 });
-  const subtotal = items.reduce((s, i) => s + i.price * i.quantity, 0);
-  if (subtotal < SHOP.minOrder) return NextResponse.json({ success: false, error: `Minimum order is $${SHOP.minOrder}.` }, { status: 400 });
-  const shipping = subtotal >= SHOP.freeShippingThreshold ? 0 : SHOP.shippingFee;
   const crypto = /crypto/i.test(String(b.paymentMethod || ''));
-  const cryptoDiscount = crypto ? Math.round(subtotal * SHOP.cryptoDiscount / 100) : 0;
-  const order: StoredOrder = { orderNumber: ref, customerName: name, customerEmail: email, customerPhone: phone, address, items, subtotal, shipping, cryptoDiscount, amountDue: subtotal + shipping - cryptoDiscount, paymentMethod: String(b.paymentMethod || 'Bank transfer').slice(0, 80), notes: String(b.notes || '').slice(0, 800), status: 'pending', channel: b.channel === 'whatsapp' ? 'whatsapp' : 'email', createdAt: Date.now() };
+  const t = computeTotals(items, crypto);
+  const { subtotal, shipping, cryptoDiscount } = t;
+  if (subtotal < SHOP.minOrder) return NextResponse.json({ success: false, error: `Minimum order is $${SHOP.minOrder}.` }, { status: 400 });
+  const order: StoredOrder = { orderNumber: ref, customerName: name, customerEmail: email, customerPhone: phone, address, items, subtotal, shipping, cryptoDiscount, amountDue: t.total, paymentMethod: String(b.paymentMethod || 'Bank transfer').slice(0, 80), notes: String(b.notes || '').slice(0, 800), status: 'pending', channel: b.channel === 'whatsapp' ? 'whatsapp' : 'email', createdAt: Date.now() };
   const stored = await saveOrder(order);
 
   const site = process.env.NEXT_PUBLIC_SITE_URL || 'https://buggiesforsale.com.au';
   // shop notification
-  const shopMail = await sendMail({ to: process.env.ORDER_EMAIL || FORMS.destinations.order || CONTACT.email, replyTo: email, subject: `New order ${ref} (${order.channel}) ${aud(order.amountDue)}`, html: emailShell(`New order ${ref}`, orderSummary(order) + (order.notes ? `<p style="font-size:13px;margin:14px 0 0"><strong>Customer notes:</strong> ${esc(order.notes)}</p>` : '') + `<p style="font-size:13px;margin:10px 0 0;color:#5b6b63">Channel: ${order.channel}</p>`, stored ? { href: `${site}/admin/orders/`, label: 'Reply in Dashboard' } : undefined) });
+  const shopMail = await sendMail({ to: process.env.ORDER_EMAIL || FORMS.destinations.order || CONTACT.email, replyTo: email, subject: `New order ${ref} (${order.channel}) ${aud(order.amountDue)}`, html: emailShell(`New order ${ref}`, orderSummary(order) + (order.notes ? `<p style="font-size:13px;margin:14px 0 0"><strong>Customer notes:</strong> ${esc(order.notes)}</p>` : '') + `<p style="font-size:13px;margin:10px 0 0;color:#5b6b63">Channel: ${order.channel}</p>`, stored ? { href: `${site}/admin/`, label: 'Reply in Dashboard' } : undefined) });
   // customer confirmation: fires for EVERY channel (WhatsApp included). Says "watch for payment details" only, no payment instructions yet.
   const custMail = await sendMail({ to: email, subject: `We received your order ${ref}`, html: emailShell('Thanks, we have your order', `<p style="font-size:15px;line-height:1.6">Hi ${esc(name.split(' ')[0])}, thank you for your order <strong>${ref}</strong>. Our team will check stock and freight, then send your payment details by email shortly. Please watch for that email.</p>${orderSummary(order)}<p style="font-size:13px;color:#5b6b63;margin-top:16px">Questions? Reply to this email or call ${esc(CONTACT.phone)}.</p>`) });
   if (!stored && !shopMail.sent && !custMail.sent) return NextResponse.json({ success: false, error: 'Checkout is temporarily unavailable. Please call 0420 128 746 or WhatsApp us to place your order.' }, { status: 503 });

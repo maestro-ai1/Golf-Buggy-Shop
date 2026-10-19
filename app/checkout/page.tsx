@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { MessageCircle, ShieldCheck } from 'lucide-react';
 import Pic from '@/components/Pic';
 import { RULES, useCart } from '@/lib/cart';
-import { money } from '@/lib/utils';
+import { money, money2 } from '@/lib/utils';
 import { REPLY } from '@/config/site';
 import { Breadcrumbs } from '@/components/Bits';
 
@@ -34,7 +34,7 @@ export default function Checkout() {
       const j = await r.json();
       if (!j.success) { setErr(j.error || 'Could not place the order.'); setBusy(''); return; }
       if (channel === 'whatsapp') {
-        const msg = `Hi Buggies For Sale, I just placed order ${ref} (${money(cart.total)}).\nName: ${f.name}\n` + cart.items.map((i) => `${i.quantity} x ${i.name}`).join('\n') + `\nPayment: ${method}\nPlease send my payment details.`;
+        const msg = `Hi Buggies For Sale, I just placed order ${ref} (${money2(cart.total)}).\nName: ${f.name}\n` + cart.items.map((i) => `${i.quantity} x ${i.name}`).join('\n') + `\nPayment: ${method}\nPlease send my payment details.`;
         window.open(`https://wa.me/${REPLY.channels.whatsappCountryCode}${REPLY.channels.whatsapp.replace(/^0/, '').replace(/\s/g, '')}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
       }
       cart.clear(); router.push(`/thank-you-order/?ref=${ref}`);
@@ -74,11 +74,12 @@ export default function Checkout() {
         <aside className="card self-start p-6">
           <h2 className="text-xl font-extrabold">Order summary</h2>
           <ul className="mt-4 divide-y divide-line">{cart.items.map((i) => <li key={i.slug} className="flex gap-3 py-3"><span className="product-frame h-16 w-16 shrink-0 border border-line"><Pic base={i.image} alt={i.name} width={64} height={64} /></span><span className="flex-1 text-sm font-semibold">{i.name}<span className="block text-xs text-muted">Qty {i.quantity}</span></span><span className="font-bold">{money(i.price * i.quantity)}</span></li>)}</ul>
-          <dl className="mt-4 space-y-1.5 border-t border-line pt-4 text-sm">
-            <div className="flex justify-between"><dt className="text-muted">Subtotal (inc. GST)</dt><dd className="font-bold">{money(cart.subtotal)}</dd></div>
-            <div className="flex justify-between"><dt className="text-muted">Freight</dt><dd className="font-bold">{cart.shipping ? money(cart.shipping) : 'Free'}</dd></div>
-            {cart.cryptoDiscount > 0 && <div className="flex justify-between text-fw-700"><dt>Crypto discount (10%)</dt><dd className="font-bold">-{money(cart.cryptoDiscount)}</dd></div>}
-            <div className="flex justify-between border-t border-line pt-3 text-xl"><dt className="font-extrabold">Total</dt><dd className="font-black text-fw-900">{money(cart.total)}</dd></div>
+          <dl className="mt-4 space-y-1.5 border-t-2 border-fw-900 pt-4 text-sm">
+            <div className="flex justify-between"><dt className="text-muted">Subtotal (inc. GST)</dt><dd className="font-bold tabular-nums">{money2(cart.subtotal)}</dd></div>
+            <div className="flex justify-between"><dt className="text-muted">Freight</dt><dd className="font-bold tabular-nums">{cart.shipping ? money2(cart.shipping) : 'Free'}</dd></div>
+            {cart.cryptoDiscount > 0 && <div className="flex justify-between text-fw-700"><dt>Crypto discount (10%)</dt><dd className="font-bold tabular-nums">-{money2(cart.cryptoDiscount)}</dd></div>}
+            <div className="flex justify-between text-xs italic text-muted"><dt>GST included in total</dt><dd className="tabular-nums">{money2(cart.gst)}</dd></div>
+            <div className="mt-2 flex items-center justify-between rounded-xl bg-fw-900 px-4 py-3 text-white"><dt className="font-extrabold">Total to pay</dt><dd className="text-xl font-black tabular-nums">{money2(cart.total)}</dd></div>
           </dl>
         </aside>
       </div>

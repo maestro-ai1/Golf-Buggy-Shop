@@ -5,10 +5,10 @@ import { useEffect } from 'react';
 import { Minus, Plus, ShoppingCart, Trash2, X, Truck } from 'lucide-react';
 import { useCart, RULES } from '@/lib/cart';
 import Pic from '@/components/Pic';
-import { money } from '@/lib/utils';
+import { money, money2 } from '@/lib/utils';
 
 export default function CartDrawer() {
-  const { open, setOpen, items, setQty, remove, subtotal, shipping, total, freeRemaining, minMet, minRemaining, count } = useCart();
+  const { open, setOpen, items, setQty, remove, subtotal, shipping, total, gst, freeRemaining, minMet, minRemaining, count } = useCart();
   useEffect(() => { document.body.style.overflow = open ? 'hidden' : ''; const k = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false); }; document.addEventListener('keydown', k); return () => { document.body.style.overflow = ''; document.removeEventListener('keydown', k); }; }, [open, setOpen]);
   if (!open) return null;
   const pct = Math.min(100, (subtotal / RULES.freeShippingThreshold) * 100);
@@ -52,9 +52,10 @@ export default function CartDrawer() {
             </ul>
             <div className="border-t border-line p-4">
               <dl className="mb-3 space-y-1 text-sm">
-                <div className="flex justify-between"><dt className="text-muted">Subtotal (inc. GST)</dt><dd className="font-bold">{money(subtotal)}</dd></div>
-                <div className="flex justify-between"><dt className="text-muted">Freight</dt><dd className="font-bold">{shipping === 0 ? 'Free' : money(shipping)}</dd></div>
-                <div className="flex justify-between border-t border-line pt-2 text-lg"><dt className="font-extrabold">Total</dt><dd className="font-extrabold text-fw-900">{money(total)}</dd></div>
+                <div className="flex justify-between"><dt className="text-muted">Subtotal (inc. GST)</dt><dd className="font-bold">{money2(subtotal)}</dd></div>
+                <div className="flex justify-between"><dt className="text-muted">Freight</dt><dd className="font-bold">{shipping === 0 ? 'Free' : money2(shipping)}</dd></div>
+                <div className="flex justify-between text-xs italic text-muted"><dt>GST included in total</dt><dd>{money2(gst)}</dd></div>
+                <div className="flex justify-between border-t-2 border-fw-900 pt-2 text-lg"><dt className="font-extrabold">Total</dt><dd className="font-extrabold text-fw-900">{money2(total)}</dd></div>
               </dl>
               {!minMet && <p className="mb-3 rounded-lg bg-accent-100 p-3 text-xs font-semibold text-accent-600">Minimum order is {money(RULES.minOrder)}. Add {money(minRemaining)} more to check out.</p>}
               <Link href="/checkout/" onClick={() => setOpen(false)} aria-disabled={!minMet} className={`btn btn-primary w-full ${!minMet ? 'pointer-events-none opacity-50' : ''}`}>Checkout</Link>

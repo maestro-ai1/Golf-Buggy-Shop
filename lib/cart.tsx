@@ -1,12 +1,13 @@
 'use client';
 
 import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
+import { ORDER_RULES, computeTotals } from '@/lib/totals';
 
 export interface CartLine { slug: string; name: string; price: number; image: string; brand: string; quantity: number }
 export type CartInput = Omit<CartLine, 'quantity'>;
 
 // Order rules (owner): min order $250, free delivery over $1,000, flat $95 freight below, 10% crypto discount.
-export const RULES = { minOrder: 250, freeShippingThreshold: 1000, shippingFee: 95, cryptoDiscount: 10, key: 'bfs-cart-v2' };
+export const RULES = { minOrder: ORDER_RULES.minOrder, freeShippingThreshold: ORDER_RULES.freeShippingThreshold, shippingFee: ORDER_RULES.shippingFee, cryptoDiscount: ORDER_RULES.cryptoDiscountPct, key: 'bfs-cart-v2' };
 
 interface CartCtx {
   items: CartLine[];
@@ -14,7 +15,7 @@ interface CartCtx {
   remove: (slug: string) => void;
   setQty: (slug: string, qty: number) => void;
   clear: () => void;
-  count: number; subtotal: number; shipping: number; cryptoDiscount: number; total: number;
+  count: number; subtotal: number; shipping: number; cryptoDiscount: number; total: number; gst: number;
   crypto: boolean; setCrypto: (v: boolean) => void;
   freeRemaining: number; minMet: boolean; minRemaining: number;
   open: boolean; setOpen: (v: boolean) => void;
@@ -34,9 +35,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => { if (ready) try { localStorage.setItem(RULES.key, JSON.stringify(items)); } catch { /* ignore */ } }, [items, ready]);
 
   const value = useMemo<CartCtx>(() => {
-    const subtotal = items.reduce((s, i) => s + i.price * i.quantity, 0);
-    const shipping = items.length === 0 || subtotal >= RULES.freeShippingThreshold ? 0 : RULES.shippingFee;
-    const cryptoDiscount = crypto ? Math.round(subtotal * (RULES.cryptoDiscount / 100)) : 0;
+    const { subtotal, shipping, cryptoDiscount, total, gst } = computeTotals(items, crypto);
     return {
       items,
       add: (p, qty = 1) => { setItems((prev) => { const i = prev.findIndex((x) => x.slug === p.slug); if (i > -1) { const c = [...prev]; c[i] = { ...c[i], quantity: c[i].quantity + qty }; return c; } return [...prev, { ...p, quantity: qty }]; }); setOpen(true); },
@@ -44,7 +43,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       setQty: (slug, qty) => setItems((prev) => (qty <= 0 ? prev.filter((i) => i.slug !== slug) : prev.map((i) => (i.slug === slug ? { ...i, quantity: qty } : i)))),
       clear: () => setItems([]),
       count: items.reduce((s, i) => s + i.quantity, 0), subtotal, shipping, cryptoDiscount,
-      total: Math.max(0, subtotal + shipping - cryptoDiscount),
+      total, gst,
       crypto, setCrypto,
       freeRemaining: Math.max(0, RULES.freeShippingThreshold - subtotal),
       minMet: subtotal >= RULES.minOrder, minRemaining: Math.max(0, RULES.minOrder - subtotal),

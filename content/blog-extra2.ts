@@ -80,14 +80,14 @@ export const EXTRA_POSTS2: BlogPost[] = [
   },
   {
     slug: 'golf-cars-vs-golf-carts-vs-golf-buggies',
-    title: 'Golf Cars vs Golf Carts vs Golf Buggies: What Is the Difference?',
-    seoTitle: 'Golf Cars vs Golf Carts vs Golf Buggies | Buggies For Sale',
+    title: 'Golf Cars & Carts vs Golf Buggies: What Is the Difference?',
+    seoTitle: 'Golf Cars & Carts vs Golf Buggies | Buggies For Sale',
     excerpt: 'Golf car, golf cart and golf buggy are used interchangeably, but they can mean very different vehicles. Here is how the terms differ and how to choose the right one.',
     category: 'Buying guides', date: '2026-10-19', readTime: '9 min read', targetKeyword: 'golf cars & carts', tags: ['golf cars & carts', 'golf car vs golf cart', 'golf buggy vs golf cart', 'what is a golf buggy', 'types of golf carts'],
     image: '/blog/golf-cars-vs-carts.webp',
     products: ['mgi-zip-x3-electric-golf-buggy', 'ecar-lithium-ikon-hd-4s-4-seat-golf-cart', 'stinger-sg-5-v2-golf-push-buggy'],
     content: [
-      `If you have searched for golf cars, golf carts and golf buggies and wondered whether they are the same thing, you are not alone. The three terms are used loosely, and in Australia the word you hear often depends on the person and the place. In practice they can describe very different vehicles, from a two-seat electric cart you sit in to a small trolley that follows you down the fairway. This guide explains how the terms are used, how the main types differ and how to choose the one that fits your needs and budget.`,
+      `If you have searched for golf cars & carts and golf buggies and wondered whether they are the same thing, you are not alone. The three terms are used loosely, and in Australia the word you hear often depends on the person and the place. In practice they can describe very different vehicles, from a two-seat electric cart you sit in to a small trolley that follows you down the fairway. This guide explains how the terms are used, how the main types differ and how to choose the one that fits your needs and budget.`,
       `## Golf car, golf cart and golf buggy: how the words are used`,
       `**Golf car** is the term many manufacturers and the golf industry use for a small motor vehicle designed to carry golfers and their clubs around a course. You will see it in brand literature and in North American writing. The general background on these vehicles is covered in the [golf cart article on Wikipedia](https://en.wikipedia.org/wiki/Golf_cart).`,
       `**Golf cart** is the everyday term in Australia for the same ride-on vehicle, usually electric, with two to six seats, a roof and a rear bag rack or cargo bed. It is also used for the resort, estate and utility versions of the same machine.`,

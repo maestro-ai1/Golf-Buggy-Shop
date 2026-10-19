@@ -5,7 +5,7 @@ import type { BlogPost } from '@/config/site';
 export const EXTRA_POSTS3: BlogPost[] = [
   {
     slug: 'trailmaster-cheetah-australia',
-    title: 'Trailmaster Cheetah in Australia: Models, Engines and What to Check',
+    title: 'Trailmaster Cheetah Australia: Models, Engines and What to Check',
     seoTitle: 'Trailmaster Cheetah Australia: Buyer Guide | Buggies For Sale',
     excerpt: 'A plain-English guide to the Trailmaster Cheetah dune buggy in Australia: the 175cc and 300cc versions, who they suit and what to check before you buy.',
     category: 'Brand guides', date: '2026-10-19', readTime: '9 min read', targetKeyword: 'trailmaster cheetah australia',
@@ -13,7 +13,7 @@ export const EXTRA_POSTS3: BlogPost[] = [
     tags: ['trailmaster cheetah australia', 'trailmaster cheetah', 'trailmaster cheetah 300', 'trailmaster cheetah 175', 'cheetah dune buggy'],
     products: ['trailmaster-cheetah-175cc-dune-buggy', 'trailmaster-cheetah-300cc-dune-buggy', 'trailmaster-challenger-200-buggy'],
     content: [
-      `The Trailmaster Cheetah is one of the most recognisable petrol dune buggies sold in Australia. It is a compact two-seat buggy with a tubular roll cage, a petrol engine and chunky off-road tyres, and it is popular with property owners, families and weekend riders who want something more capable than a quad but less expensive than a full-size side-by-side. This guide explains what the Cheetah is, how the 175cc and 300cc versions differ, who it suits and what to check before you buy one.`,
+      `Trailmaster Cheetah Australia buyers are choosing one of the most recognisable petrol dune buggies sold in the country. It is a compact two-seat buggy with a tubular roll cage, a petrol engine and chunky off-road tyres, and it is popular with property owners, families and weekend riders who want something more capable than a quad but less expensive than a full-size side-by-side. This guide explains what the Cheetah is, how the 175cc and 300cc versions differ, who it suits and what to check before you buy one.`,
       `## What is the Trailmaster Cheetah?`,
       `Trailmaster is a brand of recreational off-road vehicles that includes mini bikes, go karts and buggies. The Cheetah is the dune buggy in the range. It is a two-seat, rear-engine style buggy built on a steel frame, and it is designed for private land, tracks, sand and paddocks. The general background on this vehicle style is covered in the [dune buggy article on Wikipedia](https://en.wikipedia.org/wiki/Dune_buggy).`,
       `People search for the same machine under a few names, including Trailmaster Cheetah, Trailmaster Cheetah off road buggy and Cheetah dune buggy. They all point to the same family of buggies. We list the [Trailmaster Cheetah 175cc](/products/trailmaster-cheetah-175cc-dune-buggy/) and the [Trailmaster Cheetah 300cc](/products/trailmaster-cheetah-300cc-dune-buggy/), and you can compare every Trailmaster model on our [Trailmaster brand page](/brands/trailmaster/).`,

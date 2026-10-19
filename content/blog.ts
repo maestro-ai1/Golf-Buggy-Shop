@@ -231,13 +231,13 @@ const CORE_POSTS: BlogPost[] = [
   },
   {
     slug: 'remote-control-golf-buggy-buyers-guide',
-    title: 'Remote Control Golf Buggy Buyer’s Guide: MGI, QOD and Concourse',
-    seoTitle: 'Remote Control Golf Buggy Buyer’s Guide | Buggies For Sale',
+    title: 'Best Remote Golf Buggy: Buyer’s Guide to MGI, QOD and Concourse',
+    seoTitle: 'Best Remote Golf Buggy: Buyer’s Guide | Buggies For Sale',
     excerpt: 'Remote golf buggies follow your commands so you can walk hands-free. Here is how they work, what to compare and which models to look at.',
-    category: 'Buying guides', date: '2026-10-13', readTime: '8 min read', targetKeyword: 'remote control golf buggy',
+    category: 'Buying guides', date: '2026-10-13', readTime: '8 min read', targetKeyword: 'best remote golf buggy',
     image: '/blog/remote-buggy.webp',
     content: [
-      'A remote control golf buggy is the most hands-free way to play. Instead of pushing or steering, you walk the course while the buggy follows your commands. This guide explains how they work and what to compare.',
+      'The best remote golf buggy is the most hands-free way to play. Instead of pushing or steering, you walk the course while the buggy follows your commands. This guide explains how remote control buggies work and what to compare.',
       '## How remote golf buggies work',
       'A remote buggy has electric motors and a control system. You use a handheld remote with buttons to send the buggy ahead, stop it or bring it back. Some models also follow you automatically.',
       '## What to compare',

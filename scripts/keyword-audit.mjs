@@ -16,7 +16,7 @@ const strip = (h) => h.replace(/<a [^>]*href="\/products\/[^"]*"[^>]*>[\s\S]*?<\
 const decode = (s) => (s || '').replace(/&amp;/g, '&').replace(/&#x27;|&#39;/g, "'").replace(/&quot;/g, '"');
 
 const targets = structure.filter((p) => p.level !== 'product').map((p) => ({ kind: 'page', url: p.url, name: p.name.replace(/ \(Hub\)$/, '').replace(/ \(LOW DEMAND\)$/, ''), level: p.level, primary: p.primary, secondary: p.secondary || [] }));
-const blogSrc = fs.readFileSync(path.join(ROOT, 'content/blog.ts'), 'utf8') + fs.readFileSync(path.join(ROOT, 'content/blog-extra.ts'), 'utf8');
+const blogSrc = fs.readFileSync(path.join(ROOT, 'content/blog.ts'), 'utf8') + fs.readdirSync(path.join(ROOT, 'content')).filter((f) => /^blog-extra[0-9]*[.]ts$/.test(f)).map((f) => fs.readFileSync(path.join(ROOT, 'content', f), 'utf8')).join(String.fromCharCode(10));
 for (const m of blogSrc.matchAll(/slug: '([^']+)',\n\s+title: '([^']+)'[\s\S]*?targetKeyword: '([^']+)'/g)) { const kw = m[3]; const b = bank.get(kw.toLowerCase()); targets.push({ kind: 'blog', url: `/blog/${m[1]}/`, name: m[2], level: 'blog', primary: { keyword: kw, volume: b?.volume ?? null, kd: b?.kd ?? null }, secondary: [] }); }
 
 // menu pages that live outside the locked structure map (Shop, About, Contact): keywords come from data/menu-keywords.json, volume and KD from the bank

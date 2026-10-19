@@ -77,9 +77,27 @@ async function processProduct(p) {
   fs.mkdirSync(dir, { recursive: true });
   const seen = new Set();
   const kept = [];
-  for (const url of p.imagesRaw) {
+  // Golden Image Rule: the white-background shot goes FIRST. Products with a wide candidate pool (more than 5 raw images) are fetched up front and
+  // ordered by how white their border is; the rest keep source order.
+  let pool = p.imagesRaw.map((url) => ({ url, buf: null }));
+  if (p.imagesRaw.length > 5) {
+    for (const it of pool) {
+      it.buf = await fetchBuf(it.url);
+      it.score = 0;
+      if (it.buf) {
+        try {
+          const { data, info } = await sharp(it.buf, { failOn: 'none' }).rotate().flatten({ background: '#ffffff' }).resize(160, 160, { fit: 'inside' }).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+          let n = 0, light = 0; const w = info.width, h = info.height;
+          for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { if (Math.min(x, y, w - 1 - x, h - 1 - y) > 1) continue; const i = (y * w + x) * 3; n++; if (Math.min(data[i], data[i + 1], data[i + 2]) >= 235) light++; }
+          it.score = light / n;
+        } catch { /* leave score 0 */ }
+      }
+    }
+    pool = pool.map((it, idx) => ({ ...it, idx })).sort((a, b) => ((b.score >= 0.85) - (a.score >= 0.85)) || a.idx - b.idx);
+  }
+  for (const { url, buf: pre } of pool) {
     if (kept.length >= MAX_PER_PRODUCT) break;
-    const buf = await fetchBuf(url);
+    const buf = pre || await fetchBuf(url);
     if (!buf) { failures.push(url); continue; }
     const h = crypto.createHash('md5').update(buf).digest('hex');
     if (seen.has(h)) continue; seen.add(h);

@@ -13,4 +13,13 @@ Rule: a keyword gets a page or product slot only when we sell what it names (gol
 | Used buggies (off-road) | 3,240 (mixed with golf) | used buggy for sale (210) | Used golf carts are listed. Off-road used stock not held. |
 | 250cc quad bike | 1,250 (mixed) | 250cc quad bike (Semrush AU, competitors rank) | No verified Australian price yet. |
 
-Added this round: Segway Ninebot GoKart Pro 2 Electric Go Kart (segway go kart 720, ninebot go kart 590). Price source pedl.com.au $3,120 (live, in stock, 19 Oct 2026) x 0.98. Costco AU lists $2,899.99 behind a membership, so it was not treated as a public comparable; revisit if the owner wants to match it.
+Added (19 Oct 2026, from Australian competitor listings scraped 18 Oct, price = lowest listed x 0.98, source and date in data/catalog.json priceSource):
+- Segway Ninebot GoKart Pro 2 (pedl.com.au $3,120, live and in stock). Costco AU lists $2,899.99 behind a membership, so it was not treated as a public comparable.
+- Stinger: SG-4 Crossover remote control buggy (3 editions), SG-2 V2, SG-3 VIII and four push buggy + seat kit bundles ("golf buggy with seat").
+- Quads and kids: Crossfire X400 and X600 ATVs, Apollo RFZ Commander 200, RFZ Falcon 140, Blazer 125, Commander 70, Kayo Storm 70, Crossfire Rover 125 youth, 50cc mini quad, Crossfire Blazer 200R kids kart buggy.
+- Side-by-sides: Crossfire 600GT, 400GT and E5 electric UTV.
+- Golf carts: ECAR A4, A2 utility, 627 4UL and 6S, Magnum 4UL and 6F, Tomberlin E-Merge SS, plus 10 used carts.
+- Lithium packs: Yamaha G19 (on/off-board), Yamaha G22 off-board, ECAR IKON, ECAR A-Series (Core and Plus), MGI 12V 20Ah and 24V 13Ah.
+- Accessories: MGI rain cover, telescopic umbrella, phone holder; Golf Skate Caddy Tourer seat and umbrella.
+
+Checked and not added: Crossfire CAG250 (a motorcycle, not a quad), Trailmaster MB 200 (a mini bike), E-Drift Kart (pre-order for November 2026).

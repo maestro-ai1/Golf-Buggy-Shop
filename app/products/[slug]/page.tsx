@@ -12,11 +12,15 @@ import { faqSchema, meta, productSchema } from '@/lib/seo';
 
 export function generateStaticParams() { return PRODUCTS.map((p) => ({ slug: p.slug })); }
 
-const titleFor = (name: string) => {
+// Long names are compacted before they are cut, so the part that tells similar products apart (model, fitment) stays in the title.
+const compactName = (n: string) => n.replace('48V 105Ah Lithium Battery Package for', '105Ah Battery for').replace('48V 150Ah Lithium Battery Package for', '150Ah Battery for').replace('Lithium Battery Package for', 'Battery for').replace(/\((On|Off)-board\)/, '$1-board').replace('Remote Control Golf Buggy', 'Remote Golf Buggy');
+const titleFor = (rawName: string) => {
+  const name = `${rawName} | Buy Online`.length > 60 ? compactName(rawName) : rawName;
   const full = `${name} | Buy Online Australia`;
   if (full.length <= 60) return full;
   const short = `${name} | Buy Online`;
   if (short.length <= 60) return short;
+  if (name.length <= 60) return name;
   return name.slice(0, 57).replace(/\s+\S*$/, '') + '…';
 };
 

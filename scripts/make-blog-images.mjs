@@ -22,6 +22,14 @@ const POSTS = {
   'kids-ride-on-buggy': [/Can-Am Maverick 24V/, /John Deere 12V/],
   'ninebot-go-kart': [/Segway Ninebot GoKart Pro 2/, /Drifta/],
   'golf-cars-vs-carts': [/IKON HD 4S/, /MGI ZIP X3/],
+  'trailmaster-cheetah-australia': [/Cheetah 175/, /Cheetah 300/],
+  'single-seat-golf-cart': [/IM4/, /Parmaker Spirit/],
+  '150cc-buggy': [/Kayo S150/],
+  'polaris-rzr-170': [/RZR 200 EFI Youth Buggy/],
+  'push-trolley': [/Stinger SG-5 V2 Golf Push Buggy$/, /Tri-Lite Deluxe/],
+  'caddies-for-golf': [/PowaKaddy CT6/, /Motocaddy M7/],
+  '2nd-hand-golf-carts': [/2018 EZGO RXV/, /2023 ECAR 627/],
+  'electric-carts': [/Compass 2S 2 Seat/, /Tempo 2\+2/],
   'used-golf-carts-on-sale': [/Tempo Refurbished/, /2015 Club Car Precedent/],
 };
 const W = 1600, H = 900;

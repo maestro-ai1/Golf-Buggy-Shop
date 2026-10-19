@@ -13,7 +13,7 @@ const ROOT = path.resolve(import.meta.dirname, '..');
 const RAW = path.join(ROOT, 'data/raw');
 const load = (f) => JSON.parse(fs.readFileSync(path.join(RAW, f + '.json'), 'utf8'));
 const sources = {};
-for (const f of ['mgi', 'eride', 'stinger', 'cartsnparts', 'penrith', 'web']) sources[f] = load(f);
+for (const f of ['mgi', 'eride', 'eridefull', 'stinger', 'cartsnparts', 'penrith', 'web']) sources[f] = load(f);
 const decode = (s) => (s || '').replace(/&#8211;|&#8212;/g, '-').replace(/&#038;|&amp;/g, '&').replace(/&#8217;/g, "'").replace(/&#8243;/g, '"').replace(/&[a-z#0-9]+;/gi, ' ');
 const slugify = (s) => s.toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const money = (n) => Math.round(n * 20) / 20;
@@ -190,6 +190,7 @@ for (let [group, brand, brandPage, name, cats, srcs, opts = {}] of SPEC) {
   const low = priced.reduce((a, b) => (a.hit.price <= b.hit.price ? a : b));
   const price = money(low.hit.price * PRICE_FACTOR);
   const imgsRaw = []; for (const f of priced.concat(found)) for (const u of f.hit.images || []) if (!imgsRaw.includes(u)) imgsRaw.push(u);
+  if (opts.order) { const o = opts.order.map((i) => imgsRaw[i]).filter(Boolean); imgsRaw.length = 0; imgsRaw.push(...o); } // hand-picked image order (raw indexes) when the source order is not the best first image
   const text = priced.map((f) => (f.hit.desc || '') + ' ' + (f.hit.short || '')).join(' ');
   const fcts = facts(text, name);
   const slug = slugify(name);
@@ -203,7 +204,7 @@ for (let [group, brand, brandPage, name, cats, srcs, opts = {}] of SPEC) {
     priceSource: { site: low.file, url: low.hit.url || '', price: low.hit.price, checked: TODAY },
     shortDescription: c.short, description: c.paragraphs, highlights: c.highlights, tags: [],
     specs: { Brand: brand, ...(opts.fits ? { 'Fits': opts.fits } : {}), ...fcts }, faqs: FAQ_BY_GROUP(name, group, price, opts.fits),
-    imagesRaw: imgsRaw.slice(0, 5), images: (prev.get(slug) && JSON.stringify(prev.get(slug).imagesRaw) === JSON.stringify(imgsRaw.slice(0, 5))) ? prev.get(slug).images : [], inStock: true, ...(opts.petrol ? { fuel: 'petrol' } : {}), ...(opts.tags ? { tagsOverride: opts.tags } : {}),
+    imagesRaw: imgsRaw.slice(0, opts.imgs || 5), images: (prev.get(slug) && JSON.stringify(prev.get(slug).imagesRaw) === JSON.stringify(imgsRaw.slice(0, opts.imgs || 5))) ? prev.get(slug).images : [], inStock: true, ...(opts.petrol ? { fuel: 'petrol' } : {}), ...(opts.tags ? { tagsOverride: opts.tags } : {}),
   });
 }
 // 400-word product copy, inbound and outbound links, five tags

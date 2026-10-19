@@ -6,7 +6,11 @@ import { MORE2 } from '@/content/blog-more2';
 import { MORE3 } from '@/content/blog-more3';
 import { MORE4 } from '@/content/blog-more4';
 import { MORE5 } from '@/content/blog-more5';
+import { MORE6 } from '@/content/blog-more6';
+import { MORE7 } from '@/content/blog-more7';
 import { EXTRA_POSTS2 } from '@/content/blog-extra2';
+import { EXTRA_POSTS3 } from '@/content/blog-extra3';
+import { EXTRA_POSTS4 } from '@/content/blog-extra4';
 
 const L = {
   carts: '/golf-carts/', cartsSale: '/golf-carts/for-sale/', electricCarts: '/golf-carts/electric/', used: '/golf-carts/used/', utility: '/golf-carts/utility-4-seater/',
@@ -386,7 +390,9 @@ function extend(p: BlogPost): BlogPost {
   if (MORE3[p.slug]) put(MORE3[p.slug]);
   if (MORE4[p.slug]) put(MORE4[p.slug]);
   if (MORE5[p.slug]) put(MORE5[p.slug]);
+  if (MORE6[p.slug]) put(MORE6[p.slug]);
+  if (MORE7[p.slug]) put(MORE7[p.slug]);
   return { ...p, content, products: a?.products || p.products, tags: m?.tags || p.tags };
 }
 
-export const BLOG_POSTS: BlogPost[] = [...CORE_POSTS, ...EXTRA_POSTS, ...EXTRA_POSTS2].map(extend);
+export const BLOG_POSTS: BlogPost[] = [...CORE_POSTS, ...EXTRA_POSTS, ...EXTRA_POSTS2, ...EXTRA_POSTS3, ...EXTRA_POSTS4].map(extend);

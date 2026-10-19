@@ -8,6 +8,7 @@ const FAMILY = {
   trolley: ['electric-buggy', 'remote-buggy', 'push-buggy', 'ride-on', 'golf-board'],
   cart: ['cart', 'utility-cart', 'petrol-cart', 'used-cart'],
   battery: ['battery', 'charger'],
+  leadacid: ['battery-la'],
   cartacc: ['wheels', 'holder', 'umbrella', 'cooler', 'bag', 'esky', 'seat', 'seatcover', 'mat', 'seatbelt', 'led', 'speaker', 'rack', 'rail', 'mirror', 'steering'],
   offroad: ['dune', 'ssv', 'gokart', 'quad'],
   kids: ['kids'],
@@ -19,6 +20,7 @@ const OUT = {
   trolley: ['https://www.golf.org.au/', 'Golf Australia'],
   cart: ['https://en.wikipedia.org/wiki/Golf_cart', 'the golf cart overview on Wikipedia'],
   battery: ['https://en.wikipedia.org/wiki/Lithium_iron_phosphate_battery', 'the lithium iron phosphate battery article on Wikipedia'],
+  leadacid: ['https://en.wikipedia.org/wiki/Lead%E2%80%93acid_battery', 'the lead-acid battery article on Wikipedia'],
   cartacc: ['https://en.wikipedia.org/wiki/Golf_cart', 'the golf cart overview on Wikipedia'],
   offroad: ['https://www.safeworkaustralia.gov.au/safety-topic/hazards/quad-bikes', 'Safe Work Australia'],
   kids: ['https://www.productsafety.gov.au/', 'the Australian Government product safety website'],
@@ -29,6 +31,7 @@ const BLOGS = {
   trolley: [['/blog/electric-vs-push-golf-buggy-which-should-you-buy/', 'electric vs push golf buggies'], ['/blog/remote-control-golf-buggy-buyers-guide/', 'the remote control golf buggy buyer guide'], ['/blog/golf-e-scooter/', 'golf e-scooters and boards']],
   cart: [['/blog/how-much-does-a-golf-cart-cost-in-australia/', 'what a golf cart costs in Australia'], ['/blog/can-you-drive-a-golf-cart-on-the-road-in-australia/', 'the road rules for golf carts'], ['/blog/trailering-a-golf-cart/', 'trailering a golf cart']],
   battery: [['/blog/lithium-vs-lead-acid-golf-cart-batteries/', 'lithium vs lead-acid golf cart batteries'], ['/blog/used-golf-carts-on-sale/', 'buying a used golf cart']],
+  leadacid: [['/blog/lithium-vs-lead-acid-golf-cart-batteries/', 'lithium vs lead-acid golf cart batteries'], ['/blog/2nd-hand-golf-carts/', 'buying a 2nd hand golf cart']],
   cartacc: [['/blog/how-much-does-a-golf-cart-cost-in-australia/', 'golf cart costs and options'], ['/blog/can-you-drive-a-golf-cart-on-the-road-in-australia/', 'golf cart safety and the rules']],
   offroad: [['/blog/offroad-buggy/', 'the off-road buggy buyer guide'], ['/blog/atv-buggy/', 'ATV buggies compared'], ['/blog/what-is-a-utv-side-by-side-vs-atv-vs-dune-buggy/', 'UTVs, ATVs and dune buggies']],
   kids: [['/blog/kids-ride-on-buggy/', 'choosing a kids ride-on buggy'], ['/blog/go-kart-electric-go-karts/', 'electric go karts']],
@@ -51,6 +54,11 @@ const SUITS = {
     `The {name} suits owners who want dependable power and less maintenance from their cart or buggy. Replacing a tired battery can make a vehicle feel new, and a good {label} supports steady performance through the day. Check the fitment details and the charger before you order, and send us your cart model if you are unsure.`,
     `If your cart is slowing down or running out of range, the {name} may be the upgrade you need. It is designed to give consistent output and to reduce day-to-day maintenance. The right match of voltage, capacity and connectors matters, so confirm compatibility first.`,
     `Choose the {name} if you want a {label} that fits your vehicle and your use. It suits owners who drive daily, carry heavy loads or want faster charging. Read the specification and ask us to confirm fit for your make, model and year.`,
+  ],
+  leadacid: [
+    `The {name} suits owners who want to replace a tired lead-acid pack with the same proven technology their cart was built for. Flooded deep-cycle batteries are a lower upfront cost than lithium, and a matched set restores range and power. Check the voltage, the number of batteries in your pack and the terminal type before you order.`,
+    `If your cart takes 6V or 8V flooded batteries, the {name} is a straightforward like-for-like replacement. It suits owners who are happy to top up water and keep terminals clean in return for a lower purchase price. Replace the whole set at once so the batteries age together.`,
+    `Choose the {name} if you want a {label} from {brand}, one of the best-known names in deep-cycle batteries. It suits golf carts, utility carts and other deep-cycle uses. Send us your cart model and current battery layout and we will confirm the right quantity.`,
   ],
   cartacc: [
     `The {name} suits owners who want to personalise, protect or improve their cart or buggy. Accessories like this are among the easiest upgrades, and they make everyday use more comfortable and more practical. Check that the item suits your model before you order, and add several items to your order to reach free delivery.`,
@@ -90,6 +98,11 @@ const TIPS = {
     `Not every battery fits every cart, so confirm the details before you order. Check the make, model and year, and ask about the charger. If you want to read more about how modern lithium packs work, see [{outname}]({outurl}). Store and charge batteries in a dry, ventilated place.`,
     `Think about how far you drive and how often when you pick a {label}. Match the capacity to your use, and check the warranty. The [{outname}]({outurl}) explains the chemistry behind many modern packs. Ask us if you want help choosing.`,
   ],
+  leadacid: [
+    `When you shop for a {label}, match the voltage and the number of batteries to your cart: six 8V batteries make a 48V pack and six 6V batteries make a 36V pack. Use a charger designed for flooded lead-acid. The chemistry is explained in [{outname}]({outurl}). Flooded batteries contain acid, so handle them upright, wear eye protection and have them fitted by someone experienced.`,
+    `Not every battery suits every cart, so confirm the details first: voltage, capacity, case size and terminals. For background on how flooded deep-cycle batteries work, see [{outname}]({outurl}). Freight for wet-cell batteries is handled as dangerous goods, so we confirm the delivery method and cost to your postcode before you pay.`,
+    `Think about how far you drive and how often when you pick a {label}, and compare the lower upfront cost of lead-acid with the longer life of lithium. The [{outname}]({outurl}) explains the trade-offs. Ask us if you want help comparing a lead-acid set with a lithium package.`,
+  ],
   cartacc: [
     `Before you order a {label}, check the model it fits, the dimensions and the mounting points. Many cart accessories are universal, but some are specific to a make and year. For general background on how carts are built and used, see [{outname}]({outurl}). If you are adding electrical items, have them fitted by a qualified person.`,
     `Accessories like this are simple to fit, but a little checking avoids returns. Confirm the size, the finish and the fitment for your cart. Read more about golf cart design in [{outname}]({outurl}), and ask us if you want a second opinion on compatibility.`,
@@ -127,6 +140,11 @@ const CARE = {
     `Look after a battery by using the correct charger, charging in a dry, ventilated place and avoiding deep discharge. Keep terminals clean and tight, and check wiring for damage. If the vehicle will be stored for months, leave the battery partly charged and check it every few weeks. Recycle old batteries at an approved collection point.`,
     `Good habits extend battery life: charge after use, avoid heat and keep connections clean. Never charge a damaged or swollen battery, and stop using any pack that smells or overheats. Keep your invoice and installation photos for warranty.`,
     `Treat the {name} well by following the manufacturer's charging and storage guidance. Check connectors regularly, keep the battery dry and clean and do not leave it flat for long periods.`,
+  ],
+  leadacid: [
+    `Flooded batteries need regular care: check the electrolyte level and top up with distilled water after charging, keep terminals clean and tight and charge fully after every use. Avoid deep discharge, and never let the plates go dry. Recycle old batteries at an approved collection point.`,
+    `Good habits extend lead-acid battery life: charge after each use with a lead-acid charger, check water levels every few weeks, clean any corrosion from the terminals and store the cart in a cool, dry place. If the cart sits for weeks, keep the batteries charged.`,
+    `Treat the {name} well by charging it fully, keeping the water topped up with distilled water and checking the connections regularly. Wear gloves and eye protection when you work on flooded batteries, and keep the vent caps in place.`,
   ],
   cartacc: [
     `Keep the {name} clean and check the fittings now and then. Tighten any fixings that work loose, wipe off dirt and salt and replace worn parts promptly. If the item is electrical, check the wiring and connections occasionally.`,
@@ -181,7 +199,7 @@ export function longCopy(p, ctx) {
   const v = { name: p.name, brand: p.brand, label, fits: p.specs?.Fits || '', outurl: OUT[fam][0], outname: OUT[fam][1] };
   const seed = p.slug;
   const facts = Object.entries(p.specs || {}).filter(([k]) => k !== 'Brand').map(([k, val]) => `**${k}:** ${val}`);
-  const price = '$' + p.price.toLocaleString('en-AU', { maximumFractionDigits: 2 });
+  const price = '$' + p.price.toLocaleString('en-AU', { minimumFractionDigits: Number.isInteger(p.price) ? 0 : 2, maximumFractionDigits: 2 });
   const intro = `${p.shortDescription} ${p.description[0] || ''}`.replace(/\s+/g, ' ').trim();
   const lines = [];
   lines.push(`## About the ${p.name}`);

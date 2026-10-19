@@ -40,7 +40,7 @@ function facts(text, name) {
 
 const GROUP_LABEL = {
   'electric-buggy': 'electric golf buggy', 'remote-buggy': 'remote control golf buggy', 'push-buggy': 'golf push buggy', 'ride-on': 'ride-on golf buggy',
-  'golf-board': 'electric golf board', cart: 'golf cart', 'utility-cart': 'utility golf cart', battery: 'lithium golf cart battery', charger: 'golf cart charger',
+  'golf-board': 'electric golf board', cart: 'golf cart', 'utility-cart': 'utility golf cart', battery: 'lithium golf cart battery', 'battery-la': 'golf cart battery', charger: 'golf cart charger',
   wheels: 'golf cart wheels', holder: 'golf buggy accessory', umbrella: 'golf buggy umbrella', cooler: 'golf buggy cooler bag', bag: 'golf buggy bag', esky: 'golf cart esky bracket',
   seat: 'golf buggy seat', seatcover: 'golf cart seat cover', mat: 'golf cart floor mat', seatbelt: 'golf cart seat belt kit', led: 'golf cart LED light kit', speaker: 'golf cart speaker',
   rack: 'golf cart bag rack', rail: 'golf cart grab rail', mirror: 'golf cart mirror', steering: 'golf cart steering wheel', dune: 'dune buggy', ssv: 'side by side buggy',
@@ -124,6 +124,11 @@ function copy(g, name, brand, f, opts) {
       p: [`This ${name} replaces a heavy lead-acid pack with sealed lithium power. ${fits ? `It is matched to ${fits}. ` : ''}Expect less weight, no watering and steadier power through the round.`, `Lithium conversions should be fitted by a qualified person, and you should keep installation photos for warranty. ${spec ? 'Listed figures: ' + spec + '.' : ''} Contact us if you are unsure which package fits your cart.`],
       hl: [fits ? `Matched to ${fits}` : 'Plug-in fit', 'Sealed, maintenance-free lithium', 'Lighter than lead-acid', 'Fit by a qualified installer'],
     },
+    'battery-la': {
+      short: `${name}: flooded deep-cycle lead-acid battery for golf carts${fits ? ' (' + fits + ')' : ''}.`,
+      p: [`The ${name} is a flooded deep-cycle lead-acid battery, the traditional power source for electric golf carts. ${fits ? 'It suits ' + fits + '. ' : ''}Flooded batteries cost less upfront than lithium and need regular watering with distilled water.`, `${spec ? 'Listed figures: ' + spec + '. ' : ''}Wet-cell batteries are freighted as dangerous goods, so we confirm the delivery method and cost to your postcode before you pay. Fitting should be done by someone experienced with batteries.`],
+      hl: [fits ? `Suits ${fits}` : 'Deep-cycle flooded lead-acid', 'Lower upfront cost than lithium', 'Needs regular watering', 'Freight confirmed before payment'],
+    },
     charger: {
       short: `${name}: replacement or upgrade charging gear${fits ? ' for ' + fits : ''}.`,
       p: [`The ${name} keeps your battery topped up safely${fits ? ` and is intended for ${fits}` : ''}. A good charger protects battery life, so match voltage and plug type to your cart.`, `Not sure it matches your battery? Send us the cart model and charger plate details before ordering and we will confirm.`],
@@ -165,7 +170,7 @@ function copy(g, name, brand, f, opts) {
 }
 
 const FAQ_BY_GROUP = (name, group, price, fits) => [
-  [`How much is the ${name}?`, `The ${name} is $${price.toLocaleString('en-AU')} AUD including GST. Prices include GST and are updated regularly.`],
+  [`How much is the ${name}?`, `The ${name} is $${price.toLocaleString('en-AU', { minimumFractionDigits: Number.isInteger(price) ? 0 : 2, maximumFractionDigits: 2 })} AUD including GST. Prices include GST and are updated regularly.`],
   [`Do you deliver the ${name} Australia-wide?`, 'Yes. Orders over $1,000 ship free to major capital city metro and depot corridors, and a flat $95 freight fee applies below that. We will confirm regional freight before dispatch.'],
   [`What warranty does it have?`, 'The manufacturer warranty applies. Warranty details and conditions are provided with your order confirmation, and our team can answer questions before you buy.'],
   [fits ? `Will it fit my cart or buggy?` : `Can I check suitability before I buy?`, fits ? `It is intended for ${fits}. Send us your exact model and year before ordering and we will confirm fit.` : 'Yes. Call 0420 128 746 or message us on WhatsApp with your use case and we will confirm that this is the right model.'],

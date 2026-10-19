@@ -614,5 +614,39 @@
   "url": "https://www.costco.com.au/Baby-Kids-Toys/Kids-Toys/Kids-Outdoor-Play-Equipment/Segway-Gokart-PRO-2/p/269805",
   "images": [],
   "desc": "Price includes delivery per the Costco Australia listing."
+ },
+ {
+  "name": "Trojan T-875 8V 170Ah Deep Cycle Golf Cart Battery",
+  "site": "everybattery.com.au",
+  "price": 345,
+  "url": "https://www.everybattery.com.au/product/t-875/",
+  "images": [],
+  "desc": "Trojan T-875 8V 170Ah (C20) flooded deep-cycle battery for golf carts. Length 261mm, width 180mm, height 283mm, weight 29kg. 12 month replacement warranty per the retailer listing."
+ },
+ {
+  "name": "Trojan T-875 8V 170Ah Golf Cart Battery Set of 6 (48V)",
+  "site": "everybattery.com.au",
+  "price": 2020,
+  "url": "https://www.everybattery.com.au/product/t-875/",
+  "images": [],
+  "desc": "Set of six Trojan T-875 8V 170Ah flooded deep-cycle batteries, making a 48V golf cart pack."
+ },
+ {
+  "name": "Trojan T-105 6V 225Ah Deep Cycle Golf Cart Battery",
+  "site": "everybattery.com.au",
+  "price": 325,
+  "url": "https://www.everybattery.com.au/product/t-875/",
+  "images": [
+   "https://cdn.shopify.com/s/files/1/0640/9528/9437/files/202301-T-105-Flooded-6V-615__415-L__74475.webp?v=1738861651"
+  ],
+  "desc": "Trojan T-105 6V 225Ah flooded deep-cycle battery for golf carts. Weight 28.5kg."
+ },
+ {
+  "name": "Polaris RZR XP 1000 Sport EPS Side by Side",
+  "site": "bikesales.com.au",
+  "price": 29995,
+  "url": "https://www.bikesales.com.au/bikes/details/2024-polaris-rzr-xp-1000-sport-eps/OAG-AD-25261199/",
+  "images": [],
+  "desc": "Polaris RZR XP 1000 Sport EPS two-seat sport side-by-side with electronic power steering. Price from a 2024 model-year dealer listing (OEM ride-away price)."
  }
 ]

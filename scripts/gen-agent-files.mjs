@@ -9,7 +9,6 @@ console.log(`[gen-agent-files] Validating and syncing agent files for ${domain}.
 // Verify that public files exist
 const requiredFiles = [
   'public/robots.txt',
-  'public/llms.txt',
   'public/auth.md',
   'public/.well-known/api-catalog',
   'public/.well-known/agent-skills/index.json',

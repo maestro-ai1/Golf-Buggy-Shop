@@ -18,7 +18,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: { default: 'Golf Buggies, Golf Carts & Off-Road Buggies for Sale Australia | Buggies For Sale', template: '%s | Buggies For Sale' },
   description: 'Buy golf buggies, electric and remote control buggies, golf carts, lithium batteries and off-road buggies online in Australia. Free delivery over $1,000.',
-  verification: { google: SITE.gscVerification },
+  // Google is verified by the HTML file in /public; Bing Webmaster Tools by this meta tag (msvalidate.01).
+  verification: { other: { 'msvalidate.01': 'ED04A0517174266DEB977A65D448A32D' } },
   other: { 'indexnow-key': SITE.indexNowKey },
   applicationName: SITE.name,
 };

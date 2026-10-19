@@ -52,7 +52,6 @@ export const SITE = {
   target: 'vercel',
   primaryColor: '#0F3D2E',
   accentColor: '#F07A1F',
-  gscVerification: 'GSC_VERIFICATION_PLACEHOLDER',
   indexNowKey: 'bfs-indexnow-key-2026',
   cartKey: 'bfs-cart-v2',
   // Trustpilot figures come from the owner's previous website and must not be altered.

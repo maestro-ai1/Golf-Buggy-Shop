@@ -37,7 +37,7 @@ export default function Checkout() {
         const msg = `Hi Buggies For Sale, I just placed order ${ref} (${money2(cart.total)}).\nName: ${f.name}\n` + cart.items.map((i) => `${i.quantity} x ${i.name}`).join('\n') + `\nPayment: ${method}\nPlease send my payment details.`;
         window.open(`https://wa.me/${REPLY.channels.whatsappCountryCode}${REPLY.channels.whatsapp.replace(/^0/, '').replace(/\s/g, '')}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
       }
-      cart.clear(); router.push(`/thank-you-order/?ref=${ref}`);
+      cart.clear(); router.push(crypto ? `/order/crypto/?id=${ref}` : `/thank-you-order/?ref=${ref}`);
     } catch { setErr('Network error. Please call 0420 128 746.'); setBusy(''); }
   }
 
@@ -48,7 +48,7 @@ export default function Checkout() {
     <section className="section !pt-10"><div className="container-x">
       <Breadcrumbs trail={[{ name: 'Cart', url: '/shop/' }, { name: 'Checkout', url: '/checkout/' }]} />
       <h1 className="mt-4 text-4xl font-black">Checkout</h1>
-      <p className="mt-2 text-muted">Order reference <strong className="text-fw-900">{ref}</strong>. We confirm stock and freight, then email your payment details.</p>
+      <p className="mt-2 text-muted">Order reference <strong className="text-fw-900">{ref}</strong>. {crypto ? 'You will pay straight away on the next page.' : 'We confirm stock and freight, then email your payment details.'}</p>
       <div className="mt-8 grid gap-8 lg:grid-cols-[1.4fr_1fr]">
         <form className="card space-y-5 p-6 sm:p-8" onSubmit={(e) => { e.preventDefault(); place('email', e.currentTarget); }}>
           <h2 className="text-xl font-extrabold">Your details</h2>
@@ -66,10 +66,10 @@ export default function Checkout() {
           {err && <p role="alert" className="rounded-xl bg-accent-100 p-3 text-sm font-semibold text-accent-600">{err}</p>}
           {!cart.minMet && <p className="rounded-xl bg-accent-100 p-3 text-sm font-semibold text-accent-600">Minimum order is {money(RULES.minOrder)}. Add {money(cart.minRemaining)} more to continue.</p>}
           <div className="flex flex-col gap-3 sm:flex-row">
-            <button type="submit" disabled={!cart.minMet || !!busy} className="btn btn-primary flex-1 !min-h-[52px] disabled:opacity-50">{busy === 'email' ? 'Placing order…' : 'Place order'}</button>
+            <button type="submit" disabled={!cart.minMet || !!busy} className="btn btn-primary flex-1 !min-h-[52px] disabled:opacity-50">{busy === 'email' ? 'Placing order…' : crypto ? 'Continue to crypto payment' : 'Place order'}</button>
             <button type="button" disabled={!cart.minMet || !!busy} onClick={(e) => place('whatsapp', (e.currentTarget.closest('form') as HTMLFormElement))} className="btn flex-1 !min-h-[52px] bg-[#25D366] text-white hover:bg-[#1fb957] disabled:opacity-50"><MessageCircle size={18} /> {busy === 'whatsapp' ? 'Placing…' : 'Order via WhatsApp'}</button>
           </div>
-          <p className="flex items-center gap-2 text-xs text-muted"><ShieldCheck size={14} /> No payment is taken on this page. We email secure payment details after confirming your order.</p>
+          <p className="flex items-center gap-2 text-xs text-muted"><ShieldCheck size={14} /> {crypto ? 'No payment is taken on this page. You will see our wallet addresses and a QR code on the next step.' : 'No payment is taken on this page. We email secure payment details after confirming your order.'}</p>
         </form>
         <aside className="card self-start p-6">
           <h2 className="text-xl font-extrabold">Order summary</h2>

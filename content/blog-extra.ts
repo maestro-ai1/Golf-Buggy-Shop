@@ -9,7 +9,7 @@ export const EXTRA_POSTS: BlogPost[] = [
     seoTitle: 'Electric Go Karts Australia: Buyer Guide | Buggies For Sale',
     excerpt: 'How electric go karts compare with petrol karts, what to look for in a battery, motor and frame, and where an electric go kart suits backyards, farms and tracks.',
     category: 'Off-road guides', date: '2026-10-18', readTime: '8 min read', targetKeyword: 'electric go karts',
-    image: '/blog/go-kart-electric-go-karts.webp',
+    image: '/blog/go-kart-electric-go-karts-v2.webp',
     products: ['crazy-kart-electric-drift-kart-drifta', 'gmx-drift-200cc-electric-start-go-kart', 'kayo-s125-go-kart'],
     content: [
       `Electric go karts have moved from a novelty to a serious option for families, farms and small tracks. They are quieter than petrol karts, they need less day-to-day maintenance, and most of them are ready to drive after a charge. This guide explains how electric go karts work, what separates a good one from a disappointing one, and how to match a kart to the rider and the place you will use it.`,
@@ -61,7 +61,7 @@ export const EXTRA_POSTS: BlogPost[] = [
     seoTitle: 'Electric Buggy Guide for Australia | Buggies For Sale',
     excerpt: 'An electric buggy can mean a golf buggy, an off-road utility buggy or a kids ride-on. Here is how each type works, what it costs to run and how to choose.',
     category: 'Buying guides', date: '2026-10-18', readTime: '8 min read', targetKeyword: 'electric buggy',
-    image: '/blog/electric-buggy.webp',
+    image: '/blog/electric-buggy-v2.webp',
     products: ['mgi-zip-x3-electric-golf-buggy', 'powakaddy-ct6-electric-golf-buggy', 'segway-villain-sx10-e-side-by-side', 'can-am-maverick-24v-kids-ride-on-buggy'],
     content: [
       `Search for an electric buggy and you will find very different vehicles: lightweight golf buggies that carry your clubs, utility buggies that work on farms and estates, and kids ride-on buggies. They share one idea, a battery and an electric motor instead of a petrol engine, but the right choice depends on what you want to do with it. This guide sorts the main types and explains what to check before you buy.`,
@@ -114,7 +114,7 @@ export const EXTRA_POSTS: BlogPost[] = [
     seoTitle: 'Offroad Buggy Buyer Guide Australia | Buggies For Sale',
     excerpt: 'Dune buggies, side by sides, go karts and utility buggies compared: engine size, seating, safety gear and what to check before you buy an off-road buggy.',
     category: 'Off-road guides', date: '2026-10-18', readTime: '9 min read', targetKeyword: 'offroad buggy',
-    image: '/blog/offroad-buggy.webp',
+    image: '/blog/offroad-buggy-v2.webp',
     products: ['trailmaster-cheetah-175cc-dune-buggy', 'kayo-s150-side-by-side-buggy', 'kayo-s70-kids-buggy-79cc-fully-automatic'],
     content: [
       `An off-road buggy is a small, tough vehicle designed for farms, trails, sand, bush tracks and weekend recreation. The category is wide, so it helps to know the main types before you compare prices. This guide covers dune buggies, side by sides, go karts and youth buggies, and explains what to check before you commit.`,
@@ -162,7 +162,7 @@ export const EXTRA_POSTS: BlogPost[] = [
     seoTitle: 'Golf E-Scooter Australia: Prices and Tips | Buggies For Sale',
     excerpt: 'What a golf e-scooter is, how it differs from a golf buggy, what it costs and the course rules to check before you ride one onto the fairway.',
     category: 'Buying guides', date: '2026-10-18', readTime: '7 min read', targetKeyword: 'golf e scooter',
-    image: '/blog/golf-e-scooter.webp',
+    image: '/blog/golf-e-scooter-v2.webp',
     products: ['golf-skate-caddy-tourer-electric-golf-board', 'i-motioncaddys-im4-ride-on-electric-golf-buggy', 'motocaddy-m7-gps-remote-electric-golf-buggy'],
     content: [
       `A golf e-scooter is a stand-up or ride-on electric vehicle built to carry a golfer and their bag around the course. They sit between a motorised trolley and a full golf cart: faster than walking, smaller than a cart, and a lot of fun. This guide explains the main types, what they cost, how they compare with a golf buggy and what to check with your club before you ride.`,
@@ -208,7 +208,7 @@ export const EXTRA_POSTS: BlogPost[] = [
     seoTitle: 'Beach Buggy for Sale AU: Buyer Guide | Buggies For Sale',
     excerpt: 'Where to buy a beach buggy or dune buggy in Australia, what the different types cost, and the rules for sand driving, registration and safety gear.',
     category: 'Off-road guides', date: '2026-10-18', readTime: '8 min read', targetKeyword: 'beach buggy for sale au',
-    image: '/blog/beach-buggy-for-sale-au.webp',
+    image: '/blog/beach-buggy-for-sale-au-v2.webp',
     products: ['trailmaster-cheetah-300cc-dune-buggy', 'trailmaster-cheetah-175cc-dune-buggy', 'trailmaster-challenger-200-buggy'],
     content: [
       `A beach buggy is a lightweight, open-framed vehicle made for sand, dunes and loose surfaces. If you are searching for a beach buggy for sale in Australia, you will find new dune buggies from dealers, used buggies and kit builds. This guide explains the types, what to check, how much to budget, and the rules to read before you take one near the water.`,
@@ -252,7 +252,7 @@ export const EXTRA_POSTS: BlogPost[] = [
     seoTitle: 'Trailering a Golf Cart: Ramps and Towing Tips | Buggies For Sale',
     excerpt: 'How to load, strap and tow a golf cart safely: trailer size, ramp length, tie-down points, weight checks and the mistakes that cause damage.',
     category: 'How-to guides', date: '2026-10-18', readTime: '8 min read', targetKeyword: 'trailering a golf cart',
-    image: '/blog/trailering-a-golf-cart.webp',
+    image: '/blog/trailering-a-golf-cart-v2.webp',
     products: ['folding-aluminium-loading-ramp-2-3m', 'folding-loading-ramps-2-4m-800kg-pair', 'atv-folding-ramp-241cm-680kg'],
     content: [
       `Moving a golf cart is easy once you have the right trailer, ramps and straps, and it can go badly wrong when you do not. This guide explains how to choose a trailer, how to load a cart safely, where to put the tie-downs, and what to check before you tow it. It is written for owners moving a cart between properties, to a workshop or to a new home.`,
@@ -301,7 +301,7 @@ export const EXTRA_POSTS: BlogPost[] = [
     seoTitle: 'ATV Buggy Compared: Quads and Side-by-Sides | Buggies For Sale',
     excerpt: 'An ATV buggy can mean a quad, a youth ATV or a side-by-side. Compare each type, the safety points to check and which suits a farm, a family or a trail.',
     category: 'Off-road guides', date: '2026-10-18', readTime: '8 min read', targetKeyword: 'atv buggy',
-    image: '/blog/atv-buggy.webp',
+    image: '/blog/atv-buggy-v2.webp',
     products: ['kayo-bull-125-farm-quad-atv', 'apollo-commander-110cc-automatic-quad-bike', 'kayo-s150-side-by-side-buggy'],
     content: [
       `People use the words ATV, quad, buggy and side-by-side as if they mean the same thing. They do not, and the difference matters for safety, price and what you can actually do with the vehicle. This guide compares the main types of ATV buggy, explains who each suits and lists the safety points to check before you buy.`,
@@ -351,7 +351,7 @@ export const EXTRA_POSTS: BlogPost[] = [
     seoTitle: 'Trailmaster Dune Buggies Compared | Buggies For Sale',
     excerpt: 'A plain comparison of Trailmaster dune buggies sold in Australia: engine sizes, seating, who each model suits and what to check before you buy.',
     category: 'Brand guides', date: '2026-10-18', readTime: '7 min read', targetKeyword: 'trailmaster dune buggies',
-    image: '/blog/trailmaster-dune-buggies.webp',
+    image: '/blog/trailmaster-dune-buggies-v2.webp',
     products: ['trailmaster-cheetah-175cc-dune-buggy', 'trailmaster-cheetah-300cc-dune-buggy', 'trailmaster-challenger-200-buggy'],
     content: [
       `Trailmaster is a well-known brand of petrol dune buggies and off-road buggies sold in Australia. If you are comparing models, the differences come down to engine size, seating and frame design. This guide explains the Trailmaster range we list, who each model suits, and what to check before you order.`,
@@ -401,7 +401,7 @@ export const EXTRA_POSTS: BlogPost[] = [
     seoTitle: 'Kids Ride-On Buggy Guide Australia | Buggies For Sale',
     excerpt: 'How to choose a kids ride-on buggy: age, voltage, speed limits, safety features and the difference between electric toys and petrol youth buggies.',
     category: 'Buying guides', date: '2026-10-18', readTime: '8 min read', targetKeyword: 'kids ride on buggy',
-    image: '/blog/kids-ride-on-buggy.webp',
+    image: '/blog/kids-ride-on-buggy-v2.webp',
     products: ['can-am-maverick-24v-kids-ride-on-buggy', 'john-deere-12v-gator-xuv-kids-ride-on', 'kids-24v-electric-golf-cart-ride-on-with-canopy'],
     content: [
       `A kids ride-on buggy is a small powered vehicle that a child can drive in the yard, on a farm or at a park where they are allowed. The range goes from battery-powered toys to small petrol youth buggies, and the right pick depends on the child's age, size and experience. This guide explains the types, the safety features to look for and how to get the best value.`,
@@ -451,7 +451,7 @@ export const EXTRA_POSTS: BlogPost[] = [
     seoTitle: 'Used Golf Carts on Sale Australia: Buyer Guide | Buggies For Sale',
     excerpt: 'A practical checklist for buying a used golf cart: battery age, motor and controller, frame, tyres, service history, price factors and delivery.',
     category: 'Buying guides', date: '2026-10-18', readTime: '8 min read', targetKeyword: 'used golf carts on sale',
-    image: '/blog/used-golf-carts-on-sale.webp',
+    image: '/blog/used-golf-carts-on-sale-v2.webp',
     products: ['club-car-tempo-refurbished-lithium-golf-cart', 'used-2015-club-car-precedent-4-seat-blue-golf-cart', 'used-2017-ezgo-rxv-4-seat-black-golf-cart'],
     content: [
       `A used golf cart can cost much less than a new one, and for many buyers it is the smart way into ownership. The catch is that condition varies widely, and the battery is the biggest single cost. This guide gives you a practical checklist for inspecting a used golf cart, explains what drives price, and shows how to avoid the common mistakes.`,

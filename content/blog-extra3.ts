@@ -9,7 +9,7 @@ export const EXTRA_POSTS3: BlogPost[] = [
     seoTitle: 'Trailmaster Cheetah Australia: Buyer Guide | Buggies For Sale',
     excerpt: 'A plain-English guide to the Trailmaster Cheetah dune buggy in Australia: the 175cc and 300cc versions, who they suit and what to check before you buy.',
     category: 'Brand guides', date: '2026-10-19', readTime: '9 min read', targetKeyword: 'trailmaster cheetah australia',
-    image: '/blog/trailmaster-cheetah-australia.webp',
+    image: '/blog/trailmaster-cheetah-australia-v2.webp',
     tags: ['trailmaster cheetah australia', 'trailmaster cheetah', 'trailmaster cheetah 300', 'trailmaster cheetah 175', 'cheetah dune buggy'],
     products: ['trailmaster-cheetah-175cc-dune-buggy', 'trailmaster-cheetah-300cc-dune-buggy', 'trailmaster-challenger-200-buggy'],
     content: [
@@ -65,7 +65,7 @@ export const EXTRA_POSTS3: BlogPost[] = [
     seoTitle: 'Single Seat Golf Cart: Australian Buyer Guide | Buggies For Sale',
     excerpt: 'What a single seat golf cart is, how ride-on golf buggies differ from trolleys and full carts, which models we list and what to check before you buy.',
     category: 'Buying guides', date: '2026-10-19', readTime: '9 min read', targetKeyword: 'single seat golf cart',
-    image: '/blog/single-seat-golf-cart.webp',
+    image: '/blog/single-seat-golf-cart-v2.webp',
     tags: ['single seat golf cart', 'ride on golf buggy', 'seated golf buggy', 'one seater golf cart', 'electric ride on golf buggy'],
     products: ['i-motioncaddys-im4-ride-on-electric-golf-buggy', 'parmaker-spirit-ride-on-golf-buggy', 'parmaker-explorer-ghia-ride-on-golf-buggy'],
     content: [
@@ -116,7 +116,7 @@ export const EXTRA_POSTS3: BlogPost[] = [
     seoTitle: '150cc Buggy Guide: Australian Buyer Tips | Buggies For Sale',
     excerpt: 'Is a 150cc buggy enough power? How 150cc and 175cc buggies compare with larger engines, who they suit and what to check before you buy in Australia.',
     category: 'Off-road guides', date: '2026-10-19', readTime: '8 min read', targetKeyword: '150cc buggy',
-    image: '/blog/150cc-buggy.webp',
+    image: '/blog/150cc-buggy-v2.webp',
     tags: ['150cc buggy', '150cc dune buggy', '150cc off road buggy', 'small engine buggy', 'buggy engine size'],
     products: ['kayo-s150-side-by-side-buggy', 'trailmaster-cheetah-175cc-dune-buggy', 'trailmaster-cheetah-300cc-dune-buggy'],
     content: [
@@ -171,7 +171,7 @@ export const EXTRA_POSTS3: BlogPost[] = [
     seoTitle: 'Polaris RZR 170 Guide: Youth Side-by-Side | Buggies For Sale',
     excerpt: 'What the Polaris RZR 170 youth side-by-side is, how it compares with other youth buggies, safety advice for parents and accessories for the RZR range.',
     category: 'Brand guides', date: '2026-10-19', readTime: '8 min read', targetKeyword: 'polaris rzr 170',
-    image: '/blog/polaris-rzr-170.webp',
+    image: '/blog/polaris-rzr-170-v2.webp',
     tags: ['polaris rzr 170', 'polaris youth rzr', 'youth side by side', 'polaris rzr 200', 'kids side by side'],
     products: ['polaris-rzr-200-efi-youth-buggy', 'polaris-rzr-170-front-brushguard'],
     content: [

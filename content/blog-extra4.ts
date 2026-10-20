@@ -9,7 +9,7 @@ export const EXTRA_POSTS4: BlogPost[] = [
     seoTitle: 'Push Trolley Guide for Golfers | Buggies For Sale',
     excerpt: 'How to choose a golf push trolley: wheel layout, fold size, weight, bag fit and seat options, with models and price ranges we list in Australia.',
     category: 'Buying guides', date: '2026-10-19', readTime: '9 min read', targetKeyword: 'push trolley',
-    image: '/blog/push-trolley.webp',
+    image: '/blog/push-trolley-v2.webp',
     tags: ['push trolley', 'golf push trolley', 'push golf buggy', 'three wheel push trolley', 'push trolley with seat'],
     products: ['stinger-sg-5-v2-golf-push-buggy', 'clicgear-model-4-0-golf-push-buggy', 'tri-lite-deluxe-3-wheel-golf-push-buggy'],
     content: [
@@ -63,7 +63,7 @@ export const EXTRA_POSTS4: BlogPost[] = [
     seoTitle: 'Caddies for Golf: Electric and Push Options | Buggies For Sale',
     excerpt: 'What a golf caddy is today, how electric and remote caddies differ from push trolleys, and which features and models matter for Australian golfers.',
     category: 'Buying guides', date: '2026-10-19', readTime: '9 min read', targetKeyword: 'caddies for golf',
-    image: '/blog/caddies-for-golf.webp',
+    image: '/blog/caddies-for-golf-v2.webp',
     tags: ['caddies for golf', 'electric golf caddy', 'golf caddy', 'remote golf caddy', 'electric golf trolley'],
     products: ['motocaddy-s1-dhc-electric-golf-buggy', 'powakaddy-ct6-electric-golf-buggy', 'motocaddy-m7-gps-remote-electric-golf-buggy'],
     content: [
@@ -119,7 +119,7 @@ export const EXTRA_POSTS4: BlogPost[] = [
     seoTitle: '2nd Hand Golf Carts: Used Cart Buying Guide | Buggies For Sale',
     excerpt: 'A practical checklist for buying a second-hand golf cart in Australia: batteries, age, service history, seating, price ranges and the used carts we list.',
     category: 'Buying guides', date: '2026-10-19', readTime: '9 min read', targetKeyword: '2nd hand golf carts',
-    image: '/blog/2nd-hand-golf-carts.webp',
+    image: '/blog/2nd-hand-golf-carts-v2.webp',
     tags: ['2nd hand golf carts', 'second hand golf carts', 'used golf carts', 'used golf cart checklist', 'used electric golf cart'],
     products: ['used-2015-club-car-precedent-4-seat-blue-golf-cart', 'used-2018-ezgo-rxv-4-seat-red-golf-cart', 'used-2023-ecar-627-4-seat-black-golf-cart'],
     content: [
@@ -175,7 +175,7 @@ export const EXTRA_POSTS4: BlogPost[] = [
     seoTitle: 'Electric Carts: Electric Golf Cart Guide | Buggies For Sale',
     excerpt: 'How electric golf carts work, how many seats you need, what a lithium battery changes and what to check before you buy an electric cart in Australia.',
     category: 'Buying guides', date: '2026-10-19', readTime: '9 min read', targetKeyword: 'electric carts',
-    image: '/blog/electric-carts.webp',
+    image: '/blog/electric-carts-v2.webp',
     tags: ['electric carts', 'electric golf cart', 'electric golf cart australia', 'lithium golf cart', 'electric cart seats'],
     products: ['ecar-compass-2s-2-seat-golf-cart', 'club-car-tempo-2-2-lithium-4-seat-golf-cart', 'ecar-lithium-magnum-8s-8-seat-golf-cart'],
     content: [

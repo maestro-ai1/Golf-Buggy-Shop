@@ -33,7 +33,7 @@ for (const p of L) {
       }
     }
   }
-  const dir = `${ROOT}/public/products/${p.slug}`; const onDisk = fs.readdirSync(dir).filter((f) => /^(v2-)?\d+\.webp$/.test(f)).length;
+  const dir = `${ROOT}/public/products/${p.slug}`; const onDisk = fs.readdirSync(dir).filter((f) => /^(v\d+-)?\d+\.webp$/.test(f)).length;
   if (onDisk !== p.images.length) bad.push([p.slug, `files on disk ${onDisk} vs catalog ${p.images.length}`]);
 }
 // placeholder detection: any image shared by many products, or the known "Photos on request" hash

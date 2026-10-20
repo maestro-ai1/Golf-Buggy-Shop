@@ -49,6 +49,6 @@ for (const [name, rxs] of Object.entries(POSTS)) {
     layers.push({ input: Buffer.from(`<svg width="${size + 80}" height="${size + 80}"><defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity=".38"/></filter></defs><rect x="40" y="40" width="${size}" height="${size}" rx="34" fill="#fff" filter="url(#s)"/></svg>`), left: x - 40, top: y - 40 });
     layers.push({ input: rounded, left: x, top: y });
   }
-  await sharp(bg).composite(layers).webp({ quality: 82 }).toFile(path.join(OUT, name + '.webp'));
+  await sharp(bg).composite(layers).webp({ quality: 82 }).toFile(path.join(OUT, name + '-v2.webp'));
   console.log(name, items.map((p) => p.name).join(' + '));
 }

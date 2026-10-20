@@ -26,7 +26,7 @@ const CORE_POSTS: BlogPost[] = [
     seoTitle: 'Can You Drive a Golf Cart on the Road in Australia? | Buggies For Sale',
     excerpt: 'The short answer is usually no, but it depends on your state, the vehicle and where you are driving. Here is how the rules work and what to check first.',
     category: 'Buying guides', date: '2026-10-18', readTime: '7 min read', targetKeyword: 'can you drive a golf cart on the road',
-    image: '/blog/road-rules.webp',
+    image: '/blog/road-rules-v2.webp',
     content: [
       'If you own a golf cart, or you are thinking of buying one, you have probably asked whether you can take it down the street. It is one of the most common questions we hear, and the honest answer is that it depends on where you live and how the vehicle is classified.',
       'This guide explains the general picture across Australia, the questions to ask, and where to get a firm answer for your situation. It is general information and not legal advice, so always confirm with your state or territory transport authority before driving on a public road.',
@@ -73,7 +73,7 @@ const CORE_POSTS: BlogPost[] = [
     seoTitle: 'How Much Is a Golf Cart in Australia? | Buggies For Sale',
     excerpt: 'New electric golf carts typically start around $10,000 and climb with seats, battery and specification. Here is what drives the price and what to budget for.',
     category: 'Price guides', date: '2026-10-17', readTime: '8 min read', targetKeyword: 'how much is a golf cart',
-    image: '/blog/cart-price.webp',
+    image: '/blog/cart-price-v2.webp',
     content: [
       'Golf cart prices vary widely, and online listings can leave you guessing what the real total will be. This guide breaks down what a golf cart costs in Australia, what affects the price and what extras to plan for.',
       'The figures below reflect new electric carts we list at the time of writing, with GST included. Prices change, so always check the current listing.',
@@ -116,7 +116,7 @@ const CORE_POSTS: BlogPost[] = [
     seoTitle: 'Electric Golf Buggy vs Push Buggy | Buggies For Sale',
     excerpt: 'A push buggy costs a few hundred dollars and needs no charging. An electric buggy adds a motor and a bigger price. Here is how to choose.',
     category: 'Buying guides', date: '2026-10-16', readTime: '7 min read', targetKeyword: 'electric golf buggy',
-    image: '/blog/electric-vs-push.webp',
+    image: '/blog/electric-vs-push-v2.webp',
     content: [
       'Most golfers who stop carrying their bag end up choosing between a push buggy and an electric buggy. Both save your back, but they suit different golfers and budgets. This guide helps you decide.',
       '## Push buggies in a nutshell',
@@ -158,7 +158,7 @@ const CORE_POSTS: BlogPost[] = [
     seoTitle: 'Lithium Golf Cart Batteries vs Lead-Acid | Buggies For Sale',
     excerpt: 'Lithium golf cart batteries cost more up front but weigh less, need no watering and typically last longer. Here is how to decide and what to check before upgrading.',
     category: 'Maintenance', date: '2026-10-15', readTime: '8 min read', targetKeyword: 'lithium golf cart batteries',
-    image: '/blog/lithium-batteries.webp',
+    image: '/blog/lithium-batteries-v2.webp',
     content: [
       'If your golf cart is slowing down or running short of range, it may be time for new batteries. The big decision is whether to replace lead-acid with lead-acid or move to lithium. This guide compares both.',
       '## How lead-acid batteries work',
@@ -198,7 +198,7 @@ const CORE_POSTS: BlogPost[] = [
     seoTitle: 'What Is a UTV? Side by Side vs ATV vs Dune Buggy | Buggies For Sale',
     excerpt: 'UTV, side by side, ATV, quad, dune buggy: the names overlap. This guide explains the differences so you can pick the right off-road vehicle.',
     category: 'Off-road guides', date: '2026-10-14', readTime: '7 min read', targetKeyword: 'what is a utv',
-    image: '/blog/utv-guide.webp',
+    image: '/blog/utv-guide-v2.webp',
     content: [
       'Off-road vehicles come with a confusing set of names. Is a UTV a buggy? What is a side by side? How is an ATV different? This guide sorts it out.',
       '## What is a UTV?',
@@ -235,7 +235,7 @@ const CORE_POSTS: BlogPost[] = [
     seoTitle: 'Best Remote Golf Buggy: Buyer’s Guide | Buggies For Sale',
     excerpt: 'Remote golf buggies follow your commands so you can walk hands-free. Here is how they work, what to compare and which models to look at.',
     category: 'Buying guides', date: '2026-10-13', readTime: '8 min read', targetKeyword: 'best remote golf buggy',
-    image: '/blog/remote-buggy.webp',
+    image: '/blog/remote-buggy-v2.webp',
     content: [
       'The best remote golf buggy is the most hands-free way to play. Instead of pushing or steering, you walk the course while the buggy follows your commands. This guide explains how remote control buggies work and what to compare.',
       '## How remote golf buggies work',

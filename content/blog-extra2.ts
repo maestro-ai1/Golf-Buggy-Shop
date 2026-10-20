@@ -9,7 +9,7 @@ export const EXTRA_POSTS2: BlogPost[] = [
     seoTitle: 'Ninebot Go Kart Guide: Segway GoKart Pro 2 | Buggies For Sale',
     excerpt: 'What a Ninebot go kart is, how the Segway-Ninebot GoKart Pro 2 performs, which rider sizes it suits and how it compares with petrol and other electric karts.',
     category: 'Off-road guides', date: '2026-10-19', readTime: '9 min read', targetKeyword: 'ninebot go kart', tags: ['ninebot go kart', 'ninebot gokart', 'segway ninebot go kart', 'electric go kart', 'go kart for kids'],
-    image: '/blog/ninebot-go-kart.webp',
+    image: '/blog/ninebot-go-kart-v2.webp',
     products: ['segway-ninebot-gokart-pro-2-electric-go-kart', 'crazy-kart-electric-drift-kart-drifta', 'kayo-s125-go-kart'],
     content: [
       `A Ninebot go kart is an electric go kart made by Segway-Ninebot, the company best known for electric scooters. It looks like a small race kart, but it is built around a battery pack and electric motors instead of a petrol engine, and it is aimed at families, teenagers and adults who want a quiet, low-maintenance kart for private land or a track. This guide explains how the Ninebot go kart range works, what the current Segway-Ninebot GoKart Pro 2 offers, who it suits and what to check before you buy one in Australia.`,
@@ -84,7 +84,7 @@ export const EXTRA_POSTS2: BlogPost[] = [
     seoTitle: 'Golf Cars & Carts vs Golf Buggies | Buggies For Sale',
     excerpt: 'Golf car, golf cart and golf buggy are used interchangeably, but they can mean very different vehicles. Here is how the terms differ and how to choose the right one.',
     category: 'Buying guides', date: '2026-10-19', readTime: '9 min read', targetKeyword: 'golf cars & carts', tags: ['golf cars & carts', 'golf car vs golf cart', 'golf buggy vs golf cart', 'what is a golf buggy', 'types of golf carts'],
-    image: '/blog/golf-cars-vs-carts.webp',
+    image: '/blog/golf-cars-vs-carts-v2.webp',
     products: ['mgi-zip-x3-electric-golf-buggy', 'ecar-lithium-ikon-hd-4s-4-seat-golf-cart', 'stinger-sg-5-v2-golf-push-buggy'],
     content: [
       `If you have searched for golf cars & carts and golf buggies and wondered whether they are the same thing, you are not alone. The three terms are used loosely, and in Australia the word you hear often depends on the person and the place. In practice they can describe very different vehicles, from a two-seat electric cart you sit in to a small trolley that follows you down the fairway. This guide explains how the terms are used, how the main types differ and how to choose the one that fits your needs and budget.`,

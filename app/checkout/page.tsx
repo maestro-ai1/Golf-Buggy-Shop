@@ -37,7 +37,8 @@ export default function Checkout() {
         const msg = `Hi Buggies For Sale, I just placed order ${ref} (${money2(cart.total)}).\nName: ${f.name}\n` + cart.items.map((i) => `${i.quantity} x ${i.name}`).join('\n') + `\nPayment: ${method}\nPlease send my payment details.`;
         window.open(`https://wa.me/${REPLY.channels.whatsappCountryCode}${REPLY.channels.whatsapp.replace(/^0/, '').replace(/\s/g, '')}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
       }
-      cart.clear(); router.push(`/thank-you-order/?ref=${ref}`);
+      if (crypto) { try { sessionStorage.setItem('bfs-crypto-order', JSON.stringify({ ref, name: f.name, email: f.email, total: cart.total })); } catch { /* optional */ } }
+      cart.clear(); router.push(crypto ? `/order/crypto/?id=${ref}` : `/thank-you-order/?ref=${ref}`);
     } catch { setErr('Network error. Please call 0420 128 746.'); setBusy(''); }
   }
 
@@ -66,10 +67,10 @@ export default function Checkout() {
           {err && <p role="alert" className="rounded-xl bg-accent-100 p-3 text-sm font-semibold text-accent-600">{err}</p>}
           {!cart.minMet && <p className="rounded-xl bg-accent-100 p-3 text-sm font-semibold text-accent-600">Minimum order is {money(RULES.minOrder)}. Add {money(cart.minRemaining)} more to continue.</p>}
           <div className="flex flex-col gap-3 sm:flex-row">
-            <button type="submit" disabled={!cart.minMet || !!busy} className="btn btn-primary flex-1 !min-h-[52px] disabled:opacity-50">{busy === 'email' ? 'Placing order…' : 'Place order'}</button>
-            <button type="button" disabled={!cart.minMet || !!busy} onClick={(e) => place('whatsapp', (e.currentTarget.closest('form') as HTMLFormElement))} className="btn flex-1 !min-h-[52px] bg-[#25D366] text-white hover:bg-[#1fb957] disabled:opacity-50"><MessageCircle size={18} /> {busy === 'whatsapp' ? 'Placing…' : 'Order via WhatsApp'}</button>
+            <button type="submit" disabled={!cart.minMet || !!busy} className="btn btn-primary flex-1 !min-h-[52px] disabled:opacity-50">{busy === 'email' ? 'Placing order…' : crypto ? 'Continue to crypto payment' : 'Place order'}</button>
+            {!crypto && <button type="button" disabled={!cart.minMet || !!busy} onClick={(e) => place('whatsapp', (e.currentTarget.closest('form') as HTMLFormElement))} className="btn flex-1 !min-h-[52px] bg-[#25D366] text-white hover:bg-[#1fb957] disabled:opacity-50"><MessageCircle size={18} /> {busy === 'whatsapp' ? 'Placing…' : 'Order via WhatsApp'}</button>}
           </div>
-          <p className="flex items-center gap-2 text-xs text-muted"><ShieldCheck size={14} /> No payment is taken on this page. We email secure payment details after confirming your order.</p>
+          <p className="flex items-center gap-2 text-xs text-muted"><ShieldCheck size={14} /> {crypto ? 'No payment is taken on this page. Next you choose Bitcoin or USDT and see the wallet address and QR code.' : 'No payment is taken on this page. We email secure payment details after confirming your order.'}</p>
         </form>
         <aside className="card self-start p-6">
           <h2 className="text-xl font-extrabold">Order summary</h2>

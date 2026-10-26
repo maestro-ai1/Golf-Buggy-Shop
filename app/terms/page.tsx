@@ -15,7 +15,7 @@ export default function Terms() {
       <h2>Delivery</h2>
       <p>Delivery is free over ${SHOP.freeShippingThreshold.toLocaleString()} to major metro and depot corridors, otherwise ${SHOP.shippingFee} flat. See our <Link href="/delivery/">delivery page</Link>.</p>
       <h2>Warranty and returns</h2>
-      <p>The manufacturer warranty applies to new goods. Our goods come with guarantees under the Australian Consumer Law that cannot be excluded. See our <Link href="/returns/">returns page</Link>.</p>
+      <p>The manufacturer warranty applies to new goods. Our goods come with guarantees under the Australian Consumer Law that cannot be excluded. You may also return unused goods within {SHOP.returnDays} days of delivery. See our <Link href="/returns/">returns page</Link>.</p>
       <h2>Use of vehicles</h2>
       <p>Golf buggies, golf carts, quads and off-road buggies must be used lawfully, with suitable safety gear, and only where permitted. Road use rules differ by state and territory, and it is your responsibility to check them.</p>
       <h2>Contact</h2>

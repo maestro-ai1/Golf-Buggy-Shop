@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { BRAND, CONTACT, SITE, type Product, type SitePage } from '@/config/site';
+import { BRAND, CONTACT, SHOP, SITE, type Product, type SitePage } from '@/config/site';
 
 export const abs = (path: string) => SITE.url + (path.startsWith('/') ? path : '/' + path);
 export const clampDesc = (s: string, min = 110, max = 158) => {
@@ -56,6 +56,7 @@ export const productSchema = (p: Product) => ({
   name: p.name, description: p.shortDescription, sku: p.sku, brand: { '@type': 'Brand', name: p.brand },
   image: p.images.map((i) => abs(i + '.webp')), category: p.subcategory,
   offers: { '@type': 'Offer', url: abs(`/products/${p.slug}/`), priceCurrency: 'AUD', price: String(p.price), priceValidUntil: new Date(Date.now() + 90 * 864e5).toISOString().slice(0, 10), validFrom: new Date().toISOString().slice(0, 10), itemCondition: p.slug.startsWith('used-') ? 'https://schema.org/UsedCondition' : 'https://schema.org/NewCondition', availability: 'https://schema.org/InStock', seller: { '@id': abs('/#org') },
+    hasMerchantReturnPolicy: { '@type': 'MerchantReturnPolicy', applicableCountry: 'AU', returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow', merchantReturnDays: SHOP.returnDays, returnMethod: 'https://schema.org/ReturnByMail', returnFees: 'https://schema.org/ReturnShippingFees', merchantReturnLink: abs('/returns/') },
     shippingDetails: { '@type': 'OfferShippingDetails', shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'AU' }, shippingRate: { '@type': 'MonetaryAmount', value: p.price >= 1000 ? '0' : '95', currency: 'AUD' }, deliveryTime: { '@type': 'ShippingDeliveryTime', handlingTime: { '@type': 'QuantitativeValue', minValue: 1, maxValue: 2, unitCode: 'DAY' } } } },
 });
 

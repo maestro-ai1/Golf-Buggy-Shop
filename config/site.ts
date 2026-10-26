@@ -78,6 +78,7 @@ export const SHOP = {
   freeShippingThreshold: 1000,
   shippingFee: 95,
   returnDays: 5,
+  transitDays: { min: 3, max: 7 },
   cryptoDiscount: 10,
   priceFactor: 0.98,
   paymentMethods: [

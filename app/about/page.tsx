@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import InfoPage from '@/components/InfoPage';
 import { Faq, TrustpilotBlock, JsonLd } from '@/components/Bits';
 import { BRAND, CONTACT, PRODUCTS, SHOP, SITE } from '@/config/site';
-import { faqSchema, meta, orgSchema } from '@/lib/seo';
+import { faqSchema, meta } from '@/lib/seo';
 
 // Primary: buggies australia. Secondary: golf cars australia, best golf buggy australia, mgi electric golf buggy australia, electric golf carts australia, buggy australia.
 export const metadata = meta({
@@ -24,7 +24,7 @@ export default function About() {
   return (
     <>
       <JsonLd data={faqSchema(FAQS)} />
-      <JsonLd data={{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'About Buggies For Sale', url: SITE.url + '/about/', mainEntity: orgSchema() }} />
+      <JsonLd data={{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'About Buggies For Sale', url: SITE.url + '/about/', mainEntity: { '@id': SITE.url + '/#org' } }} />
       <InfoPage crumb={{ name: 'About us', url: '/about/' }} title="About Buggies For Sale: Buggies Australia-Wide" lead="Golf buggies, golf carts and off-road buggies, supplied from Sydney and delivered across Australia.">
         <p>{BRAND.statement} We supply buggies Australia-wide, and every order is checked by a person before you pay.</p>
 

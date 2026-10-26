@@ -55,8 +55,8 @@ export const productSchema = (p: Product) => ({
   '@context': 'https://schema.org', '@type': 'Product', '@id': abs(`/products/${p.slug}/`),
   name: p.name, description: p.shortDescription, sku: p.sku, brand: { '@type': 'Brand', name: p.brand },
   image: p.images.map((i) => abs(i + '.webp')), category: p.subcategory,
-  offers: { '@type': 'Offer', url: abs(`/products/${p.slug}/`), priceCurrency: 'AUD', price: String(p.price), priceValidUntil: new Date(Date.now() + 90 * 864e5).toISOString().slice(0, 10), itemCondition: 'https://schema.org/NewCondition', availability: 'https://schema.org/InStock', seller: { '@id': abs('/#org') },
-    shippingDetails: { '@type': 'OfferShippingDetails', shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'AU' }, shippingRate: { '@type': 'MonetaryAmount', value: p.price >= 1000 ? '0' : '95', currency: 'AUD' } } },
+  offers: { '@type': 'Offer', url: abs(`/products/${p.slug}/`), priceCurrency: 'AUD', price: String(p.price), priceValidUntil: new Date(Date.now() + 90 * 864e5).toISOString().slice(0, 10), validFrom: new Date().toISOString().slice(0, 10), itemCondition: p.slug.startsWith('used-') ? 'https://schema.org/UsedCondition' : 'https://schema.org/NewCondition', availability: 'https://schema.org/InStock', seller: { '@id': abs('/#org') },
+    shippingDetails: { '@type': 'OfferShippingDetails', shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'AU' }, shippingRate: { '@type': 'MonetaryAmount', value: p.price >= 1000 ? '0' : '95', currency: 'AUD' }, deliveryTime: { '@type': 'ShippingDeliveryTime', handlingTime: { '@type': 'QuantitativeValue', minValue: 1, maxValue: 2, unitCode: 'DAY' } } } },
 });
 
 export const listSchema = (page: SitePage, items: { name: string; slug: string }[]) => ({

@@ -12,6 +12,7 @@ import { PAGES, PRODUCTS, brandPages, breadcrumbsFor, childrenOf, pageBySlug, pr
 import { copyFor, descFor } from '@/lib/copy';
 import categoryHeroes from '@/data/category-heroes.json';
 import { faqSchema, listSchema, meta } from '@/lib/seo';
+import { linksForPage } from '@/lib/links';
 import { supportFaqsFor } from '@/lib/support';
 
 type Params = { slug: string[] };
@@ -76,7 +77,7 @@ export default async function StructurePage({ params }: { params: Promise<Params
   const copy = copyFor(page, products);
   const faqs = [...copy.faqs, ...supportFaqsFor(page.url, products)];
   const kids = childrenOf(page.name).filter((k) => !k.lowDemand && k.level !== 'product' && k.url !== '/golf-buggies/for-sale-locations/');
-  const siblings = PAGES.filter((p) => p.parent === page.parent && p.url !== page.url && p.level !== 'brand').slice(0, 8);
+  const kwLinks = linksForPage(page, 10);
   const trail = breadcrumbsFor(page);
   const hero = heroFor(page.url);
   const brand = page.level === 'brand' ? page.name.replace(/ Buggies$/, '') : '';
@@ -162,9 +163,16 @@ export default async function StructurePage({ params }: { params: Promise<Params
           </div>
           <aside className="space-y-4 self-start">
             <div className="card p-6"><h2 className="font-display text-xl font-extrabold">Need a hand choosing?</h2><p className="mt-2 text-sm text-muted">Our team knows these products. Call, WhatsApp or email and we will help you match a model to your needs.</p><a href="tel:+61420128746" className="btn btn-green mt-4 w-full">Call 0420 128 746</a></div>
-            {siblings.length > 0 && <div className="card p-6"><h2 className="font-display text-lg font-extrabold">Related ranges</h2><ul className="mt-3 space-y-2">{siblings.map((s) => <li key={s.url}><Link href={s.url} className="text-sm font-semibold text-fw-700 hover:underline">{s.name.replace(/ \(Hub\)$/, '')}</Link></li>)}</ul></div>}
           </aside>
         </div></section>
+      )}
+
+      {/* KEYWORD LINKS: anchor text is the target page's own transactional / commercial keyword */}
+      {kwLinks.length > 0 && !isBrandsHub && (
+        <section className="section pt-0"><div className="container-x"><div className="card p-6">
+          <h2 className="font-display text-lg font-extrabold">Popular searches</h2>
+          <ul className="mt-3 flex flex-wrap gap-2">{kwLinks.map((l) => <li key={l.url}><Link href={l.url} className="inline-block rounded-full border border-fw-100 bg-fw-50 px-3.5 py-1.5 text-sm font-semibold text-fw-700 hover:bg-fw-100 hover:underline">{l.anchor}</Link></li>)}</ul>
+        </div></div></section>
       )}
 
       {/* BRANDS */}

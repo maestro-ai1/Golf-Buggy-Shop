@@ -8,6 +8,7 @@ import ProductCard, { toCard } from '@/components/ProductCard';
 import { Breadcrumbs, Faq, JsonLd, SectionHead } from '@/components/Bits';
 import { PRODUCTS, SHOP, breadcrumbsFor, money, pageByUrl, productBySlug } from '@/config/site';
 import { Markdown } from '@/lib/md';
+import { linksForProduct } from '@/lib/links';
 import { faqSchema, meta, productSchema } from '@/lib/seo';
 
 export function generateStaticParams() { return PRODUCTS.map((p) => ({ slug: p.slug })); }
@@ -41,6 +42,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const related = PRODUCTS.filter((x) => x.slug !== p.slug && x.categories[0] === p.categories[0]).slice(0, 4);
   const more = related.length < 4 ? [...related, ...PRODUCTS.filter((x) => x.slug !== p.slug && x.group === p.group && !related.includes(x))].slice(0, 4) : related;
   const specs = Object.entries(p.specs);
+  const kwLinks = linksForProduct(p.category, p.brandPage ? `/brands/${p.brandPage}/` : undefined);
 
   return (
     <>
@@ -97,6 +99,13 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       </section>
 
       <Faq items={p.faqs} title={`${p.name}: common questions`} />
+
+      {kwLinks.length > 0 && (
+        <section className="section pt-0"><div className="container-x"><div className="card p-6">
+          <h2 className="font-display text-lg font-extrabold">Related searches</h2>
+          <ul className="mt-3 flex flex-wrap gap-2">{kwLinks.map((l) => <li key={l.url}><Link href={l.url} className="inline-block rounded-full border border-fw-100 bg-fw-50 px-3.5 py-1.5 text-sm font-semibold text-fw-700 hover:bg-fw-100 hover:underline">{l.anchor}</Link></li>)}</ul>
+        </div></div></section>
+      )}
 
       <section className="section pt-0">
         <div className="container-x">

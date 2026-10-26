@@ -30,6 +30,16 @@ const POSTS = {
   'caddies-for-golf': [/PowaKaddy CT6/, /Motocaddy M7/],
   '2nd-hand-golf-carts': [/2018 EZGO RXV/, /2023 ECAR 627/],
   'electric-carts': [/Compass 2S 2 Seat/, /Tempo 2\+2/],
+  'what-is-the-best-electric-golf-buggy-australia': [/MGI ZIP X3/, /PowaKaddy CT6/],
+  'how-much-is-a-go-kart': [/HelmetKarts HA-270X/, /Segway Ninebot GoKart Pro 2/],
+  'electric-go-kart-for-adults-australia': [/Segway Ninebot GoKart Pro 2/, /Crazy Kart/],
+  'off-road-dune-buggy': [/Cheetah 175/, /Cheetah 300/],
+  'childs-off-road-buggy': [/Kayo S70/, /Can-Am Maverick 24V/],
+  'atv-vs-utv': [/Apollo RFZ Falcon/, /Kayo S150/],
+  'lithium-batteries-for-golf-carts': [/PRO-Li Plus 48V 150Ah Lithium Battery Package for EZGO RXV/, /Lester Summit/],
+  'golf-buggy-size': [/PowerBug NX Lithium Electric Golf Buggy$/, /Thomson E5000/],
+  '12v-golf-buggy-battery': [/MGI Lithium 12V 20Ah/, /MGI Lithium 12V 299Wh/],
+  'utv-accessories': [/Polaris RZR Youth Full Windshield/, /Polaris RZR 170 Front Brushguard/],
   'used-golf-carts-on-sale': [/Tempo Refurbished/, /2015 Club Car Precedent/],
 };
 const W = 1600, H = 900;

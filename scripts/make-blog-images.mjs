@@ -40,6 +40,16 @@ const POSTS = {
   'golf-buggy-size': [/PowerBug NX Lithium Electric Golf Buggy$/, /Thomson E5000/],
   '12v-golf-buggy-battery': [/MGI Lithium 12V 20Ah/, /MGI Lithium 12V 299Wh/],
   'utv-accessories': [/Polaris RZR Youth Full Windshield/, /Polaris RZR 170 Front Brushguard/],
+  'electric-drifting-go-kart': [/Drifta/, /GMX Drift/],
+  'inexpensive-go-karts': [/HelmetKarts/, /GMX Drift/],
+  'dirt-buggy': [/Mudhead/, /Kayo S150/],
+  'ride-on-buggy': [/Can-Am Maverick 24V/, /John Deere 12V/],
+  'beach-buggies-for-sale-in-australia': [/Cheetah 175/, /Challenger 200/],
+  'electric-buggy-for-adults': [/Ninebot GoKart Pro 2/, /Crossfire E5/],
+  '4x4-buggy': [/600GT/, /400GT/],
+  'lithium-battery-for-golf-buggy': [/MGI Zip 24V 299Wh/, /Ai GPS+ 24V 380Wh/],
+  'remote-control-golf-trolley': [/MGI Ai 500/, /QOD Q2/],
+  'best-golf-push-buggy-australia': [/Clicgear Model 4/, /Rovic RV1S/],
   'used-golf-carts-on-sale': [/Tempo Refurbished/, /2015 Club Car Precedent/],
 };
 const W = 1600, H = 900;

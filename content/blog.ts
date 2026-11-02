@@ -12,6 +12,7 @@ import { EXTRA_POSTS2 } from '@/content/blog-extra2';
 import { EXTRA_POSTS3 } from '@/content/blog-extra3';
 import { EXTRA_POSTS4 } from '@/content/blog-extra4';
 import { EXTRA_POSTS5 } from '@/content/blog-extra5';
+import { EXTRA_POSTS6 } from '@/content/blog-extra6';
 
 const L = {
   carts: '/golf-carts/', cartsSale: '/golf-carts/for-sale/', electricCarts: '/golf-carts/electric/', used: '/golf-carts/used/', utility: '/golf-carts/utility-4-seater/',
@@ -396,4 +397,4 @@ function extend(p: BlogPost): BlogPost {
   return { ...p, content, products: a?.products || p.products, tags: m?.tags || p.tags };
 }
 
-export const BLOG_POSTS: BlogPost[] = [...CORE_POSTS, ...EXTRA_POSTS, ...EXTRA_POSTS2, ...EXTRA_POSTS3, ...EXTRA_POSTS4, ...EXTRA_POSTS5].map(extend);
+export const BLOG_POSTS: BlogPost[] = [...CORE_POSTS, ...EXTRA_POSTS, ...EXTRA_POSTS2, ...EXTRA_POSTS3, ...EXTRA_POSTS4, ...EXTRA_POSTS5, ...EXTRA_POSTS6].map(extend);

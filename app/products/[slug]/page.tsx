@@ -11,6 +11,7 @@ import { Markdown } from '@/lib/md';
 import { linksForProduct } from '@/lib/links';
 import { relatedProducts } from '@/lib/product-related';
 import { faqSchema, meta, productSchema } from '@/lib/seo';
+import { PRODUCT_SEO, fillPrice } from '@/content/product-seo';
 
 export function generateStaticParams() { return PRODUCTS.map((p) => ({ slug: p.slug })); }
 
@@ -30,7 +31,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const p = productBySlug(slug);
   if (!p) return {};
-  const d = `Buy the ${p.name} online in Australia for ${money(p.price)} inc. GST. ${p.shortDescription.replace(/^[^:]+:\s*/, '')} Free delivery over $1,000.`;
+  const seo = PRODUCT_SEO[p.slug];
+  const nameWords = p.name.split(/\s+/);
+  const kwCase = seo ? seo.primary.split(' ').map((w, i) => nameWords.find((n) => n.toLowerCase() === w && (/[A-Z]{2,}|\d/.test(n) || /^[A-Z][a-z]+[A-Z]/.test(n))) || (i === 0 ? w.charAt(0).toUpperCase() + w.slice(1) : w)).join(' ') : '';
+  const kwd = seo ? `${kwCase}: buy the ${p.name} online in Australia for ${money(p.price)} inc. GST. Free delivery over $1,000.` : '';
+  const d = seo && kwd.length >= 110 && kwd.length <= 158 ? kwd : `Buy the ${p.name} online in Australia for ${money(p.price)} inc. GST. ${p.shortDescription.replace(/^[^:]+:\s*/, '')} Free delivery over $1,000.`;
   return { ...meta({ title: titleFor(p.name), description: d, path: `/products/${p.slug}/`, image: p.images[0] + '.webp' }), title: { absolute: titleFor(p.name) } };
 }
 
@@ -43,19 +48,24 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const more = relatedProducts(p.slug);
   const specs = Object.entries(p.specs);
   const kwLinks = linksForProduct(p.category, p.brandPage ? `/brands/${p.brandPage}/` : undefined);
+  const seo = PRODUCT_SEO[p.slug];
+  const price = money(p.price);
+  const faqs = seo ? seo.faq.map(([q, a]) => [fillPrice(q, price), fillPrice(a, price)] as [string, string]) : p.faqs;
+  const lead = seo ? fillPrice(seo.lead, price) : p.shortDescription;
+  const extra = seo ? seo.sec.flatMap(([h, t]) => [`## ${h}`, fillPrice(t, price)]) : [];
 
   return (
     <>
-      <JsonLd data={[productSchema(p), faqSchema(p.faqs)]} />
+      <JsonLd data={[productSchema(p), faqSchema(faqs)]} />
       <div className="border-b border-line bg-white"><div className="container-x py-4"><Breadcrumbs trail={trail} /></div></div>
 
       <section className="section !pt-8">
         <div className="container-x grid gap-10 lg:grid-cols-[1.05fr_1fr]">
-          <Gallery images={p.images} alt={p.name} />
+          <Gallery images={p.images} alt={seo ? seo.primary : p.name} />
           <div>
             <p className="eyebrow">{p.brand}</p>
             <h1 className="mt-2 text-[30px] font-black leading-tight md:text-[38px]">{p.name}</h1>
-            <p className="mt-3 text-[17px] leading-relaxed text-muted">{p.shortDescription}</p>
+            <p className="mt-3 text-[17px] leading-relaxed text-muted">{lead}</p>
 
             <div className="mt-6 rounded-2xl border border-fw-100 bg-fw-50 p-5">
               <div className="flex flex-wrap items-baseline gap-3">
@@ -81,6 +91,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <div className="container-x grid gap-10 lg:grid-cols-[1.4fr_1fr]">
           <div className="prose-copy">
             <Markdown lines={p.paragraphs} />
+            {extra.length > 0 && <Markdown lines={extra} />}
             <ul aria-label="Tags" className="mt-8 flex flex-wrap gap-2">{p.tags.map((t) => <li key={t}><Link href={`/search/?q=${encodeURIComponent(t)}`} className="chip hover:bg-fw-100">{t}</Link></li>)}</ul>
             {p.specs.Fits && <p>Fitment: <strong>{p.specs.Fits}</strong>. Not sure it suits your cart? Send us the model and year before you order.</p>}
           </div>
@@ -98,7 +109,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
 
-      <Faq items={p.faqs} title={`${p.name}: common questions`} />
+      <Faq items={faqs}title={`${p.name}: common questions`} />
 
       {kwLinks.length > 0 && (
         <section className="section pt-0"><div className="container-x"><div className="card p-6">

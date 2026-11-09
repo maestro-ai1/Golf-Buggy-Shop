@@ -952,19 +952,19 @@
   "d": "2026-10-19"
  },
  "/golf-buggies/motorised-electric/": {
-  "h": "fd8e0909d004",
-  "d": "2026-10-19"
+  "h": "0e69426e3f82",
+  "d": "2026-11-09"
  },
  "/golf-buggies/remote-control/": {
   "h": "05253f443643",
   "d": "2026-10-19"
  },
  "/golf-buggies/push-pull-trolleys/": {
-  "h": "d4023540b5e0",
+  "h": "df48c2afe4eb",
   "d": "2026-11-09"
  },
  "/golf-buggies/caddies-electric-trolleys/": {
-  "h": "c3beb52687ee",
+  "h": "dbe439d57a07",
   "d": "2026-11-09"
  },
  "/golf-buggies/ride-on-seated/": {
@@ -972,7 +972,7 @@
   "d": "2026-11-09"
  },
  "/golf-buggies/3-wheel/": {
-  "h": "c7944796e3f3",
+  "h": "a715614bd3e8",
   "d": "2026-11-09"
  },
  "/golf-buggies/golf-scooters/": {
@@ -992,7 +992,7 @@
   "d": "2026-10-19"
  },
  "/golf-carts/used/": {
-  "h": "6c99c1c4719f",
+  "h": "427b3c8a40e9",
   "d": "2026-11-09"
  },
  "/golf-carts/petrol/": {
@@ -1000,7 +1000,7 @@
   "d": "2026-11-09"
  },
  "/golf-carts/electric/": {
-  "h": "02f0ba52fcc4",
+  "h": "6cc2ee8c1b7a",
   "d": "2026-11-09"
  },
  "/golf-carts/utility-4-seater/": {

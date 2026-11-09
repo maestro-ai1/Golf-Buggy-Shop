@@ -34,7 +34,7 @@ export const HUBS: Record<string, PageCopy> = {
     faqs: [
       [`What is a golf buggy?`, `A golf buggy is a wheeled carrier for your golf bag. Push buggies are pushed by hand, electric and remote buggies have a motor, and ride-on buggies carry the golfer as well.`],
       [`Which golf buggy should I buy?`, `Choose a push buggy for the lowest cost, an electric or remote buggy for a hands-free round, and a ride-on buggy if you need to sit. Start with your budget, your course terrain and how you transport the buggy, or read our [electric versus push buggy guide](/blog/electric-vs-push-golf-buggy-which-should-you-buy/).`],
-      [`How much does a golf buggy cost in Australia?`, `Push buggies start from a few hundred dollars, electric and remote buggies run from around $1,200 up to $3,300, and ride-on buggies cost more. Every price on this site includes GST.`],
+      [`How much does a golf buggy cost in Australia?`, `Push buggies start from around $165, electric buggies from around $640, remote control buggies from around $1,470 up to about $3,200, and ride-on buggies from around $4,000. Every price on this site includes GST.`],
       [`Do you deliver golf buggies Australia-wide?`, `Yes. Orders over $1,000 ship free to major metro and depot corridors, and a flat $95 freight fee applies below that threshold. See our [delivery page](/delivery/) for details.`],
       [`Is a golf buggy the same as a golf cart?`, `In Australia people use the words loosely. A golf buggy usually means the smaller walking buggy that carries your bag. A [golf cart](/golf-carts/) is the larger vehicle you ride in.`],
       [`How wide is a golf buggy and what are typical golf buggy dimensions?`, `It depends on the model. Check the folded size and the golf buggy width in each listing, or message us and we will confirm a size before you order. Push buggies fold the smallest.`],
@@ -71,7 +71,7 @@ export const HUBS: Record<string, PageCopy> = {
     ],
     faqs: [
       [`Can you drive a golf cart on the road in Australia?`, `Rules differ by state and territory. Golf carts are generally for private property and the course unless registered and compliant. Check with your state transport authority, and read our [road rules guide](/blog/can-you-drive-a-golf-cart-on-the-road-in-australia/).`],
-      [`How much is a golf cart?`, `New electric golf carts start around $11,000 and go up for larger and premium models. All prices on this site include GST. See [golf carts for sale](/golf-carts/for-sale/) for current prices.`],
+      [`How much is a golf cart?`, `New electric golf carts start from around $10,800 and go up for larger and premium models. All prices on this site include GST. See [golf carts for sale](/golf-carts/for-sale/) for current prices.`],
       [`Are golf carts electric or petrol?`, `Most new carts are electric, and lithium is now the standard for quality models. Petrol carts exist for heavy duty use; see our [petrol golf carts](/golf-carts/petrol/).`],
       [`What are golf cart dimensions and what size is a golf cart?`, `Dimensions vary by model and seat count. Check the specification table on each listing for length and width, or ask us for a size sheet before you order.`],
       [`Do you sell golf cart accessories and parts?`, `Yes. Browse our [lithium batteries](/parts-accessories/golf-buggy-parts/lithium-batteries/), wheels, lighting, seat belts, mats and [golf cart accessories](/parts-accessories/golf-cart-accessories/).`],

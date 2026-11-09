@@ -74,7 +74,7 @@
    "url": "/golf-buggies/",
    "name": "Golf Buggies",
    "level": "category",
-   "words": 1400,
+   "words": 1403,
    "title": "Golf Buggy Australia | Buggies For Sale",
    "h1": " Golf Buggy ",
    "meta": "Looking for a golf buggy that suits the way you play? Our golf buggy range covers every budget and style: simple push buggies, motorised electric buggies.",
@@ -134,7 +134,7 @@
    "url": "/golf-buggies/for-sale/",
    "name": "Golf Buggies For Sale",
    "level": "sub-category",
-   "words": 693,
+   "words": 966,
    "title": "Golf Buggy For Sale Australia | Buggies For Sale",
    "h1": " Golf Buggy For Sale ",
    "meta": "Every golf buggy for sale here comes from MGI, Stinger, PowerBug, QOD, Concourse and more, with push, electric, remote and ride-on options in one place.",
@@ -147,8 +147,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 2,
-    "density": 0.4
+    "uses": 6,
+    "density": 0.82
    },
    "secondary": [
     {
@@ -156,28 +156,28 @@
      "volume": 390,
      "kd": 5,
      "intent": "Transactional",
-     "uses": 6
+     "uses": 4
     },
     {
      "keyword": "golf buggy sale",
      "volume": 320,
      "kd": 9,
      "intent": "Transactional",
-     "uses": 6
+     "uses": 4
     },
     {
      "keyword": "for sale golf buggy",
      "volume": 260,
      "kd": 16,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 3
     },
     {
      "keyword": "new golf buggies",
      "volume": 90,
      "kd": 4,
      "intent": "Commercial",
-     "uses": 5
+     "uses": 6
     },
     {
      "keyword": "buy golf buggy",
@@ -194,7 +194,7 @@
    "url": "/golf-buggies/motorised-electric/",
    "name": "Motorised / Electric Golf Buggies",
    "level": "sub-category",
-   "words": 710,
+   "words": 828,
    "title": "Electric Golf Buggies For Sale Australia",
    "h1": " Electric Golf Buggies For Sale ",
    "meta": "A motorised golf buggy takes the effort out of every round. Our electric golf buggies for sale include compact folding models from MGI and PowerBug.",
@@ -207,8 +207,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 2,
-    "density": 0.39
+    "uses": 3,
+    "density": 0.49
    },
    "secondary": [
     {
@@ -216,35 +216,35 @@
      "volume": 390,
      "kd": 27,
      "intent": "Commercial",
-     "uses": 4
+     "uses": 3
     },
     {
      "keyword": "electric golf buggy for sale",
      "volume": 390,
      "kd": 27,
      "intent": "Transactional",
-     "uses": 5
+     "uses": 7
     },
     {
      "keyword": "best electric golf buggy australia",
      "volume": 140,
      "kd": 27,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 1
     },
     {
      "keyword": "motorised golf buggy for sale",
      "volume": 170,
      "kd": 19,
      "intent": "Transactional",
-     "uses": 3
+     "uses": 1
     },
     {
      "keyword": "second hand electric golf buggy for sale",
      "volume": 90,
      "kd": 7,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 2
     }
    ],
    "flags": []
@@ -254,7 +254,7 @@
    "url": "/golf-buggies/remote-control/",
    "name": "Remote Control Golf Buggies",
    "level": "sub-category",
-   "words": 703,
+   "words": 916,
    "title": "Remote Control Golf Buggy Australia | Buggies For Sale",
    "h1": " Remote Control Golf Buggy ",
    "meta": "A remote control golf buggy follows your commands so you can walk the course with nothing in your hands. Free delivery over $1,000 across Australia.",
@@ -267,8 +267,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 1,
-    "density": 0.19
+    "uses": 3,
+    "density": 0.43
    },
    "secondary": [
     {
@@ -276,7 +276,7 @@
      "volume": 480,
      "kd": 17,
      "intent": "Commercial",
-     "uses": 4
+     "uses": 3
     },
     {
      "keyword": "golf buggy remote",
@@ -297,14 +297,14 @@
      "volume": 320,
      "kd": 10,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "remote control golf buggy for sale",
      "volume": 50,
      "kd": 6,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 2
     }
    ],
    "flags": []
@@ -314,7 +314,7 @@
    "url": "/golf-buggies/push-pull-trolleys/",
    "name": "Push & Pull Golf Buggies / Trolleys",
    "level": "sub-category",
-   "words": 646,
+   "words": 717,
    "title": "Golf Trolley Australia | Buggies For Sale",
    "h1": " Golf Trolley ",
    "meta": "A golf trolley, also called a push or pull buggy, is the simplest way to stop carrying your bag. Free delivery over $1,000 across Australia.",
@@ -327,8 +327,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 2,
-    "density": 0.44
+    "uses": 4,
+    "density": 0.79
    },
    "secondary": [
     {
@@ -336,21 +336,21 @@
      "volume": 480,
      "kd": 11,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 6
     },
     {
      "keyword": "golf buggy push",
      "volume": 480,
      "kd": 12,
      "intent": "Informational, Commercial",
-     "uses": 3
+     "uses": 1
     },
     {
      "keyword": "push golf buggy",
      "volume": 260,
      "kd": 16,
      "intent": "Commercial",
-     "uses": 2
+     "uses": 3
     },
     {
      "keyword": "golf pull buggy",
@@ -374,7 +374,7 @@
    "url": "/golf-buggies/caddies-electric-trolleys/",
    "name": "Golf Caddies & Electric Trolleys",
    "level": "sub-category",
-   "words": 761,
+   "words": 864,
    "title": "Golf Caddy Australia | Buggies For Sale",
    "h1": " Golf Caddy ",
    "meta": "A golf caddy buggy carries your clubs so you can focus on the game. Free delivery over $1,000 across Australia.",
@@ -388,7 +388,7 @@
     "inMeta": true,
     "inIntro": true,
     "uses": 2,
-    "density": 0.34
+    "density": 0.3
    },
    "secondary": [
     {
@@ -396,21 +396,21 @@
      "volume": 320,
      "kd": 20,
      "intent": "Commercial",
-     "uses": 2
+     "uses": 5
     },
     {
      "keyword": "electric golf trolley",
      "volume": 260,
      "kd": 19,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 3
     },
     {
      "keyword": "motorised golf caddy",
      "volume": 210,
      "kd": 17,
      "intent": "Informational, Commercial",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "caddy golf caddy",
@@ -434,7 +434,7 @@
    "url": "/golf-buggies/ride-on-seated/",
    "name": "Ride-On / Seated Golf Buggies",
    "level": "sub-category",
-   "words": 507,
+   "words": 590,
    "title": "Golf Buggy With Seat Australia | Buggies For Sale",
    "h1": " Golf Buggy With Seat ",
    "meta": "Looking for a golf buggy with seat? Our ride-on and seated golf buggies are for golfers who prefer to sit between shots or who need a little extra support.",
@@ -447,8 +447,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 2,
-    "density": 0.56
+    "uses": 1,
+    "density": 0.24
    },
    "secondary": [
     {
@@ -456,7 +456,7 @@
      "volume": 140,
      "kd": 8,
      "intent": "Informational",
-     "uses": 3
+     "uses": 9
     },
     {
      "keyword": "single seat golf buggy",
@@ -470,21 +470,21 @@
      "volume": 110,
      "kd": 1,
      "intent": "Informational",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "ride on golf buggies",
      "volume": 70,
      "kd": 8,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 9
     },
     {
      "keyword": "stand up golf buggy",
      "volume": 50,
      "kd": 16,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     }
    ],
    "flags": []
@@ -494,10 +494,10 @@
    "url": "/golf-buggies/3-wheel/",
    "name": "3-Wheel Golf Buggies",
    "level": "sub-category",
-   "words": 544,
+   "words": 542,
    "title": "3 Wheel Golf Buggy Australia | Buggies For Sale",
    "h1": " 3 Wheel Golf Buggy ",
-   "meta": "A 3 wheel golf buggy is stable, easy to steer and quick to fold. Our three-wheel push buggies from Stinger are popular for their smooth rolling and compact.",
+   "meta": "A 3 wheel golf buggy is stable, easy to steer and quick to fold. Our three wheel golf buggy range from Stinger is popular for its smooth rolling and compact.",
    "primary": {
     "keyword": "3 wheel golf buggy",
     "volume": 210,
@@ -507,8 +507,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 2,
-    "density": 0.54
+    "uses": 1,
+    "density": 0.27
    },
    "secondary": [
     {
@@ -516,35 +516,35 @@
      "volume": 210,
      "kd": 8,
      "intent": "Informational, Transactional",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "3 wheel golf cart",
      "volume": 170,
      "kd": 12,
      "intent": "Informational, Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "compact golf buggy",
      "volume": 70,
      "kd": 8,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "collapsible golf buggy",
      "volume": 90,
      "kd": 9,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "folding golf buggy",
      "volume": 90,
      "kd": 10,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     }
    ],
    "flags": []
@@ -554,7 +554,7 @@
    "url": "/golf-buggies/golf-scooters/",
    "name": "Golf Scooters",
    "level": "sub-category",
-   "words": 644,
+   "words": 680,
    "title": "Golf Scooter Australia | Buggies For Sale",
    "h1": " Golf Scooter ",
    "meta": "A golf scooter or electric golf board changes how you move around the course. Free delivery over $1,000 across Australia.",
@@ -567,8 +567,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 5,
-    "density": 1.02
+    "uses": 4,
+    "density": 0.78
    },
    "secondary": [
     {
@@ -583,14 +583,14 @@
      "volume": 170,
      "kd": 6,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "scooter golf buggy",
      "volume": 170,
      "kd": 2,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "golf skate caddy australia",
@@ -604,7 +604,7 @@
      "volume": 260,
      "kd": 3,
      "intent": "Commercial",
-     "uses": 0
+     "uses": 3
     }
    ],
    "flags": []
@@ -614,7 +614,7 @@
    "url": "/golf-buggies/for-sale-locations/",
    "name": "Golf Buggies For Sale - Locations",
    "level": "sub-category",
-   "words": 517,
+   "words": 651,
    "title": "Golf Carts For Sale Brisbane Australia | Buggies For Sale",
    "h1": " Golf Carts For Sale Brisbane ",
    "meta": "Looking for golf carts for sale Brisbane or elsewhere? We deliver golf buggies and golf carts across Australia, including Brisbane, Sydney, Melbourne.",
@@ -628,7 +628,7 @@
     "inMeta": true,
     "inIntro": true,
     "uses": 1,
-    "density": 0.27
+    "density": 0.21
    },
    "secondary": [
     {
@@ -636,35 +636,35 @@
      "volume": 170,
      "kd": 3,
      "intent": "Transactional",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "golf buggy for sale qld",
      "volume": 110,
      "kd": 15,
      "intent": "Transactional",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "golf buggy for sale gold coast",
      "volume": 90,
      "kd": 6,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "golf carts for sale perth",
      "volume": 210,
      "kd": 6,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "golf buggy for sale nsw",
      "volume": 90,
      "kd": 6,
      "intent": "Transactional",
-     "uses": 0
+     "uses": 2
     }
    ],
    "flags": []
@@ -674,7 +674,7 @@
    "url": "/golf-carts/",
    "name": "Golf Carts",
    "level": "category",
-   "words": 1200,
+   "words": 1201,
    "title": "Golf Cart Australia | Buggies For Sale",
    "h1": " Golf Cart ",
    "meta": "Shop golf carts for new, electric and lithium models. Our golf cart range includes ECAR and Tomberlin carts in two, four, six and eight seat layouts.",
@@ -734,7 +734,7 @@
    "url": "/golf-carts/for-sale/",
    "name": "Golf Carts For Sale",
    "level": "sub-category",
-   "words": 594,
+   "words": 741,
    "title": "Golf Carts For Sale Australia | Buggies For Sale",
    "h1": " Golf Carts For Sale ",
    "meta": "Browse golf carts for sale in Australia: new two seat, four seat and larger electric carts in a range of specifications.",
@@ -747,8 +747,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 1,
-    "density": 0.24
+    "uses": 2,
+    "density": 0.37
    },
    "secondary": [
     {
@@ -756,7 +756,7 @@
      "volume": 1300,
      "kd": 11,
      "intent": "Transactional",
-     "uses": 8
+     "uses": 11
     },
     {
      "keyword": "buy golf cart",
@@ -777,14 +777,14 @@
      "volume": 110,
      "kd": 16,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "golf cart sales",
      "volume": 90,
      "kd": 8,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 2
     }
    ],
    "flags": []
@@ -794,7 +794,7 @@
    "url": "/golf-carts/used/",
    "name": "Used & Second-Hand Golf Carts",
    "level": "sub-category",
-   "words": 612,
+   "words": 816,
    "title": "Used Golf Carts For Sale Australia | Buggies For Sale",
    "h1": " Used Golf Carts For Sale ",
    "meta": "Looking for used golf carts for sale or a second-hand golf cart? Used carts can save thousands, but each one needs a proper check of batteries, electrics.",
@@ -807,8 +807,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 1,
-    "density": 0.23
+    "uses": 3,
+    "density": 0.49
    },
    "secondary": [
     {
@@ -816,7 +816,7 @@
      "volume": 480,
      "kd": 6,
      "intent": "Transactional",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "for sale used golf carts",
@@ -830,7 +830,7 @@
      "volume": 320,
      "kd": 8,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 3
     },
     {
      "keyword": "golf buggy for sale used",
@@ -844,7 +844,7 @@
      "volume": 170,
      "kd": 5,
      "intent": "Transactional",
-     "uses": 0
+     "uses": 1
     }
    ],
    "flags": []
@@ -854,7 +854,7 @@
    "url": "/golf-carts/petrol/",
    "name": "Petrol Golf Carts",
    "level": "sub-category",
-   "words": 493,
+   "words": 572,
    "title": "Petrol Golf Carts For Sale Australia | Buggies For Sale",
    "h1": " Petrol Golf Carts For Sale ",
    "meta": "Petrol golf carts for sale suit long days, heavy duty work and places where charging is hard. Free delivery over $1,000 across Australia.",
@@ -868,7 +868,7 @@
     "inMeta": true,
     "inIntro": true,
     "uses": 2,
-    "density": 0.57
+    "density": 0.47
    },
    "secondary": [
     {
@@ -876,21 +876,21 @@
      "volume": 170,
      "kd": 3,
      "intent": "Commercial",
-     "uses": 8
+     "uses": 12
     },
     {
      "keyword": "used gas golf cart prices",
      "volume": 390,
      "kd": 3,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 4
     },
     {
      "keyword": "petrol golf cart for sale",
      "volume": 210,
      "kd": 6,
      "intent": "Transactional",
-     "uses": 5
+     "uses": 6
     },
     {
      "keyword": "golf cart purchase",
@@ -914,7 +914,7 @@
    "url": "/golf-carts/electric/",
    "name": "Electric Golf Carts",
    "level": "sub-category",
-   "words": 748,
+   "words": 710,
    "title": "Electric Golf Cart Australia | Buggies For Sale",
    "h1": " Electric Golf Cart ",
    "meta": "Our electric golf carts use modern lithium power for quiet, low-cost running. Free delivery over $1,000 across Australia.",
@@ -936,28 +936,28 @@
      "volume": 210,
      "kd": 6,
      "intent": "Transactional",
-     "uses": 6
+     "uses": 4
     },
     {
      "keyword": "electric golf carts",
      "volume": 320,
      "kd": 3,
      "intent": "Commercial",
-     "uses": 15
+     "uses": 16
     },
     {
      "keyword": "electric golf carts for sale",
      "volume": 260,
      "kd": 6,
      "intent": "Transactional",
-     "uses": 6
+     "uses": 4
     },
     {
      "keyword": "electric carts for sale",
      "volume": 170,
      "kd": 6,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "electric golf cart australia",
@@ -974,7 +974,7 @@
    "url": "/golf-carts/utility-4-seater/",
    "name": "Utility Carts & 4-Seater Golf Carts",
    "level": "sub-category",
-   "words": 708,
+   "words": 723,
    "title": "Utility Cart Australia | Buggies For Sale",
    "h1": " Utility Cart ",
    "meta": "Need a 4 seater golf cart or a utility cart? This range includes four, six and eight seat ECAR carts and utility models built to carry people and loads.",
@@ -987,8 +987,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 4,
-    "density": 0.75
+    "uses": 3,
+    "density": 0.56
    },
    "secondary": [
     {
@@ -996,14 +996,14 @@
      "volume": 140,
      "kd": 0,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "four seater golf cart",
      "volume": 140,
      "kd": 2,
      "intent": "Informational",
-     "uses": 1
+     "uses": 3
     },
     {
      "keyword": "electric utility cart for sale",
@@ -1017,14 +1017,14 @@
      "volume": 70,
      "kd": 10,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "electric utility cart",
      "volume": 70,
      "kd": 3,
      "intent": "Informational",
-     "uses": 4
+     "uses": 3
     }
    ],
    "flags": []
@@ -1034,7 +1034,7 @@
    "url": "/golf-carts/mini-junior/",
    "name": "Mini & Junior Golf Carts",
    "level": "sub-category",
-   "words": 417,
+   "words": 395,
    "title": "Mini Golf Cart Australia | Buggies For Sale",
    "h1": " Mini Golf Cart ",
    "meta": "A mini golf cart or junior golf cart is a smaller vehicle for young golfers and compact uses. Free delivery over $1,000 across Australia.",
@@ -1048,7 +1048,7 @@
     "inMeta": true,
     "inIntro": true,
     "uses": 1,
-    "density": 0.34
+    "density": 0.36
    },
    "secondary": [
     {
@@ -1056,35 +1056,35 @@
      "volume": 110,
      "kd": 11,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "junior golf buggy",
      "volume": 110,
      "kd": 13,
      "intent": "Commercial",
-     "uses": 2
+     "uses": 4
     },
     {
      "keyword": "kids golf cart",
      "volume": 90,
      "kd": 24,
      "intent": "Commercial",
-     "uses": 2
+     "uses": 3
     },
     {
      "keyword": "custom golf buggy",
      "volume": 110,
      "kd": 2,
      "intent": "Informational",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "custom golf carts",
      "volume": 110,
      "kd": 6,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 3
     }
    ],
    "flags": []

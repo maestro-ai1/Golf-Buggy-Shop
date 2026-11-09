@@ -3,6 +3,7 @@ import { PRODUCTS, SITE, money, type Product, type SitePage } from '@/config/sit
 import { clampDesc, plainText } from '@/lib/seo';
 import { HUBS } from '@/content/hubs';
 import { SUBCATS } from '@/content/subcats';
+import { OFFROAD_PARTS } from '@/content/offroad-parts';
 
 const BRAND_FAQ = (brand: string): [string, string][] => [
   [`Do you sell ${brand} products?`, `We list the ${brand} models shown on this page. If you are after another ${brand} model or part, tell us and we will check availability.`],
@@ -93,7 +94,7 @@ export function copyFor(page: SitePage, products: Product[]): PageCopy & { fallb
 }
 
 function baseCopy(page: SitePage, products: Product[]): PageCopy & { fallback: boolean } {
-  const c = HUBS[page.url] || SUBCATS[page.url] || COPY[page.url];
+  const c = HUBS[page.url] || SUBCATS[page.url] || OFFROAD_PARTS[page.url] || COPY[page.url];
   if (c) return { ...c, fallback: false };
   const name = page.name.replace(/ \(Hub\)$/, '');
   const primary = page.primary?.keyword || name.toLowerCase();

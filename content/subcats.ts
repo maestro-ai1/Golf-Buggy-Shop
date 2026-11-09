@@ -241,7 +241,7 @@ export const SUBCATS: Record<string, PageCopy> = {
         `We are based in Sydney, so a golf buggy for sale NSW or golf carts for sale NSW ships from close by. We also deliver golf carts for sale Melbourne, golf carts for sale Perth and golf carts for sale Adelaide buyers expect: freight is confirmed before you pay. For a golf buggy for sale Perth, or a freight quote on golf carts Perth buyers ask about, message us your postcode.`,
       ] },
       { h2: `Golf carts for sale near me`, p: [
-        `Searching for golf carts for sale near me? We sell online and deliver Australia-wide rather than through a showroom, so your nearest option is a delivery to your door. Looking for golf cart batteries Brisbane buyers can also order our [lithium batteries](/parts-accessories/golf-buggy-parts/lithium-batteries/). For general consumer rights on online orders, the [ACCC consumer guide](https://www.accc.gov.au/consumers) is a good reference.`,
+        `Searching for golf carts for sale near me? We sell online and deliver Australia-wide, so your nearest option is a delivery to your door; ask us about pickup options. Looking for golf cart batteries Brisbane buyers can also order our [lithium batteries](/parts-accessories/golf-buggy-parts/lithium-batteries/). For general consumer rights on online orders, the [ACCC consumer guide](https://www.accc.gov.au/consumers) is a good reference.`,
       ] },
     ],
     faqs: [

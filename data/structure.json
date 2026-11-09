@@ -465,7 +465,8 @@
    "pull buggy golf",
    "golf push buggy australia",
    "push pull golf buggy",
-   "golf trolleys for sale"
+   "golf trolleys for sale",
+   "golf bag carts for sale"
   ],
   "h1": "Golf Trolley",
   "titleTag": "Golf Trolley Australia",
@@ -1418,10 +1419,15 @@
    "dune buggies for sale",
    "beach buggies for sale",
    "beach buggies",
-   "vw beach buggy",
    "beach buggy buy",
    "buy beach buggy australia",
-   "beach buggies for sale australia"
+   "beach buggies for sale australia",
+   "2 seater dune buggy",
+   "2 seater buggy for sale",
+   "2 seater buggy",
+   "two seater buggy",
+   "two seater petrol buggy",
+   "2 seater petrol buggy"
   ],
   "h1": "Dune Buggy",
   "titleTag": "Dune Buggy Australia",
@@ -1479,18 +1485,26 @@
   ],
   "support": [
    "go kart electric go karts",
-   "go kart perth",
    "go karts for sale",
    "electric go karts",
    "go karts for sell",
    "drift go kart",
    "electric drift go kart",
    "petrol go karts",
-   "kiddies go kart",
    "go-kart",
    "go kart electric",
    "cheap go karts",
-   "go karts electric"
+   "go karts electric",
+   "drift karts",
+   "electric drift kart",
+   "drift karts for adults",
+   "adult drift kart",
+   "kids drift kart",
+   "drift cart",
+   "drifting cart",
+   "electric drift cart",
+   "krazy kart",
+   "crazy kart"
   ],
   "h1": "Electric Go Kart",
   "titleTag": "Electric Go Kart Australia",
@@ -1608,8 +1622,11 @@
    "electric buggy for kids",
    "go kart buggy",
    "childrens petrol go kart",
-   "go kart dune buggy",
-   "dune buggy go kart"
+   "kiddies go kart",
+   "childrens petrol buggy",
+   "kids dune buggy",
+   "mini rzr",
+   "mini buggy"
   ],
   "h1": "Kids Go Kart",
   "titleTag": "Kids Go Kart Australia",
@@ -1671,18 +1688,14 @@
    }
   ],
   "support": [
-   "atv store",
    "utv australia",
-   "atv sales melbourne",
-   "lancelin atv buggy motocross tours",
-   "atv automotive",
-   "atv wrecking australia",
    "electric farm buggy",
-   "atv wreckers australia",
    "atv sales",
    "atv australia for sale",
    "electric buggies",
-   "kids utv"
+   "kids utv",
+   "electric side by side",
+   "electric atv australia"
   ],
   "h1": "Electric Utv",
   "titleTag": "Electric Utv Australia",
@@ -1714,18 +1727,6 @@
     "intent": "Transactional"
    },
    {
-    "keyword": "utv side by sides for sale",
-    "volume": 260,
-    "kd": 15,
-    "intent": "Transactional"
-   },
-   {
-    "keyword": "utv for sale australia",
-    "volume": 140,
-    "kd": 17,
-    "intent": "Transactional"
-   },
-   {
     "keyword": "used utv for sale",
     "volume": 140,
     "kd": 12,
@@ -1736,21 +1737,37 @@
     "volume": 110,
     "kd": 17,
     "intent": "Transactional"
+   },
+   {
+    "keyword": "utv",
+    "volume": 1900,
+    "kd": 7,
+    "intent": "Informational / Commercial / Transactional"
+   },
+   {
+    "keyword": "side by side",
+    "volume": 2900,
+    "kd": 9,
+    "intent": "Commercial / Informational"
    }
   ],
   "support": [
    "side by side buggy",
    "side by side utv",
-   "used buggy for sale",
    "side by side accessories",
    "side by side buggies",
-   "atv side",
    "used side by side utv for sale australia",
-   "used buggies for sale",
    "utv sales",
    "farm buggy for sale",
    "second hand utv for sale",
-   "what is a side by side utv"
+   "what is a side by side utv",
+   "utv side by sides for sale",
+   "utv for sale australia",
+   "utv vehicle",
+   "side by side vehicle",
+   "cheapest side by side australia",
+   "side by side atv",
+   "side by side all terrain"
   ],
   "h1": "Utv For Sale",
   "titleTag": "Utv For Sale Australia",
@@ -1797,45 +1814,43 @@
     "intent": "Commercial"
    },
    {
-    "keyword": "childrens petrol buggy",
-    "volume": 320,
-    "kd": 3,
-    "intent": "Commercial"
+    "keyword": "quad bike",
+    "volume": 6600,
+    "kd": 5,
+    "intent": "Informational / Commercial / Transactional"
    },
    {
-    "keyword": "doom buggy go kart",
-    "volume": 110,
-    "kd": 11,
-    "intent": "Commercial"
+    "keyword": "kids quad bike",
+    "volume": 1900,
+    "kd": 5,
+    "intent": "Informational / Commercial / Transactional"
    },
    {
-    "keyword": "kids dune buggy",
-    "volume": 70,
-    "kd": 2,
-    "intent": "Commercial"
+    "keyword": "quad bikes for sale",
+    "volume": 1600,
+    "kd": 15,
+    "intent": "Transactional"
    },
    {
-    "keyword": "2 seater dune buggy",
-    "volume": 110,
-    "kd": 3,
-    "intent": "Commercial"
+    "keyword": "electric quad bike",
+    "volume": 1300,
+    "kd": 5,
+    "intent": "Informational / Commercial"
    }
   ],
   "support": [
-   "quad wreckers",
-   "2 seater buggy for sale",
-   "2 seater buggy",
-   "mini rzr",
-   "quad wreckers australia",
-   "two seater buggy",
-   "two seater petrol buggy",
-   "mini buggy",
-   "2 seater petrol buggy",
-   "quad bike wreckers",
-   "rzr bike",
-   "quad wreckers victoria",
-   "bike buggy",
-   "buggy bike"
+   "quad bike for kids",
+   "childrens quad",
+   "kids atv",
+   "four wheeler",
+   "4 wheeler",
+   "all terrain quad",
+   "mini quad bike",
+   "atv quad bike",
+   "childrens electric quad bike",
+   "quad bikes australia",
+   "49cc quad bike",
+   "electric quad"
   ],
   "h1": "50Cc Quad Bike",
   "titleTag": "50Cc Quad Bike Australia",
@@ -1934,7 +1949,9 @@
     "intent": "Commercial"
    }
   ],
-  "support": [],
+  "support": [
+   "golf cart steering wheel"
+  ],
   "h1": "Golf Cart Accessories",
   "titleTag": "Golf Cart Accessories Australia",
   "faqSeed": [
@@ -1997,7 +2014,11 @@
    "golf buggy drink holder",
    "phone holder golf buggy",
    "golf buggy phone holder australia",
-   "mobile phone holder for golf buggy"
+   "mobile phone holder for golf buggy",
+   "golf umbrella holder",
+   "iphone holder for golf cart",
+   "golf phone holder",
+   "golf cart drink holder"
   ],
   "h1": "Golf Cart Phone Holder",
   "titleTag": "Golf Cart Phone Holder Australia",
@@ -2055,14 +2076,14 @@
   ],
   "support": [
    "golf bag accessories",
-   "golf bag carts for sale",
    "golf buggy esky",
    "golf bag and buggy combo",
    "golf buggy cooler bag",
    "golf buggy and bag",
    "buggy golf bag",
    "golf buggy storage bag",
-   "rain cover for golf buggy"
+   "rain cover for golf buggy",
+   "golf bag caddy"
   ],
   "h1": "Golf Buggy Bag",
   "titleTag": "Golf Buggy Bag Australia",
@@ -2118,7 +2139,9 @@
     "intent": "Commercial"
    }
   ],
-  "support": [],
+  "support": [
+   "golf cart seat covers australia"
+  ],
   "h1": "Golf Cart Ac",
   "titleTag": "Golf Cart Ac Australia",
   "faqSeed": [],
@@ -2227,8 +2250,6 @@
   "support": [
    "battery golf buggies",
    "lithium ion golf cart batteries",
-   "vw golf battery",
-   "volkswagen golf battery",
    "8 volt golf cart batteries",
    "trojan golf buggy batteries",
    "48 volt golf cart batteries",
@@ -2237,7 +2258,9 @@
    "golf cart batteries 48 volt",
    "golf cart lithium battery",
    "batteries for golf cars",
-   "trojan batteries for golf cart"
+   "trojan batteries for golf cart",
+   "trojan golf cart batteries",
+   "trojan batteries"
   ],
   "h1": "Golf Cart Batteries",
   "titleTag": "Golf Cart Batteries Australia",
@@ -2319,7 +2342,8 @@
    "48v golf cart battery",
    "48v golf cart lithium battery",
    "golf cart battery replacement",
-   "golf buggy battery replacement price"
+   "golf buggy battery replacement price",
+   "recharge golf cart batteries"
   ],
   "h1": "Golf Cart Battery Charger",
   "titleTag": "Golf Cart Battery Charger Australia",
@@ -2486,7 +2510,8 @@
   "support": [
    "golf buggy repairs sydney",
    "golf+buggy+repairs",
-   "electric golf buggy repairs near me"
+   "electric golf buggy repairs near me",
+   "golf car parts and repairs"
   ],
   "h1": "Golf Buggy Repairs Near Me",
   "titleTag": "Golf Buggy Repairs Near Me Australia",
@@ -2554,9 +2579,7 @@
    "quad atv accessories",
    "chinese quad bike parts australia",
    "chinese quad bike spares",
-   "buggy starter deck upgrade",
-   "buggy parts",
-   "twister buggy parts"
+   "buggy parts"
   ],
   "h1": "Quad Bike Spare Parts For Sale",
   "titleTag": "Quad Bike Spare Parts For Sale Australia",
@@ -2726,7 +2749,6 @@
    "buggy tyres",
    "4 wheeler buggy",
    "buggy 4 seater",
-   "pro fx 3 wheel buggy",
    "4 seat buggy",
    "4 seater electric buggy",
    "dune buggy 4 seater"

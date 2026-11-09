@@ -4,7 +4,7 @@
   "posts": 56,
   "withFlags": 0,
   "totalPrimaryVolume": 58170,
-  "totalSecondaryVolume": 77050,
+  "totalSecondaryVolume": 92240,
   "keywordsMapped": 458,
   "generated": "2026-11-09"
  },
@@ -614,7 +614,7 @@
    "url": "/golf-buggies/for-sale-locations/",
    "name": "Golf Buggies For Sale - Locations",
    "level": "sub-category",
-   "words": 651,
+   "words": 657,
    "title": "Golf Carts For Sale Brisbane Australia | Buggies For Sale",
    "h1": " Golf Carts For Sale Brisbane ",
    "meta": "Looking for golf carts for sale Brisbane or elsewhere? We deliver golf buggies and golf carts across Australia, including Brisbane, Sydney, Melbourne.",
@@ -1094,7 +1094,7 @@
    "url": "/clearance/",
    "name": "Cheap & Clearance Golf Carts",
    "level": "category",
-   "words": 568,
+   "words": 752,
    "title": "Cheap Golf Buggy Australia | Buggies For Sale",
    "h1": " Cheap Golf Buggy ",
    "meta": "Looking for a cheap golf buggy or cheap golf carts? Our clearance page highlights our lowest-priced buggies, push buggies and accessories so you can save.",
@@ -1107,8 +1107,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 1,
-    "density": 0.26
+    "uses": 2,
+    "density": 0.37
    },
    "secondary": [
     {
@@ -1116,14 +1116,14 @@
      "volume": 50,
      "kd": 11,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 3
     },
     {
      "keyword": "inexpensive golf carts for sale",
      "volume": 70,
      "kd": 5,
      "intent": "Transactional",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "cheap golf buggy for sale",
@@ -1137,14 +1137,14 @@
      "volume": 50,
      "kd": 6,
      "intent": "Transactional",
-     "uses": 2
+     "uses": 8
     },
     {
      "keyword": "golf cart auction",
      "volume": 170,
      "kd": 9,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 3
     }
    ],
    "flags": []
@@ -1214,10 +1214,10 @@
    "url": "/off-road-buggies/dune-buggies/",
    "name": "Dune Buggies",
    "level": "sub-category",
-   "words": 623,
+   "words": 823,
    "title": "Dune Buggy Australia | Buggies For Sale",
    "h1": " Dune Buggy ",
-   "meta": "Looking for a dune buggy for sale? Our dune buggy range includes Trailmaster Cheetah 175cc and 300cc buggies and the Challenger 200, built for sand, trails.",
+   "meta": "Looking for a dune buggy for sale? Our dune buggy range includes Trailmaster Cheetah 175cc and 300cc buggies, the Challenger 200 and the Hammerhead Mudhead.",
    "primary": {
     "keyword": "dune buggy",
     "volume": 1900,
@@ -1227,8 +1227,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 3,
-    "density": 0.64
+    "uses": 9,
+    "density": 1.39
    },
    "secondary": [
     {
@@ -1236,35 +1236,35 @@
      "volume": 320,
      "kd": 14,
      "intent": "Transactional",
-     "uses": 5
+     "uses": 6
     },
     {
      "keyword": "beach dune buggy for sale",
      "volume": 260,
      "kd": 23,
      "intent": "Transactional",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "buy dune buggy nsw",
      "volume": 210,
      "kd": 10,
      "intent": "Transactional",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "dune buggy kits australia",
      "volume": 170,
      "kd": 0,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "dune buggy for sale australia",
      "volume": 90,
      "kd": 13,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 2
     }
    ],
    "flags": []
@@ -1274,7 +1274,7 @@
    "url": "/off-road-buggies/go-karts/",
    "name": "Go Karts",
    "level": "sub-category",
-   "words": 515,
+   "words": 805,
    "title": "Electric Go Kart Australia | Buggies For Sale",
    "h1": " Electric Go Kart ",
    "meta": "Shop an electric go kart or a petrol model from our range of go karts for sale. Free delivery over $1,000 across Australia.",
@@ -1287,8 +1287,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 3,
-    "density": 0.85
+    "uses": 5,
+    "density": 0.82
    },
    "secondary": [
     {
@@ -1296,21 +1296,21 @@
      "volume": 1000,
      "kd": 17,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 3
     },
     {
      "keyword": "off road go kart",
      "volume": 880,
      "kd": 9,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "petrol go kart",
      "volume": 320,
      "kd": 6,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 5
     },
     {
      "keyword": "adult go kart",
@@ -1324,7 +1324,7 @@
      "volume": 320,
      "kd": 15,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 2
     }
    ],
    "flags": []
@@ -1334,10 +1334,10 @@
    "url": "/off-road-buggies/kids-buggies/",
    "name": "Youth & Kids Buggies",
    "level": "sub-category",
-   "words": 537,
+   "words": 682,
    "title": "Kids Go Kart Australia | Buggies For Sale",
    "h1": " Kids Go Kart ",
-   "meta": "Looking for a kids go kart? Our kids buggies include youth buggies and electric quads sized for younger riders. Free delivery over $1,000 across Australia.",
+   "meta": "Looking for a kids go kart? Our kids buggies include youth buggies and electric quads sized for younger riders, from around $245 up to the Polaris RZR 200.",
    "primary": {
     "keyword": "kids go kart",
     "volume": 1300,
@@ -1348,7 +1348,7 @@
     "inMeta": true,
     "inIntro": true,
     "uses": 1,
-    "density": 0.27
+    "density": 0.2
    },
    "secondary": [
     {
@@ -1356,35 +1356,35 @@
      "volume": 1000,
      "kd": 11,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "kids buggy",
      "volume": 720,
      "kd": 8,
      "intent": "Commercial",
-     "uses": 4
+     "uses": 8
     },
     {
      "keyword": "kids electric go kart",
      "volume": 320,
      "kd": 6,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "kids off road buggy",
      "volume": 260,
      "kd": 2,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "kids buggy petrol",
      "volume": 140,
      "kd": 3,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     }
    ],
    "flags": []
@@ -1394,10 +1394,10 @@
    "url": "/off-road-buggies/electric-off-road-utvs/",
    "name": "Electric Off-Road Buggies & UTVs",
    "level": "sub-category",
-   "words": 611,
+   "words": 749,
    "title": "Electric Utv Australia | Buggies For Sale",
    "h1": " Electric Utv ",
-   "meta": "Electric off-road buggies and electric UTV options are growing in Australia. Free delivery over $1,000 across Australia.",
+   "meta": "Looking for an electric UTV? This page collects our electric off-road buggies and electric UTV options: the Segway Villain SX10 E side by side.",
    "primary": {
     "keyword": "electric utv",
     "volume": 390,
@@ -1407,8 +1407,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 2,
-    "density": 0.45
+    "uses": 5,
+    "density": 0.87
    },
    "secondary": [
     {
@@ -1423,28 +1423,28 @@
      "volume": 140,
      "kd": 9,
      "intent": "Transactional",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "electric off road buggy",
      "volume": 140,
      "kd": 12,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 3
     },
     {
      "keyword": "electric buggy off road",
      "volume": 110,
      "kd": 10,
      "intent": "Informational, Commercial",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "electric atv",
      "volume": 480,
      "kd": 16,
      "intent": "Informational, Commercial",
-     "uses": 1
+     "uses": 2
     }
    ],
    "flags": []
@@ -1454,10 +1454,10 @@
    "url": "/off-road-buggies/side-by-sides-utvs/",
    "name": "Side-by-Sides (SSV) & UTVs",
    "level": "sub-category",
-   "words": 602,
+   "words": 781,
    "title": "Utv For Sale Australia | Buggies For Sale",
    "h1": " Utv For Sale ",
-   "meta": "Looking for a UTV for sale? Shop side by side buggies and UTVs from Kayo and Hammerhead. Free delivery over $1,000 across Australia.",
+   "meta": "Looking for a UTV for sale? Shop side by side buggies and UTVs from Kayo, Hammerhead, Polaris, Honda, Kubota, Kawasaki, CFMOTO, Yamaha and Segway.",
    "primary": {
     "keyword": "utv for sale",
     "volume": 590,
@@ -1468,7 +1468,7 @@
     "inMeta": true,
     "inIntro": true,
     "uses": 2,
-    "density": 0.47
+    "density": 0.35
    },
    "secondary": [
     {
@@ -1476,28 +1476,14 @@
      "volume": 210,
      "kd": 8,
      "intent": "Transactional",
-     "uses": 3
-    },
-    {
-     "keyword": "utv side by sides for sale",
-     "volume": 260,
-     "kd": 15,
-     "intent": "Transactional",
-     "uses": 3
-    },
-    {
-     "keyword": "utv for sale australia",
-     "volume": 140,
-     "kd": 17,
-     "intent": "Transactional",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "used utv for sale",
      "volume": 140,
      "kd": 12,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 4
     },
     {
      "keyword": "utv side by side for sale",
@@ -1505,6 +1491,20 @@
      "kd": 17,
      "intent": "Transactional",
      "uses": 3
+    },
+    {
+     "keyword": "utv",
+     "volume": 1900,
+     "kd": 7,
+     "intent": "Informational / Commercial / Transactional",
+     "uses": 29
+    },
+    {
+     "keyword": "side by side",
+     "volume": 2900,
+     "kd": 9,
+     "intent": "Commercial / Informational",
+     "uses": 25
     }
    ],
    "flags": []
@@ -1514,10 +1514,10 @@
    "url": "/off-road-buggies/mini-quads-atvs/",
    "name": "Mini Quads & Small ATVs",
    "level": "sub-category",
-   "words": 493,
+   "words": 673,
    "title": "50Cc Quad Bike Australia | Buggies For Sale",
    "h1": " 50Cc Quad Bike ",
-   "meta": "Looking for a 50cc quad bike? Our mini quads and small ATVs include Kayo and Apollo quad bikes suited to farm tracks and younger riders.",
+   "meta": "Looking for a 50cc quad bike? Our mini quads and small ATVs include Kayo, Apollo, Crossfire and GO SKITZ quad bikes suited to farm tracks and younger.",
    "primary": {
     "keyword": "50cc quad bike",
     "volume": 480,
@@ -1527,8 +1527,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 2,
-    "density": 0.61
+    "uses": 1,
+    "density": 0.21
    },
    "secondary": [
     {
@@ -1536,35 +1536,35 @@
      "volume": 390,
      "kd": 24,
      "intent": "Commercial",
-     "uses": 3
-    },
-    {
-     "keyword": "childrens petrol buggy",
-     "volume": 320,
-     "kd": 3,
-     "intent": "Commercial",
-     "uses": 3
-    },
-    {
-     "keyword": "doom buggy go kart",
-     "volume": 110,
-     "kd": 11,
-     "intent": "Commercial",
      "uses": 1
     },
     {
-     "keyword": "kids dune buggy",
-     "volume": 70,
-     "kd": 2,
-     "intent": "Commercial",
-     "uses": 1
+     "keyword": "quad bike",
+     "volume": 6600,
+     "kd": 5,
+     "intent": "Informational / Commercial / Transactional",
+     "uses": 30
     },
     {
-     "keyword": "2 seater dune buggy",
-     "volume": 110,
-     "kd": 3,
-     "intent": "Commercial",
-     "uses": 0
+     "keyword": "kids quad bike",
+     "volume": 1900,
+     "kd": 5,
+     "intent": "Informational / Commercial / Transactional",
+     "uses": 3
+    },
+    {
+     "keyword": "quad bikes for sale",
+     "volume": 1600,
+     "kd": 15,
+     "intent": "Transactional",
+     "uses": 4
+    },
+    {
+     "keyword": "electric quad bike",
+     "volume": 1300,
+     "kd": 5,
+     "intent": "Informational / Commercial",
+     "uses": 6
     }
    ],
    "flags": []
@@ -1634,10 +1634,10 @@
    "url": "/parts-accessories/golf-cart-accessories/",
    "name": "Golf Cart Accessories",
    "level": "accessory-category",
-   "words": 564,
+   "words": 738,
    "title": "Golf Cart Accessories Australia | Buggies For Sale",
    "h1": " Golf Cart Accessories ",
-   "meta": "Upgrade your cart with golf cart accessories: phone and umbrella holders, bags and eskies, seat covers, floor mats, lights, speakers and more.",
+   "meta": "Upgrade your cart with golf cart accessories: phone and umbrella holders, bags and eskies, seat covers, floor mats, lights, speakers and more, from around.",
    "primary": {
     "keyword": "golf cart accessories",
     "volume": 390,
@@ -1647,8 +1647,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 1,
-    "density": 0.28
+    "uses": 2,
+    "density": 0.38
    },
    "secondary": [
     {
@@ -1656,35 +1656,35 @@
      "volume": 390,
      "kd": 9,
      "intent": "Transactional",
-     "uses": 4
+     "uses": 5
     },
     {
      "keyword": "golf cart accessories australia",
      "volume": 110,
      "kd": 6,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 1
     },
     {
      "keyword": "golf buggy accessories australia",
      "volume": 110,
      "kd": 11,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "golf cart equipment",
      "volume": 320,
      "kd": 25,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "golf cart golf accessories",
      "volume": 50,
      "kd": 2,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     }
    ],
    "flags": []
@@ -1694,10 +1694,10 @@
    "url": "/parts-accessories/golf-cart-accessories/phone-umbrella-drink-holders/",
    "name": "Phone, Umbrella & Drink Holders",
    "level": "accessory",
-   "words": 478,
+   "words": 634,
    "title": "Golf Cart Phone Holder Australia | Buggies For Sale",
    "h1": " Golf Cart Phone Holder ",
-   "meta": "Keep your phone, umbrella and drinks within reach with golf cart and golf buggy holders. We stock golf cart phone holders, umbrella holders, sand bottle.",
+   "meta": "Keep your phone, umbrella and drinks within reach with a golf cart phone holder, from around $19. Free delivery over $1,000 across Australia.",
    "primary": {
     "keyword": "golf cart phone holder",
     "volume": 260,
@@ -1708,7 +1708,7 @@
     "inMeta": true,
     "inIntro": true,
     "uses": 2,
-    "density": 0.63
+    "density": 0.44
    },
    "secondary": [
     {
@@ -1723,28 +1723,28 @@
      "volume": 170,
      "kd": 10,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "golf buggy phone holder",
      "volume": 170,
      "kd": 10,
      "intent": "Informational, Transactional",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "phone holder for golf buggy",
      "volume": 140,
      "kd": 6,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 3
     },
     {
      "keyword": "golf cart iphone holder",
      "volume": 140,
      "kd": 9,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     }
    ],
    "flags": []
@@ -1754,10 +1754,10 @@
    "url": "/parts-accessories/golf-cart-accessories/bags-rain-covers-eskies/",
    "name": "Golf Buggy Bags, Rain Covers & Eskies",
    "level": "accessory",
-   "words": 466,
+   "words": 620,
    "title": "Golf Buggy Bag Australia | Buggies For Sale",
    "h1": " Golf Buggy Bag ",
-   "meta": "Add storage and comfort with golf buggy bags, umbrellas, cooler bags and esky brackets. Free delivery over $1,000 across Australia.",
+   "meta": "Carry and protect your gear with a golf buggy bag, from around $48. Free delivery over $1,000 across Australia.",
    "primary": {
     "keyword": "golf buggy bag",
     "volume": 390,
@@ -1768,7 +1768,7 @@
     "inMeta": true,
     "inIntro": true,
     "uses": 2,
-    "density": 0.63
+    "density": 0.45
    },
    "secondary": [
     {
@@ -1790,7 +1790,7 @@
      "volume": 90,
      "kd": 8,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "golf cart cover for rain",
@@ -1804,7 +1804,7 @@
      "volume": 140,
      "kd": 12,
      "intent": "Informational, Commercial",
-     "uses": 0
+     "uses": 2
     }
    ],
    "flags": []
@@ -1814,10 +1814,10 @@
    "url": "/parts-accessories/golf-cart-accessories/seat-covers-comfort/",
    "name": "Seat Covers & Cabin Comfort",
    "level": "accessory",
-   "words": 435,
+   "words": 521,
    "title": "Golf Cart Ac Australia | Buggies For Sale",
    "h1": " Golf Cart Ac ",
-   "meta": "Golf cart ac: Golf cart accessories for comfort: seat covers, floor mats, seat belts and buggy seats. Free delivery over $1,000 across Australia.",
+   "meta": "Golf cart ac: Golf cart accessories for comfort: seat covers, floor mats, seat belts and buggy seats, from around $110.",
    "primary": {
     "keyword": "golf cart ac",
     "volume": 320,
@@ -1836,21 +1836,21 @@
      "volume": 170,
      "kd": 3,
      "intent": "Informational, Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "golf cart seat covers",
      "volume": 170,
      "kd": 20,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 4
     },
     {
      "keyword": "golf cart seat protectors",
      "volume": 170,
      "kd": 12,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 1
     },
     {
      "keyword": "fan golf cart",
@@ -1864,7 +1864,7 @@
      "volume": 90,
      "kd": 1,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 3
     }
    ],
    "flags": []
@@ -1874,7 +1874,7 @@
    "url": "/parts-accessories/golf-buggy-parts/",
    "name": "Golf Buggy Parts",
    "level": "accessory-category",
-   "words": 668,
+   "words": 793,
    "title": "Golf Buggy Parts Australia | Buggies For Sale",
    "h1": " Golf Buggy Parts ",
    "meta": "Shop golf buggy parts: lithium batteries, chargers, wheels, seats and more for golf buggies and golf carts. Free delivery over $1,000 across Australia.",
@@ -1887,8 +1887,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 2,
-    "density": 0.45
+    "uses": 1,
+    "density": 0.18
    },
    "secondary": [
     {
@@ -1903,28 +1903,28 @@
      "volume": 90,
      "kd": 5,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "golf carts and parts",
      "volume": 210,
      "kd": 24,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "golf cart repair parts",
      "volume": 90,
      "kd": 23,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 3
     },
     {
      "keyword": "club car golf buggy parts",
      "volume": 90,
      "kd": 2,
      "intent": "Commercial",
-     "uses": 0
+     "uses": 3
     }
    ],
    "flags": []
@@ -1934,10 +1934,10 @@
    "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
    "name": "Lithium Golf Cart Batteries",
    "level": "accessory",
-   "words": 604,
+   "words": 790,
    "title": "Golf Cart Batteries Australia | Buggies For Sale",
    "h1": " Golf Cart Batteries ",
-   "meta": "Upgrade to lithium with our lithium golf cart batteries. We stock PRO-Li packages for Club Car Precedent, EZGO RXV, Yamaha G22 and ECAR 627 carts, plus MGI.",
+   "meta": "Shop golf cart batteries: PRO-Li lithium packages for Club Car Precedent, EZGO RXV, Yamaha and ECAR carts, MGI lithium batteries for buggies and Trojan.",
    "primary": {
     "keyword": "golf cart batteries",
     "volume": 880,
@@ -1947,8 +1947,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 4,
-    "density": 0.91
+    "uses": 10,
+    "density": 1.65
    },
    "secondary": [
     {
@@ -1956,35 +1956,35 @@
      "volume": 260,
      "kd": 9,
      "intent": "Commercial",
-     "uses": 4
+     "uses": 5
     },
     {
      "keyword": "golf buggy battery",
      "volume": 260,
      "kd": 6,
      "intent": "Commercial",
-     "uses": 4
+     "uses": 5
     },
     {
      "keyword": "li ion golf cart battery",
      "volume": 320,
      "kd": 9,
      "intent": "Informational, Commercial",
-     "uses": 3
+     "uses": 1
     },
     {
      "keyword": "golf cart battery",
      "volume": 260,
      "kd": 6,
      "intent": "Informational, Commercial",
-     "uses": 9
+     "uses": 19
     },
     {
      "keyword": "golf buggy battery lithium",
      "volume": 260,
      "kd": 3,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     }
    ],
    "flags": []
@@ -1994,10 +1994,10 @@
    "url": "/parts-accessories/golf-buggy-parts/chargers-conversion-kits/",
    "name": "Battery Chargers & Conversion Kits",
    "level": "accessory",
-   "words": 458,
+   "words": 502,
    "title": "Golf Cart Battery Charger Australia | Buggies For Sale",
    "h1": " Golf Cart Battery Charger ",
-   "meta": "Find a golf cart battery charger or conversion kit for your cart or buggy. We stock ECAR chargers, a Lester Summit2 on-board charger and MGI smart chargers.",
+   "meta": "Shop a golf cart battery charger: MGI lithium chargers, ECAR charger plugs and receptacles and the Lester Summit2 48V on-board charger, from around $97.",
    "primary": {
     "keyword": "golf cart battery charger",
     "volume": 110,
@@ -2007,8 +2007,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 2,
-    "density": 0.64
+    "uses": 1,
+    "density": 0.28
    },
    "secondary": [
     {
@@ -2016,21 +2016,21 @@
      "volume": 90,
      "kd": 3,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "golf buggy charger",
      "volume": 70,
      "kd": 4,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "golf cart batteries and charger",
      "volume": 90,
      "kd": 2,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "48v golf cart lithium battery conversion kit australia",
@@ -2054,7 +2054,7 @@
    "url": "/parts-accessories/golf-buggy-parts/wheels-rims-tyres/",
    "name": "Wheels, Rims & Tyres",
    "level": "accessory",
-   "words": 493,
+   "words": 589,
    "title": "Golf Buggy Tires Australia | Buggies For Sale",
    "h1": " Golf Buggy Tires & Wheels ",
    "meta": "Shop golf buggy tires, golf buggy wheels and golf cart wheels, rims and tyres. Free delivery over $1,000 across Australia.",
@@ -2067,8 +2067,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 2,
-    "density": 0.6
+    "uses": 1,
+    "density": 0.24
    },
    "secondary": [
     {
@@ -2076,35 +2076,35 @@
      "volume": 260,
      "kd": 5,
      "intent": "Commercial",
-     "uses": 4
+     "uses": 7
     },
     {
      "keyword": "golf cart rims",
      "volume": 260,
      "kd": 5,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "golf cart wheels and rims",
      "volume": 260,
      "kd": 4,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "golf cart tyres",
      "volume": 210,
      "kd": 4,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 4
     },
     {
      "keyword": "golf cart tires",
      "volume": 140,
      "kd": 10,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     }
    ],
    "flags": []
@@ -2114,10 +2114,10 @@
    "url": "/parts-accessories/golf-buggy-parts/trailers/",
    "name": "Golf Cart Trailers",
    "level": "accessory",
-   "words": 552,
+   "words": 510,
    "title": "Golf Cart Trailer Australia | Buggies For Sale",
    "h1": " Golf Cart Trailer ",
-   "meta": "Looking for a golf cart trailer? We can help you source a trailer to suit your cart or buggy. Free delivery over $1,000 across Australia.",
+   "meta": "Need a golf cart trailer? We do not list golf cart trailers online at present, but we can help you work out the size you need and point you to loading.",
    "primary": {
     "keyword": "golf cart trailer",
     "volume": 390,
@@ -2127,8 +2127,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 2,
-    "density": 0.48
+    "uses": 1,
+    "density": 0.26
    },
    "secondary": [
     {
@@ -2143,28 +2143,28 @@
      "volume": 170,
      "kd": 8,
      "intent": "Transactional",
-     "uses": 4
+     "uses": 3
     },
     {
      "keyword": "golf cart trailers",
      "volume": 170,
      "kd": 8,
      "intent": "Commercial",
-     "uses": 10
+     "uses": 9
     },
     {
      "keyword": "golf cart trailers for sale",
      "volume": 170,
      "kd": 3,
      "intent": "Transactional",
-     "uses": 4
+     "uses": 3
     },
     {
      "keyword": "golf cart and trailer for sale",
      "volume": 110,
      "kd": 4,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 2
     }
    ],
    "flags": []
@@ -2174,10 +2174,10 @@
    "url": "/parts-accessories/repairs-servicing/",
    "name": "Golf Buggy Repairs & Servicing",
    "level": "accessory-category",
-   "words": 386,
+   "words": 502,
    "title": "Golf Buggy Repairs Near Me Australia | Buggies For Sale",
    "h1": " Golf Buggy Repairs Near Me ",
-   "meta": "Searching for golf buggy repairs near me? Tell us your cart or buggy model and the fault. We can advise on parts and work with trusted workshops near you.",
+   "meta": "Searching for golf buggy repairs near me? Tell us your cart or buggy model and the fault, and we will advise on parts and next steps.",
    "primary": {
     "keyword": "golf buggy repairs near me",
     "volume": 70,
@@ -2187,8 +2187,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 2,
-    "density": 0.79
+    "uses": 1,
+    "density": 0.27
    },
    "secondary": [
     {
@@ -2196,28 +2196,28 @@
      "volume": 90,
      "kd": 5,
      "intent": "Transactional",
-     "uses": 6
+     "uses": 4
     },
     {
      "keyword": "golf cart repairs near me",
      "volume": 90,
      "kd": 5,
      "intent": "Transactional",
-     "uses": 6
+     "uses": 4
     },
     {
      "keyword": "golf buggy service",
      "volume": 50,
      "kd": 4,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "golf buggy repairs",
      "volume": 50,
      "kd": 0,
      "intent": "",
-     "uses": 5
+     "uses": 7
     }
    ],
    "flags": []
@@ -2227,10 +2227,10 @@
    "url": "/parts-accessories/off-road-parts/",
    "name": "Off-Road Parts & Upgrades",
    "level": "accessory-category",
-   "words": 615,
+   "words": 686,
    "title": "Quad Bike Spare Parts For Sale Australia | Buggies For Sale",
    "h1": " Quad Bike Spare Parts For Sale ",
-   "meta": "Shop quad bike spare parts for sale at Buggies For Sale, with 16 options from $29.40 to $889.35. Free delivery over $1,000.",
+   "meta": "Shop quad bike spare parts for sale: carburettors, a front brake master cylinder, a centrifugal clutch for go karts, an air filter for the Trailmaster 175.",
    "primary": {
     "keyword": "quad bike spare parts for sale",
     "volume": 110,
@@ -2240,8 +2240,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 3,
-    "density": 0.77
+    "uses": 1,
+    "density": 0.22
    },
    "secondary": [
     {
@@ -2249,35 +2249,35 @@
      "volume": 320,
      "kd": 16,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 4
     },
     {
      "keyword": "quad atv accessory",
      "volume": 260,
      "kd": 5,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "go kart replacement parts",
      "volume": 210,
      "kd": 25,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 3
     },
     {
      "keyword": "buggy spare parts",
      "volume": 140,
      "kd": 6,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "atv parts australia",
      "volume": 140,
      "kd": 6,
      "intent": "Commercial",
-     "uses": 0
+     "uses": 2
     }
    ],
    "flags": []
@@ -2287,10 +2287,10 @@
    "url": "/parts-accessories/off-road-parts/go-kart-parts-frames/",
    "name": "Go Kart Parts & Frames",
    "level": "accessory",
-   "words": 520,
+   "words": 550,
    "title": "Go Kart Frame Australia | Buggies For Sale",
    "h1": " Go Kart Frame ",
-   "meta": "Shop go kart frame at Buggies For Sale, with 8 options from $39.20 to $366.50. Free delivery over $1,000. Delivery is Australia-wide, free over $1,000.",
+   "meta": "Looking for a go kart frame? We do not list go kart frames or chassis at present, but we do list go kart parts: a centrifugal clutch for go karts, a front.",
    "primary": {
     "keyword": "go kart frame",
     "volume": 720,
@@ -2301,7 +2301,7 @@
     "inMeta": true,
     "inIntro": true,
     "uses": 3,
-    "density": 0.81
+    "density": 0.76
    },
    "secondary": [
     {
@@ -2309,35 +2309,35 @@
      "volume": 590,
      "kd": 10,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "go kart engine",
      "volume": 390,
      "kd": 8,
      "intent": "Commercial",
-     "uses": 4
+     "uses": 3
     },
     {
      "keyword": "go kart parts",
      "volume": 320,
      "kd": 5,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 4
     },
     {
      "keyword": "go kart wheels",
      "volume": 320,
      "kd": 3,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 3
     },
     {
      "keyword": "go kart motor",
      "volume": 210,
      "kd": 8,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 3
     }
    ],
    "flags": []
@@ -2350,7 +2350,7 @@
    "words": 456,
    "title": "Go Kart Engine Sale Australia | Buggies For Sale",
    "h1": " Go Kart Engine Sale ",
-   "meta": "Shop go kart engine sale at Buggies For Sale, with 3 options from $29.40 to $67.60. Free delivery over $1,000. Delivery is Australia-wide, free over $1,000.",
+   "meta": "Looking for a go kart engine sale? We do not list engines at present, but we do list carburettors: a 49cc carburettor for 2 stroke mini bikes and quads.",
    "primary": {
     "keyword": "go kart engine sale",
     "volume": 260,
@@ -2361,7 +2361,7 @@
     "inMeta": true,
     "inIntro": true,
     "uses": 2,
-    "density": 0.61
+    "density": 0.62
    },
    "secondary": [
     {
@@ -2376,14 +2376,14 @@
      "volume": 90,
      "kd": 21,
      "intent": "Informational, Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "motor buggy",
      "volume": 50,
      "kd": 3,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "motor golf buggy",
@@ -2397,7 +2397,7 @@
      "volume": 210,
      "kd": 20,
      "intent": "Commercial",
-     "uses": 0
+     "uses": 3
     }
    ],
    "flags": []
@@ -2407,10 +2407,10 @@
    "url": "/parts-accessories/off-road-parts/wheels-tyres/",
    "name": "Off-Road Wheels & Tyres",
    "level": "accessory",
-   "words": 419,
+   "words": 421,
    "title": "4 Wheel Buggy Australia | Buggies For Sale",
    "h1": " 4 Wheel Buggy ",
-   "meta": "Shop 4 wheel buggy at Buggies For Sale, with 1 option from $217.10 to $217.10. Free delivery over $1,000. Delivery is Australia-wide, free over $1,000.",
+   "meta": "Shop wheels for a 4 wheel buggy: we list the Polaris Pro Armor Crawler Youth Tyre at around $217 for Polaris youth buggies.",
    "primary": {
     "keyword": "4 wheel buggy",
     "volume": 140,
@@ -2429,35 +2429,35 @@
      "volume": 110,
      "kd": 7,
      "intent": "Informational",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "wheel buggy",
      "volume": 110,
      "kd": 10,
      "intent": "Commercial",
-     "uses": 8
+     "uses": 13
     },
     {
      "keyword": "buggy wheels",
      "volume": 70,
      "kd": 6,
      "intent": "Commercial",
-     "uses": 4
+     "uses": 8
     },
     {
      "keyword": "buggy wheel",
      "volume": 50,
      "kd": 6,
      "intent": "Commercial",
-     "uses": 4
+     "uses": 8
     },
     {
      "keyword": "big wheel buggy",
      "volume": 70,
      "kd": 9,
      "intent": "Informational",
-     "uses": 1
+     "uses": 2
     }
    ],
    "flags": []
@@ -2467,10 +2467,10 @@
    "url": "/parts-accessories/off-road-parts/trailers-tie-downs/",
    "name": "Buggy Trailers & Tie-Downs",
    "level": "accessory",
-   "words": 611,
+   "words": 521,
    "title": "Buggy Trailer Australia | Buggies For Sale",
    "h1": " Buggy Trailer ",
-   "meta": "Shop buggy trailer at Buggies For Sale, with 4 options from $151.90 to $889.35. Free delivery over $1,000. Delivery is Australia-wide, free over $1,000.",
+   "meta": "Shop buggy trailer gear: folding loading ramps from around $150 to about $890 and an aluminium motorcycle carrier with a tow hitch mount at around $396.",
    "primary": {
     "keyword": "buggy trailer",
     "volume": 170,
@@ -2480,8 +2480,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 3,
-    "density": 0.64
+    "uses": 2,
+    "density": 0.51
    },
    "secondary": [
     {
@@ -2489,14 +2489,14 @@
      "volume": 140,
      "kd": 16,
      "intent": "Informational",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "dune buggy and trailer",
      "volume": 110,
      "kd": 18,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "dune buggy trike with trailer",
@@ -2510,14 +2510,14 @@
      "volume": 40,
      "kd": 0,
      "intent": "",
-     "uses": 1
+     "uses": 4
     },
     {
      "keyword": "buggy trailer for sale",
      "volume": 30,
      "kd": 0,
      "intent": "",
-     "uses": 0
+     "uses": 2
     }
    ],
    "flags": []
@@ -2527,10 +2527,10 @@
    "url": "/parts-accessories/off-road-parts/winches-tow-bars/",
    "name": "Winches, Tow Hitches & Bull Bars",
    "level": "accessory",
-   "words": 419,
+   "words": 403,
    "title": "ATV Winch Australia | Buggies For Sale",
    "h1": " ATV Winch & Tow Bars ",
-   "meta": "Shop atv winch at Buggies For Sale, with 1 option from $396.05 to $396.05. Free delivery over $1,000. Delivery is Australia-wide, free over $1,000.",
+   "meta": "Looking for an ATV winch? We do not list winches at present, but we do list an aluminium motorcycle carrier with a tow hitch mount, and can look into.",
    "primary": {
     "keyword": "atv winch",
     "volume": 390,
@@ -2540,8 +2540,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 3,
-    "density": 1
+    "uses": 2,
+    "density": 0.7
    },
    "secondary": [
     {
@@ -2549,7 +2549,7 @@
      "volume": 10,
      "kd": 0,
      "intent": "",
-     "uses": 3
+     "uses": 4
     }
    ],
    "flags": []

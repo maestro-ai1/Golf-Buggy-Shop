@@ -4,7 +4,7 @@ import Pic from '@/components/Pic';
 import { PRODUCTS } from '@/config/site';
 
 // Minimal renderer for blog content: "## " H2, "- " lists, [text](url) links, **bold**.
-function inline(text: string, key: string) {
+export function inline(text: string, key: string) {
   const out: React.ReactNode[] = [];
   const re = /\[([^\]]+)\]\(([^)]+)\)|\*\*([^*]+)\*\*/g;
   let last = 0, m: RegExpExecArray | null, i = 0;

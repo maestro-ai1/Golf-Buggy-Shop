@@ -4,8 +4,8 @@
   "posts": 56,
   "withFlags": 0,
   "totalPrimaryVolume": 58170,
-  "totalSecondaryVolume": 76650,
-  "keywordsMapped": 451,
+  "totalSecondaryVolume": 77050,
+  "keywordsMapped": 458,
   "generated": "2026-11-09"
  },
  "rows": [
@@ -14,7 +14,7 @@
    "url": "/",
    "name": "Home",
    "level": "home",
-   "words": 1230,
+   "words": 1290,
    "title": "Buggies For Sale Australia | Golf, Electric & Beach Buggies",
    "h1": " Buggies For Sale Across Australia ",
    "meta": "Buggies for sale in Australia: golf buggies, electric and remote buggies, golf carts, beach buggies, parts and accessories. Free delivery over $1,000.",
@@ -28,7 +28,7 @@
     "inMeta": true,
     "inIntro": true,
     "uses": 7,
-    "density": 1.21
+    "density": 1.11
    },
    "secondary": [
     {
@@ -36,7 +36,7 @@
      "volume": 4400,
      "kd": 17,
      "intent": "Informational, Commercial",
-     "uses": 62
+     "uses": 66
     },
     {
      "keyword": "buggy buggies",
@@ -57,7 +57,7 @@
      "volume": 1300,
      "kd": 16,
      "intent": "Commercial",
-     "uses": 62
+     "uses": 66
     },
     {
      "keyword": "for sale buggy",
@@ -74,7 +74,7 @@
    "url": "/golf-buggies/",
    "name": "Golf Buggies",
    "level": "category",
-   "words": 908,
+   "words": 1400,
    "title": "Golf Buggy Australia | Buggies For Sale",
    "h1": " Golf Buggy ",
    "meta": "Looking for a golf buggy that suits the way you play? Our golf buggy range covers every budget and style: simple push buggies, motorised electric buggies.",
@@ -87,8 +87,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 5,
-    "density": 0.79
+    "uses": 16,
+    "density": 1.49
    },
    "secondary": [
     {
@@ -96,35 +96,35 @@
      "volume": 880,
      "kd": 11,
      "intent": "Commercial",
-     "uses": 24
+     "uses": 42
     },
     {
      "keyword": "buggy for golf",
      "volume": 590,
      "kd": 19,
      "intent": "Informational, Commercial",
-     "uses": 6
+     "uses": 2
     },
     {
      "keyword": "buggies for golf",
      "volume": 390,
      "kd": 13,
      "intent": "Commercial",
-     "uses": 6
+     "uses": 2
     },
     {
      "keyword": "golf buggy australia",
      "volume": 140,
      "kd": 6,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 3
     },
     {
      "keyword": "golf buggies australia",
      "volume": 110,
      "kd": 9,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 3
     }
    ],
    "flags": []
@@ -134,7 +134,7 @@
    "url": "/golf-buggies/for-sale/",
    "name": "Golf Buggies For Sale",
    "level": "sub-category",
-   "words": 694,
+   "words": 693,
    "title": "Golf Buggy For Sale Australia | Buggies For Sale",
    "h1": " Golf Buggy For Sale ",
    "meta": "Every golf buggy for sale here comes from MGI, Stinger, PowerBug, QOD, Concourse and more, with push, electric, remote and ride-on options in one place.",
@@ -674,7 +674,7 @@
    "url": "/golf-carts/",
    "name": "Golf Carts",
    "level": "category",
-   "words": 785,
+   "words": 1200,
    "title": "Golf Cart Australia | Buggies For Sale",
    "h1": " Golf Cart ",
    "meta": "Shop golf carts for new, electric and lithium models. Our golf cart range includes ECAR and Tomberlin carts in two, four, six and eight seat layouts.",
@@ -687,8 +687,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 1,
-    "density": 0.19
+    "uses": 8,
+    "density": 0.88
    },
    "secondary": [
     {
@@ -696,35 +696,35 @@
      "volume": 1300,
      "kd": 28,
      "intent": "Commercial",
-     "uses": 27
+     "uses": 48
     },
     {
      "keyword": "golf cars",
      "volume": 320,
      "kd": 21,
      "intent": "Commercial",
-     "uses": 4
+     "uses": 9
     },
     {
      "keyword": "golf kart",
      "volume": 320,
      "kd": 10,
      "intent": "Informational, Transactional",
-     "uses": 3
+     "uses": 2
     },
     {
      "keyword": "golf cart australia",
      "volume": 210,
      "kd": 28,
      "intent": "Informational, Commercial",
-     "uses": 1
+     "uses": 2
     },
     {
      "keyword": "buy a golf car",
      "volume": 110,
      "kd": 11,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 2
     }
    ],
    "flags": []
@@ -1154,7 +1154,7 @@
    "url": "/off-road-buggies/",
    "name": "Off-Road & Recreational Buggies",
    "level": "category",
-   "words": 830,
+   "words": 1170,
    "title": "Off Road Buggy Australia | Buggies For Sale",
    "h1": " Off Road Buggy ",
    "meta": "Explore an off road buggy for farms, trails and weekend adventures. Free delivery over $1,000 across Australia.",
@@ -1167,8 +1167,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 4,
-    "density": 0.71
+    "uses": 9,
+    "density": 1.05
    },
    "secondary": [
     {
@@ -1176,14 +1176,14 @@
      "volume": 590,
      "kd": 17,
      "intent": "Commercial",
-     "uses": 18
+     "uses": 29
     },
     {
      "keyword": "off road buggy for sale",
      "volume": 390,
      "kd": 28,
      "intent": "Transactional",
-     "uses": 4
+     "uses": 7
     },
     {
      "keyword": "off road buggy australia",
@@ -1197,14 +1197,14 @@
      "volume": 140,
      "kd": 0,
      "intent": "Transactional",
-     "uses": 1
+     "uses": 3
     },
     {
      "keyword": "used off road buggy",
      "volume": 140,
      "kd": 9,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 4
     }
    ],
    "flags": []
@@ -1574,7 +1574,7 @@
    "url": "/parts-accessories/",
    "name": "Parts & Accessories",
    "level": "category",
-   "words": 623,
+   "words": 794,
    "title": "Quad Bike Spare Parts Nsw Australia | Buggies For Sale",
    "h1": " Quad Bike Spare Parts Nsw ",
    "meta": "Need quad bike spare parts NSW or anywhere in Australia? Find golf cart accessories, golf buggy parts, lithium batteries, chargers, wheels, trailers.",
@@ -1587,8 +1587,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 2,
-    "density": 0.52
+    "uses": 1,
+    "density": 0.18
    },
    "secondary": [
     {
@@ -1610,7 +1610,21 @@
      "volume": 110,
      "kd": 8,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 3
+    },
+    {
+     "keyword": "golf cart parts",
+     "volume": 210,
+     "kd": 7,
+     "intent": "Commercial",
+     "uses": 6
+    },
+    {
+     "keyword": "golf car parts",
+     "volume": 50,
+     "kd": 17,
+     "intent": "Commercial",
+     "uses": 6
     }
    ],
    "flags": []
@@ -2545,10 +2559,10 @@
    "url": "/brands/",
    "name": "Brands",
    "level": "category",
-   "words": 358,
+   "words": 650,
    "title": "Australian Owned Golf Buggy Brand | Buggies For Sale",
    "h1": " Australian Owned Golf Buggy Brand ",
-   "meta": "Shop australian owned golf buggy brand at Buggies For Sale. Free delivery over $1,000. Delivery is Australia-wide, free over $1,000.",
+   "meta": "Looking for an Australian owned golf buggy brand? Buggies For Sale is a Sydney-based Australian retailer, not a manufacturer, and we stock many brands.",
    "primary": {
     "keyword": "australian owned golf buggy brand",
     "volume": 30,
@@ -2559,9 +2573,45 @@
     "inMeta": true,
     "inIntro": true,
     "uses": 2,
-    "density": 0.99
+    "density": 0.44
    },
-   "secondary": [],
+   "secondary": [
+    {
+     "keyword": "golf cart brands",
+     "volume": 50,
+     "kd": 1,
+     "intent": "Informational, Commercial",
+     "uses": 3
+    },
+    {
+     "keyword": "golf buggy manufacturers",
+     "volume": 30,
+     "kd": 0,
+     "intent": "",
+     "uses": 2
+    },
+    {
+     "keyword": "off road buggy brands",
+     "volume": 20,
+     "kd": 0,
+     "intent": "",
+     "uses": 3
+    },
+    {
+     "keyword": "best buggy brands",
+     "volume": 20,
+     "kd": 0,
+     "intent": "",
+     "uses": 2
+    },
+    {
+     "keyword": "buggy manufacturers",
+     "volume": 20,
+     "kd": 0,
+     "intent": "",
+     "uses": 5
+    }
+   ],
    "flags": []
   },
   {
@@ -5051,7 +5101,7 @@
    "url": "/blog/dune-buggies-australia/",
    "name": "Dune Buggies Australia: A Buyer\\",
    "level": "blog",
-   "words": 1971,
+   "words": 1967,
    "title": "Dune Buggies Australia: Models and Prices Guide",
    "h1": " Dune Buggies Australia: A Buyer's Guide to Models, Prices and Use ",
    "meta": "Dune buggies Australia buyers can choose from: engine sizes, prices from $3,429, what to check and how freight works. Compare models and enquire today.",
@@ -5075,7 +5125,7 @@
    "url": "/blog/go-kart-purchase/",
    "name": "Go Kart Purchase Guide: What to Know Before You Buy in Australia",
    "level": "blog",
-   "words": 1998,
+   "words": 1993,
    "title": "Go Kart Purchase Guide: Prices and Models in Australia",
    "h1": " Go Kart Purchase Guide: What to Know Before You Buy in Australia ",
    "meta": "Planning a go kart purchase? See prices from $1,420, engine and electric options, safety gear and freight notes, then compare models and enquire today.",
@@ -5089,7 +5139,7 @@
     "inMeta": true,
     "inIntro": true,
     "uses": 5,
-    "density": 0.28
+    "density": 0.29
    },
    "secondary": [],
    "flags": []
@@ -5099,7 +5149,7 @@
    "url": "/blog/e-go-kart/",
    "name": "E Go Kart Guide: How to Choose an Electric Go Kart in Australia",
    "level": "blog",
-   "words": 2005,
+   "words": 2000,
    "title": "E Go Kart Guide: Electric Go Karts in Australia",
    "h1": " E Go Kart Guide: How to Choose an Electric Go Kart in Australia ",
    "meta": "Choosing an e go kart? Learn how motor, battery and range specs compare, what electric karts cost from $1,861 and how to buy one. Enquire today.",
@@ -5113,7 +5163,7 @@
     "inMeta": true,
     "inIntro": true,
     "uses": 8,
-    "density": 0.45
+    "density": 0.46
    },
    "secondary": [],
    "flags": []
@@ -5123,7 +5173,7 @@
    "url": "/blog/cheap-buggy/",
    "name": "Cheap Buggy Guide: Low-Price Buggies That Are Worth Buying in Australia",
    "level": "blog",
-   "words": 1895,
+   "words": 1892,
    "title": "Cheap Buggy Guide: Low-Price Buggies in Australia",
    "h1": " Cheap Buggy Guide: Low-Price Buggies That Are Worth Buying in Australia ",
    "meta": "Looking for a cheap buggy? Compare golf, kids and off-road buggies from $165.60, learn what to trade off and what never to skip. Browse and enquire.",
@@ -5147,7 +5197,7 @@
    "url": "/blog/4x4-farm-buggy/",
    "name": "4x4 Farm Buggy Guide: Choosing a Farm Side-by-Side in Australia",
    "level": "blog",
-   "words": 1957,
+   "words": 1954,
    "title": "4x4 Farm Buggy Guide: Farm Side-by-Sides in Australia",
    "h1": " 4x4 Farm Buggy Guide: Choosing a Farm Side-by-Side in Australia ",
    "meta": "Choosing a 4x4 farm buggy? Compare farm side-by-sides from $4,213 by engine, weight and use, and learn what to check. See the range and enquire today.",
@@ -5171,7 +5221,7 @@
    "url": "/blog/12-volt-golf-cart-batteries/",
    "name": "12 Volt Golf Cart Batteries: Lead-Acid, Lithium and What Fits",
    "level": "blog",
-   "words": 1985,
+   "words": 1975,
    "title": "12 Volt Golf Cart Batteries: Types, Fit and Prices",
    "h1": " 12 Volt Golf Cart Batteries: Lead-Acid, Lithium and What Fits ",
    "meta": "Confused by 12 volt golf cart batteries? Learn how 12V, 24V and 48V packs differ, lead-acid versus lithium, and which lithium options we list. Enquire now.",
@@ -5195,7 +5245,7 @@
    "url": "/blog/push-buggy/",
    "name": "Push Buggy Guide: Golf Push Buggies, Prices and What to Check",
    "level": "blog",
-   "words": 1975,
+   "words": 1968,
    "title": "Push Buggy Guide: Golf Push Buggies in Australia",
    "h1": " Push Buggy Guide: Golf Push Buggies, Prices and What to Check ",
    "meta": "Shopping for a push buggy? Our golf push buggy range runs from $165.60 with weights, folds and seat options explained. Compare models and enquire today.",
@@ -5208,8 +5258,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 22,
-    "density": 1.26
+    "uses": 21,
+    "density": 1.21
    },
    "secondary": [],
    "flags": []
@@ -5219,7 +5269,7 @@
    "url": "/blog/childrens-side-by-side/",
    "name": "Children\\",
    "level": "blog",
-   "words": 1950,
+   "words": 1944,
    "title": "Children's Side by Side: Youth Buggies Compared",
    "h1": " Children's Side by Side: Youth Buggies and Ride-Ons Compared ",
    "meta": "Children's side by side: Choosing a children's side by side? Compare youth buggies and kids ride-ons from $685 by age, engine, speed and safety, then.",
@@ -5233,7 +5283,7 @@
     "inMeta": true,
     "inIntro": true,
     "uses": 15,
-    "density": 0.87
+    "density": 0.88
    },
    "secondary": [],
    "flags": []
@@ -5243,7 +5293,7 @@
    "url": "/blog/used-electric-golf-buggy-for-sale/",
    "name": "Used Electric Golf Buggy for Sale: What to Check Before You Buy",
    "level": "blog",
-   "words": 1995,
+   "words": 1993,
    "title": "Used Electric Golf Buggy for Sale: Buyer Checklist",
    "h1": " Used Electric Golf Buggy for Sale: What to Check Before You Buy ",
    "meta": "Looking at a used electric golf buggy for sale? Use our checklist for battery, motor and fold checks, compare against new prices from $636 and enquire.",
@@ -5267,7 +5317,7 @@
    "url": "/blog/atv-buggies-for-sale-australia/",
    "name": "ATV Buggies for Sale Australia: Quads, Side-by-Sides and What to Check",
    "level": "blog",
-   "words": 1962,
+   "words": 1959,
    "title": "ATV Buggies for Sale Australia: Quads and UTVs",
    "h1": " ATV Buggies for Sale Australia: Quads, Side-by-Sides and What to Check ",
    "meta": "Browsing ATV buggies for sale Australia wide? Compare quads and side-by-sides from $704.60, learn the differences and enquire for advice today.",

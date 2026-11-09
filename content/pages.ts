@@ -35,7 +35,7 @@ export const COPY: Record<string, PageCopy> = {
     faqs: [
       ['Where can I buy a golf buggy?', 'You can buy a new golf buggy online from us and have it delivered Australia-wide. Browse the range above, add your favourite to the cart and check out with bank transfer (Osko or EFT), PayID or crypto.'],
       ['How much is a new golf buggy?', 'Prices depend on the type. Push buggies cost the least, and electric and remote buggies cost more. All prices on this page include GST.'],
-      ['Do you sell cheap golf buggies?', 'Yes. Our push buggies are the lowest-cost way to stop carrying your bag, and our prices are set below comparable Australian retailers.'],
+      ['Do you sell cheap golf buggies?', 'Yes. Our push buggies are the lowest-cost way to stop carrying your bag, and every price on this site includes GST.'],
       ['Can I buy a golf buggy on sale?', 'We list our lowest current prices every day. Check the clearance page for current deals and ask us about bundles.'],
       ['How do I choose between brands?', 'Compare weight, folding size, battery type, warranty and whether you want GPS. Our specification tables show these side by side.'],
     ],
@@ -163,7 +163,7 @@ export const COPY: Record<string, PageCopy> = {
     ],
   },
   '/golf-carts/for-sale/': {
-    intro: ['Browse golf carts for sale in Australia: new two seat, four seat and larger electric carts in a range of specifications. Prices include GST and are set below comparable Australian retailers.', 'Each listing gives you seat count, drivetrain details and delivery information. Ask us about extras, accessories and finance-style payment options.'],
+    intro: ['Browse golf carts for sale in Australia: new two seat, four seat and larger electric carts in a range of specifications. Prices include GST, and delivery is confirmed before you pay.', 'Each listing gives you seat count, drivetrain details and delivery information. Ask us about extras, accessories and finance-style payment options.'],
     guides: [{ h2: 'How to buy a golf cart online', p: ['Pick your seat layout, then check battery type and warranty. Contact us if you want a particular colour or accessory package. We will confirm lead time and freight before you pay.', 'We accept bank transfer (Osko or EFT), PayID and crypto (Bitcoin or USDT). Crypto payments get an extra 10% discount at checkout.'] }],
     faqs: [
       ['What is the price of a golf cart in Australia?', 'New electric carts start from around $11,000 and rise with size and specification. All prices include GST.'],

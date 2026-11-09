@@ -54,7 +54,9 @@ export const crumbSchema = (trail: { name: string; url: string }[]) => ({
   itemListElement: [{ name: 'Home', url: '/' }, ...trail].map((t, i) => ({ '@type': 'ListItem', position: i + 1, name: t.name, item: abs(t.url) })),
 });
 
-export const faqSchema = (items: [string, string][]) => ({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: items.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) });
+// FAQ answers and page copy may contain markdown links, [text](url); structured data and meta descriptions carry the plain text only.
+export const plainText = (s: string) => s.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
+export const faqSchema =(items: [string, string][]) => ({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: items.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: plainText(a) } })) });
 
 export const productSchema = (p: Product) => ({
   '@context': 'https://schema.org', '@type': 'Product', '@id': abs(`/products/${p.slug}/`),

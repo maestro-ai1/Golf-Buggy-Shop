@@ -204,7 +204,8 @@ export default function Home() {
                 <li>We confirm stock and freight, then email your payment details and keep you updated until it arrives.</li>
               </ol>
               <p>We are a Sydney-based team supplying golfers, farms, estates and families since 2023. Buying for a club, resort or fleet? See our <Link href="/wholesale/">wholesale page</Link>.</p>
-              <p className="text-sm text-muted">Popular searches: buggy, buggies, beach buggy for sale, for sale buggy and buggy buggies.</p>
+              <h3>Every kind of buggy for sale in one place</h3>
+              <p>People find us by searching for a buggy, buggies, a beach buggy for sale, a for sale buggy or even buggy buggies. Whichever words you use, the range is the same: golf buggies, golf carts, dune and beach buggies, side by sides, go karts, kids buggies and the parts to keep them running. Before you order online, the <a href="https://www.accc.gov.au/consumers" target="_blank" rel="noopener noreferrer">ACCC consumer guide</a> explains your consumer guarantees.</p>
             </div>
             <aside className="card p-6 lg:sticky lg:top-28">
               <h2 className="font-display text-xl font-extrabold">Need help choosing?</h2>

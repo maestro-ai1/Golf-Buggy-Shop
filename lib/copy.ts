@@ -1,6 +1,7 @@
 import { COPY, type PageCopy } from '@/content/pages';
 import { PRODUCTS, SITE, money, type Product, type SitePage } from '@/config/site';
-import { clampDesc } from '@/lib/seo';
+import { clampDesc, plainText } from '@/lib/seo';
+import { HUBS } from '@/content/hubs';
 
 const BRAND_FAQ = (brand: string): [string, string][] => [
   [`Do you sell ${brand} products?`, `We list the ${brand} models shown on this page. If you are after another ${brand} model or part, tell us and we will check availability.`],
@@ -91,7 +92,7 @@ export function copyFor(page: SitePage, products: Product[]): PageCopy & { fallb
 }
 
 function baseCopy(page: SitePage, products: Product[]): PageCopy & { fallback: boolean } {
-  const c = COPY[page.url];
+  const c = HUBS[page.url] || COPY[page.url];
   if (c) return { ...c, fallback: false };
   const name = page.name.replace(/ \(Hub\)$/, '');
   const primary = page.primary?.keyword || name.toLowerCase();
@@ -128,7 +129,7 @@ function baseCopy(page: SitePage, products: Product[]): PageCopy & { fallback: b
 }
 
 export const descFor = (page: SitePage, intro: string) => {
-  let base = intro.replace(/\s+/g, ' ');
+  let base = plainText(intro).replace(/\s+/g, ' ');
   const kw = page.primary?.keyword;
   if (kw && !hasPhrase(base, kw)) base = cap(kw) + ': ' + base;
   // end on a whole sentence when one fits (110 to 158 characters) instead of cutting mid-sentence

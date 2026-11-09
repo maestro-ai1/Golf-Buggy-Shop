@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ChevronRight, Star, ChevronDown } from 'lucide-react';
 import { TRUSTPILOT, REVIEWS } from '@/content/reviews';
 import { crumbSchema } from '@/lib/seo';
+import { inline } from '@/lib/md';
 
 export function JsonLd({ data }: { data: object | object[] }) {
   const arr = Array.isArray(data) ? data : [data];
@@ -32,7 +33,7 @@ export function Faq({ items, title = 'Frequently asked questions' }: { items: [s
           {items.map(([q, a], i) => (
             <details key={q} className="card group p-0" open={i === 0}>
               <summary className="flex items-center justify-between gap-4 p-5 font-bold text-fw-900"><span>{q}</span><ChevronDown size={18} className="shrink-0 transition group-open:rotate-180" /></summary>
-              <p className="px-5 pb-5 leading-relaxed text-[#2c3a33]">{a}</p>
+              <p className="px-5 pb-5 leading-relaxed text-[#2c3a33] [&_a]:font-semibold [&_a]:text-fw-700 [&_a]:underline hover:[&_a]:text-fw-900">{inline(a, `faq-${i}`)}</p>
             </details>
           ))}
         </div>

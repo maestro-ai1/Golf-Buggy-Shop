@@ -93,19 +93,13 @@
   ],
   "support": [
    "buggies golf",
-   "club tempo",
    "golf buggie",
    "golf chariot",
-   "aldi golf buggy",
    "buggy golf",
-   "fairway golf",
-   "costco golf buggy",
-   "bedste golfvogn",
    "golfbuggy",
    "qod golf buggy",
    "golf buggy width",
-   "golf buggy dimensions",
-   "walkinshaw golf buggy"
+   "golf buggy dimensions"
   ],
   "h1": "Golf Buggy",
   "titleTag": "Golf Buggy Australia",
@@ -839,12 +833,7 @@
    "golf cars australia",
    "cart in golf",
    "golf cart golf",
-   "all coast golf carts",
-   "mig golf carts",
    "cart golf",
-   "golf car solutions",
-   "lvtong golf cart",
-   "augusta golf cars",
    "golf cart dimensions",
    "golf cart size"
   ],
@@ -1371,19 +1360,8 @@
    }
   ],
   "support": [
-   "du buggy",
-   "beachside buggies",
-   "buggy car",
-   "buggy buddies",
    "farm buggy",
-   "gold buggy",
-   "remote control buggy",
-   "baja buggy vw",
-   "offroad buggy",
-   "buggy lunar",
-   "volkswagen baja buggy",
-   "buggy cup holder",
-   "buggy remote control car"
+   "offroad buggy"
   ],
   "h1": "Off Road Buggy",
   "titleTag": "Off Road Buggy Australia",
@@ -1900,6 +1878,18 @@
     "keyword": "atv accessories",
     "volume": 110,
     "kd": 8,
+    "intent": "Commercial"
+   },
+   {
+    "keyword": "golf cart parts",
+    "volume": 210,
+    "kd": 7,
+    "intent": "Commercial"
+   },
+   {
+    "keyword": "golf car parts",
+    "volume": 50,
+    "kd": 17,
     "intent": "Commercial"
    }
   ],
@@ -2845,7 +2835,34 @@
    "volume": 30,
    "kd": 0
   },
-  "secondary": [],
+  "secondary": [
+   {
+    "keyword": "golf cart brands",
+    "volume": 50,
+    "kd": 1,
+    "intent": "Informational, Commercial"
+   },
+   {
+    "keyword": "golf buggy manufacturers",
+    "volume": 30,
+    "kd": 0
+   },
+   {
+    "keyword": "off road buggy brands",
+    "volume": 20,
+    "kd": 0
+   },
+   {
+    "keyword": "best buggy brands",
+    "volume": 20,
+    "kd": 0
+   },
+   {
+    "keyword": "buggy manufacturers",
+    "volume": 20,
+    "kd": 0
+   }
+  ],
   "support": [],
   "h1": "Australian Owned Golf Buggy Brand",
   "titleTag": "Australian Owned Golf Buggy Brand",
@@ -3413,7 +3430,8 @@
    }
   ],
   "support": [
-   "golf buggy club car"
+   "golf buggy club car",
+   "club tempo"
   ],
   "h1": "Club Car Golf Buggy",
   "titleTag": "Club Car Golf Buggy Australia",

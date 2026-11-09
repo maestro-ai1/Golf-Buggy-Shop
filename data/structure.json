@@ -2070,8 +2070,7 @@
    "golf buggy drink holder",
    "phone holder golf buggy",
    "golf buggy phone holder australia",
-   "mobile phone holder for golf buggy",
-   "golf cart drink holder"
+   "mobile phone holder for golf buggy"
   ],
   "h1": "Golf Cart Phone Holder",
   "titleTag": "Golf Cart Phone Holder Australia",
@@ -3472,15 +3471,14 @@
     "intent": "Commercial"
    },
    {
-    "keyword": "club car tempo",
-    "volume": 70,
-    "kd": 2,
-    "intent": "Informational"
+    "keyword": "club car parts",
+    "volume": 140,
+    "kd": 6,
+    "intent": "Commercial"
    }
   ],
   "support": [
    "golf buggy club car",
-   "club car parts",
    "club car charger"
   ],
   "h1": "Club Car Golf Buggy",
@@ -3810,12 +3808,6 @@
     "intent": "Informational, Transactional"
    },
    {
-    "keyword": "bag boy nitron buggy",
-    "volume": 50,
-    "kd": 8,
-    "intent": "Commercial"
-   },
-   {
     "keyword": "bagboy nitron golf buggy",
     "volume": 30,
     "kd": 0,
@@ -4012,21 +4004,19 @@
     "intent": "Informational / Transactional / Navigational / Commercial"
    },
    {
-    "keyword": "ecar compass 4s golf cart",
-    "volume": 50,
-    "kd": 0,
-    "intent": "Informational / Transactional / Navigational"
-   },
-   {
     "keyword": "ecar",
     "volume": 390,
     "kd": 12,
     "intent": "Informational"
+   },
+   {
+    "keyword": "buggy the car",
+    "volume": 140,
+    "kd": 27,
+    "intent": "Informational, Commercial"
    }
   ],
-  "support": [
-   "buggy the car"
-  ],
+  "support": [],
   "h1": "E Car Golf Buggy",
   "titleTag": "E Car Golf Buggy Australia",
   "faqSeed": [],

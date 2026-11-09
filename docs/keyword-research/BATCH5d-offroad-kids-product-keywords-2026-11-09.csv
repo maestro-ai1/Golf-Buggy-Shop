@@ -1,0 +1,79 @@
+﻿product,role,keyword,volume,kd,intent,released_from_page_support
+trailmaster-cheetah-175cc-dune-buggy,PRIMARY,trailmaster cheetah,210,6,T/C,/brands/trailmaster/
+trailmaster-cheetah-175cc-dune-buggy,SECONDARY,trailmaster cheetah for sale,170,0,T/C,/brands/trailmaster/
+trailmaster-cheetah-300cc-dune-buggy,PRIMARY,trailmaster cheetah 300,20,6,T/C,/brands/trailmaster/
+trailmaster-challenger-200-buggy,PRIMARY,trailmaster buggy for sale,170,0,T/C,/brands/trailmaster/
+kayo-s150-side-by-side-buggy,PRIMARY,kayo buggy,20,0,N/I,
+kayo-s70-kids-buggy-79cc-fully-automatic,PRIMARY,kayo buggy s70,20,0,T/C,
+kayo-s70-kids-buggy-79cc-fully-automatic,SECONDARY,kayo s70 for sale,20,2,T/C,
+kayo-s70-kids-buggy-79cc-fully-automatic,SECONDARY,kayo moto s70,20,11,T/C,
+kayo-s125-go-kart,PRIMARY,kayo go kart,40,4,T/C,
+kayo-s125-go-kart,SECONDARY,kayo go kart for sale,10,0,T/C,
+kayo-predator-125-quad-bike,PRIMARY,kayo quad bike,110,2,T/C,
+kayo-predator-125-quad-bike,SECONDARY,kayo quad,70,4,T/C,
+kayo-bull-125-farm-quad-atv,PRIMARY,kayo bull 125,30,3,N/I,
+kayo-bull-125-farm-quad-atv,SECONDARY,kayo bull 125 price,20,10,T/C,
+hammerhead-mudhead-se-off-road-buggy,PRIMARY,hammerhead mudhead,20,3,T/C,/brands/hammerhead/
+hammerhead-mudhead-se-off-road-buggy,SECONDARY,hammerhead mudhead se,10,7,T/C,
+hammerhead-torpedo-kids-buggy-6-5hp,PRIMARY,hammerhead torpedo,20,1,T/C,/brands/hammerhead/
+hammerhead-torpedo-kids-buggy-6-5hp,SECONDARY,hammerhead torpedo buggy,20,2,T/C,/brands/hammerhead/
+go-skitz-adventure-kids-electric-quad-bike,PRIMARY,go skitz adventure electric quad bike,20,1,T/C,
+go-skitz-adventure-kids-electric-quad-bike,SECONDARY,go skitz quad bike,20,2,T/C,
+go-skitz-2-5-kids-electric-quad-bike,PRIMARY,go skitz,40,4,T/C,
+go-skitz-2-5-kids-electric-quad-bike,SECONDARY,go skitz 2.5 e-quad bike,20,0,T/C,
+gmx-drift-200cc-electric-start-go-kart,PRIMARY,drift go kart,480,3,T/C,/off-road-buggies/go-karts/
+gmx-drift-200cc-electric-start-go-kart,SECONDARY,drift karts,480,4,T/C,/off-road-buggies/go-karts/
+gmx-drift-200cc-electric-start-go-kart,SECONDARY,drift cart,1300,5,T/C,/off-road-buggies/go-karts/
+gmx-drift-200cc-electric-start-go-kart,SECONDARY,drifting cart,320,9,T/C,/off-road-buggies/go-karts/
+crazy-kart-electric-drift-kart-drifta,PRIMARY,crazy kart,1300,13,T/C,/off-road-buggies/go-karts/
+crazy-kart-electric-drift-kart-drifta,SECONDARY,electric drift kart,590,2,T/C,/off-road-buggies/go-karts/
+crazy-kart-electric-drift-kart-drifta,SECONDARY,electric drift go kart,390,2,T/C,/off-road-buggies/go-karts/
+crazy-kart-electric-drift-kart-drifta,SECONDARY,electric drift cart,260,6,T/C,/off-road-buggies/go-karts/
+crazy-kart-electric-drift-kart-drifta,SECONDARY,crazy karts for sale,70,9,T/C,
+apollo-commander-110cc-automatic-quad-bike,PRIMARY,apollo commander 110cc,20,0,T/C,
+apollo-rfz-commander-125-quad-bike,PRIMARY,125cc apollo rfz,20,3,T/C,
+apollo-rfz-commander-125-quad-bike,SECONDARY,125 apollo rfz,20,4,T/C,
+apollo-rfz-commander-125-quad-bike,SECONDARY,apollo rfz 125 price,20,15,T/C,
+apollo-rfz-falcon-140cc-automatic-quad-bike,PRIMARY,apollo rfz 140,20,13,T/C,
+apollo-rfz-falcon-140cc-automatic-quad-bike,SECONDARY,apollo rfz 140cc,10,16,T/C,
+apollo-blazer-125cc-quad-bike,PRIMARY,apollo blazer 125cc,10,6,T/C,
+apollo-blazer-125cc-quad-bike,SECONDARY,apollo blazer,10,5,T/C,
+apollo-commander-70-kids-quad-bike,PRIMARY,apollo quad bike,20,2,T/C,
+crossfire-blazer-200r-200cc-kids-go-kart-buggy,PRIMARY,crossfire blazer 200r,50,4,T/C,
+crossfire-600gt-4wd-utility-side-by-side,PRIMARY,crossfire utv,90,8,T/C,
+crossfire-600gt-4wd-utility-side-by-side,SECONDARY,crossfire side by side,40,5,T/C,
+crossfire-400gt-400cc-efi-farm-side-by-side,PRIMARY,crossfire buggy,110,5,T/C,
+crossfire-x400-atv-quad-bike,PRIMARY,crossfire atv,50,8,T/C,
+crossfire-x600-4wd-utility-atv,PRIMARY,crossfire x600,10,2,T/C,
+crossfire-rover-125-youth-atv,PRIMARY,crossfire quad bike,50,7,T/C,
+crossfire-rover-125-youth-atv,SECONDARY,crossfire quad,50,8,T/C,
+50cc-2-stroke-mini-quad-bike,PRIMARY,mini quad bike,320,4,T/C,/off-road-buggies/mini-quads-atvs/
+50cc-2-stroke-mini-quad-bike,SECONDARY,50cc quad,170,17,T/C,
+50cc-2-stroke-mini-quad-bike,SECONDARY,mini quad,110,6,T/C,
+50cc-2-stroke-mini-quad-bike,SECONDARY,50cc childs quad bike,90,6,T/C,
+50cc-2-stroke-mini-quad-bike,SECONDARY,50cc quad bike for sale,70,4,T/C,
+kids-24v-electric-golf-cart-ride-on-with-canopy,PRIMARY,ride on golf cart,70,5,T/C,
+can-am-maverick-24v-kids-ride-on-buggy,PRIMARY,can am electric buggy,50,6,T/C,/brands/can-am/
+john-deere-12v-gator-xuv-kids-ride-on,PRIMARY,john deere electric buggy,20,0,N/I,/brands/john-deere/
+segway-ninebot-gokart-pro-2-electric-go-kart,PRIMARY,segway ninebot gokart pro,90,12,T/C,
+segway-ninebot-gokart-pro-2-electric-go-kart,SECONDARY,segway ninebot gokart pro 2,70,8,T/C,
+segway-ninebot-gokart-pro-2-electric-go-kart,SECONDARY,ninebot go cart,90,9,T/C,
+segway-villain-sx10-e-side-by-side,PRIMARY,segway villain,20,6,T/C,
+honda-pioneer-1000-6-side-by-side,PRIMARY,honda pioneer 1000 for sale,110,3,T/C,/brands/honda/
+honda-pioneer-1000-6-side-by-side,SECONDARY,honda pioneer 1000 price australia,140,6,N/I,
+honda-pioneer-1000-6-side-by-side,SECONDARY,pioneer 1000,50,3,T/C,
+kubota-rtv-xg850-sidekick-side-by-side,PRIMARY,kubota rtv 850 sidekick,20,4,T/C,
+kubota-rtv520-side-by-side,PRIMARY,kubota rtv 520 price,20,8,T/C,
+kubota-rtv520-side-by-side,SECONDARY,kubota rtv 520,30,7,N/I,
+polaris-ranger-xp-1000-hd-side-by-side,PRIMARY,polaris ranger 1000,390,3,T/C,/brands/polaris/
+polaris-ranger-xp-1000-hd-side-by-side,SECONDARY,polaris ranger xp 1000,170,14,T/C,/brands/polaris/
+polaris-ranger-xp-1000-hd-side-by-side,SECONDARY,polaris ranger for sale,110,6,T/C,/brands/polaris/
+polaris-rzr-xp-1000-sport-eps-side-by-side,PRIMARY,polaris rzr 1000,110,17,N/I,/brands/polaris/
+polaris-rzr-trail-s-1000-side-by-side,PRIMARY,polaris rzr1000s,140,12,T/C,/brands/polaris/
+polaris-rzr-200-efi-youth-buggy,PRIMARY,polaris kids buggy,110,0,T/C,/brands/polaris/
+yamaha-viking-se-3-seat-side-by-side,PRIMARY,yamaha viking,390,10,T/C,/brands/yamaha/
+yamaha-viking-se-3-seat-side-by-side,SECONDARY,yamaha viking for sale,50,6,T/C,
+yamaha-viking-se-3-seat-side-by-side,SECONDARY,yamaha viking buggy,30,9,T/C,/brands/yamaha/
+cfmoto-uforce-800-eps-xl-side-by-side,PRIMARY,cfmoto uforce 800,90,10,N/I,
+cfmoto-uforce-800-eps-xl-side-by-side,SECONDARY,cf moto uforce,70,5,T/C,/brands/cfmoto/
+cfmoto-uforce-800-eps-xl-side-by-side,SECONDARY,cfmoto uforce side by side,50,7,T/C,/brands/cfmoto/

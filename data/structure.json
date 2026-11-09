@@ -1485,23 +1485,15 @@
    "go karts for sale",
    "electric go karts",
    "go karts for sell",
-   "drift go kart",
-   "electric drift go kart",
    "petrol go karts",
    "go-kart",
    "go kart electric",
    "cheap go karts",
    "go karts electric",
-   "drift karts",
-   "electric drift kart",
    "drift karts for adults",
    "adult drift kart",
    "kids drift kart",
-   "drift cart",
-   "drifting cart",
-   "electric drift cart",
-   "krazy kart",
-   "crazy kart"
+   "krazy kart"
   ],
   "h1": "Electric Go Kart",
   "titleTag": "Electric Go Kart Australia",
@@ -1842,7 +1834,6 @@
    "four wheeler",
    "4 wheeler",
    "all terrain quad",
-   "mini quad bike",
    "atv quad bike",
    "childrens electric quad bike",
    "quad bikes australia",
@@ -2915,16 +2906,10 @@
    "polaris ranger utv",
    "polaris rzr 200",
    "polaris buggy for sale",
-   "polaris rzr1000s",
    "polaris razor",
-   "polaris rzr 1000",
-   "polaris kids buggy",
    "razor polaris rzr",
-   "polaris ranger 1000",
    "polaris ranger side by side",
    "polaris ranger utility vehicle",
-   "polaris ranger xp 1000",
-   "polaris ranger for sale",
    "polaris sxs"
   ],
   "h1": "Polaris Side By Side",
@@ -3044,7 +3029,6 @@
    "can am atv bike",
    "can am buggy for sale",
    "kids can am buggy",
-   "can am electric buggy",
    "can am quad bikes",
    "canam atv",
    "can am buggy price"
@@ -3217,11 +3201,9 @@
    "yamaha golf buggy petrol",
    "yamaha 1000 buggy",
    "yamaha buggy 4x4",
-   "yamaha viking buggy",
    "yamaha golf buggy parts australia",
    "yamaha buggys",
    "yamaha buggy price",
-   "yamaha viking",
    "yamaha side by side utv",
    "yamaha viking 700",
    "yamaha golf car parts",
@@ -3325,20 +3307,15 @@
    }
   ],
   "support": [
-   "trailmaster cheetah",
    "trailmaster buggies",
    "trailmaster cheetah nsw",
    "trailmaster cheetah offroad buggy",
    "trailmaster offroad buggies",
-   "trailmaster buggy for sale",
-   "trailmaster buggies for sale",
    "trailmaster cheetah off road buggy",
    "trailmaster cheetah go karts",
-   "trailmaster cheetah for sale",
    "trailmaster off road buggies",
    "trailmaster cheetah go karts for sale",
-   "trailmaster cheetah off road carts",
-   "trailmaster cheetah 300"
+   "trailmaster cheetah off road carts"
   ],
   "h1": "Trailmaster Dune Buggy",
   "titleTag": "Trailmaster Dune Buggy Australia",
@@ -3540,11 +3517,7 @@
     "intent": "Informational"
    }
   ],
-  "support": [
-   "hammerhead mudhead",
-   "hammerhead torpedo",
-   "hammerhead torpedo buggy"
-  ],
+  "support": [],
   "h1": "Hammerhead Buggies",
   "titleTag": "Hammerhead Buggies Australia",
   "faqSeed": [],
@@ -3664,8 +3637,7 @@
   ],
   "support": [
    "john deere buggy for sale",
-   "john deere gator buggy",
-   "john deere electric buggy"
+   "john deere gator buggy"
   ],
   "h1": "John Deere Buggy",
   "titleTag": "John Deere Buggy Australia",
@@ -3711,9 +3683,7 @@
   ],
   "support": [
    "cf moto buggy for sale used",
-   "cf moto utv",
-   "cf moto uforce",
-   "cfmoto uforce side by side"
+   "cf moto utv"
   ],
   "h1": "Cf Moto Buggy For Sale",
   "titleTag": "Cf Moto Buggy For Sale Australia",
@@ -3899,7 +3869,6 @@
    "honda odyssey buggy for sale",
    "honda odyssey dune buggy for sale",
    "honda odyssey buggy",
-   "honda pioneer 1000 for sale",
    "honda side by side price",
    "honda sxs"
   ],

@@ -464,7 +464,6 @@
   "support": [
    "golf push cart",
    "golf push buggies",
-   "push trolley",
    "push cart golf",
    "golf trolley bags",
    "estate electric golf trolley",
@@ -527,7 +526,6 @@
   ],
   "support": [
    "big caddy golf",
-   "caddies for golf",
    "golf e caddy",
    "power caddy golf buggy"
   ],
@@ -580,7 +578,6 @@
    }
   ],
   "support": [
-   "single seat golf cart",
    "stand on golf buggy",
    "golf buggies with seats",
    "golf buggy seat",
@@ -660,7 +657,6 @@
    "three wheeled golf buggy",
    "3 wheeled golf carts for sale",
    "4 wheel golf buggy",
-   "golf buggy wheel",
    "most compact golf buggy australia",
    "brosnan zodiac 3 golf buggy",
    "3 wheel golf push buggy",
@@ -717,7 +713,6 @@
   ],
   "support": [
    "golf skate caddy",
-   "golf e scooter",
    "golf trolley scooter",
    "golf scooters for sale australia",
    "electric golf scooters australia",
@@ -814,12 +809,6 @@
     "intent": "Commercial"
    },
    {
-    "keyword": "golf cars & carts",
-    "volume": 1600,
-    "kd": 17,
-    "intent": "Informational"
-   },
-   {
     "keyword": "golf cars",
     "volume": 320,
     "kd": 21,
@@ -836,12 +825,17 @@
     "volume": 210,
     "kd": 28,
     "intent": "Informational, Commercial"
+   },
+   {
+    "keyword": "buy a golf car",
+    "volume": 110,
+    "kd": 11,
+    "intent": "Transactional"
    }
   ],
   "support": [
    "golf and carts",
    "golf walking carts",
-   "trailering a golf cart",
    "golf cars australia",
    "cart in golf",
    "golf cart golf",
@@ -1024,10 +1018,8 @@
    }
   ],
   "support": [
-   "used golf carts on sale",
    "used golf carts",
    "second hand golf carts",
-   "2nd hand golf carts",
    "cart golf used",
    "used golf buggies",
    "used golf cart for sale",
@@ -1086,22 +1078,19 @@
     "intent": "Transactional"
    },
    {
-    "keyword": "used golf cart",
-    "volume": 210,
-    "kd": 6,
-    "intent": "Commercial"
+    "keyword": "golf cart purchase",
+    "volume": 110,
+    "kd": 27,
+    "intent": "Transactional"
    },
    {
-    "keyword": "second hand golf cart",
-    "volume": 140,
-    "kd": 6,
-    "intent": "Commercial"
+    "keyword": "petrol golf buggy for sale",
+    "volume": 40,
+    "kd": 0
    }
   ],
   "support": [
-   "golf cart purchase",
-   "petrol golf buggy",
-   "petrol golf buggy for sale"
+   "petrol golf buggy"
   ],
   "h1": "Petrol Golf Carts For Sale",
   "titleTag": "Petrol Golf Carts For Sale Australia",
@@ -1158,9 +1147,7 @@
    }
   ],
   "support": [
-   "electric cart",
    "aldi electric golf buggy",
-   "electric carts",
    "golf cart electric",
    "electric golf carts australia",
    "electric golf push cart",
@@ -1393,7 +1380,6 @@
    "remote control buggy",
    "baja buggy vw",
    "offroad buggy",
-   "buggys",
    "buggy lunar",
    "volkswagen baja buggy",
    "buggy cup holder",
@@ -1460,10 +1446,8 @@
    "buy a beach buggy",
    "beach buggy for sale australia",
    "dune buggies for sale",
-   "beach buggy for sale au",
    "beach buggies for sale",
    "beach buggies",
-   "beach buggys for sale",
    "vw beach buggy",
    "beach buggy buy",
    "buy beach buggy australia",
@@ -1529,7 +1513,6 @@
    "go karts for sale",
    "electric go karts",
    "go karts for sell",
-   "ninebot go kart",
    "drift go kart",
    "electric drift go kart",
    "petrol go karts",
@@ -1650,7 +1633,6 @@
    "kids go karts",
    "kids electric buggy",
    "go kart for kids",
-   "kids ride on buggy",
    "kids petrol buggy",
    "buggy for kids",
    "electric buggy for kids",
@@ -1720,8 +1702,6 @@
   ],
   "support": [
    "atv store",
-   "electric buggy",
-   "atv buggy",
    "utv australia",
    "atv sales melbourne",
    "lancelin atv buggy motocross tours",
@@ -1790,7 +1770,6 @@
   ],
   "support": [
    "side by side buggy",
-   "buggy for sale",
    "side by side utv",
    "used buggy for sale",
    "side by side accessories",
@@ -1800,7 +1779,6 @@
    "used buggies for sale",
    "utv sales",
    "farm buggy for sale",
-   "offroad buggy for sale",
    "second hand utv for sale",
    "what is a side by side utv"
   ],
@@ -2246,12 +2224,6 @@
     "intent": "Commercial"
    },
    {
-    "keyword": "lithium golf cart batteries",
-    "volume": 320,
-    "kd": 3,
-    "intent": "Commercial"
-   },
-   {
     "keyword": "li ion golf cart battery",
     "volume": 320,
     "kd": 9,
@@ -2262,10 +2234,15 @@
     "volume": 260,
     "kd": 6,
     "intent": "Informational, Commercial"
+   },
+   {
+    "keyword": "golf buggy battery lithium",
+    "volume": 260,
+    "kd": 3,
+    "intent": "Commercial"
    }
   ],
   "support": [
-   "golf buggy battery lithium",
    "battery golf buggies",
    "lithium ion golf cart batteries",
    "vw golf battery",
@@ -2790,18 +2767,6 @@
   },
   "secondary": [
    {
-    "keyword": "golf buggy trailers",
-    "volume": 140,
-    "kd": 4,
-    "intent": "Commercial"
-   },
-   {
-    "keyword": "golf buggy trailers for sale",
-    "volume": 110,
-    "kd": 1,
-    "intent": "Transactional"
-   },
-   {
     "keyword": "dune buggy trailer",
     "volume": 140,
     "kd": 16,
@@ -2818,14 +2783,22 @@
     "volume": 90,
     "kd": 12,
     "intent": "Commercial"
+   },
+   {
+    "keyword": "buggy with trailer",
+    "volume": 40,
+    "kd": 0
+   },
+   {
+    "keyword": "buggy trailer for sale",
+    "volume": 30,
+    "kd": 0
    }
   ],
   "support": [
    "dune buggy trike trailer",
    "dune buggy with trailer",
    "dune buggy trike trailer big w",
-   "buggy with trailer",
-   "buggy trailer for sale",
    "buggy trailers"
   ],
   "h1": "Buggy Trailer",
@@ -2925,7 +2898,6 @@
   "support": [
    "polaris dune buggy",
    "polaris ranger utv",
-   "polaris rzr 170",
    "polaris rzr 200",
    "polaris buggy for sale",
    "polaris rzr1000s",
@@ -3326,9 +3298,7 @@
   ],
   "support": [
    "trailmaster cheetah",
-   "trailmaster cheetah australia",
    "trailmaster buggies",
-   "trailmaster dune buggies",
    "trailmaster cheetah nsw",
    "trailmaster cheetah offroad buggy",
    "trailmaster offroad buggies",

@@ -4,8 +4,8 @@
   "posts": 56,
   "withFlags": 0,
   "totalPrimaryVolume": 58170,
-  "totalSecondaryVolume": 78580,
-  "keywordsMapped": 449,
+  "totalSecondaryVolume": 76650,
+  "keywordsMapped": 451,
   "generated": "2026-11-09"
  },
  "rows": [
@@ -674,7 +674,7 @@
    "url": "/golf-carts/",
    "name": "Golf Carts",
    "level": "category",
-   "words": 781,
+   "words": 785,
    "title": "Golf Cart Australia | Buggies For Sale",
    "h1": " Golf Cart ",
    "meta": "Shop golf carts for new, electric and lithium models. Our golf cart range includes ECAR and Tomberlin carts in two, four, six and eight seat layouts.",
@@ -699,18 +699,11 @@
      "uses": 27
     },
     {
-     "keyword": "golf cars & carts",
-     "volume": 1600,
-     "kd": 17,
-     "intent": "Informational",
-     "uses": 0
-    },
-    {
      "keyword": "golf cars",
      "volume": 320,
      "kd": 21,
      "intent": "Commercial",
-     "uses": 3
+     "uses": 4
     },
     {
      "keyword": "golf kart",
@@ -725,6 +718,13 @@
      "kd": 28,
      "intent": "Informational, Commercial",
      "uses": 1
+    },
+    {
+     "keyword": "buy a golf car",
+     "volume": 110,
+     "kd": 11,
+     "intent": "Transactional",
+     "uses": 1
     }
    ],
    "flags": []
@@ -734,7 +734,7 @@
    "url": "/golf-carts/for-sale/",
    "name": "Golf Carts For Sale",
    "level": "sub-category",
-   "words": 592,
+   "words": 594,
    "title": "Golf Carts For Sale Australia | Buggies For Sale",
    "h1": " Golf Carts For Sale ",
    "meta": "Browse golf carts for sale in Australia: new two seat, four seat and larger electric carts in a range of specifications.",
@@ -854,7 +854,7 @@
    "url": "/golf-carts/petrol/",
    "name": "Petrol Golf Carts",
    "level": "sub-category",
-   "words": 492,
+   "words": 493,
    "title": "Petrol Golf Carts For Sale Australia | Buggies For Sale",
    "h1": " Petrol Golf Carts For Sale ",
    "meta": "Petrol golf carts for sale suit long days, heavy duty work and places where charging is hard. Free delivery over $1,000 across Australia.",
@@ -893,17 +893,17 @@
      "uses": 5
     },
     {
-     "keyword": "used golf cart",
-     "volume": 210,
-     "kd": 6,
-     "intent": "Commercial",
+     "keyword": "golf cart purchase",
+     "volume": 110,
+     "kd": 27,
+     "intent": "Transactional",
      "uses": 3
     },
     {
-     "keyword": "second hand golf cart",
-     "volume": 140,
-     "kd": 6,
-     "intent": "Commercial",
+     "keyword": "petrol golf buggy for sale",
+     "volume": 40,
+     "kd": 0,
+     "intent": "",
      "uses": 1
     }
    ],
@@ -1920,7 +1920,7 @@
    "url": "/parts-accessories/golf-buggy-parts/lithium-batteries/",
    "name": "Lithium Golf Cart Batteries",
    "level": "accessory",
-   "words": 586,
+   "words": 604,
    "title": "Golf Cart Batteries Australia | Buggies For Sale",
    "h1": " Golf Cart Batteries ",
    "meta": "Upgrade to lithium with our lithium golf cart batteries. We stock PRO-Li packages for Club Car Precedent, EZGO RXV, Yamaha G22 and ECAR 627 carts, plus MGI.",
@@ -1933,8 +1933,8 @@
     "inH1": true,
     "inMeta": true,
     "inIntro": true,
-    "uses": 3,
-    "density": 0.7
+    "uses": 4,
+    "density": 0.91
    },
    "secondary": [
     {
@@ -1942,21 +1942,14 @@
      "volume": 260,
      "kd": 9,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 4
     },
     {
      "keyword": "golf buggy battery",
      "volume": 260,
      "kd": 6,
      "intent": "Commercial",
-     "uses": 1
-    },
-    {
-     "keyword": "lithium golf cart batteries",
-     "volume": 320,
-     "kd": 3,
-     "intent": "Commercial",
-     "uses": 1
+     "uses": 4
     },
     {
      "keyword": "li ion golf cart battery",
@@ -1971,6 +1964,13 @@
      "kd": 6,
      "intent": "Informational, Commercial",
      "uses": 9
+    },
+    {
+     "keyword": "golf buggy battery lithium",
+     "volume": 260,
+     "kd": 3,
+     "intent": "Commercial",
+     "uses": 3
     }
    ],
    "flags": []
@@ -2453,7 +2453,7 @@
    "url": "/parts-accessories/off-road-parts/trailers-tie-downs/",
    "name": "Buggy Trailers & Tie-Downs",
    "level": "accessory",
-   "words": 613,
+   "words": 611,
    "title": "Buggy Trailer Australia | Buggies For Sale",
    "h1": " Buggy Trailer ",
    "meta": "Shop buggy trailer at Buggies For Sale, with 4 options from $151.90 to $889.35. Free delivery over $1,000. Delivery is Australia-wide, free over $1,000.",
@@ -2471,38 +2471,38 @@
    },
    "secondary": [
     {
-     "keyword": "golf buggy trailers",
-     "volume": 140,
-     "kd": 4,
-     "intent": "Commercial",
-     "uses": 6
-    },
-    {
-     "keyword": "golf buggy trailers for sale",
-     "volume": 110,
-     "kd": 1,
-     "intent": "Transactional",
-     "uses": 3
-    },
-    {
      "keyword": "dune buggy trailer",
      "volume": 140,
      "kd": 16,
      "intent": "Informational",
-     "uses": 1
+     "uses": 3
     },
     {
      "keyword": "dune buggy and trailer",
      "volume": 110,
      "kd": 18,
      "intent": "Commercial",
-     "uses": 1
+     "uses": 3
     },
     {
      "keyword": "dune buggy trike with trailer",
      "volume": 90,
      "kd": 12,
      "intent": "Commercial",
+     "uses": 1
+    },
+    {
+     "keyword": "buggy with trailer",
+     "volume": 40,
+     "kd": 0,
+     "intent": "",
+     "uses": 1
+    },
+    {
+     "keyword": "buggy trailer for sale",
+     "volume": 30,
+     "kd": 0,
+     "intent": "",
      "uses": 0
     }
    ],
@@ -3971,7 +3971,7 @@
    "url": "/blog/how-much-does-a-golf-cart-cost-in-australia/",
    "name": "How Much Is a Golf Cart in Australia? Price Guide",
    "level": "blog",
-   "words": 1870,
+   "words": 1878,
    "title": "How Much Is a Golf Cart in Australia? | Buggies For Sale",
    "h1": " How Much Is a Golf Cart in Australia? Price Guide ",
    "meta": "How much is a golf cart? New electric golf carts typically start around $10,000 and climb with seats, battery and specification. Here is what to budget for.",
@@ -3995,7 +3995,7 @@
    "url": "/blog/electric-vs-push-golf-buggy-which-should-you-buy/",
    "name": "Electric Golf Buggy vs Push Buggy: Which Should You Buy?",
    "level": "blog",
-   "words": 1798,
+   "words": 1805,
    "title": "Electric Golf Buggy vs Push Buggy | Buggies For Sale",
    "h1": " Electric Golf Buggy vs Push Buggy: Which Should You Buy? ",
    "meta": "A push buggy costs a few hundred dollars and needs no charging. An electric golf buggy adds a motor and a bigger price. Here is how to choose between them.",
@@ -4019,7 +4019,7 @@
    "url": "/blog/lithium-vs-lead-acid-golf-cart-batteries/",
    "name": "Lithium Golf Cart Batteries vs Lead-Acid: Costs, Lifespan and Fit",
    "level": "blog",
-   "words": 1782,
+   "words": 1788,
    "title": "Lithium Golf Cart Batteries vs Lead-Acid | Buggies For Sale",
    "h1": " Lithium Golf Cart Batteries vs Lead-Acid: Costs, Lifespan and Fit ",
    "meta": "Lithium golf cart batteries cost more up front but weigh less, need no watering and typically last longer. Here is how to decide and what to check before.",
@@ -4067,7 +4067,7 @@
    "url": "/blog/remote-control-golf-buggy-buyers-guide/",
    "name": "Best Remote Golf Buggy: Buyer’s Guide to MGI, QOD and Concourse",
    "level": "blog",
-   "words": 1797,
+   "words": 1803,
    "title": "Best Remote Golf Buggy: Buyer’s Guide | Buggies For Sale",
    "h1": " Best Remote Golf Buggy: Buyer’s Guide to MGI, QOD and Concourse ",
    "meta": "Looking for the best remote golf buggy? Remote models follow your commands so you can walk hands-free. Here is how they work and what to compare.",
@@ -4115,7 +4115,7 @@
    "url": "/blog/electric-buggy/",
    "name": "Electric Buggy Guide: What They Are and Which Type Suits You",
    "level": "blog",
-   "words": 1852,
+   "words": 1858,
    "title": "Electric Buggy Guide for Australia | Buggies For Sale",
    "h1": " Electric Buggy Guide: What They Are and Which Type Suits You ",
    "meta": "An electric buggy can mean a golf buggy, an off-road utility buggy or a kids ride-on. Here is how each type works, what it costs to run and how to choose.",
@@ -4163,7 +4163,7 @@
    "url": "/blog/golf-e-scooter/",
    "name": "Golf E-Scooters and Electric Golf Boards: Prices, Rules and Tips",
    "level": "blog",
-   "words": 1834,
+   "words": 1840,
    "title": "Golf E-Scooter Australia: Prices and Tips | Buggies For Sale",
    "h1": " Golf E-Scooters and Electric Golf Boards: Prices, Rules and Tips ",
    "meta": "What a golf e-scooter is, how it differs from a golf buggy, what it costs and the course rules to check before you ride one onto the fairway.",
@@ -4187,7 +4187,7 @@
    "url": "/blog/beach-buggy-for-sale-au/",
    "name": "Beach Buggy for Sale AU: Types, Prices and Rules",
    "level": "blog",
-   "words": 1853,
+   "words": 1861,
    "title": "Beach Buggy for Sale AU: Buyer Guide | Buggies For Sale",
    "h1": " Beach Buggy for Sale AU: Types, Prices and Rules ",
    "meta": "Beach buggy for sale AU: where to buy a beach buggy or dune buggy, what the types cost, and the rules for sand driving, registration and safety gear.",
@@ -4211,7 +4211,7 @@
    "url": "/blog/trailering-a-golf-cart/",
    "name": "Trailering a Golf Cart: Ramps, Tie-Downs and Towing Tips",
    "level": "blog",
-   "words": 1826,
+   "words": 1831,
    "title": "Trailering a Golf Cart: Ramps and Towing Tips",
    "h1": " Trailering a Golf Cart: Ramps, Tie-Downs and Towing Tips ",
    "meta": "Trailering a golf cart safely: how to load, strap and tow, with trailer size, ramp length, tie-down points, weight checks and the mistakes that cause damage.",
@@ -4259,7 +4259,7 @@
    "url": "/blog/trailmaster-dune-buggies/",
    "name": "Trailmaster Dune Buggies: Cheetah and Challenger Models Compared",
    "level": "blog",
-   "words": 1789,
+   "words": 1797,
    "title": "Trailmaster Dune Buggies Compared | Buggies For Sale",
    "h1": " Trailmaster Dune Buggies: Cheetah and Challenger Models Compared ",
    "meta": "A plain comparison of Trailmaster dune buggies sold in Australia: engine sizes, seating, who each model suits and what to check before you buy.",
@@ -4283,7 +4283,7 @@
    "url": "/blog/kids-ride-on-buggy/",
    "name": "Kids Ride-On Buggy: Choosing a Safe, Fun First Buggy",
    "level": "blog",
-   "words": 1810,
+   "words": 1815,
    "title": "Kids Ride-On Buggy Guide Australia | Buggies For Sale",
    "h1": " Kids Ride-On Buggy: Choosing a Safe, Fun First Buggy ",
    "meta": "How to choose a kids ride-on buggy: age, voltage, speed limits, safety features and the difference between electric toys and petrol youth buggies.",
@@ -4307,7 +4307,7 @@
    "url": "/blog/used-golf-carts-on-sale/",
    "name": "Used Golf Carts on Sale in Australia: What to Check Before You Buy",
    "level": "blog",
-   "words": 1840,
+   "words": 1848,
    "title": "Used Golf Carts on Sale Australia: Buyer Guide",
    "h1": " Used Golf Carts on Sale in Australia: What to Check Before You Buy ",
    "meta": "Used golf carts on sale: a practical buying checklist covering battery age, motor and controller, frame, tyres, service history, price factors and delivery.",
@@ -4355,7 +4355,7 @@
    "url": "/blog/golf-cars-vs-golf-carts-vs-golf-buggies/",
    "name": "Golf Cars & Carts vs Golf Buggies: What Is the Difference?",
    "level": "blog",
-   "words": 1962,
+   "words": 1968,
    "title": "Golf Cars & Carts vs Golf Buggies | Buggies For Sale",
    "h1": " Golf Cars & Carts vs Golf Buggies: What Is the Difference? ",
    "meta": "Golf cars & carts: Golf cars & carts explained: golf car, golf cart and golf buggy are used interchangeably but can mean different vehicles. Here is how.",
@@ -4403,7 +4403,7 @@
    "url": "/blog/single-seat-golf-cart/",
    "name": "Single Seat Golf Cart: Ride-On Options, Costs and What to Check",
    "level": "blog",
-   "words": 1985,
+   "words": 1991,
    "title": "Single Seat Golf Cart: Australian Buyer Guide",
    "h1": " Single Seat Golf Cart: Ride-On Options, Costs and What to Check ",
    "meta": "What a single seat golf cart is, how ride-on golf buggies differ from trolleys and full carts, which models we list and what to check before you buy.",
@@ -4427,7 +4427,7 @@
    "url": "/blog/150cc-buggy/",
    "name": "150cc Buggy Guide: What a 150cc Off-Road Buggy Can and Cannot Do",
    "level": "blog",
-   "words": 1869,
+   "words": 1877,
    "title": "150cc Buggy Guide: Australian Buyer Tips | Buggies For Sale",
    "h1": " 150cc Buggy Guide: What a 150cc Off-Road Buggy Can and Cannot Do ",
    "meta": "Is a 150cc buggy enough power? How 150cc and 175cc buggies compare with larger engines, who they suit and what to check before you buy in Australia.",
@@ -4475,7 +4475,7 @@
    "url": "/blog/push-trolley/",
    "name": "Push Trolley Guide: How to Choose a Golf Push Trolley in Australia",
    "level": "blog",
-   "words": 1930,
+   "words": 1938,
    "title": "Push Trolley Guide for Golfers | Buggies For Sale",
    "h1": " Push Trolley Guide: How to Choose a Golf Push Trolley in Australia ",
    "meta": "How to choose a golf push trolley: wheel layout, fold size, weight, bag fit and seat options, with models and price ranges we list in Australia.",
@@ -4499,7 +4499,7 @@
    "url": "/blog/caddies-for-golf/",
    "name": "Caddies for Golf: Electric, Remote and Push Caddy Options Compared",
    "level": "blog",
-   "words": 1939,
+   "words": 1945,
    "title": "Caddies for Golf: Electric and Push Options",
    "h1": " Caddies for Golf: Electric, Remote and Push Caddy Options Compared ",
    "meta": "Caddies for golf today: how electric and remote caddies differ from push trolleys, and which features and models matter for Australian golfers.",
@@ -4523,7 +4523,7 @@
    "url": "/blog/2nd-hand-golf-carts/",
    "name": "2nd Hand Golf Carts: What to Check Before You Buy a Used Cart",
    "level": "blog",
-   "words": 1883,
+   "words": 1895,
    "title": "2nd Hand Golf Carts: Used Cart Buying Guide",
    "h1": " 2nd Hand Golf Carts: What to Check Before You Buy a Used Cart ",
    "meta": "A practical checklist for buying 2nd hand golf carts in Australia: batteries, age, service history, seating, price ranges and the used carts we list.",
@@ -4547,7 +4547,7 @@
    "url": "/blog/electric-carts/",
    "name": "Electric Carts: A Guide to Electric Golf Carts in Australia",
    "level": "blog",
-   "words": 1906,
+   "words": 1913,
    "title": "Electric Carts: Electric Golf Cart Guide | Buggies For Sale",
    "h1": " Electric Carts: A Guide to Electric Golf Carts in Australia ",
    "meta": "Electric carts explained: how electric golf carts work, how many seats you need, what a lithium battery changes and what to check before you buy in Australia.",
@@ -4859,7 +4859,7 @@
    "url": "/blog/dirt-buggy/",
    "name": "Dirt Buggy Guide: How to Choose the Right One in Australia",
    "level": "blog",
-   "words": 1885,
+   "words": 1893,
    "title": "Dirt Buggy Guide: How to Choose One in Australia",
    "h1": " Dirt Buggy Guide: How to Choose the Right One in Australia ",
    "meta": "Choosing a dirt buggy in Australia? Compare side-by-side and dune styles, learn what to check on tyres and engines, and see models from $3,429.",
@@ -4883,7 +4883,7 @@
    "url": "/blog/ride-on-buggy/",
    "name": "Ride On Buggy Guide: Kids, Golf and Off-Road Options in Australia",
    "level": "blog",
-   "words": 1889,
+   "words": 1895,
    "title": "Ride On Buggy: Kids, Golf and Off-Road Guide",
    "h1": " Ride On Buggy Guide: Kids, Golf and Off-Road Options in Australia ",
    "meta": "Which ride on buggy suits your family or your game? Compare kids ride-ons from $244, ride-on golf buggies and youth off-road models. Shop with confidence.",
@@ -5027,7 +5027,7 @@
    "url": "/blog/best-golf-push-buggy-australia/",
    "name": "Best Golf Push Buggy Australia: How to Choose the Right One",
    "level": "blog",
-   "words": 1883,
+   "words": 1889,
    "title": "Best Golf Push Buggy Australia: How to Choose",
    "h1": " Best Golf Push Buggy Australia: How to Choose the Right One ",
    "meta": "Best golf push buggy Australia: compare 2, 3 and 4 wheel push buggies from $234, fold sizes and features, then pick the right one for your game.",
@@ -5171,7 +5171,7 @@
    "url": "/blog/12-volt-golf-cart-batteries/",
    "name": "12 Volt Golf Cart Batteries: Lead-Acid, Lithium and What Fits",
    "level": "blog",
-   "words": 1979,
+   "words": 1985,
    "title": "12 Volt Golf Cart Batteries: Types, Fit and Prices",
    "h1": " 12 Volt Golf Cart Batteries: Lead-Acid, Lithium and What Fits ",
    "meta": "Confused by 12 volt golf cart batteries? Learn how 12V, 24V and 48V packs differ, lead-acid versus lithium, and which lithium options we list. Enquire now.",
@@ -5195,7 +5195,7 @@
    "url": "/blog/push-buggy/",
    "name": "Push Buggy Guide: Golf Push Buggies, Prices and What to Check",
    "level": "blog",
-   "words": 1967,
+   "words": 1975,
    "title": "Push Buggy Guide: Golf Push Buggies in Australia",
    "h1": " Push Buggy Guide: Golf Push Buggies, Prices and What to Check ",
    "meta": "Shopping for a push buggy? Our golf push buggy range runs from $165.60 with weights, folds and seat options explained. Compare models and enquire today.",
@@ -5219,7 +5219,7 @@
    "url": "/blog/childrens-side-by-side/",
    "name": "Children\\",
    "level": "blog",
-   "words": 1945,
+   "words": 1950,
    "title": "Children's Side by Side: Youth Buggies Compared",
    "h1": " Children's Side by Side: Youth Buggies and Ride-Ons Compared ",
    "meta": "Children's side by side: Choosing a children's side by side? Compare youth buggies and kids ride-ons from $685 by age, engine, speed and safety, then.",
@@ -5243,7 +5243,7 @@
    "url": "/blog/used-electric-golf-buggy-for-sale/",
    "name": "Used Electric Golf Buggy for Sale: What to Check Before You Buy",
    "level": "blog",
-   "words": 1987,
+   "words": 1995,
    "title": "Used Electric Golf Buggy for Sale: Buyer Checklist",
    "h1": " Used Electric Golf Buggy for Sale: What to Check Before You Buy ",
    "meta": "Looking at a used electric golf buggy for sale? Use our checklist for battery, motor and fold checks, compare against new prices from $636 and enquire.",

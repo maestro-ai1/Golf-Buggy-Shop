@@ -43,7 +43,7 @@ export const BRANDS: Record<string, PageCopy> = {
 
   '/brands/polaris/': {
     intro: [
-      `Looking for a Polaris side by side? We list the Polaris RZR Trail S 1000, RZR XP 1000 Sport, RZR Pro R, Ranger 500, Ranger XP 1000 HD and Ranger Crew XP 1000 side by sides, the RZR 200 EFI youth buggy and a range of Polaris parts.`,
+      `Looking for a Polaris buggy or Polaris side by side? We list the Polaris RZR Trail S 1000, RZR XP 1000 Sport, RZR Pro R, Ranger 500, Ranger XP 1000 HD and Ranger Crew XP 1000 side by sides, the RZR 200 EFI youth buggy and a range of Polaris parts.`,
       `Prices run from around $130 for parts to over $56,000 for the RZR Pro R, and every price includes GST.`,
     ],
     guides: [
@@ -204,7 +204,7 @@ export const BRANDS: Record<string, PageCopy> = {
 
   '/brands/trailmaster/': {
     intro: [
-      `Looking for a Trailmaster dune buggy? We list the Trailmaster Cheetah 175cc and 300cc dune buggies and the Challenger 200 buggy, from around $4,560 to $6,220, plus an air filter for the Trailmaster 175 to 300 buggy.`,
+      `Looking for a Trailmaster buggy or Trailmaster dune buggy? We list the Trailmaster Cheetah 175cc and 300cc dune buggies and the Challenger 200 buggy, from around $4,560 to $6,220, plus an air filter for the Trailmaster 175 to 300 buggy.`,
       `Every price includes GST and delivery is Australia-wide.`,
     ],
     guides: [
@@ -330,7 +330,7 @@ export const BRANDS: Record<string, PageCopy> = {
 
   '/brands/ezgo/': {
     intro: [
-      `Shop EZGO golf buggies and carts: we list used EZGO RXV four seaters (2017 and 2018) and a used EZGO TXT (2007), from around $7,800 to $11,750, plus lithium battery packages for EZGO RXV carts.`,
+      `Shop an EZGO golf cart or EZGO golf buggies: we list used EZGO RXV four seaters (2017 and 2018) and a used EZGO TXT (2007), from around $7,800 to $11,750, plus lithium battery packages for EZGO RXV carts.`,
       `Every price includes GST and delivery is Australia-wide.`,
     ],
     guides: [
@@ -403,7 +403,7 @@ export const BRANDS: Record<string, PageCopy> = {
 
   '/brands/cfmoto/': {
     intro: [
-      `Looking for a CF Moto buggy for sale? We list the CFMOTO UFORCE 800 EPS XL Side by Side at around $19,590, delivered Australia-wide with GST included.`,
+      `Looking for a CFMOTO side by side or CF Moto buggy for sale? We list the CFMOTO UFORCE 800 EPS XL Side by Side at around $19,590, delivered Australia-wide with GST included.`,
       `Compare it with our other side by sides.`,
     ],
     guides: [
@@ -428,7 +428,7 @@ export const BRANDS: Record<string, PageCopy> = {
 
   '/brands/segway/': {
     intro: [
-      `Looking for a Segway buggy? We list the Segway Villain SX10 E Side by Side at around $27,430 and the Segway Ninebot GoKart Pro 2 electric go kart at around $2,840, delivered Australia-wide with GST included.`,
+      `Looking for a Segway go kart or Segway buggy? We list the Segway Villain SX10 E Side by Side at around $27,430 and the Segway Ninebot GoKart Pro 2 electric go kart at around $2,840, delivered Australia-wide with GST included.`,
       `We do not list Segway scooters: this page covers the Villain and the GoKart.`,
     ],
     guides: [
@@ -464,6 +464,9 @@ export const BRANDS: Record<string, PageCopy> = {
         `A bagboy golf buggy or bag boy buggy shopper should compare weight and folded size. We list the Nitron only; message us about other Bag Boy models. See our guide to the [best golf push buggy in Australia](/blog/best-golf-push-buggy-australia/).`,
       ] },
       { h2: `Bag Boy buyers guide`, p: [`See [golf equipment on Wikipedia](https://en.wikipedia.org/wiki/Golf_equipment) for background, and our [accessories](/parts-accessories/golf-cart-accessories/) for holders.`] },
+      { h2: `Delivery for a Bag Boy golf buggy`, p: [
+        `The Bag Boy Nitron is priced below our free-delivery threshold of $1,000, so a flat $95 freight fee applies; we confirm the cost to your postcode before you pay. Prices include GST, the minimum order is $250, and payment is by bank transfer (Osko or EFT), PayID or crypto. If you are comparing a Bag Boy golf buggy with other push models, see our [push and pull trolleys](/golf-buggies/push-pull-trolleys/) and the [delivery page](/delivery/).`,
+      ] },
     ],
     faqs: [
       [`Do you sell the Bag Boy Nitron?`, `Yes, at around $374 including GST.`],
@@ -499,7 +502,7 @@ export const BRANDS: Record<string, PageCopy> = {
 
   '/brands/honda/': {
     intro: [
-      `Looking for a Honda 1000 buggy? We list the Honda Pioneer 1000-6 Side by Side at around $42,900, delivered Australia-wide with GST included.`,
+      `Looking for a Honda side by side or Honda 1000 buggy? We list the Honda Pioneer 1000-6 Side by Side at around $42,900, delivered Australia-wide with GST included.`,
       `Compare it with our other side by sides.`,
     ],
     guides: [
@@ -555,7 +558,7 @@ export const BRANDS: Record<string, PageCopy> = {
 
   '/brands/ecar/': {
     intro: [
-      `Looking for an ECAR golf cart? Shop ECAR lithium golf carts in two, four, six and eight seat layouts, the Compass, S-Series, IKON and Magnum ranges, plus chargers and accessories: 36 products from around $48 to over $20,000.`,
+      `Looking for an E Car golf buggy or ECAR golf cart? Shop ECAR lithium golf carts in two, four, six and eight seat layouts, the Compass, S-Series, IKON and Magnum ranges, plus chargers and accessories: 36 products from around $48 to over $20,000.`,
       `Every price includes GST and delivery is Australia-wide.`,
     ],
     guides: [
@@ -580,7 +583,7 @@ export const BRANDS: Record<string, PageCopy> = {
 
   '/brands/kawasaki/': {
     intro: [
-      `Looking for a Kawasaki Teryx? We list the Kawasaki Teryx4 H2 Side by Side at around $57,240, delivered Australia-wide with GST included.`,
+      `Looking for a Kawasaki side by side such as the Kawasaki Teryx? We list the Kawasaki Teryx4 H2 Side by Side at around $57,240, delivered Australia-wide with GST included.`,
       `It is a four-seat Kawasaki side by side for property work and recreation.`,
     ],
     guides: [
@@ -658,7 +661,7 @@ export const BRANDS: Record<string, PageCopy> = {
 
   '/brands/smoothy/': {
     intro: [
-      `Shop a golf buggy Smoothy style: the Smoothy Micro Golf Push Buggy at around $244, delivered Australia-wide with GST included.`,
+      `Shop a Smoothy golf buggy, also searched as golf buggy Smoothy: the Smoothy Micro Golf Push Buggy at around $244, delivered Australia-wide with GST included.`,
       `It is a compact push buggy.`,
     ],
     guides: [

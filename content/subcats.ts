@@ -35,7 +35,7 @@ export const SUBCATS: Record<string, PageCopy> = {
 
   '/golf-buggies/motorised-electric/': {
     intro: [
-      `A motorised golf buggy takes the effort out of every round. Our electric golf buggies for sale include compact folding models from MGI and PowerBug, all-terrain buggies from QOD and the ride-on i-MotionCaddys IM4.`,
+      `A motorised golf buggy takes the effort out of every round. Our electric golf buggy for sale range includes compact folding models from MGI and PowerBug, all-terrain buggies from QOD and the ride-on i-MotionCaddys IM4.`,
       `Electric buggies are quiet, easy to steer and gentle on your back. Choose lithium models for lighter weight and longer life between charges.`,
     ],
     guides: [
@@ -233,7 +233,7 @@ export const SUBCATS: Record<string, PageCopy> = {
 
   '/golf-buggies/for-sale-locations/': {
     intro: [
-      `Looking for golf carts for sale Brisbane or elsewhere? We deliver golf buggies and golf carts across Australia, including Brisbane, Sydney, Melbourne, Perth, Adelaide and the Gold Coast. This page explains how delivery works wherever you live and how to buy a golf cart for sale near you.`,
+      `Looking for golf carts for sale Melbourne, Brisbane or elsewhere? We deliver golf buggies and golf carts across Australia, including Brisbane, Sydney, Melbourne, Perth, Adelaide and the Gold Coast. This page explains how delivery works wherever you live and how to buy a golf cart for sale near you.`,
       `Not sure about freight to your suburb or regional town? Message us your postcode and we will confirm the cost before you order.`,
     ],
     guides: [
@@ -296,7 +296,7 @@ export const SUBCATS: Record<string, PageCopy> = {
 
   '/golf-carts/used/': {
     intro: [
-      `Looking for used golf carts for sale or a second-hand golf cart? Used carts can save thousands, but each one needs a proper check of batteries, electrics and chassis. Tell us what you are looking for and we will help you source and inspect it.`,
+      `Looking for 2nd hand golf carts for sale, used golf carts or a second-hand golf cart? Used carts can save thousands, but each one needs a proper check of batteries, electrics and chassis. Tell us what you are looking for and we will help you source and inspect it.`,
       `We list used carts online, including Club Car, EZGO, ECAR and Tomberlin models. For anything else, contact us with your budget, seat count and preferred brand.`,
     ],
     guides: [
@@ -308,6 +308,9 @@ export const SUBCATS: Record<string, PageCopy> = {
       ] },
       { h2: `Used golf buggy for sale and used golf buggies`, p: [
         `A used golf buggy for sale, or golf buggy for sale used, can also mean a smaller walking buggy rather than a cart. We list used golf carts online; for used golf buggies and 2nd hand electric golf carts for sale, message us and we will tell you what we can source. Compare new options on our [electric golf buggies](/golf-buggies/motorised-electric/) page.`,
+      ] },
+      { h2: `Second hand golf carts for sale: used golf buggy for sale and golf buggy for sale used`, p: [
+        `Our second hand golf carts for sale are used four seaters and a few two seaters from brands such as ECAR, EZGO, Club Car and Tomberlin. A for sale used golf carts search, or one for a used golf buggy for sale or golf buggy for sale used, lands on the same listings: each cart is a real unit with its own price including GST, so compare the year, battery voltage and wheel size, and message us about condition and battery age before you pay. Freight is confirmed to your postcode, and our guide to [buying a 2nd hand golf cart](/blog/2nd-hand-golf-carts/) explains what to check.`,
       ] },
     ],
     faqs: [
@@ -406,7 +409,7 @@ export const SUBCATS: Record<string, PageCopy> = {
 
   '/golf-carts/mini-junior/': {
     intro: [
-      `A mini golf cart or junior golf cart is a smaller vehicle for young golfers and compact uses. If you are after a kids golf cart or junior golf buggy, contact us and we will help match a safe, age-appropriate option.`,
+      `A kids golf buggy, mini golf cart or junior golf cart is a smaller vehicle for young golfers and compact uses. If you are after a kids golf cart or junior golf buggy, contact us and we will help match a safe, age-appropriate option.`,
       `For children we recommend supervised use, helmets and age-appropriate speed.`,
     ],
     guides: [

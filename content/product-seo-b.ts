@@ -36,10 +36,11 @@ export const PART_B: Record<string, ProductSEO> = {
     ],
   },
   'stinger-sg-6-golf-push-buggy': {
-    primary: 'stinger sg-6',
-    secondary: [],
-    lead: `The Stinger SG-6 is the top Stinger golf push buggy at {price} including GST, delivered Australia-wide.`,
+    primary: 'stinger sg-6 review',
+    secondary: ['stinger sg-6'],
+    lead: `Looking for a Stinger SG-6 review? We do not publish product reviews on this page; the Stinger SG-6 is the top Stinger golf push buggy at {price} including GST, delivered Australia-wide.`,
     sec: [
+      [`Stinger SG-6 review: what the listing says`, `We do not publish product reviews on this page, so we do not claim ratings or test results for the Stinger SG-6. The listing gives the model, the price and that it is a push buggy; message us with questions.`],
       [`Stinger SG-6 golf push buggy`, `The Stinger SG-6 sits at the top of the Stinger push range. Compare the lower-priced [SG-5 V2](/products/stinger-sg-5-v2-golf-push-buggy/) at $391 and the [Stinger range](/brands/stinger/).`],
       [`Choosing a push buggy`, `See all [push and pull trolleys](/golf-buggies/push-pull-trolleys/) and our guide to the [best golf push buggy in Australia](/blog/best-golf-push-buggy-australia/).`],
     ],

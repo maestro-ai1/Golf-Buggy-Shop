@@ -118,7 +118,7 @@ export const HUBS: Record<string, PageCopy> = {
 
   '/parts-accessories/': {
     intro: [
-      `Need quad bike spare parts NSW or anywhere in Australia? Find golf cart accessories, golf buggy parts, lithium batteries, chargers, wheels, trailers and off-road parts in one place. Everything on this page is chosen for Australian golf carts, golf buggies and off-road buggies.`,
+      `Need golf cart parts, or quad bike spare parts NSW or anywhere in Australia? Find golf cart accessories, golf buggy parts, lithium batteries, chargers, wheels, trailers and off-road parts in one place. Everything on this page is chosen for Australian golf carts, golf buggies and off-road buggies.`,
       `Use the category tiles to jump straight to what you need, and message us if you are unsure about fitment. Looking for golf cart parts or golf car parts? Start with batteries, chargers and wheels.`,
     ],
     guides: [

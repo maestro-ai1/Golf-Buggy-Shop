@@ -6,7 +6,7 @@ import type { PageCopy } from '@/content/pages';
 export const OFFROAD_PARTS: Record<string, PageCopy> = {
   '/clearance/': {
     intro: [
-      `Looking for a cheap golf buggy or cheap golf carts? Our clearance page highlights our lowest-priced buggies, push buggies and accessories so you can save without compromising on quality.`,
+      `Looking for inexpensive golf carts for sale, a cheap golf buggy or cheap golf carts? Our clearance page highlights our lowest-priced buggies, push buggies and accessories so you can save without compromising on quality.`,
       `Cheap golf buggy for sale options start with push buggies from around $165, and a cheap golf cart starts higher because carts are larger vehicles. This page collects the best entry-level options.`,
     ],
     guides: [
@@ -133,7 +133,7 @@ export const OFFROAD_PARTS: Record<string, PageCopy> = {
 
   '/off-road-buggies/electric-off-road-utvs/': {
     intro: [
-      `Looking for an electric UTV? This page collects our electric off-road buggies and electric UTV options: the Segway Villain SX10 E side by side, the Crossfire E5 electric UTV, the Crazy Kart electric drift kart and kids electric quads.`,
+      `Looking for an electric side by side or electric UTV? This page collects our electric off-road buggies and electric UTV options: the Segway Villain SX10 E side by side, the Crossfire E5 electric UTV, the Crazy Kart electric drift kart and kids electric quads.`,
       `Electric drive is quiet, clean and easy to maintain, and electric UTV Australia buyers can order any of these online.`,
     ],
     guides: [
@@ -170,38 +170,38 @@ export const OFFROAD_PARTS: Record<string, PageCopy> = {
     ],
     guides: [
       { h2: `What is a side by side? UTV and side by side vehicle explained`, p: [
-        `A side by side (UTV) seats people beside each other and usually has a load bed. A utv vehicle or side by side vehicle handles rough terrain, farm tracks and work duties, and a side by side ATV or side by side all terrain vehicle is the same type of machine. Check engine, transmission and seating before you buy, and read our guide to [UTVs, ATVs and dune buggies](/blog/what-is-a-utv-side-by-side-vs-atv-vs-dune-buggy/).`,
+        `A side by side (UTV) seats people beside each other and usually has a load bed. A UTV vehicle handles rough terrain, farm tracks and work duties, and a side by side ATV is the same type of machine. Check engine, transmission and seating before you buy, and read our guide to [UTVs, ATVs and dune buggies](/blog/what-is-a-utv-side-by-side-vs-atv-vs-dune-buggy/).`,
       ] },
       { h2: `UTV side by side for sale and side by side buggy for sale`, p: [
-        `A utv side by side for sale, or utv side by sides for sale, ranges from the Kayo S150 at around $4,200 to premium machines such as the Polaris RZR Pro R. A side by side buggy for sale here is delivered Australia-wide, and you can ask for the cheapest side by side Australia stocks by sorting the listings by price. Browse [Polaris](/brands/polaris/), [Honda](/brands/honda/), [Kubota](/brands/kubota/) and [Kawasaki](/brands/kawasaki/) models.`,
+        `A utv side by side for sale, or any other UTV for sale here, ranges from the Kayo S150 at around $4,200 to premium machines such as the Polaris RZR Pro R. A side by side buggy for sale here is delivered Australia-wide, and you can find the cheapest side by side Australia stocks by sorting the listings by price. Browse [Polaris](/brands/polaris/), [Honda](/brands/honda/), [Kubota](/brands/kubota/) and [Kawasaki](/brands/kawasaki/) models.`,
       ] },
       { h2: `UTV and side by side: farm buggies, used UTV for sale and accessories`, p: [
-        `A farm buggy for sale is usually a four-wheel drive side by side with a load bed. We list new UTVs with warranty, which can be better value than a used UTV for sale or a second hand UTV for sale; if you are considering a used utv for sale, check the service history and compare against the new price. Side by side accessories such as windshields and brushguards are in our [off-road parts](/parts-accessories/off-road-parts/), and our guide to [UTV accessories](/blog/utv-accessories/) explains what to add.`,
+        `A farm buggy for sale is usually a four-wheel drive side by side with a load bed. We list new UTVs with warranty, which can be better value than a used UTV for sale or a second hand UTV for sale; if you are considering a used utv for sale, check the service history and compare against the new price. UTV accessories such as windshields and brushguards are in our [off-road parts](/parts-accessories/off-road-parts/), and our guide to [UTV accessories](/blog/utv-accessories/) explains what to add.`,
       ] },
       { h2: `Safety, rules and delivery for a side by side`, p: [
         `Wear a helmet and use seat belts, keep passengers to the number of seats and keep to private land and permitted areas. [Safe Work Australia](https://www.safeworkaustralia.gov.au/safety-topic/hazards/quad-bikes) publishes safety guidance for quad bikes and similar vehicles. Freight is confirmed to your postcode before you pay.`,
       ] },
       { h2: `Small utility vehicle for sale and utility vehicles for sale`, p: [
-        `A small utility vehicle for sale is usually a compact side by side with a load bed, and utility vehicles for sale in Australia range from the Kayo S150 to the Polaris Ranger, Kubota RTV and Honda Pioneer. A utility vehicle Australia buyers order here is delivered by freight with the cost confirmed before you pay, and utility vehicles for sale Australia-wide include the Crossfire 600GT utility side by side and 400GT farm side by side. A utility side by side, side by side utility vehicle or utility quad such as the Crossfire X600 is built for work, not just recreation.`,
+        `A small utility vehicle for sale is usually a compact UTV with a load bed, and utility vehicles for sale in Australia range from the Kayo S150 to the Polaris Ranger, Kubota RTV and Honda Pioneer. A utility vehicle Australia buyers order here is delivered by freight with the cost confirmed before you pay, and utility vehicles for sale Australia-wide include the Crossfire 600GT utility model and the 400GT farm model. A utility side by side or utility quad such as the Crossfire X600 is built for work, not just recreation.`,
       ] },
       { h2: `Farm vehicles, side by side all terrain vehicles and 4x4 side by sides`, p: [
-        `Farm vehicles for sale and farm utility vehicles are usually four-wheel drive with a load bed: look at a side by side farm vehicle such as the Crossfire 400GT 400cc EFI farm side by side or the Polaris Ranger. A 4x4 side by side, side by side all terrain vehicle or terrain vehicle is the same family of machine, and a farm side by side or side x side utv is another name for it. Electric options exist too: see the Crossfire E5 and Segway Villain in [electric off-road UTVs](/off-road-buggies/electric-off-road-utvs/). Side by side Australia buyers can ask for the best side by side for their use: compare engine, seats and load rating, and read our [UTV guide](/blog/what-is-a-utv-side-by-side-vs-atv-vs-dune-buggy/).`,
+        `Farm vehicles for sale and farm utility vehicles are usually four-wheel drive with a load bed: look at the Crossfire 400GT 400cc EFI farm model or the Polaris Ranger. A 4x4 side by side or terrain vehicle is the same family of machine, and a farm side by side is another name for it. Electric options exist too: see the Crossfire E5 and Segway Villain in [electric off-road UTVs](/off-road-buggies/electric-off-road-utvs/). Side by side Australia buyers can ask for the best side by side for their use: compare engine, seats and load rating, and read our [UTV guide](/blog/what-is-a-utv-side-by-side-vs-atv-vs-dune-buggy/).`,
       ] },
     ],
     faqs: [
-      [`What is a UTV?`, `A UTV (utility task vehicle) is a side by side vehicle with a load bed for work and recreation.`],
+      [`What is a UTV?`, `A UTV (utility task vehicle) is a work vehicle with seats, a steering wheel and a load bed for work and recreation.`],
       [`What is a side by side UTV and what is the difference between a UTV and an ATV?`, `ATVs are ridden like a quad. UTVs and side by sides have seats and a steering wheel. See [ATV vs UTV](/blog/atv-vs-utv/).`],
-      [`How much is a side by side?`, `Our side by sides run from around $3,400 to over $57,000 depending on engine and brand, and every price includes GST.`],
+      [`How much is a side by side?`, `Our UTVs run from around $3,400 to over $57,000 depending on engine and brand, and every price includes GST.`],
       [`Are they road legal?`, `Generally not. Check your state rules.`],
       [`Do they come assembled?`, `Check each listing for assembly notes.`],
-      [`Do you sell a used UTV for sale or second hand UTV?`, `We list new side by sides with warranty. If you are considering a used UTV, message us and we can talk through what to check.`],
-      [`Do you sell side by side accessories?`, `Yes. See our [off-road parts](/parts-accessories/off-road-parts/) for windshields, brushguards and bumpers for Polaris models.`],
+      [`Do you sell a used UTV for sale or second hand UTV?`, `We list new UTVs with warranty. If you are considering a used UTV, message us and we can talk through what to check.`],
+      [`Do you sell UTV accessories?`, `Yes. See our [off-road parts](/parts-accessories/off-road-parts/) for windshields, brushguards and bumpers for Polaris models.`],
     ],
   },
 
   '/off-road-buggies/mini-quads-atvs/': {
     intro: [
-      `Looking for a 50cc quad bike? Our mini quads and small ATVs include Kayo, Apollo, Crossfire and GO SKITZ quad bikes suited to farm tracks and younger riders, from around $420 to about $9,800. Compare engine size, automatic or manual and age guidance.`,
+      `Looking for quad bikes for sale, such as a 50cc quad bike? Our mini quads and small ATVs include Kayo, Apollo, Crossfire and GO SKITZ quad bikes suited to farm tracks and younger riders, from around $420 to about $9,800. Compare engine size, automatic or manual and age guidance.`,
       `Always use a helmet and follow age and weight guidance.`,
     ],
     guides: [
@@ -473,7 +473,7 @@ export const OFFROAD_PARTS: Record<string, PageCopy> = {
 
   '/parts-accessories/repairs-servicing/': {
     intro: [
-      `Searching for golf buggy repairs near me? Tell us your cart or buggy model and the fault, and we will advise on parts and next steps. Golf cart repair near me and golf cart repairs near me searches usually mean you want a local workshop, so ask us what is available in your area.`,
+      `Searching for golf cart repair near me or golf buggy repairs near me? Tell us your cart or buggy model and the fault, and we will advise on parts and next steps. Golf cart repair near me and golf cart repairs near me searches usually mean you want a local workshop, so ask us what is available in your area.`,
       `Regular servicing keeps carts reliable, and the right parts make a repair last.`,
     ],
     guides: [
@@ -498,7 +498,7 @@ export const OFFROAD_PARTS: Record<string, PageCopy> = {
 
   '/parts-accessories/off-road-parts/': {
     intro: [
-      `Shop quad bike spare parts for sale: carburettors, a front brake master cylinder, a centrifugal clutch for go karts, an air filter for the Trailmaster 175 to 300 buggy, loading ramps, a carrier with a tow hitch mount, and brushguards, windshields and bumpers for Polaris youth buggies.`,
+      `Shop for a quad atv accessory or quad bike spare parts for sale: carburettors, a front brake master cylinder, a centrifugal clutch for go karts, an air filter for the Trailmaster 175 to 300 buggy, loading ramps, a carrier with a tow hitch mount, and brushguards, windshields and bumpers for Polaris youth buggies.`,
       `Prices run from around $29 to about $890. Check fitment on each listing and message us if you are unsure.`,
     ],
     guides: [
@@ -574,7 +574,7 @@ export const OFFROAD_PARTS: Record<string, PageCopy> = {
 
   '/parts-accessories/off-road-parts/wheels-tyres/': {
     intro: [
-      `Shop wheels for a 4 wheel buggy: we list the Polaris Pro Armor Crawler Youth Tyre at around $217 for Polaris youth buggies. Other buggy wheel sizes can be sourced on request.`,
+      `Shop buggy wheels, including wheels for a 4 wheel buggy: we list the Polaris Pro Armor Crawler Youth Tyre at around $217 for Polaris youth buggies. Other buggy wheel sizes can be sourced on request.`,
       `Message us your buggy make, model and tyre size and we will confirm what we can supply.`,
     ],
     guides: [
@@ -624,7 +624,7 @@ export const OFFROAD_PARTS: Record<string, PageCopy> = {
 
   '/parts-accessories/off-road-parts/winches-tow-bars/': {
     intro: [
-      `Looking for an ATV winch? We do not list winches at present, but we do list an aluminium motorcycle carrier with a tow hitch mount, and can look into winches and a dune buggy tow bar on request.`,
+      `Looking for a buggy winch or ATV winch? We do not list winches at present, but we do list an aluminium motorcycle carrier with a tow hitch mount, and can look into winches and a dune buggy tow bar on request.`,
       `Message us your vehicle and the load you need to pull and we will tell you what we can supply.`,
     ],
     guides: [

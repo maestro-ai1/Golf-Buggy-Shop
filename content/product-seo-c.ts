@@ -84,9 +84,9 @@ export const PART_C: Record<string, ProductSEO> = {
     ],
   },
   'tomberlin-e-merge-ss-4-seat-golf-cart': {
-    primary: 'tomberlin e merge ss',
-    secondary: ['tomberlin golf buggy', 'tomberlin e-merge golf cart'],
-    lead: `The Tomberlin E-Merge SS is a 4 seat golf cart with a 105Ah battery at {price} including GST.`,
+    primary: 'tomberlin golf buggy',
+    secondary: ['tomberlin e merge ss', 'tomberlin e-merge golf cart'],
+    lead: `This Tomberlin golf buggy, the Tomberlin E-Merge SS, is a 4 seat golf cart with a 105Ah battery at {price} including GST.`,
     sec: [
       [`Tomberlin golf buggy and Tomberlin e-merge golf cart: the E-Merge SS`, `The Tomberlin E-Merge SS is the top Tomberlin we list. Buyers who search for a Tomberlin golf buggy or a Tomberlin e-merge golf cart usually mean this family: compare the [Revenge 4 seat](/products/tomberlin-e-merge-revenge-4-seat-golf-cart/) at $18,610.20.`],
       [`Comparing premium carts`, `See all [electric golf carts](/golf-carts/electric/) and our guide to [golf cart costs](/blog/how-much-does-a-golf-cart-cost-in-australia/).`],

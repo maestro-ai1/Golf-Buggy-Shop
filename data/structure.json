@@ -258,9 +258,9 @@
   "level": "sub-category",
   "parent": "Golf Buggies (Hub)",
   "primary": {
-   "keyword": "electric golf buggies for sale",
-   "volume": 210,
-   "kd": 20
+   "keyword": "electric golf buggy for sale",
+   "volume": 390,
+   "kd": 6
   },
   "secondary": [
    {
@@ -270,9 +270,9 @@
     "intent": "Commercial"
    },
    {
-    "keyword": "electric golf buggy for sale",
-    "volume": 390,
-    "kd": 27,
+    "keyword": "electric golf buggies for sale",
+    "volume": 210,
+    "kd": 20,
     "intent": "Transactional"
    },
    {
@@ -311,8 +311,8 @@
    "motorised golf cart",
    "electric golf buggies australia"
   ],
-  "h1": "Electric Golf Buggies For Sale",
-  "titleTag": "Electric Golf Buggies For Sale Australia",
+  "h1": "Electric Golf Buggy For Sale",
+  "titleTag": "Electric Golf Buggy For Sale Australia",
   "faqSeed": [
    {
     "q": "what is the best electric golf buggy australia",
@@ -489,16 +489,16 @@
   "level": "sub-category",
   "parent": "Golf Buggies (Hub)",
   "primary": {
-   "keyword": "golf caddy",
-   "volume": 1000,
-   "kd": 15
+   "keyword": "electric trolleys",
+   "volume": 320,
+   "kd": 6
   },
   "secondary": [
    {
-    "keyword": "electric trolleys",
-    "volume": 320,
-    "kd": 20,
-    "intent": "Commercial"
+    "keyword": "golf caddy",
+    "volume": 1000,
+    "kd": 15,
+    "intent": "Informational"
    },
    {
     "keyword": "electric golf trolley",
@@ -529,8 +529,8 @@
    "golf e caddy",
    "power caddy golf buggy"
   ],
-  "h1": "Golf Caddy",
-  "titleTag": "Golf Caddy Australia",
+  "h1": "Electric Trolleys",
+  "titleTag": "Electric Trolleys Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -613,16 +613,16 @@
   "level": "sub-category",
   "parent": "Golf Buggies (Hub)",
   "primary": {
-   "keyword": "3 wheel golf buggy",
+   "keyword": "three wheel golf buggy",
    "volume": 210,
-   "kd": 11
+   "kd": 15
   },
   "secondary": [
    {
-    "keyword": "three wheel golf buggy",
+    "keyword": "3 wheel golf buggy",
     "volume": 210,
-    "kd": 8,
-    "intent": "Informational, Transactional"
+    "kd": 11,
+    "intent": "Commercial"
    },
    {
     "keyword": "3 wheel golf cart",
@@ -660,8 +660,8 @@
    "3 wheeled golf buggy",
    "folding electric golf buggy"
   ],
-  "h1": "3 Wheel Golf Buggy",
-  "titleTag": "3 Wheel Golf Buggy Australia",
+  "h1": "Three Wheel Golf Buggy",
+  "titleTag": "Three Wheel Golf Buggy Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -730,11 +730,23 @@
   "level": "sub-category",
   "parent": "Golf Buggies (Hub)",
   "primary": {
-   "keyword": "golf carts for sale brisbane",
-   "volume": 210,
-   "kd": 10
+   "keyword": "golf carts for sale melbourne",
+   "volume": 260,
+   "kd": 6
   },
   "secondary": [
+   {
+    "keyword": "golf carts for sale perth",
+    "volume": 210,
+    "kd": 6,
+    "intent": "Transactional"
+   },
+   {
+    "keyword": "golf carts for sale brisbane",
+    "volume": 210,
+    "kd": 10,
+    "intent": "Transactional"
+   },
    {
     "keyword": "golf buggy for sale brisbane",
     "volume": 170,
@@ -752,22 +764,9 @@
     "volume": 90,
     "kd": 6,
     "intent": "Transactional"
-   },
-   {
-    "keyword": "golf carts for sale perth",
-    "volume": 210,
-    "kd": 6,
-    "intent": "Transactional"
-   },
-   {
-    "keyword": "golf buggy for sale nsw",
-    "volume": 90,
-    "kd": 6,
-    "intent": "Transactional"
    }
   ],
   "support": [
-   "golf carts for sale melbourne",
    "golf carts for sale qld",
    "golf cart batteries brisbane",
    "golf carts gold coast",
@@ -780,10 +779,11 @@
    "golf buggies for sale qld",
    "golf carts perth",
    "golf buggy for sale perth",
-   "golf buggies for sale nsw"
+   "golf buggies for sale nsw",
+   "golf buggy for sale nsw"
   ],
-  "h1": "Golf Carts For Sale Brisbane",
-  "titleTag": "Golf Carts For Sale Brisbane Australia",
+  "h1": "Golf Carts For Sale Melbourne",
+  "titleTag": "Golf Carts For Sale Melbourne Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -984,14 +984,14 @@
   "level": "sub-category",
   "parent": "Golf Carts (Hub)",
   "primary": {
-   "keyword": "used golf carts for sale",
-   "volume": 390,
-   "kd": 6
+   "keyword": "2nd hand golf carts for sale",
+   "volume": 480,
+   "kd": 7
   },
   "secondary": [
    {
-    "keyword": "2nd hand golf carts for sale",
-    "volume": 480,
+    "keyword": "used golf carts for sale",
+    "volume": 390,
     "kd": 6,
     "intent": "Transactional"
    },
@@ -1030,10 +1030,11 @@
    "golf buggy cart",
    "used golf buggies for sale",
    "golf cart buggy",
-   "2nd hand electric golf carts for sale"
+   "2nd hand electric golf carts for sale",
+   "used gas golf cart prices"
   ],
-  "h1": "Used Golf Carts For Sale",
-  "titleTag": "Used Golf Carts For Sale Australia",
+  "h1": "2nd Hand Golf Carts For Sale",
+  "titleTag": "2nd Hand Golf Carts For Sale Australia",
   "faqSeed": [
    {
     "q": "how much is a used golf cart",
@@ -1063,12 +1064,6 @@
    {
     "keyword": "petrol golf cart",
     "volume": 170,
-    "kd": 3,
-    "intent": "Commercial"
-   },
-   {
-    "keyword": "used gas golf cart prices",
-    "volume": 390,
     "kd": 3,
     "intent": "Commercial"
    },
@@ -1230,15 +1225,15 @@
   "level": "sub-category",
   "parent": "Golf Carts (Hub)",
   "primary": {
-   "keyword": "mini golf cart",
+   "keyword": "kids golf buggy",
    "volume": 110,
-   "kd": 6
+   "kd": 7
   },
   "secondary": [
    {
-    "keyword": "kids golf buggy",
+    "keyword": "mini golf cart",
     "volume": 110,
-    "kd": 11,
+    "kd": 6,
     "intent": "Commercial"
    },
    {
@@ -1269,8 +1264,8 @@
   "support": [
    "custom carts"
   ],
-  "h1": "Mini Golf Cart",
-  "titleTag": "Mini Golf Cart Australia",
+  "h1": "Kids Golf Buggy",
+  "titleTag": "Kids Golf Buggy Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -1281,9 +1276,9 @@
   "level": "category",
   "parent": "Home",
   "primary": {
-   "keyword": "cheap golf buggy",
-   "volume": 90,
-   "kd": 8
+   "keyword": "inexpensive golf carts for sale",
+   "volume": 70,
+   "kd": 6
   },
   "secondary": [
    {
@@ -1293,10 +1288,10 @@
     "intent": "Transactional"
    },
    {
-    "keyword": "inexpensive golf carts for sale",
-    "volume": 70,
-    "kd": 5,
-    "intent": "Transactional"
+    "keyword": "cheap golf buggy",
+    "volume": 90,
+    "kd": 8,
+    "intent": "Commercial"
    },
    {
     "keyword": "cheap golf buggy for sale",
@@ -1322,8 +1317,8 @@
    "golf buggy clearance",
    "cheap electric golf buggy"
   ],
-  "h1": "Cheap Golf Buggy",
-  "titleTag": "Cheap Golf Buggy Australia",
+  "h1": "Inexpensive Golf Carts For Sale",
+  "titleTag": "Inexpensive Golf Carts For Sale Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -1666,9 +1661,9 @@
   "level": "sub-category",
   "parent": "Off-Road & Recreational Buggies",
   "primary": {
-   "keyword": "electric utv",
-   "volume": 390,
-   "kd": 9
+   "keyword": "electric side by side",
+   "volume": 480,
+   "kd": 7
   },
   "secondary": [
    {
@@ -1696,9 +1691,9 @@
     "intent": "Informational, Commercial"
    },
    {
-    "keyword": "electric atv",
-    "volume": 480,
-    "kd": 16,
+    "keyword": "electric utv",
+    "volume": 390,
+    "kd": 9,
     "intent": "Informational, Commercial"
    }
   ],
@@ -1709,14 +1704,13 @@
    "atv australia for sale",
    "electric buggies",
    "kids utv",
-   "electric side by side",
    "electric atv australia",
    "electric side by side australia",
    "electric utv australia price",
    "best electric utv australia"
   ],
-  "h1": "Electric Utv",
-  "titleTag": "Electric Utv Australia",
+  "h1": "Electric Side By Side",
+  "titleTag": "Electric Side By Side Australia",
   "faqSeed": [
    {
     "q": "how do i choose between a petrol and electric buggy",
@@ -1733,8 +1727,8 @@
   "level": "sub-category",
   "parent": "Off-Road & Recreational Buggies",
   "primary": {
-   "keyword": "utv for sale",
-   "volume": 590,
+   "keyword": "side by side",
+   "volume": 2900,
    "kd": 14
   },
   "secondary": [
@@ -1751,10 +1745,10 @@
     "intent": "Informational / Commercial / Transactional"
    },
    {
-    "keyword": "side by side",
-    "volume": 2900,
-    "kd": 9,
-    "intent": "Commercial / Informational"
+    "keyword": "utv for sale",
+    "volume": 590,
+    "kd": 14,
+    "intent": "Transactional"
    },
    {
     "keyword": "small utility vehicle for sale",
@@ -1809,8 +1803,8 @@
    "side x side utv",
    "off road all terrain vehicles"
   ],
-  "h1": "Utv For Sale",
-  "titleTag": "Utv For Sale Australia",
+  "h1": "Side By Side",
+  "titleTag": "Side By Side Australia",
   "faqSeed": [
    {
     "q": "what is a utv",
@@ -1842,9 +1836,9 @@
   "level": "sub-category",
   "parent": "Off-Road & Recreational Buggies",
   "primary": {
-   "keyword": "50cc quad bike",
-   "volume": 480,
-   "kd": 17
+   "keyword": "quad bikes for sale",
+   "volume": 1600,
+   "kd": 28
   },
   "secondary": [
    {
@@ -1860,10 +1854,10 @@
     "intent": "Informational / Commercial / Transactional"
    },
    {
-    "keyword": "quad bikes for sale",
-    "volume": 1600,
-    "kd": 15,
-    "intent": "Transactional"
+    "keyword": "50cc quad bike",
+    "volume": 480,
+    "kd": 17,
+    "intent": "Informational, Commercial"
    },
    {
     "keyword": "electric quad bike",
@@ -1915,10 +1909,11 @@
    "kids quad bikes for sale",
    "125cc quad bike",
    "250cc atv quad bike",
-   "adult quad bikes"
+   "adult quad bikes",
+   "electric atv"
   ],
-  "h1": "50Cc Quad Bike",
-  "titleTag": "50Cc Quad Bike Australia",
+  "h1": "Quad Bikes For Sale",
+  "titleTag": "Quad Bikes For Sale Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -1929,9 +1924,9 @@
   "level": "category",
   "parent": "Home",
   "primary": {
-   "keyword": "quad bike spare parts nsw",
-   "volume": 140,
-   "kd": 6
+   "keyword": "golf cart parts",
+   "volume": 210,
+   "kd": 28
   },
   "secondary": [
    {
@@ -1953,9 +1948,9 @@
     "intent": "Commercial"
    },
    {
-    "keyword": "golf cart parts",
-    "volume": 210,
-    "kd": 7,
+    "keyword": "quad bike spare parts nsw",
+    "volume": 140,
+    "kd": 6,
     "intent": "Commercial"
    },
    {
@@ -1966,8 +1961,8 @@
    }
   ],
   "support": [],
-  "h1": "Quad Bike Spare Parts Nsw",
-  "titleTag": "Quad Bike Spare Parts Nsw Australia",
+  "h1": "Golf Cart Parts",
+  "titleTag": "Golf Cart Parts Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -2409,10 +2404,9 @@
   "level": "accessory",
   "parent": "Golf Buggy Parts",
   "primary": {
-   "keyword": "golf buggy tires",
-   "volume": 140,
-   "kd": 4,
-   "intent": "Commercial"
+   "keyword": "golf buggy wheels",
+   "volume": 320,
+   "kd": 6
   },
   "secondary": [
    {
@@ -2451,10 +2445,10 @@
    "golf cart wheels and tyres",
    "golf buggy tyres wheels",
    "golf buggy wheels and tyres",
-   "golf buggy wheels"
+   "golf buggy tires"
   ],
-  "h1": "Golf Buggy Tires & Wheels",
-  "titleTag": "Golf Buggy Tires Australia",
+  "h1": "Golf Buggy Wheels",
+  "titleTag": "Golf Buggy Wheels Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -2529,15 +2523,15 @@
   "level": "accessory-category",
   "parent": "Parts & Accessories",
   "primary": {
-   "keyword": "golf buggy repairs near me",
-   "volume": 70,
-   "kd": 4
+   "keyword": "golf cart repair near me",
+   "volume": 90,
+   "kd": 3
   },
   "secondary": [
    {
-    "keyword": "golf cart repair near me",
-    "volume": 90,
-    "kd": 5,
+    "keyword": "golf buggy repairs near me",
+    "volume": 70,
+    "kd": 4,
     "intent": "Transactional"
    },
    {
@@ -2565,8 +2559,8 @@
    "electric golf buggy repairs near me",
    "golf car parts and repairs"
   ],
-  "h1": "Golf Buggy Repairs Near Me",
-  "titleTag": "Golf Buggy Repairs Near Me Australia",
+  "h1": "Golf Cart Repair Near Me",
+  "titleTag": "Golf Cart Repair Near Me Australia",
   "faqSeed": [
    {
     "q": "how to fix my golf buggy",
@@ -2583,8 +2577,8 @@
   "level": "accessory-category",
   "parent": "Parts & Accessories",
   "primary": {
-   "keyword": "quad bike spare parts for sale",
-   "volume": 110,
+   "keyword": "quad atv accessory",
+   "volume": 260,
    "kd": 5
   },
   "secondary": [
@@ -2595,10 +2589,10 @@
     "intent": "Commercial"
    },
    {
-    "keyword": "quad atv accessory",
-    "volume": 260,
+    "keyword": "quad bike spare parts for sale",
+    "volume": 110,
     "kd": 5,
-    "intent": "Commercial"
+    "intent": "Transactional"
    },
    {
     "keyword": "go kart replacement parts",
@@ -2633,8 +2627,8 @@
    "chinese quad bike spares",
    "buggy parts"
   ],
-  "h1": "Quad Bike Spare Parts For Sale",
-  "titleTag": "Quad Bike Spare Parts For Sale Australia",
+  "h1": "Quad ATV Accessory",
+  "titleTag": "Quad ATV Accessory Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -2754,9 +2748,9 @@
   "level": "accessory",
   "parent": "Off-Road Parts & Upgrades",
   "primary": {
-   "keyword": "4 wheel buggy",
-   "volume": 140,
-   "kd": 8
+   "keyword": "buggy wheels",
+   "volume": 70,
+   "kd": 6
   },
   "secondary": [
    {
@@ -2766,10 +2760,10 @@
     "intent": "Informational"
    },
    {
-    "keyword": "wheel buggy",
-    "volume": 110,
-    "kd": 10,
-    "intent": "Commercial"
+    "keyword": "4 wheel buggy",
+    "volume": 140,
+    "kd": 8,
+    "intent": "Informational"
    },
    {
     "keyword": "buggy wheels",
@@ -2805,8 +2799,8 @@
    "4 seater electric buggy",
    "dune buggy 4 seater"
   ],
-  "h1": "4 Wheel Buggy",
-  "titleTag": "4 Wheel Buggy Australia",
+  "h1": "Buggy Wheels",
+  "titleTag": "Buggy Wheels Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -2869,10 +2863,9 @@
   "level": "accessory",
   "parent": "Off-Road Parts & Upgrades",
   "primary": {
-   "keyword": "atv winch",
-   "volume": 390,
-   "kd": 7,
-   "intent": "Commercial"
+   "keyword": "buggy winch",
+   "volume": 20,
+   "kd": 0
   },
   "secondary": [
    {
@@ -2885,8 +2878,8 @@
   "support": [
    "buggy winch"
   ],
-  "h1": "ATV Winch & Tow Bars",
-  "titleTag": "ATV Winch Australia",
+  "h1": "Buggy Winch",
+  "titleTag": "Buggy Winch Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -2942,16 +2935,16 @@
   "level": "brand",
   "parent": "Brands (Hub)",
   "primary": {
-   "keyword": "polaris side by side",
-   "volume": 390,
-   "kd": 20
+   "keyword": "polaris buggy",
+   "volume": 2400,
+   "kd": 10
   },
   "secondary": [
    {
-    "keyword": "polaris buggy",
-    "volume": 2400,
-    "kd": 21,
-    "intent": "Commercial"
+    "keyword": "polaris side by side",
+    "volume": 390,
+    "kd": 20,
+    "intent": "Informational, Transactional"
    },
    {
     "keyword": "polaris rzr",
@@ -2981,10 +2974,11 @@
   "support": [
    "polaris buggy for sale",
    "polaris razor",
-   "polaris sxs"
+   "polaris sxs",
+   "polaris 1000 buggy"
   ],
-  "h1": "Polaris Side By Side",
-  "titleTag": "Polaris Side By Side Australia",
+  "h1": "Polaris Buggy",
+  "titleTag": "Polaris Buggy Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -3055,15 +3049,15 @@
   "level": "brand",
   "parent": "Brands (Hub)",
   "primary": {
-   "keyword": "can am dune buggy",
-   "volume": 590,
-   "kd": 16
+   "keyword": "can am buggy",
+   "volume": 1900,
+   "kd": 28
   },
   "secondary": [
    {
-    "keyword": "can am buggy",
-    "volume": 1900,
-    "kd": 28,
+    "keyword": "can am dune buggy",
+    "volume": 590,
+    "kd": 16,
     "intent": "Informational, Transactional"
    },
    {
@@ -3101,10 +3095,11 @@
    "kids can am buggy",
    "can am quad bikes",
    "canam atv",
-   "can am buggy price"
+   "can am buggy price",
+   "can am maverick utv ride on 4wd 24v"
   ],
-  "h1": "Can Am Dune Buggy",
-  "titleTag": "Can Am Dune Buggy Australia",
+  "h1": "Can Am Buggy",
+  "titleTag": "Can Am Buggy Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -3176,9 +3171,9 @@
   "level": "brand",
   "parent": "Brands (Hub)",
   "primary": {
-   "keyword": "motocaddy australia",
-   "volume": 390,
-   "kd": 6
+   "keyword": "motocaddy",
+   "volume": 590,
+   "kd": 16
   },
   "secondary": [
    {
@@ -3194,10 +3189,10 @@
     "intent": "Informational, Transactional"
    },
    {
-    "keyword": "motocaddy",
-    "volume": 590,
-    "kd": 26,
-    "intent": "Navigational"
+    "keyword": "motocaddy australia",
+    "volume": 390,
+    "kd": 6,
+    "intent": "Transactional"
    },
    {
     "keyword": "motocaddy electric golf buggy",
@@ -3213,7 +3208,7 @@
    }
   ],
   "support": [],
-  "h1": "Motocaddy Australia",
+  "h1": "Motocaddy",
   "titleTag": "Motocaddy Australia",
   "faqSeed": [],
   "lowDemand": false
@@ -3313,12 +3308,6 @@
     "intent": "Commercial"
    },
    {
-    "keyword": "rovic rv1s 2.0",
-    "volume": 70,
-    "kd": 12,
-    "intent": "Informational, Transactional"
-   },
-   {
     "keyword": "rovic golf cart",
     "volume": 210,
     "kd": 7,
@@ -3340,15 +3329,15 @@
   "level": "brand",
   "parent": "Brands (Hub)",
   "primary": {
-   "keyword": "trailmaster dune buggy",
-   "volume": 210,
-   "kd": 6
+   "keyword": "trailmaster buggy",
+   "volume": 260,
+   "kd": 5
   },
   "secondary": [
    {
-    "keyword": "trailmaster buggy",
-    "volume": 260,
-    "kd": 4,
+    "keyword": "trailmaster dune buggy",
+    "volume": 210,
+    "kd": 6,
     "intent": "Commercial"
    },
    {
@@ -3387,8 +3376,8 @@
    "trailmaster cheetah go karts for sale",
    "trailmaster cheetah off road carts"
   ],
-  "h1": "Trailmaster Dune Buggy",
-  "titleTag": "Trailmaster Dune Buggy Australia",
+  "h1": "Trailmaster Buggy",
+  "titleTag": "Trailmaster Buggy Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -3506,9 +3495,9 @@
   "level": "brand",
   "parent": "Brands (Hub)",
   "primary": {
-   "keyword": "kubota buggy",
-   "volume": 260,
-   "kd": 19
+   "keyword": "kubota rtv",
+   "volume": 390,
+   "kd": 18
   },
   "secondary": [
    {
@@ -3518,9 +3507,9 @@
     "intent": "Transactional"
    },
    {
-    "keyword": "kubota rtv",
-    "volume": 390,
-    "kd": 18,
+    "keyword": "kubota buggy",
+    "volume": 260,
+    "kd": 19,
     "intent": "Transactional"
    },
    {
@@ -3550,8 +3539,8 @@
    "kubota side by side prices",
    "kubota rtv prices"
   ],
-  "h1": "Kubota Buggy",
-  "titleTag": "Kubota Buggy Australia",
+  "h1": "Kubota RTV",
+  "titleTag": "Kubota RTV Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -3599,9 +3588,9 @@
   "level": "brand",
   "parent": "Brands (Hub)",
   "primary": {
-   "keyword": "ezgo golf buggies",
-   "volume": 140,
-   "kd": 6
+   "keyword": "ezgo golf cart",
+   "volume": 390,
+   "kd": 22
   },
   "secondary": [
    {
@@ -3623,10 +3612,10 @@
     "intent": "Transactional"
    },
    {
-    "keyword": "ezgo golf cart",
-    "volume": 390,
-    "kd": 22,
-    "intent": "Commercial"
+    "keyword": "ezgo golf buggies",
+    "volume": 140,
+    "kd": 6,
+    "intent": "Navigational, Commercial"
    },
    {
     "keyword": "ezgo golf cart parts",
@@ -3641,8 +3630,8 @@
    "ezgo golf cart for sale",
    "ezgo golf carts australia"
   ],
-  "h1": "Ezgo Golf Buggies",
-  "titleTag": "Ezgo Golf Buggies Australia",
+  "h1": "EZGO Golf Cart",
+  "titleTag": "EZGO Golf Cart Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -3663,12 +3652,6 @@
     "volume": 40,
     "kd": 0,
     "intent": ""
-   },
-   {
-    "keyword": "caddytek push cart",
-    "volume": 50,
-    "kd": 8,
-    "intent": "Informational, Transactional"
    }
   ],
   "support": [
@@ -3720,9 +3703,9 @@
   "level": "brand",
   "parent": "Brands (Hub)",
   "primary": {
-   "keyword": "cf moto buggy for sale",
-   "volume": 90,
-   "kd": 15
+   "keyword": "cfmoto side by side",
+   "volume": 390,
+   "kd": 27
   },
   "secondary": [
    {
@@ -3744,18 +3727,18 @@
     "intent": ""
    },
    {
-    "keyword": "cfmoto side by side",
-    "volume": 390,
-    "kd": 8,
-    "intent": "Informational / Transactional"
+    "keyword": "cf moto buggy for sale",
+    "volume": 90,
+    "kd": 15,
+    "intent": "Transactional"
    }
   ],
   "support": [
    "cf moto buggy for sale used",
    "cf moto utv"
   ],
-  "h1": "Cf Moto Buggy For Sale",
-  "titleTag": "Cf Moto Buggy For Sale Australia",
+  "h1": "CFMOTO Side By Side",
+  "titleTag": "CFMOTO Side By Side Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -3766,16 +3749,16 @@
   "level": "brand",
   "parent": "Brands (Hub)",
   "primary": {
-   "keyword": "segway buggy",
-   "volume": 140,
-   "kd": 16
+   "keyword": "segway go kart",
+   "volume": 720,
+   "kd": 9
   },
   "secondary": [
    {
-    "keyword": "segway go kart",
-    "volume": 720,
-    "kd": 14,
-    "intent": "Transactional"
+    "keyword": "segway buggy",
+    "volume": 140,
+    "kd": 16,
+    "intent": "Navigational, Transactional"
    },
    {
     "keyword": "segway gokart pro 2",
@@ -3803,8 +3786,8 @@
    }
   ],
   "support": [],
-  "h1": "Segway Buggy",
-  "titleTag": "Segway Buggy Australia",
+  "h1": "Segway Go Kart",
+  "titleTag": "Segway Go Kart Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -3887,9 +3870,9 @@
   "level": "brand",
   "parent": "Brands (Hub)",
   "primary": {
-   "keyword": "honda 1000 buggy",
-   "volume": 90,
-   "kd": 5
+   "keyword": "honda side by side",
+   "volume": 480,
+   "kd": 13
   },
   "secondary": [
    {
@@ -3905,10 +3888,10 @@
     "intent": "Informational"
    },
    {
-    "keyword": "honda side by side",
-    "volume": 480,
-    "kd": 10,
-    "intent": "Transactional / Navigational / Informational"
+    "keyword": "honda 1000 buggy",
+    "volume": 90,
+    "kd": 5,
+    "intent": "Informational, Transactional"
    },
    {
     "keyword": "honda pioneer",
@@ -3944,8 +3927,8 @@
    "honda side by side australia",
    "honda side by side for sale"
   ],
-  "h1": "Honda 1000 Buggy",
-  "titleTag": "Honda 1000 Buggy Australia",
+  "h1": "Honda Side By Side",
+  "titleTag": "Honda Side By Side Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -3956,9 +3939,9 @@
   "level": "brand",
   "parent": "Brands (Hub)",
   "primary": {
-   "keyword": "powakaddy golf buggy",
-   "volume": 70,
-   "kd": 12
+   "keyword": "powakaddy",
+   "volume": 260,
+   "kd": 22
   },
   "secondary": [
    {
@@ -3968,10 +3951,10 @@
     "intent": "Informational, Transactional"
    },
    {
-    "keyword": "powakaddy",
-    "volume": 260,
-    "kd": 22,
-    "intent": "Navigational / Transactional"
+    "keyword": "powakaddy golf buggy",
+    "volume": 70,
+    "kd": 12,
+    "intent": "Navigational, Commercial"
    },
    {
     "keyword": "powakaddy australia",
@@ -3993,57 +3976,8 @@
    }
   ],
   "support": [],
-  "h1": "Powakaddy Golf Buggy",
-  "titleTag": "Powakaddy Golf Buggy Australia",
-  "faqSeed": [],
-  "lowDemand": false
- },
- {
-  "name": "Polaris 1000",
-  "url": "/products/polaris-1000/",
-  "slug": "products/polaris-1000",
-  "level": "product",
-  "parent": "Polaris Buggies",
-  "primary": {
-   "keyword": "polaris 1000 buggy",
-   "volume": 50,
-   "kd": 19
-  },
-  "secondary": [
-   {
-    "keyword": "polaris rzr 1000 turbo",
-    "volume": 140,
-    "kd": 7,
-    "intent": "Informational, Commercial"
-   },
-   {
-    "keyword": "polaris razor rzr 1000",
-    "volume": 110,
-    "kd": 15,
-    "intent": "Commercial"
-   }
-  ],
-  "support": [],
-  "h1": "Polaris 1000 Buggy",
-  "titleTag": "Polaris 1000 Buggy Australia",
-  "faqSeed": [],
-  "lowDemand": false
- },
- {
-  "name": "Can-Am 4wd",
-  "url": "/products/can-am-4wd/",
-  "slug": "products/can-am-4wd",
-  "level": "product",
-  "parent": "Can-Am Buggies",
-  "primary": {
-   "keyword": "can am maverick utv ride on 4wd 24v",
-   "volume": 50,
-   "kd": 4
-  },
-  "secondary": [],
-  "support": [],
-  "h1": "Can Am Maverick Utv Ride On 4Wd 24V",
-  "titleTag": "Can Am Maverick Utv Ride On 4Wd 24V Australia",
+  "h1": "Powakaddy",
+  "titleTag": "Powakaddy Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -4054,16 +3988,16 @@
   "level": "brand",
   "parent": "Brands (Hub)",
   "primary": {
-   "keyword": "ecar golf cart",
-   "volume": 110,
-   "kd": 14
+   "keyword": "e car golf buggy",
+   "volume": 170,
+   "kd": 3
   },
   "secondary": [
    {
-    "keyword": "e car golf buggy",
-    "volume": 170,
-    "kd": 20,
-    "intent": "Navigational, Commercial"
+    "keyword": "ecar golf cart",
+    "volume": 110,
+    "kd": 14,
+    "intent": "Transactional"
    },
    {
     "keyword": "ecar golf buggy",
@@ -4093,8 +4027,8 @@
   "support": [
    "buggy the car"
   ],
-  "h1": "Ecar Golf Cart",
-  "titleTag": "Ecar Golf Cart Australia",
+  "h1": "E Car Golf Buggy",
+  "titleTag": "E Car Golf Buggy Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -4105,17 +4039,16 @@
   "level": "brand",
   "parent": "Brands (Hub)",
   "primary": {
-   "keyword": "kawasaki teryx",
-   "volume": 70,
-   "kd": 21,
-   "intent": "Informational, Transactional"
+   "keyword": "kawasaki side by side",
+   "volume": 170,
+   "kd": 15
   },
   "secondary": [
    {
-    "keyword": "kawasaki side by side",
-    "volume": 170,
-    "kd": 15,
-    "intent": "Informational / Commercial"
+    "keyword": "kawasaki teryx",
+    "volume": 70,
+    "kd": 21,
+    "intent": "Informational"
    },
    {
     "keyword": "kawasaki buggy for sale",
@@ -4142,8 +4075,8 @@
    "kawasaki buggies",
    "kawasaki buggy 2 seater"
   ],
-  "h1": "Kawasaki Teryx Buggy",
-  "titleTag": "Kawasaki Teryx Australia",
+  "h1": "Kawasaki Side By Side",
+  "titleTag": "Kawasaki Side By Side Australia",
   "faqSeed": [],
   "lowDemand": false
  },
@@ -4258,16 +4191,16 @@
   "level": "brand",
   "parent": "Brands (Hub)",
   "primary": {
-   "keyword": "golf buggy smoothy",
-   "volume": 170,
-   "kd": 8
+   "keyword": "smoothy golf buggy",
+   "volume": 210,
+   "kd": 10
   },
   "secondary": [
    {
-    "keyword": "smoothy golf buggy",
-    "volume": 210,
-    "kd": 10,
-    "intent": "Informational"
+    "keyword": "golf buggy smoothy",
+    "volume": 170,
+    "kd": 8,
+    "intent": "Informational, Commercial"
    }
   ],
   "support": [
@@ -4278,8 +4211,8 @@
    "smoothy golf buggy accessories",
    "smoothy golf buggy parts"
   ],
-  "h1": "Golf Buggy Smoothy",
-  "titleTag": "Golf Buggy Smoothy Australia",
+  "h1": "Smoothy Golf Buggy",
+  "titleTag": "Smoothy Golf Buggy Australia",
   "faqSeed": [],
   "lowDemand": false
  },

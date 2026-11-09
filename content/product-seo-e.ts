@@ -195,8 +195,8 @@ export const PART_E: Record<string, ProductSEO> = {
     ],
   },
   'gmx-drift-200cc-electric-start-go-kart': {
-    primary: 'drift go kart', secondary: ['drift karts', 'drift cart', 'drifting cart'],
-    lead: `A drift go kart with a 196cc engine, electric start and a 25 km/h top speed: the GMX Drift 200cc is {price} including GST.`,
+    primary: 'drift cart', secondary: ['drift go kart', 'drift karts', 'drifting cart'],
+    lead: `A drift cart, or drift go kart, with a 196cc engine, electric start and a 25 km/h top speed: the GMX Drift 200cc is {price} including GST.`,
     sec: [
       [`GMX drift karts and drift cart options`, `Drift karts like this GMX run on drift wheels so the rear slides. People search drift cart or drifting cart for the same machine. It weighs 110 kg. Compare the [electric Crazy Kart Drifta](/products/crazy-kart-electric-drift-kart-drifta/) at $1,861 and see all ${GK}.`],
       [`Safety and use`, `Drift karts are for closed, safe areas: wear a helmet. See ${SAFE} and our guide to [electric go karts](/blog/go-kart-electric-go-karts/).`],

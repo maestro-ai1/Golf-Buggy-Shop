@@ -135,7 +135,7 @@ export const COPY: Record<string, PageCopy> = {
     ],
   },
   '/golf-buggies/for-sale-locations/': {
-    intro: ['Looking for golf carts for sale Brisbane or elsewhere? We deliver golf buggies and golf carts across Australia, including Brisbane, Sydney, Melbourne, Perth, Adelaide and the Gold Coast. This page explains how delivery works wherever you live and how to buy a golf cart for sale near you.', 'Not sure about freight to your suburb or regional town? Message us your postcode and we will confirm the cost before you order.'],
+    intro: ['Looking for golf carts for sale Melbourne, Brisbane or elsewhere? We deliver golf buggies and golf carts across Australia, including Brisbane, Sydney, Melbourne, Perth, Adelaide and the Gold Coast. This page explains how delivery works wherever you live and how to buy a golf cart for sale near you.', 'Not sure about freight to your suburb or regional town? Message us your postcode and we will confirm the cost before you order.'],
     guides: [{ h2: 'Delivery across Australia', p: ['Orders over $1,000 ship free to major metro and depot corridors. Below that, a flat $95 freight fee applies. Regional and remote deliveries may need a quote.', 'Our depots and carriers cover New South Wales, Queensland, Victoria, South Australia, Western Australia, Tasmania and the ACT.'] }],
     faqs: [
       ['Do you sell golf carts for sale in Brisbane?', 'Yes. We deliver to Brisbane and the rest of Queensland.'],
@@ -174,7 +174,7 @@ export const COPY: Record<string, PageCopy> = {
     ],
   },
   '/golf-carts/used/': {
-    intro: ['Looking for used golf carts for sale or a second-hand golf cart? Used carts can save thousands, but each one needs a proper check of batteries, electrics and chassis. Tell us what you are looking for and we will help you source and inspect it.', 'We list verified new stock online. For used and second-hand carts, contact us with your budget, seat count and preferred brand.'],
+    intro: ['Looking for 2nd hand golf carts for sale, used golf carts or a second-hand golf cart? Used carts can save thousands, but each one needs a proper check of batteries, electrics and chassis. Tell us what you are looking for and we will help you source and inspect it.', 'We list verified new stock online. For used and second-hand carts, contact us with your budget, seat count and preferred brand.'],
     guides: [{ h2: 'What to check when buying a used golf cart', p: ['Check battery age and test range, because replacing batteries is the biggest cost. Test the controller, brakes, steering and tyres. Ask for service records and the serial number.', 'A lithium conversion can give an older cart new life. See our lithium battery packages.'] }],
     faqs: [
       ['How much is a used golf cart?', 'Prices vary with age, brand and battery condition. Ask us for current options.'],
@@ -220,7 +220,7 @@ export const COPY: Record<string, PageCopy> = {
     ],
   },
   '/golf-carts/mini-junior/': {
-    intro: ['A mini golf cart or junior golf cart is a smaller vehicle for young golfers and compact uses. If you are after a kids golf cart or junior golf buggy, contact us and we will help match a safe, age-appropriate option.', 'For children we recommend supervised use, helmets and age-appropriate speed.'],
+    intro: ['A kids golf buggy, mini golf cart or junior golf cart is a smaller vehicle for young golfers and compact uses. If you are after a kids golf cart or junior golf buggy, contact us and we will help match a safe, age-appropriate option.', 'For children we recommend supervised use, helmets and age-appropriate speed.'],
     guides: [{ h2: 'Choosing for children', p: ['Check age and weight guidance, speed limiters and whether the vehicle has parental controls. Always supervise children and follow the manufacturer guidance.', 'Our kids buggies range includes youth quads and buggies from respected brands.'] }],
     faqs: [
       ['Do you sell kids golf carts?', 'We can source junior options on request. See our kids buggies for youth off-road vehicles.'],

@@ -358,8 +358,8 @@ export const PART_D: Record<string, ProductSEO> = {
     ],
   },
   'powerbug-umbrella-holder': {
-    primary: 'powerbug umbrella holder', secondary: ['umbrella holder for golf buggy'],
-    lead: `The PowerBug umbrella holder is {price} including GST, an umbrella holder for golf buggy handles.`,
+    primary: 'umbrella holder for golf buggy', secondary: ['powerbug umbrella holder'],
+    lead: `An umbrella holder for golf buggy handles: the PowerBug umbrella holder is {price} including GST.`,
     sec: [
       [`Umbrella holder for golf buggy handles: the PowerBug holder`, `The PowerBug umbrella holder is made for PowerBug buggies such as the [PowerBug NX](/products/powerbug-nx-lithium-electric-golf-buggy/). An umbrella holder for golf buggy use keeps your hands free in the rain.`],
       [`More holders`, `See ${HOLD}, the [Stinger and PowerBug page](/brands/stinger/) and ${ACC}.`],

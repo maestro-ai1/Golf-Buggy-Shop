@@ -1,0 +1,5 @@
+﻿Keyword,Page,Decision,Reason
+polaris 1000 buggy,/brands/polaris/,added as support,"moved from the /products/polaris-1000/ stub, which redirects and is never served"
+polaris rzr 1000 turbo,/products/polaris-1000/,released,we do not stock the RZR 1000 Turbo
+polaris razor rzr 1000,/products/polaris-1000/,released,misspelling of RZR; RZR spellings are covered on the product pages
+can am maverick utv ride on 4wd 24v,/brands/can-am/,added as support,"moved from the /products/can-am-4wd/ stub, which redirects and is never served"

@@ -165,8 +165,8 @@ export const PART_F: Record<string, ProductSEO> = {
     ],
   },
   'buggy-bag-the-grocery-bag': {
-    primary: 'golf bag accessories', secondary: [],
-    lead: `Golf bag accessories can include storage for the buggy: the Buggy Bag, The Grocery Bag, is {price} including GST.`,
+    primary: 'buggy bag', secondary: [],
+    lead: `This buggy bag, The Grocery Bag, adds extra storage and carry for your buggy and gear at {price} including GST.`,
     sec: [
       [`The Grocery Bag for your buggy`, `The listing describes extra storage and carry for your buggy and gear. See ${BAGS} and ${ACC}.`],
       [`Check the fit`, `Check your buggy model, and message us if unsure.`],

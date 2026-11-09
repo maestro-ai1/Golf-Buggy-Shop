@@ -397,7 +397,7 @@ export const EXTRA_POSTS: BlogPost[] = [
   },
   {
     slug: 'kids-ride-on-buggy',
-    title: 'Kids Ride-On Buggies: Choosing a Safe, Fun First Buggy',
+    title: 'Kids Ride-On Buggy: Choosing a Safe, Fun First Buggy',
     seoTitle: 'Kids Ride-On Buggy Guide Australia | Buggies For Sale',
     excerpt: 'How to choose a kids ride-on buggy: age, voltage, speed limits, safety features and the difference between electric toys and petrol youth buggies.',
     category: 'Buying guides', date: '2026-10-18', readTime: '8 min read', targetKeyword: 'kids ride on buggy',

@@ -9,6 +9,7 @@ import { Breadcrumbs, Faq, JsonLd, SectionHead } from '@/components/Bits';
 import { PRODUCTS, SHOP, breadcrumbsFor, money, pageByUrl, productBySlug } from '@/config/site';
 import { Markdown } from '@/lib/md';
 import { linksForProduct } from '@/lib/links';
+import { relatedProducts } from '@/lib/product-related';
 import { faqSchema, meta, productSchema } from '@/lib/seo';
 
 export function generateStaticParams() { return PRODUCTS.map((p) => ({ slug: p.slug })); }
@@ -39,8 +40,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   if (!p) notFound();
   const page = pageByUrl(p.category);
   const trail = [...(page ? breadcrumbsFor(page) : []), { name: p.name, url: `/products/${p.slug}/` }];
-  const related = PRODUCTS.filter((x) => x.slug !== p.slug && x.categories[0] === p.categories[0]).slice(0, 4);
-  const more = related.length < 4 ? [...related, ...PRODUCTS.filter((x) => x.slug !== p.slug && x.group === p.group && !related.includes(x))].slice(0, 4) : related;
+  const more = relatedProducts(p.slug);
   const specs = Object.entries(p.specs);
   const kwLinks = linksForProduct(p.category, p.brandPage ? `/brands/${p.brandPage}/` : undefined);
 

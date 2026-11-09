@@ -7,6 +7,7 @@ import { BLOG_POSTS, PRODUCTS, SITE } from '@/config/site';
 import { Markdown, toc } from '@/lib/md';
 import { abs, faqSchema, meta } from '@/lib/seo';
 import { relatedGuides } from '@/lib/blog-related';
+import { furtherReading } from '@/lib/blog-authority';
 
 export function generateStaticParams() { return BLOG_POSTS.map((b) => ({ slug: b.slug })); }
 
@@ -33,6 +34,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   if (!b) notFound();
   const heads = toc(b.content);
   const related = relatedGuides(b.slug);
+  const reading = furtherReading(b);
   const picks = b.products?.length ? b.products.map((s) => PRODUCTS.find((p) => p.slug === s)).filter(Boolean).slice(0, 4) as typeof PRODUCTS : PRODUCTS.filter((p) => (PICKS[b.slug] || /MGI ZIP/).test(p.name)).slice(0, 4);
   const words = b.content.join(' ').split(/\s+/).length;
   const article = { '@context': 'https://schema.org', '@type': 'Article', headline: b.title, description: b.excerpt, image: abs(b.image), datePublished: b.date, dateModified: b.date, wordCount: words, inLanguage: 'en-AU', author: { '@type': 'Organization', name: SITE.name, url: SITE.url }, publisher: { '@id': abs('/#org') }, mainEntityOfPage: abs(`/blog/${b.slug}/`) };
@@ -61,6 +63,12 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
           </aside>
         </div></div>
       </article>
+      {reading.length > 0 && (
+        <section className="section pt-0"><div className="container-x"><div className="mx-auto max-w-[69rem]">
+          <h2 className="font-display text-2xl font-extrabold">Further reading</h2>
+          <ul className="mt-3 list-disc space-y-1.5 pl-5">{reading.map((r) => <li key={r.url}><a href={r.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-fw-700 underline hover:text-fw-900">{r.label}</a></li>)}</ul>
+        </div></div></section>
+      )}
       {b.faqs && <Faq items={b.faqs} title="Frequently asked questions" />}
       {related.length > 0 && (
         <section className="section pt-0"><div className="container-x"><div className="mx-auto max-w-[69rem]">

@@ -4,7 +4,12 @@ import { BRAND, CONTACT, SHOP, SITE, type Product, type SitePage } from '@/confi
 export const abs = (path: string) => SITE.url + (path.startsWith('/') ? path : '/' + path);
 export const clampDesc = (s: string, min = 110, max = 158) => {
   let t = s.replace(/\s+/g, ' ').trim();
-  if (t.length > max) { t = t.slice(0, max - 1); t = t.slice(0, t.lastIndexOf(' ')).replace(/[,;:\-–]$/, '') + '.'; }
+  if (t.length > max) {
+    t = t.slice(0, max - 1); t = t.slice(0, t.lastIndexOf(' '));
+    // never end on a dangling connector such as "layouts for."
+    while (/\s(for|and|with|the|of|to|a|an|in|on|or|at|by|from|is|are|that|your|our|from)$/i.test(t)) t = t.slice(0, t.lastIndexOf(' '));
+    t = t.replace(/[,;:\-–]$/, '') + '.';
+  }
   return t.length >= min ? t : t;
 };
 

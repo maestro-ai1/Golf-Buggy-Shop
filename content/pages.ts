@@ -26,7 +26,7 @@ export const COPY: Record<string, PageCopy> = {
   },
   '/golf-buggies/for-sale/': {
     intro: [
-      'Shop golf buggies for sale from MGI, Stinger, PowerBug, QOD, Concourse and more, with push, electric, remote and ride-on options in one place. Each listing shows a clear price, key specifications and delivery details.',
+      'Every golf buggy for sale here comes from MGI, Stinger, PowerBug, QOD, Concourse and more, with push, electric, remote and ride-on options in one place. Each listing shows a clear price, key specifications and delivery details.',
       'Compare specifications, prices and delivery on every model, so you can buy a new golf buggy online with confidence. Sort by price or category to find your match.',
     ],
     guides: [
@@ -102,7 +102,7 @@ export const COPY: Record<string, PageCopy> = {
     ],
   },
   '/golf-buggies/ride-on-seated/': {
-    intro: ['A ride-on golf buggy with a seat is for golfers who prefer to sit between shots or who need a little extra support. Our ride-on and seated golf buggies carry both you and your clubs with strong motors and long-range batteries.', 'These buggies suit larger courses, hilly terrain and golfers with limited mobility.'],
+    intro: ['Looking for a golf buggy with seat? Our ride-on and seated golf buggies are for golfers who prefer to sit between shots or who need a little extra support, and they carry both you and your clubs with strong motors and long-range batteries.', 'These buggies suit larger courses, hilly terrain and golfers with limited mobility.'],
     guides: [{ h2: 'Seated buggy or golf cart?', p: ['A ride-on buggy is smaller and cheaper than a full golf cart and easier to store. A golf cart seats two to four and suits clubs, resorts and estates.', 'Compare range, load capacity and tyre size before you decide.'] }],
     faqs: [
       ['What is a ride-on golf buggy?', 'A ride-on golf buggy is a compact electric buggy you sit on, often with room for your clubs.'],
@@ -135,7 +135,7 @@ export const COPY: Record<string, PageCopy> = {
     ],
   },
   '/golf-buggies/for-sale-locations/': {
-    intro: ['We deliver golf buggies and golf carts across Australia, including Brisbane, Sydney, Melbourne, Perth, Adelaide and the Gold Coast. This page explains how delivery works wherever you live and how to buy a golf cart for sale near you.', 'Not sure about freight to your suburb or regional town? Message us your postcode and we will confirm the cost before you order.'],
+    intro: ['Looking for golf carts for sale Brisbane or elsewhere? We deliver golf buggies and golf carts across Australia, including Brisbane, Sydney, Melbourne, Perth, Adelaide and the Gold Coast. This page explains how delivery works wherever you live and how to buy a golf cart for sale near you.', 'Not sure about freight to your suburb or regional town? Message us your postcode and we will confirm the cost before you order.'],
     guides: [{ h2: 'Delivery across Australia', p: ['Orders over $1,000 ship free to major metro and depot corridors. Below that, a flat $95 freight fee applies. Regional and remote deliveries may need a quote.', 'Our depots and carriers cover New South Wales, Queensland, Victoria, South Australia, Western Australia, Tasmania and the ACT.'] }],
     faqs: [
       ['Do you sell golf carts for sale in Brisbane?', 'Yes. We deliver to Brisbane and the rest of Queensland.'],
@@ -232,7 +232,7 @@ export const COPY: Record<string, PageCopy> = {
     cta: 'Ask about junior golf carts',
   },
   '/clearance/': {
-    intro: ['Looking for cheap golf buggies and cheap golf carts? Our clearance page highlights our lowest-priced buggies, push buggies and accessories so you can save without compromising on quality.', 'Our regular prices are already competitive, and this page collects the best entry-level options.'],
+    intro: ['Looking for a cheap golf buggy or cheap golf carts? Our clearance page highlights our lowest-priced buggies, push buggies and accessories so you can save without compromising on quality.', 'Our regular prices are already competitive, and this page collects the best entry-level options.'],
     guides: [{ h2: 'Getting the best price', p: ['Start with push buggies if you want the lowest cost. Add accessories like umbrella holders and phone holders to reach free delivery. Crypto payments (Bitcoin or USDT) receive an extra 10% discount at checkout.', 'Auction or marketplace listings can look cheap but may not include warranty or support.'] }],
     faqs: [
       ['Where can I find cheap golf buggies?', 'Browse the lowest-priced buggies and push buggies on this page.'],
@@ -243,7 +243,7 @@ export const COPY: Record<string, PageCopy> = {
     ],
   },
   '/off-road-buggies/': {
-    intro: ['Explore off road buggies for farms, trails and weekend adventures. Our range includes Trailmaster Cheetah dune buggies, Kayo and Hammerhead side by side buggies, kids buggies, go karts and quads from respected Australian suppliers.', 'Every model includes GST and is delivered Australia-wide. Compare engines, seating and age guidance before you buy.'],
+    intro: ['Explore an off road buggy for farms, trails and weekend adventures. Our range includes Trailmaster Cheetah dune buggies, Kayo and Hammerhead side by side buggies, kids buggies, go karts and quads from respected Australian suppliers.', 'Every model includes GST and is delivered Australia-wide. Compare engines, seating and age guidance before you buy.'],
     guides: [{ h2: 'Choose by use', p: ['For farm and property work choose a side by side or quad with load capacity. For recreation choose a dune buggy or go kart. For younger riders choose a youth buggy with age-appropriate power.', 'Check state rules for registration and use on public land.'] }],
     faqs: [
       ['What is a buggy?', 'An off-road buggy is a small open vehicle for recreation and property work. Types include dune buggies, side by sides, go karts and quads.'],
@@ -265,7 +265,7 @@ export const COPY: Record<string, PageCopy> = {
     ],
   },
   '/off-road-buggies/go-karts/': {
-    intro: ['Shop go karts for sale including petrol and electric models. Our go karts from Kayo, GMX and Crazy Kart suit backyards, farms and private tracks.', 'Electric go karts are quiet and low-maintenance, while petrol go karts offer higher top speeds. Check engine, speed and assembly before ordering.'],
+    intro: ['Shop an electric go kart or a petrol model from our range of go karts for sale. Our go karts from Kayo, GMX and Crazy Kart suit backyards, farms and private tracks.', 'Electric go karts are quiet and low-maintenance, while petrol go karts offer higher top speeds. Check engine, speed and assembly before ordering.'],
     guides: [{ h2: 'Electric or petrol go kart?', p: ['Electric karts are quiet and clean, with simpler maintenance. Petrol karts offer higher speeds and longer run times. Always wear a helmet and use go karts where permitted.'] }],
     faqs: [
       ['How much is a go kart?', 'Prices depend on engine and brand. See current prices above.'],
@@ -276,7 +276,7 @@ export const COPY: Record<string, PageCopy> = {
     ],
   },
   '/off-road-buggies/kids-buggies/': {
-    intro: ['Our kids buggies include youth buggies and electric quads sized for younger riders. Choose from Hammerhead Torpedo, Kayo S70 and GO SKITZ models.', 'Always supervise children, use helmets and gear, and follow the manufacturer age and weight guidance.'],
+    intro: ['Looking for a kids go kart? Our kids buggies include youth buggies and electric quads sized for younger riders. Choose from Hammerhead Torpedo, Kayo S70 and GO SKITZ models.', 'Always supervise children, use helmets and gear, and follow the manufacturer age and weight guidance.'],
     guides: [{ h2: 'Choosing a buggy for a child', p: ['Match the vehicle to your child age, weight and experience. Start with a speed limiter and a safe, open area.', 'Electric quads are quiet and simple to learn on. Petrol buggies offer more power for bigger kids.'] }],
     faqs: [
       ['What kids buggy should I buy?', 'Choose by age and weight. Electric models suit younger kids, petrol models suit older kids.'],
@@ -298,7 +298,7 @@ export const COPY: Record<string, PageCopy> = {
     ],
   },
   '/off-road-buggies/side-by-sides-utvs/': {
-    intro: ['Shop side by side buggies and UTVs from Kayo and Hammerhead. A side by side buggy is a two-seat off-road vehicle for property work, trails and recreation.', 'Compare engine size, drive type and assembly details, and ask us about freight to your location.'],
+    intro: ['Looking for a UTV for sale? Shop side by side buggies and UTVs from Kayo and Hammerhead. A side by side buggy is a two-seat off-road vehicle for property work, trails and recreation.', 'Compare engine size, drive type and assembly details, and ask us about freight to your location.'],
     guides: [{ h2: 'What is a side by side?', p: ['A side by side (UTV) seats two people beside each other and usually has a load bed. It handles rough terrain, farm tracks and work duties.', 'Check engine, transmission and seating before you buy.'] }],
     faqs: [
       ['What is a UTV?', 'A UTV (utility task vehicle) is a side by side vehicle with a load bed for work and recreation.'],
@@ -309,7 +309,7 @@ export const COPY: Record<string, PageCopy> = {
     ],
   },
   '/off-road-buggies/mini-quads-atvs/': {
-    intro: ['Our mini quads and small ATVs include Kayo and Apollo quad bikes suited to farm tracks and younger riders. Compare engine size, automatic or manual and age guidance.', 'Always use a helmet and follow age and weight guidance.'],
+    intro: ['Looking for a 50cc quad bike? Our mini quads and small ATVs include Kayo and Apollo quad bikes suited to farm tracks and younger riders. Compare engine size, automatic or manual and age guidance.', 'Always use a helmet and follow age and weight guidance.'],
     guides: [{ h2: 'Choosing a small quad', p: ['Choose automatic quads for beginners and younger riders. Larger engines suit adults and property work.', 'Check reverse gear, speed limiter and braking.'] }],
     faqs: [
       ['What age is a 50cc quad for?', 'It depends on the model. Check manufacturer guidance.'],
@@ -320,7 +320,7 @@ export const COPY: Record<string, PageCopy> = {
     ],
   },
   '/parts-accessories/': {
-    intro: ['Find golf cart accessories, golf buggy parts, lithium batteries, chargers, wheels, trailers and off-road parts in one place. Everything on this page is chosen for Australian golf carts, golf buggies and off-road buggies.', 'Use the category tiles to jump straight to what you need, and message us if you are unsure about fitment.'],
+    intro: ['Need quad bike spare parts NSW or anywhere in Australia? Find golf cart accessories, golf buggy parts, lithium batteries, chargers, wheels, trailers and off-road parts in one place. Everything on this page is chosen for Australian golf carts, golf buggies and off-road buggies.', 'Use the category tiles to jump straight to what you need, and message us if you are unsure about fitment.'],
     guides: [{ h2: 'Make sure it fits', p: ['Check your cart or buggy make, model and year. Many parts are model-specific. Our listings show compatibility, and our team can confirm fit before you order.', 'Add accessories to your order to reach free delivery over $1,000.'] }],
     faqs: [
       ['Do you sell golf cart parts in Australia?', 'Yes. We stock batteries, chargers, wheels, lighting, seats and accessories.'],
@@ -375,7 +375,7 @@ export const COPY: Record<string, PageCopy> = {
     ],
   },
   '/parts-accessories/golf-buggy-parts/wheels-rims-tyres/': {
-    intro: ['Shop golf buggy wheels and golf cart wheels, rims and tyres. We stock mag wheel sets in 10, 12 and 14 inch sizes and single wheels and tyres.', 'Mag wheels upgrade the look and feel of your cart.'],
+    intro: ['Shop golf buggy tires, golf buggy wheels and golf cart wheels, rims and tyres. We stock mag wheel sets in 10, 12 and 14 inch sizes and single wheels and tyres.', 'Mag wheels upgrade the look and feel of your cart.'],
     guides: [{ h2: 'Choosing wheels for your cart', p: ['Check wheel size, offset and bolt pattern. Match tyre size to the wheel and to your cart.', 'Ask us for fitment advice.'] }],
     faqs: [
       ['What size wheels does my golf cart need?', 'Check your current wheel and tyre size. Many carts use 8 to 12 inch wheels.'],
@@ -408,7 +408,7 @@ export const COPY: Record<string, PageCopy> = {
     ],
   },
   '/parts-accessories/golf-cart-accessories/seat-covers-comfort/': {
-    intro: ['Improve comfort with seat covers, floor mats, seat belts and buggy seats. We stock Yamaha G29 padded seat covers, ECAR floor mats, seat belt kits and fold-out buggy seats.', 'Comfort upgrades make cart and buggy rides more enjoyable.'],
+    intro: ['Golf cart accessories for comfort: seat covers, floor mats, seat belts and buggy seats. We stock Yamaha G29 padded seat covers, ECAR floor mats, seat belt kits and fold-out buggy seats.', 'Comfort upgrades make cart and buggy rides more enjoyable.'],
     guides: [{ h2: 'Comfort and safety', p: ['Seat belts add safety on slopes. Floor mats protect carpets. Seat covers protect and refresh your seats.'] }],
     faqs: [
       ['Do you sell golf cart seat covers?', 'Yes.'],
@@ -431,7 +431,7 @@ export const COPY: Record<string, PageCopy> = {
     cta: 'Ask about golf cart trailers',
   },
   '/parts-accessories/repairs-servicing/': {
-    intro: ['Need golf buggy repairs or servicing? Tell us your cart or buggy model and the fault. We can advise on parts and work with trusted workshops near you.', 'Regular servicing keeps carts reliable.'],
+    intro: ['Searching for golf buggy repairs near me? Tell us your cart or buggy model and the fault. We can advise on parts and work with trusted workshops near you.', 'Regular servicing keeps carts reliable.'],
     guides: [{ h2: 'What to do first', p: ['Note the symptoms, cart model and age. Check battery health and chargers. Contact us with photos if possible.'] }],
     faqs: [
       ['Where can I get golf buggy repairs near me?', 'Contact us with your location and we will point you to options.'],

@@ -6,6 +6,7 @@ import { Breadcrumbs, Faq, JsonLd, SectionHead } from '@/components/Bits';
 import { BLOG_POSTS, PRODUCTS, SITE } from '@/config/site';
 import { Markdown, toc } from '@/lib/md';
 import { abs, faqSchema, meta } from '@/lib/seo';
+import { relatedGuides } from '@/lib/blog-related';
 
 export function generateStaticParams() { return BLOG_POSTS.map((b) => ({ slug: b.slug })); }
 
@@ -31,6 +32,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   const b = BLOG_POSTS.find((x) => x.slug === slug);
   if (!b) notFound();
   const heads = toc(b.content);
+  const related = relatedGuides(b.slug);
   const picks = b.products?.length ? b.products.map((s) => PRODUCTS.find((p) => p.slug === s)).filter(Boolean).slice(0, 4) as typeof PRODUCTS : PRODUCTS.filter((p) => (PICKS[b.slug] || /MGI ZIP/).test(p.name)).slice(0, 4);
   const words = b.content.join(' ').split(/\s+/).length;
   const article = { '@context': 'https://schema.org', '@type': 'Article', headline: b.title, description: b.excerpt, image: abs(b.image), datePublished: b.date, dateModified: b.date, wordCount: words, inLanguage: 'en-AU', author: { '@type': 'Organization', name: SITE.name, url: SITE.url }, publisher: { '@id': abs('/#org') }, mainEntityOfPage: abs(`/blog/${b.slug}/`) };
@@ -60,6 +62,12 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
         </div></div>
       </article>
       {b.faqs && <Faq items={b.faqs} title="Frequently asked questions" />}
+      {related.length > 0 && (
+        <section className="section pt-0"><div className="container-x"><div className="mx-auto max-w-[69rem]">
+          <h2 className="font-display text-2xl font-extrabold">Related guides</h2>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2">{related.map((r) => <li key={r.slug}><Link href={`/blog/${r.slug}/`} className="card card-hover block p-4"><span className="eyebrow">{r.category}</span><span className="mt-1 block font-bold text-fw-900">{r.title}</span></Link></li>)}</ul>
+        </div></div></section>
+      )}
       {picks.length > 0 && <section className="section pt-0"><div className="container-x"><SectionHead eyebrow="Related products" title="Shop the models mentioned" /><div className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4">{picks.map((p) => <ProductCard key={p.slug} p={toCard(p)} />)}</div></div></section>}
     </>
   );

@@ -9,10 +9,10 @@ import BrandStrip from '@/components/BrandStrip';
 import BrandLogo from '@/components/BrandLogo';
 import { Breadcrumbs, Faq, JsonLd, SectionHead } from '@/components/Bits';
 import { PAGES, PRODUCTS, brandPages, breadcrumbsFor, childrenOf, pageBySlug, productsForPage, money, listProductsFor, pageCountFor } from '@/config/site';
-import { copyFor, descFor } from '@/lib/copy';
+import { copyFor, descFor, brandDisplay } from '@/lib/copy';
 import categoryHeroes from '@/data/category-heroes.json';
 import { faqSchema, listSchema, meta } from '@/lib/seo';
-import { linksForPage } from '@/lib/links';
+import { linksForPage, brandMore } from '@/lib/links';
 import { supportFaqsFor } from '@/lib/support';
 
 type Params = { slug: string[] };
@@ -70,6 +70,7 @@ export default async function StructurePage({ params }: { params: Promise<Params
         <Breadcrumbs trail={trail2} />
         <h1 className="mt-4 font-display text-3xl font-black text-fw-900 sm:text-4xl">{nm}: page {pageNo} of {pageCountFor(page)}</h1>
         <p className="mt-2 max-w-2xl text-muted">More {nm.toLowerCase()} from our range. Prices include GST and free delivery applies over $1,000. <Link href={page.url} className="font-semibold text-fw-700 hover:underline">Back to page 1 of {nm}</Link>.</p>
+        <h2 className="sr-only">{nm} products on page {pageNo}</h2>
         <div className="mt-6"><ProductGrid products={products.map(toCard)} showBrandFilter={page.level !== 'brand'} basePath={page.url} initialPage={pageNo} /></div>
       </div></section>
     );
@@ -78,9 +79,10 @@ export default async function StructurePage({ params }: { params: Promise<Params
   const faqs = [...copy.faqs, ...supportFaqsFor(page.url, products)];
   const kids = childrenOf(page.name).filter((k) => !k.lowDemand && k.level !== 'product' && k.url !== '/golf-buggies/for-sale-locations/');
   const kwLinks = linksForPage(page, 10);
+  const brandExtra = page.level === 'brand' ? brandMore(page) : { cats: [], related: [], total: 0 };
   const trail = breadcrumbsFor(page);
   const hero = heroFor(page.url);
-  const brand = page.level === 'brand' ? page.name.replace(/ Buggies$/, '') : '';
+  const brand = page.level === 'brand' ? brandDisplay(page, page.name.replace(/ Buggies$/, '')) : '';
   const sample = products.slice(0, 3);
 
   return (
@@ -172,6 +174,23 @@ export default async function StructurePage({ params }: { params: Promise<Params
         <section className="section pt-0"><div className="container-x"><div className="card p-6">
           <h2 className="font-display text-lg font-extrabold">Popular searches</h2>
           <ul className="mt-3 flex flex-wrap gap-2">{kwLinks.map((l) => <li key={l.url}><Link href={l.url} className="inline-block rounded-full border border-fw-100 bg-fw-50 px-3.5 py-1.5 text-sm font-semibold text-fw-700 hover:bg-fw-100 hover:underline">{l.anchor}</Link></li>)}</ul>
+        </div></div></section>
+      )}
+
+      {/* BRAND PAGES: where to shop this brand and which similar brands to compare (links use each target's own T/C keyword) */}
+      {page.level === 'brand' && (brandExtra.cats.length > 0 || brandExtra.related.length > 0) && (
+        <section className="section pt-0"><div className="container-x"><div className="card p-6">
+          <h2 className="font-display text-lg font-extrabold">{brand}: where to shop and what to compare</h2>
+          {brandExtra.cats.length > 0 && (
+            <p className="mt-3 text-[15px] leading-relaxed text-ink/80">
+              We list {brandExtra.total} {brand} {brandExtra.total === 1 ? 'product' : 'products'} across {brandExtra.cats.map((c, i) => <span key={c.url}>{i > 0 && (i === brandExtra.cats.length - 1 ? ' and ' : ', ')}<Link href={c.url} className="font-semibold text-fw-700 underline">{c.anchor}</Link></span>)}. Prices are in AUD including GST, free delivery applies over $1,000 to major metro areas and depot corridors, and our team confirms stock, freight and fitment before you pay.
+            </p>
+          )}
+          {brandExtra.related.length > 0 && (
+            <p className="mt-3 text-[15px] leading-relaxed text-ink/80">
+              Comparing brands in the same ranges? See {brandExtra.related.map((r, i) => <span key={r.url}>{i > 0 && (i === brandExtra.related.length - 1 ? ' and ' : ', ')}<Link href={r.url} className="font-semibold text-fw-700 underline">{r.anchor}</Link></span>)}, or browse <Link href="/brands/" className="font-semibold text-fw-700 underline">all brands</Link>.
+            </p>
+          )}
         </div></div></section>
       )}
 

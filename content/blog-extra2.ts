@@ -82,7 +82,7 @@ export const EXTRA_POSTS2: BlogPost[] = [
     slug: 'golf-cars-vs-golf-carts-vs-golf-buggies',
     title: 'Golf Cars & Carts vs Golf Buggies: What Is the Difference?',
     seoTitle: 'Golf Cars & Carts vs Golf Buggies | Buggies For Sale',
-    excerpt: 'Golf car, golf cart and golf buggy are used interchangeably, but they can mean very different vehicles. Here is how the terms differ and how to choose the right one.',
+    excerpt: 'Golf cars & carts explained: golf car, golf cart and golf buggy are used interchangeably but can mean different vehicles. Here is how to choose the right one.',
     category: 'Buying guides', date: '2026-10-19', readTime: '9 min read', targetKeyword: 'golf cars & carts', tags: ['golf cars & carts', 'golf car vs golf cart', 'golf buggy vs golf cart', 'what is a golf buggy', 'types of golf carts'],
     image: '/blog/golf-cars-vs-carts-v2.webp',
     products: ['mgi-zip-x3-electric-golf-buggy', 'ecar-lithium-ikon-hd-4s-4-seat-golf-cart', 'stinger-sg-5-v2-golf-push-buggy'],

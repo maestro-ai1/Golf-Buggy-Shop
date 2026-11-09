@@ -9,7 +9,7 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
   const { q = '' } = await searchParams;
   const t = q.trim().slice(0, 60);
   // Search result pages are for shoppers, not for Google: noindex, canonical to the plain search page.
-  return { title: t ? `Search results for ${t}` : 'Search', robots: { index: false, follow: true }, alternates: { canonical: abs('/search/') } };
+  return { title: t ? `Search results for ${t}` : 'Search', description: 'Search golf buggies, golf carts, lithium batteries, accessories and off-road buggies at Buggies For Sale Australia, or browse the popular categories.', robots: { index: false, follow: true }, alternates: { canonical: abs('/search/') } };
 }
 
 const POPULAR: [string, string][] = [['Electric golf buggies', '/golf-buggies/motorised-electric/'], ['Remote control buggies', '/golf-buggies/remote-control/'], ['Golf carts', '/golf-carts/'], ['Lithium batteries', '/parts-accessories/golf-buggy-parts/lithium-batteries/'], ['Dune buggies', '/off-road-buggies/dune-buggies/'], ['Accessories', '/parts-accessories/golf-cart-accessories/']];

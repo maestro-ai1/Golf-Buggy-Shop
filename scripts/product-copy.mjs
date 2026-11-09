@@ -193,6 +193,30 @@ export function tagsFor(p, ctx) {
   return out.slice(0, 5);
 }
 
+// Product-specific "at a glance" lead for the opening paragraph. Built ONLY from the verified specs and from facts already in the product name
+// (year, colour, seats, set size), so each opening differs from its siblings without inventing anything.
+const COLOURS = ['emerald green', 'metallic green', 'gloss black', 'matte black', 'blue grey', 'black', 'white', 'silver', 'blue', 'grey', 'gray', 'red', 'yellow', 'green', 'orange', 'pink'];
+export function detailsFor(p) {
+  const s = p.specs || {}; const name = p.name; const d = [];
+  if (s.Voltage) d.push(String(s.Voltage));
+  if (s['Battery capacity']) d.push(String(s['Battery capacity']));
+  if (s['Battery energy']) d.push(String(s['Battery energy']));
+  if (s.Motor) d.push(`${s.Motor} motor`);
+  if (s.Engine) d.push(`${s.Engine} engine`);
+  const nameSeats = name.match(/(\d)\s*seat(?:er)?s?\b/i);
+  if (s.Seats) d.push(`${s.Seats} ${String(s.Seats) === '1' ? 'seat' : 'seats'}`); else if (nameSeats) d.push(`${nameSeats[1]} ${nameSeats[1] === '1' ? 'seat' : 'seats'}`);
+  if (s['Top speed']) d.push(`top speed ${s['Top speed']}`);
+  if (s.Range) d.push(`range ${String(s.Range).toLowerCase()}`);
+  if (s.Weight) d.push(`weighs ${s.Weight}`);
+  const inch = name.match(/(\d{1,2})\s?inch/i); if (inch && p.group === 'wheels') d.push(`${inch[1]} inch wheels`);
+  if (s.Fits) d.push(`fits ${s.Fits}`);
+  const year = name.match(/^Used (20\d\d)\b/); if (year) d.push(`${year[1]} model`);
+  const low = name.toLowerCase(); const colour = COLOURS.find((c) => new RegExp(`\\b${c}\\b`).test(low)); if (colour) d.push(colour);
+  const set = name.match(/set of (\d)/i); if (set) d.push(`set of ${set[1]}`); else if (/\bsingle\b/i.test(name)) d.push('sold singly');
+  const mode = name.match(/\((on-board|off-board)\)/i); if (mode) d.push(`${mode[1].toLowerCase()} fitment`);
+  return d.slice(0, 5);
+}
+
 export function longCopy(p, ctx) {
   const fam = familyOf(p.group);
   const label = p.groupLabel;
@@ -200,7 +224,9 @@ export function longCopy(p, ctx) {
   const seed = p.slug;
   const facts = Object.entries(p.specs || {}).filter(([k]) => k !== 'Brand').map(([k, val]) => `**${k}:** ${val}`);
   const price = '$' + p.price.toLocaleString('en-AU', { minimumFractionDigits: Number.isInteger(p.price) ? 0 : 2, maximumFractionDigits: 2 });
-  const intro = `${p.shortDescription} ${p.description[0] || ''}`.replace(/\s+/g, ' ').trim();
+  const details = [...detailsFor(p), `${price} including GST`];
+  const lead = `At a glance: ${details.join(', ')}.`;
+  const intro = `${lead} ${p.shortDescription} ${p.description[0] || ''}`.replace(/\s+/g, ' ').trim();
   const lines = [];
   lines.push(`## About the ${p.name}`);
   lines.push(intro);

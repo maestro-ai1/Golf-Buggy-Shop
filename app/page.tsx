@@ -48,11 +48,11 @@ export default function Home() {
         <picture className="block md:hidden">
           <source type="image/avif" srcSet="/images/hero/home-golf-cart-fairway-1200.avif" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/hero/home-golf-cart-fairway-1200.webp" alt="Buggies for sale in Australia: black ECAR Compass 4 seat golf cart on a green fairway" width={1200} height={600} className="aspect-[2/1] w-full object-cover object-right" fetchPriority="high" />
+          <img src="/images/hero/home-golf-cart-fairway-1200.webp" alt="Black ECAR Compass 4 seat golf cart parked on a green golf fairway" width={1200} height={600} className="aspect-[2/1] w-full object-cover object-right" fetchPriority="high" />
         </picture>
         <div className="container-x relative py-10 md:py-24">
           <div className="fade-up max-w-[620px]">
-            <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[13px] font-bold text-fw-100 ring-1 ring-white/15"><BadgePercent size={15} className="text-accent" /> Extra 10% off when you pay with crypto</p>
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[13px] font-bold text-fw-100 ring-1 ring-white/15"><BadgePercent size={15} className="text-accent" /> Extra 10% off when you pay with crypto</div>
             <h1 className="!text-white text-[40px] font-black leading-[1.04] sm:text-[56px] lg:text-[64px]">Buggies For Sale <span className="block text-accent">Across Australia</span></h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-fw-100">Browse buggies for sale in Australia: golf buggies, electric and remote models, new lithium golf carts, off-road buggies and parts from brands Australians trust. Delivered Australia-wide, free over $1,000.</p>
             <div className="mt-8 flex flex-wrap gap-3">

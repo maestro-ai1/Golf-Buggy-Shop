@@ -1,4 +1,4 @@
-import { PAGES, childrenOf, type SitePage } from '@/config/site';
+import { PAGES, PRODUCTS, childrenOf, type SitePage } from '@/config/site';
 
 // Keyword-anchored internal links: the anchor is a transactional or commercial keyword that belongs to the TARGET page, so every link
 // passes relevance to the page that is meant to rank for it. Primary keywords are used most; high-volume T/C secondaries rotate in
@@ -40,4 +40,35 @@ export function linksForProduct(categoryUrl: string, brandUrl?: string): KwLink[
   add(PAGES.find((p) => p.name === cat?.parent));
   add(brandUrl ? PAGES.find((p) => p.url === brandUrl) : undefined);
   return out;
+}
+
+// Brand pages: link out to the category pages where the brand's products live, and to related brands that share those categories.
+// Anchors are the target page's own T/C keyword; counts come from the catalogue, so nothing is invented.
+export interface BrandMore { cats: (KwLink & { count: number })[]; related: KwLink[]; total: number }
+
+export function brandMore(page: SitePage): BrandMore {
+  const slug = page.slug.split('/').pop() || '';
+  const mine = PRODUCTS.filter((p) => p.brandPage === slug);
+  const tally = new Map<string, number>();
+  for (const p of mine) for (const c of p.categories) tally.set(c, (tally.get(c) || 0) + 1);
+  const cats = [...tally.entries()]
+    .map(([url, count]) => ({ t: PAGES.find((x) => x.url === url), count }))
+    .filter((x): x is { t: SitePage; count: number } => !!x.t && usable(x.t))
+    .sort((a, b) => b.count - a.count || b.t.url.length - a.t.url.length)
+    .slice(0, 4)
+    .map(({ t, count }) => ({ url: t.url, anchor: anchorFor(page.url, t), count }));
+  const mineCats = new Set(tally.keys());
+  const overlap = new Map<string, number>();
+  for (const p of PRODUCTS) {
+    if (!p.brandPage || p.brandPage === slug) continue;
+    const n = p.categories.filter((c) => mineCats.has(c)).length;
+    if (n) overlap.set(p.brandPage, (overlap.get(p.brandPage) || 0) + n);
+  }
+  const related = [...overlap.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .map(([s]) => PAGES.find((x) => x.level === 'brand' && x.slug.split('/').pop() === s))
+    .filter((x): x is SitePage => !!x && usable(x))
+    .slice(0, 4)
+    .map((t) => ({ url: t.url, anchor: anchorFor(page.url, t) }));
+  return { cats, related, total: mine.length };
 }

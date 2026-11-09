@@ -7,7 +7,7 @@ export const EXTRA_POSTS3: BlogPost[] = [
     slug: 'trailmaster-cheetah-australia',
     title: 'Trailmaster Cheetah Australia: Models, Engines and What to Check',
     seoTitle: 'Trailmaster Cheetah Australia: Buyer Guide | Buggies For Sale',
-    excerpt: 'A plain-English guide to the Trailmaster Cheetah dune buggy in Australia: the 175cc and 300cc versions, who they suit and what to check before you buy.',
+    excerpt: 'Trailmaster Cheetah Australia guide: the 175cc and 300cc dune buggy versions in plain English, who they suit and what to check before you buy.',
     category: 'Brand guides', date: '2026-10-19', readTime: '9 min read', targetKeyword: 'trailmaster cheetah australia',
     image: '/blog/trailmaster-cheetah-australia-v2.webp',
     tags: ['trailmaster cheetah australia', 'trailmaster cheetah', 'trailmaster cheetah 300', 'trailmaster cheetah 175', 'cheetah dune buggy'],

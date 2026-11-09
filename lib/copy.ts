@@ -1,5 +1,5 @@
 import { COPY, type PageCopy } from '@/content/pages';
-import { SITE, money, type Product, type SitePage } from '@/config/site';
+import { PRODUCTS, SITE, money, type Product, type SitePage } from '@/config/site';
 import { clampDesc } from '@/lib/seo';
 
 const BRAND_FAQ = (brand: string): [string, string][] => [
@@ -11,10 +11,13 @@ const BRAND_FAQ = (brand: string): [string, string][] => [
 ];
 
 const stem = (w: string) => w.replace(/ies$/, 'y').replace(/ses$/, 's').replace(/([^s])s$/, '$1');
-const toks = (t: string) => t.toLowerCase().replace(/[^a-z0-9s]/g, ' ').split(/s+/).filter(Boolean).map(stem);
+const toks = (t: string) => t.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(Boolean).map(stem);
 export const hasPhrase = (text: string, phrase: string) => { const T = toks(text), P = toks(phrase); if (!P.length) return false; for (let i = 0; i + P.length <= T.length; i++) if (P.every((p, j) => T[i + j] === p)) return true; return false; };
 const list = (a: string[]) => (a.length < 2 ? a.join('') : a.slice(0, -1).join(', ') + ' and ' + a[a.length - 1]);
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+// Real brand casing (MGI, ECAR, EZGO, CFMOTO, PowaKaddy) from the catalogue; the structure names are title-cased (Mgi, Ecar).
+export const brandDisplay = (page: SitePage, fallback: string) => PRODUCTS.find((p) => p.brandPage === page.slug.split('/').pop())?.brand || fallback;
+const casePrimary = (primary: string, brand: string) => { const b = new Set(brand.toLowerCase().split(/[ -]+/).filter(Boolean)); return primary.split(' ').map((w) => (b.has(w.toLowerCase()) ? brand.split(/[ -]+/).find((x) => x.toLowerCase() === w.toLowerCase()) || w : w)).join(' '); };
 
 // Keyword-map rule: every mapped secondary keyword appears naturally on its page. Unused ones are woven into one short guide and, at most, two FAQs.
 function weave(page: SitePage, c: PageCopy & { fallback: boolean }): PageCopy & { fallback: boolean } {
@@ -95,12 +98,12 @@ function baseCopy(page: SitePage, products: Product[]): PageCopy & { fallback: b
   const prices = products.map((p) => p.price).sort((a, b) => a - b);
   const range = prices.length ? `from ${money(prices[0])} to ${money(prices[prices.length - 1])}` : '';
   if (page.level === 'brand') {
-    const brand = name.replace(/ Buggies$/, '');
+    const brand = brandDisplay(page, name.replace(/ Buggies$/, ''));
     const n = products.length;
     return {
       fallback: true,
       intro: n
-        ? [`Shop ${brand} online in Australia. We list ${n} ${brand} product${n === 1 ? '' : 's'} ${range}.`, `Every order ships Australia-wide with free delivery over $1,000. Compare specifications below, or message us if you need help choosing the right ${brand} model for your cart or course.`]
+        ? [`Searching for ${casePrimary(primary, brand)}? Shop ${brand} online in Australia. We list ${n} ${brand} product${n === 1 ? '' : 's'} ${range}.`, `Every order ships Australia-wide with free delivery over $1,000. Compare specifications below, or message us if you need help choosing the right ${brand} model for your cart or course.`]
         : [`Looking for ${primary}? ${brand} is one of the brands Australian buyers ask us about. We do not list a ${brand} model online yet, but we can check availability and quote you.`, 'Tell us the model you want and your location, and we will confirm price, stock and delivery. In the meantime, browse our related ranges below.'],
       guides: [{ h2: `Before you buy ${brand}`, p: ['Check compatibility with your cart or course, confirm warranty terms and ask about delivery to your postcode. Our team can answer questions on 0420 128 746.'] }],
       faqs: BRAND_FAQ(brand),
@@ -125,9 +128,18 @@ function baseCopy(page: SitePage, products: Product[]): PageCopy & { fallback: b
 }
 
 export const descFor = (page: SitePage, intro: string) => {
-  let base = intro.replace(/s+/g, ' ');
+  let base = intro.replace(/\s+/g, ' ');
   const kw = page.primary?.keyword;
   if (kw && !hasPhrase(base, kw)) base = cap(kw) + ': ' + base;
+  // end on a whole sentence when one fits (110 to 158 characters) instead of cutting mid-sentence
   const tail = ' Free delivery over $1,000 across Australia.';
+  if (base.length > 158) {
+    let cut = '';
+    for (const part of base.split('. ')) { const next = cut ? cut + '. ' + part : part; if (next.length + 1 > 158) break; cut = next; }
+    const cand = cut.endsWith('.') || cut.endsWith('?') ? cut : cut + '.';
+    const full = cand.length < 112 ? cand + tail : cand;
+    // only use the whole-sentence version when it still fits 110 to 158 characters and keeps the primary keyword
+    if (cand.length >= 60 && full.length >= 110 && full.length <= 158 && (!kw || hasPhrase(full, kw))) base = cand;
+  }
   return clampDesc(base.length < 112 ? base + tail : base);
 };

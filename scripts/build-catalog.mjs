@@ -198,6 +198,9 @@ for (let [group, brand, brandPage, name, cats, srcs, opts = {}] of SPEC) {
   if (opts.order) { const o = opts.order.map((i) => imgsRaw[i]).filter(Boolean); imgsRaw.length = 0; imgsRaw.push(...o); } // hand-picked image order (raw indexes) when the source order is not the best first image
   const text = priced.map((f) => (f.hit.desc || '') + ' ' + (f.hit.short || '')).join(' ');
   const fcts = facts(text, name);
+  // the product name is the source of truth for wheel size: a stray "2 inch" in a source description must not override "10 inch" in the name
+  const nameInch = name.match(/(\d{1,2})\s?inch/i);
+  if (group === 'wheels' && nameInch) fcts['Wheel size'] = nameInch[1] + ' inch';
   const slug = slugify(name);
   if (used.has(slug)) continue; used.add(slug);
   const c = copy(group, name, brand, fcts, opts);

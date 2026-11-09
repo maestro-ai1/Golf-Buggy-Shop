@@ -306,7 +306,10 @@
    "electric golf buggy sale",
    "second hand golf buggy",
    "golf motorised buggy",
-   "golf electric buggies for sale"
+   "golf electric buggies for sale",
+   "motorized golf buggy",
+   "motorised golf cart",
+   "electric golf buggies australia"
   ],
   "h1": "Electric Golf Buggies For Sale",
   "titleTag": "Electric Golf Buggies For Sale Australia",
@@ -465,7 +468,14 @@
    "golf push buggy australia",
    "push pull golf buggy",
    "golf trolleys for sale",
-   "golf bag carts for sale"
+   "golf bag carts for sale",
+   "push cart",
+   "electric caddy",
+   "golf caddy cart",
+   "golf trolly",
+   "best golf push cart",
+   "best rated golf push carts",
+   "top rated golf push carts"
   ],
   "h1": "Golf Trolley",
   "titleTag": "Golf Trolley Australia",
@@ -828,7 +838,10 @@
    "golf cart golf",
    "cart golf",
    "golf cart dimensions",
-   "golf cart size"
+   "golf cart size",
+   "golf car golf cart",
+   "club carts",
+   "club carts golf carts"
   ],
   "h1": "Golf Cart",
   "titleTag": "Golf Cart Australia",
@@ -943,7 +956,15 @@
    "golf cars for sale",
    "golf golf carts for sale",
    "golf cart sale",
-   "golf buggy price"
+   "golf buggy price",
+   "low price golf carts",
+   "golf car cost",
+   "inexpensive golf carts",
+   "australian golf carts",
+   "new golf carts",
+   "new golf carts for sale",
+   "new golf carts for sale australia",
+   "golf car price"
   ],
   "h1": "Golf Carts For Sale",
   "titleTag": "Golf Carts For Sale Australia",
@@ -1493,7 +1514,10 @@
    "drift karts for adults",
    "adult drift kart",
    "kids drift kart",
-   "krazy kart"
+   "krazy kart",
+   "go karts for adults",
+   "electric off road go kart",
+   "electric off road kart"
   ],
   "h1": "Electric Go Kart",
   "titleTag": "Electric Go Kart Australia",
@@ -1615,7 +1639,9 @@
    "childrens petrol buggy",
    "kids dune buggy",
    "mini rzr",
-   "mini buggy"
+   "mini buggy",
+   "kids side by side",
+   "childrens utv"
   ],
   "h1": "Kids Go Kart",
   "titleTag": "Kids Go Kart Australia",
@@ -1684,7 +1710,10 @@
    "electric buggies",
    "kids utv",
    "electric side by side",
-   "electric atv australia"
+   "electric atv australia",
+   "electric side by side australia",
+   "electric utv australia price",
+   "best electric utv australia"
   ],
   "h1": "Electric Utv",
   "titleTag": "Electric Utv Australia",
@@ -1716,18 +1745,6 @@
     "intent": "Transactional"
    },
    {
-    "keyword": "used utv for sale",
-    "volume": 140,
-    "kd": 12,
-    "intent": "Transactional"
-   },
-   {
-    "keyword": "utv side by side for sale",
-    "volume": 110,
-    "kd": 17,
-    "intent": "Transactional"
-   },
-   {
     "keyword": "utv",
     "volume": 1900,
     "kd": 7,
@@ -1738,6 +1755,18 @@
     "volume": 2900,
     "kd": 9,
     "intent": "Commercial / Informational"
+   },
+   {
+    "keyword": "small utility vehicle for sale",
+    "volume": 1300,
+    "kd": 7,
+    "intent": "Transactional"
+   },
+   {
+    "keyword": "utility vehicles for sale",
+    "volume": 480,
+    "kd": 11,
+    "intent": "Transactional"
    }
   ],
   "support": [
@@ -1756,7 +1785,29 @@
    "side by side vehicle",
    "cheapest side by side australia",
    "side by side atv",
-   "side by side all terrain"
+   "side by side all terrain",
+   "utv side by side for sale",
+   "used utv for sale",
+   "electric all terrain vehicle",
+   "farm vehicles",
+   "terrain vehicle",
+   "side by side quad",
+   "best side by side",
+   "side by side all terrain vehicles",
+   "utility vehicle australia",
+   "farm utility vehicles",
+   "side by side australia",
+   "side by side utility vehicle",
+   "utility side by side",
+   "utility quad",
+   "utility vehicles for sale australia",
+   "side by side farm vehicle",
+   "4x4 side by side",
+   "farm vehicles for sale",
+   "electric farm utility vehicle australia",
+   "farm side by side",
+   "side x side utv",
+   "off road all terrain vehicles"
   ],
   "h1": "Utv For Sale",
   "titleTag": "Utv For Sale Australia",
@@ -1797,12 +1848,6 @@
   },
   "secondary": [
    {
-    "keyword": "atv bike 50cc",
-    "volume": 390,
-    "kd": 24,
-    "intent": "Commercial"
-   },
-   {
     "keyword": "quad bike",
     "volume": 6600,
     "kd": 5,
@@ -1825,6 +1870,12 @@
     "volume": 1300,
     "kd": 5,
     "intent": "Informational / Commercial"
+   },
+   {
+    "keyword": "all terrain vehicle",
+    "volume": 1000,
+    "kd": 22,
+    "intent": "Informational / Commercial"
    }
   ],
   "support": [
@@ -1838,7 +1889,33 @@
    "childrens electric quad bike",
    "quad bikes australia",
    "49cc quad bike",
-   "electric quad"
+   "electric quad",
+   "atv bike 50cc",
+   "kids electric quad bike",
+   "atv bike for sale",
+   "atv bike",
+   "atv farm bike",
+   "quads for sale",
+   "kids quad bike petrol",
+   "kids quad",
+   "childrens electric atv",
+   "childrens atv",
+   "childrens electric quad",
+   "childrens quad motorbikes",
+   "250cc quad bike",
+   "buy quad bike",
+   "quad bikes and atvs",
+   "farm atv",
+   "farm quad",
+   "4 wheelers for sale",
+   "childrens petrol quad",
+   "childrens quad bike",
+   "childs 4 wheeler",
+   "kids 4 wheeler",
+   "kids quad bikes for sale",
+   "125cc quad bike",
+   "250cc atv quad bike",
+   "adult quad bikes"
   ],
   "h1": "50Cc Quad Bike",
   "titleTag": "50Cc Quad Bike Australia",
@@ -3862,7 +3939,10 @@
    "honda odyssey dune buggy for sale",
    "honda odyssey buggy",
    "honda side by side price",
-   "honda sxs"
+   "honda sxs",
+   "honda side by side utv prices",
+   "honda side by side australia",
+   "honda side by side for sale"
   ],
   "h1": "Honda 1000 Buggy",
   "titleTag": "Honda 1000 Buggy Australia",

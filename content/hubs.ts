@@ -68,6 +68,9 @@ export const HUBS: Record<string, PageCopy> = {
       { h2: `Road rules and safety for golf carts`, p: [
         `Golf carts are generally made for the course and private land. For background on how golf carts work, see [the golf cart overview on Wikipedia](https://en.wikipedia.org/wiki/Golf_cart), and read our guide on [driving a golf cart on the road in Australia](/blog/can-you-drive-a-golf-cart-on-the-road-in-australia/) before you plan any public road use.`,
       ] },
+      { h2: `Club carts and club carts golf carts`, p: [
+        `Searches for club carts and club carts golf carts often mean Club Car models. We list the Club Car Tempo, Onward and a used Precedent in [petrol golf carts](/golf-carts/petrol/), [electric golf carts](/golf-carts/electric/) and [used golf carts](/golf-carts/used/), alongside the [Club Car page](/brands/club-car/). A golf car golf cart comparison is easiest by seats, battery and price.`,
+      ] },
     ],
     faqs: [
       [`Can you drive a golf cart on the road in Australia?`, `Rules differ by state and territory. Golf carts are generally for private property and the course unless registered and compliant. Check with your state transport authority, and read our [road rules guide](/blog/can-you-drive-a-golf-cart-on-the-road-in-australia/).`],

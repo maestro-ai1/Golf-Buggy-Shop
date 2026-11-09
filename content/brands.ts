@@ -515,6 +515,9 @@ export const BRANDS: Record<string, PageCopy> = {
       { h2: `Honda 1000 buggy price and how to compare`, p: [
         `The honda 1000 buggy price is shown on the Pioneer listing, with GST included, and freight is confirmed before you pay. A honda buggy 1000 buyer should compare seats, cargo bed and towing figures against the other machines in our [side by sides and UTVs](/off-road-buggies/side-by-sides-utvs/).`,
       ] },
+      { h2: `Honda side by side Australia, Honda SXS and Honda side by side for sale`, p: [
+        `A Honda side by side for sale in Australia is the Pioneer 1000-6 here: the Honda side by side price is $42,923 including GST, and Honda side by side utv prices and Honda SXS searches land on the same listing. Freight to your postcode is confirmed before you pay. Compare it with other [side by sides and UTVs](/off-road-buggies/side-by-sides-utvs/).`,
+      ] },
     ],
     faqs: [
       [`Which Honda do you sell?`, `The Pioneer 1000-6 side by side.`],

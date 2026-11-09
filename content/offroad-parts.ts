@@ -83,6 +83,9 @@ export const OFFROAD_PARTS: Record<string, PageCopy> = {
       { h2: `Go kart price, petrol go kart and cheap go karts`, p: [
         `Go kart price depends on engine, brand and assembly. Cheap go karts start from around $1,400, and a petrol go kart such as the Kayo S125 sits at the top of the range. See the [how much is a go kart](/blog/how-much-is-a-go-kart/) guide, and for background on the sport and machines see [go karts on Wikipedia](https://en.wikipedia.org/wiki/Go-kart).`,
       ] },
+      { h2: `Go karts for adults and electric go karts for sale`, p: [
+        `Larger-engine karts such as the HelmetKarts HA-270X and the GMX Drift 200cc are the ones to look at if you want go karts for adults; check size, weight and age guidance on each listing. Electric go karts for sale include the Segway Ninebot GoKart Pro 2 and the Crazy Kart electric drift kart, and other go karts for sale include the Kayo S125. See our [Ninebot go kart guide](/blog/ninebot-go-kart-segway-gokart-pro-2-guide/) and always wear a helmet.`,
+      ] },
     ],
     faqs: [
       [`How much is a go kart?`, `Our go karts run from around $1,420 to about $3,100 depending on engine and brand. All prices include GST.`],
@@ -112,6 +115,9 @@ export const OFFROAD_PARTS: Record<string, PageCopy> = {
       ] },
       { h2: `Safety for kids on buggies`, p: [
         `Supervise children at all times, use helmets, gloves and sturdy shoes, and keep to private land. The [Australian Government product safety site](https://www.productsafety.gov.au/) publishes advice and recalls for children's products and is worth a look before you buy.`,
+      ] },
+      { h2: `Kids side by side and childrens UTV options`, p: [
+        `A kids side by side or childrens UTV is a small off-road buggy sized for younger riders. Our Polaris RZR 200 EFI youth buggy is the closest to a kids side by side, and we list youth windshields, a bumper and a youth tyre for it in [off-road parts](/parts-accessories/off-road-parts/). Check age and weight guidance, always supervise and use a helmet. For an electric option see the [Can-Am Maverick 24V kids ride-on](/products/can-am-maverick-24v-kids-ride-on-buggy/) and our [kids ride-on buggy guide](/blog/kids-ride-on-buggy/).`,
       ] },
     ],
     faqs: [
@@ -143,6 +149,9 @@ export const OFFROAD_PARTS: Record<string, PageCopy> = {
       { h2: `Electric or petrol off-road?`, p: [
         `Electric vehicles are quiet and cheap to run but have limited range. Petrol vehicles offer long range and quick refuelling. UTV Australia buyers who work a large property often choose petrol; others choose electric for low noise. Ask us if you are unsure.`,
       ] },
+      { h2: `Electric side by side Australia and electric UTV price`, p: [
+        `An electric side by side in Australia is quiet and has low running costs. Our electric UTV Australia price range runs from about $11,800 for the Crossfire E5 to over $27,000 for the Segway Villain SX10 E, so you can compare an electric utv australia price against petrol models. We do not rank electric UTVs, so the best electric UTV Australia buyers can choose depends on range, seats and load, which we list on each page. For smaller electric machines, our GO SKITZ electric quads are in [mini quads and ATVs](/off-road-buggies/mini-quads-atvs/).`,
+      ] },
     ],
     faqs: [
       [`What is an electric UTV?`, `It is a utility vehicle with electric drive, built for work or recreation.`],
@@ -171,6 +180,12 @@ export const OFFROAD_PARTS: Record<string, PageCopy> = {
       ] },
       { h2: `Safety, rules and delivery for a side by side`, p: [
         `Wear a helmet and use seat belts, keep passengers to the number of seats and keep to private land and permitted areas. [Safe Work Australia](https://www.safeworkaustralia.gov.au/safety-topic/hazards/quad-bikes) publishes safety guidance for quad bikes and similar vehicles. Freight is confirmed to your postcode before you pay.`,
+      ] },
+      { h2: `Small utility vehicle for sale and utility vehicles for sale`, p: [
+        `A small utility vehicle for sale is usually a compact side by side with a load bed, and utility vehicles for sale in Australia range from the Kayo S150 to the Polaris Ranger, Kubota RTV and Honda Pioneer. A utility vehicle Australia buyers order here is delivered by freight with the cost confirmed before you pay, and utility vehicles for sale Australia-wide include the Crossfire 600GT utility side by side and 400GT farm side by side. A utility side by side, side by side utility vehicle or utility quad such as the Crossfire X600 is built for work, not just recreation.`,
+      ] },
+      { h2: `Farm vehicles, side by side all terrain vehicles and 4x4 side by sides`, p: [
+        `Farm vehicles for sale and farm utility vehicles are usually four-wheel drive with a load bed: look at a side by side farm vehicle such as the Crossfire 400GT 400cc EFI farm side by side or the Polaris Ranger. A 4x4 side by side, side by side all terrain vehicle or terrain vehicle is the same family of machine, and a farm side by side or side x side utv is another name for it. Electric options exist too: see the Crossfire E5 and Segway Villain in [electric off-road UTVs](/off-road-buggies/electric-off-road-utvs/). Side by side Australia buyers can ask for the best side by side for their use: compare engine, seats and load rating, and read our [UTV guide](/blog/what-is-a-utv-side-by-side-vs-atv-vs-dune-buggy/).`,
       ] },
     ],
     faqs: [
@@ -201,6 +216,15 @@ export const OFFROAD_PARTS: Record<string, PageCopy> = {
       ] },
       { h2: `Choosing a small quad and staying safe`, p: [
         `Choose automatic quads for beginners and younger riders, and check reverse gear, speed limiter and braking. [Safe Work Australia](https://www.safeworkaustralia.gov.au/safety-topic/hazards/quad-bikes) publishes quad bike safety guidance. Need parts? See [quad bike spare parts](/parts-accessories/off-road-parts/).`,
+      ] },
+      { h2: `All terrain vehicle, ATV bike for sale and quads for sale`, p: [
+        `An all terrain vehicle (ATV) or atv bike is another name for a quad bike. An atv bike for sale here, or any of the quads for sale on this page, is delivered Australia-wide with freight confirmed before you pay. If you want to buy a quad bike, compare the small kids models with the Kayo Bull 125, an atv farm bike with a 124cc engine, and the larger Crossfire X600 and X400 quads. For a quick overview of the types, see our [ATV buggies guide](/blog/atv-buggy/).`,
+      ] },
+      { h2: `Kids quad, childrens ATV and childs 4 wheeler options`, p: [
+        `A kids quad, childrens quad bike or childrens ATV should be sized to the rider. We list kids quad bikes for sale in petrol, such as the Apollo Commander 70 and the Kayo Storm 70, and kids electric quad bike options from GO SKITZ, the quietest choice for younger children. A childrens electric quad, childrens electric atv, kids 4 wheeler or childs 4 wheeler is the same idea in a different name, and a childrens petrol quad or kids quad bike petrol model suits older kids on farm tracks. Check age and weight guidance for every listing, and see our [kids buggies](/off-road-buggies/kids-buggies/) range and the [kids ride-on buggy guide](/blog/kids-ride-on-buggy/). If you are shopping for an atv for kids, always supervise and use a helmet.`,
+      ] },
+      { h2: `Farm quad, farm ATV and quad bikes and ATVs for adults`, p: [
+        `A farm quad or farm atv needs power, a load rack and reliable brakes. The Kayo Bull 125 and Crossfire X600 4WD utility ATV are our farm quad models, and the Crossfire X400 has a 500cc engine. Adult quad bikes, 125cc quad bike, 250cc quad bike and 250cc atv quad bike searches are covered by the 125cc quads from Kayo, Apollo and Crossfire and the 250cc X600. Compare quad bikes and atvs by engine size, drive type and weight, and see [Safe Work Australia](https://www.safeworkaustralia.gov.au/safety-topic/hazards/quad-bikes) for safety guidance. Four wheelers for sale and 4 wheelers for sale are listed with prices from about $420.`,
       ] },
     ],
     faqs: [

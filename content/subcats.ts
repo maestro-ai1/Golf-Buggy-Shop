@@ -51,6 +51,9 @@ export const SUBCATS: Record<string, PageCopy> = {
       { h2: `Second hand electric golf buggy for sale and used buggies`, p: [
         `Looking for a second hand electric golf buggy for sale or a second hand golf buggy? We list new buggies online with warranty. A used buggy can cost less, but the battery is the biggest cost to replace, so check its age and ask for service history. Our guide to [used electric golf buggies](/blog/used-electric-golf-buggy-for-sale/) explains what to inspect.`,
       ] },
+      { h2: `Motorized golf buggy, motorised golf cart and electric golf buggies Australia`, p: [
+        `A motorized golf buggy is spelled both ways: motorised and motorized describe the same electric buggy. Some golfers search motorised golf cart for the same machine, but a ride-in cart is a different vehicle: see our [golf carts](/golf-carts/). Electric golf buggies Australia golfers choose range from the [MGI ZIP X1](/products/mgi-zip-x1-electric-golf-buggy/) to the [Motocaddy S1 DHC](/products/motocaddy-s1-dhc-electric-golf-buggy/), delivered with freight confirmed before you pay.`,
+      ] },
     ],
     faqs: [
       [`What is the best electric golf buggy in Australia?`, `The best buggy depends on your course. MGI and PowerBug are popular for compact folding electric buggies, while QOD and Concourse suit golfers who want remote control. Compare specs and ask us if you need help, or read our [best electric golf buggy guide](/blog/what-is-the-best-electric-golf-buggy-australia/).`],
@@ -106,6 +109,9 @@ export const SUBCATS: Record<string, PageCopy> = {
       ] },
       { h2: `Golf trolley for sale: bags, accessories and brands`, p: [
         `A golf trolley for sale here comes from brands such as [Stinger](/brands/stinger/), [Clicgear](/brands/clicgear/), [Rovic](/brands/rovic/), [PowaKaddy](/brands/powakaddy/) and [Tri-Lite](/brands/tri-lite/). Add a [golf trolley bag](/parts-accessories/golf-cart-accessories/bags-rain-covers-eskies/) or umbrella holder to match, and compare the golf push buggy Australia range by weight and fold size. See [golf equipment on Wikipedia](https://en.wikipedia.org/wiki/Golf_equipment) for background on trolleys and bags.`,
+      ] },
+      { h2: `Golf push cart, push cart and golf trolly options`, p: [
+        `A golf push cart, push cart or golf trolly is a walking buggy with no motor. For an electric caddy or golf caddy cart that moves under its own power, see [electric trolleys](/golf-buggies/caddies-electric-trolleys/). We do not rank buggies by star rating, so when you look for the best golf push cart, best rated golf push carts or top rated golf push carts, compare weight, folded size, wheels and price on each listing. Our guide to the [best golf push buggy in Australia](/blog/best-golf-push-buggy-australia/) explains what to check.`,
       ] },
     ],
     faqs: [
@@ -272,6 +278,9 @@ export const SUBCATS: Record<string, PageCopy> = {
       ] },
       { h2: `Golf carts for sale Australia-wide, and golf cars for sale`, p: [
         `Whether you want to buy golf cart models for a club, resort, farm or home, we deliver golf carts for sale Australia-wide, with golf cars for sale options in two to eight seats. See our [locations page](/golf-buggies/for-sale-locations/) for city delivery and [Golf cart overview on Wikipedia](https://en.wikipedia.org/wiki/Golf_cart) for background on how carts work. Prefer a smaller walking buggy? See our [golf buggies for sale](/golf-buggies/for-sale/).`,
+      ] },
+      { h2: `Low price golf carts, inexpensive golf carts and golf car cost`, p: [
+        `Low price golf carts and inexpensive golf carts start with our used range, from about $4,900, while new electric carts begin from about $10,800. The golf car cost depends on seats, battery and age, so compare the golf car price across new golf carts and [used golf carts](/golf-carts/used/). We list new golf carts for sale Australia-wide, and Australian golf carts shoppers can have them delivered with freight confirmed before payment. Our guide to [what a golf cart costs in Australia](/blog/how-much-does-a-golf-cart-cost-in-australia/) explains the range.`,
       ] },
     ],
     faqs: [

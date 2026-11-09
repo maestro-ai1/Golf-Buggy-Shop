@@ -2908,12 +2908,6 @@
     "intent": "Commercial"
    },
    {
-    "keyword": "atv polaris quad",
-    "volume": 480,
-    "kd": 25,
-    "intent": "Commercial"
-   },
-   {
     "keyword": "polaris side by side utv",
     "volume": 320,
     "kd": 24,
@@ -2924,22 +2918,29 @@
     "volume": 320,
     "kd": 28,
     "intent": "Informational, Transactional"
+   },
+   {
+    "keyword": "polaris ranger",
+    "volume": 1300,
+    "kd": 21,
+    "intent": "Commercial / Informational"
    }
   ],
   "support": [
-   "polaris dune buggy",
    "polaris ranger utv",
    "polaris rzr 200",
    "polaris buggy for sale",
    "polaris rzr1000s",
-   "polaris dune buggy for sale",
    "polaris razor",
    "polaris rzr 1000",
-   "quad atv polaris",
    "polaris kids buggy",
-   "polaris dirt buggy",
-   "polaris rzr 570",
-   "razor polaris rzr"
+   "razor polaris rzr",
+   "polaris ranger 1000",
+   "polaris ranger side by side",
+   "polaris ranger utility vehicle",
+   "polaris ranger xp 1000",
+   "polaris ranger for sale",
+   "polaris sxs"
   ],
   "h1": "Polaris Side By Side",
   "titleTag": "Polaris Side By Side Australia",
@@ -3003,7 +3004,16 @@
    "mgi battery replacement",
    "mgi golf australia",
    "mgi golf buggies australia",
-   "mgi golf buggy battery"
+   "mgi golf buggy battery",
+   "mgi zip navigator all terrain",
+   "mgi ai navigator gps+",
+   "mgi zip navigator at",
+   "mgi accessories",
+   "mgi battery",
+   "mgi zip x5",
+   "mgi zip x1",
+   "mgi zip navigator accessories",
+   "mgi ai navigator halo"
   ],
   "h1": "Mgi Golf Buggy",
   "titleTag": "Mgi Golf Buggy Australia",
@@ -3061,9 +3071,6 @@
    "can am atv bike",
    "can am buggy for sale",
    "kids can am buggy",
-   "can-am quad outlander",
-   "can am maverick x3 buggy",
-   "can-am maverick x3 side-by-side",
    "can am electric buggy",
    "can am quad bikes",
    "canam atv",
@@ -3105,15 +3112,15 @@
     "intent": "Commercial"
    },
    {
-    "keyword": "clicgear 3.5 golf buggy",
-    "volume": 50,
-    "kd": 15,
-    "intent": "Informational, Commercial"
-   },
-   {
     "keyword": "golf buggy clicgear",
     "volume": 140,
     "kd": 10,
+    "intent": "Commercial"
+   },
+   {
+    "keyword": "clicgear",
+    "volume": 590,
+    "kd": 13,
     "intent": "Commercial"
    }
   ],
@@ -3121,7 +3128,15 @@
    "clicgear golf buggies",
    "clicgear buggies",
    "clicgear model 4 buggy",
-   "clicgear buggy accessories"
+   "clicgear buggy accessories",
+   "clicgear 3.5 golf buggy",
+   "clicgear accessories",
+   "clicgear 4",
+   "clicgear attachments",
+   "clicgear umbrella holder",
+   "clicgear golf cart",
+   "clicgear 3.5",
+   "clicgear 4.5"
   ],
   "h1": "Clicgear Buggy",
   "titleTag": "Clicgear Buggy Australia",
@@ -3171,7 +3186,9 @@
     "intent": "Informational, Transactional"
    }
   ],
-  "support": [],
+  "support": [
+   "motocaddy m7 remote"
+  ],
   "h1": "Motocaddy Australia",
   "titleTag": "Motocaddy Australia",
   "faqSeed": [],
@@ -3222,7 +3239,6 @@
   ],
   "support": [
    "yamaha golf carts",
-   "yamaha golf car company",
    "buggy yamaha",
    "yamaha golf cart parts",
    "yamaha golf buggy accessories",
@@ -3234,7 +3250,16 @@
    "yamaha viking buggy",
    "yamaha golf buggy parts australia",
    "yamaha buggys",
-   "yamaha buggy price"
+   "yamaha buggy price",
+   "yamaha viking",
+   "yamaha side by side utv",
+   "yamaha viking 700",
+   "yamaha golf car parts",
+   "yamaha golf carts brisbane",
+   "yamaha golf carts australia",
+   "yamaha golf cart prices australia",
+   "yamaha side by side price",
+   "yamaha golf cart parts australia"
   ],
   "h1": "Yamaha Buggy",
   "titleTag": "Yamaha Buggy Australia",
@@ -3260,12 +3285,6 @@
     "intent": ""
    },
    {
-    "keyword": "rovic buggy",
-    "volume": 30,
-    "kd": 0,
-    "intent": ""
-   },
-   {
     "keyword": "rovic",
     "volume": 70,
     "kd": 9,
@@ -3276,9 +3295,19 @@
     "volume": 70,
     "kd": 12,
     "intent": "Informational, Transactional"
+   },
+   {
+    "keyword": "rovic golf cart",
+    "volume": 210,
+    "kd": 7,
+    "intent": "Commercial"
    }
   ],
-  "support": [],
+  "support": [
+   "rovic buggy",
+   "rovic rv1s",
+   "rovic rv1c"
+  ],
   "h1": "Rovic Golf Buggy",
   "titleTag": "Rovic Golf Buggy Australia",
   "faqSeed": [],
@@ -3339,7 +3368,9 @@
    "trailmaster cheetah go karts",
    "trailmaster cheetah for sale",
    "trailmaster off road buggies",
-   "trailmaster cheetah go karts for sale"
+   "trailmaster cheetah go karts for sale",
+   "trailmaster cheetah off road carts",
+   "trailmaster cheetah 300"
   ],
   "h1": "Trailmaster Dune Buggy",
   "titleTag": "Trailmaster Dune Buggy Australia",
@@ -3393,7 +3424,9 @@
    "triumph trilogy buggy",
    "triumph outset 2 buggy review",
    "triumph golf buggies",
-   "triumph golf buggy spare parts online"
+   "triumph golf buggy spare parts online",
+   "triumph gtx plus golf buggy",
+   "triumph gtx plus buggy accessories"
   ],
   "h1": "Triumph Golf Buggy",
   "titleTag": "Triumph Golf Buggy Australia",
@@ -3445,7 +3478,12 @@
   ],
   "support": [
    "golf buggy club car",
-   "club tempo"
+   "club tempo",
+   "club car parts",
+   "club car precedent",
+   "club car charger",
+   "club car onward golf cart",
+   "club car onward price"
   ],
   "h1": "Club Car Golf Buggy",
   "titleTag": "Club Car Golf Buggy Australia",
@@ -3471,19 +3509,38 @@
     "intent": "Transactional"
    },
    {
-    "keyword": "kubota buggy price",
-    "volume": 30,
-    "kd": 0,
-    "intent": ""
+    "keyword": "kubota rtv",
+    "volume": 390,
+    "kd": 18,
+    "intent": "Transactional"
    },
    {
-    "keyword": "kubota buggies",
-    "volume": 30,
-    "kd": 0,
-    "intent": ""
+    "keyword": "kubota side by side",
+    "volume": 390,
+    "kd": 16,
+    "intent": "Informational / Transactional / Commercial"
+   },
+   {
+    "keyword": "kubota utv",
+    "volume": 210,
+    "kd": 12,
+    "intent": "Informational / Transactional"
+   },
+   {
+    "keyword": "kubota rtv for sale",
+    "volume": 110,
+    "kd": 12,
+    "intent": "Transactional"
    }
   ],
-  "support": [],
+  "support": [
+   "kubota buggy price",
+   "kubota buggies",
+   "kubota side by side utv",
+   "kubota side by side for sale",
+   "kubota side by side prices",
+   "kubota rtv prices"
+  ],
   "h1": "Kubota Buggy",
   "titleTag": "Kubota Buggy Australia",
   "faqSeed": [],
@@ -3520,7 +3577,11 @@
     "intent": "Informational"
    }
   ],
-  "support": [],
+  "support": [
+   "hammerhead mudhead",
+   "hammerhead torpedo",
+   "hammerhead torpedo buggy"
+  ],
   "h1": "Hammerhead Buggies",
   "titleTag": "Hammerhead Buggies Australia",
   "faqSeed": [],
@@ -3570,7 +3631,11 @@
    }
   ],
   "support": [
-   "ezgo golf cart accessories"
+   "ezgo golf cart accessories",
+   "ez go electric cart",
+   "ezgo golf cart for sale",
+   "ezgo golf carts australia",
+   "ezgo rxv golf cart"
   ],
   "h1": "Ezgo Golf Buggies",
   "titleTag": "Ezgo Golf Buggies Australia",
@@ -3602,7 +3667,9 @@
     "intent": "Informational, Transactional"
    }
   ],
-  "support": [],
+  "support": [
+   "caddytek buggy"
+  ],
   "h1": "Caddytek Golf Buggy",
   "titleTag": "Caddytek Golf Buggy Australia",
   "faqSeed": [],
@@ -3633,7 +3700,11 @@
     "intent": ""
    }
   ],
-  "support": [],
+  "support": [
+   "john deere buggy for sale",
+   "john deere gator buggy",
+   "john deere electric buggy"
+  ],
   "h1": "John Deere Buggy",
   "titleTag": "John Deere Buggy Australia",
   "faqSeed": [],
@@ -3670,13 +3741,18 @@
     "intent": ""
    },
    {
-    "keyword": "cf moto buggy for sale used",
-    "volume": 30,
-    "kd": 0,
-    "intent": ""
+    "keyword": "cfmoto side by side",
+    "volume": 390,
+    "kd": 8,
+    "intent": "Informational / Transactional"
    }
   ],
-  "support": [],
+  "support": [
+   "cf moto buggy for sale used",
+   "cf moto utv",
+   "cf moto uforce",
+   "cfmoto uforce side by side"
+  ],
   "h1": "Cf Moto Buggy For Sale",
   "titleTag": "Cf Moto Buggy For Sale Australia",
   "faqSeed": [],
@@ -3699,6 +3775,30 @@
     "volume": 720,
     "kd": 14,
     "intent": "Transactional"
+   },
+   {
+    "keyword": "segway gokart pro 2",
+    "volume": 480,
+    "kd": 16,
+    "intent": "Commercial / Informational / Transactional"
+   },
+   {
+    "keyword": "ninebot gokart pro",
+    "volume": 320,
+    "kd": 17,
+    "intent": "Informational / Transactional / Commercial"
+   },
+   {
+    "keyword": "segway ninebot gokart",
+    "volume": 110,
+    "kd": 9,
+    "intent": "Informational / Transactional"
+   },
+   {
+    "keyword": "ninebot gokart pro 2",
+    "volume": 90,
+    "kd": 17,
+    "intent": "Informational / Transactional"
    }
   ],
   "support": [],
@@ -3738,7 +3838,9 @@
     "intent": ""
    }
   ],
-  "support": [],
+  "support": [
+   "bag boy buggy"
+  ],
   "h1": "Bag Boy Golf Buggy",
   "titleTag": "Bag Boy Golf Buggy Australia",
   "faqSeed": [],
@@ -3769,7 +3871,11 @@
     "intent": ""
    }
   ],
-  "support": [],
+  "support": [
+   "big max iq2 360",
+   "big max iq2 buggy",
+   "big max buggy"
+  ],
   "h1": "Big Max Golf Buggy",
   "titleTag": "Big Max Golf Buggy Australia",
   "faqSeed": [],
@@ -3794,28 +3900,28 @@
     "intent": "Transactional"
    },
    {
-    "keyword": "honda odyssey buggy for sale",
-    "volume": 70,
-    "kd": 16,
-    "intent": "Informational, Transactional"
-   },
-   {
-    "keyword": "honda odyssey dune buggy for sale",
-    "volume": 50,
-    "kd": 20,
-    "intent": "Transactional"
-   },
-   {
     "keyword": "honda buggy",
     "volume": 320,
     "kd": 21,
     "intent": "Informational"
    },
    {
-    "keyword": "honda odyssey buggy",
-    "volume": 260,
-    "kd": 20,
-    "intent": "Informational"
+    "keyword": "honda side by side",
+    "volume": 480,
+    "kd": 10,
+    "intent": "Transactional / Navigational / Informational"
+   },
+   {
+    "keyword": "honda pioneer",
+    "volume": 390,
+    "kd": 17,
+    "intent": "Informational / Transactional"
+   },
+   {
+    "keyword": "honda utv",
+    "volume": 170,
+    "kd": 17,
+    "intent": "Transactional"
    }
   ],
   "support": [
@@ -3827,12 +3933,15 @@
    "honda buggy 1000",
    "honda buggies",
    "honda dune buggy odyssey for sale",
-   "honda pilot buggy",
-   "honda pilot dune buggy",
    "honda odyssey buggy for sale australia",
-   "honda buggy pilot",
    "honda buggy price",
-   "honda 1000 buggy price"
+   "honda 1000 buggy price",
+   "honda odyssey buggy for sale",
+   "honda odyssey dune buggy for sale",
+   "honda odyssey buggy",
+   "honda pioneer 1000 for sale",
+   "honda side by side price",
+   "honda sxs"
   ],
   "h1": "Honda 1000 Buggy",
   "titleTag": "Honda 1000 Buggy Australia",
@@ -3856,6 +3965,30 @@
     "volume": 70,
     "kd": 11,
     "intent": "Informational, Transactional"
+   },
+   {
+    "keyword": "powakaddy",
+    "volume": 260,
+    "kd": 22,
+    "intent": "Navigational / Transactional"
+   },
+   {
+    "keyword": "powakaddy australia",
+    "volume": 70,
+    "kd": 5,
+    "intent": "Transactional"
+   },
+   {
+    "keyword": "powakaddy ct6 australia",
+    "volume": 20,
+    "kd": 6,
+    "intent": "Informational / Transactional"
+   },
+   {
+    "keyword": "powakaddy ct6 accessories",
+    "volume": 20,
+    "kd": 5,
+    "intent": "Informational / Transactional"
    }
   ],
   "support": [],
@@ -3932,19 +4065,33 @@
     "intent": "Navigational, Commercial"
    },
    {
-    "keyword": "buggy the car",
-    "volume": 140,
-    "kd": 27,
-    "intent": "Informational, Commercial"
-   },
-   {
     "keyword": "ecar golf buggy",
     "volume": 50,
     "kd": 27,
     "intent": "Navigational, Commercial"
+   },
+   {
+    "keyword": "e car golf cart",
+    "volume": 140,
+    "kd": 4,
+    "intent": "Informational / Transactional / Navigational / Commercial"
+   },
+   {
+    "keyword": "ecar compass 4s golf cart",
+    "volume": 50,
+    "kd": 0,
+    "intent": "Informational / Transactional / Navigational"
+   },
+   {
+    "keyword": "ecar",
+    "volume": 390,
+    "kd": 12,
+    "intent": "Informational"
    }
   ],
-  "support": [],
+  "support": [
+   "buggy the car"
+  ],
   "h1": "Ecar Golf Cart",
   "titleTag": "Ecar Golf Cart Australia",
   "faqSeed": [],
@@ -3962,7 +4109,34 @@
    "kd": 21,
    "intent": "Informational, Transactional"
   },
-  "secondary": [],
+  "secondary": [
+   {
+    "keyword": "kawasaki side by side",
+    "volume": 170,
+    "kd": 15,
+    "intent": "Informational / Commercial"
+   },
+   {
+    "keyword": "kawasaki buggy for sale",
+    "volume": 20,
+    "kd": 0
+   },
+   {
+    "keyword": "kawasaki 4x4 buggy",
+    "volume": 20,
+    "kd": 0
+   },
+   {
+    "keyword": "kawasaki farm buggy",
+    "volume": 20,
+    "kd": 0
+   },
+   {
+    "keyword": "kawasaki off road buggy",
+    "volume": 20,
+    "kd": 0
+   }
+  ],
   "support": [
    "kawasaki buggies",
    "kawasaki buggy 2 seater"
@@ -4010,7 +4184,10 @@
    }
   ],
   "support": [
-   "stinger electric buggy"
+   "stinger electric buggy",
+   "stinger sg-4",
+   "stinger sg-6",
+   "stinger sg 4 crossover"
   ],
   "h1": "Stinger Golf Buggy",
   "titleTag": "Stinger Golf Buggy Australia",
@@ -4066,10 +4243,12 @@
    "trilite golf buggy accessories",
    "tri lite golf buggy accessories",
    "trilite golf buggy umbrella holder",
-   "tri lite t-flash golf buggy",
    "trilite golf buggy parts",
    "tri lite deluxe buggy review",
-   "trilite deluxe buggy"
+   "trilite deluxe buggy",
+   "tri lite",
+   "trilite umbrella holder",
+   "tri lite deluxe golf buggy"
   ],
   "h1": "Trilite Golf Buggy",
   "titleTag": "Trilite Golf Buggy Australia",
@@ -4096,7 +4275,12 @@
    }
   ],
   "support": [
-   "smoothy golf buggy spare parts"
+   "smoothy golf buggy spare parts",
+   "smoothy golf buggy with seat",
+   "smoothy golf buggy for sale",
+   "smoothy golf buggy price",
+   "smoothy golf buggy accessories",
+   "smoothy golf buggy parts"
   ],
   "h1": "Golf Buggy Smoothy",
   "titleTag": "Golf Buggy Smoothy Australia",
@@ -4135,9 +4319,12 @@
    }
   ],
   "support": [
-   "thomson electric golf buggy problems",
    "thomson golf buggy electric trolley",
-   "thomson electric golf buggy e5000 review"
+   "thomson electric golf buggy e5000 review",
+   "thomson golf buggy accessories",
+   "thomson golf buggy parts",
+   "thomson golf buggy battery",
+   "thomson golf buggy spare parts"
   ],
   "h1": "Thomson Electric Golf Buggy",
   "titleTag": "Thomson Electric Golf Buggy Australia",
@@ -4163,7 +4350,13 @@
     "intent": "Navigational, Transactional"
    }
   ],
-  "support": [],
+  "support": [
+   "parmaker golf cart",
+   "parmaker electric golf buggy",
+   "parmaker golf buggies for sale",
+   "parmaker ride on golf buggies for sale",
+   "parmaker plus golf buggy"
+  ],
   "h1": "Parmaker Golf Buggy",
   "titleTag": "Parmaker Golf Buggy Australia",
   "faqSeed": [],

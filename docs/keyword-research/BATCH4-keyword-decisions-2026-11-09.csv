@@ -1,0 +1,139 @@
+﻿Keyword,Page,Decision,Reason
+polaris dune buggy,/brands/polaris/,released (not used in copy),Polaris model or vehicle type we do not sell
+polaris dune buggy for sale,/brands/polaris/,released (not used in copy),Polaris model or vehicle type we do not sell
+polaris dirt buggy,/brands/polaris/,released (not used in copy),Polaris model or vehicle type we do not sell
+polaris rzr 570,/brands/polaris/,released (not used in copy),Polaris model or vehicle type we do not sell
+can am maverick x3 buggy,/brands/can-am/,released (not used in copy),full-size Can-Am model we do not sell
+can-am maverick x3 side-by-side,/brands/can-am/,released (not used in copy),full-size Can-Am model we do not sell
+can-am quad outlander,/brands/can-am/,released (not used in copy),full-size Can-Am model we do not sell
+yamaha golf car company,/brands/yamaha/,released (not used in copy),"company or dealer search, not a product"
+honda pilot buggy,/brands/honda/,released (not used in copy),"Honda Pilot is a car, not a buggy"
+honda pilot dune buggy,/brands/honda/,released (not used in copy),"Honda Pilot is a car, not a buggy"
+honda buggy pilot,/brands/honda/,released (not used in copy),"Honda Pilot is a car, not a buggy"
+tri lite t-flash golf buggy,/brands/tri-lite/,released (not used in copy),model we do not stock
+thomson electric golf buggy problems,/brands/thomson/,released (not used in copy),"negative problem search, not a purchase"
+atv polaris quad,/brands/polaris/ (secondary),released (not used in copy),we do not sell Polaris quads
+polaris ranger,/brands/polaris/,added as secondary,"Ranger 500, XP 1000 and Crew are stocked"
+kubota buggy price,/brands/kubota/ (secondary) -> /brands/kubota/ (support),demoted to support,low-volume variants replaced by the real model searches
+kubota buggies,/brands/kubota/ (secondary) -> /brands/kubota/ (support),demoted to support,low-volume variants replaced by the real model searches
+kubota rtv,/brands/kubota/,added as secondary,low-volume variants replaced by the real model searches
+kubota side by side,/brands/kubota/,added as secondary,low-volume variants replaced by the real model searches
+kubota utv,/brands/kubota/,added as secondary,low-volume variants replaced by the real model searches
+kubota rtv for sale,/brands/kubota/,added as secondary,Kubota RTV listings are stocked
+honda odyssey buggy for sale,/brands/honda/ (secondary) -> /brands/honda/ (support),demoted to support,"we stock the Pioneer 1000-6, not the Odyssey"
+honda odyssey dune buggy for sale,/brands/honda/ (secondary) -> /brands/honda/ (support),demoted to support,"we stock the Pioneer 1000-6, not the Odyssey"
+honda odyssey buggy,/brands/honda/ (secondary) -> /brands/honda/ (support),demoted to support,"we stock the Pioneer 1000-6, not the Odyssey"
+honda side by side,/brands/honda/,added as secondary,"we stock the Pioneer 1000-6, not the Odyssey"
+honda pioneer,/brands/honda/,added as secondary,"we stock the Pioneer 1000-6, not the Odyssey"
+honda utv,/brands/honda/,added as secondary,"we stock the Pioneer 1000-6, not the Odyssey"
+cf moto buggy for sale used,/brands/cfmoto/ (secondary) -> /brands/cfmoto/ (support),demoted to support,higher-volume side by side search
+cfmoto side by side,/brands/cfmoto/,added as secondary,higher-volume side by side search
+buggy the car,/brands/ecar/ (secondary) -> /brands/ecar/ (support),demoted to support,junk phrase replaced
+e car golf cart,/brands/ecar/,added as secondary,junk phrase replaced
+ecar compass 4s golf cart,/brands/ecar/,added as secondary,ECAR Compass 4S is stocked
+ecar,/brands/ecar/,added as secondary,brand name search
+clicgear 3.5 golf buggy,/brands/clicgear/ (secondary) -> /brands/clicgear/ (support),demoted to support,brand name has far higher volume
+clicgear,/brands/clicgear/,added as secondary,brand name has far higher volume
+rovic buggy,/brands/rovic/ (secondary) -> /brands/rovic/ (support),demoted to support,higher-volume search
+rovic golf cart,/brands/rovic/,added as secondary,higher-volume search
+segway gokart pro 2,/brands/segway/,added as secondary,Segway Ninebot GoKart Pro 2 is stocked; the page had one secondary
+ninebot gokart pro,/brands/segway/,added as secondary,Segway Ninebot GoKart Pro 2 is stocked; the page had one secondary
+segway ninebot gokart,/brands/segway/,added as secondary,Segway Ninebot GoKart Pro 2 is stocked; the page had one secondary
+ninebot gokart pro 2,/brands/segway/,added as secondary,Segway Ninebot GoKart Pro 2 is stocked; the page had one secondary
+powakaddy,/brands/powakaddy/,added as secondary,PowaKaddy CT6 is stocked; the page had one secondary
+powakaddy australia,/brands/powakaddy/,added as secondary,PowaKaddy CT6 is stocked; the page had one secondary
+powakaddy ct6 australia,/brands/powakaddy/,added as secondary,PowaKaddy CT6 is stocked; the page had one secondary
+powakaddy ct6 accessories,/brands/powakaddy/,added as secondary,PowaKaddy CT6 is stocked; the page had one secondary
+kawasaki side by side,/brands/kawasaki/,added as secondary,Kawasaki Teryx4 is stocked; the page had no secondaries
+kawasaki buggy for sale,/brands/kawasaki/,added as secondary,Kawasaki Teryx4 is stocked; the page had no secondaries
+kawasaki 4x4 buggy,/brands/kawasaki/,added as secondary,Kawasaki Teryx4 is stocked; the page had no secondaries
+kawasaki farm buggy,/brands/kawasaki/,added as secondary,Kawasaki Teryx4 is stocked; the page had no secondaries
+kawasaki off road buggy,/brands/kawasaki/,added as secondary,Kawasaki Teryx4 is stocked; the page had no secondaries
+mgi zip navigator all terrain,/brands/mgi/,added as support,brand and model searches
+mgi ai navigator gps+,/brands/mgi/,added as support,brand and model searches
+mgi zip navigator at,/brands/mgi/,added as support,brand and model searches
+mgi accessories,/brands/mgi/,added as support,brand and model searches
+mgi battery,/brands/mgi/,added as support,brand and model searches
+mgi zip x5,/brands/mgi/,added as support,brand and model searches
+mgi zip x1,/brands/mgi/,added as support,brand and model searches
+mgi zip navigator accessories,/brands/mgi/,added as support,brand and model searches
+mgi ai navigator halo,/brands/mgi/,added as support,brand and model searches
+polaris ranger 1000,/brands/polaris/,added as support,brand and model searches
+polaris ranger side by side,/brands/polaris/,added as support,brand and model searches
+polaris ranger utility vehicle,/brands/polaris/,added as support,brand and model searches
+polaris ranger xp 1000,/brands/polaris/,added as support,brand and model searches
+polaris ranger for sale,/brands/polaris/,added as support,brand and model searches
+polaris sxs,/brands/polaris/,added as support,brand and model searches
+clicgear accessories,/brands/clicgear/,added as support,brand and model searches
+clicgear 4,/brands/clicgear/,added as support,brand and model searches
+clicgear attachments,/brands/clicgear/,added as support,brand and model searches
+clicgear umbrella holder,/brands/clicgear/,added as support,brand and model searches
+clicgear golf cart,/brands/clicgear/,added as support,brand and model searches
+clicgear 3.5,/brands/clicgear/,added as support,brand and model searches
+clicgear 4.5,/brands/clicgear/,added as support,brand and model searches
+motocaddy m7 remote,/brands/motocaddy/,added as support,brand and model searches
+yamaha viking,/brands/yamaha/,added as support,brand and model searches
+yamaha side by side utv,/brands/yamaha/,added as support,brand and model searches
+yamaha viking 700,/brands/yamaha/,added as support,brand and model searches
+yamaha golf car parts,/brands/yamaha/,added as support,brand and model searches
+yamaha golf carts brisbane,/brands/yamaha/,added as support,brand and model searches
+yamaha golf carts australia,/brands/yamaha/,added as support,brand and model searches
+yamaha golf cart prices australia,/brands/yamaha/,added as support,brand and model searches
+yamaha side by side price,/brands/yamaha/,added as support,brand and model searches
+yamaha golf cart parts australia,/brands/yamaha/,added as support,brand and model searches
+rovic rv1s,/brands/rovic/,added as support,brand and model searches
+rovic rv1c,/brands/rovic/,added as support,brand and model searches
+trailmaster cheetah off road carts,/brands/trailmaster/,added as support,brand and model searches
+trailmaster cheetah 300,/brands/trailmaster/,added as support,brand and model searches
+triumph gtx plus golf buggy,/brands/triumph/,added as support,brand and model searches
+triumph gtx plus buggy accessories,/brands/triumph/,added as support,brand and model searches
+club car parts,/brands/club-car/,added as support,brand and model searches
+club car precedent,/brands/club-car/,added as support,brand and model searches
+club car charger,/brands/club-car/,added as support,brand and model searches
+club car onward golf cart,/brands/club-car/,added as support,brand and model searches
+club car onward price,/brands/club-car/,added as support,brand and model searches
+kubota side by side utv,/brands/kubota/,added as support,brand and model searches
+kubota side by side for sale,/brands/kubota/,added as support,brand and model searches
+kubota side by side prices,/brands/kubota/,added as support,brand and model searches
+kubota rtv prices,/brands/kubota/,added as support,brand and model searches
+hammerhead mudhead,/brands/hammerhead/,added as support,brand and model searches
+hammerhead torpedo,/brands/hammerhead/,added as support,brand and model searches
+hammerhead torpedo buggy,/brands/hammerhead/,added as support,brand and model searches
+ez go electric cart,/brands/ezgo/,added as support,brand and model searches
+ezgo golf cart for sale,/brands/ezgo/,added as support,brand and model searches
+ezgo golf carts australia,/brands/ezgo/,added as support,brand and model searches
+ezgo rxv golf cart,/brands/ezgo/,added as support,brand and model searches
+caddytek buggy,/brands/caddytek/,added as support,brand and model searches
+john deere buggy for sale,/brands/john-deere/,added as support,brand and model searches
+john deere gator buggy,/brands/john-deere/,added as support,brand and model searches
+john deere electric buggy,/brands/john-deere/,added as support,brand and model searches
+cf moto utv,/brands/cfmoto/,added as support,brand and model searches
+cf moto uforce,/brands/cfmoto/,added as support,brand and model searches
+cfmoto uforce side by side,/brands/cfmoto/,added as support,brand and model searches
+bag boy buggy,/brands/bag-boy/,added as support,brand and model searches
+big max iq2 360,/brands/big-max/,added as support,brand and model searches
+big max iq2 buggy,/brands/big-max/,added as support,brand and model searches
+big max buggy,/brands/big-max/,added as support,brand and model searches
+honda pioneer 1000 for sale,/brands/honda/,added as support,brand and model searches
+honda side by side price,/brands/honda/,added as support,brand and model searches
+honda sxs,/brands/honda/,added as support,brand and model searches
+stinger sg-4,/brands/stinger/,added as support,brand and model searches
+stinger sg-6,/brands/stinger/,added as support,brand and model searches
+stinger sg 4 crossover,/brands/stinger/,added as support,brand and model searches
+tri lite,/brands/tri-lite/,added as support,brand and model searches
+trilite umbrella holder,/brands/tri-lite/,added as support,brand and model searches
+tri lite deluxe golf buggy,/brands/tri-lite/,added as support,brand and model searches
+smoothy golf buggy with seat,/brands/smoothy/,added as support,brand and model searches
+smoothy golf buggy for sale,/brands/smoothy/,added as support,brand and model searches
+smoothy golf buggy price,/brands/smoothy/,added as support,brand and model searches
+smoothy golf buggy accessories,/brands/smoothy/,added as support,brand and model searches
+smoothy golf buggy parts,/brands/smoothy/,added as support,brand and model searches
+thomson golf buggy accessories,/brands/thomson/,added as support,brand and model searches
+thomson golf buggy parts,/brands/thomson/,added as support,brand and model searches
+thomson golf buggy battery,/brands/thomson/,added as support,brand and model searches
+thomson golf buggy spare parts,/brands/thomson/,added as support,brand and model searches
+parmaker golf cart,/brands/parmaker/,added as support,brand and model searches
+parmaker electric golf buggy,/brands/parmaker/,added as support,brand and model searches
+parmaker golf buggies for sale,/brands/parmaker/,added as support,brand and model searches
+parmaker ride on golf buggies for sale,/brands/parmaker/,added as support,brand and model searches
+parmaker plus golf buggy,/brands/parmaker/,added as support,brand and model searches

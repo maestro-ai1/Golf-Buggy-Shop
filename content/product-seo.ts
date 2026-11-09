@@ -1,5 +1,6 @@
 import { PART_A } from '@/content/product-seo-a';
 import { PART_B } from '@/content/product-seo-b';
+import { PART_C } from '@/content/product-seo-c';
 
 // Batch 5: per-product keyword map and copy. One keyword = one URL; every keyword here is unique across pages, products and blog targets.
 export type ProductSEO = {
@@ -10,6 +11,6 @@ export type ProductSEO = {
   faq: [string, string][]; // five FAQs, each carrying a keyword and, where it helps, an internal link
 };
 
-export const PRODUCT_SEO: Record<string, ProductSEO> = { ...PART_A, ...PART_B };
+export const PRODUCT_SEO: Record<string, ProductSEO> = { ...PART_A, ...PART_B, ...PART_C };
 
 export const fillPrice = (t: string, price: string) => t.replace(/\{price\}/g, price);

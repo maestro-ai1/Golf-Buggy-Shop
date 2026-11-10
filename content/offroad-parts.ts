@@ -117,7 +117,7 @@ export const OFFROAD_PARTS: Record<string, PageCopy> = {
         `Supervise children at all times, use helmets, gloves and sturdy shoes, and keep to private land. The [Australian Government product safety site](https://www.productsafety.gov.au/) publishes advice and recalls for children's products and is worth a look before you buy.`,
       ] },
       { h2: `Kids side by side and childrens UTV options`, p: [
-        `A kids side by side or childrens UTV is a small off-road buggy sized for younger riders. Our Polaris RZR 200 EFI youth buggy is the closest to a kids side by side, and we list youth windshields, a bumper and a youth tyre for it in [off-road parts](/parts-accessories/off-road-parts/). Check age and weight guidance, always supervise and use a helmet. For an electric option see the [Can-Am Maverick 24V kids ride-on](/products/can-am-maverick-24v-kids-ride-on-buggy/) and our [kids ride-on buggy guide](/blog/kids-ride-on-buggy/).`,
+        `A kids side by side or childrens UTV is a small off-road buggy sized for younger riders. Our Polaris RZR 200 EFI youth buggy is the closest to a kids side by side, and we list youth windshields, a bumper and a youth tyre for it in [off-road parts](/parts-accessories/off-road-parts/). Check age and weight guidance, always supervise and use a helmet. For quads see our [kids quad bikes](/off-road-buggies/kids-quad-bikes/). For an electric option see the [Can-Am Maverick 24V kids ride-on](/products/can-am-maverick-24v-kids-ride-on-buggy/) and our [kids ride-on buggy guide](/blog/kids-ride-on-buggy/).`,
       ] },
     ],
     faqs: [
@@ -199,6 +199,66 @@ export const OFFROAD_PARTS: Record<string, PageCopy> = {
     ],
   },
 
+  '/off-road-buggies/kids-quad-bikes/': {
+    intro: [
+      `Looking for a kids quad bike? Shop kids electric quad bikes, petrol kids quads and youth ATVs from Apollo, Kayo, Crossfire and GO SKITZ, from around $420 to about $2,450, delivered Australia-wide with GST included.`,
+      `Compare engine size, top speed and weight, always supervise, and follow the manufacturer's age and weight guidance for every model.`,
+    ],
+    guides: [
+      { h2: `Kids electric quad bike and childrens electric quad options`, p: [
+        `A kids electric quad bike is the quietest and simplest start for a younger rider. The GO SKITZ Adventure weighs 30 kg and lists a 7 km/h top speed at around $420, and the GO SKITZ 2.5 has a 250W motor and an 11 km/h top speed at around $783. A childrens electric quad bike, childrens electric quad, childrens electric atv or kids electric quad all describe the same idea, and a childs electric quad or electric quad bike kids search finds these two models. See also the [electric kids buggies](/off-road-buggies/kids-buggies/).`,
+      ] },
+      { h2: `Childrens quad, kids ATV and quad bike for kids: petrol models`, p: [
+        `A childrens quad, kids atv or quad bike for kids with a petrol engine suits older children on a safe private track. We list the Apollo Commander 70 and the Kayo Storm 70 at around $1,567 each, the Apollo Commander 110cc automatic at around $1,959 and the Crossfire Rover 125 youth ATV at around $2,449. A kids quad bike petrol model, childrens petrol quad or kids petrol quad bike is bigger and faster than an electric one, so check the weight and top speed on each listing, which is 40 km/h for the Commander 70 and 35 km/h for the Commander 110.`,
+      ] },
+      { h2: `Kids 4 wheeler, ride on quad bike and atv for kids`, p: [
+        `A kids 4 wheeler or childs 4 wheeler is another name for a quad, and a ride on quad bike or ride on atv is a quad a child sits on and drives. Our smallest petrol option is the 50cc 2-stroke mini quad with 6 inch wheels at around $705; see all [mini quads and ATVs](/off-road-buggies/mini-quads-atvs/). Kids quad bikes for sale here are delivered by freight, with the cost confirmed to your postcode before you pay, and older riders can step up to a [farm or adult quad bike](/off-road-buggies/farm-adult-quad-bikes/).`,
+      ] },
+      { h2: `Safety for childrens quad bikes`, p: [
+        `Children should wear a helmet, ride on private land and be supervised at all times, and quad bikes are not toys. Follow the manufacturer's age and weight guidance for each model, and read the guidance on the [Australian Government product safety site](https://www.productsafety.gov.au/) and from [Safe Work Australia](https://www.safeworkaustralia.gov.au/safety-topic/hazards/quad-bikes). Our [kids ride-on buggy guide](/blog/kids-ride-on-buggy/) explains how to choose between buggies and quads.`,
+      ] },
+    ],
+    faqs: [
+      [`What is the best kids quad bike?`, `It depends on the child's age and size. A kids electric quad bike such as the GO SKITZ suits younger riders, and petrol models suit older children. Always check age and weight guidance.`],
+      [`How much is a kids quad bike?`, `Our kids quad bikes run from around $420 for the GO SKITZ Adventure to about $2,450 for the Crossfire Rover 125, and every price includes GST.`],
+      [`Do you sell a childrens electric quad bike?`, `Yes: the GO SKITZ Adventure and GO SKITZ 2.5 are kids electric quads. See [electric off-road UTVs](/off-road-buggies/electric-off-road-utvs/) for bigger electric machines.`],
+      [`Is a kids ATV safe?`, `Only with a helmet, supervision, a private riding area and the manufacturer's age guidance. See [Safe Work Australia](https://www.safeworkaustralia.gov.au/safety-topic/hazards/quad-bikes).`],
+      [`Can kids ride a quad on the road?`, `Generally not. Check your state rules.`],
+      [`Do you deliver kids quad bikes Australia-wide?`, `Yes. See our [delivery page](/delivery/).`],
+      [`What about bigger quads?`, `See our [farm and adult quad bikes](/off-road-buggies/farm-adult-quad-bikes/).`],
+    ],
+  },
+
+  '/off-road-buggies/farm-adult-quad-bikes/': {
+    intro: [
+      `Looking for an ATV farm bike? Shop farm quads and adult quad bikes from Kayo, Apollo and Crossfire, from around $2,350 to about $9,790, in 110cc to 500cc engines and delivered Australia-wide with GST included.`,
+      `Compare engine size, drive type and weight, and check load and towing details on each listing before you order.`,
+    ],
+    guides: [
+      { h2: `Farm ATV, farm quad and quad bike for farm work`, p: [
+        `A farm atv or farm quad needs reliable power, brakes and ground clearance. The Kayo Bull 125 is listed as a farm quad ATV with a 124cc engine at around $2,351, the Crossfire X600 is a 4WD utility ATV with a 250cc engine and a 288 kg weight at around $9,789, and the Crossfire X400 has a 500cc engine at around $7,839. Farm quad bikes and a quad bike for farm tracks can be sorted by engine size and price, and our [ATV buggy guide](/blog/atv-buggy/) explains the differences.`,
+      ] },
+      { h2: `250cc quad bike, 125cc quad bike and 110cc quad bike options`, p: [
+        `Engine size is the quickest way to narrow the choice. A 250cc quad bike or 250cc atv quad bike here is the Crossfire X600, while a 125cc quad bike or 125cc atv bike is available from Kayo, Apollo and Crossfire, such as the Kayo Predator 125 and the Apollo RFZ Commander 125. A 110cc quad bike or 110cc atv quad bike is the Apollo Commander 110cc, and the Apollo RFZ Commander 200 at around $3,919 steps up in power.`,
+      ] },
+      { h2: `Adult quad bikes, 4x4 quad bikes for sale and automatic ATV models`, p: [
+        `Adult quad bikes and quad bikes adults search for need an engine and frame sized for a grown rider: look at the Crossfire X400 and X600 and the larger Apollo models. The Crossfire X600 is our 4x4 quad bike for sale, and an automatic atv such as the Apollo RFZ Falcon 140cc, which lists a 55 km/h top speed and a 100 kg weight, is easier for beginners. A petrol quad bike is the most common farm choice, and every listing shows its engine size.`,
+      ] },
+      { h2: `Buying and staying safe on a farm quad`, p: [
+        `Wear a helmet, keep to the weight limits and use the right attachments for the load. [Safe Work Australia](https://www.safeworkaustralia.gov.au/safety-topic/hazards/quad-bikes) publishes safety guidance for quad bikes, and freight is confirmed to your postcode before you pay. For smaller riders see our [kids quad bikes](/off-road-buggies/kids-quad-bikes/), and browse [mini quads and ATVs](/off-road-buggies/mini-quads-atvs/) and [off-road parts](/parts-accessories/off-road-parts/).`,
+      ] },
+    ],
+    faqs: [
+      [`Which quad is best for farm work?`, `Choose by engine size, drive and weight. The Crossfire X600 4WD utility ATV is our heaviest-duty quad, and the Kayo Bull 125 is listed as a farm quad ATV.`],
+      [`How much is a farm quad bike?`, `Our farm and adult quads run from around $2,350 to about $9,790. All prices include GST.`],
+      [`Do you sell a 250cc quad bike?`, `Yes: the Crossfire X600 has a 250cc engine, and the Crossfire X400 has a 500cc engine.`],
+      [`Are your adult quad bikes 4x4?`, `The Crossfire X600 is a 4WD utility ATV. Check each listing for drive type.`],
+      [`Is there an automatic ATV?`, `Yes: the Apollo RFZ Falcon 140cc and the Apollo Commander 110cc are listed as automatic.`],
+      [`Can I use a quad on the road?`, `Generally not. Check your state rules.`],
+      [`Do you deliver Australia-wide?`, `Yes. See our [delivery page](/delivery/).`],
+    ],
+  },
+
   '/off-road-buggies/mini-quads-atvs/': {
     intro: [
       `Looking for quad bikes for sale, such as a 50cc quad bike? Our mini quads and small ATVs include Kayo, Apollo, Crossfire and GO SKITZ quad bikes suited to farm tracks and younger riders, from around $420 to about $9,800. Compare engine size, automatic or manual and age guidance.`,
@@ -209,7 +269,7 @@ export const OFFROAD_PARTS: Record<string, PageCopy> = {
         `A quad bike or ATV bike 50cc is a small four-wheel bike ridden astride. Our quad bikes for sale range from kids models to farm quads such as the Kayo Bull 125 and the Crossfire X600 4WD utility ATV, and quad bikes Australia-wide ship by freight with the cost confirmed before you pay. For background on how quads differ, see [quad bikes on Wikipedia](https://en.wikipedia.org/wiki/Quad_bike) and our [ATV buggies guide](/blog/atv-buggy/).`,
       ] },
       { h2: `Kids quad bike, quad bike for kids and childrens quad`, p: [
-        `A kids quad bike, a quad bike for kids or a childrens quad should have an automatic transmission and a speed limiter. We list the Kayo Storm 70 and Apollo Commander 70 kids quad bikes, the Crossfire Rover 125 youth ATV and the GO SKITZ electric quads. A kids ATV, childrens electric quad bike or electric quad bike is the quietest option for younger children. See also [kids buggies](/off-road-buggies/kids-buggies/).`,
+        `A kids quad bike, a quad bike for kids or a childrens quad should have an automatic transmission and a speed limiter. We list the Kayo Storm 70 and Apollo Commander 70 kids quad bikes, the Crossfire Rover 125 youth ATV and the GO SKITZ electric quads. A kids ATV, childrens electric quad bike or electric quad bike is the quietest option for younger children. See our [kids quad bikes](/off-road-buggies/kids-quad-bikes/), our [farm and adult quad bikes](/off-road-buggies/farm-adult-quad-bikes/) and the [kids buggies](/off-road-buggies/kids-buggies/).`,
       ] },
       { h2: `Electric quad bike, 4 wheeler and four wheeler options`, p: [
         `An electric quad bike or electric quad suits beginners, and a 4 wheeler or four wheeler is another name for a quad. An all terrain quad or atv quad bike has more suspension and power, and a mini quad bike or 49cc quad bike is the smallest class. Larger engines suit adults and property work.`,

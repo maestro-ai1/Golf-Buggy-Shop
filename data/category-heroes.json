@@ -230,5 +230,13 @@
  "/parts-accessories/off-road-parts/winches-tow-bars/": {
   "base": "/images/hero/off-road-go-karts",
   "alt": "Off road go kart kicking up dirt on a trail"
+ },
+ "/off-road-buggies/farm-adult-quad-bikes/": {
+  "base": "/images/hero/off-road-farm-quads",
+  "alt": "Quad bikes parked on a farm property"
+ },
+ "/off-road-buggies/kids-quad-bikes/": {
+  "base": "/images/hero/off-road-mini-quads",
+  "alt": "Child riding a mini quad bike on a dirt trail"
  }
 }

@@ -10092,6 +10092,7 @@
   "groupLabel": "kids buggy",
   "categories": [
    "/off-road-buggies/kids-buggies/",
+   "/off-road-buggies/kids-quad-bikes/",
    "/off-road-buggies/mini-quads-atvs/",
    "/off-road-buggies/electric-off-road-utvs/"
   ],
@@ -10188,6 +10189,7 @@
   "groupLabel": "kids buggy",
   "categories": [
    "/off-road-buggies/kids-buggies/",
+   "/off-road-buggies/kids-quad-bikes/",
    "/off-road-buggies/mini-quads-atvs/",
    "/off-road-buggies/electric-off-road-utvs/"
   ],
@@ -10574,6 +10576,7 @@
   "groupLabel": "quad bike",
   "categories": [
    "/off-road-buggies/mini-quads-atvs/",
+   "/off-road-buggies/farm-adult-quad-bikes/",
    "/off-road-buggies/"
   ],
   "price": 2351,
@@ -10668,6 +10671,7 @@
   "groupLabel": "quad bike",
   "categories": [
    "/off-road-buggies/mini-quads-atvs/",
+   "/off-road-buggies/farm-adult-quad-bikes/",
    "/off-road-buggies/"
   ],
   "price": 2351,
@@ -10766,6 +10770,7 @@
   "groupLabel": "quad bike",
   "categories": [
    "/off-road-buggies/mini-quads-atvs/",
+   "/off-road-buggies/kids-quad-bikes/",
    "/off-road-buggies/kids-buggies/"
   ],
   "price": 1959,
@@ -10870,6 +10875,7 @@
   "groupLabel": "quad bike",
   "categories": [
    "/off-road-buggies/mini-quads-atvs/",
+   "/off-road-buggies/farm-adult-quad-bikes/",
    "/off-road-buggies/"
   ],
   "price": 2449,
@@ -15627,6 +15633,7 @@
   "groupLabel": "quad bike",
   "categories": [
    "/off-road-buggies/mini-quads-atvs/",
+   "/off-road-buggies/farm-adult-quad-bikes/",
    "/off-road-buggies/"
   ],
   "price": 7839,
@@ -15722,6 +15729,7 @@
   "groupLabel": "quad bike",
   "categories": [
    "/off-road-buggies/mini-quads-atvs/",
+   "/off-road-buggies/farm-adult-quad-bikes/",
    "/off-road-buggies/"
   ],
   "price": 9789.2,
@@ -15822,6 +15830,7 @@
   "groupLabel": "quad bike",
   "categories": [
    "/off-road-buggies/mini-quads-atvs/",
+   "/off-road-buggies/farm-adult-quad-bikes/",
    "/off-road-buggies/"
   ],
   "price": 3919,
@@ -15920,6 +15929,7 @@
   "groupLabel": "quad bike",
   "categories": [
    "/off-road-buggies/mini-quads-atvs/",
+   "/off-road-buggies/farm-adult-quad-bikes/",
    "/off-road-buggies/"
   ],
   "price": 2547,
@@ -16028,6 +16038,7 @@
   "groupLabel": "quad bike",
   "categories": [
    "/off-road-buggies/mini-quads-atvs/",
+   "/off-road-buggies/farm-adult-quad-bikes/",
    "/off-road-buggies/"
   ],
   "price": 2597,
@@ -16134,6 +16145,7 @@
   "groupLabel": "kids buggy",
   "categories": [
    "/off-road-buggies/mini-quads-atvs/",
+   "/off-road-buggies/kids-quad-bikes/",
    "/off-road-buggies/kids-buggies/",
    "/off-road-buggies/"
   ],
@@ -16237,6 +16249,7 @@
   "groupLabel": "kids buggy",
   "categories": [
    "/off-road-buggies/mini-quads-atvs/",
+   "/off-road-buggies/kids-quad-bikes/",
    "/off-road-buggies/kids-buggies/",
    "/off-road-buggies/"
   ],
@@ -16339,6 +16352,7 @@
   "groupLabel": "kids buggy",
   "categories": [
    "/off-road-buggies/mini-quads-atvs/",
+   "/off-road-buggies/kids-quad-bikes/",
    "/off-road-buggies/kids-buggies/",
    "/off-road-buggies/"
   ],
@@ -16443,6 +16457,7 @@
   "groupLabel": "quad bike",
   "categories": [
    "/off-road-buggies/mini-quads-atvs/",
+   "/off-road-buggies/kids-quad-bikes/",
    "/off-road-buggies/"
   ],
   "price": 704.6,

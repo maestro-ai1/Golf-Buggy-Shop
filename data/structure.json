@@ -1848,12 +1848,6 @@
     "intent": "Informational / Commercial / Transactional"
    },
    {
-    "keyword": "kids quad bike",
-    "volume": 1900,
-    "kd": 5,
-    "intent": "Informational / Commercial / Transactional"
-   },
-   {
     "keyword": "50cc quad bike",
     "volume": 480,
     "kd": 17,
@@ -1870,50 +1864,164 @@
     "volume": 1000,
     "kd": 22,
     "intent": "Informational / Commercial"
+   },
+   {
+    "keyword": "4 wheeler",
+    "volume": 880,
+    "kd": 23,
+    "intent": "Informational, Commercial"
    }
   ],
   "support": [
-   "quad bike for kids",
-   "childrens quad",
-   "kids atv",
    "four wheeler",
-   "4 wheeler",
    "all terrain quad",
    "atv quad bike",
-   "childrens electric quad bike",
    "quad bikes australia",
    "49cc quad bike",
    "electric quad",
    "atv bike 50cc",
-   "kids electric quad bike",
    "atv bike for sale",
    "atv bike",
-   "atv farm bike",
    "quads for sale",
-   "kids quad bike petrol",
+   "buy quad bike",
+   "quad bikes and atvs",
+   "4 wheelers for sale",
+   "electric atv"
+  ],
+  "h1": "Quad Bikes For Sale",
+  "titleTag": "Quad Bikes For Sale Australia",
+  "faqSeed": [],
+  "lowDemand": false
+ },
+ {
+  "name": "Farm & Adult Quad Bikes",
+  "url": "/off-road-buggies/farm-adult-quad-bikes/",
+  "slug": "off-road-buggies/farm-adult-quad-bikes",
+  "level": "sub-category",
+  "parent": "Off-Road & Recreational Buggies",
+  "primary": {
+   "keyword": "atv farm bike",
+   "volume": 260,
+   "kd": 6
+  },
+  "secondary": [
+   {
+    "keyword": "farm atv",
+    "volume": 210,
+    "kd": 15,
+    "intent": "Commercial"
+   },
+   {
+    "keyword": "farm quad",
+    "volume": 210,
+    "kd": 12,
+    "intent": "Commercial"
+   },
+   {
+    "keyword": "250cc quad bike",
+    "volume": 210,
+    "kd": 13,
+    "intent": "Commercial"
+   },
+   {
+    "keyword": "4x4 quad bikes for sale",
+    "volume": 140,
+    "kd": 17,
+    "intent": "Transactional"
+   },
+   {
+    "keyword": "adult quad bikes",
+    "volume": 170,
+    "kd": 26,
+    "intent": "Commercial"
+   }
+  ],
+  "support": [
+   "250cc atv quad bike",
+   "125cc quad bike",
+   "110cc quad bike",
+   "125cc atv bike",
+   "110cc atv quad bike",
+   "automatic atv",
+   "farm quad bikes",
+   "quad bike for farm",
+   "petrol quad bike"
+  ],
+  "h1": "ATV Farm Bike",
+  "titleTag": "ATV Farm Bike Australia",
+  "faqSeed": [],
+  "lowDemand": false
+ },
+ {
+  "name": "Kids Quad Bikes",
+  "url": "/off-road-buggies/kids-quad-bikes/",
+  "slug": "off-road-buggies/kids-quad-bikes",
+  "level": "sub-category",
+  "parent": "Off-Road & Recreational Buggies",
+  "primary": {
+   "keyword": "kids quad bike",
+   "volume": 1900,
+   "kd": 6
+  },
+  "secondary": [
+   {
+    "keyword": "childrens electric quad bike",
+    "volume": 590,
+    "kd": 6,
+    "intent": "Commercial"
+   },
+   {
+    "keyword": "childrens quad",
+    "volume": 480,
+    "kd": 18,
+    "intent": "Commercial"
+   },
+   {
+    "keyword": "kids atv",
+    "volume": 480,
+    "kd": 6,
+    "intent": "Commercial"
+   },
+   {
+    "keyword": "quad bike for kids",
+    "volume": 480,
+    "kd": 9,
+    "intent": "Commercial"
+   },
+   {
+    "keyword": "kids electric quad bike",
+    "volume": 390,
+    "kd": 6,
+    "intent": "Informational, Commercial"
+   }
+  ],
+  "support": [
    "kids quad",
+   "kids quad bike petrol",
    "childrens electric atv",
    "childrens atv",
    "childrens electric quad",
-   "childrens quad motorbikes",
-   "250cc quad bike",
-   "buy quad bike",
-   "quad bikes and atvs",
-   "farm atv",
-   "farm quad",
-   "4 wheelers for sale",
    "childrens petrol quad",
    "childrens quad bike",
    "childs 4 wheeler",
    "kids 4 wheeler",
    "kids quad bikes for sale",
-   "125cc quad bike",
-   "250cc atv quad bike",
-   "adult quad bikes",
-   "electric atv"
+   "atv for kids",
+   "ride on quad bike",
+   "childs electric quad",
+   "kids electric quad",
+   "children's ride on quad bike",
+   "childrens petrol quad bikes",
+   "ride on atv",
+   "kids petrol quad bike",
+   "electric childrens atv",
+   "electric quad bikes for kids",
+   "kids atv electric",
+   "childrens quad bikes for sale",
+   "childrens quad motorbikes"
   ],
-  "h1": "Quad Bikes For Sale",
-  "titleTag": "Quad Bikes For Sale Australia",
+  "h1": "Kids Quad Bike",
+  "titleTag": "Kids Quad Bike Australia",
   "faqSeed": [],
   "lowDemand": false
  },

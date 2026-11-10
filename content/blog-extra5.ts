@@ -6,9 +6,9 @@ export const EXTRA_POSTS5: BlogPost[] = [
   {
     slug: 'what-is-the-best-electric-golf-buggy-australia',
     title: 'What Is the Best Electric Golf Buggy Australia Has? A Buyer\'s Guide',
-    seoTitle: 'What Is the Best Electric Golf Buggy Australia?',
+    seoTitle: 'Best Electric Golf Buggy in Australia: Buyer Guide',
     excerpt: 'What is the best electric golf buggy Australia has? Compare standard, remote and ride-on models by weight, range and price before you buy.',
-    category: 'Buying guides', date: '2026-10-26', readTime: '10 min read', targetKeyword: 'what is the best electric golf buggy australia',
+    category: 'Buying guides', date: '2026-10-26', readTime: '10 min read', targetKeyword: 'best electric golf buggy',
     image: '/blog/what-is-the-best-electric-golf-buggy-australia-v2.webp',
     tags: ['best electric golf buggy', 'electric golf buggy australia', 'lithium golf buggy', 'remote control golf buggy', 'golf buggy buying guide'],
     products: ['mgi-zip-x3-electric-golf-buggy', 'powakaddy-ct6-electric-golf-buggy', 'qod-q2-remote-control-all-terrain-electric-golf-buggy', 'i-motioncaddys-im4-ride-on-electric-golf-buggy'],

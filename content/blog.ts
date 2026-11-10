@@ -121,7 +121,7 @@ const CORE_POSTS: BlogPost[] = [
     category: 'Buying guides', date: '2026-10-16', readTime: '7 min read', targetKeyword: 'electric golf buggy',
     image: '/blog/electric-vs-push-v2.webp',
     content: [
-      'Most golfers who stop carrying their bag end up choosing between a push buggy and an electric buggy. Both save your back, but they suit different golfers and budgets. This guide helps you decide.',
+      'Most golfers who stop carrying their bag end up choosing between a push buggy and an electric buggy. Both save your back, but they suit different golfers and budgets. This guide helps you decide, and you can browse our [electric golf buggies](/golf-buggies/motorised-electric/) and [push and pull trolleys](/golf-buggies/push-pull-trolleys/) as you read.',
       '## Push buggies in a nutshell',
       'A push (or pull) buggy is a light, foldable frame with wheels. You push it, steer it and pull it up slopes. There is no motor and no battery. Models like the Stinger SG-1 and SG-5 fold quickly and include handy storage.',
       'Push buggies are the lowest cost way to stop carrying your clubs, and they never run out of power. Browse our [push golf buggies](' + L.push + ') to compare.',

@@ -1,0 +1,37 @@
+Keyword,Intent,Volume,Keyword Difficulty,Seed
+ecar golf cart,Commercial,110,14,ecar
+ecar golf carts,Informational,140,8,ecar
+ecar golf buggy,Navigational;Commercial,50,27,ecar
+e car golf buggy,Navigational;Commercial,170,20,ecar
+e car golf cart,Navigational;Commercial,140,19,ecar
+ecar compass 4s golf cart,Navigational,50,6,ecar
+atv ramps,Commercial,210,7,atv ramp
+atv loading ramps,Informational;Commercial,90,17,atv ramp
+folding loading ramps,Commercial,90,6,folding loading ramp
+go kart clutch,Informational;Commercial,90,4,go kart clutch
+centrifugal clutch go kart,Informational;Transactional,70,3,go kart clutch
+go kart centrifugal clutch,Informational;Commercial,70,4,go kart clutch
+centrifugal clutch,Informational,390,4,go kart clutch
+centrifugal clutches,Informational;Commercial,50,2,go kart clutch
+atv winch,Commercial,390,7,atv winch
+winch quad,Commercial,320,8,winch
+winch for sale,Transactional,170,13,winch for sale
+winches for sale,Transactional,90,16,winch for sale
+4x4 winch for sale,Transactional,140,19,winch for sale
+4wd winches for sale,Transactional,110,17,winch for sale
+4x4 winches for sale,Transactional,110,15,winch for sale
+electric winch,Informational;Commercial,1000,7,atv winch
+4wd winch,Informational;Commercial,880,10,winch
+12v winch,Informational;Commercial,590,9,atv winch
+trailer winch,Commercial,480,11,atv winch
+lithium golf cart batteries,Commercial,320,3,lithium golf cart battery
+golf buggy battery lithium,Commercial,260,3,lithium golf cart battery
+golf buggy battery,Informational;Commercial,260,6,lithium golf cart battery
+golf cart batteries,Informational;Commercial,880,14,lithium golf cart battery
+lithium ion golf cart batteries,Informational;Commercial,170,7,lithium golf cart battery
+li ion golf cart battery,Informational;Commercial,320,9,lithium golf cart battery
+48 volt golf cart batteries,Informational;Commercial,110,6,lithium golf cart battery
+buy golf cart,Transactional,210,11,used golf cart
+golf buggy for sale,Transactional,1900,15,golf cart brands
+golf buggy sales,Transactional,390,5,golf cart brands
+2nd hand golf carts for sale,Transactional,480,6,golf cart brands

@@ -88,7 +88,7 @@ export const PART_H: Record<string, ProductSEO> = {
     primary: 'kayo bull 125 carburetor', secondary: ['apollo rfz 125 carburetor', 'apollo rfz 110 carburetor'],
     lead: `This 22mm carburettor is listed for 110cc and 125cc engines at {price} including GST. Check the fit before you order, for example for a Kayo Bull 125 carburetor.`,
     sec: [
-      [`Carburettor for 110cc and 125cc engines`, `The listing is for 110cc and 125cc engines. Owners of a Kayo Bull 125 sometimes search for a replacement carburetor, and owners of an Apollo RFZ 125 carburetor or Apollo RFZ 110 carburetor do the same: message us your model and engine so we can confirm the fit before you pay.`],
+      [`Kayo Bull 125 carburetor, Apollo RFZ 125 carburetor and Apollo RFZ 110 carburetor`, `The listing is for 110cc and 125cc engines. Owners of a Kayo Bull 125 sometimes search for a replacement carburetor, and owners of an Apollo RFZ 125 carburetor or Apollo RFZ 110 carburetor do the same: message us your model and engine so we can confirm the fit before you pay.`],
       [`More parts`, `See our [off-road parts](/parts-accessories/off-road-parts/) and [engines and carburettors](/parts-accessories/off-road-parts/engines-carburetors/). We also sell the [Kayo Bull 125](/products/kayo-bull-125-farm-quad-atv/) and [Apollo RFZ Commander 125](/products/apollo-rfz-commander-125-quad-bike/) quads.`],
     ],
     faq: [

@@ -14,7 +14,7 @@ export default function ProductCard({ p, priority = false }: { p: CardProduct; p
         <div className="product-frame border border-line/70">
           <Pic base={p.images[0]} alt={p.name} priority={priority} className="transition-transform duration-500 group-hover:scale-[1.04]" />
         </div>
-        {p.badge && <span className="absolute left-5 top-5 rounded-full bg-accent px-3 py-1 text-[11px] font-extrabold uppercase tracking-wide text-white">{p.badge}</span>}
+        {p.badge && <span className="absolute left-5 top-5 rounded-full bg-accent-600 px-3 py-1 text-[11px] font-extrabold uppercase tracking-wide text-white">{p.badge}</span>}
       </Link>
       <div className="flex flex-1 flex-col p-4">
         <p className="text-[11px] font-extrabold uppercase tracking-[0.14em] text-fw-600">{p.brand}</p>

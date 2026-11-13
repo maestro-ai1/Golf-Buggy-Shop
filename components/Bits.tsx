@@ -56,10 +56,10 @@ export function TrustpilotBlock() {
                 <div className="font-display text-5xl font-black text-fw-700">{TRUSTPILOT.score}</div>
                 <div>
                   <div role="img" className="flex text-trustpilot" aria-label="5 out of 5 stars">{[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-current" />)}</div>
-                  <div className="mt-0.5 text-xs font-bold text-trustpilot">{TRUSTPILOT.countLabel}</div>
+                  <div className="mt-0.5 text-xs font-bold text-[#007a52]">{TRUSTPILOT.countLabel}</div>
                 </div>
               </div>
-              <div className="text-xs font-bold text-trustpilot">{TRUSTPILOT.platformLabel}</div>
+              <div className="text-xs font-bold text-[#007a52]">{TRUSTPILOT.platformLabel}</div>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 lg:col-span-7">
               {REVIEWS.map((r) => (

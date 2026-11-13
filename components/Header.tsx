@@ -26,7 +26,7 @@ export default function Header({ nav, onSearch }: { nav: NavItem[]; onSearch: ()
     <header ref={barRef} className="sticky top-0 z-40 border-b border-line bg-white/95 backdrop-blur">
       <div className="container-x flex h-[68px] items-center gap-3 sm:gap-5">
         <button className="grid h-11 w-11 place-items-center rounded-full border border-line lg:hidden" aria-label="Open menu" onClick={() => setMobile(true)}><Menu size={22} /></button>
-        <Link href="/" aria-label="Buggies For Sale home" className="shrink-0"><Logo /></Link>
+        <Link href="/" aria-label="Buggies For Sale Australia" className="shrink-0"><Logo /></Link>
         <button onClick={onSearch} className="mx-2 hidden h-11 flex-1 items-center gap-3 rounded-full border border-line bg-sand-50 px-5 text-left text-sm text-muted transition hover:border-fw-500 md:flex" aria-label="Search products">
           <Search size={18} /> Search golf buggies, carts, batteries, accessories…
         </button>
@@ -35,7 +35,7 @@ export default function Header({ nav, onSearch }: { nav: NavItem[]; onSearch: ()
           <button onClick={onSearch} className="grid h-11 w-11 place-items-center rounded-full border border-line md:hidden" aria-label="Search"><Search size={20} /></button>
           <button onClick={() => setOpen(true)} className="relative grid h-11 w-11 place-items-center rounded-full bg-fw-800 text-white transition hover:bg-fw-700" aria-label={`Cart, ${count} items`}>
             <ShoppingCart size={20} />
-            {count > 0 && <span className="absolute -right-1 -top-1 grid h-5 min-w-5 place-items-center rounded-full bg-accent px-1 text-[11px] font-extrabold text-white">{count}</span>}
+            {count > 0 && <span className="absolute -right-1 -top-1 grid h-5 min-w-5 place-items-center rounded-full bg-accent-600 px-1 text-[11px] font-extrabold text-white">{count}</span>}
           </button>
         </div>
       </div>

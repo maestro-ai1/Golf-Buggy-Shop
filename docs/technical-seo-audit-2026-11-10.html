@@ -1,0 +1,34 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Technical SEO audit</title><style>
+:root{--bg:#fff;--fg:#1a1d21;--mut:#5b6470;--line:#dde1e6;--card:#f6f7f9;--g:#0a7a3d;--a:#b45309;--r:#b42318}
+@media(prefers-color-scheme:dark){:root{--bg:#14171a;--fg:#e8eaed;--mut:#9aa3ad;--line:#2b3138;--card:#1c2025;--g:#4ade80;--a:#fbbf24;--r:#f87171}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,Segoe UI,sans-serif;padding:20px 16px;max-width:1000px;margin-inline:auto}
+h1{font-size:24px;margin:0 0 4px}h2{font-size:18px;margin:26px 0 8px;border-bottom:1px solid var(--line);padding-bottom:6px}.mut{color:var(--mut)}
+table{border-collapse:collapse;width:100%;font-size:13.5px}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{background:var(--card)}
+.t{font-size:11px;font-weight:600;padding:2px 7px;border-radius:99px;border:1px solid currentColor;white-space:nowrap}.g{color:var(--g)}.a{color:var(--a)}.r{color:var(--r)}.wrap{overflow-x:auto}ul{padding-left:20px}</style></head><body>
+<h1>Technical SEO and AI-readiness audit</h1><p class="mut">2026-11-10. Live site checked with PageSpeed Insights (Lighthouse 13.6), local Lighthouse, isitagentready.com and the repo's own audit scripts. Code fixes are local and not committed or pushed.</p>
+<h2>Scores</h2><div class="wrap"><table><thead><tr><th>Check</th><th>Result</th><th>Status</th></tr></thead><tbody>
+<tr><td>PageSpeed, product page (mobile)</td><td>Performance 99, Accessibility 96, Best Practices 100, SEO 100, LCP 2.1 s, CLS 0</td><td><span class="t g">Good</span></td></tr>
+<tr><td>PageSpeed, home page (mobile, slow 4G lab)</td><td>Performance 83, LCP 4.4 s, TBT 100 ms, CLS 0, Best Practices 100, SEO 100, Agentic Browsing 4/4</td><td><span class="t a">LCP to improve</span></td></tr>
+<tr><td>Accessibility (local Lighthouse, 10 pages after fixes)</td><td>96 before, 100 after on home, shop, about, golf carts, product, blog, brand, checkout, contact</td><td><span class="t g">Fixed locally</span></td></tr>
+<tr><td>isitagentready.com</td><td>87 / 100, Level 5 Agent-Native. Content 100, Bot Access Control 100, API/Auth/MCP/Skills 88, Discoverability 75</td><td><span class="t g">Strong</span></td></tr>
+<tr><td>Sitemap audit (repo script)</td><td>376 URLs, every canonical returns 200, hreflang en-AU and x-default, real lastmod dates (12 distinct), all checks passed</td><td><span class="t g">Pass</span></td></tr>
+<tr><td>llms.txt and llms-full.txt</td><td>Both 200 text/plain. llms.txt 74 links, llms-full.txt 965 KB with 0 broken links and includes the new products. No pricing-strategy wording</td><td><span class="t g">Pass</span></td></tr>
+<tr><td>robots.txt</td><td>Three groups: search crawlers, AI answer agents (OAI-SearchBot, PerplexityBot, Claude-SearchBot and others), AI training crawlers (GPTBot, ClaudeBot, Google-Extended, cohere-ai). Bytespider disallowed. Content-Signal: search yes, ai-input yes, ai-train no</td><td><span class="t g">Pass</span></td></tr>
+<tr><td>Agent endpoints</td><td>api-catalog, agent-skills index, ai-catalog, MCP server card, auth.md all return 200 with the right content types</td><td><span class="t g">Pass</span></td></tr>
+</tbody></table></div>
+<h2>Fixed in this session (local, uncommitted)</h2><ul>
+<li><b>Button contrast:</b> white text on the orange primary button was 2.79:1. Button is now #bf5209 (4.74:1), hover #a84407.</li>
+<li><b>Orange link text:</b> "Shop now" style links were 3.6:1. The accent-600 token is now #b84d08 (5.1:1). Cart count and product badge use the same darker orange.</li>
+<li><b>Trustpilot captions:</b> 12px text in Trustpilot green was 2.63:1. Now #007a52. The score, review count and quotes are untouched.</li>
+<li><b>Accessible names:</b> "Add to cart" buttons now start with their visible label (WCAG 2.5.3), for example "Add to cart: Product name". The "Buy now" button and the logo link were aligned the same way.</li>
+<li>Whole-site page gate still passes (73 pages) with 0 failures.</li></ul>
+<h2>Open items</h2><div class="wrap"><table><thead><tr><th>Item</th><th>Detail</th><th>Status</th></tr></thead><tbody>
+<tr><td>Home page LCP 4.4 s (lab)</td><td>The hero image is preloaded as AVIF at high priority and loads in about 0.3 s. Lighthouse shows about 2 s of render delay after it arrives, so the cause is main-thread or paint work rather than the image. The product page scores 99, so this is specific to the home page. Needs a trace to fix properly; real-user field data was not available in the report.</td><td><span class="t a">Not fixed</span></td></tr>
+<tr><td>DNS for AI Discovery (DNS-AID)</td><td>Needs SVCB records and DNSSEC at the domain's DNS host. Optional, emerging standard.</td><td><span class="t a">Owner DNS action</span></td></tr>
+<tr><td>OAuth protected resource metadata</td><td>isitagentready expects it next to auth.md. The site has no OAuth API for agents, so publishing it would claim a capability that does not exist. Left out on purpose.</td><td><span class="t a">Skipped</span></td></tr>
+<tr><td>Agentic commerce (x402, MPP, ACP, UCP)</td><td>Optional and not scored. Payments are by bank transfer, PayID and crypto, confirmed by the team, so these protocols do not apply.</td><td><span class="t a">Skipped</span></td></tr>
+<tr><td>Legacy JavaScript, image delivery</td><td>PageSpeed estimates 12 KiB and 43 to 119 KiB of savings. Small.</td><td><span class="t a">Low priority</span></td></tr>
+<tr><td>GTmetrix and Rank Math</td><td>Not run. Rank Math's analyser is a WordPress plugin and does not apply to this Next.js site. GTmetrix needs an account sign-in, so I did not run it.</td><td><span class="t r">Not run</span></td></tr>
+</tbody></table></div>
+<h2>Not verified</h2><ul><li>Fixes are verified on a local production build, not on the live site until you say push.</li><li>PageSpeed lab scores vary run to run; the Google API key quota was exhausted so the web page was used.</li><li>CrUX field data (real users) was not shown for these URLs.</li></ul>
+</body></html>

@@ -19,7 +19,7 @@
   --color-muted: #5b6b63;
   --color-line: #e3ddd0;
   --color-accent: #f07a1f;
-  --color-accent-600: #d9650f;
+  --color-accent-600: #b84d08;
   --color-accent-100: #fdebd9;
   --color-trustpilot: #00b67a;
   --font-display: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
@@ -58,8 +58,8 @@
   @media (min-width: 640px) { .container-x { padding-inline: 24px; } }
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 22px; border-radius: 999px; font-weight: 700; font-size: 15px; transition: transform .15s ease, box-shadow .15s ease, background .15s ease; cursor: pointer; text-decoration: none; }
   .btn:active { transform: translateY(1px); }
-  .btn-primary { background: var(--color-accent); color: #fff; box-shadow: 0 6px 16px rgba(240,122,31,.32); }
-  .btn-primary:hover { background: var(--color-accent-600); }
+  .btn-primary { background: #bf5209; color: #fff; box-shadow: 0 6px 16px rgba(240,122,31,.32); }
+  .btn-primary:hover { background: #a84407; }
   .btn-green { background: var(--color-fw-800); color: #fff; }
   .btn-green:hover { background: var(--color-fw-700); }
   .btn-ghost { background: #fff; color: var(--color-fw-800); border: 1.5px solid var(--color-fw-200); }

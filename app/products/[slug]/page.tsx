@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { preload } from 'react-dom';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { BadgePercent, Check, CreditCard, ShieldCheck, Truck } from 'lucide-react';
@@ -53,6 +54,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const faqs = seo ? seo.faq.map(([q, a]) => [fillPrice(q, price), fillPrice(a, price)] as [string, string]) : p.faqs;
   const lead = seo ? fillPrice(seo.lead, price) : p.shortDescription;
   const extra = seo ? seo.sec.flatMap(([h, t]) => [`## ${h}`, fillPrice(t, price)]) : [];
+  // Start fetching the main (LCP) image from the HTML head, before the gallery hydrates.
+  const hero = p.images[0];
+  if (hero) preload(`${hero}.avif`, { as: 'image', type: 'image/avif', fetchPriority: 'high', imageSrcSet: `${hero}-600.avif 600w, ${hero}.avif 1200w`, imageSizes: '(max-width: 1024px) 100vw, 600px' });
 
   return (
     <>

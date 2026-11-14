@@ -118,12 +118,9 @@ export const CRYPTO = {
 };
 
 export const CHAT = {
-  channels: [
-    { type: 'whatsapp', label: 'WhatsApp Live Support', value: '61420128746', url: 'https://wa.me/61420128746?text=' + encodeURIComponent('Hi Buggies For Sale, ') },
-    { type: 'phone', label: 'Call 0420 128 746', value: '0420 128 746', url: 'tel:+61420128746' },
-    { type: 'email', label: 'Email Sales & Support', value: 'sales@buggiesforsale.com.au', url: 'mailto:sales@buggiesforsale.com.au' },
-    { type: 'sms', label: 'SMS Text Message', value: '0420 128 746', url: 'sms:+61420128746' },
-  ],
+  number: '61420128746',
+  display: '+61 420 128 746',
+  url: 'https://wa.me/61420128746?text=' + encodeURIComponent('Hi Buggies For Sale, '),
 };
 
 export const BRAND = {

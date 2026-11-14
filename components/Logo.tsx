@@ -1,7 +1,7 @@
 // Brand mark: golf buggy with flag. The same artwork is exported as the site icon (app/icon.svg).
 export function LogoMark({ size = 40 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 64 64" role="img" aria-label="Buggies For Sale logo" xmlns="http://www.w3.org/2000/svg">
+    <svg width={size} height={size} viewBox="0 0 64 64" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
       <rect width="64" height="64" rx="15" fill="#0F3D2E" />
       <path d="M0 52 L64 44 V64 H0Z" fill="#14573F" />
       <path d="M52 7v19" stroke="#fff" strokeWidth="2" strokeLinecap="round" />

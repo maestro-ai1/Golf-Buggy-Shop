@@ -1,12 +1,31 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { MessageCircle } from 'lucide-react';
 import { CHAT } from '@/config/site';
 
+const BASE = `https://wa.me/${CHAT.number}?text=`;
+const GENERIC = "Hi Buggies For Sale, I'd like help choosing a buggy. ";
+
 // One WhatsApp button, one number. Customers message from their own WhatsApp, so we see their number.
-// Link only: zero third-party scripts, so no CSP or performance cost.
+// On a product page the pre-typed message names the product and links it. Link only: no third-party scripts.
 export default function ChatHub() {
+  const path = usePathname();
+  const [href, setHref] = useState(BASE + encodeURIComponent(GENERIC));
+
+  useEffect(() => {
+    if (path.startsWith('/products/')) {
+      const name = document.title.split('|')[0].trim();
+      setHref(BASE + encodeURIComponent(`Hi Buggies For Sale, I'm interested in the ${name}: ${window.location.origin}${path} `));
+    } else {
+      setHref(BASE + encodeURIComponent(GENERIC));
+    }
+  }, [path]);
+
   return (
     <a
-      href={CHAT.url}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`WhatsApp ${CHAT.display}`}

@@ -120,7 +120,7 @@ export const CRYPTO = {
 export const CHAT = {
   number: '61420128746',
   display: '+61 420 128 746',
-  url: 'https://wa.me/61420128746?text=' + encodeURIComponent('Hi Buggies For Sale, '),
+  url: 'https://wa.me/61420128746',
 };
 
 export const BRAND = {

@@ -19,7 +19,7 @@ Australia's premier online store for off-road buggies, 4x4 UTVs, electric and re
   - Interactive multi-channel chat (WhatsApp, SMS Text, Phone, Email)
   - 10 comprehensive SEO buying guides
 - **2026 AI & Agent Readiness**:
-  - Model Context Protocol (MCP) Streamable HTTP Server (`/api/mcp`)
+  - Model Context Protocol (MCP) Streamable HTTP Server (`/api/mcp/`)
   - Universal Commerce Protocol (`/.well-known/ucp`)
   - Agent Communication Protocol (`/.well-known/acp.json`)
   - RFC 9727 API Catalog (`/.well-known/api-catalog`)

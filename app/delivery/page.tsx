@@ -17,7 +17,7 @@ export default function Delivery() {
       <h2>On delivery</h2>
       <p>Please inspect your goods as soon as they arrive and note any visible damage on the delivery paperwork, then contact us straight away. See our <Link href="/returns/">returns page</Link> for your rights.</p>
       <h2>Orders from other states</h2>
-      <p>We deliver to New South Wales, Queensland, Victoria, South Australia, Western Australia, Tasmania and the ACT. Looking for <Link href="/golf-buggies/for-sale-locations/">golf carts for sale Brisbane</Link> or in another capital city? Our locations page explains delivery to each one. Questions? Call 0420 128 746.</p>
+      <p>We deliver to New South Wales, Queensland, Victoria, South Australia, Western Australia, Tasmania and the ACT. Looking for <Link href="/golf-buggies/for-sale-locations/">golf carts for sale Brisbane</Link> or in another capital city? Our locations page explains delivery to each one. Questions? Call +61420128746.</p>
     </InfoPage>
   );
 }

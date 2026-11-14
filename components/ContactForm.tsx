@@ -16,7 +16,7 @@ export default function ContactForm({ formName = 'contact', topic = '', thanks =
       const r = await fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...f, formName, t }) });
       const j = await r.json();
       if (j.success) router.push(thanks); else setErr(j.error || 'Something went wrong.');
-    } catch { setErr('Network error. Please call 0420 128 746 or WhatsApp us.'); }
+    } catch { setErr('Network error. Please call +61420128746 or WhatsApp us.'); }
     setBusy(false);
   }
   const input = 'h-12 w-full rounded-xl border border-line bg-white px-4 text-[15px] outline-none focus:border-fw-500 focus:ring-2 focus:ring-fw-100';

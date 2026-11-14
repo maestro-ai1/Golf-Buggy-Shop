@@ -37,7 +37,7 @@ export async function GET() {
         title: `${SITE.name} Search API`,
       },
       {
-        anchor: `https://${SITE.domain}/api/mcp`,
+        anchor: `https://${SITE.domain}/api/mcp/`,
         type: 'application/json',
         'https://www.iana.org/assignments/link-relations/service-desc': [
           { href: `https://${SITE.domain}/.well-known/mcp/server-card.json` },

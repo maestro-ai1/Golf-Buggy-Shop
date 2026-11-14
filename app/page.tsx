@@ -71,7 +71,7 @@ export default function Home() {
       {/* TRUST STRIP */}
       <section aria-label="Why shop with us" className="border-b border-line bg-white">
         <ul className="container-x grid gap-4 py-6 sm:grid-cols-2 lg:grid-cols-4">
-          {[[BadgePercent, 'Extra 10% off with crypto', 'Bitcoin or USDT at checkout'], [Truck, 'Free delivery over $1,000', 'Flat $95 below, Australia-wide'], [ShieldCheck, 'Manufacturer warranty', 'On every new model we list'], [Headset, 'Local expert support', 'Call or WhatsApp 0420 128 746']].map(([Icon, t, s]) => {
+          {[[BadgePercent, 'Extra 10% off with crypto', 'Bitcoin or USDT at checkout'], [Truck, 'Free delivery over $1,000', 'Flat $95 below, Australia-wide'], [ShieldCheck, 'Manufacturer warranty', 'On every new model we list'], [Headset, 'Local expert support', 'Call or WhatsApp +61420128746']].map(([Icon, t, s]) => {
             const I = Icon as typeof Truck;
             return <li key={t as string} className="flex items-center gap-3"><span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-fw-50 text-fw-700"><I size={24} /></span><span><span className="block font-bold text-fw-900">{t as string}</span><span className="block text-sm text-muted">{s as string}</span></span></li>;
           })}
@@ -210,7 +210,7 @@ export default function Home() {
             <aside className="card p-6 lg:sticky lg:top-28">
               <h2 className="font-display text-xl font-extrabold">Need help choosing?</h2>
               <p className="mt-2 text-sm text-muted">Tell us where and how you will use your buggy and we will suggest models, options and freight.</p>
-              <a href="tel:+61420128746" className="btn btn-green mt-4 w-full">Call 0420 128 746</a>
+              <a href="tel:+61420128746" className="btn btn-green mt-4 w-full">Call +61420128746</a>
               <a href="https://wa.me/61420128746?text=Hi%20Buggies%20For%20Sale%2C%20" target="_blank" rel="noopener noreferrer" className="btn btn-ghost mt-3 w-full">WhatsApp us</a>
               <Link href="/contact/" className="mt-3 block text-center text-sm font-extrabold text-accent-600">Send an enquiry →</Link>
             </aside>
@@ -242,7 +242,7 @@ export default function Home() {
             <div className="mt-6 flex flex-wrap gap-3">
               <Link href="/shop/" className="btn btn-primary">Shop all {PRODUCTS.length}+ products <ArrowRight size={16} aria-hidden="true" /></Link>
               <Link href="/contact/" className="btn btn-ghost !border-white/30 !bg-transparent !text-white">Get a quote</Link>
-              <a href="tel:+61420128746" className="btn btn-ghost !border-white/30 !bg-transparent !text-white">Call 0420 128 746</a>
+              <a href="tel:+61420128746" className="btn btn-ghost !border-white/30 !bg-transparent !text-white">Call +61420128746</a>
             </div>
           </div>
         </div>

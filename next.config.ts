@@ -14,6 +14,8 @@ const nextConfig: NextConfig = {
   },
   async headers() {
     return [
+      // Content-Security-Policy: everything is first-party (no third-party scripts, fonts or images). Inline script/style are needed by Next.js.
+      { source: '/:path*', headers: [{ key: 'Content-Security-Policy', value: "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'" }] },
       { source: '/products/:path*', headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }] },
       { source: '/images/:path*', headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }] },
       { source: '/blog/:file(.+\\.webp)', headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }] },

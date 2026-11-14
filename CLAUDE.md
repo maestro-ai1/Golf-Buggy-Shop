@@ -24,7 +24,7 @@ React/Next.js (App Router, TypeScript) store for buggiesforsale.com.au, deployed
 The one rule is the `golden-keyword-rule` skill (global, owner-confirmed). Summary: KD 28 or below, highest volume first; 1 primary (transactional, else commercial) + 5 secondary (T/C) + 5 FAQs per page and per product; N/I go to blogs; alt text = product focus keyword; FAQs on every product and blog post; numbered pagination; no keyword for products we do not stock. Mapped keywords are never blog targets. Blog: 1500 words minimum, TOC, 5 FAQs, outbound + internal + product links.
 
 ## Facts
-Buggies For Sale Australia Pty Ltd · ABN 53 635 284 267 · 0420 128 746 · sales@buggiesforsale.com.au · Sydney NSW · founded 2023.
+Buggies For Sale Australia Pty Ltd · ABN 53 635 284 267 · +61420128746 · sales@buggiesforsale.com.au · Sydney NSW · founded 2023.
 
 ## Before saying "done" or pushing (lessons learned)
 - Images: run `node scripts/audit-images.mjs` (must print `problems: 0`; checks files, 1200/600 size, white edges, sizes, sources). With the site running (`npm run start`) also run `node scripts/audit-crawl.mjs` (every sitemap page, every image URL returns 200).

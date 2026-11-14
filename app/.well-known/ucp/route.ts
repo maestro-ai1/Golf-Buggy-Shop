@@ -20,7 +20,7 @@ export async function GET() {
       {
         id: 'mcp-server',
         type: 'mcp',
-        url: `https://${SITE.domain}/api/mcp`,
+        url: `https://${SITE.domain}/api/mcp/`,
         description: 'MCP Streamable HTTP server',
       },
       {
@@ -38,7 +38,7 @@ export async function GET() {
     ],
     capabilities: ['browse', 'search', 'inquiry', 'wholesale', 'content', 'mcp'],
     endpoints: {
-      mcp: `https://${SITE.domain}/api/mcp`,
+      mcp: `https://${SITE.domain}/api/mcp/`,
       catalog: `https://${SITE.domain}/shop/`,
       contact: `https://${SITE.domain}/contact/`,
       agent_skills: `https://${SITE.domain}/.well-known/agent-skills/index.json`,

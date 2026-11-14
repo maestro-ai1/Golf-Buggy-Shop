@@ -16,7 +16,7 @@ No authentication required. All product and content resources are publicly acces
 | Products API | https://buggiesforsale.com.au/api/products |
 | Categories API | https://buggiesforsale.com.au/api/categories |
 | Search API | https://buggiesforsale.com.au/api/search |
-| MCP Streamable Server | https://buggiesforsale.com.au/api/mcp |
+| MCP Streamable Server | https://buggiesforsale.com.au/api/mcp/ |
 
 ## Authentication
 

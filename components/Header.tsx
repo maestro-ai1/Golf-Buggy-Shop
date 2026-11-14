@@ -8,7 +8,7 @@ import { useCart } from '@/lib/cart';
 import type { NavItem } from '@/lib/nav';
 
 export default function Header({ nav, onSearch }: { nav: NavItem[]; onSearch: () => void }) {
-  const { count, setOpen } = useCart();
+  const { count, open, setOpen } = useCart();
   const [openIdx, setOpenIdx] = useState<number | null>(null);
   const [mobile, setMobile] = useState(false);
   const [mobIdx, setMobIdx] = useState<number | null>(null);
@@ -25,18 +25,19 @@ export default function Header({ nav, onSearch }: { nav: NavItem[]; onSearch: ()
   return (
     <header ref={barRef} className="sticky top-0 z-40 border-b border-line bg-white/95 backdrop-blur">
       <div className="container-x flex h-[68px] items-center gap-3 sm:gap-5">
-        <button className="grid h-11 w-11 place-items-center rounded-full border border-line lg:hidden" aria-label="Open menu" onClick={() => setMobile(true)}><Menu size={22} /></button>
+        <button className="grid h-11 w-11 place-items-center rounded-full border border-line lg:hidden" aria-label="Open menu" aria-haspopup="dialog" aria-expanded={mobile} onClick={() => setMobile(true)}><Menu size={22} /></button>
         <Link href="/" className="shrink-0"><Logo /></Link>
-        <button onClick={onSearch} className="mx-2 hidden h-11 flex-1 items-center gap-3 rounded-full border border-line bg-sand-50 px-5 text-left text-sm text-muted transition hover:border-fw-500 md:flex" aria-label="Search products">
+        <button onClick={onSearch} className="mx-2 hidden h-11 flex-1 items-center gap-3 rounded-full border border-line bg-sand-50 px-5 text-left text-sm text-muted transition hover:border-fw-500 md:flex" aria-label="Search products" aria-haspopup="dialog">
           <Search size={18} /> Search golf buggies, carts, batteries, accessories…
         </button>
         <div className="ml-auto flex items-center gap-2">
-          <a href="tel:+61420128746" className="hidden items-center gap-2 rounded-full px-3 py-2 text-sm font-bold text-fw-800 hover:bg-fw-50 xl:flex"><Phone size={18} /> 0420 128 746</a>
-          <button onClick={onSearch} className="grid h-11 w-11 place-items-center rounded-full border border-line md:hidden" aria-label="Search"><Search size={20} /></button>
-          <button onClick={() => setOpen(true)} className="relative grid h-11 w-11 place-items-center rounded-full bg-fw-800 text-white transition hover:bg-fw-700" aria-label={`Cart, ${count} items`}>
+          <a href="tel:+61420128746" className="hidden items-center gap-2 rounded-full px-3 py-2 text-sm font-bold text-fw-800 hover:bg-fw-50 xl:flex"><Phone size={18} /> +61420128746</a>
+          <button onClick={onSearch} className="grid h-11 w-11 place-items-center rounded-full border border-line md:hidden" aria-label="Search" aria-haspopup="dialog"><Search size={20} /></button>
+          <button onClick={() => setOpen(true)} className="relative grid h-11 w-11 place-items-center rounded-full bg-fw-800 text-white transition hover:bg-fw-700" aria-label={`Cart, ${count} items`} aria-haspopup="dialog" aria-expanded={open}>
             <ShoppingCart size={20} />
             {count > 0 && <span className="absolute -right-1 -top-1 grid h-5 min-w-5 place-items-center rounded-full bg-accent-600 px-1 text-[11px] font-extrabold text-white">{count}</span>}
           </button>
+          <span className="sr-only" role="status" aria-live="polite">{count} {count === 1 ? "item" : "items"} in cart</span>
         </div>
       </div>
 
@@ -97,7 +98,7 @@ export default function Header({ nav, onSearch }: { nav: NavItem[]; onSearch: ()
                 </li>
               ))}
             </ul>
-            <div className="border-t border-line p-4"><a href="tel:+61420128746" className="btn btn-green w-full"><Phone size={18} /> Call 0420 128 746</a></div>
+            <div className="border-t border-line p-4"><a href="tel:+61420128746" className="btn btn-green w-full"><Phone size={18} /> Call +61420128746</a></div>
           </div>
         </div>
       )}

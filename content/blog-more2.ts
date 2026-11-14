@@ -11,7 +11,7 @@ export const MORE2: Record<string, string[]> = {
   ],
   'lithium-vs-lead-acid-golf-cart-batteries': [
     `## Warranty and support questions`,
-    `Before buying a battery, ask how long the warranty runs, whether it is pro-rata, and what is excluded. Ask whether the battery management system is covered, whether the charger is included, and who handles claims in Australia. A strong warranty is only useful if the supplier is easy to reach. Keep your invoice, serial numbers and installation photos together. If a pack ever misbehaves, stop using it and contact support rather than attempting repairs. Our team can talk through the options for your cart on 0420 128 746.`,
+    `Before buying a battery, ask how long the warranty runs, whether it is pro-rata, and what is excluded. Ask whether the battery management system is covered, whether the charger is included, and who handles claims in Australia. A strong warranty is only useful if the supplier is easy to reach. Keep your invoice, serial numbers and installation photos together. If a pack ever misbehaves, stop using it and contact support rather than attempting repairs. Our team can talk through the options for your cart on +61420128746.`,
   ],
   'what-is-a-utv-side-by-side-vs-atv-vs-dune-buggy': [
     `## A simple decision path`,
@@ -66,6 +66,6 @@ export const MORE2: Record<string, string[]> = {
   ],
   'used-golf-carts-on-sale': [
     `## Quick buying summary`,
-    `Inspect the battery first, drive the cart, check the frame, tyres and brakes, and ask for history. Compare new, used and refurbished options, and compare delivered prices. If the battery is near the end of its life, include a replacement in your budget. Ask for a written description and a short warranty. When you are ready, browse our [used golf carts](/golf-carts/used/), [petrol golf carts](/golf-carts/petrol/) and [electric golf carts](/golf-carts/electric/), or call us on 0420 128 746 for help choosing.`,
+    `Inspect the battery first, drive the cart, check the frame, tyres and brakes, and ask for history. Compare new, used and refurbished options, and compare delivered prices. If the battery is near the end of its life, include a replacement in your budget. Ask for a written description and a short warranty. When you are ready, browse our [used golf carts](/golf-carts/used/), [petrol golf carts](/golf-carts/petrol/) and [electric golf carts](/golf-carts/electric/), or call us on +61420128746 for help choosing.`,
   ],
 };

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PRODUCTS, SITE } from '@/config/site';
+import { publicProduct } from '@/lib/public-product';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -21,7 +22,7 @@ export async function GET(request: NextRequest, { params }: Props) {
 
   return NextResponse.json(
     {
-      ...product,
+      ...publicProduct(product),
       currency: SITE.currency,
       url: `https://${SITE.domain}/products/${product.slug}/`,
     },

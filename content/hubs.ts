@@ -24,7 +24,7 @@ export const HUBS: Record<string, PageCopy> = {
       ] },
       { h2: `What to check before you buy`, p: [
         `Check that the buggy folds small enough for your boot, that your golf bag suits the bag holder, and that the battery type matches how often you play. Lithium batteries are lighter and last longer between charges than older lead-acid packs, and you can see our [lithium batteries](/parts-accessories/golf-buggy-parts/lithium-batteries/) and [golf buggy accessories](/parts-accessories/golf-cart-accessories/) if you want to upgrade later.`,
-        `Not sure? Call us on 0420 128 746 or use WhatsApp and tell us your course and your bag type.`,
+        `Not sure? Call us on +61420128746 or use WhatsApp and tell us your course and your bag type.`,
       ] },
       { h2: `Golf buggy Australia: delivery, payment and support`, p: [
         `We ship golf buggies Australia-wide from our depots, with freight confirmed before you pay. You can pay by bank transfer (Osko or EFT) or PayID, or choose Bitcoin or USDT for an extra 10% off at checkout. Our Sydney team can answer questions by phone, WhatsApp or email.`,

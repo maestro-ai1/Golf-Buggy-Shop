@@ -16,7 +16,7 @@
     {
       "id": "mcp-server",
       "type": "mcp",
-      "url": "https://buggiesforsale.com.au/api/mcp",
+      "url": "https://buggiesforsale.com.au/api/mcp/",
       "description": "MCP Streamable HTTP server"
     },
     {
@@ -34,7 +34,7 @@
   ],
   "capabilities": ["browse", "search", "inquiry", "wholesale", "content", "mcp"],
   "endpoints": {
-    "mcp": "https://buggiesforsale.com.au/api/mcp",
+    "mcp": "https://buggiesforsale.com.au/api/mcp/",
     "catalog": "https://buggiesforsale.com.au/shop/",
     "contact": "https://buggiesforsale.com.au/contact/",
     "agent_skills": "https://buggiesforsale.com.au/.well-known/agent-skills/index.json",

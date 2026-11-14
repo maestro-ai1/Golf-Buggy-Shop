@@ -22,7 +22,7 @@ export const MORE: Record<string, { tags: string[]; add: string[] }> = {
       `- **Myth: a small speed means a small risk.** Slow vehicles can still tip, roll or collide, which is why seat belts, speed limits and sensible driving matter.`,
       `## Practical safety habits`,
       `Treat a cart like any vehicle. Do a quick check before use: tyres, brakes, steering, lights and charge level. Keep a clear view, slow down on corners and slopes, and avoid carrying more passengers than there are seats. On wet grass and gravel, brake early and leave extra space. Keep children seated and never let them stand or ride on the rear without a purpose-built seat. If you carry golf bags or tools, secure them so they cannot slide.`,
-      `If you are unsure about a particular use, call us on 0420 128 746. We cannot give legal advice, but we can explain the options for seating, batteries and accessories and point you to the right authority for the rules in your area.`,
+      `If you are unsure about a particular use, call us on +61420128746. We cannot give legal advice, but we can explain the options for seating, batteries and accessories and point you to the right authority for the rules in your area.`,
     ],
   },
   'how-much-does-a-golf-cart-cost-in-australia': {
@@ -132,7 +132,7 @@ export const MORE: Record<string, { tags: string[]; add: string[] }> = {
       `## Safety essentials for all types`,
       `Helmets, eye protection, gloves and boots should be worn on every ride. Use seat belts where fitted, keep within the vehicle's rated load and never carry passengers on a vehicle designed for one rider. Take it slow on unfamiliar terrain and avoid steep side slopes. Supervise children at all times, and make sure the vehicle matches their age and size. Safe Work Australia has further guidance for rural workplaces in its [quad bike safety pages](https://www.safeworkaustralia.gov.au/safety-topic/hazards/quad-bikes).`,
       `## Next steps`,
-      `If you are comparing models, start with our [side-by-sides and UTVs](/off-road-buggies/side-by-sides-utvs/), [dune buggies](/off-road-buggies/dune-buggies/) and [mini quads and small ATVs](/off-road-buggies/mini-quads-atvs/). For deeper comparisons read our [off-road buggy guide](/blog/offroad-buggy/) and [ATV buggy guide](/blog/atv-buggy/). If you are unsure which one suits your property, call us on 0420 128 746 and tell us how you will use it.`,
+      `If you are comparing models, start with our [side-by-sides and UTVs](/off-road-buggies/side-by-sides-utvs/), [dune buggies](/off-road-buggies/dune-buggies/) and [mini quads and small ATVs](/off-road-buggies/mini-quads-atvs/). For deeper comparisons read our [off-road buggy guide](/blog/offroad-buggy/) and [ATV buggy guide](/blog/atv-buggy/). If you are unsure which one suits your property, call us on +61420128746 and tell us how you will use it.`,
     ],
   },
   'remote-control-golf-buggy-buyers-guide': {
@@ -162,7 +162,7 @@ export const MORE: Record<string, { tags: string[]; add: string[] }> = {
       `## Maintenance`,
       `Wipe the buggy after play, especially wheels and the underside. Check wheel nuts, the remote battery and the folding joints. Charge the main battery after each round and store it in a cool dry place. Update software and calibration according to the manufacturer when applicable. Keep the manual and receipts for warranty claims.`,
       `## Which buggy should you choose?`,
-      `Decide the budget, then rank features: range, GPS, folding, weight and warranty. Compare models in our [remote control golf buggies](/golf-buggies/remote-control/) category and our wider [golf buggies for sale](/golf-buggies/for-sale/) list. If you are not sure whether you need remote at all, read our comparison of [electric vs push golf buggies](/blog/electric-vs-push-golf-buggy-which-should-you-buy/). We can help you match a model to your course, your bag and your budget. Call 0420 128 746.`,
+      `Decide the budget, then rank features: range, GPS, folding, weight and warranty. Compare models in our [remote control golf buggies](/golf-buggies/remote-control/) category and our wider [golf buggies for sale](/golf-buggies/for-sale/) list. If you are not sure whether you need remote at all, read our comparison of [electric vs push golf buggies](/blog/electric-vs-push-golf-buggy-which-should-you-buy/). We can help you match a model to your course, your bag and your budget. Call +61420128746.`,
     ],
   },
   'go-kart-electric-go-karts': {
@@ -186,7 +186,7 @@ export const MORE: Record<string, { tags: string[]; add: string[] }> = {
       `## Safety gear and rules`,
       `Wear a helmet, gloves, closed shoes and long sleeves. Do not drive on public roads. Keep spectators behind a barrier or at a safe distance. Safe Work Australia's guidance on [off-road vehicles](https://www.safeworkaustralia.gov.au/safety-topic/hazards/quad-bikes) has principles that apply to any off-road driving: training, protective gear, supervision and risk assessment.`,
       `## Where to go next`,
-      `See our [go karts for sale](/off-road-buggies/go-karts/) and [kids buggies](/off-road-buggies/kids-buggies/) categories, and compare with our guides to [electric buggies](/blog/electric-buggy/), [kids ride-on buggies](/blog/kids-ride-on-buggy/) and [off-road buggies](/blog/offroad-buggy/). If you need help choosing between electric and petrol, call 0420 128 746.`,
+      `See our [go karts for sale](/off-road-buggies/go-karts/) and [kids buggies](/off-road-buggies/kids-buggies/) categories, and compare with our guides to [electric buggies](/blog/electric-buggy/), [kids ride-on buggies](/blog/kids-ride-on-buggy/) and [off-road buggies](/blog/offroad-buggy/). If you need help choosing between electric and petrol, call +61420128746.`,
     ],
   },
   'electric-buggy': {

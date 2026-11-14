@@ -27,7 +27,7 @@ function Inner() {
 
   useEffect(() => {
     if (!id) return;
-    fetch(`/api/order/crypto?id=${encodeURIComponent(id)}`).then(async (r) => { const j = await r.json(); if (r.ok) { setData(j); if (j.status === 'screenshot-received' || j.status === 'payment-confirmed') setState('done'); } else setErr(j.error || 'Not available'); }).catch(() => setErr('Could not load your order. Please call 0420 128 746.'));
+    fetch(`/api/order/crypto?id=${encodeURIComponent(id)}`).then(async (r) => { const j = await r.json(); if (r.ok) { setData(j); if (j.status === 'screenshot-received' || j.status === 'payment-confirmed') setState('done'); } else setErr(j.error || 'Not available'); }).catch(() => setErr('Could not load your order. Please call +61420128746.'));
   }, [id]);
 
   async function copy(key: string, text: string) { try { await navigator.clipboard.writeText(text); } catch { /* ignore */ } setCopied(key); setTimeout(() => setCopied(''), 2000); }
@@ -80,7 +80,7 @@ function Inner() {
           </label>
           {upErr && <p role="alert" className="rounded-xl bg-accent-100 p-3 text-sm font-semibold text-accent-600">{upErr}</p>}
           <button disabled={state === 'busy' || !fileName} className="btn btn-primary w-full !min-h-[52px] disabled:opacity-50">{state === 'busy' ? 'Uploading…' : 'I have paid: send screenshot'}</button>
-          <p className="flex items-center gap-2 text-xs text-muted"><ShieldCheck size={14} /> Questions? Call 0420 128 746 or email sales@buggiesforsale.com.au.</p>
+          <p className="flex items-center gap-2 text-xs text-muted"><ShieldCheck size={14} /> Questions? Call +61420128746 or email sales@buggiesforsale.com.au.</p>
         </form>
       )}
     </div></section>

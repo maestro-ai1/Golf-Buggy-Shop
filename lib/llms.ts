@@ -48,7 +48,7 @@ export function llmsFullTxt() {
   out.push('## Brands', '', brands.map((b) => `- [${name(b.name)}](${U(b.url)})`).join('\n'), '');
   out.push(`## Products (${PRODUCTS.length})`, '');
   for (const p of PRODUCTS) {
-    out.push(`### ${p.name}`, `- URL: ${U('/products/' + p.slug + '/')}`, `- Price: ${money(p.price)} AUD inc. GST${p.rrp && p.rrp > p.price ? ` (RRP ${money(p.rrp)})` : ''}`, `- Brand: ${p.brand} | Category: ${p.subcategory} | SKU: ${p.sku}`, '', clean(p.shortDescription));
+    out.push(`### ${p.name}`, `- URL: ${U('/products/' + p.slug + '/')}`, `- Price: ${money(p.price)} AUD inc. GST`, `- Brand: ${p.brand} | Category: ${p.subcategory} | SKU: ${p.sku}`, '', clean(p.shortDescription));
     if (p.highlights?.length) out.push('', ...p.highlights.map((h) => `- ${clean(h)}`));
     const specs = Object.entries(p.specs || {}).filter(([, v]) => v);
     if (specs.length) out.push('', 'Specifications:', ...specs.map(([k, v]) => `- ${k}: ${clean(String(v))}`));

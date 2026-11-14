@@ -45,7 +45,7 @@ export const EXTRA_POSTS: BlogPost[] = [
       `## Budget and delivery`,
       `Prices vary with battery size, frame quality and brand. All our prices include GST, delivery is free over $1,000 and a flat $95 applies below that. The minimum order is $250. You can pay by bank transfer (Osko or EFT), PayID, or Bitcoin or USDT with an extra 10% off at checkout.`,
       `## Bottom line`,
-      `Choose an electric go kart if you value quiet running, low maintenance and easy starting, and match battery size and speed limits to the rider. Choose petrol if you need the longest sessions or the highest top speed. If you want help comparing models, call 0420 128 746 or message us on WhatsApp.`,
+      `Choose an electric go kart if you value quiet running, low maintenance and easy starting, and match battery size and speed limits to the rider. Choose petrol if you need the longest sessions or the highest top speed. If you want help comparing models, call +61420128746 or message us on WhatsApp.`,
     ],
     faqs: [
       ['Are electric go karts street legal in Australia?', 'No. Go karts are for private land and closed tracks. They are not registered for public roads.'],
@@ -98,7 +98,7 @@ export const EXTRA_POSTS: BlogPost[] = [
       `## Delivery, payment and minimum order`,
       `All prices include GST. Delivery is free over $1,000 and $95 flat below that. The minimum order is $250. You can pay by bank transfer (Osko or EFT), PayID, or Bitcoin or USDT with an extra 10% off, applied automatically at checkout.`,
       `## Bottom line`,
-      `The best electric buggy is the one that suits the job: a light motorised golf buggy for the course, a robust utility buggy for work, or a licensed ride-on for the kids. Tell us how you plan to use it and we will help you compare models. Call 0420 128 746.`,
+      `The best electric buggy is the one that suits the job: a light motorised golf buggy for the course, a robust utility buggy for work, or a licensed ride-on for the kids. Tell us how you plan to use it and we will help you compare models. Call +61420128746.`,
     ],
     faqs: [
       ['What is an electric buggy?', 'It is a buggy powered by an electric motor and battery. The term covers golf buggies, off-road utility buggies and kids ride-on buggies.'],
@@ -146,7 +146,7 @@ export const EXTRA_POSTS: BlogPost[] = [
       `## Budget`,
       `Entry-level youth buggies cost the least, and larger dune buggies and side-by-sides cost more. Compare what is included, such as seat belts, roll cage, lights and a warranty. All our prices include GST, delivery is free over $1,000 and $95 flat below, and the minimum order is $250.`,
       `## Bottom line`,
-      `Match the buggy to the job and the rider: a youth buggy for learning, a dune buggy for sand and fun, a side-by-side for work and trails. If you want help comparing models, call 0420 128 746.`,
+      `Match the buggy to the job and the rider: a youth buggy for learning, a dune buggy for sand and fun, a side-by-side for work and trails. If you want help comparing models, call +61420128746.`,
     ],
     faqs: [
       ['What is an off-road buggy?', 'A small off-road vehicle, such as a dune buggy, side-by-side, go kart or youth buggy, built for private land, farms and trails.'],
@@ -236,7 +236,7 @@ export const EXTRA_POSTS: BlogPost[] = [
       `## Delivery and payment`,
       `Prices include GST. We deliver Australia-wide, free over $1,000 and $95 flat below that. The minimum order is $250. You can pay by bank transfer (Osko or EFT), PayID, or Bitcoin or USDT with an extra 10% off, applied automatically at checkout.`,
       `## Bottom line`,
-      `A beach buggy is a great way to enjoy sand and bush tracks, but check beach access rules and use proper safety gear. For help choosing between 175cc, 200cc and 300cc models, call 0420 128 746 or read our [off-road buggy guide](/blog/offroad-buggy/).`,
+      `A beach buggy is a great way to enjoy sand and bush tracks, but check beach access rules and use proper safety gear. For help choosing between 175cc, 200cc and 300cc models, call +61420128746 or read our [off-road buggy guide](/blog/offroad-buggy/).`,
     ],
     faqs: [
       ['Is a beach buggy the same as a dune buggy?', 'In Australia the terms are used interchangeably for lightweight buggies built for sand and loose surfaces.'],
@@ -285,7 +285,7 @@ export const EXTRA_POSTS: BlogPost[] = [
       `## Safety and the law`,
       `Overloaded or poorly secured loads cause accidents. If you are unsure about rules for trailers, braking and loads, check your state transport authority. Safe Work Australia also publishes general guidance on [safe loading and vehicle use](https://www.safeworkaustralia.gov.au/) for workplaces, which is helpful if you move carts as part of a business.`,
       `## Delivery option`,
-      `If you would rather not move a cart yourself, we arrange freight to metro and regional Australia. See our [golf carts for sale](/golf-carts/for-sale/) and [used golf carts](/golf-carts/used/) pages. Call 0420 128 746 for a freight quote.`,
+      `If you would rather not move a cart yourself, we arrange freight to metro and regional Australia. See our [golf carts for sale](/golf-carts/for-sale/) and [used golf carts](/golf-carts/used/) pages. Call +61420128746 for a freight quote.`,
     ],
     faqs: [
       ['What size trailer do I need for a golf cart?', 'One with a deck long and wide enough for the cart and a rated capacity above the cart weight. Check the cart specification.'],
@@ -335,7 +335,7 @@ export const EXTRA_POSTS: BlogPost[] = [
       `## Parts and accessories`,
       `Get the basics ready at purchase: spare filters, a loading ramp and the right protective gear. Our [off-road parts](/parts-accessories/off-road-parts/) page has carburettors, brake parts and ramps.`,
       `## Bottom line`,
-      `The best ATV buggy is the one with the right seats, cage and power for your use. If safety, passengers and load matter, look at a side-by-side first. For help matching a vehicle to your property, call 0420 128 746.`,
+      `The best ATV buggy is the one with the right seats, cage and power for your use. If safety, passengers and load matter, look at a side-by-side first. For help matching a vehicle to your property, call +61420128746.`,
     ],
     faqs: [
       ['Is an ATV the same as a buggy?', 'No. An ATV or quad has handlebars and you straddle it. A buggy has a steering wheel, seats and usually a roll cage.'],
@@ -385,7 +385,7 @@ export const EXTRA_POSTS: BlogPost[] = [
       `## Delivery and payment`,
       `All prices include GST. Delivery is free over $1,000. The minimum order is $250. You can pay by bank transfer (Osko or EFT), PayID, or Bitcoin or USDT with an extra 10% off at checkout.`,
       `## Bottom line`,
-      `Pick the engine size to match the terrain and the driver, and check assembly and parts before you buy. If you want help choosing between the Cheetah and the Challenger, call 0420 128 746.`,
+      `Pick the engine size to match the terrain and the driver, and check assembly and parts before you buy. If you want help choosing between the Cheetah and the Challenger, call +61420128746.`,
     ],
     faqs: [
       ['What engine sizes do Trailmaster buggies have?', 'The models we list include 175cc, 200cc and 300cc petrol engines. Check each product page for details.'],
@@ -435,7 +435,7 @@ export const EXTRA_POSTS: BlogPost[] = [
       `## Gift timing and delivery`,
       `Our prices include GST and we deliver Australia-wide. The minimum order is $250, so you can combine a ride-on with accessories. Delivery is free over $1,000. You can pay by bank transfer (Osko or EFT), PayID, or Bitcoin or USDT with an extra 10% off at checkout.`,
       `## Bottom line`,
-      `Choose the vehicle that matches the child's age and size, with a speed limiter and safety features, and supervise every ride. If you want help choosing, call 0420 128 746.`,
+      `Choose the vehicle that matches the child's age and size, with a speed limiter and safety features, and supervise every ride. If you want help choosing, call +61420128746.`,
     ],
     faqs: [
       ['What age is a 24V ride-on suitable for?', 'Follow the manufacturer guidance. 24V models are generally aimed at older children than 6V and 12V toys.'],
@@ -483,14 +483,14 @@ export const EXTRA_POSTS: BlogPost[] = [
       `## Delivery and paperwork`,
       `Freight is quoted by size and postcode. If you are collecting a cart yourself, read our guide to [trailering a golf cart](/blog/trailering-a-golf-cart/). Delivery is free over $1,000 for most metro and depot areas, and the minimum order is $250. You can pay by bank transfer (Osko or EFT), PayID, or Bitcoin or USDT with an extra 10% off, applied automatically at checkout.`,
       `## Bottom line`,
-      `Inspect the battery, drive the cart, check the frame and ask for history. A refurbished cart with a new battery is often better value than a cheap cart that needs thousands in repairs. If you want help assessing a particular cart, call 0420 128 746.`,
+      `Inspect the battery, drive the cart, check the frame and ask for history. A refurbished cart with a new battery is often better value than a cheap cart that needs thousands in repairs. If you want help assessing a particular cart, call +61420128746.`,
     ],
     faqs: [
       ['How much does a used golf cart cost in Australia?', 'It varies widely by brand, age, seating and battery condition. Compare similar carts and factor in battery replacement.'],
       ['How long do golf cart batteries last?', 'It depends on type, use and care. Lithium typically lasts longer than lead-acid. Ask for the battery age and test the range.'],
       ['Is a refurbished cart worth it?', 'Often yes, if it has a new battery, service records and a warranty or guarantee.'],
       ['Can I drive a used golf cart on the road?', 'Generally no. Check your state transport authority.'],
-      ['Can you deliver a used cart?', 'Yes. We quote freight by postcode. Call 0420 128 746.'],
+      ['Can you deliver a used cart?', 'Yes. We quote freight by postcode. Call +61420128746.'],
     ],
   },
 ];

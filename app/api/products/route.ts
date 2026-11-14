@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PRODUCTS, SITE, inCategory } from '@/config/site';
+import { publicProduct } from '@/lib/public-product';
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
@@ -29,7 +30,7 @@ export async function GET(request: NextRequest) {
   }
 
   const items = results.map((p) => ({
-    ...p,
+    ...publicProduct(p),
     currency: SITE.currency,
     url: `https://${SITE.domain}/products/${p.slug}/`,
   }));

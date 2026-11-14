@@ -33,7 +33,7 @@
       "title": "Buggies For Sale Search API"
     },
     {
-      "anchor": "https://buggiesforsale.com.au/api/mcp",
+      "anchor": "https://buggiesforsale.com.au/api/mcp/",
       "type": "application/json",
       "https://www.iana.org/assignments/link-relations/service-desc": [
         { "href": "https://buggiesforsale.com.au/.well-known/mcp/server-card.json" }

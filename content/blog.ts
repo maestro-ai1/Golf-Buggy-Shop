@@ -60,7 +60,7 @@ const CORE_POSTS: BlogPost[] = [
       '## What about golf buggies?',
       'A golf buggy that you push or that follows you across the course is a different category again. These are for use on the course and similar areas, not roads. Our range of [golf buggies for sale](' + L.buggiesSale + ') is made for walking golfers.',
       '## Bottom line',
-      'Treat a golf cart as a private-property vehicle unless your state authority confirms otherwise in writing. If you are unsure, ask before you buy, because rules and enforcement can change. We are happy to talk through your use case. Call 0420 128 746 or message us on WhatsApp.',
+      'Treat a golf cart as a private-property vehicle unless your state authority confirms otherwise in writing. If you are unsure, ask before you buy, because rules and enforcement can change. We are happy to talk through your use case. Call +61420128746 or message us on WhatsApp.',
     ],
     faqs: [
       ['Can I drive my golf cart on the road in NSW, Victoria or Queensland?', 'Generally no, unless the vehicle has been approved and registered for road use. Check Transport for NSW, VicRoads or Transport and Main Roads for your state.'],
@@ -103,7 +103,7 @@ const CORE_POSTS: BlogPost[] = [
       'Pay by bank transfer (Osko or EFT) or PayID, or use Bitcoin or USDT for an extra 10% discount.',
       '## Frequently asked budget questions',
       'Most first-time buyers want to know whether to go for lithium. In most cases, yes. A lithium cart costs more now but typically saves on battery replacement and weight later.',
-      'If you are unsure what you need, call us on 0420 128 746. We can recommend a model by seat count, use and budget.',
+      'If you are unsure what you need, call us on +61420128746. We can recommend a model by seat count, use and budget.',
     ],
     faqs: [
       ['How much is a new golf cart in Australia?', 'New electric carts typically start around $10,000 and can exceed $20,000 for large or premium models. Prices include GST on our site.'],
@@ -145,7 +145,7 @@ const CORE_POSTS: BlogPost[] = [
       '- Is the battery lithium and what is the range?',
       '- What accessories do you want? See our [accessories](' + L.acc + ') for umbrella and phone holders.',
       '## Our advice',
-      'If you are unsure, start with the course. A flat course suits a push buggy. A hilly course suits an electric buggy. Ask us if you want a hand: 0420 128 746.',
+      'If you are unsure, start with the course. A flat course suits a push buggy. A hilly course suits an electric buggy. Ask us if you want a hand: +61420128746.',
     ],
     faqs: [
       ['Is an electric golf buggy worth the extra cost?', 'If your course has hills or you want to save energy, yes. For flat courses a push buggy may be enough.'],
@@ -265,7 +265,7 @@ const CORE_POSTS: BlogPost[] = [
       '## Check club rules',
       'Some clubs have rules about powered buggies. Ask before you buy.',
       '## Ready to buy?',
-      'We offer free delivery on orders over $1,000. Call 0420 128 746 if you would like help choosing.',
+      'We offer free delivery on orders over $1,000. Call +61420128746 if you would like help choosing.',
     ],
     faqs: [
       ['How does a remote golf buggy work?', 'A handheld remote tells the motors to move ahead, stop or return to you.'],

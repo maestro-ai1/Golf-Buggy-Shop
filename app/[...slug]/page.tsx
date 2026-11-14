@@ -152,7 +152,7 @@ export default async function StructurePage({ params }: { params: Promise<Params
           <SectionHead eyebrow={isClearance ? 'Lowest prices' : brand ? brand : 'Range'} title={isClearance ? 'Our lowest-priced buggies, carts and parts' : products.length ? `${page.h1}: shop the range` : 'Ask us about this range'} sub={products.length ? 'Prices include GST. Free delivery over $1,000.' : undefined} />
           <ProductGrid products={products.map(toCard)} showBrandFilter={page.level !== 'brand'} basePath={page.url} emptyNote={copy.cta ? undefined : undefined} />
           {products.length === 0 && (
-            <div className="card mt-2 flex flex-col items-start gap-4 p-7 md:flex-row md:items-center md:justify-between"><div><p className="font-display text-xl font-extrabold">{copy.cta || 'Tell us what you need'}</p><p className="mt-1 text-muted">We source to order and quote within one business day. Call 0420 128 746 or send an enquiry.</p></div><Link href={`/contact/?topic=${encodeURIComponent(page.h1)}`} className="btn btn-primary shrink-0">Send an enquiry</Link></div>
+            <div className="card mt-2 flex flex-col items-start gap-4 p-7 md:flex-row md:items-center md:justify-between"><div><p className="font-display text-xl font-extrabold">{copy.cta || 'Tell us what you need'}</p><p className="mt-1 text-muted">We source to order and quote within one business day. Call +61420128746 or send an enquiry.</p></div><Link href={`/contact/?topic=${encodeURIComponent(page.h1)}`} className="btn btn-primary shrink-0">Send an enquiry</Link></div>
           )}
         </div></section>
       )}
@@ -165,7 +165,7 @@ export default async function StructurePage({ params }: { params: Promise<Params
             {copy.guides.map((g, gi) => <div key={g.h2}><h2>{g.h2}</h2>{g.p.map((t, i) => <p key={i}>{inline(t, `g${gi}-${i}`)}</p>)}</div>)}
           </div>
           <aside className="space-y-4 self-start">
-            <div className="card p-6"><h2 className="font-display text-xl font-extrabold">Need a hand choosing?</h2><p className="mt-2 text-sm text-muted">Our team knows these products. Call, WhatsApp or email and we will help you match a model to your needs.</p><a href="tel:+61420128746" className="btn btn-green mt-4 w-full">Call 0420 128 746</a></div>
+            <div className="card p-6"><h2 className="font-display text-xl font-extrabold">Need a hand choosing?</h2><p className="mt-2 text-sm text-muted">Our team knows these products. Call, WhatsApp or email and we will help you match a model to your needs.</p><a href="tel:+61420128746" className="btn btn-green mt-4 w-full">Call +61420128746</a></div>
           </aside>
         </div></section>
       )}

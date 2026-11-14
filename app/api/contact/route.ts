@@ -21,6 +21,6 @@ export async function POST(req: NextRequest) {
     subject: `${type === 'wholesale' ? 'Wholesale enquiry' : 'Website enquiry'}${enq.topic ? ': ' + enq.topic : ''} (${enq.id})`,
     html: emailShell('New enquiry', table(fieldRow('Reference', enq.id) + fieldRow('Name', name) + fieldRow('Email', email) + fieldRow('Phone', enq.phone || '-') + fieldRow('Topic', enq.topic || '-')) + `<p style="margin:16px 0 0;white-space:pre-wrap;font-size:14px;line-height:1.6">${esc(message)}</p>`),
   });
-  if (!mail.sent && !stored) return NextResponse.json({ success: false, error: 'Our enquiry form is temporarily unavailable. Please call 0420 128 746 or WhatsApp us.' }, { status: 503 });
+  if (!mail.sent && !stored) return NextResponse.json({ success: false, error: 'Our enquiry form is temporarily unavailable. Please call +61420128746 or WhatsApp us.' }, { status: 503 });
   return NextResponse.json({ success: true, id: enq.id });
 }

@@ -14,7 +14,7 @@ export const COPY: Record<string, PageCopy> = {
     ],
     guides: [
       { h2: 'Push, electric, remote or ride-on: which buggy fits you?', p: ['Push buggies are the lightest and cheapest option, and they need no charging. Electric buggies add a motor so you simply steer. Remote models follow your commands and let you walk completely unburdened, while ride-on buggies seat you for those long rounds or mobility needs.', 'Think about the hills on your usual course, how far you carry the buggy to the car, and whether you want GPS. Those three questions narrow the choice quickly.'] },
-      { h2: 'What to check before you buy', p: ['Check that the buggy folds small enough for your boot, that your golf bag suits the bag holder, and that the battery type matches how often you play. Lithium batteries are lighter and last longer between charges than older lead-acid packs.', 'Not sure? Call us on 0420 128 746 or use WhatsApp and tell us your course and your bag type.'] },
+      { h2: 'What to check before you buy', p: ['Check that the buggy folds small enough for your boot, that your golf bag suits the bag holder, and that the battery type matches how often you play. Lithium batteries are lighter and last longer between charges than older lead-acid packs.', 'Not sure? Call us on +61420128746 or use WhatsApp and tell us your course and your bag type.'] },
     ],
     faqs: [
       ['What is a golf buggy?', 'A golf buggy is a wheeled carrier for your golf bag. Push buggies are pushed by hand, electric and remote buggies have a motor, and ride-on buggies carry the golfer as well.'],

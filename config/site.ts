@@ -62,7 +62,7 @@ export const SITE = {
 };
 
 export const CONTACT = {
-  phone: '0420 128 746',
+  phone: '+61420128746',
   phoneInternational: '+61420128746',
   email: 'sales@buggiesforsale.com.au',
   abn: '53 635 284 267',
@@ -101,7 +101,7 @@ export const REPLY = {
   headerTagline: "Australia's Buggy Superstore · Sydney, Brisbane, Melbourne Depots",
   dispatchLine: 'Depot dispatch within 24-48 business hours via insured heavy freight carrier.',
   bizNumber: { label: 'ABN', value: '53 635 284 267' },
-  channels: { email: 'sales@buggiesforsale.com.au', whatsapp: '0420 128 746', whatsappCountryCode: '61' },
+  channels: { email: 'sales@buggiesforsale.com.au', whatsapp: '+61420128746', whatsappCountryCode: '61' },
   deadlineHours: 48,
   paymentMethods: [
     { id: 'eft', label: 'Bank Transfer (Osko / EFT)', opening: 'Please transfer {amount} using order reference {ref}.', closing: 'Payment confirmed same business day. Delivery allocated immediately upon receipt.' },
@@ -118,9 +118,12 @@ export const CRYPTO = {
 };
 
 export const CHAT = {
-  number: '61420128746',
-  display: '+61 420 128 746',
-  url: 'https://wa.me/61420128746',
+  channels: [
+    { type: 'whatsapp', label: 'WhatsApp Live Support', value: '61420128746', url: 'https://wa.me/61420128746?text=' + encodeURIComponent('Hi Buggies For Sale, ') },
+    { type: 'phone', label: 'Call +61420128746', value: '+61420128746', url: 'tel:+61420128746' },
+    { type: 'email', label: 'Email Sales & Support', value: 'sales@buggiesforsale.com.au', url: 'mailto:sales@buggiesforsale.com.au' },
+    { type: 'sms', label: 'SMS Text Message', value: '+61420128746', url: 'sms:+61420128746' },
+  ],
 };
 
 export const BRAND = {

@@ -44,7 +44,7 @@ const card = (icon, line1, line2) => Buffer.from(`<svg width="1200" height="1200
 for (const p of L) {
   if (p.images.length) continue;
   const used = p.group === 'used-cart';
-  const svg = card(used ? cartIcon : buggyIcon, 'Photos on request', used ? 'Real photos of this cart are emailed to you' : 'Call 0420 128 746 for product photos');
+  const svg = card(used ? cartIcon : buggyIcon, 'Photos on request', used ? 'Real photos of this cart are emailed to you' : 'Call +61420128746 for product photos');
   const dir = path.join(ROOT, 'public/products', p.slug); fs.mkdirSync(dir, { recursive: true });
   const buf = await sharp(svg).png().toBuffer();
   await enc(sharp(buf), path.join(dir, '1'), 150); await enc(sharp(buf).resize(600, 600), path.join(dir, '1-600'), 70);

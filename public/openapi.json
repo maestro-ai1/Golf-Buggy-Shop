@@ -1,0 +1,86 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Buggies For Sale Australia: read-only catalogue API",
+    "version": "1.0.0",
+    "description": "Public, read-only access to the Buggies For Sale Australia catalogue: products, categories and site search. Prices are in AUD and include 10% GST. No authentication is required and the API cannot place orders; orders are completed by a person on the website. The same data is available to MCP clients at /api/mcp/.",
+    "contact": { "name": "Buggies For Sale Australia", "email": "sales@buggiesforsale.com.au", "url": "https://buggiesforsale.com.au/contact/" }
+  },
+  "servers": [{ "url": "https://buggiesforsale.com.au" }],
+  "paths": {
+    "/api/products/": {
+      "get": {
+        "operationId": "listProducts",
+        "summary": "List or filter products",
+        "parameters": [
+          { "name": "category", "in": "query", "required": false, "description": "Category path, for example golf-buggies, golf-carts, off-road-buggies or parts-accessories.", "schema": { "type": "string" } },
+          { "name": "q", "in": "query", "required": false, "description": "Keyword matched against product name, brand, description and tags.", "schema": { "type": "string" } },
+          { "name": "limit", "in": "query", "required": false, "description": "Maximum number of products to return.", "schema": { "type": "integer", "minimum": 1 } }
+        ],
+        "responses": {
+          "200": { "description": "Matching products", "content": { "application/json": { "schema": { "type": "object", "properties": { "count": { "type": "integer" }, "currency": { "type": "string", "example": "AUD" }, "products": { "type": "array", "items": { "$ref": "#/components/schemas/Product" } } } } } } }
+        }
+      }
+    },
+    "/api/products/{slug}/": {
+      "get": {
+        "operationId": "getProduct",
+        "summary": "Get one product by slug",
+        "parameters": [{ "name": "slug", "in": "path", "required": true, "description": "Product slug, for example powerbug-drink-holder.", "schema": { "type": "string" } }],
+        "responses": {
+          "200": { "description": "The product", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Product" } } } },
+          "404": { "description": "Product not found", "content": { "application/json": { "schema": { "type": "object", "properties": { "error": { "type": "string" } } } } } }
+        }
+      }
+    },
+    "/api/categories/": {
+      "get": {
+        "operationId": "listCategories",
+        "summary": "List categories with product counts",
+        "responses": {
+          "200": { "description": "All categories", "content": { "application/json": { "schema": { "type": "object", "properties": { "count": { "type": "integer" }, "categories": { "type": "array", "items": { "type": "object", "additionalProperties": true } } } } } } }
+        }
+      }
+    },
+    "/api/search/": {
+      "get": {
+        "operationId": "searchSite",
+        "summary": "Search products, blog posts and category pages",
+        "parameters": [
+          { "name": "q", "in": "query", "required": true, "description": "Search words.", "schema": { "type": "string" } },
+          { "name": "limit", "in": "query", "required": false, "description": "Maximum results, up to 40. Default 20.", "schema": { "type": "integer", "minimum": 1, "maximum": 40 } }
+        ],
+        "responses": {
+          "200": { "description": "Search results", "content": { "application/json": { "schema": { "type": "object", "properties": { "query": { "type": "string" }, "products": { "type": "array", "items": { "type": "object", "properties": { "slug": { "type": "string" }, "name": { "type": "string" }, "brand": { "type": "string" }, "price": { "type": "number" }, "currency": { "type": "string" }, "category": { "type": "string" }, "url": { "type": "string", "format": "uri" } } } }, "blogPosts": { "type": "array", "items": { "type": "object", "additionalProperties": true } }, "categories": { "type": "array", "items": { "type": "object", "additionalProperties": true } } } } } } }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Product": {
+        "type": "object",
+        "description": "A product in the catalogue. Price is in AUD and includes 10% GST.",
+        "properties": {
+          "slug": { "type": "string" },
+          "sku": { "type": "string" },
+          "name": { "type": "string" },
+          "brand": { "type": "string" },
+          "price": { "type": "number", "description": "Price in AUD including GST." },
+          "currency": { "type": "string", "example": "AUD" },
+          "inStock": { "type": "boolean" },
+          "category": { "type": "string" },
+          "subcategory": { "type": "string" },
+          "shortDescription": { "type": "string" },
+          "description": { "type": "string", "description": "Markdown description." },
+          "highlights": { "type": "array", "items": { "type": "string" } },
+          "specs": { "type": "object", "additionalProperties": { "type": "string" } },
+          "faqs": { "type": "array", "items": { "type": "object", "additionalProperties": true } },
+          "images": { "type": "array", "items": { "type": "string" } },
+          "url": { "type": "string", "format": "uri", "description": "Product page on buggiesforsale.com.au." }
+        },
+        "additionalProperties": true
+      }
+    }
+  }
+}

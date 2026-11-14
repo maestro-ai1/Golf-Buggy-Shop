@@ -7,5 +7,5 @@ export const FAQ_ITEMS: { q: string; a: string }[] = [
   { q: 'Do your products come with warranty?', a: 'Yes. The manufacturer warranty applies, and conditions are provided with your order confirmation.' },
   { q: 'Can I drive a golf cart on the road?', a: 'Rules differ by state and territory. Golf carts are generally for private property and the course unless registered and compliant. Check your state transport authority.' },
   { q: 'Do you sell parts and accessories?', a: 'Yes. We stock lithium batteries, chargers, wheels, lights, seat belts, mats, holders and more for carts and buggies.' },
-  { q: 'Can you help me choose?', a: 'Yes. Call 0420 128 746, message us on WhatsApp or email sales@buggiesforsale.com.au and we will help you match a model to your needs.' },
+  { q: 'Can you help me choose?', a: 'Yes. Call +61420128746, message us on WhatsApp or email sales@buggiesforsale.com.au and we will help you match a model to your needs.' },
 ];

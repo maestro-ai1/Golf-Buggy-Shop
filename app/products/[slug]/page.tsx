@@ -82,7 +82,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <p className="mt-3 text-center text-xs text-muted">Pay by Osko/EFT, PayID or Bitcoin/USDT (extra {SHOP.cryptoDiscount}% off at checkout). Minimum order {money(SHOP.minOrder)}.</p>
 
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-              {[[Truck, p.price >= 1000 ? 'Free delivery' : `Delivery ${money(SHOP.shippingFee)} flat`, p.leadTime || 'Dispatch within 24-48 business hours'], [ShieldCheck, 'Manufacturer warranty', 'Details with your order'], [CreditCard, 'Flexible payment', 'Osko/EFT, PayID, crypto'], [Check, 'Expert support', 'Call 0420 128 746']].map(([Icon, t, s]) => {
+              {[[Truck, p.price >= 1000 ? 'Free delivery' : `Delivery ${money(SHOP.shippingFee)} flat`, p.leadTime || 'Dispatch within 24-48 business hours'], [ShieldCheck, 'Manufacturer warranty', 'Details with your order'], [CreditCard, 'Flexible payment', 'Osko/EFT, PayID, crypto'], [Check, 'Expert support', 'Call +61420128746']].map(([Icon, t, s]) => {
                 const I = Icon as typeof Truck;
                 return <li key={t as string} className="flex items-start gap-3 rounded-xl border border-line bg-white p-3.5"><I size={20} className="mt-0.5 shrink-0 text-fw-600" /><span><span className="block text-sm font-bold text-fw-900">{t as string}</span><span className="block text-xs text-muted">{s as string}</span></span></li>;
               })}

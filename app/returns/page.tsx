@@ -17,7 +17,7 @@ export default function Returns() {
       <p>You can return an item within {SHOP.returnDays} days of delivery if you change your mind. Contact us within those {SHOP.returnDays} days with your order reference and we will confirm the return. Goods must be unused, undamaged and in their original packaging with all accessories. Return freight is paid by the buyer, and your refund is sent to the original payment method once we receive and check the goods.</p>
       <p>This is in addition to your rights under the Australian Consumer Law, which never expire because of this policy. For faulty, damaged or incorrect goods we cover the return freight. Contact us before you order if you are unsure about a model, and we will help you choose.</p>
       <h2>How to contact us</h2>
-      <p>Call 0420 128 746, WhatsApp, or use the <Link href="/contact/">contact form</Link>. Please include your order reference.</p>
+      <p>Call +61420128746, WhatsApp, or use the <Link href="/contact/">contact form</Link>. Please include your order reference.</p>
     </InfoPage>
   );
 }

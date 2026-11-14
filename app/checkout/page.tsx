@@ -38,7 +38,7 @@ export default function Checkout() {
         window.open(`https://wa.me/${REPLY.channels.whatsappCountryCode}${REPLY.channels.whatsapp.replace(/^0/, '').replace(/\s/g, '')}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
       }
       cart.clear(); router.push(crypto ? `/order/crypto/?id=${ref}` : `/thank-you-order/?ref=${ref}`);
-    } catch { setErr('Network error. Please call 0420 128 746.'); setBusy(''); }
+    } catch { setErr('Network error. Please call +61420128746.'); setBusy(''); }
   }
 
   const input = 'h-12 w-full rounded-xl border border-line bg-white px-4 text-[15px] outline-none focus:border-fw-500 focus:ring-2 focus:ring-fw-100 mt-1.5';

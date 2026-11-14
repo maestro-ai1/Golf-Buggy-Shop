@@ -74,7 +74,7 @@ const ADVICE: Record<string, { h2: string; p: string }[]> = {
     { h2: 'Choosing the right model', p: 'Start with how you will use it, then compare specifications, warranty and the delivered price including GST. If a model you want is not listed, tell us the details and we will check availability and freight.' },
     { h2: 'Warranty and support', p: 'The manufacturer warranty applies to new products, and the conditions are provided with your order. Ask us about servicing, spare parts and accessories before you buy so there are no surprises later.' },
     { h2: 'Delivery and payment', p: 'We deliver Australia-wide, free over $1,000 and a flat $95 below that. You can pay by bank transfer (Osko or EFT) or PayID, or choose Bitcoin or USDT for an extra 10% off at checkout.' },
-    { h2: 'Talk to our team', p: 'Our Sydney team can compare models, confirm fitment and quote freight. Call 0420 128 746, message us on WhatsApp or email sales@buggiesforsale.com.au and we will reply as quickly as we can.' },
+    { h2: 'Talk to our team', p: 'Our Sydney team can compare models, confirm fitment and quote freight. Call +61420128746, message us on WhatsApp or email sales@buggiesforsale.com.au and we will reply as quickly as we can.' },
   ],
 };
 const adviceFamily = (url: string) => (/^\/golf-buggies\//.test(url) ? 'buggies' : /^\/golf-carts\/|^\/clearance\//.test(url) ? 'carts' : /^\/off-road-buggies\//.test(url) ? 'offroad' : /^\/parts-accessories\//.test(url) ? 'parts' : 'brands');
@@ -109,7 +109,7 @@ function baseCopy(page: SitePage, products: Product[]): PageCopy & { fallback: b
       intro: n
         ? [`Searching for ${casePrimary(primary, brand)}? Shop ${brand} online in Australia. We list ${n} ${brand} product${n === 1 ? '' : 's'} ${range}.`, `Every order ships Australia-wide with free delivery over $1,000. Compare specifications below, or message us if you need help choosing the right ${brand} model for your cart or course.`]
         : [`Looking for ${primary}? ${brand} is one of the brands Australian buyers ask us about. We do not list a ${brand} model online yet, but we can check availability and quote you.`, 'Tell us the model you want and your location, and we will confirm price, stock and delivery. In the meantime, browse our related ranges below.'],
-      guides: [{ h2: `Before you buy ${brand}`, p: ['Check compatibility with your cart or course, confirm warranty terms and ask about delivery to your postcode. Our team can answer questions on 0420 128 746.'] }],
+      guides: [{ h2: `Before you buy ${brand}`, p: ['Check compatibility with your cart or course, confirm warranty terms and ask about delivery to your postcode. Our team can answer questions on +61420128746.'] }],
       faqs: BRAND_FAQ(brand),
     };
   }
@@ -126,7 +126,7 @@ function baseCopy(page: SitePage, products: Product[]): PageCopy & { fallback: b
       ['Do prices include GST?', 'Yes. All prices are in Australian dollars and include 10% GST.'],
       ['How much is delivery?', 'Free over $1,000 to major metro and depot corridors, otherwise a flat $95 freight fee.'],
       ['Is there a warranty?', 'The manufacturer warranty applies. Details come with your order confirmation.'],
-      ['Can you help me choose?', 'Yes. Call 0420 128 746 or message us on WhatsApp.'],
+      ['Can you help me choose?', 'Yes. Call +61420128746 or message us on WhatsApp.'],
     ],
   };
 }

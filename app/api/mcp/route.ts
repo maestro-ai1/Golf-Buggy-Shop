@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PRODUCTS, CATEGORIES, SHOP, SITE, CONTACT, inCategory } from '@/config/site';
+import { publicProduct } from '@/lib/public-product';
 
 const MCP_TOOLS = [
   {
@@ -202,7 +203,7 @@ export async function POST(request: NextRequest) {
                 {
                   type: 'text',
                   text: JSON.stringify({
-                    ...product,
+                    ...publicProduct(product),
                     currency: SITE.currency,
                     url: `https://${SITE.domain}/products/${product.slug}/`,
                   }),

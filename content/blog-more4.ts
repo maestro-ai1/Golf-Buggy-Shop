@@ -65,7 +65,7 @@ export const MORE4: Record<string, string[]> = {
   ],
   'trailmaster-dune-buggies': [
     `## Frequently asked buyer questions`,
-    `Buyers often ask whether a Trailmaster buggy is suitable for children, how fast it goes, and how much maintenance it needs. Check the age guidance and the limiter options on each model, because larger engines are intended for adults and older teens. Speed depends on the engine, gearing and terrain, and the manufacturer's figures are a guide. Maintenance is modest if you follow the schedule: oil and filter changes, air filter cleaning, belt checks and general inspection. If you are unsure about a particular use, call us on 0420 128 746.`,
+    `Buyers often ask whether a Trailmaster buggy is suitable for children, how fast it goes, and how much maintenance it needs. Check the age guidance and the limiter options on each model, because larger engines are intended for adults and older teens. Speed depends on the engine, gearing and terrain, and the manufacturer's figures are a guide. Maintenance is modest if you follow the schedule: oil and filter changes, air filter cleaning, belt checks and general inspection. If you are unsure about a particular use, call us on +61420128746.`,
     `## Spare parts and consumables`,
     `Keep spare spark plugs, an air filter, a drive belt, tyre repair supplies and a basic toolkit. For regular riders, a spare brake pad set and cables are also wise. Order in advance of a trip, because courier delays can ruin a planned weekend. Our [off-road parts](/parts-accessories/off-road-parts/) category lists items such as the Trailmaster air filter and carburettors.`,
     `## Storage and transport`,
@@ -84,7 +84,7 @@ export const MORE4: Record<string, string[]> = {
     `- Check wheels, steering and brakes before each ride.`,
     `- Supervise at all times and teach children to stop on command.`,
     `## What to do if something breaks`,
-    `Stop using the buggy and check the manual. Many problems, such as a loose wire or a worn tyre, are easy to fix. Do not open the battery or charger. Contact the supplier for parts or repairs, and keep the receipt for warranty. If the problem involves the battery or charger, stop using them immediately. Our team can help with advice on 0420 128 746.`,
+    `Stop using the buggy and check the manual. Many problems, such as a loose wire or a worn tyre, are easy to fix. Do not open the battery or charger. Contact the supplier for parts or repairs, and keep the receipt for warranty. If the problem involves the battery or charger, stop using them immediately. Our team can help with advice on +61420128746.`,
   ],
   'used-golf-carts-on-sale': [
     `## A word on security and registration of ownership`,
